@@ -76,22 +76,6 @@ window.HareDailySudokuChallengeEngine = {
       `;
     }
 
-    function formatDateLabel(dateString) {
-      if (!dateString) return "";
-
-      const d = new Date(dateString + "T00:00:00");
-      if (Number.isNaN(d.getTime())) return "";
-
-      return d.toLocaleDateString(undefined, {
-        weekday: "long",
-        year: "numeric",
-        month: "long",
-        day: "numeric"
-      });
-    }
-
-    const puzzleDateLabel = formatDateLabel(puzzleDate);
-
     // --- 1. SEO / AEO / GEO FRIENDLY SCHEMA MARKUP ---
     function injectSchema() {
       const existing = document.getElementById("hp-schema-daily-sudoku-challenge");
@@ -192,17 +176,6 @@ window.HareDailySudokuChallengeEngine = {
 
     // --- 3. UI TEMPLATE ---
     mount.innerHTML = `
-      ${puzzleDateLabel ? `
-        <div style="
-          text-align:center;
-          font-size:15px;
-          color:#6b7280;
-          margin-bottom:16px;
-          font-family:Roboto,sans-serif;
-        ">
-          ${escapeHtml(puzzleDateLabel)}
-        </div>
-      ` : ""}
 
       <div class="hp-layout">
 
