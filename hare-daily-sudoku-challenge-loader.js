@@ -6,7 +6,7 @@
   // =========================================================
 
   const ENGINE_URL =
-    "https://cdn.jsdelivr.net/gh/harepublishing/harepublishing-puzzles@main/hare-daily-sudoku-challenge-engine-v2.js";
+    "https://cdn.jsdelivr.net/gh/harepublishing/harepublishing-puzzles@main/hare-daily-sudoku-challenge-engine-v3.js";
 
   // Prevent duplicate loading
   if (window.__hpDailySudokuChallengeLoaderRunning) return;
