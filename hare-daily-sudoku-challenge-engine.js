@@ -186,31 +186,7 @@ window.HareDailySudokuChallengeEngine = {
 
     // --- 3. UI TEMPLATE ---
     mount.innerHTML = `
-      <div class="hp-puzzle-heading" style="text-align:center; margin: 8px auto 18px;">
-        <h3 style="
-          font-family: Roboto, sans-serif;
-          font-size: 24px;
-          line-height: 1.2;
-          font-weight: 800;
-          color: #24323d;
-          margin: 0 0 6px;
-        ">
-          Daily Sudoku Challenge #${escapeHtml(puzzleId)}
-        </h3>
-
-        ${puzzleDateLabel ? `
-          <div style="
-            font-family: Roboto, sans-serif;
-            font-size: 15px;
-            line-height: 1.4;
-            color: #6b7280;
-            margin: 0;
-          ">
-            ${escapeHtml(puzzleDateLabel)}
-          </div>
-        ` : ""}
-      </div>
-
+      
       <div class="hp-layout">
 
         <div class="hp-col-left">
