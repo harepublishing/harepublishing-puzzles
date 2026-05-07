@@ -1553,7 +1553,3 @@ window.HareDailySudokuChallengeEngine = {
     }
   }
 };
-
-
-
-
