@@ -52,6 +52,38 @@ window.HareDailySudokuChallengeEngine = {
     }
 
     const mount = container.querySelector(".hp-mount") || container;
+if (puzzleDate) {
+  const existingDate = container.querySelector("#hp-dsc-date");
+  if (existingDate) existingDate.remove();
+
+  const d = new Date(puzzleDate + "T00:00:00");
+
+  const formattedDate = d.toLocaleDateString(undefined, {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric"
+  });
+
+  const dateEl = document.createElement("div");
+  dateEl.id = "hp-dsc-date";
+
+  dateEl.style.cssText = `
+    text-align:center;
+    font-size:15px;
+    color:#6b7280;
+    margin:0 auto 16px;
+    font-family:Roboto,sans-serif;
+  `;
+
+  dateEl.textContent = formattedDate;
+
+  container.insertBefore(dateEl, mount);
+}
+
+
+
+
 
     const yearEl = container.querySelector("#hp-year") || document.getElementById("hp-year");
     if (yearEl) yearEl.textContent = new Date().getFullYear();
@@ -936,17 +968,7 @@ window.HareDailySudokuChallengeEngine = {
 
     // --- 3. UI TEMPLATE ---
     mount.innerHTML = `
-      ${puzzleDateLabel ? `
-        <div style="
-          text-align:center;
-          font-size:15px;
-          color:#6b7280;
-          margin-bottom:16px;
-          font-family:Roboto,sans-serif;
-        ">
-          ${escapeHtml(puzzleDateLabel)}
-        </div>
-      ` : ""}
+      
 
       <div class="hp-layout">
 
