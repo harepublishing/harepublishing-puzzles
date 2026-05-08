@@ -183,15 +183,16 @@ window.HareDailySudokuChallengeEngine = {
     window.addEventListener("beforeunload", handleBeforeUnload);
 
     mount.innerHTML = `
-      ${puzzleDateLabel ? `
-        <div 
-          id="hp-dsc-date" 
-          class="hp-puzzle-date"
-        >
-TEST DATE STYLE CHANGE — ${escapeHtml(puzzleDateLabel)}        </div>
-      ` : ""}
+  ${puzzleDateLabel ? `
+    <div 
+      id="hp-dsc-date" 
+      class="hp-puzzle-date"
+    >
+      ${escapeHtml(puzzleDateLabel)}
+    </div>
+  ` : ""}
 
-      <div class="hp-layout">
+  <div class="hp-layout">
         <div class="hp-col-left">
           <div class="hp-stat" id="hp-stat" aria-live="polite">Tap a cell to begin</div>
           <div class="hp-grid" id="hp-board" role="grid" aria-label="Daily Sudoku Challenge Board"></div>
