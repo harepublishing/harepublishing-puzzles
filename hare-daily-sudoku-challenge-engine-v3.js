@@ -184,24 +184,18 @@ window.HareDailySudokuChallengeEngine = {
 
     mount.innerHTML = `
       ${puzzleDateLabel ? `
-  <div 
-    id="hp-dsc-date" 
-    class="hp-puzzle-date"
-    style="
-      font-size:40px;
-      color:red;
-      font-weight:900;
-      text-align:center;
-      margin-bottom:20px;
-    "
-  >
-    ${escapeHtml(puzzleDateLabel)}
-  </div>
-` : ""}
+        <div 
+          id="hp-dsc-date" 
+          class="hp-puzzle-date"
+        >
+          ${escapeHtml(puzzleDateLabel)}
+        </div>
+      ` : ""}
 
       <div class="hp-layout">
-      <div class="hp-col-left">
-  <div class="hp-stat" id="hp-stat" aria-live="polite">Tap a cell to begin</div>
+        <div class="hp-col-left">
+          <div class="hp-stat" id="hp-stat" aria-live="polite">Tap a cell to begin</div>
+          <div class="hp-grid" id="hp-board" role="grid" aria-label="Daily Sudoku Challenge Board"></div>
         </div>
 
         <div class="hp-col-right">
@@ -263,6 +257,20 @@ window.HareDailySudokuChallengeEngine = {
         </div>
       </div>
     `;
+
+    const dateEl = container.querySelector("#hp-dsc-date");
+
+    if (dateEl) {
+      dateEl.style.setProperty("display", "block", "important");
+      dateEl.style.setProperty("width", "100%", "important");
+      dateEl.style.setProperty("text-align", "center", "important");
+      dateEl.style.setProperty("font-family", "Roboto, sans-serif", "important");
+      dateEl.style.setProperty("font-size", "24px", "important");
+      dateEl.style.setProperty("font-weight", "900", "important");
+      dateEl.style.setProperty("line-height", "1.35", "important");
+      dateEl.style.setProperty("color", "#107FBB", "important");
+      dateEl.style.setProperty("margin", "0 auto 20px", "important");
+    }
 
     const boardEl = container.querySelector("#hp-board");
     const statEl = container.querySelector("#hp-stat");
