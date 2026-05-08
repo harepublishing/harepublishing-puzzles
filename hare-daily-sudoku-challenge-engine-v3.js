@@ -184,13 +184,7 @@ window.HareDailySudokuChallengeEngine = {
 
     mount.innerHTML = `
       ${puzzleDateLabel ? `
-        <div id="hp-dsc-date" style="
-          text-align:center;
-          font-size:15px;
-          color:#6b7280;
-          margin:0 auto 16px;
-          font-family:Roboto,sans-serif;
-        ">
+        <div id="hp-dsc-date" class="hp-puzzle-date">
           ${escapeHtml(puzzleDateLabel)}
         </div>
       ` : ""}
