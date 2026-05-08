@@ -1,6 +1,6 @@
 (() => {
   const ENGINE_URL =
-    "https://cdn.jsdelivr.net/gh/harepublishing/harepublishing-puzzles@main/hare-daily-sudoku-challenge-engine-v3.js";
+    "https://cdn.jsdelivr.net/gh/harepublishing/harepublishing-puzzles@main/hare-daily-sudoku-challenge-engine-v3.js?v=2026-05-08-1";
 
   const existing = document.querySelector('script[data-hp-dsc-engine="true"]');
   if (existing) return;
