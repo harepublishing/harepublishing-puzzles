@@ -188,8 +188,7 @@ window.HareDailySudokuChallengeEngine = {
           id="hp-dsc-date" 
           class="hp-puzzle-date"
         >
-          ${escapeHtml(puzzleDateLabel)}
-        </div>
+TEST DATE STYLE CHANGE — ${escapeHtml(puzzleDateLabel)}        </div>
       ` : ""}
 
       <div class="hp-layout">
