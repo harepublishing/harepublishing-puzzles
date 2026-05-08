@@ -190,10 +190,8 @@ window.HareDailySudokuChallengeEngine = {
       ` : ""}
 
       <div class="hp-layout">
-        <div class="hp-col-left">
-<div class="hp-puzzle-date" id="hp-puzzle-date"></div>
-          <div class="hp-stat" id="hp-stat" aria-live="polite">Tap a cell to begin</div>
-          <div class="hp-grid" id="hp-board" role="grid" aria-label="Daily Sudoku Challenge Board"></div>
+      <div class="hp-col-left">
+  <div class="hp-stat" id="hp-stat" aria-live="polite">Tap a cell to begin</div>
         </div>
 
         <div class="hp-col-right">
