@@ -23,7 +23,7 @@
   const CONTAINER_ID = "hp-sudoku-container";
   const DATA_ID = "hp-sudoku-data";
 
-const ENGINE_URL = "https://cdn.jsdelivr.net/gh/harepublishing/harepublishing-puzzles@regular-sudoku-v1.0.1/hare-regular-sudoku-engine.js";
+const ENGINE_URL = "https://cdn.jsdelivr.net/gh/harepublishing/harepublishing-puzzles@regular-sudoku-v1.0.2/hare-regular-sudoku-engine.js";
 
   const container = document.getElementById(CONTAINER_ID);
   if (!container) {
@@ -62,11 +62,16 @@ const ENGINE_URL = "https://cdn.jsdelivr.net/gh/harepublishing/harepublishing-pu
       return;
     }
 
-    window.HareRegularSudokuEngine.init({
-      containerId: CONTAINER_ID,
-      dataId: DATA_ID,
-      dataObject: window.HareRegularSudokuData
-    });
+    try {
+      window.HareRegularSudokuEngine.init({
+        containerId: CONTAINER_ID,
+        dataId: DATA_ID,
+        dataObject: window.HareRegularSudokuData
+      });
+    } catch (err) {
+      showLoaderError("The regular Sudoku engine started loading, but hit a JavaScript error. Open the browser console for details.");
+      console.error("Hare Regular Sudoku Loader: engine init failed.", err);
+    }
   }
 
   if (window.HareRegularSudokuEngine && typeof window.HareRegularSudokuEngine.init === "function") {
