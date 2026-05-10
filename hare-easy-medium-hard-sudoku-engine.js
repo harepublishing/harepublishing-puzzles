@@ -645,34 +645,26 @@ window.HareRegularSudokuEngine = {
 
 mount.innerHTML = `
   <div class="hp-layout">
-    <div class="hp-col-left">
+   <div class="hp-col-left">
 
-      <div style="text-align:center; margin-bottom:18px;">
+  ${pageData?.puzzleDate ? `
+    <div style="
+      text-align:center;
+      font-size:22px;
+      font-weight:700;
+      color:#107FBB;
+      margin-bottom:18px;
+      line-height:1.2;
+    ">
+      ${escapeHtml(formatPuzzleDate(pageData.puzzleDate))}
+    </div>
+  ` : ""}
 
-        <div style="
-          font-size:16px;
-          font-weight:700;
-          margin-top:4px;
-        ">
-          ${escapeHtml(cfg.label)} #${escapeHtml(cfg.puzzleId)}
-        </div>
-
-        ${pageData?.puzzleDate ? `
-          <div style="
-            text-align:center;
-            font-size:22px;
-            font-weight:700;
-            color:#107FBB;
-            margin-top:10px;
-            margin-bottom:6px;
-            line-height:1.2;
-          ">
-            ${escapeHtml(formatPuzzleDate(pageData.puzzleDate))}
-          </div>
-        ` : ""}
-
-      </div>
-            </div>
+  <div style="text-align:center; margin-bottom:12px;">
+    <div style="font-size:16px; font-weight:700; margin-top:4px;">
+      ${escapeHtml(cfg.label)} #${escapeHtml(cfg.puzzleId)}
+    </div>
+  </div>
 
             <div class="hp-mode-switch-wrap">
               <div class="hp-mode-switch" role="tablist" aria-label="Choose Sudoku difficulty">
