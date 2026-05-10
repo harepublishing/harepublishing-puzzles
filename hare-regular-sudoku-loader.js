@@ -23,7 +23,7 @@
   const CONTAINER_ID = "hp-sudoku-container";
   const DATA_ID = "hp-sudoku-data";
 
-const ENGINE_URL = "https://cdn.jsdelivr.net/gh/harepublishing/harepublishing-puzzles@regular-sudoku-v1.0.0/hare-regular-sudoku-engine.js";
+const ENGINE_URL = "https://cdn.jsdelivr.net/gh/harepublishing/harepublishing-puzzles@regular-sudoku-v1.0.1/hare-regular-sudoku-engine.js";
 
   const container = document.getElementById(CONTAINER_ID);
   if (!container) {
