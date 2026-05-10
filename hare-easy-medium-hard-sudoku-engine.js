@@ -643,32 +643,35 @@ window.HareRegularSudokuEngine = {
     function renderUI() {
       const cfg = getConfig();
 
-      mount.innerHTML = `
-        <div class="hp-layout">
-          <div class="hp-col-left">
-            <div style="text-align:center; margin-bottom:12px;">
-              <div style="font-size:22px; font-weight:800;">
-                Easy, Medium & Hard Sudoku Puzzles
-              </div>
-              <div style="font-size:16px; font-weight:700; margin-top:4px;">
-  ${escapeHtml(cfg.label)} #${escapeHtml(cfg.puzzleId)}
-</div>
+mount.innerHTML = `
+  <div class="hp-layout">
+    <div class="hp-col-left">
 
-${pageData?.puzzleDate ? `
-  <div id="hp-puzzle-date" class="hp-puzzle-date" style="
-    margin-top:8px;
-    font-size:14px;
-    color:#666;
-    font-weight:500;
-  ">
-    📅 ${new Date(pageData.puzzleDate + "T00:00:00").toLocaleDateString("en-US", {
-      weekday: "long",
-      year: "numeric",
-      month: "long",
-      day: "numeric"
-    })}
-  </div>
-` : ""}
+      <div style="text-align:center; margin-bottom:18px;">
+
+        <div style="
+          font-size:16px;
+          font-weight:700;
+          margin-top:4px;
+        ">
+          ${escapeHtml(cfg.label)} #${escapeHtml(cfg.puzzleId)}
+        </div>
+
+        ${pageData?.puzzleDate ? `
+          <div style="
+            text-align:center;
+            font-size:22px;
+            font-weight:700;
+            color:#107FBB;
+            margin-top:10px;
+            margin-bottom:6px;
+            line-height:1.2;
+          ">
+            ${escapeHtml(formatPuzzleDate(pageData.puzzleDate))}
+          </div>
+        ` : ""}
+
+      </div>
             </div>
 
             <div class="hp-mode-switch-wrap">
