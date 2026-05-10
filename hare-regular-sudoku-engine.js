@@ -131,6 +131,27 @@ window.HareRegularSudokuEngine = {
       }[s]));
     }
 
+
+    function formatPuzzleDate(value) {
+      const raw = String(value || "").trim();
+      if (!raw) return "";
+
+      // Treat YYYY-MM-DD as a local date so it does not shift by timezone.
+      const match = raw.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+      const date = match
+        ? new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]))
+        : new Date(raw);
+
+      if (Number.isNaN(date.getTime())) return raw;
+
+      return date.toLocaleDateString("en-US", {
+        weekday: "long",
+        month: "long",
+        day: "numeric",
+        year: "numeric"
+      });
+    }
+
     function showConfigError(message) {
       mount.innerHTML = `
         <div class="hp-panel" style="border:1px solid #ED1B24; background:#fff5f5; color:#8a1c1c; padding:18px; border-radius:12px; text-align:center;">
