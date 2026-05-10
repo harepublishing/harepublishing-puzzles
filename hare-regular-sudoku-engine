@@ -70,17 +70,17 @@ window.HareRegularSudokuEngine = {
         mode: "easy",
         label: "Easy Sudoku",
         boardAria: "Easy Sudoku Board",
-        schemaName: id => `Easy Sudoku #${id}`,
+        schemaName: () => `Easy Sudoku Puzzle`,
         schemaDescription: "Play and solve today's easy Sudoku puzzle by Hare Publishing. Includes notes, timer, and progress saving.",
         solvedTitle: "You Solved the Easy Sudoku Puzzle!",
         solvedStat: "Easy Sudoku Solved! 🎉 ",
         solvedText: "Congratulations — you did it! New puzzles are added daily in the Puzzlers Hub, or you can explore a whole stack of puzzles to enjoy offline.",
         revealedText: "Here is the completed Easy Sudoku puzzle. New puzzles are added daily in the Puzzlers Hub, or you can explore a whole stack of puzzles to enjoy offline.",
         footer: "Hare Publishing • Easy Sudoku",
-        shareTitle: id => `Easy Sudoku #${id} — Hare Publishing`,
-        shareSolvedText: (id, time) => `I solved today’s easy Sudoku #${id} in ${time}!`,
-        shareRevealedText: id => `I revealed the answer for Easy Sudoku #${id} at Hare Publishing.`,
-        sharePlayingText: id => `I’m playing today’s Easy Sudoku #${id}!`,
+        shareTitle: () => `Easy Sudoku — Hare Publishing`,
+        shareSolvedText: (id, time) => `I solved today’s easy Sudoku in ${time}!`,
+        shareRevealedText: () => `I revealed the answer for Easy Sudoku at Hare Publishing.`,
+        sharePlayingText: () => `I’m playing today’s Easy Sudoku!`,
         saveKeyPrefix: "hp_sd_easy_"
       },
 
@@ -88,17 +88,17 @@ window.HareRegularSudokuEngine = {
         mode: "medium",
         label: "Medium Sudoku",
         boardAria: "Medium Sudoku Board",
-        schemaName: id => `Medium Sudoku #${id}`,
+        schemaName: () => `Medium Sudoku Puzzle`,
         schemaDescription: "Play and solve today's medium Sudoku puzzle by Hare Publishing. Includes notes, timer, and progress saving.",
         solvedTitle: "You Solved the Medium Sudoku Puzzle!",
         solvedStat: "Medium Sudoku Solved! 🎉 ",
         solvedText: "Congratulations — you did it! New puzzles are added daily in the Puzzlers Hub, or you can explore a whole stack of puzzles to enjoy offline.",
         revealedText: "Here is the completed Medium Sudoku puzzle. New puzzles are added daily in the Puzzlers Hub, or you can explore a whole stack of puzzles to enjoy offline.",
         footer: "Hare Publishing • Medium Sudoku",
-        shareTitle: id => `Medium Sudoku #${id} — Hare Publishing`,
-        shareSolvedText: (id, time) => `I solved today’s medium Sudoku #${id} in ${time}!`,
-        shareRevealedText: id => `I revealed the answer for Medium Sudoku #${id} at Hare Publishing.`,
-        sharePlayingText: id => `I’m playing today’s Medium Sudoku #${id}!`,
+        shareTitle: () => `Medium Sudoku — Hare Publishing`,
+        shareSolvedText: (id, time) => `I solved today’s medium Sudoku in ${time}!`,
+        shareRevealedText: () => `I revealed the answer for Medium Sudoku at Hare Publishing.`,
+        sharePlayingText: () => `I’m playing today’s Medium Sudoku!`,
         saveKeyPrefix: "hp_sd_medium_"
       },
 
@@ -106,17 +106,17 @@ window.HareRegularSudokuEngine = {
         mode: "hard",
         label: "Hard Sudoku",
         boardAria: "Hard Sudoku Board",
-        schemaName: id => `Hard Sudoku #${id}`,
+        schemaName: () => `Hard Sudoku Puzzle`,
         schemaDescription: "Play and solve today's hard Sudoku puzzle by Hare Publishing. Includes notes, timer, and progress saving.",
         solvedTitle: "You Solved the Hard Sudoku Puzzle!",
         solvedStat: "Hard Sudoku Solved! 🎉 ",
         solvedText: "Congratulations — you did it! New puzzles are added daily in the Puzzlers Hub, or you can explore a whole stack of puzzles to enjoy offline.",
         revealedText: "Here is the completed Hard Sudoku puzzle. New puzzles are added daily in the Puzzlers Hub, or you can explore a whole stack of puzzles to enjoy offline.",
         footer: "Hare Publishing • Hard Sudoku",
-        shareTitle: id => `Hard Sudoku #${id} — Hare Publishing`,
-        shareSolvedText: (id, time) => `I solved today’s hard Sudoku #${id} in ${time}!`,
-        shareRevealedText: id => `I revealed the answer for Hard Sudoku #${id} at Hare Publishing.`,
-        sharePlayingText: id => `I’m playing today’s Hard Sudoku #${id}!`,
+        shareTitle: () => `Hard Sudoku — Hare Publishing`,
+        shareSolvedText: (id, time) => `I solved today’s hard Sudoku in ${time}!`,
+        shareRevealedText: () => `I revealed the answer for Hard Sudoku at Hare Publishing.`,
+        sharePlayingText: () => `I’m playing today’s Hard Sudoku!`,
         saveKeyPrefix: "hp_sd_hard_"
       }
     };
@@ -410,7 +410,7 @@ window.HareRegularSudokuEngine = {
 
       if (!badgeIdEl || !badgeTimeEl || !overlayIconEl || !overlayTitleEl || !overlayTextEl || !overlayFooterEl) return;
 
-      badgeIdEl.textContent = `${cfg.label} #${cfg.puzzleId}`;
+      badgeIdEl.textContent = cfg.label;
       badgeTimeEl.textContent = `Time: ${formatTime(state.elapsed)}`;
 
       if (state.solved) {
@@ -661,8 +661,11 @@ mount.innerHTML = `
   ` : ""}
 
   <div style="text-align:center; margin-bottom:12px;">
-    <div style="font-size:16px; font-weight:700; margin-top:4px;">
-      ${escapeHtml(cfg.label)} #${escapeHtml(cfg.puzzleId)}
+    <div style="font-size:18px; font-weight:800; color:#24323d; margin-top:4px; line-height:1.25;">
+      Choose Your Sudoku Level
+    </div>
+    <div style="font-size:13px; color:#666; margin-top:4px; line-height:1.35;">
+      Select an easy, medium, or hard Sudoku puzzle and start solving.
     </div>
   </div>
 
