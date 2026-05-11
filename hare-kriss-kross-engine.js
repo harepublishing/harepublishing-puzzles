@@ -24,7 +24,7 @@ window.HareKrissKrossEngine = {
 
     const puzzleId = String(data.puzzleId || "1");
     const puzzleTitle = data.puzzleTitle || `Kriss Kross #${puzzleId}`;
-    const puzzleDate = data.puzzleDate || "";
+    const puzzleDate = formatPuzzleDate(data.puzzleDate || "");
     const placements = Array.isArray(data.placements) ? data.placements : [];
 
     const MORE_PUZZLES_URL = data.morePuzzlesUrl || "https://www.harepublishing.com/online-puzzles";
@@ -47,6 +47,26 @@ window.HareKrissKrossEngine = {
 
     function cellKey(r, c) {
       return `${r}-${c}`;
+    }
+
+    function formatPuzzleDate(dateString) {
+      if (!dateString) return "";
+
+      const parts = String(dateString).split("-");
+      if (parts.length !== 3) return String(dateString);
+
+      const year = Number(parts[0]);
+      const month = Number(parts[1]) - 1;
+      const day = Number(parts[2]);
+
+      const date = new Date(year, month, day);
+
+      return date.toLocaleDateString("en-US", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      });
     }
 
     (() => {
@@ -189,9 +209,11 @@ window.HareKrissKrossEngine = {
 
       return shared.some(slotId => {
         const cells = cellsBySlot.get(slotId) || [];
+
         for (let i = 1; i < cells.length; i++) {
           const prev = cells[i - 1];
           const curr = cells[i];
+
           if (
             (prev.r === a.r && prev.c === a.c && curr.r === b.r && curr.c === b.c) ||
             (prev.r === b.r && prev.c === b.c && curr.r === a.r && curr.c === a.c)
@@ -199,12 +221,14 @@ window.HareKrissKrossEngine = {
             return true;
           }
         }
+
         return false;
       });
     }
 
     function validateNoTouchingWords() {
       const dirs = [[-1,0],[1,0],[0,-1],[0,1]];
+
       for (let r = 0; r < rowCount; r++) {
         for (let c = 0; c < colCount; c++) {
           if (!activeCellMap.has(cellKey(r, c))) continue;
@@ -270,21 +294,27 @@ window.HareKrissKrossEngine = {
 
     function getWordToSlotMap() {
       const map = new Map();
+
       Object.entries(state.assignments).forEach(([slotId, word]) => {
         if (word) map.set(word, slotId);
       });
+
       return map;
     }
 
     function buildCurrentBoard() {
       const board = Array.from({ length: rowCount }, () => Array(colCount).fill(""));
+
       Object.entries(state.assignments).forEach(([slotId, word]) => {
         if (!word) return;
+
         const cells = cellsBySlot.get(slotId) || [];
+
         cells.forEach((cell, idx) => {
           board[cell.r][cell.c] = word[idx] || "";
         });
       });
+
       return board;
     }
 
@@ -325,7 +355,9 @@ window.HareKrissKrossEngine = {
     function clearSelectedSlot() {
       if (isFinished()) return;
       if (!state.selectedSlotId) return;
+
       delete state.assignments[state.selectedSlotId];
+
       saveState();
       render();
     }
@@ -333,11 +365,13 @@ window.HareKrissKrossEngine = {
     function canFitWordInSlot(word, slotId) {
       const currentBoard = buildCurrentBoard();
       const cells = cellsBySlot.get(slotId) || [];
+
       if (word.length !== cells.length) return false;
 
       for (let i = 0; i < cells.length; i++) {
         const { r, c } = cells[i];
         const existing = currentBoard[r][c];
+
         if (existing && existing !== word[i]) return false;
       }
 
@@ -346,7 +380,9 @@ window.HareKrissKrossEngine = {
 
     function selectSlot(slotId) {
       if (isFinished()) return;
+
       state.selectedSlotId = slotId || "";
+
       saveState();
       renderStatus();
       renderBoardOnly();
@@ -355,6 +391,7 @@ window.HareKrissKrossEngine = {
 
     function selectNextSlotAtCell(r, c) {
       if (isFinished()) return;
+
       const slotIds = slotsByCell.get(cellKey(r, c)) || [];
       if (!slotIds.length) return;
 
@@ -365,6 +402,7 @@ window.HareKrissKrossEngine = {
 
       const currentIndex = slotIds.indexOf(state.selectedSlotId);
       const nextIndex = currentIndex >= 0 ? (currentIndex + 1) % slotIds.length : 0;
+
       selectSlot(slotIds[nextIndex]);
     }
 
@@ -396,6 +434,7 @@ window.HareKrissKrossEngine = {
 
       if (!canFitWordInSlot(word, slotId)) {
         if (previousWord) state.assignments[slotId] = previousWord;
+
         saveState();
         render();
         setStatusMessage("That word conflicts with letters already placed.");
@@ -439,10 +478,12 @@ window.HareKrissKrossEngine = {
 
     function revealAnswers() {
       if (isFinished()) return;
+
       const ok = confirm("Reveal all answers? This will end the puzzle.");
       if (!ok) return;
 
       const assignments = {};
+
       normalizedPlacements.forEach(slot => {
         assignments[slot.id] = slot.word;
       });
@@ -461,10 +502,12 @@ window.HareKrissKrossEngine = {
     function statusMessage() {
       if (state.solved) return "Kriss Kross solved! 🎉";
       if (state.revealed) return "Answers revealed.";
+
       if (state.selectedSlotId) {
         const len = slotLength(state.selectedSlotId);
         return `Slot selected. Choose a ${len}-letter word from the list.`;
       }
+
       return "Click a slot in the grid, then click a matching word from the list. Click the same crossing square again to switch direction.";
     }
 
@@ -475,8 +518,10 @@ window.HareKrissKrossEngine = {
 
     function isFirstCellOfSlot(r, c, slotId) {
       if (!slotId) return false;
+
       const cells = cellsBySlot.get(slotId) || [];
       if (!cells.length) return false;
+
       return cells[0].r === r && cells[0].c === c;
     }
 
@@ -501,6 +546,7 @@ window.HareKrissKrossEngine = {
       if (!boardEl) return;
 
       const currentBoard = buildCurrentBoard();
+
       boardEl.style.gridTemplateColumns = `repeat(${colCount}, 1fr)`;
 
       boardEl.innerHTML = Array.from({ length: rowCount }, (_, r) =>
@@ -520,14 +566,17 @@ window.HareKrissKrossEngine = {
           const canToggle = slotIdsHere.length > 1;
 
           const classes = ["hp-kk-cell"];
+
           if (selectedHere && !isFinished()) classes.push("is-selected");
           if (state.revealed) classes.push("is-revealed");
           else if (anyCorrectHere) classes.push("is-correct");
           else if (anyFilledHere) classes.push("is-filled");
+
           if (isSelectedStart) classes.push("is-slot-start");
           if (canToggle) classes.push("is-toggle-cell");
 
           const letter = state.revealed ? solutionBoard[r][c] : (currentBoard[r][c] || "");
+
           const label = letter
             ? `Row ${r + 1}, Column ${c + 1}, Letter ${letter}${canToggle ? ". Click again to switch direction." : ""}`
             : `Row ${r + 1}, Column ${c + 1}, empty slot${canToggle ? ". Click again to switch direction." : ""}`;
@@ -549,7 +598,10 @@ window.HareKrissKrossEngine = {
         btn.addEventListener("click", () => {
           const r = Number(btn.getAttribute("data-row"));
           const c = Number(btn.getAttribute("data-col"));
-          if (Number.isFinite(r) && Number.isFinite(c)) selectNextSlotAtCell(r, c);
+
+          if (Number.isFinite(r) && Number.isFinite(c)) {
+            selectNextSlotAtCell(r, c);
+          }
         });
       });
     }
@@ -557,9 +609,11 @@ window.HareKrissKrossEngine = {
     function renderWordListOnly() {
       const listEl = mount.querySelector("#hp-kk-word-list");
       const pillEl = mount.querySelector("#hp-kk-pill");
+
       if (!listEl) return;
 
       const usedWords = new Set(Object.values(state.assignments).filter(Boolean));
+
       if (pillEl) pillEl.textContent = `${placedCount()} placed`;
 
       listEl.innerHTML = words.map(word => {
@@ -568,6 +622,7 @@ window.HareKrissKrossEngine = {
         const found = normalizedPlacements.some(slot => slot.word === word && slotIsCorrect(slot.id));
 
         const classes = ["hp-kk-word-item"];
+
         if (selectedMatch && !used && !isFinished()) classes.push("is-match");
         if (used && !found) classes.push("is-used");
         if (found || state.revealed) classes.push("is-found");
@@ -627,11 +682,13 @@ window.HareKrissKrossEngine = {
 
     function showOverlay() {
       renderOverlayContent();
+
       const overlayEl = mount.querySelector("#hp-kk-overlay");
       if (!overlayEl) return;
 
       overlayEl.classList.add("on");
       overlayEl.setAttribute("aria-hidden", "false");
+
       state.overlaySeen = false;
       saveState();
     }
@@ -642,23 +699,24 @@ window.HareKrissKrossEngine = {
 
       overlayEl.classList.remove("on");
       overlayEl.setAttribute("aria-hidden", "true");
+
       state.overlaySeen = true;
       saveState();
     }
 
     function render() {
       mount.innerHTML = `
+        ${puzzleDate ? `
+          <div class="hp-puzzle-date">
+            ${escapeHtml(puzzleDate)}
+          </div>
+        ` : ""}
+
         <div class="hp-kk-layout">
           <div class="hp-kk-col-left">
             <div class="hp-kk-panel">
 
-  ${puzzleDate ? `
-    <div class="hp-puzzle-date">
-      ${escapeHtml(puzzleDate)}
-    </div>
-  ` : ""}
-
-  <div class="hp-kk-stats">
+              <div class="hp-kk-stats">
                 <div class="hp-kk-stat">
                   <span class="hp-kk-stat-value" id="hp-kk-correct-ratio">0/0</span>
                   <span class="hp-kk-stat-label">Correct</span>
@@ -820,6 +878,7 @@ window.HareKrissKrossEngine = {
 
     container.addEventListener("keydown", (e) => {
       const overlayEl = mount.querySelector("#hp-kk-overlay");
+
       if (overlayEl && overlayEl.classList.contains("on")) {
         if (e.key === "Escape") hideOverlay();
         return;
