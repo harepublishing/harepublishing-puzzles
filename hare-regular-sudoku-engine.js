@@ -10,16 +10,6 @@
    - A container with id="hp-sudoku-container"
    - A puzzle data block with id="hp-sudoku-data"
    - This engine loaded after the puzzle data block
-
-   Data format:
-   window.HareRegularSudokuData = {
-     defaultMode: "easy",
-     puzzles: {
-       easy: { puzzleId, puzzle, solution },
-       medium: { puzzleId, puzzle, solution },
-       hard: { puzzleId, puzzle, solution }
-     }
-   };
    ========================================================= */
 
 window.HareRegularSudokuEngine = {
@@ -665,30 +655,71 @@ window.HareRegularSudokuEngine = {
       const cfg = getConfig();
 
 mount.innerHTML = `
-  <div class="hp-layout">
-   <div class="hp-col-left">
+        <style>
+          #hp-sudoku-container .hp-rs-date {
+            display:block;
+            width:100%;
+            text-align:center;
+            font-size:24px;
+            font-weight:900;
+            color:#107FBB;
+            margin:0 auto 28px;
+            line-height:1.25;
+            font-family:Roboto, Arial, sans-serif;
+          }
 
-  ${pageData?.puzzleDate ? `
-    <div style="
-      text-align:center;
-      font-size:22px;
-      font-weight:700;
-      color:#107FBB;
-      margin-bottom:18px;
-      line-height:1.2;
-    ">
-      ${escapeHtml(formatPuzzleDate(pageData.puzzleDate))}
-    </div>
-  ` : ""}
+          #hp-sudoku-container .hp-rs-level-intro {
+            text-align:center;
+            margin-bottom:12px;
+          }
 
-  <div style="text-align:center; margin-bottom:12px;">
-    <div style="font-size:18px; font-weight:800; color:#24323d; margin-top:4px; line-height:1.25;">
-      Choose Your Sudoku Level
-    </div>
-    <div style="font-size:13px; color:#666; margin-top:4px; line-height:1.35;">
-      Select an easy, medium, or hard Sudoku puzzle and start solving.
-    </div>
-  </div>
+          #hp-sudoku-container .hp-rs-level-title {
+            font-size:18px;
+            font-weight:800;
+            color:#24323d;
+            margin-top:4px;
+            line-height:1.25;
+          }
+
+          #hp-sudoku-container .hp-rs-level-text {
+            font-size:13px;
+            color:#666;
+            margin-top:4px;
+            line-height:1.35;
+          }
+
+          /*
+            Regular Sudoku has the difficulty selector above the board,
+            while the Daily Sudoku Challenge does not. This offset keeps the
+            timer / number pad visually aligned with the actual puzzle board.
+          */
+          #hp-sudoku-container .hp-rs-right {
+            margin-top:155px;
+          }
+
+          @media (max-width: 900px) {
+            #hp-sudoku-container .hp-rs-right {
+              margin-top:0;
+            }
+          }
+        </style>
+
+        ${pageData?.puzzleDate ? `
+          <div class="hp-rs-date">
+            ${escapeHtml(formatPuzzleDate(pageData.puzzleDate))}
+          </div>
+        ` : ""}
+
+        <div class="hp-layout">
+          <div class="hp-col-left">
+            <div class="hp-rs-level-intro">
+              <div class="hp-rs-level-title">
+                Choose Your Sudoku Level
+              </div>
+              <div class="hp-rs-level-text">
+                Select an easy, medium, or hard Sudoku puzzle and start solving.
+              </div>
+            </div>
 
             <div class="hp-mode-switch-wrap">
               <div class="hp-mode-switch" role="tablist" aria-label="Choose Sudoku difficulty">
@@ -702,7 +733,7 @@ mount.innerHTML = `
             <div class="hp-grid" id="hp-board" role="grid" aria-label="${escapeHtml(cfg.boardAria)}"></div>
           </div>
 
-          <div class="hp-col-right">
+          <div class="hp-col-right hp-rs-right">
             <div class="hp-timer-area" aria-label="Timer">
               <span class="hp-timer-display" id="hp-timer">00:00:00</span>
               <div style="display:flex; gap:5px; justify-content:center;">
@@ -759,7 +790,6 @@ mount.innerHTML = `
           </div>
         </div>
       `;
-
       boardEl = mount.querySelector("#hp-board");
       statEl = mount.querySelector("#hp-stat");
       timerEl = mount.querySelector("#hp-timer");
