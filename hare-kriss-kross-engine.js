@@ -24,6 +24,7 @@ window.HareKrissKrossEngine = {
 
     const puzzleId = String(data.puzzleId || "1");
     const puzzleTitle = data.puzzleTitle || `Kriss Kross #${puzzleId}`;
+    const puzzleDate = data.puzzleDate || "";
     const placements = Array.isArray(data.placements) ? data.placements : [];
 
     const MORE_PUZZLES_URL = data.morePuzzlesUrl || "https://www.harepublishing.com/online-puzzles";
@@ -651,7 +652,13 @@ window.HareKrissKrossEngine = {
           <div class="hp-kk-col-left">
             <div class="hp-kk-panel">
 
-              <div class="hp-kk-stats">
+  ${puzzleDate ? `
+    <div class="hp-puzzle-date">
+      ${escapeHtml(puzzleDate)}
+    </div>
+  ` : ""}
+
+  <div class="hp-kk-stats">
                 <div class="hp-kk-stat">
                   <span class="hp-kk-stat-value" id="hp-kk-correct-ratio">0/0</span>
                   <span class="hp-kk-stat-label">Correct</span>
