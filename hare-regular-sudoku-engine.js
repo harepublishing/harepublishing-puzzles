@@ -656,17 +656,7 @@ window.HareRegularSudokuEngine = {
 
 mount.innerHTML = `
         <style>
-          #hp-sudoku-container .hp-rs-date {
-            display:block;
-            width:100%;
-            text-align:center;
-            font-size:24px;
-            font-weight:900;
-            color:#107FBB;
-            margin:0 auto 28px;
-            line-height:1.25;
-            font-family:Roboto, Arial, sans-serif;
-          }
+         
 
           #hp-sudoku-container .hp-rs-level-intro {
             text-align:center;
@@ -705,7 +695,7 @@ mount.innerHTML = `
         </style>
 
         ${pageData?.puzzleDate ? `
-          <div class="hp-rs-date">
+     <div class="hp-puzzle-date">
             ${escapeHtml(formatPuzzleDate(pageData.puzzleDate))}
           </div>
         ` : ""}
