@@ -174,9 +174,11 @@ window.HareKrissKrossEngine = {
       return;
     }
 
-    const MIN_GRID_SIZE = Number(data.minGridSize || 16);
-    const rowCount = Math.max(maxRow + 1, MIN_GRID_SIZE);
-    const colCount = Math.max(maxCol + 1, MIN_GRID_SIZE);
+  const minRows = Number(data.minRows || data.gridRows || data.minGridSize || 16);
+  const minCols = Number(data.minCols || data.gridCols || data.minGridSize || 16);
+
+  const rowCount = Math.max(maxRow + 1, minRows);
+  const colCount = Math.max(maxCol + 1, minCols);
 
     const cellsBySlot = new Map();
     const slotsByCell = new Map();
