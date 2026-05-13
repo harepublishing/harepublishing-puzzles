@@ -369,18 +369,11 @@ window.HareKrissKrossEngine = {
       render();
     }
 
-    function helpToggleStyle() {
-      return state.helpMode
-        ? "background:#00A54F;color:#fff;border-color:#00A54F;"
-        : "background:#e8f7ee;color:#00A54F;border-color:#00A54F;";
-    }
-
     function updateHelpToggleButton() {
       mount.querySelectorAll("[data-kk-help-toggle]").forEach(helpBtn => {
         helpBtn.textContent = state.helpMode ? "Hint: ON" : "Hint: OFF";
         helpBtn.classList.toggle("active", state.helpMode);
         helpBtn.setAttribute("aria-pressed", state.helpMode ? "true" : "false");
-        helpBtn.setAttribute("style", helpToggleStyle());
       });
     }
 
@@ -793,19 +786,18 @@ window.HareKrissKrossEngine = {
                 <div class="hp-kk-board" id="hp-kk-board" aria-label="Kriss Kross puzzle board"></div>
               </div>
 
-              <div class="hp-kk-mobile-toolbar" aria-label="Kriss Kross puzzle controls">
-                <button type="button" class="hp-kk-mobile-tool" data-a="open-help-modal">Help</button>
+              <div class="hp-puzzle-mobile-tools" aria-label="Kriss Kross puzzle controls">
+                <button type="button" class="hp-tool-btn help-info" data-a="open-help-modal">Help</button>
                 <button
                   type="button"
-                  class="hp-kk-mobile-tool help${state.helpMode ? " active" : ""}"
+                  class="hp-tool-btn hint-toggle${state.helpMode ? " active" : ""}"
                   data-kk-help-toggle="mobile"
-                  aria-pressed="${state.helpMode ? "true" : "false"}"
-                  style="${helpToggleStyle()}">
+                  aria-pressed="${state.helpMode ? "true" : "false"}">
                   ${state.helpMode ? "Hint: ON" : "Hint: OFF"}
                 </button>
-                <button type="button" class="hp-kk-mobile-tool" data-a="clear-selected">Clear</button>
-                <button type="button" class="hp-kk-mobile-tool danger" data-a="reset-puzzle">Reset</button>
-                <button type="button" class="hp-kk-mobile-tool reveal" data-a="reveal-answers">Reveal</button>
+                <button type="button" class="hp-tool-btn clear-tool" data-a="clear-selected">Clear</button>
+                <button type="button" class="hp-tool-btn danger" data-a="reset-puzzle">Reset</button>
+                <button type="button" class="hp-tool-btn reveal" data-a="reveal-answers">Reveal</button>
               </div>
 
               <div class="hp-kk-actions">
@@ -818,18 +810,17 @@ window.HareKrissKrossEngine = {
           <div class="hp-kk-col-right">
             <div class="hp-kk-panel">
 
-              <div class="hp-kk-desktop-tools" aria-label="Kriss Kross puzzle controls">
-                <button type="button" class="hp-kk-btn" data-a="open-help-modal">Help</button>
+              <div class="hp-puzzle-tools" aria-label="Kriss Kross puzzle controls">
+                <button type="button" class="hp-tool-btn help-info" data-a="open-help-modal">Help</button>
                 <button
                   type="button"
-                  class="hp-kk-btn help${state.helpMode ? " active" : ""}"
+                  class="hp-tool-btn hint-toggle${state.helpMode ? " active" : ""}"
                   id="hp-kk-help-toggle"
                   data-kk-help-toggle="desktop"
-                  aria-pressed="${state.helpMode ? "true" : "false"}"
-                  style="${helpToggleStyle()}">
+                  aria-pressed="${state.helpMode ? "true" : "false"}">
                   ${state.helpMode ? "Hint: ON" : "Hint: OFF"}
                 </button>
-                <button type="button" class="hp-kk-btn" id="hp-kk-clear-slot" data-a="clear-selected">Clear</button>
+                <button type="button" class="hp-tool-btn clear-tool" id="hp-kk-clear-slot" data-a="clear-selected">Clear</button>
               </div>
 
               <div class="hp-kk-words-header">
@@ -860,8 +851,8 @@ window.HareKrissKrossEngine = {
             </div>
 
             <div class="hp-modal-actions">
-              <a class="hp-link-btn primary-outline" href="${escapeHtml(MORE_PUZZLES_URL)}">More Online Puzzles</a>
-              <a class="hp-link-btn secondary-outline" href="${escapeHtml(SHOP_URL)}">Get Puzzle Books</a>
+              <a class="hp-link-btn secondary" href="${escapeHtml(MORE_PUZZLES_URL)}">More Online Puzzles</a>
+              <a class="hp-link-btn primary" href="${escapeHtml(SHOP_URL)}">Get Puzzle Books</a>
 
               <button class="hp-link-btn neutral" data-a="share">Share</button>
               <button class="hp-link-btn neutral" data-a="close-overlay">Back to Puzzle</button>
@@ -877,12 +868,12 @@ window.HareKrissKrossEngine = {
           <div class="hp-modal" role="dialog" aria-modal="true" aria-label="How to play Kriss Kross">
             <h3>How to Play</h3>
 
-            <div class="hp-kk-help hp-kk-help-modal-content">
-              <span class="hp-kk-help-line">Click a <strong>slot in the grid</strong>, then click a matching word from the list.</span>
-              <span class="hp-kk-help-line">Use the <strong>crossing letters</strong> to help place each word correctly.</span>
-              <span class="hp-kk-help-line">If a square belongs to two words, click it again to <strong>switch direction</strong>.</span>
-              <span class="hp-kk-help-line"><strong>Hint: ON</strong> highlights words that match the selected slot length.</span>
-              <span class="hp-kk-help-line"><strong>Reveal Answers</strong> ends the puzzle and shows the completed grid.</span>
+            <div class="hp-help-modal-content">
+              <span class="hp-help-line">Click a <strong>slot in the grid</strong>, then click a matching word from the list.</span>
+              <span class="hp-help-line">Use the <strong>crossing letters</strong> to help place each word correctly.</span>
+              <span class="hp-help-line">If a square belongs to two words, click it again to <strong>switch direction</strong>.</span>
+              <span class="hp-help-line"><strong>Hint: ON</strong> highlights words that match the selected slot length.</span>
+              <span class="hp-help-line"><strong>Reveal Answers</strong> ends the puzzle and shows the completed grid.</span>
             </div>
 
             <div class="hp-modal-actions">
