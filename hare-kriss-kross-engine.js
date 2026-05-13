@@ -69,6 +69,10 @@ window.HareKrissKrossEngine = {
       });
     }
 
+    // =========================================================
+    // SCHEMA
+    // =========================================================
+
     (() => {
       const existing = document.getElementById("hp-kk-schema");
       if (existing) existing.remove();
@@ -372,13 +376,15 @@ window.HareKrissKrossEngine = {
     }
 
     function updateHelpToggleButton() {
-      const helpBtn = mount.querySelector("#hp-kk-help-toggle");
-      if (!helpBtn) return;
-
-      helpBtn.textContent = state.helpMode ? "Help Mode: ON" : "Help Mode: OFF";
-      helpBtn.classList.toggle("active", state.helpMode);
-      helpBtn.setAttribute("aria-pressed", state.helpMode ? "true" : "false");
-      helpBtn.setAttribute("style", helpToggleStyle());
+      mount.querySelectorAll("[data-kk-help-toggle]").forEach(helpBtn => {
+        const compact = helpBtn.getAttribute("data-kk-help-toggle") === "mobile";
+        helpBtn.textContent = compact
+          ? (state.helpMode ? "Hint ON" : "Hint OFF")
+          : (state.helpMode ? "Help Mode: ON" : "Help Mode: OFF");
+        helpBtn.classList.toggle("active", state.helpMode);
+        helpBtn.setAttribute("aria-pressed", state.helpMode ? "true" : "false");
+        helpBtn.setAttribute("style", helpToggleStyle());
+      });
     }
 
     function toggleHelpMode() {
@@ -733,6 +739,22 @@ window.HareKrissKrossEngine = {
       saveState();
     }
 
+    function showHelpModal() {
+      const modalEl = mount.querySelector("#hp-kk-help-modal");
+      if (!modalEl) return;
+
+      modalEl.classList.add("on");
+      modalEl.setAttribute("aria-hidden", "false");
+    }
+
+    function hideHelpModal() {
+      const modalEl = mount.querySelector("#hp-kk-help-modal");
+      if (!modalEl) return;
+
+      modalEl.classList.remove("on");
+      modalEl.setAttribute("aria-hidden", "true");
+    }
+
     function render() {
       mount.innerHTML = `
         ${puzzleDate ? `
@@ -774,6 +796,21 @@ window.HareKrissKrossEngine = {
                 <div class="hp-kk-board" id="hp-kk-board" aria-label="Kriss Kross puzzle board"></div>
               </div>
 
+              <div class="hp-kk-mobile-toolbar" aria-label="Kriss Kross puzzle controls">
+                <button type="button" class="hp-kk-mobile-tool" data-a="open-help-modal">Help</button>
+                <button
+                  type="button"
+                  class="hp-kk-mobile-tool help${state.helpMode ? " active" : ""}"
+                  data-kk-help-toggle="mobile"
+                  aria-pressed="${state.helpMode ? "true" : "false"}"
+                  style="${helpToggleStyle()}">
+                  ${state.helpMode ? "Hint ON" : "Hint OFF"}
+                </button>
+                <button type="button" class="hp-kk-mobile-tool" data-a="clear-selected">Clear</button>
+                <button type="button" class="hp-kk-mobile-tool danger" data-a="reset-puzzle">Reset</button>
+                <button type="button" class="hp-kk-mobile-tool reveal" data-a="reveal-answers">Reveal</button>
+              </div>
+
               <div class="hp-kk-actions">
                 <button type="button" class="hp-kk-btn" id="hp-kk-clear-slot">Clear Selected</button>
                 <button type="button" class="hp-kk-btn danger" id="hp-kk-reset">Reset Puzzle</button>
@@ -800,6 +837,7 @@ window.HareKrissKrossEngine = {
                 type="button"
                 class="hp-kk-btn help${state.helpMode ? " active" : ""}"
                 id="hp-kk-help-toggle"
+                data-kk-help-toggle="desktop"
                 aria-pressed="${state.helpMode ? "true" : "false"}"
                 style="${helpToggleStyle()}">
                 ${state.helpMode ? "Help Mode: ON" : "Help Mode: OFF"}
@@ -845,6 +883,26 @@ window.HareKrissKrossEngine = {
             <small>Hare Publishing • Kriss Kross</small>
           </div>
         </div>
+
+        <div class="hp-overlay hp-kk-help-modal" id="hp-kk-help-modal" aria-hidden="true">
+          <div class="hp-modal" role="dialog" aria-modal="true" aria-label="How to play Kriss Kross">
+            <h3>How to Play</h3>
+
+            <div class="hp-kk-help hp-kk-help-modal-content">
+              <span class="hp-kk-help-line">Click a <strong>slot in the grid</strong>, then click a matching word from the list.</span>
+              <span class="hp-kk-help-line">Use the <strong>crossing letters</strong> to help place each word correctly.</span>
+              <span class="hp-kk-help-line">If a square belongs to two words, click it again to <strong>switch direction</strong>.</span>
+              <span class="hp-kk-help-line"><strong>Hint ON</strong> highlights words that match the selected slot length.</span>
+              <span class="hp-kk-help-line"><strong>Reveal Answers</strong> ends the puzzle and shows the completed grid.</span>
+            </div>
+
+            <div class="hp-modal-actions">
+              <button class="hp-link-btn neutral full" data-a="close-help-modal">Back to Puzzle</button>
+            </div>
+
+            <small>Hare Publishing • Kriss Kross</small>
+          </div>
+        </div>
       `;
 
       renderStats();
@@ -862,13 +920,16 @@ window.HareKrissKrossEngine = {
       const clearBtn = mount.querySelector("#hp-kk-clear-slot");
       const resetBtn = mount.querySelector("#hp-kk-reset");
       const revealBtn = mount.querySelector("#hp-kk-reveal");
-      const helpBtn = mount.querySelector("#hp-kk-help-toggle");
       const overlayEl = mount.querySelector("#hp-kk-overlay");
+      const helpModalEl = mount.querySelector("#hp-kk-help-modal");
 
       if (clearBtn) clearBtn.addEventListener("click", clearSelectedSlot);
       if (resetBtn) resetBtn.addEventListener("click", resetPuzzle);
       if (revealBtn) revealBtn.addEventListener("click", revealAnswers);
-      if (helpBtn) helpBtn.addEventListener("click", toggleHelpMode);
+
+      mount.querySelectorAll("[data-kk-help-toggle]").forEach(helpBtn => {
+        helpBtn.addEventListener("click", toggleHelpMode);
+      });
 
       mount.querySelectorAll("[data-a]").forEach(btn => {
         btn.addEventListener("click", () => {
@@ -879,8 +940,28 @@ window.HareKrissKrossEngine = {
             return;
           }
 
+          if (action === "open-help-modal") {
+            showHelpModal();
+            return;
+          }
+
+          if (action === "close-help-modal") {
+            hideHelpModal();
+            return;
+          }
+
+          if (action === "clear-selected") {
+            clearSelectedSlot();
+            return;
+          }
+
           if (action === "reset-puzzle") {
             resetPuzzle();
+            return;
+          }
+
+          if (action === "reveal-answers") {
+            revealAnswers();
             return;
           }
 
@@ -914,10 +995,22 @@ window.HareKrissKrossEngine = {
           if (e.target === overlayEl) hideOverlay();
         });
       }
+
+      if (helpModalEl) {
+        helpModalEl.addEventListener("click", (e) => {
+          if (e.target === helpModalEl) hideHelpModal();
+        });
+      }
     }
 
     container.addEventListener("keydown", (e) => {
       const overlayEl = mount.querySelector("#hp-kk-overlay");
+      const helpModalEl = mount.querySelector("#hp-kk-help-modal");
+
+      if (helpModalEl && helpModalEl.classList.contains("on")) {
+        if (e.key === "Escape") hideHelpModal();
+        return;
+      }
 
       if (overlayEl && overlayEl.classList.contains("on")) {
         if (e.key === "Escape") hideOverlay();
