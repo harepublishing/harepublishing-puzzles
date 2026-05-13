@@ -174,11 +174,11 @@ window.HareKrissKrossEngine = {
       return;
     }
 
-  const minRows = Number(data.minRows || data.gridRows || data.minGridSize || 16);
-  const minCols = Number(data.minCols || data.gridCols || data.minGridSize || 16);
+    const minRows = Number(data.minRows || data.gridRows || data.minGridSize || 16);
+    const minCols = Number(data.minCols || data.gridCols || data.minGridSize || 16);
 
-  const rowCount = Math.max(maxRow + 1, minRows);
-  const colCount = Math.max(maxCol + 1, minCols);
+    const rowCount = Math.max(maxRow + 1, minRows);
+    const colCount = Math.max(maxCol + 1, minCols);
 
     const cellsBySlot = new Map();
     const slotsByCell = new Map();
@@ -266,6 +266,7 @@ window.HareKrissKrossEngine = {
       return {
         assignments: {},
         selectedSlotId: "",
+        helpMode: true,
         revealed: false,
         solved: false,
         overlaySeen: false
@@ -362,6 +363,32 @@ window.HareKrissKrossEngine = {
 
       saveState();
       render();
+    }
+
+    function helpToggleStyle() {
+      return state.helpMode
+        ? "background:#00A54F;color:#fff;border-color:#00A54F;"
+        : "background:#e8f7ee;color:#00A54F;border-color:#00A54F;";
+    }
+
+    function updateHelpToggleButton() {
+      const helpBtn = mount.querySelector("#hp-kk-help-toggle");
+      if (!helpBtn) return;
+
+      helpBtn.textContent = state.helpMode ? "Help Mode: ON" : "Help Mode: OFF";
+      helpBtn.classList.toggle("active", state.helpMode);
+      helpBtn.setAttribute("aria-pressed", state.helpMode ? "true" : "false");
+      helpBtn.setAttribute("style", helpToggleStyle());
+    }
+
+    function toggleHelpMode() {
+      if (isFinished()) return;
+
+      state.helpMode = !state.helpMode;
+      saveState();
+      updateHelpToggleButton();
+      renderStatus();
+      renderWordListOnly();
     }
 
     function canFitWordInSlot(word, slotId) {
@@ -625,7 +652,7 @@ window.HareKrissKrossEngine = {
 
         const classes = ["hp-kk-word-item"];
 
-        if (selectedMatch && !used && !isFinished()) classes.push("is-match");
+        if (state.helpMode && selectedMatch && !used && !isFinished()) classes.push("is-match");
         if (used && !found) classes.push("is-used");
         if (found || state.revealed) classes.push("is-found");
 
@@ -769,6 +796,15 @@ window.HareKrissKrossEngine = {
                 </div>
               </details>
 
+              <button
+                type="button"
+                class="hp-kk-btn help${state.helpMode ? " active" : ""}"
+                id="hp-kk-help-toggle"
+                aria-pressed="${state.helpMode ? "true" : "false"}"
+                style="${helpToggleStyle()}">
+                ${state.helpMode ? "Help Mode: ON" : "Help Mode: OFF"}
+              </button>
+
               <div class="hp-kk-words-header">
                 <h3>Place These Words</h3>
                 <span class="hp-kk-pill" id="hp-kk-pill">0 placed</span>
@@ -826,11 +862,13 @@ window.HareKrissKrossEngine = {
       const clearBtn = mount.querySelector("#hp-kk-clear-slot");
       const resetBtn = mount.querySelector("#hp-kk-reset");
       const revealBtn = mount.querySelector("#hp-kk-reveal");
+      const helpBtn = mount.querySelector("#hp-kk-help-toggle");
       const overlayEl = mount.querySelector("#hp-kk-overlay");
 
       if (clearBtn) clearBtn.addEventListener("click", clearSelectedSlot);
       if (resetBtn) resetBtn.addEventListener("click", resetPuzzle);
       if (revealBtn) revealBtn.addEventListener("click", revealAnswers);
+      if (helpBtn) helpBtn.addEventListener("click", toggleHelpMode);
 
       mount.querySelectorAll("[data-a]").forEach(btn => {
         btn.addEventListener("click", () => {
