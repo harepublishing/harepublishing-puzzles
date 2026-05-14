@@ -168,14 +168,37 @@ window.HareCryptogramEngine = {
       const s = upper(solutionText);
       let total = 0;
       let correct = 0;
+      let filled = 0;
 
       for (let i = 0; i < p.length; i++) {
         if (!isLetter(p[i])) continue;
         total++;
+        if (getMapped(p[i])) filled++;
         if (getMapped(p[i]) === s[i]) correct++;
       }
 
-      return { correct, total };
+      return {
+        correct,
+        total,
+        filled,
+        left: Math.max(0, total - correct),
+        percent: total ? Math.round((correct / total) * 100) : 0
+      };
+    }
+
+    function countUniqueCipherLetters() {
+      const p = upper(puzzleText);
+      const set = new Set();
+
+      for (let i = 0; i < p.length; i++) {
+        if (isLetter(p[i])) set.add(p[i]);
+      }
+
+      return set.size;
+    }
+
+    function countUsedHints() {
+      return state.usedHints.filter(Boolean).length;
     }
 
     function puzzleSolved() {
@@ -222,6 +245,7 @@ window.HareCryptogramEngine = {
       state = defaultState();
       saveState();
       hideOverlay();
+      hideHelpModal();
       render();
     }
 
@@ -348,16 +372,43 @@ window.HareCryptogramEngine = {
       }
     }
 
-    function renderHints() {
+    function renderStats() {
+      const counts = countSolvedLetters();
+      const usedHints = countUsedHints();
+
       return `
-        <div class="hp-crypto-hints">
+        <div class="hp-crypto-stats" aria-label="Cryptogram progress">
+          <div class="hp-crypto-stat">
+            <span class="hp-crypto-stat-value">${counts.correct}/${counts.total}</span>
+            <span class="hp-crypto-stat-label">Correct</span>
+          </div>
+          <div class="hp-crypto-stat">
+            <span class="hp-crypto-stat-value">${counts.left}</span>
+            <span class="hp-crypto-stat-label">Left</span>
+          </div>
+          <div class="hp-crypto-stat">
+            <span class="hp-crypto-stat-value">${usedHints}/${hints.length}</span>
+            <span class="hp-crypto-stat-label">Hints Used</span>
+          </div>
+        </div>
+
+        <div class="hp-crypto-progress" aria-label="${counts.percent}% complete">
+          <span class="hp-crypto-progress-fill" style="width:${counts.percent}%"></span>
+        </div>
+      `;
+    }
+
+    function renderTopControls() {
+      return `
+        <div class="hp-puzzle-tools hp-crypto-tools" aria-label="Cryptogram puzzle controls">
+          <button type="button" class="hp-tool-btn help-info" data-a="open-help-modal">Help</button>
           ${hints.map((hint, idx) => {
             let label = hint.label || `Hint ${idx + 1}`;
             if (state.usedHints[idx]) {
               if (hint.type === "mapping") label = `${label}: ${hint.cipher} = ${hint.plain}`;
               if (hint.type === "author") label = `${label}: ${hint.value}`;
             }
-            return `<button type="button" class="hp-crypto-hint-btn${state.usedHints[idx] ? " is-used" : ""}" data-hint="${idx}">${escapeHtml(label)}</button>`;
+            return `<button type="button" class="hp-tool-btn hint-toggle${state.usedHints[idx] ? " active" : ""}" data-hint="${idx}">${escapeHtml(label)}</button>`;
           }).join("")}
         </div>
       `;
@@ -430,11 +481,14 @@ window.HareCryptogramEngine = {
     }
 
     function statusMessage() {
-      if (state.solved) return "Cryptogram solved! 🎉";
-      if (state.revealed) return "Answer revealed.";
+      const counts = countSolvedLetters();
+
+      if (state.solved) return "Cryptogram solved! Great job cracking the quote.";
+      if (state.revealed) return "Answer revealed. Try another Daily Brain Boost puzzle when you are ready.";
       if (state.checked) return "Progress checked. Correct letters are green and incorrect letters are red.";
       if (state.selectedCipher) return `Selected cipher letter: ${state.selectedCipher}`;
-      return "Select a cipher letter, then choose the matching plain letter.";
+      if (counts.filled > 0) return "Keep going — choose another cipher letter or check your progress.";
+      return "Select a cipher letter, then choose its matching plain letter.";
     }
 
     function renderKeyboard() {
@@ -506,7 +560,7 @@ window.HareCryptogramEngine = {
       overlayEl.classList.add("on");
       overlayEl.setAttribute("aria-hidden", "false");
 
-      state.overlaySeen = false;
+      state.overlaySeen = true;
       saveState();
     }
 
@@ -536,16 +590,21 @@ window.HareCryptogramEngine = {
     }
 
     function render() {
+      const uniqueCipherCount = countUniqueCipherLetters();
+
       mount.innerHTML = `
         ${puzzleDate ? `<div class="hp-puzzle-date">${escapeHtml(puzzleDate)}</div>` : ""}
 
         <div class="hp-crypto-shell">
           <div class="hp-crypto-card">
-            <div class="hp-puzzle-tools" aria-label="Cryptogram puzzle controls">
-              <button type="button" class="hp-tool-btn help-info" data-a="open-help-modal">Help</button>
+            ${renderStats()}
+            ${renderTopControls()}
+
+            <div class="hp-crypto-meta-row">
+              <span class="hp-badge">${escapeHtml(puzzleTitle)}</span>
+              <span class="hp-badge">${uniqueCipherCount} cipher letters</span>
             </div>
 
-            ${renderHints()}
             ${renderAuthorReveal()}
             ${renderPuzzle()}
             ${renderKeyboard()}
