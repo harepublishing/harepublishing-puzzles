@@ -135,6 +135,8 @@ window.HareDailySudokuChallengeEngine = {
         running: false,
         solved: false,
         revealed: false,
+        solvedAt: "",
+        revealedAt: "",
         overlaySeen: false
       };
     }
@@ -147,6 +149,8 @@ window.HareDailySudokuChallengeEngine = {
 
         if (typeof merged.revealed !== "boolean") merged.revealed = false;
         if (typeof merged.overlaySeen !== "boolean") merged.overlaySeen = false;
+        if (typeof merged.solvedAt !== "string") merged.solvedAt = "";
+        if (typeof merged.revealedAt !== "string") merged.revealedAt = "";
 
         return merged;
       } catch {
@@ -388,6 +392,13 @@ window.HareDailySudokuChallengeEngine = {
     function showSolved() {
       state.solved = true;
       state.revealed = false;
+
+      if (!state.solvedAt) {
+        state.solvedAt = new Date().toISOString();
+      }
+
+      state.revealedAt = "";
+
       pauseTimer(true);
       renderOverlayContent();
       overlayEl.classList.add("on");
@@ -418,6 +429,11 @@ window.HareDailySudokuChallengeEngine = {
 
       state.solved = false;
       state.revealed = true;
+
+      if (!state.revealedAt) {
+        state.revealedAt = new Date().toISOString();
+      }
+
       state.overlaySeen = false;
 
       pauseTimer(true);
@@ -624,6 +640,8 @@ window.HareDailySudokuChallengeEngine = {
           hideOverlay();
           state.solved = false;
           state.revealed = false;
+          state.solvedAt = "";
+          state.revealedAt = "";
           state.overlaySeen = false;
           state.elapsed = 0;
           pauseTimer(true);
