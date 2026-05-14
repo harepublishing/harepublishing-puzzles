@@ -273,6 +273,8 @@ window.HareKrissKrossEngine = {
         helpMode: true,
         revealed: false,
         solved: false,
+        solvedAt: "",
+        revealedAt: "",
         overlaySeen: false
       };
     }
@@ -281,7 +283,12 @@ window.HareKrissKrossEngine = {
       try {
         const raw = localStorage.getItem(STORAGE_KEY);
         const parsed = raw ? JSON.parse(raw) : null;
-        return parsed ? { ...defaultState(), ...parsed } : defaultState();
+        const merged = parsed ? { ...defaultState(), ...parsed } : defaultState();
+
+        if (typeof merged.solvedAt !== "string") merged.solvedAt = "";
+        if (typeof merged.revealedAt !== "string") merged.revealedAt = "";
+
+        return merged;
       } catch {
         return defaultState();
       }
@@ -469,9 +476,15 @@ window.HareKrissKrossEngine = {
       state.assignments[slotId] = word;
       state.selectedSlotId = "";
       state.revealed = false;
+      state.revealedAt = "";
 
       if (allSlotsCorrect()) {
         state.solved = true;
+
+        if (!state.solvedAt) {
+          state.solvedAt = new Date().toISOString();
+        }
+
         state.overlaySeen = false;
       } else {
         state.solved = false;
@@ -494,6 +507,8 @@ window.HareKrissKrossEngine = {
       state.selectedSlotId = "";
       state.revealed = false;
       state.solved = false;
+      state.solvedAt = "";
+      state.revealedAt = "";
       state.overlaySeen = false;
 
       saveState();
@@ -517,6 +532,11 @@ window.HareKrissKrossEngine = {
       state.selectedSlotId = "";
       state.revealed = true;
       state.solved = false;
+
+      if (!state.revealedAt) {
+        state.revealedAt = new Date().toISOString();
+      }
+
       state.overlaySeen = false;
 
       saveState();
@@ -766,6 +786,7 @@ window.HareKrissKrossEngine = {
                 <div class="hp-kk-stat">
                   <span class="hp-kk-stat-value" id="hp-kk-left">0</span>
                   <span class="hp-kk-stat-label">Left</span>
+
                 </div>
 
                 <div class="hp-kk-stat">
