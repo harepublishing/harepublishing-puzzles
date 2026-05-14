@@ -229,6 +229,8 @@ window.HareRegularSudokuEngine = {
       running: false,
       solved: false,
       revealed: false,
+      solvedAt: "",
+      revealedAt: "",
       overlaySeen: false
     });
 
@@ -244,6 +246,8 @@ window.HareRegularSudokuEngine = {
         const merged = parsed ? { ...defaultState(), ...parsed } : defaultState();
         if (typeof merged.revealed !== "boolean") merged.revealed = false;
         if (typeof merged.overlaySeen !== "boolean") merged.overlaySeen = false;
+        if (typeof merged.solvedAt !== "string") merged.solvedAt = "";
+        if (typeof merged.revealedAt !== "string") merged.revealedAt = "";
         if (!Array.isArray(merged.cells) || merged.cells.length !== 81) merged.cells = defaultState().cells;
         merged.cells = merged.cells.map(cell => ({
           value: String(cell?.value || ""),
@@ -465,6 +469,13 @@ window.HareRegularSudokuEngine = {
 
       state.solved = true;
       state.revealed = false;
+
+      if (!state.solvedAt) {
+        state.solvedAt = new Date().toISOString();
+      }
+
+      state.revealedAt = "";
+
       pauseTimer(true);
       renderOverlayContent();
       overlayEl.classList.add("on");
@@ -521,6 +532,11 @@ window.HareRegularSudokuEngine = {
 
       state.solved = false;
       state.revealed = true;
+
+      if (!state.revealedAt) {
+        state.revealedAt = new Date().toISOString();
+      }
+
       state.overlaySeen = false;
 
       pauseTimer(true);
@@ -821,6 +837,8 @@ mount.innerHTML = `
 
       state.solved = false;
       state.revealed = false;
+      state.solvedAt = "";
+      state.revealedAt = "";
       state.overlaySeen = false;
       state.elapsed = 0;
 
