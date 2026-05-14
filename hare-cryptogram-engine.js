@@ -601,7 +601,6 @@ window.HareCryptogramEngine = {
             ${renderTopControls()}
 
             <div class="hp-crypto-meta-row">
-              <span class="hp-badge">${escapeHtml(puzzleTitle)}</span>
               <span class="hp-badge">${uniqueCipherCount} cipher letters</span>
             </div>
 
