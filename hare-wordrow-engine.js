@@ -1,7 +1,7 @@
 /* =========================================================
    HARE PUBLISHING WORDROW ENGINE
    GitHub/jsDelivr hosted engine file
-   Updated: 2026-05-15 — stats/progress/help modal UI
+   Updated: 2026-05-15 — stats/progress/help modal UI + correct-letter stat fix
 
    Suggested filename:
    hare-wordrow-engine.js
@@ -427,9 +427,22 @@ window.HareWordrowEngine = {
       helpEl.setAttribute("aria-hidden", "true");
     }
 
+    function correctLetterCount() {
+      if (state.solved || state.revealed) return 5;
+
+      let count = 0;
+
+      for (let pos = 0; pos < 5; pos++) {
+        const hasCorrect = state.statuses.some(statusRow => statusRow && statusRow[pos] === "correct");
+        if (hasCorrect) count++;
+      }
+
+      return count;
+    }
+
     function render() {
       const progress = progressPercent();
-      const enteredLetters = state.current.length;
+      const correctLetters = correctLetterCount();
 
       mount.innerHTML = `
         ${puzzleDate ? `<div class="hp-puzzle-date">${escapeHtml(puzzleDate)}</div>` : ""}
@@ -447,8 +460,8 @@ window.HareWordrowEngine = {
             </div>
 
             <div class="hpw-stat">
-              <span class="hpw-stat-value">${enteredLetters}/5</span>
-              <span class="hpw-stat-label">Letters</span>
+              <span class="hpw-stat-value">${correctLetters}/5</span>
+              <span class="hpw-stat-label">Correct Letters</span>
             </div>
           </div>
 
@@ -456,14 +469,13 @@ window.HareWordrowEngine = {
             <div class="hpw-progress-fill" style="width:${progress}%;"></div>
           </div>
 
-          <div class="hpw-toast" aria-live="polite">
-            <span class="hpw-toast-msg">${escapeHtml(getStatusMessage())}</span>
-          </div>
-
           <div class="hp-puzzle-tools" aria-label="Wordrow puzzle controls">
             <button type="button" class="hp-tool-btn help-info" data-a="open-help-modal">Help</button>
-            <button type="button" class="hp-tool-btn hint-toggle" data-a="share">Share</button>
             <button type="button" class="hp-tool-btn clear-tool" data-a="clear-current">Clear</button>
+          </div>
+
+          <div class="hpw-toast" aria-live="polite">
+            <span class="hpw-toast-msg">${escapeHtml(getStatusMessage())}</span>
           </div>
 
           <div class="hpw-grid" id="hpw-grid">${renderGrid()}</div>
@@ -472,7 +484,6 @@ window.HareWordrowEngine = {
 
           <div class="hp-puzzle-mobile-tools" aria-label="Wordrow puzzle controls">
             <button type="button" class="hp-tool-btn help-info" data-a="open-help-modal">Help</button>
-            <button type="button" class="hp-tool-btn hint-toggle" data-a="share">Share</button>
             <button type="button" class="hp-tool-btn clear-tool" data-a="clear-current">Clear</button>
             <button type="button" class="hp-tool-btn danger" data-a="reset-puzzle">Reset</button>
             <button type="button" class="hp-tool-btn reveal" data-a="reveal-answer">Reveal</button>
