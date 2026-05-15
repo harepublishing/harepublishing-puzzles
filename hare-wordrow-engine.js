@@ -1,6 +1,7 @@
 /* =========================================================
    HARE PUBLISHING WORDROW ENGINE
    GitHub/jsDelivr hosted engine file
+   Updated: 2026-05-15 — stats/progress/help modal UI
 
    Suggested filename:
    hare-wordrow-engine.js
@@ -395,37 +396,90 @@ window.HareWordrowEngine = {
     }
 
     function getStatusMessage() {
-      if (state.solved) return "Solved previously! 🎉";
+      if (state.solved) return "Wordrow solved! 🎉";
       if (state.revealed) return "Answer revealed.";
-      if (state.lost) return "Played previously.";
+      if (state.lost) return "Puzzle over.";
+      if (state.current.length) return `Current guess: ${state.current.length}/5 letters.`;
+      if (state.guesses.length) return "Next guess…";
       return "Guess the hidden word in 6 tries.";
     }
 
+    function guessesLeft() {
+      return Math.max(0, MAX_GUESSES - state.guesses.length);
+    }
+
+    function progressPercent() {
+      if (state.solved || state.revealed || state.lost) return 100;
+      return Math.min(100, Math.round((state.guesses.length / MAX_GUESSES) * 100));
+    }
+
+    function showHelpModal() {
+      const helpEl = mount.querySelector("#hpw-help-modal");
+      if (!helpEl) return;
+      helpEl.classList.add("on");
+      helpEl.setAttribute("aria-hidden", "false");
+    }
+
+    function hideHelpModal() {
+      const helpEl = mount.querySelector("#hpw-help-modal");
+      if (!helpEl) return;
+      helpEl.classList.remove("on");
+      helpEl.setAttribute("aria-hidden", "true");
+    }
+
     function render() {
+      const progress = progressPercent();
+      const enteredLetters = state.current.length;
+
       mount.innerHTML = `
         ${puzzleDate ? `<div class="hp-puzzle-date">${escapeHtml(puzzleDate)}</div>` : ""}
 
         <div class="hpw-wrap">
+          <div class="hpw-stats" aria-label="Wordrow puzzle progress">
+            <div class="hpw-stat">
+              <span class="hpw-stat-value">${state.guesses.length}/${MAX_GUESSES}</span>
+              <span class="hpw-stat-label">Guesses</span>
+            </div>
+
+            <div class="hpw-stat">
+              <span class="hpw-stat-value">${guessesLeft()}</span>
+              <span class="hpw-stat-label">Left</span>
+            </div>
+
+            <div class="hpw-stat">
+              <span class="hpw-stat-value">${enteredLetters}/5</span>
+              <span class="hpw-stat-label">Letters</span>
+            </div>
+          </div>
+
+          <div class="hpw-progress" aria-hidden="true">
+            <div class="hpw-progress-fill" style="width:${progress}%;"></div>
+          </div>
+
           <div class="hpw-toast" aria-live="polite">
             <span class="hpw-toast-msg">${escapeHtml(getStatusMessage())}</span>
+          </div>
+
+          <div class="hp-puzzle-tools" aria-label="Wordrow puzzle controls">
+            <button type="button" class="hp-tool-btn help-info" data-a="open-help-modal">Help</button>
+            <button type="button" class="hp-tool-btn hint-toggle" data-a="share">Share</button>
+            <button type="button" class="hp-tool-btn clear-tool" data-a="clear-current">Clear</button>
           </div>
 
           <div class="hpw-grid" id="hpw-grid">${renderGrid()}</div>
 
           <div class="hpw-kb" aria-label="Keyboard">${renderKeyboard()}</div>
 
-          <div class="hpw-help-panel">
-            <div class="hpw-help">
-              <span class="hpw-help-title">How to play</span>
-              <span class="hpw-help-line"><strong style="color:var(--hp-green);">Green</strong> = right letter, right spot</span>
-              <span class="hpw-help-line"><strong style="color:var(--hp-orange);">Orange</strong> = right letter, wrong spot</span>
-              <span class="hpw-help-line"><strong style="color:#6b7280;">Gray</strong> = not in the word</span>
-              <span class="hpw-help-line"><strong>Enter</strong> submits your guess <span class="hpw-help-sep">•</span> <strong>Backspace</strong> erases a letter</span>
-            </div>
+          <div class="hp-puzzle-mobile-tools" aria-label="Wordrow puzzle controls">
+            <button type="button" class="hp-tool-btn help-info" data-a="open-help-modal">Help</button>
+            <button type="button" class="hp-tool-btn hint-toggle" data-a="share">Share</button>
+            <button type="button" class="hp-tool-btn clear-tool" data-a="clear-current">Clear</button>
+            <button type="button" class="hp-tool-btn danger" data-a="reset-puzzle">Reset</button>
+            <button type="button" class="hp-tool-btn reveal" data-a="reveal-answer">Reveal</button>
           </div>
 
           <div class="hpw-actions">
-            <button type="button" class="hpw-btn" data-a="reset-puzzle">Reset Puzzle</button>
+            <button type="button" class="hpw-btn danger" data-a="reset-puzzle">Reset Puzzle</button>
             <button type="button" class="hpw-btn reveal" data-a="reveal-answer">Reveal Answer</button>
           </div>
         </div>
@@ -452,6 +506,32 @@ window.HareWordrowEngine = {
               <button type="button" class="hp-link-btn neutral" data-a="share">Share</button>
               <button type="button" class="hp-link-btn neutral" data-a="close-overlay">Back to Puzzle</button>
               <button type="button" class="hp-link-btn danger full" data-a="reset-puzzle">Reset Puzzle</button>
+            </div>
+
+            <small>Hare Publishing • Wordrow</small>
+          </div>
+        </div>
+
+        <div class="hp-overlay" id="hpw-help-modal" aria-hidden="true">
+          <div class="hp-modal" role="dialog" aria-modal="true" aria-label="How to play Wordrow">
+            <div style="font-size:28px; line-height:1;">🧩</div>
+            <h3>How to Play Wordrow</h3>
+
+            <div class="hp-badges">
+              <span class="hp-badge">5-letter word</span>
+              <span class="hp-badge">6 guesses</span>
+            </div>
+
+            <div class="hp-modal-help-text">
+              <div class="hp-modal-subtext"><strong>Goal:</strong> Guess the hidden 5-letter word in 6 tries.</div>
+              <div class="hp-modal-subtext"><strong style="color:var(--hp-green);">Green</strong> means the letter is correct and in the right spot.</div>
+              <div class="hp-modal-subtext"><strong style="color:var(--hp-orange);">Orange</strong> means the letter is in the word but in the wrong spot.</div>
+              <div class="hp-modal-subtext"><strong style="color:#6b7280;">Gray</strong> means the letter is not in the word.</div>
+              <div class="hp-modal-subtext">Use the on-screen keyboard or your physical keyboard. Press <strong>Enter</strong> to submit and <strong>Backspace</strong> to erase.</div>
+            </div>
+
+            <div class="hp-modal-actions">
+              <button type="button" class="hp-link-btn primary full" data-a="close-help-modal">Back to Puzzle</button>
             </div>
 
             <small>Hare Publishing • Wordrow</small>
@@ -617,6 +697,24 @@ window.HareWordrowEngine = {
         return;
       }
 
+      if (action === "open-help-modal") {
+        showHelpModal();
+        return;
+      }
+
+      if (action === "close-help-modal") {
+        hideHelpModal();
+        return;
+      }
+
+      if (action === "clear-current") {
+        state.current = "";
+        saveState();
+        render();
+        toast("Current guess cleared.");
+        return;
+      }
+
       if (action === "share") {
         sharePuzzle();
       }
@@ -630,10 +728,13 @@ window.HareWordrowEngine = {
       if (!container.contains(document.activeElement)) return;
 
       const overlayEl = mount.querySelector("#hpw-overlay");
-      if (overlayEl?.classList.contains("on")) {
+      const helpEl = mount.querySelector("#hpw-help-modal");
+
+      if (overlayEl?.classList.contains("on") || helpEl?.classList.contains("on")) {
         if (e.key === "Escape") {
           e.preventDefault();
           hideOverlay();
+          hideHelpModal();
         }
         return;
       }
@@ -660,7 +761,9 @@ window.HareWordrowEngine = {
 
     mount.addEventListener("click", e => {
       const overlayEl = mount.querySelector("#hpw-overlay");
+      const helpEl = mount.querySelector("#hpw-help-modal");
       if (overlayEl && e.target === overlayEl) hideOverlay();
+      if (helpEl && e.target === helpEl) hideHelpModal();
     });
 
     // =========================================================
