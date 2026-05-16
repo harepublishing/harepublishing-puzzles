@@ -1,5 +1,5 @@
 window.HarePuzzleMenuConfig = {
-  googleAppsScriptUrl: "PASTE YOUR GOOGLE APPS SCRIPT URL HERE"
+  googleAppsScriptUrl: "https://script.google.com/macros/s/AKfycbwb0uiowxfn8f_bTTPqI3jVBYRu8l96SVRqdS_0tg7FESslgVHA6j0lyKMApXnMhx9X/exec"
 };
 
 (() => {
