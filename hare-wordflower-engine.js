@@ -1,6 +1,6 @@
 /* =========================================================
    HARE PUBLISHING WORD FLOWER ENGINE
-   Version: word-flower-v1.2
+   Version: word-flower-v1.3
    Date: 2026-05-17
    ========================================================= */
 
@@ -74,6 +74,7 @@ window.HareWordFlowerEngine = (() => {
 
     function formatPuzzleDate(dateStr) {
       if (!dateStr) return "";
+
       const d = new Date(`${dateStr}T00:00:00`);
       if (Number.isNaN(d.getTime())) return dateStr;
 
@@ -306,7 +307,7 @@ window.HareWordFlowerEngine = (() => {
         </div>
 
         <div class="hp-wf-col-right">
-          <div class="hp-wf-panel">
+          <div class="hp-wf-panel" id="hp-wf-right-panel">
 
             <details class="hp-wf-help-details">
               <summary class="hp-wf-help-summary">How to play</summary>
@@ -358,21 +359,38 @@ window.HareWordFlowerEngine = (() => {
       </div>
     `;
 
-    const mainPanelEl = document.getElementById("hp-wf-main-panel");
-    const currentWordEl = document.getElementById("hp-wf-current-word");
-    const messageEl = document.getElementById("hp-wf-message");
-    const foundRatioEl = document.getElementById("hp-wf-found-ratio");
-    const scoreEl = document.getElementById("hp-wf-score");
-    const maxScoreEl = document.getElementById("hp-wf-max-score");
-    const progressFillEl = document.getElementById("hp-wf-progress-fill");
-    const foundWordsEl = document.getElementById("hp-wf-found-words");
-    const foundHeaderPillEl = document.getElementById("hp-wf-found-header-pill");
-    const overlayEl = document.getElementById("hp-wf-overlay");
-    const badgeIdEl = document.getElementById("hp-wf-badge-id");
-    const badgeMetaEl = document.getElementById("hp-wf-badge-meta");
-    const overlayIconEl = document.getElementById("hp-wf-overlay-icon");
-    const overlayTitleEl = document.getElementById("hp-wf-overlay-title");
-    const overlayTextEl = document.getElementById("hp-wf-overlay-text");
+    const mainPanelEl = container.querySelector("#hp-wf-main-panel");
+    const rightPanelEl = container.querySelector("#hp-wf-right-panel");
+    const currentWordEl = container.querySelector("#hp-wf-current-word");
+    const messageEl = container.querySelector("#hp-wf-message");
+    const foundRatioEl = container.querySelector("#hp-wf-found-ratio");
+    const scoreEl = container.querySelector("#hp-wf-score");
+    const maxScoreEl = container.querySelector("#hp-wf-max-score");
+    const progressFillEl = container.querySelector("#hp-wf-progress-fill");
+    const foundWordsEl = container.querySelector("#hp-wf-found-words");
+    const foundHeaderPillEl = container.querySelector("#hp-wf-found-header-pill");
+    const overlayEl = container.querySelector("#hp-wf-overlay");
+    const badgeIdEl = container.querySelector("#hp-wf-badge-id");
+    const badgeMetaEl = container.querySelector("#hp-wf-badge-meta");
+    const overlayIconEl = container.querySelector("#hp-wf-overlay-icon");
+    const overlayTitleEl = container.querySelector("#hp-wf-overlay-title");
+    const overlayTextEl = container.querySelector("#hp-wf-overlay-text");
+
+    function syncPanelHeights() {
+      if (!mainPanelEl || !rightPanelEl) return;
+
+      if (window.innerWidth <= 900) {
+        rightPanelEl.style.height = "";
+        return;
+      }
+
+      rightPanelEl.style.height = "";
+
+      requestAnimationFrame(() => {
+        if (!mainPanelEl || !rightPanelEl) return;
+        rightPanelEl.style.height = `${mainPanelEl.offsetHeight}px`;
+      });
+    }
 
     function updateFinishedStateUI() {
       mainPanelEl.classList.toggle("hp-wf-finished", isFinished());
@@ -452,6 +470,7 @@ window.HareWordFlowerEngine = (() => {
       updateInputDisplay();
       updateStats();
       renderFoundWords();
+      syncPanelHeights();
     }
 
     function addLetter(letter) {
@@ -600,6 +619,7 @@ window.HareWordFlowerEngine = (() => {
       overlayEl.setAttribute("aria-hidden", "false");
       state.overlaySeen = false;
       save();
+      syncPanelHeights();
     }
 
     function hideOverlay() {
@@ -607,17 +627,18 @@ window.HareWordFlowerEngine = (() => {
       overlayEl.setAttribute("aria-hidden", "true");
       state.overlaySeen = true;
       save();
+      syncPanelHeights();
     }
 
     container.querySelectorAll(".hp-wf-letter").forEach(btn => {
       btn.addEventListener("click", () => addLetter(btn.getAttribute("data-letter")));
     });
 
-    document.getElementById("hp-wf-enter")?.addEventListener("click", submitWord);
-    document.getElementById("hp-wf-delete")?.addEventListener("click", deleteLetter);
-    document.getElementById("hp-wf-clear")?.addEventListener("click", clearCurrent);
-    document.getElementById("hp-wf-reset")?.addEventListener("click", resetPuzzle);
-    document.getElementById("hp-wf-reveal")?.addEventListener("click", revealAnswers);
+    container.querySelector("#hp-wf-enter")?.addEventListener("click", submitWord);
+    container.querySelector("#hp-wf-delete")?.addEventListener("click", deleteLetter);
+    container.querySelector("#hp-wf-clear")?.addEventListener("click", clearCurrent);
+    container.querySelector("#hp-wf-reset")?.addEventListener("click", resetPuzzle);
+    container.querySelector("#hp-wf-reveal")?.addEventListener("click", revealAnswers);
 
     container.addEventListener("keydown", e => {
       const target = e.target;
@@ -707,6 +728,8 @@ window.HareWordFlowerEngine = (() => {
       container.focus({ preventScroll: true });
     });
 
+    window.addEventListener("resize", syncPanelHeights);
+
     renderAll();
 
     if (state.solved) {
@@ -720,6 +743,8 @@ window.HareWordFlowerEngine = (() => {
     if ((state.solved || state.revealed) && !state.overlaySeen) {
       showOverlay();
     }
+
+    syncPanelHeights();
   }
 
   return { init };
