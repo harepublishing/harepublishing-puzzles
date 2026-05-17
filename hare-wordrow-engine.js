@@ -1,689 +1,695 @@
 /* =========================================================
-   HARE PUBLISHING WORD FLOWER ENGINE
-   GitHub engine file
-   Version: word-flower-v1.0 corrected full engine
-   Date: 2026-05-17
+   HARE PUBLISHING WORDROW ENGINE
+   GitHub/jsDelivr hosted engine file
+   Updated: 2026-05-15 — stats/progress/help modal UI + correct-letter stat fix
 
-   Expected Squarespace data object:
-   window.HareWordFlowerData = {
-     puzzleId: "70",
-     puzzleDate: "2026-05-17",
-     centerLetter: "V",
-     outerLetters: ["R", "A", "T", "G", "L", "I"],
-     minWordLength: 4,
-     pangramBonus: 7,
-     allowedWords: ["RIVAL", ...]
-   };
+   Suggested filename:
+   hare-wordrow-engine.js
 
-   Loader call expected:
-   window.HareWordFlowerEngine.init({
-     containerId: "hp-wordflower-container",
-     dataObject
-   });
+   Expected page setup:
+   - A container with id="hp-wordrow-container"
+   - A puzzle data block/object: window.HareWordrowData or JSON block id="hp-wordrow-data"
+   - This engine loaded after the puzzle data block
+
+   Uses shared CSS:
+   - shared-CSS-code-2026-05-15.txt
    ========================================================= */
 
-window.HareWordFlowerEngine = (() => {
-
-  const MORE_PUZZLES_URL = "https://harepublishing.com/online-puzzles";
-  const SHOP_URL = "https://harepublishing.com/shop";
-  const TRACKER_KEY = "hp_puzzlers_hub_progress_v1";
-
-  function init(userConfig = {}) {
-
-    const data = userConfig?.dataObject || window.HareWordFlowerData || {};
-    const containerId = userConfig?.containerId || data.containerId || "hp-wordflower-container";
-
+window.HareWordrowEngine = {
+  init({
+    containerId = "hp-wordrow-container",
+    dataId = "hp-wordrow-data",
+    dataObject = window.HareWordrowData
+  } = {}) {
     const container = document.getElementById(containerId);
-    if (!container) return;
 
-    container.setAttribute("tabindex", "0");
-
-    container.addEventListener("mousedown", (e) => {
-      const link = e.target?.closest?.("a[href]");
-      if (link) return;
-      container.focus({ preventScroll: true });
-    });
-
-    const mount = container.querySelector(".hp-mount") || container;
-
-    const puzzleId = String(data.puzzleId || "").trim();
-    const puzzleDate = String(data.puzzleDate || data.date || "").trim();
-    const centerLetter = String(data.centerLetter || "").trim().toUpperCase();
-
-    const outerLetters = Array.isArray(data.outerLetters)
-      ? data.outerLetters.map(letter => String(letter).trim().toUpperCase()).filter(Boolean)
-      : [];
-
-    const minWordLength = Number(data.minWordLength || 4);
-    const pangramBonus = Number(data.pangramBonus || 7);
-
-    const allowedWords = Array.isArray(data.allowedWords)
-      ? [...new Set(data.allowedWords.map(word => String(word).trim().toUpperCase()).filter(Boolean))]
-      : [];
-
-    const puzzleTitle = `Word Flower #${puzzleId}`;
-    const fullLetterSet = [centerLetter, ...outerLetters];
-    const uniqueSet = new Set(fullLetterSet);
-
-    if (
-      !puzzleId ||
-      centerLetter.length !== 1 ||
-      outerLetters.length !== 6 ||
-      uniqueSet.size !== 7
-    ) {
-      mount.innerHTML = `
-        <div style="
-          max-width:700px;
-          margin:20px auto;
-          padding:18px;
-          border:1px solid #ED1B24;
-          border-radius:14px;
-          background:#fff5f5;
-          color:#8a1c1c;
-          text-align:center;
-          font-family:Roboto,Arial,sans-serif;
-          line-height:1.45;
-        ">
-          <strong>Configuration Error:</strong><br>
-          Word Flower needs a puzzleId, exactly 1 center letter, and 6 different outer letters with no repeats.
-        </div>
-      `;
+    if (!container) {
+      console.error("HareWordrowEngine: puzzle container missing.");
       return;
     }
 
-    const invalidConfiguredWords = allowedWords.filter(word => {
-      return !hasValidLength(word) || !includesCenter(word) || !usesOnlyPuzzleLetters(word);
-    });
+    if (container.dataset.hpWordrowMounted === "true") {
+      console.warn("HareWordrowEngine: this container has already been mounted.");
+      return;
+    }
 
-    const SAVE_KEY = `hp_wf_${puzzleId}`;
+    container.dataset.hpWordrowMounted = "true";
+    container.setAttribute("tabindex", "0");
 
-    function loadState() {
+    const mount = container.querySelector(".hpw-mount");
+    if (!mount) {
+      console.error("HareWordrowEngine: .hpw-mount element missing inside puzzle container.");
+      return;
+    }
+
+    const yearEl = document.getElementById("hpw-year");
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    const dataEl = document.getElementById(dataId);
+    let pageData = dataObject || null;
+
+    if (!pageData && dataEl) {
       try {
-        const saved = localStorage.getItem(SAVE_KEY);
-        return saved ? JSON.parse(saved) : null;
-      } catch {
-        return null;
+        pageData = JSON.parse(dataEl.textContent || "{}");
+      } catch (err) {
+        console.error("HareWordrowEngine: puzzle data block contains invalid JSON.", err);
       }
     }
 
-    const state = Object.assign({
-      current: "",
-      found: [],
-      solved: false,
-      revealed: false,
-      overlaySeen: false,
-      startedAt: null,
-      completedAt: null,
-      revealedAt: null
-    }, loadState() || {});
-
-    if (!Array.isArray(state.found)) state.found = [];
-    state.found = [...new Set(state.found.map(word => String(word).trim().toUpperCase()).filter(Boolean))]
-      .filter(word => allowedWords.includes(word));
-
-    function save() {
-      try {
-        localStorage.setItem(SAVE_KEY, JSON.stringify(state));
-      } catch {}
-    }
-
-    window.addEventListener("beforeunload", save);
+    const MORE_PUZZLES_URL = pageData?.morePuzzlesUrl || "https://harepublishing.com/online-puzzles";
+    const SHOP_URL = pageData?.shopUrl || "https://harepublishing.com/shop";
+    const MAX_GUESSES = Number(pageData?.maxGuesses || 6);
 
     function escapeHtml(str) {
-      return String(str).replace(/[&<>"']/g, s => ({
+      return String(str).replace(/[&<>\"']/g, s => ({
         "&": "&amp;",
         "<": "&lt;",
         ">": "&gt;",
-        '"': "&quot;",
+        '\"': "&quot;",
         "'": "&#39;"
       }[s]));
     }
 
-    function formatPuzzleDate(dateStr) {
-      if (!dateStr) return "";
+    function clean(value) {
+      return String(value || "").toUpperCase().replace(/[^A-Z]/g, "");
+    }
 
-      try {
-        const parsed = new Date(`${dateStr}T00:00:00`);
-        if (Number.isNaN(parsed.getTime())) return dateStr;
+    function formatPuzzleDate(value) {
+      const raw = String(value || "").trim();
+      if (!raw) return "";
 
-        return parsed.toLocaleDateString("en-US", {
+      const match = raw.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+      if (match) {
+        const d = new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]));
+        return d.toLocaleDateString(undefined, {
           weekday: "long",
           year: "numeric",
           month: "long",
           day: "numeric"
         });
-      } catch {
-        return dateStr;
       }
-    }
 
-    function usesOnlyPuzzleLetters(word) {
-      return [...word].every(ch => uniqueSet.has(ch));
-    }
+      const d = new Date(raw);
+      if (Number.isNaN(d.getTime())) return raw;
 
-    function includesCenter(word) {
-      return word.includes(centerLetter);
-    }
-
-    function hasValidLength(word) {
-      return word.length >= minWordLength;
-    }
-
-    function isPangram(word) {
-      return fullLetterSet.every(letter => word.includes(letter));
-    }
-
-    function scoreWord(word) {
-      let score = word.length === 4 ? 1 : word.length;
-      if (isPangram(word)) score += pangramBonus;
-      return score;
-    }
-
-    function totalPossibleScore() {
-      return allowedWords.reduce((sum, word) => sum + scoreWord(word), 0);
-    }
-
-    function currentScore() {
-      return state.found.reduce((sum, word) => sum + scoreWord(word), 0);
-    }
-
-    function sortWords(words) {
-      return [...words].sort((a, b) => {
-        if (a.length !== b.length) return a.length - b.length;
-        return a.localeCompare(b);
+      return d.toLocaleDateString(undefined, {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric"
       });
     }
 
-    function formatCount() {
-      return `${state.found.length}/${allowedWords.length}`;
+    function showConfigError(message) {
+      mount.innerHTML = `<p style="color:#ED1B24;text-align:center;font-weight:800;">${escapeHtml(message)}</p>`;
     }
 
-    function isFinished() {
-      return state.solved || state.revealed;
+    if (!pageData) {
+      showConfigError("Wordrow puzzle data is missing. Add window.HareWordrowData before loading the engine.");
+      return;
     }
 
-    function nowIso() {
-      return new Date().toISOString();
+    const puzzleId = String(pageData.puzzleId || "").trim();
+    const answer = clean(pageData.answer || pageData.ANSWER);
+    const puzzleDate = formatPuzzleDate(pageData.puzzleDate || pageData.date || "");
+
+    if (!puzzleId) {
+      showConfigError("Wordrow puzzleId is missing.");
+      return;
     }
 
-    function ensureStarted() {
-      if (!state.startedAt) state.startedAt = nowIso();
-      recordProgress("started");
-      save();
+    if (answer.length !== 5) {
+      showConfigError("Wordrow answer must be exactly 5 letters A-Z.");
+      return;
     }
 
-    function recordProgress(status) {
-      try {
-        const raw = localStorage.getItem(TRACKER_KEY);
-        const tracker = raw ? JSON.parse(raw) : {};
-        const puzzles = tracker.puzzles && typeof tracker.puzzles === "object" ? tracker.puzzles : {};
-        const key = SAVE_KEY;
-        const existing = puzzles[key] && typeof puzzles[key] === "object" ? puzzles[key] : {};
-
-        puzzles[key] = {
-          ...existing,
-          key,
-          puzzleType: "wordflower",
-          type: "wordflower",
-          label: "Word Flower",
-          puzzleId,
-          puzzleTitle,
-          puzzleDate,
-          status,
-          startedAt: existing.startedAt || state.startedAt || nowIso(),
-          completedAt: state.completedAt || existing.completedAt || null,
-          revealedAt: state.revealedAt || existing.revealedAt || null,
-          updatedAt: nowIso()
-        };
-
-        tracker.puzzles = puzzles;
-        tracker.updatedAt = nowIso();
-        localStorage.setItem(TRACKER_KEY, JSON.stringify(tracker));
-      } catch {}
+    if (!Number.isInteger(MAX_GUESSES) || MAX_GUESSES < 1) {
+      showConfigError("Wordrow maxGuesses must be a positive whole number.");
+      return;
     }
 
-    function injectSchema() {
-      const existing = document.getElementById(`hp-wf-schema-${puzzleId}`);
+    // =========================================================
+    // SCHEMA
+    // =========================================================
+    (function injectSchema() {
+      const existing = document.getElementById("hpw-schema");
       if (existing) existing.remove();
-
-      const nowYear = new Date().getFullYear();
-      const pageUrl = window.location.href;
 
       const schemaData = {
         "@context": "https://schema.org",
         "@type": "Game",
-        "name": puzzleTitle,
-        "description": `Play ${puzzleTitle} by Hare Publishing. Build words using the center letter and surrounding letters, track your score, and save your progress automatically.`,
-        "genre": "Word Puzzle",
-        "url": pageUrl,
+        "name": `Wordrow #${puzzleId}`,
+        "description": "Play today's 5-letter Wordrow puzzle by Hare Publishing. Includes color hints and progress saving.",
+        "genre": "Puzzle",
+        "url": window.location.href,
         "inLanguage": "en",
-        "audience": {
-          "@type": "PeopleAudience",
-          "suggestedMinAge": "8"
-        },
+        "audience": { "@type": "PeopleAudience", "suggestedMinAge": "8" },
         "numberOfPlayers": "1",
-        "copyrightYear": String(nowYear),
+        "copyrightYear": String(new Date().getFullYear()),
         "publisher": {
           "@type": "Organization",
           "name": "Hare Publishing",
-          "url": "https://harepublishing.com/"
+          "url": "https://www.harepublishing.com/"
         }
       };
 
       const script = document.createElement("script");
-      script.id = `hp-wf-schema-${puzzleId}`;
+      script.id = "hpw-schema";
       script.type = "application/ld+json";
       script.textContent = JSON.stringify(schemaData);
       document.head.appendChild(script);
+    })();
+
+    // =========================================================
+    // STATE
+    // =========================================================
+    const SAVE_KEY = `hp_wr_${puzzleId}`;
+
+    function defaultState() {
+      return {
+        guesses: [],
+        statuses: [],
+        current: "",
+        solved: false,
+        revealed: false,
+        lost: false,
+        solvedAt: "",
+        revealedAt: "",
+        overlaySeen: false
+      };
     }
 
-    injectSchema();
+    function loadState() {
+      try {
+        const raw = localStorage.getItem(SAVE_KEY);
+        const parsed = raw ? JSON.parse(raw) : null;
+        const merged = parsed ? { ...defaultState(), ...parsed } : defaultState();
 
-    mount.innerHTML = `
-      ${puzzleDate ? `<div class="hp-puzzle-date">${escapeHtml(formatPuzzleDate(puzzleDate))}</div>` : ""}
+        if (!Array.isArray(merged.guesses)) merged.guesses = [];
+        if (!Array.isArray(merged.statuses)) merged.statuses = [];
+        if (typeof merged.current !== "string") merged.current = "";
+        if (typeof merged.solved !== "boolean") merged.solved = false;
+        if (typeof merged.revealed !== "boolean") merged.revealed = false;
+        if (typeof merged.lost !== "boolean") merged.lost = false;
+        if (typeof merged.solvedAt !== "string") merged.solvedAt = "";
+        if (typeof merged.revealedAt !== "string") merged.revealedAt = "";
+        if (typeof merged.overlaySeen !== "boolean") merged.overlaySeen = false;
 
-      <div class="hp-wf-layout">
+        merged.guesses = merged.guesses.map(clean).filter(g => g.length === 5).slice(0, MAX_GUESSES);
+        merged.current = clean(merged.current).slice(0, 5);
 
-        <div class="hp-wf-col-left">
-          <div class="hp-wf-panel" id="hp-wf-main-panel">
-
-            <div class="hp-wf-stats">
-              <div class="hp-wf-stat">
-                <span class="hp-wf-stat-value" id="hp-wf-found-ratio">0/0</span>
-                <span class="hp-wf-stat-label">Words Found</span>
-              </div>
-
-              <div class="hp-wf-stat">
-                <span class="hp-wf-stat-value" id="hp-wf-score">0</span>
-                <span class="hp-wf-stat-label">Current Score</span>
-              </div>
-
-              <div class="hp-wf-stat">
-                <span class="hp-wf-stat-value" id="hp-wf-max-score">0</span>
-                <span class="hp-wf-stat-label">Max Score</span>
-              </div>
-            </div>
-
-            <div class="hp-wf-progress">
-              <div class="hp-wf-progress-fill" id="hp-wf-progress-fill"></div>
-            </div>
-
-            <div class="hp-wf-flower-wrap">
-              <div class="hp-wf-flower">
-                <div class="hp-wf-flower-core"></div>
-
-                <button type="button" class="hp-wf-letter hp-wf-center-letter" data-letter="${escapeHtml(centerLetter)}" aria-label="Center letter ${escapeHtml(centerLetter)}">${escapeHtml(centerLetter)}</button>
-
-                ${outerLetters.map((letter, index) => `
-                  <button type="button" class="hp-wf-letter hp-wf-outer-letter hp-wf-pos-${index}" data-letter="${escapeHtml(letter)}" aria-label="Outer letter ${escapeHtml(letter)}">${escapeHtml(letter)}</button>
-                `).join("")}
-              </div>
-            </div>
-
-            <div class="hp-wf-input-wrap">
-              <div id="hp-wf-current-word" class="hp-wf-current-word hp-wf-placeholder">BUILD A WORD</div>
-              <div id="hp-wf-message" class="hp-wf-message hp-wf-neutral"> </div>
-            </div>
-
-            <div class="hp-wf-actions">
-              <button type="button" id="hp-wf-enter" class="hp-wf-enter-btn">Enter</button>
-              <button type="button" id="hp-wf-delete" class="hp-wf-delete-btn">Delete</button>
-              <button type="button" id="hp-wf-clear" class="hp-wf-clear-btn">Clear</button>
-            </div>
-
-            <div class="hp-wf-secondary-actions">
-              <button type="button" id="hp-wf-reset" class="hp-wf-reset-btn">Reset Puzzle</button>
-              <button type="button" id="hp-wf-reveal" class="hp-wf-reveal-btn">Reveal Answers</button>
-            </div>
-
-            ${invalidConfiguredWords.length ? `
-              <div class="hp-wf-config-warning">
-                <strong>Configuration warning:</strong><br>
-                These words in your allowed list do not match the current letter set or rules:
-                <br><br>
-                ${invalidConfiguredWords.map(escapeHtml).join(", ")}
-              </div>
-            ` : ""}
-
-          </div>
-        </div>
-
-        <div class="hp-wf-col-right">
-          <div class="hp-wf-panel">
-            <details class="hp-wf-help-details">
-              <summary class="hp-wf-help-summary">How to play</summary>
-              <div class="hp-wf-help">
-                <span class="hp-wf-help-line">Build words using the flower letters.</span>
-                <span class="hp-wf-help-line">Every word must include the <strong>center letter ${escapeHtml(centerLetter)}</strong>.</span>
-                <span class="hp-wf-help-line">Use only the letters shown and make words at least <strong>${escapeHtml(minWordLength)}</strong> letters long.</span>
-                <span class="hp-wf-help-line"><strong>Reveal Answers</strong> ends the puzzle and shows every accepted word.</span>
-              </div>
-            </details>
-
-            <div class="hp-wf-found-header">
-              <h3>Found Words</h3>
-              <span class="hp-wf-pill" id="hp-wf-found-header-pill">Accepted words only</span>
-            </div>
-
-            <div id="hp-wf-found-words" class="hp-wf-found-words"></div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="hp-overlay" id="hp-wf-overlay" aria-hidden="true">
-        <div class="hp-modal" role="dialog" aria-modal="true" aria-label="Word Flower result">
-          <div id="hp-wf-overlay-icon" style="font-size:28px; line-height:1;">🎉</div>
-
-          <h3 id="hp-wf-overlay-title">You Solved the Word Flower!</h3>
-
-          <div class="hp-badges">
-            <span class="hp-badge" id="hp-wf-badge-id"></span>
-            <span class="hp-badge" id="hp-wf-badge-meta"></span>
-          </div>
-
-          <p id="hp-wf-overlay-text">Congratulations — you found every accepted word. Explore more puzzles online or browse puzzle books for offline fun.</p>
-
-          <div class="hp-modal-actions">
-            <a class="hp-link-btn secondary" href="${escapeHtml(MORE_PUZZLES_URL)}">More Online Puzzles</a>
-            <a class="hp-link-btn primary" href="${escapeHtml(SHOP_URL)}">Get Puzzle Books</a>
-
-            <button type="button" class="hp-link-btn neutral" data-a="share">Share</button>
-            <button type="button" class="hp-link-btn neutral" data-a="close-solved">Back to Puzzle</button>
-
-            <button type="button" class="hp-link-btn full danger" data-a="reset-puzzle">Reset Puzzle</button>
-          </div>
-
-          <small>Hare Publishing • Word Flower</small>
-        </div>
-      </div>
-    `;
-
-    const mainPanelEl = document.getElementById("hp-wf-main-panel");
-    const currentWordEl = document.getElementById("hp-wf-current-word");
-    const messageEl = document.getElementById("hp-wf-message");
-    const foundRatioEl = document.getElementById("hp-wf-found-ratio");
-    const scoreEl = document.getElementById("hp-wf-score");
-    const maxScoreEl = document.getElementById("hp-wf-max-score");
-    const progressFillEl = document.getElementById("hp-wf-progress-fill");
-    const foundWordsEl = document.getElementById("hp-wf-found-words");
-    const foundHeaderPillEl = document.getElementById("hp-wf-found-header-pill");
-    const overlayEl = document.getElementById("hp-wf-overlay");
-    const badgeIdEl = document.getElementById("hp-wf-badge-id");
-    const badgeMetaEl = document.getElementById("hp-wf-badge-meta");
-    const overlayIconEl = document.getElementById("hp-wf-overlay-icon");
-    const overlayTitleEl = document.getElementById("hp-wf-overlay-title");
-    const overlayTextEl = document.getElementById("hp-wf-overlay-text");
-
-    function updateFinishedStateUI() {
-      mainPanelEl.classList.toggle("hp-wf-finished", isFinished());
-
-      if (state.revealed) {
-        foundHeaderPillEl.textContent = "Found + revealed answers";
-      } else {
-        foundHeaderPillEl.textContent = "Accepted words only";
+        return merged;
+      } catch {
+        return defaultState();
       }
     }
 
-    function updateInputDisplay() {
-      if (state.current && !isFinished()) {
-        currentWordEl.innerHTML = escapeHtml(state.current);
-        currentWordEl.classList.remove("hp-wf-placeholder");
-      } else if (state.revealed) {
-        currentWordEl.innerHTML = "PUZZLE COMPLETE";
-        currentWordEl.classList.remove("hp-wf-placeholder");
-      } else if (state.solved) {
-        currentWordEl.innerHTML = "PUZZLE SOLVED";
-        currentWordEl.classList.remove("hp-wf-placeholder");
-      } else {
-        currentWordEl.innerHTML = "BUILD A WORD";
-        currentWordEl.classList.add("hp-wf-placeholder");
-      }
+    let state = loadState();
+
+    function saveState() {
+      try {
+        localStorage.setItem(SAVE_KEY, JSON.stringify(state));
+      } catch {}
     }
 
-    function updateStats() {
-      foundRatioEl.textContent = formatCount();
-      scoreEl.textContent = String(currentScore());
-      maxScoreEl.textContent = String(totalPossibleScore());
+    window.addEventListener("beforeunload", saveState);
 
-      const pct = allowedWords.length
-        ? (state.found.length / allowedWords.length) * 100
-        : 0;
+    // =========================================================
+    // GAME LOGIC
+    // =========================================================
+    function evaluateGuess(guess) {
+      const res = Array(5).fill("absent");
+      const counts = {};
 
-      progressFillEl.style.width = `${pct}%`;
-    }
+      for (let i = 0; i < 5; i++) counts[answer[i]] = (counts[answer[i]] || 0) + 1;
 
-    function renderFoundWords() {
-      if (!state.found.length && !state.revealed) {
-        foundWordsEl.innerHTML = `<div class="hp-wf-empty">No words found yet. Start building!</div>`;
-        return;
+      for (let i = 0; i < 5; i++) {
+        if (guess[i] === answer[i]) {
+          res[i] = "correct";
+          counts[guess[i]]--;
+        }
       }
 
-      const list = state.revealed ? sortWords(allowedWords) : sortWords(state.found);
+      for (let i = 0; i < 5; i++) {
+        if (res[i] === "correct") continue;
+        const ch = guess[i];
+        if (counts[ch] > 0) {
+          res[i] = "present";
+          counts[ch]--;
+        }
+      }
 
-      foundWordsEl.innerHTML = list.map(word => {
-        const userFound = state.found.includes(word);
-        const pangram = isPangram(word)
-          ? `<span class="hp-wf-pill hp-wf-pill-pangram">PANGRAM</span>`
-          : "";
-
-        const sourcePill = state.revealed && !userFound
-          ? `<span class="hp-wf-pill hp-wf-pill-revealed">REVEALED</span>`
-          : state.revealed && userFound
-            ? `<span class="hp-wf-pill">FOUND</span>`
-            : "";
-
-        return `
-          <div class="hp-wf-found-item ${state.revealed && !userFound ? "is-revealed" : ""}">
-            <div class="hp-wf-found-word">${escapeHtml(word)}</div>
-            <div class="hp-wf-found-meta">
-              <span class="hp-wf-pill">${scoreWord(word)} pts</span>
-              ${pangram}
-              ${sourcePill}
-            </div>
-          </div>
-        `;
-      }).join("");
+      return res;
     }
 
-    function showMessage(msg, type = "neutral") {
-      messageEl.textContent = msg;
-      messageEl.className = `hp-wf-message hp-wf-${type}`;
+    function recomputeStatus() {
+      state.statuses = state.guesses.map(g => evaluateGuess(clean(g)));
+      state.solved = state.guesses.includes(answer);
+      state.lost = !state.solved && !state.revealed && state.guesses.length >= MAX_GUESSES;
     }
 
-    function clearMessage() {
-      showMessage(" ", "neutral");
+    function computeLetterStates() {
+      const priority = { correct: 3, present: 2, absent: 1 };
+      const letterStates = {};
+
+      for (let i = 0; i < state.guesses.length; i++) {
+        const guess = state.guesses[i];
+        const statuses = state.statuses[i] || [];
+        for (let j = 0; j < 5; j++) {
+          const ch = guess[j];
+          const st = statuses[j];
+          if (!ch || !st) continue;
+          const current = letterStates[ch];
+          if (!current || priority[st] > priority[current]) letterStates[ch] = st;
+        }
+      }
+
+      return letterStates;
+    }
+
+    function isFinished() {
+      return state.solved || state.revealed || state.lost;
+    }
+
+    // =========================================================
+    // RENDER
+    // =========================================================
+    const KEYS = [
+      ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
+      ["A", "S", "D", "F", "G", "H", "J", "K", "L"],
+      ["ENTER", "Z", "X", "C", "V", "B", "N", "M", "⌫"]
+    ];
+
+    function renderGrid() {
+      const activeRow = Math.min(state.guesses.length, MAX_GUESSES - 1);
+      let html = "";
+
+      for (let r = 0; r < MAX_GUESSES; r++) {
+        const guess = state.guesses[r] || "";
+        const statuses = state.statuses[r] || null;
+        const draft = (r === activeRow && !isFinished()) ? state.current : "";
+
+        html += `<div class="hpw-row">`;
+
+        for (let c = 0; c < 5; c++) {
+          const ch = guess ? (guess[c] || "") : (draft[c] || "");
+          const classes = ["hpw-tile"];
+
+          if (statuses && statuses[c]) {
+            classes.push(statuses[c]);
+          } else if (r === activeRow && !isFinished()) {
+            classes.push("hpw-active");
+          }
+
+          html += `<div class="${classes.join(" ")}">${escapeHtml(ch)}</div>`;
+        }
+
+        html += `</div>`;
+      }
+
+      return html;
+    }
+
+    function renderKeyboard() {
+      const states = computeLetterStates();
+
+      return KEYS.map((row, rowIndex) => `
+        <div class="hpw-kb-row" data-row="${rowIndex}">
+          ${row.map(key => {
+            const cls = ["hpw-key"];
+            if (key.length === 1 && states[key]) cls.push(states[key]);
+            return `<button type="button" class="${cls.join(" ")}" data-k="${key}">${escapeHtml(key)}</button>`;
+          }).join("")}
+        </div>
+      `).join("");
     }
 
     function renderOverlayContent() {
-      badgeIdEl.textContent = puzzleTitle;
+      const badgeIdEl = mount.querySelector("#hpw-badge-id");
+      const badgeMetaEl = mount.querySelector("#hpw-badge-meta");
+      const overlayIconEl = mount.querySelector("#hpw-overlay-icon");
+      const overlayTitleEl = mount.querySelector("#hpw-overlay-title");
+      const overlayTextEl = mount.querySelector("#hpw-overlay-text");
+
+      if (!badgeIdEl || !badgeMetaEl || !overlayIconEl || !overlayTitleEl || !overlayTextEl) return;
+
+      badgeIdEl.textContent = `Wordrow #${puzzleId}`;
+      badgeMetaEl.textContent = `Guesses: ${state.guesses.length}/${MAX_GUESSES}`;
 
       if (state.solved) {
         overlayIconEl.textContent = "🎉";
-        overlayTitleEl.textContent = "You Solved the Word Flower!";
-        badgeMetaEl.textContent = `Score: ${currentScore()}`;
-        overlayTextEl.textContent = "Congratulations — you found every accepted word. Explore more puzzles online or browse puzzle books for offline fun.";
+        overlayTitleEl.textContent = "You Solved the Wordrow Puzzle!";
+        overlayTextEl.innerHTML = `
+          <div class="hp-modal-lead">Congratulations — you did it!</div>
+          <div class="hp-modal-subtext">You found the hidden word.</div>
+          <div class="hp-modal-subtext">New puzzles are added daily in the Puzzlers Hub.</div>
+        `;
         return;
       }
 
       if (state.revealed) {
         overlayIconEl.textContent = "📘";
-        overlayTitleEl.textContent = "Answers Revealed";
-        badgeMetaEl.textContent = `Found: ${state.found.length}/${allowedWords.length}`;
-        overlayTextEl.textContent = "Here are all the accepted answers for this puzzle. Explore more puzzles online or browse puzzle books for offline fun.";
-      }
-    }
-
-    function renderAll() {
-      updateFinishedStateUI();
-      updateInputDisplay();
-      updateStats();
-      renderFoundWords();
-    }
-
-    function addLetter(letter) {
-      if (isFinished()) return;
-      if (!letter || letter.length !== 1) return;
-      ensureStarted();
-      state.current += letter.toUpperCase();
-      save();
-      updateInputDisplay();
-      clearMessage();
-    }
-
-    function deleteLetter() {
-      if (isFinished()) return;
-      state.current = state.current.slice(0, -1);
-      save();
-      updateInputDisplay();
-      clearMessage();
-    }
-
-    function clearCurrent() {
-      if (isFinished()) return;
-      state.current = "";
-      save();
-      updateInputDisplay();
-      clearMessage();
-    }
-
-    function resetPuzzle() {
-      if (!confirm("Reset this puzzle and clear all progress?")) return;
-
-      state.current = "";
-      state.found = [];
-      state.solved = false;
-      state.revealed = false;
-      state.overlaySeen = false;
-      state.startedAt = null;
-      state.completedAt = null;
-      state.revealedAt = null;
-
-      try {
-        localStorage.removeItem(SAVE_KEY);
-      } catch {}
-
-      save();
-      hideOverlay();
-      renderAll();
-      clearMessage();
-    }
-
-    function revealAnswers() {
-      if (isFinished()) return;
-
-      const ok = confirm("Reveal all answers? This will end the puzzle.");
-      if (!ok) return;
-
-      ensureStarted();
-      state.current = "";
-      state.revealed = true;
-      state.solved = false;
-      state.overlaySeen = false;
-      state.revealedAt = nowIso();
-      recordProgress("revealed");
-      save();
-      renderAll();
-      showMessage("All answers revealed.", "neutral");
-      showOverlay();
-    }
-
-    function submitWord() {
-      if (isFinished()) return;
-
-      const word = state.current.toUpperCase().trim();
-
-      if (!word) {
-        showMessage("Type or build a word first.", "error");
+        overlayTitleEl.textContent = "Answer Revealed";
+        overlayTextEl.innerHTML = `
+          <div class="hp-modal-lead">The word was ${escapeHtml(answer)}.</div>
+          <div class="hp-modal-subtext">Now that you've seen the answer, try another Daily Brain Boost puzzle.</div>
+          <div class="hp-modal-subtext">Or explore a whole stack of puzzles to enjoy offline.</div>
+        `;
         return;
       }
 
-      ensureStarted();
-
-      if (!hasValidLength(word)) {
-        showMessage(`Words must be at least ${minWordLength} letters.`, "error");
-        return;
-      }
-
-      if (!includesCenter(word)) {
-        showMessage(`Every word must include the center letter "${centerLetter}".`, "error");
-        return;
-      }
-
-      if (!usesOnlyPuzzleLetters(word)) {
-        showMessage("That word uses letters outside this flower.", "error");
-        return;
-      }
-
-      if (!allowedWords.includes(word)) {
-        showMessage("That is not one of the accepted words for this puzzle.", "error");
-        return;
-      }
-
-      if (state.found.includes(word)) {
-        showMessage("You already found that word.", "error");
-        return;
-      }
-
-      state.found.push(word);
-      state.current = "";
-      save();
-      renderAll();
-
-      if (isPangram(word)) {
-        showMessage(`Great job! "${word}" is a pangram.`, "success");
-      } else {
-        showMessage(`Great find: "${word}"`, "success");
-      }
-
-      if (state.found.length === allowedWords.length) {
-        state.solved = true;
-        state.revealed = false;
-        state.overlaySeen = false;
-        state.completedAt = nowIso();
-        recordProgress("completed");
-        save();
-        renderAll();
-        showOverlay();
-      }
+      overlayIconEl.textContent = "🙂";
+      overlayTitleEl.textContent = "Puzzle Over";
+      overlayTextEl.innerHTML = `
+        <div class="hp-modal-lead">Good try — the word was ${escapeHtml(answer)}.</div>
+        <div class="hp-modal-subtext">New puzzles are added daily in the Puzzlers Hub.</div>
+        <div class="hp-modal-subtext">Or explore a whole stack of puzzles to enjoy offline.</div>
+      `;
     }
 
     function showOverlay() {
       renderOverlayContent();
+      const overlayEl = mount.querySelector("#hpw-overlay");
+      if (!overlayEl) return;
+
       overlayEl.classList.add("on");
       overlayEl.setAttribute("aria-hidden", "false");
+
       state.overlaySeen = false;
-      save();
+      saveState();
     }
 
     function hideOverlay() {
+      const overlayEl = mount.querySelector("#hpw-overlay");
+      if (!overlayEl) return;
+
       overlayEl.classList.remove("on");
       overlayEl.setAttribute("aria-hidden", "true");
+
       state.overlaySeen = true;
-      save();
+      saveState();
     }
 
-    container.querySelectorAll(".hp-wf-letter").forEach(btn => {
-      btn.addEventListener("click", () => addLetter(btn.getAttribute("data-letter")));
+    function toast(message) {
+      const toastEl = mount.querySelector(".hpw-toast-msg");
+      if (toastEl) toastEl.textContent = message;
+    }
+
+    function getStatusMessage() {
+      if (state.solved) return "Wordrow solved! 🎉";
+      if (state.revealed) return "Answer revealed.";
+      if (state.lost) return "Puzzle over.";
+      if (state.current.length) return `Current guess: ${state.current.length}/5 letters.`;
+      if (state.guesses.length) return "Next guess…";
+      return "Guess the hidden word in 6 tries.";
+    }
+
+    function guessesLeft() {
+      return Math.max(0, MAX_GUESSES - state.guesses.length);
+    }
+
+    function progressPercent() {
+      if (state.solved || state.revealed || state.lost) return 100;
+      return Math.min(100, Math.round((state.guesses.length / MAX_GUESSES) * 100));
+    }
+
+    function showHelpModal() {
+      const helpEl = mount.querySelector("#hpw-help-modal");
+      if (!helpEl) return;
+      helpEl.classList.add("on");
+      helpEl.setAttribute("aria-hidden", "false");
+    }
+
+    function hideHelpModal() {
+      const helpEl = mount.querySelector("#hpw-help-modal");
+      if (!helpEl) return;
+      helpEl.classList.remove("on");
+      helpEl.setAttribute("aria-hidden", "true");
+    }
+
+    function correctLetterCount() {
+      if (state.solved || state.revealed) return 5;
+
+      let count = 0;
+
+      for (let pos = 0; pos < 5; pos++) {
+        const hasCorrect = state.statuses.some(statusRow => statusRow && statusRow[pos] === "correct");
+        if (hasCorrect) count++;
+      }
+
+      return count;
+    }
+
+    function render() {
+      const progress = progressPercent();
+      const correctLetters = correctLetterCount();
+
+      mount.innerHTML = `
+        ${puzzleDate ? `<div class="hp-puzzle-date">${escapeHtml(puzzleDate)}</div>` : ""}
+
+        <div class="hpw-wrap">
+          <div class="hpw-stats" aria-label="Wordrow puzzle progress">
+            <div class="hpw-stat">
+              <span class="hpw-stat-value">${state.guesses.length}/${MAX_GUESSES}</span>
+              <span class="hpw-stat-label">Guesses</span>
+            </div>
+
+            <div class="hpw-stat">
+              <span class="hpw-stat-value">${guessesLeft()}</span>
+              <span class="hpw-stat-label">Left</span>
+            </div>
+
+            <div class="hpw-stat">
+              <span class="hpw-stat-value">${correctLetters}/5</span>
+              <span class="hpw-stat-label">Correct Letters</span>
+            </div>
+          </div>
+
+          <div class="hpw-progress" aria-hidden="true">
+            <div class="hpw-progress-fill" style="width:${progress}%;"></div>
+          </div>
+
+          <div class="hp-puzzle-tools" aria-label="Wordrow puzzle controls">
+            <button type="button" class="hp-tool-btn help-info" data-a="open-help-modal">Help</button>
+            <button type="button" class="hp-tool-btn clear-tool" data-a="clear-current">Clear</button>
+          </div>
+
+          <div class="hpw-toast" aria-live="polite">
+            <span class="hpw-toast-msg">${escapeHtml(getStatusMessage())}</span>
+          </div>
+
+          <div class="hpw-grid" id="hpw-grid">${renderGrid()}</div>
+
+          <div class="hpw-kb" aria-label="Keyboard">${renderKeyboard()}</div>
+
+          <div class="hp-puzzle-mobile-tools" aria-label="Wordrow puzzle controls">
+            <button type="button" class="hp-tool-btn help-info" data-a="open-help-modal">Help</button>
+            <button type="button" class="hp-tool-btn clear-tool" data-a="clear-current">Clear</button>
+            <button type="button" class="hp-tool-btn danger" data-a="reset-puzzle">Reset</button>
+            <button type="button" class="hp-tool-btn reveal" data-a="reveal-answer">Reveal</button>
+          </div>
+
+          <div class="hpw-actions">
+            <button type="button" class="hpw-btn danger" data-a="reset-puzzle">Reset Puzzle</button>
+            <button type="button" class="hpw-btn reveal" data-a="reveal-answer">Reveal Answer</button>
+          </div>
+        </div>
+
+        <div class="hp-overlay" id="hpw-overlay" aria-hidden="true">
+          <div class="hp-modal" role="dialog" aria-modal="true" aria-label="Wordrow result">
+            <div id="hpw-overlay-icon" style="font-size:28px; line-height:1;">🎉</div>
+            <h3 id="hpw-overlay-title">You Solved the Wordrow Puzzle!</h3>
+
+            <div class="hp-badges">
+              <span class="hp-badge" id="hpw-badge-id"></span>
+              <span class="hp-badge" id="hpw-badge-meta"></span>
+            </div>
+
+            <div id="hpw-overlay-text">
+              <div class="hp-modal-lead">Congratulations — you did it!</div>
+              <div class="hp-modal-subtext">You found the hidden word.</div>
+              <div class="hp-modal-subtext">New puzzles are added daily in the Puzzlers Hub.</div>
+            </div>
+
+            <div class="hp-modal-actions">
+              <a class="hp-link-btn secondary" href="${escapeHtml(MORE_PUZZLES_URL)}">More Online Puzzles</a>
+              <a class="hp-link-btn primary" href="${escapeHtml(SHOP_URL)}">Get Puzzle Books</a>
+              <button type="button" class="hp-link-btn neutral" data-a="share">Share</button>
+              <button type="button" class="hp-link-btn neutral" data-a="close-overlay">Back to Puzzle</button>
+              <button type="button" class="hp-link-btn danger full" data-a="reset-puzzle">Reset Puzzle</button>
+            </div>
+
+            <small>Hare Publishing • Wordrow</small>
+          </div>
+        </div>
+
+        <div class="hp-overlay" id="hpw-help-modal" aria-hidden="true">
+          <div class="hp-modal" role="dialog" aria-modal="true" aria-label="How to play Wordrow">
+            <div style="font-size:28px; line-height:1;">🧩</div>
+            <h3>How to Play Wordrow</h3>
+
+            <div class="hp-badges">
+              <span class="hp-badge">5-letter word</span>
+              <span class="hp-badge">6 guesses</span>
+            </div>
+
+            <div class="hp-modal-help-text">
+              <div class="hp-modal-subtext"><strong>Goal:</strong> Guess the hidden 5-letter word in 6 tries.</div>
+              <div class="hp-modal-subtext"><strong style="color:var(--hp-green);">Green</strong> means the letter is correct and in the right spot.</div>
+              <div class="hp-modal-subtext"><strong style="color:var(--hp-orange);">Orange</strong> means the letter is in the word but in the wrong spot.</div>
+              <div class="hp-modal-subtext"><strong style="color:#6b7280;">Gray</strong> means the letter is not in the word.</div>
+              <div class="hp-modal-subtext">Use the on-screen keyboard or your physical keyboard. Press <strong>Enter</strong> to submit and <strong>Backspace</strong> to erase.</div>
+            </div>
+
+            <div class="hp-modal-actions">
+              <button type="button" class="hp-link-btn primary full" data-a="close-help-modal">Back to Puzzle</button>
+            </div>
+
+            <small>Hare Publishing • Wordrow</small>
+          </div>
+        </div>
+      `;
+
+      renderOverlayContent();
+    }
+
+    // =========================================================
+    // ACTIONS
+    // =========================================================
+    function resetPuzzle() {
+      state = defaultState();
+      saveState();
+      render();
+      toast("Reset! Type your first guess.");
+    }
+
+    function revealAnswer() {
+      if (isFinished()) return;
+      const ok = confirm("Reveal the answer? This will end the puzzle.");
+      if (!ok) return;
+
+      state.current = "";
+      state.revealed = true;
+      state.solved = false;
+      state.lost = false;
+      state.solvedAt = "";
+      if (!state.revealedAt) state.revealedAt = new Date().toISOString();
+      state.overlaySeen = false;
+
+      saveState();
+      render();
+      showOverlay();
+    }
+
+    function submitGuess() {
+      if (isFinished()) return;
+
+      const guess = clean(state.current);
+      if (guess.length !== 5) {
+        toast("Need 5 letters.");
+        return;
+      }
+
+      const statuses = evaluateGuess(guess);
+      state.guesses.push(guess);
+      state.statuses.push(statuses);
+      state.current = "";
+
+      if (guess === answer) {
+        state.solved = true;
+        state.revealed = false;
+        state.lost = false;
+        if (!state.solvedAt) state.solvedAt = new Date().toISOString();
+        state.revealedAt = "";
+        state.overlaySeen = false;
+        saveState();
+        render();
+        showOverlay();
+        return;
+      }
+
+      if (state.guesses.length >= MAX_GUESSES) {
+        state.lost = true;
+        state.overlaySeen = false;
+        saveState();
+        render();
+        showOverlay();
+        return;
+      }
+
+      saveState();
+      render();
+      toast("Next guess…");
+    }
+
+    function handleKey(key) {
+      if (isFinished()) return;
+
+      if (key === "ENTER") {
+        submitGuess();
+        return;
+      }
+
+      if (key === "⌫" || key === "BACKSPACE" || key === "DELETE") {
+        state.current = state.current.slice(0, -1);
+        saveState();
+        render();
+        return;
+      }
+
+      if (/^[A-Z]$/.test(key)) {
+        if (state.current.length >= 5) return;
+        state.current += key;
+        saveState();
+        render();
+      }
+    }
+
+    function sharePuzzle() {
+      const shareData = {
+        title: `Wordrow #${puzzleId} — Hare Publishing`,
+        text: state.solved
+          ? `I solved today’s Wordrow #${puzzleId} in ${state.guesses.length}/${MAX_GUESSES}!`
+          : state.revealed
+            ? `I revealed the answer for today’s Wordrow #${puzzleId}.`
+            : `I played today’s Wordrow #${puzzleId} — ${state.guesses.length}/${MAX_GUESSES} tries.`,
+        url: window.location.href
+      };
+
+      if (navigator.share) {
+        navigator.share(shareData).catch(() => {});
+        return;
+      }
+
+      try {
+        navigator.clipboard.writeText(window.location.href);
+        toast("Link copied! 📋");
+      } catch {
+        toast("Copy the link from your address bar 🙂");
+      }
+    }
+
+    // =========================================================
+    // EVENTS
+    // =========================================================
+    container.addEventListener("mousedown", e => {
+      const link = e.target?.closest?.("a[href]");
+      if (link) return;
+      container.focus({ preventScroll: true });
     });
 
-    document.getElementById("hp-wf-enter")?.addEventListener("click", submitWord);
-    document.getElementById("hp-wf-delete")?.addEventListener("click", deleteLetter);
-    document.getElementById("hp-wf-clear")?.addEventListener("click", clearCurrent);
-    document.getElementById("hp-wf-reset")?.addEventListener("click", resetPuzzle);
-    document.getElementById("hp-wf-reveal")?.addEventListener("click", revealAnswers);
-
-    container.addEventListener("click", (e) => {
+    container.addEventListener("click", e => {
       const link = e.target?.closest?.("a[href]");
       if (link) return;
 
-      const btn = e.target.closest("[data-a]");
+      const btn = e.target.closest("button,[data-a],[data-k]");
       if (!btn) return;
 
       const action = btn.getAttribute("data-a");
+      const key = btn.getAttribute("data-k");
 
-      if (action === "close-solved") {
-        hideOverlay();
+      if (key) {
+        handleKey(key);
         return;
       }
 
@@ -692,89 +698,100 @@ window.HareWordFlowerEngine = (() => {
         return;
       }
 
-      if (action === "share") {
-        const shareData = {
-          title: `${puzzleTitle} — Hare Publishing`,
-          text: state.solved
-            ? `I solved ${puzzleTitle} from Hare Publishing!`
-            : `I played ${puzzleTitle} from Hare Publishing!`,
-          url: window.location.href
-        };
+      if (action === "reveal-answer") {
+        revealAnswer();
+        return;
+      }
 
-        if (navigator.share) {
-          navigator.share(shareData).catch(() => {});
-        } else {
-          try {
-            navigator.clipboard.writeText(window.location.href);
-            showMessage("Link copied! 📋", "success");
-          } catch {
-            showMessage("Copy the link from your address bar 🙂", "error");
-          }
-        }
+      if (action === "close-overlay") {
+        hideOverlay();
+        return;
+      }
+
+      if (action === "open-help-modal") {
+        showHelpModal();
+        return;
+      }
+
+      if (action === "close-help-modal") {
+        hideHelpModal();
+        return;
+      }
+
+      if (action === "clear-current") {
+        state.current = "";
+        saveState();
+        render();
+        toast("Current guess cleared.");
+        return;
+      }
+
+      if (action === "share") {
+        sharePuzzle();
       }
     });
 
-    container.addEventListener("keydown", (e) => {
+    container.addEventListener("keydown", e => {
       const target = e.target;
-      const tag = target && target.tagName ? target.tagName.toUpperCase() : "";
+      const tag = target && target.tagName ? target.tagName.toLowerCase() : "";
 
-      if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT" || target?.isContentEditable) {
-        return;
-      }
+      if (tag === "input" || tag === "textarea" || tag === "select" || target?.isContentEditable) return;
+      if (!container.contains(document.activeElement)) return;
 
-      if (!container.contains(document.activeElement)) {
-        return;
-      }
+      const overlayEl = mount.querySelector("#hpw-overlay");
+      const helpEl = mount.querySelector("#hpw-help-modal");
 
-      if (overlayEl.classList.contains("on")) {
+      if (overlayEl?.classList.contains("on") || helpEl?.classList.contains("on")) {
         if (e.key === "Escape") {
           e.preventDefault();
           hideOverlay();
+          hideHelpModal();
         }
         return;
       }
-
-      if (isFinished()) return;
 
       const key = e.key.toUpperCase();
 
       if (key === "ENTER") {
         e.preventDefault();
-        submitWord();
+        handleKey("ENTER");
         return;
       }
 
       if (key === "BACKSPACE" || key === "DELETE") {
         e.preventDefault();
-        deleteLetter();
+        handleKey(key);
         return;
       }
 
-      if (/^[A-Z]$/.test(key) && uniqueSet.has(key)) {
+      if (/^[A-Z]$/.test(key)) {
         e.preventDefault();
-        addLetter(key);
+        handleKey(key);
       }
     });
 
-    overlayEl.addEventListener("click", (e) => {
-      if (e.target === overlayEl) hideOverlay();
+    mount.addEventListener("click", e => {
+      const overlayEl = mount.querySelector("#hpw-overlay");
+      const helpEl = mount.querySelector("#hpw-help-modal");
+      if (overlayEl && e.target === overlayEl) hideOverlay();
+      if (helpEl && e.target === helpEl) hideHelpModal();
     });
 
-    renderAll();
+    // =========================================================
+    // INIT
+    // =========================================================
+    recomputeStatus();
+    saveState();
+    render();
 
-    if (state.solved) {
-      showMessage("Puzzle already solved.", "success");
-    } else if (state.revealed) {
-      showMessage("Answers already revealed.", "neutral");
-    } else {
-      clearMessage();
-    }
-
-    if ((state.solved || state.revealed) && !state.overlaySeen) {
+    if ((state.solved || state.revealed || state.lost) && !state.overlaySeen) {
       showOverlay();
     }
   }
+};
 
-  return { init };
-
-})();
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", () => window.HareWordrowEngine.init());
+} else {
+  window.HareWordrowEngine.init();
+}
