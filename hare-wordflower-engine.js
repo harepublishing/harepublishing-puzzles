@@ -1,6 +1,6 @@
 /* =========================================================
    HARE PUBLISHING WORD FLOWER ENGINE
-   Version: word-flower-v1.3
+   Version: word-flower-v1.4
    Date: 2026-05-17
    ========================================================= */
 
@@ -112,25 +112,6 @@ window.HareWordFlowerEngine = (() => {
       return allowedWords.reduce((sum, word) => sum + scoreWord(word), 0);
     }
 
-    function currentScore() {
-      return state.found.reduce((sum, word) => sum + scoreWord(word), 0);
-    }
-
-    function sortWords(words) {
-      return [...words].sort((a, b) => {
-        if (a.length !== b.length) return a.length - b.length;
-        return a.localeCompare(b);
-      });
-    }
-
-    function isFinished() {
-      return state.solved || state.revealed;
-    }
-
-    function nowIso() {
-      return new Date().toISOString();
-    }
-
     function loadState() {
       try {
         const saved = localStorage.getItem(SAVE_KEY);
@@ -156,6 +137,25 @@ window.HareWordFlowerEngine = (() => {
     state.found = [...new Set(
       state.found.map(word => String(word).trim().toUpperCase()).filter(Boolean)
     )].filter(word => allowedWords.includes(word));
+
+    function currentScore() {
+      return state.found.reduce((sum, word) => sum + scoreWord(word), 0);
+    }
+
+    function sortWords(words) {
+      return [...words].sort((a, b) => {
+        if (a.length !== b.length) return a.length - b.length;
+        return a.localeCompare(b);
+      });
+    }
+
+    function isFinished() {
+      return state.solved || state.revealed;
+    }
+
+    function nowIso() {
+      return new Date().toISOString();
+    }
 
     function save() {
       try {
@@ -377,18 +377,31 @@ window.HareWordFlowerEngine = (() => {
     const overlayTextEl = container.querySelector("#hp-wf-overlay-text");
 
     function syncPanelHeights() {
-      if (!mainPanelEl || !rightPanelEl) return;
+      if (!mainPanelEl || !rightPanelEl || !foundWordsEl) return;
 
       if (window.innerWidth <= 900) {
         rightPanelEl.style.height = "";
+        rightPanelEl.style.maxHeight = "";
+        rightPanelEl.style.overflow = "";
+        foundWordsEl.style.maxHeight = "";
+        foundWordsEl.style.overflowY = "";
         return;
       }
 
-      rightPanelEl.style.height = "";
+      const leftHeight = mainPanelEl.offsetHeight;
+
+      rightPanelEl.style.height = `${leftHeight}px`;
+      rightPanelEl.style.maxHeight = `${leftHeight}px`;
+      rightPanelEl.style.overflow = "hidden";
 
       requestAnimationFrame(() => {
-        if (!mainPanelEl || !rightPanelEl) return;
-        rightPanelEl.style.height = `${mainPanelEl.offsetHeight}px`;
+        const panelRect = rightPanelEl.getBoundingClientRect();
+        const listRect = foundWordsEl.getBoundingClientRect();
+        const bottomPadding = 20;
+        const availableHeight = panelRect.bottom - listRect.top - bottomPadding;
+
+        foundWordsEl.style.maxHeight = `${Math.max(120, availableHeight)}px`;
+        foundWordsEl.style.overflowY = "auto";
       });
     }
 
