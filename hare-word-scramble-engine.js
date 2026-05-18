@@ -1,6 +1,6 @@
 /* HARE PUBLISHING WORD SCRAMBLE ENGINE
-   Release target: word-scramble-v1.1
-   Update: adds clickable Hint 1 and Hint 2 support using clue and clue2.
+   Release target: word-scramble-v1.2
+   Update: matches shared puzzle toolbar pattern with Help modal plus Hint 1 / Hint 2 buttons.
 */
 window.HareWordScrambleEngine = {
   init({ containerId = "hp-wordscramble-container", dataObject } = {}) {
@@ -322,7 +322,21 @@ window.HareWordScrambleEngine = {
 
     state.revealedHints[entry.id][key] = true;
     saveState();
-    renderCurrentOnly();
+    renderAll();
+  }
+
+  function showHelpModal() {
+    const modalEl = mount.querySelector("#hp-wsc-help-modal");
+    if (!modalEl) return;
+    modalEl.classList.add("on");
+    modalEl.setAttribute("aria-hidden", "false");
+  }
+
+  function hideHelpModal() {
+    const modalEl = mount.querySelector("#hp-wsc-help-modal");
+    if (!modalEl) return;
+    modalEl.classList.remove("on");
+    modalEl.setAttribute("aria-hidden", "true");
   }
 
   // =========================================================
@@ -620,33 +634,12 @@ window.HareWordScrambleEngine = {
     const hint2Text = entry.clue2 || `A ${entry.length}-letter word.`;
 
     currentAreaEl.innerHTML = `
-      <div class="hp-wsc-hints">
-        <div class="hp-wsc-hint-buttons">
-          <button
-            type="button"
-            class="hp-wsc-btn hp-wsc-hint-btn${hintState["1"] ? " is-used" : ""}"
-            data-a="show-hint"
-            data-hint="1"
-            ${isFinished() || isCurrentSolved ? "disabled" : ""}
-          >Hint 1</button>
-
-          <button
-            type="button"
-            class="hp-wsc-btn hp-wsc-hint-btn${hintState["2"] ? " is-used" : ""}"
-            data-a="show-hint"
-            data-hint="2"
-            ${isFinished() || isCurrentSolved ? "disabled" : ""}
-          >Hint 2</button>
-        </div>
-
-        <div class="hp-wsc-hint-output" aria-live="polite">
-          ${hintState["1"] ? `<div class="hp-wsc-clue-text"><strong>Hint 1:</strong> ${escapeHtml(hint1Text)}</div>` : ""}
-          ${hintState["2"] ? `<div class="hp-wsc-clue-text"><strong>Hint 2:</strong> ${escapeHtml(hint2Text)}</div>` : ""}
-          ${!hintState["1"] && !hintState["2"] ? `<div class="hp-wsc-hint-empty">Need a nudge? Try Hint 1 first, then Hint 2 if you want an extra clue.</div>` : ""}
-        </div>
+      <div class="hp-wsc-hint-output" aria-live="polite">
+        ${hintState["1"] ? `<div class="hp-wsc-clue-text"><strong>Hint 1:</strong> ${escapeHtml(hint1Text)}</div>` : ""}
+        ${hintState["2"] ? `<div class="hp-wsc-clue-text"><strong>Hint 2:</strong> ${escapeHtml(hint2Text)}</div>` : ""}
       </div>
 
-     <div class="hp-wsc-answer-slots" aria-label="Answer slots" style="--hp-wsc-slot-count:${entry.length};">
+      <div class="hp-wsc-answer-slots" aria-label="Answer slots" style="--hp-wsc-slot-count:${entry.length};">
         ${slotsHtml}
       </div>
 
@@ -655,6 +648,20 @@ window.HareWordScrambleEngine = {
         <div class="hp-wsc-letter-bank">
           ${scrambledLetters}
         </div>
+      </div>
+    `;
+  }
+
+  function renderTopControls() {
+    const entry = getCurrentEntry();
+    const hintState = entry ? (state.revealedHints?.[entry.id] || {}) : {};
+    const disabled = !entry || isFinished() || solvedWordIds().has(entry.id);
+
+    return `
+      <div class="hp-puzzle-tools hp-wsc-tools" aria-label="Word Scramble puzzle controls">
+        <button type="button" class="hp-tool-btn help-info" data-a="open-help-modal">Help</button>
+        <button type="button" class="hp-tool-btn hint-toggle${hintState["1"] ? " active" : ""}" data-a="show-hint" data-hint="1" ${disabled ? "disabled" : ""}>Hint 1</button>
+        <button type="button" class="hp-tool-btn hint-toggle${hintState["2"] ? " active" : ""}" data-a="show-hint" data-hint="2" ${disabled ? "disabled" : ""}>Hint 2</button>
       </div>
     `;
   }
@@ -700,6 +707,8 @@ window.HareWordScrambleEngine = {
               <div class="hp-wsc-progress-fill" id="hp-wsc-progress-fill"></div>
             </div>
 
+            ${renderTopControls()}
+
             <div class="hp-wsc-status">
               <span class="hp-wsc-status-msg" id="hp-wsc-status-msg">Tap letters to begin.</span>
             </div>
@@ -721,17 +730,6 @@ window.HareWordScrambleEngine = {
 
         <div class="hp-wsc-col-right">
           <div class="hp-wsc-panel">
-            <details class="hp-wsc-help-details">
-              <summary class="hp-wsc-help-summary">How to play</summary>
-              <div class="hp-wsc-help">
-                <span class="hp-wsc-help-title">How to play</span>
-                <span class="hp-wsc-help-line">Tap the scrambled letters to build the answer.</span>
-                <span class="hp-wsc-help-line">Use <strong>Delete</strong> to remove the last letter or <strong>Clear</strong> to start that word again.</span>
-                <span class="hp-wsc-help-line">Press <strong>Enter</strong> when your word is complete.</span>
-                <span class="hp-wsc-help-line"><strong>Reveal Answers</strong> ends the puzzle and shows every answer.</span>
-              </div>
-            </details>
-
             <div class="hp-wsc-words-header">
               <h3>Words</h3>
               <span class="hp-wsc-pill" id="hp-wsc-list-pill">Tap a word to solve it</span>
@@ -767,6 +765,27 @@ window.HareWordScrambleEngine = {
             <button class="hp-link-btn" data-a="close-overlay">Back to Puzzle</button>
 
             <button class="hp-link-btn full danger" data-a="reset-puzzle">Reset Puzzle</button>
+          </div>
+
+          <small>Hare Publishing • Word Scramble</small>
+        </div>
+      </div>
+
+      <div class="hp-overlay hp-wsc-help-modal" id="hp-wsc-help-modal" aria-hidden="true">
+        <div class="hp-modal" role="dialog" aria-modal="true" aria-label="How to play Word Scramble">
+          <h3>How to Play</h3>
+
+          <div class="hp-help-modal-content">
+            <span class="hp-help-line">Choose a scrambled word from the list.</span>
+            <span class="hp-help-line">Tap the scrambled letters to build the answer.</span>
+            <span class="hp-help-line">Use <strong>Hint 1</strong> for the main clue, then <strong>Hint 2</strong> if you want an extra nudge.</span>
+            <span class="hp-help-line">Use <strong>Delete</strong> to remove the last letter or <strong>Clear</strong> to start that word again.</span>
+            <span class="hp-help-line">Press <strong>Enter</strong> when your word is complete.</span>
+            <span class="hp-help-line"><strong>Reveal Answers</strong> ends the puzzle and shows every answer.</span>
+          </div>
+
+          <div class="hp-modal-actions">
+            <button class="hp-link-btn neutral full" data-a="close-help-modal">Back to Puzzle</button>
           </div>
 
           <small>Hare Publishing • Word Scramble</small>
@@ -832,10 +851,25 @@ mount.addEventListener("click", (e) => {
       showHint(hintNumber);
       return;
     }
+
+    if (action === "open-help-modal") {
+      showHelpModal();
+      return;
+    }
+
+    if (action === "close-help-modal") {
+      hideHelpModal();
+      return;
+    }
   }
 
   if (overlayEl && e.target === overlayEl) {
     hideOverlay();
+  }
+
+  const helpModalEl = mount.querySelector("#hp-wsc-help-modal");
+  if (helpModalEl && e.target === helpModalEl) {
+    hideHelpModal();
   }
 });
 
@@ -851,6 +885,15 @@ mount.addEventListener("click", (e) => {
   }
 
   if (!container.contains(document.activeElement)) {
+    return;
+  }
+
+  const helpModalEl = mount.querySelector("#hp-wsc-help-modal");
+  if (helpModalEl && helpModalEl.classList.contains("on")) {
+    if (e.key === "Escape") {
+      e.preventDefault();
+      hideHelpModal();
+    }
     return;
   }
 
