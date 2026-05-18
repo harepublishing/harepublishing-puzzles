@@ -1,3 +1,7 @@
+/* HARE PUBLISHING WORD SCRAMBLE ENGINE
+   Release target: word-scramble-v1.1
+   Update: adds clickable Hint 1 and Hint 2 support using clue and clue2.
+*/
 window.HareWordScrambleEngine = {
   init({ containerId = "hp-wordscramble-container", dataObject } = {}) {
   // =========================================================
@@ -115,6 +119,7 @@ window.HareWordScrambleEngine = {
       id: `w${index + 1}`,
       answer: normalizeWord(item.answer),
       clue: String(item.clue || "").trim(),
+      clue2: String(item.clue2 || "").trim(),
       index
     }))
     .filter(item => item.answer);
@@ -209,6 +214,7 @@ window.HareWordScrambleEngine = {
       usedLetterIds: [],
       solved: false,
       revealed: false,
+      revealedHints: {},
       startedAt: "",
       solvedAt: "",
       revealedAt: "",
@@ -295,6 +301,28 @@ window.HareWordScrambleEngine = {
   function setStatusMessage(msg) {
     const el = mount.querySelector("#hp-wsc-status-msg");
     if (el) el.textContent = msg;
+  }
+
+  function showHint(hintNumber) {
+    if (isFinished()) return;
+    markStarted();
+
+    const entry = getCurrentEntry();
+    if (!entry) return;
+
+    const key = hintNumber === 2 ? "2" : "1";
+
+    if (!state.revealedHints || typeof state.revealedHints !== "object") {
+      state.revealedHints = {};
+    }
+
+    if (!state.revealedHints[entry.id]) {
+      state.revealedHints[entry.id] = {};
+    }
+
+    state.revealedHints[entry.id][key] = true;
+    saveState();
+    renderCurrentOnly();
   }
 
   // =========================================================
@@ -587,13 +615,36 @@ window.HareWordScrambleEngine = {
       `;
     }).join("");
 
+    const hintState = state.revealedHints?.[entry.id] || {};
+    const hint1Text = entry.clue || "Unscramble the letters.";
+    const hint2Text = entry.clue2 || `A ${entry.length}-letter word.`;
+
     currentAreaEl.innerHTML = `
-      <details class="hp-wsc-clue-details">
-        <summary class="hp-wsc-clue-summary">Clue</summary>
-        <div class="hp-wsc-prompt">
-          <div class="hp-wsc-clue-text">${escapeHtml(entry.clue || "Unscramble the letters")}</div>
+      <div class="hp-wsc-hints">
+        <div class="hp-wsc-hint-buttons">
+          <button
+            type="button"
+            class="hp-wsc-btn hp-wsc-hint-btn${hintState["1"] ? " is-used" : ""}"
+            data-a="show-hint"
+            data-hint="1"
+            ${isFinished() || isCurrentSolved ? "disabled" : ""}
+          >Hint 1</button>
+
+          <button
+            type="button"
+            class="hp-wsc-btn hp-wsc-hint-btn${hintState["2"] ? " is-used" : ""}"
+            data-a="show-hint"
+            data-hint="2"
+            ${isFinished() || isCurrentSolved ? "disabled" : ""}
+          >Hint 2</button>
         </div>
-      </details>
+
+        <div class="hp-wsc-hint-output" aria-live="polite">
+          ${hintState["1"] ? `<div class="hp-wsc-clue-text"><strong>Hint 1:</strong> ${escapeHtml(hint1Text)}</div>` : ""}
+          ${hintState["2"] ? `<div class="hp-wsc-clue-text"><strong>Hint 2:</strong> ${escapeHtml(hint2Text)}</div>` : ""}
+          ${!hintState["1"] && !hintState["2"] ? `<div class="hp-wsc-hint-empty">Need a nudge? Try Hint 1 first, then Hint 2 if you want an extra clue.</div>` : ""}
+        </div>
+      </div>
 
      <div class="hp-wsc-answer-slots" aria-label="Answer slots" style="--hp-wsc-slot-count:${entry.length};">
         ${slotsHtml}
@@ -773,6 +824,12 @@ mount.addEventListener("click", (e) => {
 
     if (action === "share") {
       sharePuzzle();
+      return;
+    }
+
+    if (action === "show-hint") {
+      const hintNumber = Number(actionBtn.getAttribute("data-hint") || "1");
+      showHint(hintNumber);
       return;
     }
   }
