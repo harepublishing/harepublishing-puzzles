@@ -284,15 +284,35 @@ window.HareCryptogramEngine = {
 
     function useHint(idx) {
       if (idx < 0 || idx >= hints.length) return;
-      if (state.usedHints[idx]) return;
       if (isFinished()) return;
 
       const hint = hints[idx];
-      state.usedHints[idx] = true;
+      const isTurningOff = Boolean(state.usedHints[idx]);
+
+      state.usedHints[idx] = !isTurningOff;
 
       if (hint.type === "mapping") {
+        const cipher = upper(hint.cipher);
+        const plain = upper(hint.plain);
+
+        if (isTurningOff) {
+          // Only remove the hint's mapping if it is still the same mapping
+          // the hint originally supplied. If the player changed it manually,
+          // leave their current entry alone.
+          if (state.mappings[cipher] === plain) {
+            delete state.mappings[cipher];
+          }
+
+          state.checked = false;
+          state.solved = false;
+          state.solvedAt = "";
+          saveState();
+          render();
+          return;
+        }
+
         saveState();
-        applyMapping(hint.cipher, hint.plain);
+        applyMapping(cipher, plain);
         return;
       }
 
@@ -404,11 +424,14 @@ window.HareCryptogramEngine = {
           <button type="button" class="hp-tool-btn help-info" data-a="open-help-modal">Help</button>
           ${hints.map((hint, idx) => {
             let label = hint.label || `Hint ${idx + 1}`;
-            if (state.usedHints[idx]) {
-              if (hint.type === "mapping") label = `${label}: ${hint.cipher} = ${hint.plain}`;
-              if (hint.type === "author") label = `${label}: ${hint.value}`;
+
+            if (state.usedHints[idx] && hint.type === "mapping") {
+              label = `${label}: ${hint.cipher} = ${hint.plain}`;
             }
-            return `<button type="button" class="hp-tool-btn hint-toggle${state.usedHints[idx] ? " active" : ""}" data-hint="${idx}">${escapeHtml(label)}</button>`;
+
+            // Author hints stay labelled as Hint 3 in the button.
+            // The author name appears only in the green reveal panel.
+            return `<button type="button" class="hp-tool-btn hint-toggle${state.usedHints[idx] ? " active" : ""}" data-hint="${idx}" aria-pressed="${state.usedHints[idx] ? "true" : "false"}">${escapeHtml(label)}</button>`;
           }).join("")}
         </div>
       `;
@@ -599,12 +622,12 @@ window.HareCryptogramEngine = {
           <div class="hp-crypto-card">
             ${renderStats()}
             ${renderTopControls()}
+            ${renderAuthorReveal()}
 
             <div class="hp-crypto-meta-row">
               <span class="hp-badge">${uniqueCipherCount} cipher letters</span>
             </div>
 
-            ${renderAuthorReveal()}
             ${renderPuzzle()}
             ${renderKeyboard()}
           </div>
