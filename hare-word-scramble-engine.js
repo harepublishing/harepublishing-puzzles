@@ -1,6 +1,6 @@
 /* HARE PUBLISHING WORD SCRAMBLE ENGINE
    Release target: word-scramble-v1.2
-   Update: Hint buttons now toggle on/off while preserving shared toolbar/help modal pattern.
+   Update: Hint output moved directly under toolbar with soft green styling support.
 */
 window.HareWordScrambleEngine = {
   init({ containerId = "hp-wordscramble-container", dataObject } = {}) {
@@ -632,16 +632,7 @@ window.HareWordScrambleEngine = {
       `;
     }).join("");
 
-    const hintState = state.revealedHints?.[entry.id] || {};
-    const hint1Text = entry.clue || "Unscramble the letters.";
-    const hint2Text = entry.clue2 || `A ${entry.length}-letter word.`;
-
     currentAreaEl.innerHTML = `
-      <div class="hp-wsc-hint-output" aria-live="polite">
-        ${hintState["1"] ? `<div class="hp-wsc-clue-text"><strong>Hint 1:</strong> ${escapeHtml(hint1Text)}</div>` : ""}
-        ${hintState["2"] ? `<div class="hp-wsc-clue-text"><strong>Hint 2:</strong> ${escapeHtml(hint2Text)}</div>` : ""}
-      </div>
-
       <div class="hp-wsc-answer-slots" aria-label="Answer slots" style="--hp-wsc-slot-count:${entry.length};">
         ${slotsHtml}
       </div>
@@ -665,6 +656,32 @@ window.HareWordScrambleEngine = {
         <button type="button" class="hp-tool-btn help-info" data-a="open-help-modal">Help</button>
         <button type="button" class="hp-tool-btn hint-toggle${hintState["1"] ? " active" : ""}" data-a="show-hint" data-hint="1" ${disabled ? "disabled" : ""}>Hint 1</button>
         <button type="button" class="hp-tool-btn hint-toggle${hintState["2"] ? " active" : ""}" data-a="show-hint" data-hint="2" ${disabled ? "disabled" : ""}>Hint 2</button>
+      </div>
+    `;
+  }
+
+  function renderHintOutput() {
+    const entry = getCurrentEntry();
+    if (!entry || isFinished()) return "";
+
+    const hintState = state.revealedHints?.[entry.id] || {};
+    const hint1Text = entry.clue || "Unscramble the letters.";
+    const hint2Text = entry.clue2 || `A ${entry.length}-letter word.`;
+
+    const hintOne = hintState["1"]
+      ? `<div class="hp-wsc-clue-text"><strong>Hint 1:</strong> ${escapeHtml(hint1Text)}</div>`
+      : "";
+
+    const hintTwo = hintState["2"]
+      ? `<div class="hp-wsc-clue-text"><strong>Hint 2:</strong> ${escapeHtml(hint2Text)}</div>`
+      : "";
+
+    if (!hintOne && !hintTwo) return "";
+
+    return `
+      <div class="hp-wsc-hint-output" aria-live="polite">
+        ${hintOne}
+        ${hintTwo}
       </div>
     `;
   }
@@ -711,6 +728,8 @@ window.HareWordScrambleEngine = {
             </div>
 
             ${renderTopControls()}
+
+            ${renderHintOutput()}
 
             <div class="hp-wsc-status">
               <span class="hp-wsc-status-msg" id="hp-wsc-status-msg">Tap letters to begin.</span>
