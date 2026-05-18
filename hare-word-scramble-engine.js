@@ -1,6 +1,6 @@
 /* HARE PUBLISHING WORD SCRAMBLE ENGINE
    Release target: word-scramble-v1.2
-   Update: matches shared puzzle toolbar pattern with Help modal plus Hint 1 / Hint 2 buttons.
+   Update: Hint buttons now toggle on/off while preserving shared toolbar/help modal pattern.
 */
 window.HareWordScrambleEngine = {
   init({ containerId = "hp-wordscramble-container", dataObject } = {}) {
@@ -320,7 +320,10 @@ window.HareWordScrambleEngine = {
       state.revealedHints[entry.id] = {};
     }
 
-    state.revealedHints[entry.id][key] = true;
+    // Hint buttons behave as toggles:
+    // click once to show the hint, click again to hide it.
+    state.revealedHints[entry.id][key] = !state.revealedHints[entry.id][key];
+
     saveState();
     renderAll();
   }
