@@ -1,7 +1,7 @@
 /* =========================================================
    HARE PUBLISHING WORD SEARCH ENGINE
    GitHub/jsDelivr hosted engine file
-   Updated: 2026-05-19 v1.1 — Help modal + shared mobile tool/stat alignment
+   Updated: 2026-05-19 v1.2 — Title fallback standardized
 
    Suggested filename:
    hare-word-search-engine.js
@@ -16,7 +16,10 @@
    window.HareWordSearchData = {
      puzzleId: "57",
      puzzleDate: "2026-05-14",
-     title: "Word Search #57",
+
+     // Optional custom override only:
+     // puzzleTitle: "Custom Word Search Title",
+
      grid: ["ABC...", "DEF..."],
      words: ["WORD", "PHRASE"],
      placements: [{ word:"WORD", row:0, col:0, dr:0, dc:1 }],
@@ -139,7 +142,7 @@ window.HareWordSearchEngine = {
     }
 
     const puzzleId = String(pageData.puzzleId || "").trim();
-    const puzzleTitle = String(pageData.title || (puzzleId ? `Word Search #${puzzleId}` : "Word Search")).trim();
+    const puzzleTitle = String(pageData.puzzleTitle || (puzzleId ? `Word Search #${puzzleId}` : "Word Search")).trim();
     const puzzleDate = formatPuzzleDate(pageData.puzzleDate || pageData.date || "");
     const grid = Array.isArray(pageData.grid) ? pageData.grid.map(row => String(row || "").toUpperCase().replace(/[^A-Z]/g, "")) : [];
     const gridSize = grid.length;
@@ -184,9 +187,6 @@ window.HareWordSearchEngine = {
 
     const STORAGE_KEY = `hp_ws_${puzzleId}`;
 
-    // =========================================================
-    // SCHEMA
-    // =========================================================
     (function injectSchema() {
       const existing = document.getElementById("hp-ws-schema");
       if (existing) existing.remove();
@@ -216,9 +216,6 @@ window.HareWordSearchEngine = {
       document.head.appendChild(script);
     })();
 
-    // =========================================================
-    // ANALYTICS / STATS HOOKS
-    // =========================================================
     function recordPuzzleEvent(eventName, extra = {}) {
       const payload = {
         puzzleType: "word-search",
@@ -248,9 +245,6 @@ window.HareWordSearchEngine = {
       } catch {}
     }
 
-    // =========================================================
-    // STATE
-    // =========================================================
     function defaultState() {
       return {
         foundWords: [],
@@ -398,9 +392,6 @@ window.HareWordSearchEngine = {
       }
     }
 
-    // =========================================================
-    // ACTIONS
-    // =========================================================
     function clearAnchor() {
       if (isFinished()) return;
       state.anchor = null;
@@ -453,9 +444,6 @@ window.HareWordSearchEngine = {
       showOverlay();
     }
 
-    // =========================================================
-    // RENDER HELPERS
-    // =========================================================
     function formatFoundCount() {
       return `${state.foundWords.length}/${normalizedWords.length}`;
     }
@@ -690,7 +678,6 @@ window.HareWordSearchEngine = {
                 <button type="button" class="hp-tool-btn clear-tool" data-a="clear-selection">Clear</button>
               </div>
 
-
               <div class="hp-ws-words-header">
                 <h3>Find These Words</h3>
               </div>
@@ -723,7 +710,6 @@ window.HareWordSearchEngine = {
           </div>
         </div>
 
-
         <div class="hp-overlay hp-ws-help-modal" id="hp-ws-help-modal" aria-hidden="true">
           <div class="hp-modal" role="dialog" aria-modal="true" aria-label="How to play Word Search">
             <h3>Help</h3>
@@ -755,12 +741,10 @@ window.HareWordSearchEngine = {
     }
 
     function bindEvents() {
-      const clearBtn = mount.querySelector("#hp-ws-clear-anchor");
       const resetBtn = mount.querySelector("#hp-ws-reset");
       const revealBtn = mount.querySelector("#hp-ws-reveal");
       const overlayEl = mount.querySelector("#hp-ws-overlay");
 
-      if (clearBtn) clearBtn.addEventListener("click", clearAnchor);
       if (resetBtn) resetBtn.addEventListener("click", resetPuzzle);
       if (revealBtn) revealBtn.addEventListener("click", revealAnswers);
 
