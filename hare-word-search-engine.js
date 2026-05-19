@@ -1,7 +1,7 @@
 /* =========================================================
    HARE PUBLISHING WORD SEARCH ENGINE
    GitHub/jsDelivr hosted engine file
-   Updated: 2026-05-19 — fixed-grid engine, shared CSS/modal/stats-ready
+   Updated: 2026-05-19 v1.1 — Help modal + shared mobile tool/stat alignment
 
    Suggested filename:
    hare-word-search-engine.js
@@ -613,6 +613,22 @@ window.HareWordSearchEngine = {
       if (save) saveState();
     }
 
+    function showHelpModal() {
+      const modalEl = mount.querySelector("#hp-ws-help-modal");
+      if (!modalEl) return;
+
+      modalEl.classList.add("on");
+      modalEl.setAttribute("aria-hidden", "false");
+    }
+
+    function hideHelpModal() {
+      const modalEl = mount.querySelector("#hp-ws-help-modal");
+      if (!modalEl) return;
+
+      modalEl.classList.remove("on");
+      modalEl.setAttribute("aria-hidden", "true");
+    }
+
     function render() {
       mount.innerHTML = `
         ${puzzleDate ? `<div class="hp-puzzle-date">${escapeHtml(puzzleDate)}</div>` : ""}
@@ -653,6 +669,13 @@ window.HareWordSearchEngine = {
                 <div class="hp-ws-board" id="hp-ws-board" role="grid" aria-label="Word search board"></div>
               </div>
 
+              <div class="hp-puzzle-mobile-tools" aria-label="Word Search puzzle controls">
+                <button type="button" class="hp-tool-btn help-info" data-a="open-help-modal">Help</button>
+                <button type="button" class="hp-tool-btn clear-tool" data-a="clear-selection">Clear</button>
+                <button type="button" class="hp-tool-btn danger" data-a="reset-puzzle">Reset</button>
+                <button type="button" class="hp-tool-btn reveal" data-a="reveal-answers">Reveal</button>
+              </div>
+
               <div class="hp-ws-actions">
                 <button type="button" class="hp-ws-btn" id="hp-ws-clear-anchor">Clear Selection</button>
                 <button type="button" class="hp-ws-btn danger" id="hp-ws-reset">Reset Puzzle</button>
@@ -662,16 +685,14 @@ window.HareWordSearchEngine = {
           </div>
 
           <div class="hp-ws-col-right">
-            <details class="hp-ws-help-details">
-              <summary class="hp-ws-help-summary">How to Play</summary>
-              <div class="hp-ws-help">
-                <span class="hp-ws-help-line">Click the <strong>first letter</strong> of a word, then click the <strong>last letter</strong>.</span>
-                <span class="hp-ws-help-line">Words may run <strong>horizontally</strong>, <strong>vertically</strong>, or <strong>diagonally</strong>, and they may also appear backward.</span>
-                <span class="hp-ws-help-line"><strong>Reveal Answers</strong> ends the puzzle and shows every hidden word.</span>
-              </div>
-            </details>
-
             <div class="hp-ws-panel">
+              <div class="hp-puzzle-tools" aria-label="Word Search puzzle controls">
+                <button type="button" class="hp-tool-btn help-info" data-a="open-help-modal">Help</button>
+                <button type="button" class="hp-tool-btn clear-tool" data-a="clear-selection">Clear</button>
+                <button type="button" class="hp-tool-btn danger" data-a="reset-puzzle">Reset</button>
+              </div>
+
+
               <div class="hp-ws-words-header">
                 <h3>Find These Words</h3>
               </div>
@@ -698,6 +719,27 @@ window.HareWordSearchEngine = {
               <button class="hp-link-btn" data-a="share">Share</button>
               <button class="hp-link-btn" data-a="close-overlay">Back to Puzzle</button>
               <button class="hp-link-btn full danger" data-a="reset-puzzle">Reset Puzzle</button>
+            </div>
+
+            <small>Hare Publishing • Word Search</small>
+          </div>
+        </div>
+
+
+        <div class="hp-overlay hp-ws-help-modal" id="hp-ws-help-modal" aria-hidden="true">
+          <div class="hp-modal" role="dialog" aria-modal="true" aria-label="How to play Word Search">
+            <h3>Help</h3>
+
+            <div class="hp-help-modal-content">
+              <span class="hp-help-line">Click the <strong>first letter</strong> of a hidden word, then click the <strong>last letter</strong>.</span>
+              <span class="hp-help-line">Words may run <strong>horizontally</strong>, <strong>vertically</strong>, or <strong>diagonally</strong>.</span>
+              <span class="hp-help-line">Words may also appear <strong>backward</strong>.</span>
+              <span class="hp-help-line"><strong>Clear</strong> removes the current start-letter selection.</span>
+              <span class="hp-help-line"><strong>Reveal Answers</strong> ends the puzzle and shows every hidden word.</span>
+            </div>
+
+            <div class="hp-modal-actions">
+              <button class="hp-link-btn neutral full" data-a="close-help-modal">Back to Puzzle</button>
             </div>
 
             <small>Hare Publishing • Word Search</small>
@@ -738,6 +780,26 @@ window.HareWordSearchEngine = {
             return;
           }
 
+          if (action === "open-help-modal") {
+            showHelpModal();
+            return;
+          }
+
+          if (action === "close-help-modal") {
+            hideHelpModal();
+            return;
+          }
+
+          if (action === "clear-selection") {
+            clearAnchor();
+            return;
+          }
+
+          if (action === "reveal-answers") {
+            revealAnswers();
+            return;
+          }
+
           if (action === "share") {
             const shareData = {
               title: `${puzzleTitle} — Hare Publishing`,
@@ -770,12 +832,25 @@ window.HareWordSearchEngine = {
           if (e.target === overlayEl) hideOverlay();
         });
       }
+
+      const helpModalEl = mount.querySelector("#hp-ws-help-modal");
+      if (helpModalEl) {
+        helpModalEl.addEventListener("click", e => {
+          if (e.target === helpModalEl) hideHelpModal();
+        });
+      }
     }
 
     container.addEventListener("keydown", e => {
       const overlayEl = mount.querySelector("#hp-ws-overlay");
       if (overlayEl && overlayEl.classList.contains("on")) {
         if (e.key === "Escape") hideOverlay();
+        return;
+      }
+
+      const helpModalEl = mount.querySelector("#hp-ws-help-modal");
+      if (helpModalEl && helpModalEl.classList.contains("on")) {
+        if (e.key === "Escape") hideHelpModal();
         return;
       }
 
