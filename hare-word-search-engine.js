@@ -677,9 +677,8 @@ window.HareWordSearchEngine = {
               </div>
 
               <div class="hp-ws-actions">
-                <button type="button" class="hp-ws-btn" id="hp-ws-clear-anchor">Clear Selection</button>
                 <button type="button" class="hp-ws-btn danger" id="hp-ws-reset">Reset Puzzle</button>
-                <button type="button" class="hp-ws-btn reveal" id="hp-ws-reveal" style="grid-column: span 2;">Reveal Answers</button>
+                <button type="button" class="hp-ws-btn reveal" id="hp-ws-reveal">Reveal Answers</button>
               </div>
             </div>
           </div>
@@ -689,7 +688,6 @@ window.HareWordSearchEngine = {
               <div class="hp-puzzle-tools" aria-label="Word Search puzzle controls">
                 <button type="button" class="hp-tool-btn help-info" data-a="open-help-modal">Help</button>
                 <button type="button" class="hp-tool-btn clear-tool" data-a="clear-selection">Clear</button>
-                <button type="button" class="hp-tool-btn danger" data-a="reset-puzzle">Reset</button>
               </div>
 
 
