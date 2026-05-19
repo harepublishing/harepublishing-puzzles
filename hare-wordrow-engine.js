@@ -1,7 +1,7 @@
 /* =========================================================
    HARE PUBLISHING WORDROW ENGINE
    GitHub/jsDelivr hosted engine file
-   Updated: 2026-05-15 — stats/progress/help modal UI + correct-letter stat fix
+   Updated: 2026-05-19 — mobile action cleanup + reveal answer row
 
    Suggested filename:
    hare-wordrow-engine.js
@@ -282,11 +282,13 @@ window.HareWordrowEngine = {
 
     function renderGrid() {
       const activeRow = Math.min(state.guesses.length, MAX_GUESSES - 1);
+      const revealedRow = state.revealed ? MAX_GUESSES - 1 : -1;
       let html = "";
 
       for (let r = 0; r < MAX_GUESSES; r++) {
-        const guess = state.guesses[r] || "";
-        const statuses = state.statuses[r] || null;
+        const isRevealedAnswerRow = r === revealedRow;
+        const guess = isRevealedAnswerRow ? answer : (state.guesses[r] || "");
+        const statuses = isRevealedAnswerRow ? Array(5).fill("revealed") : (state.statuses[r] || null);
         const draft = (r === activeRow && !isFinished()) ? state.current : "";
 
         html += `<div class="hpw-row">`;
@@ -352,7 +354,7 @@ window.HareWordrowEngine = {
         overlayTitleEl.textContent = "Answer Revealed";
         overlayTextEl.innerHTML = `
           <div class="hp-modal-lead">The word was ${escapeHtml(answer)}.</div>
-          <div class="hp-modal-subtext">Now that you've seen the answer, try another Daily Brain Boost puzzle.</div>
+          <div class="hp-modal-subtext">The answer is now shown in the final row of the puzzle.</div>
           <div class="hp-modal-subtext">Or explore a whole stack of puzzles to enjoy offline.</div>
         `;
         return;
