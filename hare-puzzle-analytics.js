@@ -1,6 +1,5 @@
 window.HarePuzzleAnalytics = (() => {
-  const ENDPOINT = "https://script.google.com/macros/s/AKfycbwS7DsZFTf_SzkHiNQ7k77ZvaDRenr8VCgispZdz2ohUeXOrjHRZ_TKoEOWuLZdfOI/exec
-";
+const ENDPOINT = "https://script.google.com/macros/s/AKfycbwS7DsZFTf_SzkHiNQ7k77ZvaDRenr8VCgispZdz2ohUeXOrjHRZ_TKoEOWuLZdfOI/exec";
   const ID_KEY = "hp_anonymous_player_id";
 
   function getAnonymousId() {
