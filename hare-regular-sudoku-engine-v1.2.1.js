@@ -725,6 +725,7 @@ window.HareRegularSudokuEngine = {
 
       state.cells[selected].value = cfg.solution[selected];
       state.cells[selected].notes.fill(false);
+      if (hintsOn) removePeerNotesForValue(selected, parseInt(cfg.solution[selected], 10));
       renderCell(selected);
       statEl.textContent = `Revealed Row ${Math.floor(selected / 9) + 1}, Col ${selected % 9 + 1}.`;
       applyHintHighlights();
