@@ -1020,7 +1020,7 @@ window.HareRegularSudokuEngine = {
       const cfg = getConfig();
 
 mount.innerHTML = `
-      <style>
+<style>
   #hp-sudoku-container .hp-rs-top-area {
     width: 100%;
     margin: 0 0 18px;
@@ -1463,23 +1463,30 @@ mount.innerHTML = `
     }
 
     #hp-sudoku-container .hp-btn-grid {
-      grid-auto-rows: 42px !important;
+      display: grid !important;
+      grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+      gap: 10px !important;
+      width: 100% !important;
+      align-items: stretch !important;
     }
 
     #hp-sudoku-container .hp-btn-grid .hp-btn,
-    #hp-sudoku-container .hp-keypad-btn {
-      width: auto !important;
+    #hp-sudoku-container .hp-btn-grid .hp-keypad-btn,
+    #hp-sudoku-container .hp-btn-grid button.hp-btn {
+      width: 100% !important;
       min-width: 0 !important;
       height: 42px !important;
       min-height: 42px !important;
       max-height: 42px !important;
       padding: 0 !important;
+      margin: 0 !important;
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
       line-height: 1 !important;
       font-size: 20px !important;
       aspect-ratio: auto !important;
+      box-sizing: border-box !important;
     }
   }
 
