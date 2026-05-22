@@ -1700,6 +1700,29 @@ mount.innerHTML = `
             font-size:1rem !important;
             aspect-ratio:auto !important;
           }
+          @media (max-width: 900px) {
+  #hp-sudoku-container.hp-sudoku-test .hp-btn-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    grid-auto-rows: 58px !important;
+    gap: 10px !important;
+    align-items: stretch !important;
+  }
+
+  #hp-sudoku-container.hp-sudoku-test .hp-btn-grid .hp-btn {
+    height: 58px !important;
+    min-height: 58px !important;
+    max-height: 58px !important;
+    padding: 0 !important;
+    aspect-ratio: auto !important;
+    width: auto !important;
+    min-width: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    line-height: 1 !important;
+  }
+}
 </style>
 
         ${pageData?.puzzleDate ? `
