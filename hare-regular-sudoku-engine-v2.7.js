@@ -1536,7 +1536,15 @@ mount.innerHTML = `
       min-height: 32px !important;
       border-radius: 12px !important;
     }
+    @media (max-width: 900px) {
+  #hp-sudoku-container .hp-keypad-btn {
+    height: 42px !important;
+    min-height: 42px !important;
+    max-height: 42px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
+}
 </style>
 
         ${pageData?.puzzleDate ? `
@@ -1591,7 +1599,7 @@ mount.innerHTML = `
             </div>
 
             <div class="hp-btn-grid" aria-label="Number pad">
-              ${[1,2,3,4,5,6,7,8,9].map(n => `<button class="hp-btn" data-n="${n}" aria-label="Enter ${n}">${n}</button>`).join("")}
+              ${[1,2,3,4,5,6,7,8,9].map(n => `<button class="hp-btn hp-keypad-btn" data-n="${n}" aria-label="Enter ${n}">${n}</button>`).join("")}
             </div>
 
             <div class="hp-action-grid">
