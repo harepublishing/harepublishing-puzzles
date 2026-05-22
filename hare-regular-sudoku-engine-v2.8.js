@@ -1014,7 +1014,9 @@ window.HareRegularSudokuEngine = {
 
 mount.innerHTML = `
         <style>
-         
+         #hp-sudoku-container.hp-sudoku-test .hp-btn-grid .hp-btn {
+  background: yellow !important;
+}
 
           #hp-sudoku-container .hp-rs-top-area {
             width:100%;
