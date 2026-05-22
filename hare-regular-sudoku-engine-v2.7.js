@@ -1683,6 +1683,16 @@ mount.innerHTML = `
               font-size:1rem !important;
               aspect-ratio:auto !important;
             }
+            @media (max-width: 900px) {
+  #hp-sudoku-container.hp-sudoku-test .hp-btn-grid .hp-btn {
+    min-height: 42px !important;
+    height: 42px !important;
+    max-height: 42px !important;
+    padding: 0 !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+  }
+}
           }
 </style>
 
