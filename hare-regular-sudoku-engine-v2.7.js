@@ -1021,679 +1021,522 @@ window.HareRegularSudokuEngine = {
 
 mount.innerHTML = `
         <style>
-         
-
-          #hp-sudoku-container .hp-rs-top-area {
-            width:100%;
-            margin:0 0 18px;
-            padding:8px 16px;
-            border:1px solid #edf2f6;
-            border-radius:16px;
-            background:#fff;
-            display:flex;
-            align-items:center;
-            justify-content:space-between;
-            gap:14px;
-          }
-
-          #hp-sudoku-container .hp-help-top-btn {
-            flex:0 0 auto;
-            display:inline-flex;
-            align-items:center;
-            justify-content:center;
-            box-sizing:border-box;
-            height:36px;
-            min-height:36px;
-            padding:6px 16px;
-            border:1px solid #b8d6ef;
-            border-radius:14px;
-            background:#fff;
-            color:#107FBB;
-            font-size:0.82rem;
-            font-weight:600;
-            line-height:1.1;
-            cursor:pointer;
-            box-shadow:none;
-          }
-
-          #hp-sudoku-container .hp-help-top-btn:hover {
-            background:#f0f5fb;
-          }
-
-          #hp-sudoku-container .hp-timer-toolbar-row {
-            display:flex;
-            align-items:center;
-            justify-content:space-between;
-            gap:8px;
-            margin:0 0 12px;
-            height:36px;
-          }
-
-          #hp-sudoku-container .hp-timer-toolbar-row .hp-timer-area {
-            height:36px;
-            min-height:36px;
-            padding:0;
-            margin:0;
-            border:0;
-            box-shadow:none;
-            background:transparent;
-            display:flex;
-            align-items:center;
-            justify-content:flex-start;
-            gap:8px;
-            flex-wrap:nowrap;
-            flex:1 1 auto;
-          }
-
-          #hp-sudoku-container .hp-timer-toolbar-row .hp-timer-display {
-            display:inline-flex;
-            align-items:center;
-            justify-content:flex-start;
-            height:36px;
-            font-size:19px;
-            line-height:1;
-            min-width:auto;
-            margin:0;
-            text-align:left;
-            font-weight:600;
-            color:#6B2B84;
-          }
-
-          #hp-sudoku-container .hp-timer-toolbar-row .hp-timer-controls {
-            display:flex;
-            align-items:center;
-            gap:6px;
-            justify-content:center;
-            height:36px;
-          }
-
-          #hp-sudoku-container .hp-timer-toolbar-row .hp-btn-sm {
-            display:inline-flex;
-            align-items:center;
-            justify-content:center;
-            box-sizing:border-box;
-            height:25px;
-            min-height:25px;
-            width:25px;
-            padding:0;
-            font-size:1rem;
-            line-height:1;
-            border-radius:14px;
-            border:0;
-            background:transparent;
-            box-shadow:none;
-          }
-
-          #hp-sudoku-container .hp-timer-toolbar-row .hp-timer-toggle {
-            border:0;
-            background:transparent;
-            box-shadow:none;
-            overflow:visible;
-            border-radius:14px;
-          }
-
-          #hp-sudoku-container .hp-timer-toolbar-row .hp-timer-toggle img {
-            display:block;
-            width:100%;
-            height:100%;
-            max-width:100%;
-            max-height:100%;
-            object-fit:contain;
-            margin:0;
-          }
-
-          #hp-sudoku-container .hp-timer-toolbar-row .hp-tools-toggle {
-            display:inline-flex;
-            align-items:center;
-            justify-content:center;
-            flex:0 0 auto;
-            width:25px;
-            height:25px;
-            padding:0;
-            border:0;
-            border-radius:14px;
-            background:transparent;
-            cursor:pointer;
-            order:2;
-          }
-
-          #hp-sudoku-container .hp-timer-toolbar-row .hp-tools-toggle img {
-            display:block;
-            width:100%;
-            height:100%;
-            max-width:100%;
-            max-height:100%;
-            object-fit:contain;
-          }
-
-          #hp-sudoku-container .hp-rs-level-panel {
-            display:flex;
-            align-items:center;
-            justify-content:flex-start;
-            gap:10px;
-            width:auto;
-            min-width:0;
-            flex:1 1 auto;
-            margin:0;
-            padding:0;
-            height:44px;
-            border:0;
-            border-radius:0;
-            background:transparent;
-          }
-
-          #hp-sudoku-container .hp-rs-level-title {
-            display:inline-flex;
-            align-items:center;
-            justify-content:center;
-            flex:0 0 auto;
-            height:44px;
-            min-height:44px;
-            font-size:15px;
-            font-weight:900;
-            color:#24323d;
-            line-height:1.1;
-            white-space:nowrap;
-            margin:0;
-          }
-
-          #hp-sudoku-container .hp-rs-level-panel .hp-mode-switch-wrap {
-            display:flex;
-            align-items:center;
-            height:44px;
-            min-height:44px;
-            width:auto;
-            max-width:100%;
-            margin:0;
-          }
-
-          #hp-sudoku-container .hp-rs-level-panel .hp-mode-switch {
-            display:grid !important;
-            grid-template-columns:repeat(${availableModes.length}, minmax(82px, 1fr)) !important;
-            gap:8px !important;
-            width:auto !important;
-            max-width:440px !important;
-            height:44px !important;
-            align-items:center !important;
-            margin:0 !important;
-          }
-
-          #hp-sudoku-container .hp-rs-level-panel .hp-mode-btn {
-            display:inline-flex !important;
-            align-items:center !important;
-            justify-content:center !important;
-            box-sizing:border-box !important;
-            height:36px !important;
-            min-height:36px !important;
-            padding:6px 12px !important;
-            border-radius:14px !important;
-            font-size:.82rem !important;
-            line-height:1.1 !important;
-          }
-
-          #hp-sudoku-container .hp-rs-tools {
-            display:grid !important;
-            grid-template-columns:repeat(3, minmax(0, 1fr)) !important;
-            gap:8px !important;
-            width:100% !important;
-            margin:0 !important;
-          }
-
-          #hp-sudoku-container .hp-tools-tray {
-            max-height:0;
-            opacity:0;
-            overflow:hidden;
-            transform:translateY(-6px);
-            pointer-events:none;
-            transition:max-height .22s ease, opacity .18s ease, transform .18s ease;
-            margin:0 0 12px;
-          }
-
-          #hp-sudoku-container .hp-tools-tray.open {
-            max-height:120px;
-            opacity:1;
-            transform:translateY(0);
-            pointer-events:auto;
-            overflow:visible;
-          }
-
-          #hp-sudoku-container .hp-stat {
-            min-height:52px;
-            padding:16px 10px;
-            box-sizing:border-box;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            text-align:center;
-            width:100%;
-          }
-
-          #hp-sudoku-container .hp-stat.hidden {
-            display:none;
-          }
-
-          #hp-sudoku-container .hp-rs-tools .hp-tool-btn {
-            position:relative;
-            background:#fff !important;
-            border:1px solid #b8d6ef !important;
-            color:#107FBB !important;
-            box-shadow:none !important;
-            min-height:42px !important;
-            padding:7px 5px !important;
-            border-radius:14px !important;
-            font-size:.78rem !important;
-            line-height:1.08 !important;
-            white-space:nowrap !important;
-            transition:transform .18s ease, box-shadow .18s ease;
-          }
-
-          #hp-sudoku-container .hp-rs-tools .hp-tool-btn:hover {
-            transform:translateY(-2px);
-            z-index:1;
-          }
-
-          #hp-sudoku-container .hp-rs-tools .hp-tool-btn.hint-toggle {
-            background:#f0fbf5 !important;
-            border-color:#00A54F !important;
-            color:#00A54F !important;
-          }
-
-          #hp-sudoku-container .hp-rs-tools .hp-tool-btn.hint-toggle.active {
-            background:#00A54F !important;
-            border-color:#00A54F !important;
-            color:#fff !important;
-          }
-
-          #hp-sudoku-container #hp-check-toggle-btn.active {
-            background:#107FBB !important;
-            border-color:#107FBB !important;
-            color:#fff !important;
-          }
-
-          #hp-sudoku-container .hp-rs-right {
-            margin-top:0;
-          }
-
-          #hp-sudoku-container .hp-rs-right .hp-stat {
-            margin:0 0 14px !important;
-            min-height:auto;
-            text-align:center;
-            font-size:0.95rem;
-            line-height:1.3;
-          }
-
-          #hp-sudoku-container .hp-cell.given {
-            background:#e4e4e4;
-          }
-
-          #hp-sudoku-container .hp-cell.hint-line,
-          #hp-sudoku-container .hp-cell.hint-match {
-            background:#cce6f7 !important;
-          }
-
-          #hp-sudoku-container .hp-cell.given.hint-line,
-          #hp-sudoku-container .hp-cell.given.hint-match {
-            background:#a8cde8 !important;
-          }
-
-          #hp-sudoku-container .hp-cell.is-wrong,
-          #hp-sudoku-container .hp-cell.hint-conflict,
-          #hp-sudoku-container .hp-cell.is-wrong.hint-line,
-          #hp-sudoku-container .hp-cell.is-wrong.hint-match,
-          #hp-sudoku-container .hp-cell.hint-conflict.hint-line,
-          #hp-sudoku-container .hp-cell.hint-conflict.hint-match {
-            background:#ffc7cf !important;
-            color:#ED1B24 !important;
-          }
-
-          #hp-sudoku-container .hp-cell.given.is-wrong,
-          #hp-sudoku-container .hp-cell.given.hint-conflict,
-          #hp-sudoku-container .hp-cell.given.is-wrong.hint-line,
-          #hp-sudoku-container .hp-cell.given.is-wrong.hint-match,
-          #hp-sudoku-container .hp-cell.given.hint-conflict.hint-line,
-          #hp-sudoku-container .hp-cell.given.hint-conflict.hint-match {
-            background:#f4a3af !important;
-          }
-
-          #hp-sudoku-container .hp-cell.is-wrong .hp-value,
-          #hp-sudoku-container .hp-cell.hint-conflict .hp-value {
-            color:#ED1B24 !important;
-          }
-
-          #hp-sudoku-container .hp-note-box,
-          #hp-sudoku-container .hp-n-val {
-            color:#333 !important;
-            font-weight:800 !important;
-          }
-
-          #hp-sudoku-container .hp-cell.is-right {
-            background:#e3f7ec !important;
-          }
-
-          #hp-sudoku-container .hp-btn-grid .hp-btn.hint-complete {
-            background:#e6e8eb !important;
-            border-color:#c4cbd3 !important;
-            color:#7d8792 !important;
-            box-shadow:none !important;
-            cursor:pointer !important;
-          }
-
-          #hp-sudoku-container .hp-action-grid {
-            display:grid !important;
-            grid-template-columns:repeat(2, minmax(0, 1fr)) !important;
-            gap:10px !important;
-          }
-
-          @media (max-width: 900px) {
-            #hp-sudoku-container .hp-rs-top-area {
-              display:grid;
-              grid-template-columns:minmax(0, 1fr) auto;
-              align-items:start;
-              justify-items:stretch;
-              gap:10px;
-              padding:10px 12px;
-            }
-
-            #hp-sudoku-container .hp-help-top-btn {
-              justify-self:end;
-              align-self:start;
-            }
-
-            #hp-sudoku-container .hp-rs-level-panel {
-              justify-self:start;
-              width:100%;
-            }
-
-            #hp-sudoku-container .hp-timer-toolbar-row {
-              width:100%;
-              justify-content:center;
-              gap:6px;
-              margin:0 0 10px;
-              height:32px;
-            }
-
-            #hp-sudoku-container .hp-timer-toolbar-row .hp-timer-area {
-              height:32px;
-              min-height:32px;
-              justify-content:center;
-              gap:6px;
-              flex:0 1 auto;
-            }
-
-            #hp-sudoku-container .hp-timer-toolbar-row .hp-timer-display {
-              font-size:18px;
-              min-width:auto;
-              text-align:center;
-            }
-
-            #hp-sudoku-container .hp-timer-toolbar-row .hp-btn-sm {
-              height:30px;
-              min-height:30px;
-              width:30px;
-              padding:0;
-              font-size:0.9rem;
-            }
-
-            #hp-sudoku-container .hp-timer-toolbar-row .hp-timer-toggle img,
-            #hp-sudoku-container .hp-timer-toolbar-row .hp-tools-toggle img {
-              max-width:18px;
-              max-height:18px;
-            }
-
-            #hp-sudoku-container .hp-timer-toolbar-row .hp-tools-toggle {
-              width:30px;
-              height:30px;
-            }
-
-            #hp-sudoku-container .hp-rs-level-panel {
-              width:100%;
-              height:auto;
-              min-height:38px;
-              justify-content:center;
-              gap:8px;
-              min-width:0;
-            }
-
-            #hp-sudoku-container .hp-rs-level-title {
-              font-size:14px;
-              flex:0 1 auto;
-              min-width:0;
-            }
-
-            #hp-sudoku-container .hp-rs-level-panel .hp-mode-switch {
-              grid-template-columns:repeat(${availableModes.length}, minmax(0, 1fr)) !important;
-              gap:6px !important;
-              width:min(100%, 320px) !important;
-            }
-
-            #hp-sudoku-container .hp-rs-tools {
-              grid-template-columns:repeat(4, minmax(0, 1fr)) !important;
-              gap:5px !important;
-            }
-
-            #hp-sudoku-container .hp-rs-level-panel {
-              display:grid;
-              grid-template-rows:auto auto;
-              justify-items:start;
-              align-items:start;
-              gap:6px;
-              width:100%;
-            }
-
-            #hp-sudoku-container .hp-rs-level-title {
-              justify-self:center;
-              width:100%;
-              text-align:center;
-            }
-
-            #hp-sudoku-container .hp-rs-level-panel .hp-mode-switch-wrap {
-              justify-self:start;
-              width:100%;
-              max-width:320px;
-            }
-
-            #hp-sudoku-container .hp-help-top-btn {
-              justify-self:end;
-              width:auto;
-            }
-
-            #hp-sudoku-container .hp-timer-toolbar-row {
-              justify-content:space-between;
-            }
-
-            #hp-sudoku-container .hp-timer-toolbar-row .hp-timer-area {
-              justify-content:flex-start;
-            }
-
-            #hp-sudoku-container .hp-rs-tools {
-              justify-items:center;
-              grid-template-columns:repeat(3, minmax(0, 1fr)) !important;
-              gap:8px !important;
-            }
-
-            #hp-sudoku-container .hp-rs-tools .hp-tool-btn {
-              width:100%;
-              max-width:150px;
-            }
-
-            #hp-sudoku-container .hp-rs-level-panel .hp-mode-btn,
-            #hp-sudoku-container .hp-rs-tools .hp-tool-btn {
-              min-height:38px !important;
-              padding:7px 4px !important;
-              border-radius:14px !important;
-              font-size:0.72rem !important;
-              line-height:1.05 !important;
-              white-space:nowrap !important;
-            }
-
-            #hp-sudoku-container .hp-rs-right {
-              margin-top:0;
-              align-self:flex-start;
-            }
-          }
-
-          @media (max-width: 480px) {
-            #hp-sudoku-container .hp-rs-top-area {
-              padding:10px 8px;
-              gap:8px;
-              margin:0 0 6px;
-            }
-
-            #hp-sudoku-container .hp-btn-grid {
-              display:grid;
-              grid-template-columns:repeat(3, minmax(0, 1fr));
-              gap:10px;
-              width:100%;
-              margin:0 0 12px;
-            }
-
-            #hp-sudoku-container .hp-btn-grid .hp-btn {
-              width:auto !important;
-              height:58px !important;
-              min-height:58px !important;
-              aspect-ratio:auto !important;
-              line-height:1 !important;
-              font-size:1rem !important;
-            }
-
-            #hp-sudoku-container .hp-rs-top-timer {
-              height:34px;
-            }
-
-            #hp-sudoku-container .hp-rs-top-timer .hp-timer-area {
-              height:34px;
-              min-height:34px;
-              display:flex;
-              gap:6px;
-            }
-
-            #hp-sudoku-container .hp-rs-top-timer .hp-timer-display {
-              font-size:20px;
-              min-width:98px;
-              height:34px;
-              text-align:center;
-            }
-
-            #hp-sudoku-container .hp-rs-top-timer .hp-timer-controls {
-              height:34px;
-              gap:6px;
-            }
-
-            #hp-sudoku-container .hp-rs-top-timer .hp-btn-sm {
-              font-size:.95rem;
-              width:32px;
-              height:32px;
-              min-height:32px;
-              padding:0;
-            }
-
-            #hp-sudoku-container .hp-rs-level-panel {
-              display:grid;
-              grid-template-columns:auto;
-              grid-template-rows:auto auto;
-              justify-items:center;
-              align-items:center;
-              gap:8px;
-              padding:0;
-              width:100%;
-              height:auto;
-              min-height:auto;
-            }
-
-            #hp-sudoku-container .hp-rs-level-panel .hp-mode-switch-wrap {
-              order:1;
-              width:auto;
-              max-width:100%;
-              flex:none;
-              min-width:0;
-              height:auto;
-              min-height:auto;
-            }
-
-            #hp-sudoku-container .hp-rs-level-panel .hp-mode-switch {
-              height:auto !important;
-              gap:5px !important;
-              width:auto !important;
-            }
-
-            #hp-sudoku-container .hp-rs-level-title {
-              order:2;
-              font-size:14px;
-              text-align:center;
-              margin-bottom:0;
-              height:auto;
-              min-height:auto;
-              flex:none;
-            }
-
-            #hp-sudoku-container .hp-rs-level-panel .hp-mode-btn,
-            #hp-sudoku-container .hp-rs-tools .hp-tool-btn {
-              font-size:0.72rem !important;
-              padding-left:4px !important;
-              padding-right:4px !important;
-            }
-
-            #hp-sudoku-container .hp-rs-level-panel .hp-mode-btn {
-              height:32px !important;
-              min-height:32px !important;
-              border-radius:12px !important;
-            }
-          }
-
-          @media (max-width: 768px) {
-            #hp-sudoku-container .hp-btn-grid {
-              grid-template-columns:repeat(3, minmax(0, 1fr));
-            }
-
-            #hp-sudoku-container .hp-btn-grid .hp-btn {
-              height:58px;
-              min-height:58px;
-              max-height:58px;
-              aspect-ratio:auto;
-            }
-          }
-        
-
-          /* =========================================================
-             TEST-ONLY MOBILE KEYPAD HEIGHT OVERRIDE
-             Requires Squarespace test post container:
-             <div id="hp-sudoku-container" class="hp-sudoku-test">
-             Keeps the original 3-column width but shortens button height.
-             ========================================================= */
-
-          @media (max-width: 900px) {
-            #hp-sudoku-container.hp-sudoku-test .hp-btn-grid {
-              display:grid !important;
-              grid-template-columns:repeat(3, minmax(0, 1fr)) !important;
-              gap:10px !important;
-              width:100% !important;
-            }
-
-            #hp-sudoku-container.hp-sudoku-test .hp-btn-grid .hp-btn {
-              width:auto !important;
-              min-width:0 !important;
-              height:58px !important;
-              min-height:58px !important;
-              max-height:58px !important;
-              padding:0 !important;
-              display:flex !important;
-              align-items:center !important;
-              justify-content:center !important;
-              line-height:1 !important;
-              font-size:1rem !important;
-              aspect-ratio:auto !important;
-            }
-            @media (max-width: 900px) {
-  #hp-sudoku-container.hp-sudoku-test .hp-btn-grid .hp-btn {
-    min-height: 42px !important;
-    height: 42px !important;
-    max-height: 42px !important;
-    padding: 0 !important;
-    font-size: 20px !important;
-    line-height: 1 !important;
+  #hp-sudoku-container .hp-rs-top-area {
+    width: 100%;
+    margin: 0 0 18px;
+    padding: 8px 16px;
+    border: 1px solid #edf2f6;
+    border-radius: 16px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
   }
-}
-          }
+
+  #hp-sudoku-container .hp-help-top-btn {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 36px;
+    min-height: 36px;
+    padding: 6px 16px;
+    border: 1px solid #b8d6ef;
+    border-radius: 14px;
+    background: #fff;
+    color: #107FBB;
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1.1;
+    cursor: pointer;
+    box-shadow: none;
+  }
+
+  #hp-sudoku-container .hp-help-top-btn:hover {
+    background: #f0f5fb;
+  }
+
+  #hp-sudoku-container .hp-rs-level-panel {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: auto;
+    min-width: 0;
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0;
+    height: 44px;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  #hp-sudoku-container .hp-rs-level-title {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    height: 44px;
+    min-height: 44px;
+    font-size: 15px;
+    font-weight: 900;
+    color: #24323d;
+    line-height: 1.1;
+    white-space: nowrap;
+    margin: 0;
+  }
+
+  #hp-sudoku-container .hp-rs-level-panel .hp-mode-switch-wrap {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    min-height: 44px;
+    width: auto;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  #hp-sudoku-container .hp-rs-level-panel .hp-mode-switch {
+    display: grid !important;
+    grid-template-columns: repeat(${availableModes.length}, minmax(82px, 1fr)) !important;
+    gap: 8px !important;
+    width: auto !important;
+    max-width: 440px !important;
+    height: 44px !important;
+    align-items: center !important;
+    margin: 0 !important;
+  }
+
+  #hp-sudoku-container .hp-rs-level-panel .hp-mode-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    height: 36px !important;
+    min-height: 36px !important;
+    padding: 6px 12px !important;
+    border-radius: 14px !important;
+    font-size: 0.82rem !important;
+    line-height: 1.1 !important;
+  }
+
+  #hp-sudoku-container .hp-timer-toolbar-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 0 0 12px;
+    height: 36px;
+  }
+
+  #hp-sudoku-container .hp-timer-toolbar-row .hp-timer-area {
+    height: 36px;
+    min-height: 36px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    flex-wrap: nowrap;
+    flex: 1 1 auto;
+  }
+
+  #hp-sudoku-container .hp-timer-toolbar-row .hp-timer-display {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 36px;
+    font-size: 19px;
+    line-height: 1;
+    min-width: auto;
+    margin: 0;
+    text-align: left;
+    font-weight: 600;
+    color: #6B2B84;
+  }
+
+  #hp-sudoku-container .hp-timer-toolbar-row .hp-timer-controls {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+    height: 36px;
+  }
+
+  #hp-sudoku-container .hp-timer-toolbar-row .hp-btn-sm,
+  #hp-sudoku-container .hp-timer-toolbar-row .hp-timer-toggle,
+  #hp-sudoku-container .hp-timer-toolbar-row .hp-tools-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
+    min-height: 25px;
+    padding: 0;
+    border: 0;
+    border-radius: 14px;
+    background: transparent;
+    box-shadow: none;
+    cursor: pointer;
+  }
+
+  #hp-sudoku-container .hp-timer-toolbar-row .hp-timer-toggle img,
+  #hp-sudoku-container .hp-timer-toolbar-row .hp-tools-toggle img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin: 0;
+  }
+
+  #hp-sudoku-container .hp-rs-tools {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  #hp-sudoku-container .hp-tools-tray {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-6px);
+    pointer-events: none;
+    transition: max-height 0.22s ease, opacity 0.18s ease, transform 0.18s ease;
+    margin: 0 0 12px;
+  }
+
+  #hp-sudoku-container .hp-tools-tray.open {
+    max-height: 120px;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    overflow: visible;
+  }
+
+  #hp-sudoku-container .hp-rs-tools .hp-tool-btn {
+    position: relative;
+    background: #fff !important;
+    border: 1px solid #b8d6ef !important;
+    color: #107FBB !important;
+    box-shadow: none !important;
+    min-height: 42px !important;
+    padding: 7px 5px !important;
+    border-radius: 14px !important;
+    font-size: 0.78rem !important;
+    line-height: 1.08 !important;
+    white-space: nowrap !important;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+  }
+
+  #hp-sudoku-container .hp-rs-tools .hp-tool-btn:hover {
+    transform: translateY(-2px);
+    z-index: 1;
+  }
+
+  #hp-sudoku-container .hp-rs-tools .hp-tool-btn.hint-toggle {
+    background: #f0fbf5 !important;
+    border-color: #00A54F !important;
+    color: #00A54F !important;
+  }
+
+  #hp-sudoku-container .hp-rs-tools .hp-tool-btn.hint-toggle.active {
+    background: #00A54F !important;
+    border-color: #00A54F !important;
+    color: #fff !important;
+  }
+
+  #hp-sudoku-container #hp-check-toggle-btn.active {
+    background: #107FBB !important;
+    border-color: #107FBB !important;
+    color: #fff !important;
+  }
+
+  #hp-sudoku-container .hp-stat {
+    min-height: 52px;
+    padding: 16px 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  #hp-sudoku-container .hp-stat.hidden {
+    display: none;
+  }
+
+  #hp-sudoku-container .hp-rs-right {
+    margin-top: 0;
+  }
+
+  #hp-sudoku-container .hp-rs-right .hp-stat {
+    margin: 0 0 14px !important;
+    min-height: auto;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.3;
+  }
+
+  #hp-sudoku-container .hp-cell.given {
+    background: #e4e4e4;
+  }
+
+  #hp-sudoku-container .hp-cell.hint-line,
+  #hp-sudoku-container .hp-cell.hint-match {
+    background: #cce6f7 !important;
+  }
+
+  #hp-sudoku-container .hp-cell.given.hint-line,
+  #hp-sudoku-container .hp-cell.given.hint-match {
+    background: #a8cde8 !important;
+  }
+
+  #hp-sudoku-container .hp-cell.is-wrong,
+  #hp-sudoku-container .hp-cell.hint-conflict,
+  #hp-sudoku-container .hp-cell.is-wrong.hint-line,
+  #hp-sudoku-container .hp-cell.is-wrong.hint-match,
+  #hp-sudoku-container .hp-cell.hint-conflict.hint-line,
+  #hp-sudoku-container .hp-cell.hint-conflict.hint-match {
+    background: #ffc7cf !important;
+    color: #ED1B24 !important;
+  }
+
+  #hp-sudoku-container .hp-cell.given.is-wrong,
+  #hp-sudoku-container .hp-cell.given.hint-conflict,
+  #hp-sudoku-container .hp-cell.given.is-wrong.hint-line,
+  #hp-sudoku-container .hp-cell.given.is-wrong.hint-match,
+  #hp-sudoku-container .hp-cell.given.hint-conflict.hint-line,
+  #hp-sudoku-container .hp-cell.given.hint-conflict.hint-match {
+    background: #f4a3af !important;
+  }
+
+  #hp-sudoku-container .hp-cell.is-wrong .hp-value,
+  #hp-sudoku-container .hp-cell.hint-conflict .hp-value {
+    color: #ED1B24 !important;
+  }
+
+  #hp-sudoku-container .hp-cell.is-right {
+    background: #e3f7ec !important;
+  }
+
+  #hp-sudoku-container .hp-note-box,
+  #hp-sudoku-container .hp-n-val {
+    color: #333 !important;
+    font-weight: 800 !important;
+  }
+
+  #hp-sudoku-container .hp-btn-grid .hp-btn.hint-complete {
+    background: #e6e8eb !important;
+    border-color: #c4cbd3 !important;
+    color: #7d8792 !important;
+    box-shadow: none !important;
+    cursor: pointer !important;
+  }
+
+  #hp-sudoku-container .hp-action-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+  }
+
+  @media (max-width: 900px) {
+    #hp-sudoku-container .hp-rs-top-area {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: start;
+      justify-items: stretch;
+      gap: 10px;
+      padding: 10px 12px;
+    }
+
+    #hp-sudoku-container .hp-help-top-btn {
+      justify-self: end;
+      align-self: start;
+      width: auto;
+    }
+
+    #hp-sudoku-container .hp-rs-level-panel {
+      display: grid;
+      grid-template-rows: auto auto;
+      justify-items: start;
+      align-items: start;
+      gap: 6px;
+      width: 100%;
+      height: auto;
+      min-height: 38px;
+      min-width: 0;
+    }
+
+    #hp-sudoku-container .hp-rs-level-title {
+      justify-self: center;
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      flex: 0 1 auto;
+      min-width: 0;
+    }
+
+    #hp-sudoku-container .hp-rs-level-panel .hp-mode-switch-wrap {
+      justify-self: start;
+      width: 100%;
+      max-width: 320px;
+    }
+
+    #hp-sudoku-container .hp-rs-level-panel .hp-mode-switch {
+      grid-template-columns: repeat(${availableModes.length}, minmax(0, 1fr)) !important;
+      gap: 6px !important;
+      width: min(100%, 320px) !important;
+    }
+
+    #hp-sudoku-container .hp-rs-level-panel .hp-mode-btn,
+    #hp-sudoku-container .hp-rs-tools .hp-tool-btn {
+      min-height: 38px !important;
+      padding: 7px 4px !important;
+      border-radius: 14px !important;
+      font-size: 0.72rem !important;
+      line-height: 1.05 !important;
+      white-space: nowrap !important;
+    }
+
+    #hp-sudoku-container .hp-timer-toolbar-row {
+      width: 100%;
+      justify-content: space-between;
+      gap: 6px;
+      margin: 0 0 10px;
+      height: 32px;
+    }
+
+    #hp-sudoku-container .hp-timer-toolbar-row .hp-timer-area {
+      height: 32px;
+      min-height: 32px;
+      justify-content: flex-start;
+      gap: 6px;
+      flex: 0 1 auto;
+    }
+
+    #hp-sudoku-container .hp-timer-toolbar-row .hp-timer-display {
+      font-size: 18px;
+      min-width: auto;
+      text-align: center;
+    }
+
+    #hp-sudoku-container .hp-timer-toolbar-row .hp-btn-sm,
+    #hp-sudoku-container .hp-timer-toolbar-row .hp-tools-toggle {
+      width: 30px;
+      height: 30px;
+      min-height: 30px;
+    }
+
+    #hp-sudoku-container .hp-timer-toolbar-row .hp-timer-toggle img,
+    #hp-sudoku-container .hp-timer-toolbar-row .hp-tools-toggle img {
+      max-width: 18px;
+      max-height: 18px;
+    }
+
+    #hp-sudoku-container .hp-rs-tools {
+      justify-items: center;
+      grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+      gap: 8px !important;
+    }
+
+    #hp-sudoku-container .hp-rs-tools .hp-tool-btn {
+      width: 100%;
+      max-width: 150px;
+    }
+
+    #hp-sudoku-container .hp-rs-right {
+      margin-top: 0;
+      align-self: flex-start;
+    }
+
+    #hp-sudoku-container.hp-sudoku-test .hp-btn-grid .hp-btn {
+      width: auto !important;
+      min-width: 0 !important;
+      height: 42px !important;
+      min-height: 42px !important;
+      max-height: 42px !important;
+      padding: 0 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      line-height: 1 !important;
+      font-size: 20px !important;
+      aspect-ratio: auto !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #hp-sudoku-container .hp-rs-top-area {
+      padding: 10px 8px;
+      gap: 8px;
+      margin: 0 0 6px;
+    }
+
+    #hp-sudoku-container .hp-rs-level-panel {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      justify-items: center;
+      align-items: center;
+      gap: 8px;
+      padding: 0;
+      width: 100%;
+      height: auto;
+      min-height: auto;
+    }
+
+    #hp-sudoku-container .hp-rs-level-panel .hp-mode-switch-wrap {
+      order: 1;
+      width: auto;
+      max-width: 100%;
+      flex: none;
+      min-width: 0;
+      height: auto;
+      min-height: auto;
+    }
+
+    #hp-sudoku-container .hp-rs-level-panel .hp-mode-switch {
+      height: auto !important;
+      gap: 5px !important;
+      width: auto !important;
+    }
+
+    #hp-sudoku-container .hp-rs-level-title {
+      order: 2;
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 0;
+      height: auto;
+      min-height: auto;
+      flex: none;
+    }
+
+    #hp-sudoku-container .hp-rs-level-panel .hp-mode-btn,
+    #hp-sudoku-container .hp-rs-tools .hp-tool-btn {
+      font-size: 0.72rem !important;
+      padding-left: 4px !important;
+      padding-right: 4px !important;
+    }
+
+    #hp-sudoku-container .hp-rs-level-panel .hp-mode-btn {
+      height: 32px !important;
+      min-height: 32px !important;
+      border-radius: 12px !important;
+    }
+  }
 </style>
 
         ${pageData?.puzzleDate ? `
