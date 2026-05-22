@@ -1020,7 +1020,7 @@ window.HareRegularSudokuEngine = {
       const cfg = getConfig();
 
 mount.innerHTML = `
-        <style>
+      <style>
   #hp-sudoku-container .hp-rs-top-area {
     width: 100%;
     margin: 0 0 18px;
@@ -1462,7 +1462,12 @@ mount.innerHTML = `
       align-self: flex-start;
     }
 
-    #hp-sudoku-container.hp-sudoku-test .hp-btn-grid .hp-btn {
+    #hp-sudoku-container .hp-btn-grid {
+      grid-auto-rows: 42px !important;
+    }
+
+    #hp-sudoku-container .hp-btn-grid .hp-btn,
+    #hp-sudoku-container .hp-keypad-btn {
       width: auto !important;
       min-width: 0 !important;
       height: 42px !important;
@@ -1536,15 +1541,7 @@ mount.innerHTML = `
       min-height: 32px !important;
       border-radius: 12px !important;
     }
-    @media (max-width: 900px) {
-  #hp-sudoku-container .hp-keypad-btn {
-    height: 42px !important;
-    min-height: 42px !important;
-    max-height: 42px !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
   }
-}
 </style>
 
         ${pageData?.puzzleDate ? `
