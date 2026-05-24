@@ -5,7 +5,7 @@
         <g id="help-button" transform="matrix(0.933151,0,0,1.023232,797.451064,0)">
             <rect x="1358.22" y="0" width="443" height="404" style="fill:none;"/>
             <g transform="matrix(1.167229,0,0,1.064471,-1469.666106,-10.36196)">
-                <circle cx="2612.5" cy="199.5" r="173.5" style="fill:none;stroke:rgb(16,127,187);stroke-width:15.3px;"/>
+                <circle cx="2612.5" cy="199.5" r="173.5" style="fill:none;stroke:rgb(16,127,187);stroke-width:7.65px;"/>
             </g>
             <g transform="matrix(1.071638,0,0,0.977295,-1228.580634,-0)">
                 <g transform="matrix(366.666667,0,0,366.666667,2529.305278,344.192913)">

@@ -5,10 +5,10 @@
         <rect x="3171" y="-174" width="443" height="404" style="fill:none;"/>
         <g transform="matrix(5.671829,0,0,5.173149,-2722.283884,-1640.152103)">
             <g transform="matrix(0.205794,0,0,0.205768,540.460138,281.412736)">
-                <circle cx="2612.5" cy="199.5" r="173.5" style="fill:none;stroke:rgb(0,165,79);stroke-width:15.3px;"/>
+                <circle cx="2612.5" cy="199.5" r="173.5" style="fill:none;stroke:rgb(16,127,187);stroke-width:7.65px;"/>
             </g>
             <g transform="matrix(0,1,-0.806952,0,1334.708195,-756.536457)">
-                <path d="M1079,295L1102,341L1056,341L1079,295Z" style="fill:rgb(0,165,79);stroke:rgb(0,165,79);stroke-width:5.2px;"/>
+                <path d="M1079,295L1102,341L1056,341L1079,295Z" style="fill:rgb(16,127,187);stroke:rgb(16,127,187);stroke-width:5.2px;"/>
             </g>
         </g>
     </g>
