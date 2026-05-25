@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 415 414" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-3464,0)">
+        <g id="erase-button" transform="matrix(0.933151,0,0,1.023232,2197.451064,0)">
+            <rect x="1358.22" y="0" width="443" height="404" style="fill:none;"/>
+            <g>
+                <g transform="matrix(1.071638,0,-0,0.977295,-1228.580634,-20.161486)">
+                    <path d="M2471.521,227.201L2576.745,129.544L2769.616,129.544L2769.616,325.101L2576.745,325.101L2471.521,227.201ZM2513.025,227.201L2586.511,297.269L2742,297.269L2742,157.377L2586.511,157.377L2513.025,227.201ZM2693.933,157.377L2629.968,157.377L2693.933,157.377Z" style="fill:rgb(16,127,187);fill-rule:nonzero;"/>
+                </g>
+                <g transform="matrix(1.071638,0,0,0.977295,-2366.660292,0.977295)">
+                    <g transform="matrix(150,0,0,150,3678.883012,261.75)">
+                        <path d="M0.184,-0.711L0.318,-0.463L0.452,-0.711L0.619,-0.711L0.413,-0.359L0.625,-0L0.455,-0L0.318,-0.253L0.18,-0L0.01,-0L0.223,-0.359L0.016,-0.711L0.184,-0.711Z" style="fill:rgb(16,127,187);fill-rule:nonzero;"/>
+                    </g>
+                    <g transform="matrix(150,0,0,150,3774.116988,261.75)">
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
