@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 415 414" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+<svg width="100%" height="100%" viewBox="0 0 415 414" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;">
     <g transform="matrix(1,0,0,1,-2064,0)">
         <g id="help-button" transform="matrix(0.933151,0,0,1.023232,797.451064,0)">
             <rect x="1358.22" y="0" width="443" height="404" style="fill:none;"/>
-            <g transform="matrix(1.167229,0,0,1.064471,-1469.666106,-10.36196)">
-                <circle cx="2612.5" cy="199.5" r="173.5" style="fill:none;stroke:rgb(16,127,187);stroke-width:7.65px;"/>
+            <g transform="matrix(-0,10.026345,-14.809085,-0,29567.188431,-20603.868849)">
+                <path d="M2059.45,1876.21L2090.8,1876.21C2092.31,1876.21 2093.54,1877.44 2093.54,1878.96L2093.54,1900.82C2093.54,1902.33 2092.31,1903.56 2090.8,1903.56L2059.45,1903.56C2057.929,1903.56 2056.7,1902.33 2056.7,1900.82L2056.7,1878.96C2056.7,1877.44 2057.929,1876.21 2059.45,1876.21Z" style="fill:none;stroke:rgb(16,127,187);stroke-width:0.68px;"/>
             </g>
             <g transform="matrix(1.071638,0,0,0.977295,-1228.580634,-0)">
                 <g transform="matrix(366.666667,0,0,366.666667,2529.305278,344.192913)">
