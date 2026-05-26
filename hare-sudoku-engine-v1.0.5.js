@@ -1,10 +1,10 @@
 /* =========================================================
-   HARE PUBLISHING SUDOKU TEST ENGINE
+   HARE PUBLISHING SUDOKU ENGINE
    Production unified Sudoku engine
    GitHub/jsDelivr hosted engine file
 
    Suggested filename:
-   hare-sudoku-engine-v1.0.4.js
+   hare-sudoku-engine-v1.0.js
 
    Expected page setup:
    - A container with id="hp-sudoku-container"
@@ -25,10 +25,10 @@ window.HareSudokuEngine = {
       return;
     }
 
-    // Safety guard: this Sudoku engine should only mount the production Sudoku container.
+    // Safety guard: this production engine should only mount the new unified Sudoku container.
     // It must not initialize older live Daily Sudoku Challenge or Regular Sudoku posts.
     if (!container.classList.contains("hp-sudoku")) {
-      console.warn("HareSudokuEngine: container is not marked hp-sudoku. Skipping mount to avoid affecting other Sudoku systems.");
+      console.warn("HareSudokuEngine: container is not marked hp-sudoku. Skipping mount to protect older live Sudoku systems.");
       return;
     }
 
@@ -277,8 +277,7 @@ window.HareSudokuEngine = {
       solvedAt: "",
       revealedAt: "",
       overlaySeen: false,
-      history: [],
-      updatedAt: ""
+      history: []
     });
 
     function getSaveKey(mode) {
@@ -286,155 +285,10 @@ window.HareSudokuEngine = {
       return `${cfg.saveKeyPrefix}${cfg.puzzleId}`;
     }
 
-    function getUnifiedSaveKey(mode) {
-      const cfg = PUZZLES[mode];
-      const safeId = String(cfg?.puzzleId || "").replace(/[^a-zA-Z0-9_-]/g, "_");
-      return `hp_sudoku_v1_${mode}_${safeId}`;
-    }
-
-    function getSaveKeys(mode) {
-      const cfg = PUZZLES[mode];
-      const safeId = String(cfg?.puzzleId || "").replace(/[^a-zA-Z0-9_-]/g, "_");
-
-      // Keep the original Hare Publishing progress keys for compatibility with
-      // the existing progress/stats ecosystem, and also write a unified
-      // production key so future engine names do not affect saved progress.
-      return Array.from(new Set([
-        getSaveKey(mode),
-        getUnifiedSaveKey(mode),
-        `hp_sudoku_${mode}_${safeId}`,
-        `hp_sudoku_test_${mode}_${safeId}`
-      ]));
-    }
-
-    function getPageSaveKey() {
-      const modeSignature = availableModes
-        .map(mode => `${mode}:${PUZZLES[mode]?.puzzleId || ""}`)
-        .join("|");
-      const safeSignature = modeSignature.replace(/[^a-zA-Z0-9_-]/g, "_");
-      return `hp_sudoku_v1_page_${safeSignature}`;
-    }
-
-    function readPageSavedState(mode) {
-      try {
-        const raw = localStorage.getItem(getPageSaveKey());
-        if (!raw) return null;
-
-        const parsed = JSON.parse(raw);
-        const state = parsed?.states?.[mode];
-        return isUsableSavedState(state) ? state : null;
-      } catch {
-        return null;
-      }
-    }
-
-    function writePageSavedState(mode, snapshot) {
-      try {
-        const key = getPageSaveKey();
-        let pageSnapshot = {};
-
-        try {
-          pageSnapshot = JSON.parse(localStorage.getItem(key) || "{}");
-        } catch {
-          pageSnapshot = {};
-        }
-
-        if (!pageSnapshot || typeof pageSnapshot !== "object") pageSnapshot = {};
-        if (!pageSnapshot.states || typeof pageSnapshot.states !== "object") pageSnapshot.states = {};
-
-        pageSnapshot.version = "1.0";
-        pageSnapshot.updatedAt = snapshot.updatedAt || new Date().toISOString();
-        pageSnapshot.lastMode = mode;
-        pageSnapshot.states[mode] = snapshot;
-
-        localStorage.setItem(key, JSON.stringify(pageSnapshot));
-      } catch {}
-    }
-
-    function countFilledCellsInState(state) {
-      if (!state || !Array.isArray(state.cells)) return 0;
-      return state.cells.reduce((total, cell) => total + (String(cell?.value || "") ? 1 : 0), 0);
-    }
-
-    function getSavedStateTimestamp(state) {
-      const value = state?.updatedAt || state?.savedAt || state?.lastUpdated || state?.solvedAt || state?.revealedAt || "";
-      const time = value ? Date.parse(value) : 0;
-      return Number.isFinite(time) ? time : 0;
-    }
-
-    function isUsableSavedState(state) {
-      return !!(state && typeof state === "object" && Array.isArray(state.cells) && state.cells.length === 81);
-    }
-
-    function readSavedState(mode) {
-      const candidates = [];
-
-      const pageState = readPageSavedState(mode);
-      if (pageState) {
-        candidates.push({
-          key: getPageSaveKey(),
-          state: pageState,
-          updatedAt: getSavedStateTimestamp(pageState),
-          filled: countFilledCellsInState(pageState)
-        });
-      }
-
-      for (const key of getSaveKeys(mode)) {
-        try {
-          const raw = localStorage.getItem(key);
-          if (!raw) continue;
-
-          const parsed = JSON.parse(raw);
-          if (!isUsableSavedState(parsed)) continue;
-
-          candidates.push({
-            key,
-            state: parsed,
-            updatedAt: getSavedStateTimestamp(parsed),
-            filled: countFilledCellsInState(parsed)
-          });
-        } catch {}
-      }
-
-      if (!candidates.length) return null;
-
-      // Prefer the newest saved state. If older compatibility keys do not have
-      // timestamps, fall back to the state with the most player-entered cells.
-      candidates.sort((a, b) => {
-        if (b.updatedAt !== a.updatedAt) return b.updatedAt - a.updatedAt;
-        return b.filled - a.filled;
-      });
-
-      return candidates[0].state;
-    }
-
-    function writeSavedState(mode, state) {
-      const snapshot = {
-        ...state,
-        updatedAt: new Date().toISOString()
-      };
-
-      // Keep the in-memory object in sync with the timestamp we write.
-      state.updatedAt = snapshot.updatedAt;
-
-      // Primary per-puzzle keys. The original hp_sd_* keys are intentionally
-      // still written so the existing Puzzlers Hub progress/stats code can see
-      // these new unified Sudoku puzzles without changing the old engine.
-      getSaveKeys(mode).forEach(key => {
-        try {
-          localStorage.setItem(key, JSON.stringify(snapshot));
-        } catch {}
-      });
-
-      // Extra per-page backup key. This protects progress when a post contains
-      // any combination of easy / medium / hard / challenge puzzles and makes
-      // return visits less dependent on one individual localStorage key.
-      writePageSavedState(mode, snapshot);
-    }
-
     function loadState(mode) {
       try {
-        const parsed = readSavedState(mode);
+        const raw = localStorage.getItem(getSaveKey(mode));
+        const parsed = raw ? JSON.parse(raw) : null;
         const merged = parsed ? { ...defaultState(), ...parsed } : defaultState();
 
         // Always reopen/return to the puzzle in a paused state.
@@ -452,7 +306,6 @@ window.HareSudokuEngine = {
         }));
         if (!Array.isArray(merged.history)) merged.history = [];
         merged.history = merged.history.slice(-50);
-        if (typeof merged.updatedAt !== "string") merged.updatedAt = "";
         return merged;
       } catch {
         return defaultState();
@@ -460,7 +313,9 @@ window.HareSudokuEngine = {
     }
 
     function saveState(mode, state) {
-      writeSavedState(mode, state);
+      try {
+        localStorage.setItem(getSaveKey(mode), JSON.stringify(state));
+      } catch {}
     }
 
     const states = {};
@@ -468,30 +323,7 @@ window.HareSudokuEngine = {
       states[mode] = loadState(mode);
     });
 
-    function getLastModeKey() {
-      const modeSignature = availableModes
-        .map(mode => `${mode}:${PUZZLES[mode]?.puzzleId || ""}`)
-        .join("|");
-      const safeSignature = modeSignature.replace(/[^a-zA-Z0-9_-]/g, "_");
-      return `hp_sudoku_last_mode_${safeSignature}`;
-    }
-
-    function loadLastMode() {
-      try {
-        const storedMode = localStorage.getItem(getLastModeKey());
-        return availableModes.includes(storedMode) ? storedMode : defaultMode;
-      } catch {
-        return defaultMode;
-      }
-    }
-
-    function saveLastMode() {
-      try {
-        localStorage.setItem(getLastModeKey(), currentMode);
-      } catch {}
-    }
-
-    let currentMode = loadLastMode();
+    let currentMode = defaultMode;
     let selected = null;
     let notesOn = false;
     let hintsOn = false;
@@ -540,7 +372,6 @@ window.HareSudokuEngine = {
     }
 
     function saveCurrentState() {
-      saveLastMode();
       saveState(currentMode, getState());
     }
 
@@ -971,7 +802,7 @@ window.HareSudokuEngine = {
 
       if (!badgeIdEl || !badgeTimeEl || !overlayIconEl || !overlayTitleEl || !overlayTextEl || !overlayFooterEl) return;
 
-      badgeIdEl.textContent = `${cfg.label} #${cfg.puzzleId}`;
+      badgeIdEl.textContent = cfg.label;
       badgeTimeEl.textContent = `Time: ${formatTime(state.elapsed)}`;
 
       if (state.solved) {
@@ -3019,7 +2850,6 @@ mount.innerHTML = `
       selected = null;
 
       currentMode = nextMode;
-      saveLastMode();
       hintsOn = false;
       checkOn = false;
       saveTick = 0;
@@ -3255,7 +3085,7 @@ mount.innerHTML = `
 
     document.addEventListener("keydown", keydownHandler);
 
-    function persistCurrentStateForExit() {
+    beforeUnloadHandler = () => {
       const state = getState();
       if (state.running) {
         const now = Date.now();
@@ -3267,27 +3097,9 @@ mount.innerHTML = `
       state.running = false;
 
       saveCurrentState();
-    }
-
-    function persistAllStatesForExit() {
-      persistCurrentStateForExit();
-
-      // Also refresh non-active modes into the per-page backup record. This is
-      // deliberately limited to this new HareSudokuEngine and does not touch
-      // the old HareRegularSudokuEngine object or its mounting guard.
-      availableModes.forEach(mode => {
-        if (mode === currentMode) return;
-        if (states[mode]) saveState(mode, states[mode]);
-      });
-    }
-
-    beforeUnloadHandler = persistAllStatesForExit;
+    };
 
     window.addEventListener("beforeunload", beforeUnloadHandler);
-    window.addEventListener("pagehide", persistAllStatesForExit);
-    document.addEventListener("visibilitychange", () => {
-      if (document.visibilityState === "hidden") persistAllStatesForExit();
-    });
     window.addEventListener("resize", applyMobileKeypadSizing);
 
     // =========================================================
