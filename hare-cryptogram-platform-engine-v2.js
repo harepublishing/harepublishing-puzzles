@@ -127,6 +127,7 @@ window.HareCryptogramEngine = {
         }
 
         #hp-cryptogram-container .hp-crypto-card {
+          position: relative;
           background: #fff;
           border: 1px solid #e9eef3;
           border-radius: 18px;
@@ -391,6 +392,22 @@ window.HareCryptogramEngine = {
 
         #hp-cryptogram-container .hp-overlay.on {
           display: flex;
+        }
+
+        #hp-cryptogram-container .hp-result-overlay {
+          position: absolute;
+          inset: 0;
+          z-index: 30;
+          background: rgba(255,255,255,.78);
+          backdrop-filter: grayscale(20%);
+          -webkit-backdrop-filter: grayscale(20%);
+          border-radius: 18px;
+          padding: 20px;
+        }
+
+        #hp-cryptogram-container .hp-result-overlay .hp-modal {
+          max-height: calc(100% - 24px);
+          overflow-y: auto;
         }
 
         #hp-cryptogram-container .hp-modal {
@@ -1253,30 +1270,30 @@ window.HareCryptogramEngine = {
             </div>
             ${renderPuzzle()}
             ${renderKeyboard()}
-          </div>
-        </div>
 
-        <div class="hp-overlay" id="hp-crypto-overlay" aria-hidden="true">
-          <div class="hp-modal" role="dialog" aria-modal="true" aria-label="Cryptogram result">
-            <div id="hp-crypto-overlay-icon" style="font-size:32px; line-height:1;">🎉</div>
-            <h3 id="hp-crypto-overlay-title">You Solved the Cryptogram!</h3>
+            <div class="hp-overlay hp-result-overlay" id="hp-crypto-overlay" aria-hidden="true">
+              <div class="hp-modal" role="dialog" aria-modal="false" aria-label="Cryptogram result">
+                <div id="hp-crypto-overlay-icon" style="font-size:32px; line-height:1;">🎉</div>
+                <h3 id="hp-crypto-overlay-title">You Solved the Cryptogram!</h3>
 
-            <div class="hp-badges">
-              <span class="hp-badge" id="hp-crypto-badge-id"></span>
-              <span class="hp-badge" id="hp-crypto-badge-meta"></span>
+                <div class="hp-badges">
+                  <span class="hp-badge" id="hp-crypto-badge-id"></span>
+                  <span class="hp-badge" id="hp-crypto-badge-meta"></span>
+                </div>
+
+                <div id="hp-crypto-overlay-text"></div>
+
+                <div class="hp-modal-actions">
+                  <a class="hp-link-btn secondary" href="${escapeHtml(MORE_PUZZLES_URL)}">More Online Puzzles</a>
+                  <a class="hp-link-btn primary" href="${escapeHtml(SHOP_URL)}">Get Puzzle Books</a>
+                  <button class="hp-link-btn neutral" data-a="share">Share</button>
+                  <button class="hp-link-btn neutral" data-a="close-overlay">Back to Puzzle</button>
+                  <button class="hp-link-btn danger full" data-a="start-over">Start Over</button>
+                </div>
+
+                <small>Hare Publishing • Cryptogram</small>
+              </div>
             </div>
-
-            <div id="hp-crypto-overlay-text"></div>
-
-            <div class="hp-modal-actions">
-              <a class="hp-link-btn secondary" href="${escapeHtml(MORE_PUZZLES_URL)}">More Online Puzzles</a>
-              <a class="hp-link-btn primary" href="${escapeHtml(SHOP_URL)}">Get Puzzle Books</a>
-              <button class="hp-link-btn neutral" data-a="share">Share</button>
-              <button class="hp-link-btn neutral" data-a="close-overlay">Back to Puzzle</button>
-              <button class="hp-link-btn danger full" data-a="start-over">Start Over</button>
-            </div>
-
-            <small>Hare Publishing • Cryptogram</small>
           </div>
         </div>
 
