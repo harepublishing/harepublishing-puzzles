@@ -1,1 +1,26 @@
-
+[
+  {
+    "puzzleId": "74",
+    "puzzleTitle": "Cryptogram #74",
+    "puzzleDate": "2026-05-31",
+    "theme": "Inspirational Quotes",
+    "puzzleText": "GSV LMO B ORNRG GL LFI IVZORAZGRLM LU GLNLIILD RH LFI WLFYGH LU GLWZB.",
+    "solutionText": "THE ONLY LIMIT TO OUR REALIZATION OF TOMORROW IS OUR DOUBTS OF TODAY.",
+    "hints": [
+      {
+        "type": "letter",
+        "cipher": "G",
+        "plain": "T"
+      },
+      {
+        "type": "letter",
+        "cipher": "S",
+        "plain": "H"
+      },
+      {
+        "type": "author",
+        "value": "Franklin D. Roosevelt"
+      }
+    ]
+  }
+]
