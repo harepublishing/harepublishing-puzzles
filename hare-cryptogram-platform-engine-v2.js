@@ -1,6 +1,5 @@
 window.HareCryptogramEngine = {
   init({ containerId = "hp-cryptogram-container", dataObject } = {}) {
-    const ALPHA = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const container = document.getElementById(containerId);
     if (!container) return;
 
@@ -27,8 +26,18 @@ window.HareCryptogramEngine = {
     const SHOP_URL = data.shopUrl || "https://www.harepublishing.com/shop";
     const STORAGE_KEY = data.storageKey || `hp_cg_${puzzleId}`;
 
-    const currentScript = document.currentScript;
-    const baseUrl = currentScript?.src ? currentScript.src.replace(/[^/]+$/, "") : "";
+    function getEngineBaseUrl() {
+      const scripts = Array.from(document.scripts);
+      const engineScript = scripts.find(script =>
+        script.src && script.src.includes("hare-cryptogram-platform-engine-v2.js")
+      );
+
+      return engineScript
+        ? engineScript.src.replace(/[^/]+$/, "")
+        : "https://cdn.jsdelivr.net/gh/harepublishing/harepublishing-puzzles@main/";
+    }
+
+    const baseUrl = getEngineBaseUrl();
     const eraseIconUrl = `${baseUrl}icons/erase-button.svg`;
     const undoIconUrl = `${baseUrl}icons/undo-button.svg`;
 
@@ -82,7 +91,7 @@ window.HareCryptogramEngine = {
           box-sizing: border-box;
         }
 
-        .hp-crypto-error {
+        #hp-cryptogram-container .hp-crypto-error {
           padding: 20px;
           border: 1px solid var(--hp-cg-error);
           background: #fff5f5;
@@ -91,13 +100,13 @@ window.HareCryptogramEngine = {
           text-align: center;
         }
 
-        .hp-crypto-shell,
-        .hp-crypto-card {
+        #hp-cryptogram-container .hp-crypto-shell,
+        #hp-cryptogram-container .hp-crypto-card {
           width: 100%;
-          overflow: visible;
+          overflow: visible !important;
         }
 
-        .hp-crypto-card {
+        #hp-cryptogram-container .hp-crypto-card {
           background: #fff;
           border: 1px solid #e9eef3;
           border-radius: 18px;
@@ -105,34 +114,7 @@ window.HareCryptogramEngine = {
           box-shadow: 0 12px 36px rgba(0,0,0,.07);
         }
 
-        .hp-crypto-top-tools {
-          display: grid;
-          grid-template-columns: 1fr;
-          gap: 10px;
-          margin-bottom: 16px;
-          padding: 2px;
-        }
-
-        .hp-author-btn {
-          border: 2px solid #bdeed4;
-          background: #f3fff9;
-          color: var(--hp-cg-success);
-          border-radius: 14px;
-          padding: 13px 10px;
-          font-weight: 900;
-          font-size: 14px;
-          cursor: pointer;
-          transition: all .18s ease;
-        }
-
-        .hp-author-btn:hover,
-        .hp-author-btn.active {
-          background: var(--hp-cg-success);
-          border-color: var(--hp-cg-success);
-          color: #fff;
-        }
-
-        .hp-crypto-author-reveal {
+        #hp-cryptogram-container .hp-crypto-author-reveal {
           width: 100%;
           background: #f3fff9;
           border: 1px solid #bdeed4;
@@ -141,10 +123,11 @@ window.HareCryptogramEngine = {
           padding: 12px 16px;
           text-align: center;
           font-weight: 900;
-          margin: 8px 0 14px;
+          margin: 8px auto 14px;
+          max-width: 900px;
         }
 
-        .hp-crypto-status {
+        #hp-cryptogram-container .hp-crypto-status {
           width: 100%;
           max-width: 900px;
           margin: 10px auto 20px;
@@ -158,7 +141,7 @@ window.HareCryptogramEngine = {
           justify-content: center;
         }
 
-        .hp-crypto-status-msg {
+        #hp-cryptogram-container .hp-crypto-status-msg {
           display: block;
           width: 100%;
           font-size: 14px;
@@ -167,7 +150,7 @@ window.HareCryptogramEngine = {
           text-align: center;
         }
 
-        .hp-crypto-puzzle {
+        #hp-cryptogram-container .hp-crypto-puzzle {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
@@ -178,18 +161,18 @@ window.HareCryptogramEngine = {
           line-height: 1;
         }
 
-        .hp-crypto-word {
+        #hp-cryptogram-container .hp-crypto-word {
           display: inline-flex;
           gap: 6px;
           white-space: nowrap;
           align-items: flex-end;
         }
 
-        .hp-crypto-space {
+        #hp-cryptogram-container .hp-crypto-space {
           width: 8px;
         }
 
-        .hp-crypto-char {
+        #hp-cryptogram-container .hp-crypto-char {
           width: 31px;
           min-height: 52px;
           border: 0;
@@ -203,7 +186,7 @@ window.HareCryptogramEngine = {
           font-family: inherit;
         }
 
-        .hp-crypto-top {
+        #hp-cryptogram-container .hp-crypto-top {
           min-height: 22px;
           display: block;
           font-size: 18px;
@@ -213,7 +196,7 @@ window.HareCryptogramEngine = {
           margin-bottom: 5px;
         }
 
-        .hp-crypto-bottom {
+        #hp-cryptogram-container .hp-crypto-bottom {
           display: block;
           width: 100%;
           border-top: 3px solid #333;
@@ -224,25 +207,25 @@ window.HareCryptogramEngine = {
           color: #444;
         }
 
-        .hp-crypto-char.is-selected .hp-crypto-top,
-        .hp-crypto-char.is-selected .hp-crypto-bottom {
+        #hp-cryptogram-container .hp-crypto-char.is-selected .hp-crypto-top,
+        #hp-cryptogram-container .hp-crypto-char.is-selected .hp-crypto-bottom {
           color: var(--hp-cg-primary);
         }
 
-        .hp-crypto-char.is-selected .hp-crypto-bottom {
+        #hp-cryptogram-container .hp-crypto-char.is-selected .hp-crypto-bottom {
           border-top-color: var(--hp-cg-primary);
         }
 
-        .hp-crypto-char.is-correct .hp-crypto-top {
+        #hp-cryptogram-container .hp-crypto-char.is-correct .hp-crypto-top {
           color: var(--hp-cg-success);
         }
 
-        .hp-crypto-char.is-wrong .hp-crypto-top {
+        #hp-cryptogram-container .hp-crypto-char.is-wrong .hp-crypto-top {
           color: var(--hp-cg-error);
         }
 
-        .hp-crypto-punc,
-        .hp-crypto-apostrophe {
+        #hp-cryptogram-container .hp-crypto-punc,
+        #hp-cryptogram-container .hp-crypto-apostrophe {
           display: inline-flex;
           align-items: flex-end;
           justify-content: center;
@@ -253,22 +236,23 @@ window.HareCryptogramEngine = {
           padding: 0 2px 7px;
         }
 
-        .hp-crypto-kb-wrap {
+        #hp-cryptogram-container .hp-crypto-kb-wrap {
           width: 100%;
           max-width: 900px;
           margin: 0 auto;
         }
 
-        .hp-crypto-kb {
-          display: grid;
-          grid-template-columns: repeat(10, minmax(38px, 1fr));
-          gap: 8px;
-          margin: 0 auto 14px;
-          padding: 2px;
+        #hp-cryptogram-container .hp-crypto-kb {
+          display: grid !important;
+          grid-template-columns: repeat(10, minmax(38px, 1fr)) !important;
+          gap: 8px !important;
+          margin: 0 auto 14px !important;
+          padding: 2px !important;
+          max-width: 900px !important;
         }
 
-        .hp-crypto-key,
-        .hp-crypto-function-key {
+        #hp-cryptogram-container .hp-crypto-key,
+        #hp-cryptogram-container .hp-crypto-function-key {
           border-radius: 12px;
           min-height: 46px;
           font-size: 17px;
@@ -278,25 +262,25 @@ window.HareCryptogramEngine = {
           font-family: inherit;
         }
 
-        .hp-crypto-key {
+        #hp-cryptogram-container .hp-crypto-key {
           border: 1px solid #ddd;
           background: #fff;
           color: #222;
         }
 
-        .hp-crypto-key:hover {
+        #hp-cryptogram-container .hp-crypto-key:hover {
           border-color: var(--hp-cg-primary);
           background: var(--hp-cg-primary-light);
           color: var(--hp-cg-primary-dark);
         }
 
-        .hp-crypto-key.is-used {
+        #hp-cryptogram-container .hp-crypto-key.is-used {
           background: #edf6ff;
           border-color: #cfe3f8;
           color: #6e879d;
         }
 
-        .hp-crypto-function-key {
+        #hp-cryptogram-container .hp-crypto-function-key {
           border: 1px solid #b9d7ef;
           background: #edf6ff;
           color: var(--hp-cg-blue);
@@ -306,23 +290,29 @@ window.HareCryptogramEngine = {
           gap: 6px;
         }
 
-        .hp-crypto-function-key:hover {
+        #hp-cryptogram-container .hp-crypto-function-key:hover {
           background: #dff0ff;
           transform: translateY(-1px);
         }
 
-        .hp-crypto-function-key img {
+        #hp-cryptogram-container .hp-crypto-function-key img {
           width: 24px;
           height: 24px;
           display: block;
         }
 
-        .hp-crypto-function-key.reveal-letter {
+        #hp-cryptogram-container .hp-crypto-function-key.reveal-letter {
           font-size: 13px;
           line-height: 1.1;
+          padding: 4px;
         }
 
-        .hp-crypto-actions-row {
+        #hp-cryptogram-container .hp-crypto-kb-spacer {
+          visibility: hidden;
+          pointer-events: none;
+        }
+
+        #hp-cryptogram-container .hp-crypto-actions-row {
           display: grid;
           grid-template-columns: repeat(2, minmax(0, 1fr));
           gap: 10px;
@@ -331,7 +321,7 @@ window.HareCryptogramEngine = {
           padding: 2px;
         }
 
-        .hp-crypto-secondary {
+        #hp-cryptogram-container .hp-crypto-secondary {
           border: 1px solid #ddd;
           background: #fff;
           color: #333;
@@ -344,28 +334,40 @@ window.HareCryptogramEngine = {
           font-family: inherit;
         }
 
-        .hp-crypto-secondary:hover {
+        #hp-cryptogram-container .hp-crypto-secondary:hover {
           background: #f7f9fb;
           transform: translateY(-1px);
         }
 
-        .hp-crypto-secondary.check {
-          grid-column: 1 / -1;
+        #hp-cryptogram-container .hp-crypto-secondary.author {
+          border-color: #bdeed4;
+          color: var(--hp-cg-success);
+          background: #f3fff9;
+        }
+
+        #hp-cryptogram-container .hp-crypto-secondary.author.active,
+        #hp-cryptogram-container .hp-crypto-secondary.author:hover {
+          background: var(--hp-cg-success);
+          border-color: var(--hp-cg-success);
+          color: #fff;
+        }
+
+        #hp-cryptogram-container .hp-crypto-secondary.check {
           border-color: #b9d7ef;
           color: var(--hp-cg-blue);
         }
 
-        .hp-crypto-secondary.start-over {
+        #hp-cryptogram-container .hp-crypto-secondary.start-over {
           border-color: #ffb4b4;
           color: var(--hp-cg-error);
         }
 
-        .hp-crypto-secondary.reveal {
+        #hp-cryptogram-container .hp-crypto-secondary.reveal {
           border-color: #b9d7ef;
           color: var(--hp-cg-blue);
         }
 
-        .hp-overlay {
+        #hp-cryptogram-container .hp-overlay {
           display: none;
           position: fixed;
           inset: 0;
@@ -376,11 +378,11 @@ window.HareCryptogramEngine = {
           padding: 20px;
         }
 
-        .hp-overlay.on {
+        #hp-cryptogram-container .hp-overlay.on {
           display: flex;
         }
 
-        .hp-modal {
+        #hp-cryptogram-container .hp-modal {
           background: #fff;
           width: min(560px, 100%);
           border-radius: 22px;
@@ -390,27 +392,27 @@ window.HareCryptogramEngine = {
           color: #222;
         }
 
-        .hp-modal h3 {
+        #hp-cryptogram-container .hp-modal h3 {
           margin: 10px 0 14px;
           font-size: 26px;
           line-height: 1.15;
           color: var(--hp-cg-primary-dark);
         }
 
-        .hp-modal-lead {
+        #hp-cryptogram-container .hp-modal-lead {
           font-size: 17px;
           font-weight: 900;
           margin-bottom: 8px;
         }
 
-        .hp-modal-subtext {
+        #hp-cryptogram-container .hp-modal-subtext {
           font-size: 14px;
           color: #555;
           line-height: 1.4;
           margin-bottom: 5px;
         }
 
-        .hp-badges {
+        #hp-cryptogram-container .hp-badges {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
@@ -418,7 +420,7 @@ window.HareCryptogramEngine = {
           margin: 10px 0 16px;
         }
 
-        .hp-badge {
+        #hp-cryptogram-container .hp-badge {
           display: inline-flex;
           align-items: center;
           justify-content: center;
@@ -431,14 +433,14 @@ window.HareCryptogramEngine = {
           font-weight: 900;
         }
 
-        .hp-modal-actions {
+        #hp-cryptogram-container .hp-modal-actions {
           display: grid;
           grid-template-columns: repeat(2, minmax(0, 1fr));
           gap: 10px;
           margin-top: 18px;
         }
 
-        .hp-link-btn {
+        #hp-cryptogram-container .hp-link-btn {
           border: 0;
           border-radius: 12px;
           min-height: 42px;
@@ -453,40 +455,40 @@ window.HareCryptogramEngine = {
           font-size: 14px;
         }
 
-        .hp-link-btn.primary {
+        #hp-cryptogram-container .hp-link-btn.primary {
           background: var(--hp-cg-primary);
           color: #fff;
         }
 
-        .hp-link-btn.secondary {
+        #hp-cryptogram-container .hp-link-btn.secondary {
           background: var(--hp-cg-primary-light);
           color: var(--hp-cg-primary-dark);
           border: 1px solid var(--hp-cg-primary-soft);
         }
 
-        .hp-link-btn.neutral {
+        #hp-cryptogram-container .hp-link-btn.neutral {
           background: #f3f5f7;
           color: #333;
         }
 
-        .hp-link-btn.danger {
+        #hp-cryptogram-container .hp-link-btn.danger {
           background: #fff5f5;
           color: var(--hp-cg-error);
           border: 1px solid #ffb4b4;
         }
 
-        .hp-link-btn.full {
+        #hp-cryptogram-container .hp-link-btn.full {
           grid-column: 1 / -1;
         }
 
-        .hp-help-modal-content {
+        #hp-cryptogram-container .hp-help-modal-content {
           text-align: left;
           display: grid;
           gap: 10px;
           margin: 14px 0 6px;
         }
 
-        .hp-help-line {
+        #hp-cryptogram-container .hp-help-line {
           display: block;
           background: #f7f9fb;
           border: 1px solid #e3e9ef;
@@ -496,7 +498,7 @@ window.HareCryptogramEngine = {
           line-height: 1.4;
         }
 
-        .hp-modal small {
+        #hp-cryptogram-container .hp-modal small {
           display: block;
           margin-top: 14px;
           color: #777;
@@ -504,49 +506,49 @@ window.HareCryptogramEngine = {
         }
 
         @media (max-width: 760px) {
-          .hp-crypto-card {
+          #hp-cryptogram-container .hp-crypto-card {
             padding: 20px 14px;
           }
 
-          .hp-crypto-puzzle {
+          #hp-cryptogram-container .hp-crypto-puzzle {
             gap: 14px 16px;
           }
 
-          .hp-crypto-char {
+          #hp-cryptogram-container .hp-crypto-char {
             width: 26px;
           }
 
-          .hp-crypto-top {
+          #hp-cryptogram-container .hp-crypto-top {
             font-size: 16px;
           }
 
-          .hp-crypto-bottom {
+          #hp-cryptogram-container .hp-crypto-bottom {
             font-size: 14px;
           }
 
-          .hp-crypto-kb {
-            grid-template-columns: repeat(10, minmax(26px, 1fr));
-            gap: 6px;
+          #hp-cryptogram-container .hp-crypto-kb {
+            grid-template-columns: repeat(10, minmax(26px, 1fr)) !important;
+            gap: 6px !important;
           }
 
-          .hp-crypto-key,
-          .hp-crypto-function-key {
+          #hp-cryptogram-container .hp-crypto-key,
+          #hp-cryptogram-container .hp-crypto-function-key {
             min-height: 42px;
             font-size: 14px;
             border-radius: 10px;
           }
 
-          .hp-crypto-function-key img {
+          #hp-cryptogram-container .hp-crypto-function-key img {
             width: 21px;
             height: 21px;
           }
 
-          .hp-crypto-function-key.reveal-letter {
+          #hp-cryptogram-container .hp-crypto-function-key.reveal-letter {
             font-size: 10px;
           }
 
-          .hp-crypto-actions-row,
-          .hp-modal-actions {
+          #hp-cryptogram-container .hp-crypto-actions-row,
+          #hp-cryptogram-container .hp-modal-actions {
             grid-template-columns: 1fr;
           }
         }
@@ -669,7 +671,10 @@ window.HareCryptogramEngine = {
       const cipher = state.selectedCipher;
       const oldValue = state.mappings[cipher] || "";
 
-      if (!oldValue) return;
+      if (!oldValue) {
+        setStatusOnly("There is no letter to erase for the selected cipher letter.");
+        return;
+      }
 
       delete state.mappings[cipher];
       state.checked = false;
@@ -909,21 +914,6 @@ window.HareCryptogramEngine = {
       }
     }
 
-    function renderTopControls() {
-      if (!authorHint) return "";
-
-      return `
-        <div class="hp-crypto-top-tools">
-          <button
-            type="button"
-            class="hp-author-btn${state.usedAuthorHint ? " active" : ""}"
-            data-a="toggle-author">
-            ${state.usedAuthorHint ? "Author Hint: ON" : "Author Hint"}
-          </button>
-        </div>
-      `;
-    }
-
     function renderAuthorReveal() {
       if (!authorHint || !state.usedAuthorHint) return "";
 
@@ -1041,11 +1031,18 @@ window.HareCryptogramEngine = {
             ${functionKey("erase-selected", "Erase", eraseIconUrl)}
 
             ${row3.map(letterButton).join("")}
-            <span></span>
+            <span class="hp-crypto-kb-spacer"></span>
             ${functionKey("undo", "Undo", undoIconUrl)}
           </div>
 
           <div class="hp-crypto-actions-row">
+            ${
+              authorHint
+                ? `<button type="button" class="hp-crypto-secondary author${state.usedAuthorHint ? " active" : ""}" data-a="toggle-author">
+                    ${state.usedAuthorHint ? "Author Hint: ON" : "Author Hint"}
+                  </button>`
+                : ""
+            }
             <button type="button" class="hp-crypto-secondary check" data-a="check">Check Progress</button>
             <button type="button" class="hp-crypto-secondary start-over" data-a="start-over">Start Over</button>
             <button type="button" class="hp-crypto-secondary reveal" data-a="reveal-answer">Reveal Answer</button>
@@ -1129,7 +1126,6 @@ window.HareCryptogramEngine = {
       mount.innerHTML = `
         <div class="hp-crypto-shell">
           <div class="hp-crypto-card">
-            ${renderTopControls()}
             ${renderAuthorReveal()}
             <div class="hp-crypto-status">
               <span class="hp-crypto-status-msg">${escapeHtml(statusMessage())}</span>
@@ -1173,6 +1169,7 @@ window.HareCryptogramEngine = {
               <span class="hp-help-line"><strong>Reveal Letter</strong> reveals the plain letter for the selected cipher letter.</span>
               <span class="hp-help-line"><strong>Erase</strong> removes the entry for the selected cipher letter.</span>
               <span class="hp-help-line"><strong>Undo</strong> steps backward through your recent actions.</span>
+              <span class="hp-help-line"><strong>Author Hint</strong> reveals the quote author.</span>
               <span class="hp-help-line"><strong>Check Progress</strong> highlights correct letters in green and incorrect letters in red.</span>
               <span class="hp-help-line"><strong>Reveal Answer</strong> ends the puzzle and shows the completed quote.</span>
             </div>
