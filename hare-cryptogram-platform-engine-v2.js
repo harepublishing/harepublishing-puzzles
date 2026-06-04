@@ -381,49 +381,85 @@ window.HareCryptogramEngine = {
 
         #hp-cryptogram-container .hp-overlay {
           display: none;
-          position: absolute;
-          inset: 0;
-          z-index: 20;
-          background: rgba(255,255,255,.82);
           align-items: center;
           justify-content: center;
-          padding: 14px;
-          border-radius: 18px;
         }
 
         #hp-cryptogram-container .hp-overlay.on {
           display: flex;
         }
 
+        #hp-cryptogram-container #hp-crypto-overlay {
+          position: absolute;
+          inset: 0;
+          z-index: 50;
+          background: rgba(255,255,255,.76);
+          border-radius: 18px;
+          padding: 16px;
+        }
+
+        #hp-cryptogram-container #hp-crypto-help-modal {
+          position: fixed;
+          inset: 0;
+          z-index: 99999;
+          background: rgba(0,0,0,.45);
+          padding: 20px;
+        }
+
         #hp-cryptogram-container .hp-modal {
           background: #fff;
-          width: min(500px, 100%);
-          border-radius: 20px;
-          padding: 18px;
-          box-shadow: 0 18px 55px rgba(0,0,0,.18);
+          width: min(560px, 100%);
+          border-radius: 22px;
+          padding: 26px;
+          box-shadow: 0 20px 70px rgba(0,0,0,.25);
           text-align: center;
           color: #222;
-          max-height: none;
-          overflow: visible;
+        }
+
+        #hp-cryptogram-container #hp-crypto-overlay .hp-modal {
+          width: min(460px, 100%);
+          padding: 18px;
+          border-radius: 18px;
+          box-shadow: 0 18px 48px rgba(0,0,0,.18);
+        }
+
+        #hp-cryptogram-container #hp-crypto-overlay #hp-crypto-overlay-icon {
+          font-size: 24px !important;
         }
 
         #hp-cryptogram-container .hp-modal h3 {
-          margin: 6px 0 12px;
-          font-size: 24px;
+          margin: 10px 0 14px;
+          font-size: 26px;
           line-height: 1.15;
           color: var(--hp-cg-primary-dark);
         }
 
+        #hp-cryptogram-container #hp-crypto-overlay .hp-modal h3 {
+          margin: 6px 0 10px;
+          font-size: 22px;
+        }
+
         #hp-cryptogram-container .hp-modal-lead {
-          font-size: 16px;
+          font-size: 17px;
           font-weight: 900;
+          margin-bottom: 8px;
+        }
+
+        #hp-cryptogram-container #hp-crypto-overlay .hp-modal-lead {
+          font-size: 15px;
           margin-bottom: 6px;
         }
 
         #hp-cryptogram-container .hp-modal-subtext {
-          font-size: 13px;
+          font-size: 14px;
           color: #555;
-          line-height: 1.35;
+          line-height: 1.4;
+          margin-bottom: 5px;
+        }
+
+        #hp-cryptogram-container #hp-crypto-overlay .hp-modal-subtext {
+          font-size: 13px;
+          line-height: 1.3;
           margin-bottom: 4px;
         }
 
@@ -432,7 +468,12 @@ window.HareCryptogramEngine = {
           flex-wrap: wrap;
           justify-content: center;
           gap: 8px;
-          margin: 8px 0 14px;
+          margin: 10px 0 16px;
+        }
+
+        #hp-cryptogram-container #hp-crypto-overlay .hp-badges {
+          margin: 8px 0 12px;
+          gap: 6px;
         }
 
         #hp-cryptogram-container .hp-badge {
@@ -443,30 +484,47 @@ window.HareCryptogramEngine = {
           background: var(--hp-cg-primary-light);
           border: 1px solid var(--hp-cg-primary-soft);
           color: var(--hp-cg-primary-dark);
-          padding: 6px 10px;
-          font-size: 11px;
+          padding: 7px 11px;
+          font-size: 12px;
           font-weight: 900;
         }
 
         #hp-cryptogram-container .hp-recommend-card {
-          margin: 12px auto 0;
-          padding: 12px 14px;
-          border-radius: 14px;
+          margin: 18px auto 0;
+          padding: 14px 16px;
+          border-radius: 16px;
           background: #fff8ef;
           border: 1px solid var(--hp-cg-primary-soft);
-          max-width: 480px;
+          max-width: 520px;
+        }
+
+        #hp-cryptogram-container #hp-crypto-overlay .hp-recommend-card {
+          margin-top: 12px;
+          padding: 12px 14px;
+          max-width: 420px;
         }
 
         #hp-cryptogram-container .hp-recommend-title {
-          font-size: 15px;
+          font-size: 16px;
           font-weight: 900;
           color: var(--hp-cg-primary-dark);
-          margin-bottom: 5px;
+          margin-bottom: 6px;
+        }
+
+        #hp-cryptogram-container #hp-crypto-overlay .hp-recommend-title {
+          font-size: 14px;
+          margin-bottom: 4px;
         }
 
         #hp-cryptogram-container .hp-recommend-copy {
-          font-size: 13px;
+          font-size: 14px;
           color: #555;
+          line-height: 1.35;
+          margin-bottom: 10px;
+        }
+
+        #hp-cryptogram-container #hp-crypto-overlay .hp-recommend-copy {
+          font-size: 12px;
           line-height: 1.3;
           margin-bottom: 8px;
         }
@@ -474,6 +532,11 @@ window.HareCryptogramEngine = {
         #hp-cryptogram-container .hp-modal-actions {
           display: grid;
           grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 10px;
+          margin-top: 18px;
+        }
+
+        #hp-cryptogram-container #hp-crypto-overlay .hp-modal-actions {
           gap: 8px;
           margin-top: 12px;
         }
@@ -481,8 +544,8 @@ window.HareCryptogramEngine = {
         #hp-cryptogram-container .hp-link-btn {
           border: 0;
           border-radius: 12px;
-          min-height: 38px;
-          padding: 9px 11px;
+          min-height: 42px;
+          padding: 11px 12px;
           font-weight: 900;
           cursor: pointer;
           text-decoration: none;
@@ -490,7 +553,13 @@ window.HareCryptogramEngine = {
           align-items: center;
           justify-content: center;
           font-family: inherit;
-          font-size: 13px;
+          font-size: 14px;
+        }
+
+        #hp-cryptogram-container #hp-crypto-overlay .hp-link-btn {
+          min-height: 36px;
+          padding: 8px 10px;
+          font-size: 12px;
         }
 
         #hp-cryptogram-container .hp-link-btn.primary {
@@ -559,8 +628,13 @@ window.HareCryptogramEngine = {
 
         #hp-cryptogram-container .hp-modal small {
           display: block;
-          margin-top: 10px;
+          margin-top: 14px;
           color: #777;
+          font-size: 12px;
+        }
+
+        #hp-cryptogram-container #hp-crypto-overlay .hp-modal small {
+          margin-top: 10px;
           font-size: 11px;
         }
 
@@ -608,15 +682,6 @@ window.HareCryptogramEngine = {
           #hp-cryptogram-container .hp-crypto-actions-row {
             grid-template-columns: repeat(2, minmax(0, 1fr));
             max-width: 620px;
-          }
-
-          #hp-cryptogram-container .hp-modal {
-            width: min(420px, 100%);
-            padding: 14px;
-          }
-
-          #hp-cryptogram-container .hp-modal h3 {
-            font-size: 22px;
           }
 
           #hp-cryptogram-container .hp-modal-actions {
@@ -1266,11 +1331,9 @@ window.HareCryptogramEngine = {
             </div>
             ${renderPuzzle()}
             ${renderKeyboard()}
-          </div>
-        </div>
 
-        <div class="hp-overlay" id="hp-crypto-overlay" aria-hidden="true">
-          <div class="hp-modal" role="dialog" aria-modal="true" aria-label="Cryptogram result">
+            <div class="hp-overlay" id="hp-crypto-overlay" aria-hidden="true">
+              <div class="hp-modal" role="dialog" aria-modal="true" aria-label="Cryptogram result">
             <div id="hp-crypto-overlay-icon" style="font-size:32px; line-height:1;">🎉</div>
             <h3 id="hp-crypto-overlay-title">You Solved the Cryptogram!</h3>
 
@@ -1289,7 +1352,9 @@ window.HareCryptogramEngine = {
               <button class="hp-link-btn danger full" data-a="start-over">Start Over</button>
             </div>
 
-            <small>Hare Publishing • Cryptogram</small>
+              <small>Hare Publishing • Cryptogram</small>
+              </div>
+            </div>
           </div>
         </div>
 
