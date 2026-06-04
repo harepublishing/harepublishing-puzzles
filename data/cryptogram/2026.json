@@ -1,26 +1,15 @@
 [
   {
-    "puzzleId": "74",
-    "puzzleTitle": "Cryptogram #74",
-    "puzzleDate": "2026-05-31",
-    "theme": "Inspirational Quotes",
-    "puzzleText": "GSV LMO B ORNRG GL LFI IVZORAZGRLM LU GLNLIILD RH LFI WLFYGH LU GLWZB.",
-    "solutionText": "THE ONLY LIMIT TO OUR REALIZATION OF TOMORROW IS OUR DOUBTS OF TODAY.",
-    "hints": [
-      {
-        "type": "letter",
-        "cipher": "G",
-        "plain": "T"
-      },
-      {
-        "type": "letter",
-        "cipher": "S",
-        "plain": "H"
-      },
-      {
-        "type": "author",
-        "value": "Franklin D. Roosevelt"
-      }
-    ]
-  }
+  "puzzleId": "78",
+  "puzzleDate": "2026-06-28",
+  "puzzleText": "WTK FIMUYDOR WDKTY LTPC RQXBB RPDNR. ~ BXI PSM",
+  "solutionText": "Big journeys begin with small steps. ~ Lao Tzu",
+  "hints": [
+    { "label": "Hint 1", "type": "mapping", "cipher": "M", "plain": "U" },
+    { "label": "Hint 2", "type": "mapping", "cipher": "Y", "plain": "N" },
+    { "label": "Hint 3", "type": "author", "value": "Lao Tzu" }
+  ],
+  "morePuzzlesUrl": "https://www.harepublishing.com/online-puzzles",
+  "shopUrl": "https://www.harepublishing.com/shop"
+}
 ]
