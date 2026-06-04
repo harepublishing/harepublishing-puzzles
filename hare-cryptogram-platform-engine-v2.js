@@ -21,7 +21,7 @@ window.HareCryptogramEngine = {
     const puzzleText = String(data.puzzleText || data.cipherText || "");
     const solutionText = String(data.solutionText || data.solution || "");
     const hints = Array.isArray(data.hints) ? data.hints : [];
-    const puzzleHint = resolvePuzzleHint();
+    const authorHint = hints.find(h => h.type === "author");
     const MORE_PUZZLES_URL = data.morePuzzlesUrl || "https://www.harepublishing.com/online-puzzles";
     const SHOP_URL = data.shopUrl || "https://www.harepublishing.com/shop";
     const ARCHIVE_URL = data.archiveUrl || "https://www.harepublishing.com/cryptogram/archive";
@@ -67,44 +67,6 @@ window.HareCryptogramEngine = {
         '"': "&quot;",
         "'": "&#39;"
       }[s]));
-    }
-
-    function titleCase(value) {
-      return String(value || "")
-        .replace(/[-_]+/g, " ")
-        .replace(/\s+/g, " ")
-        .trim()
-        .replace(/\b\w/g, char => char.toUpperCase());
-    }
-
-    function resolvePuzzleHint() {
-      if (data.hint && typeof data.hint === "object" && data.hint.value) {
-        const type = data.hint.type || "hint";
-        return {
-          type,
-          label: data.hint.label || `${titleCase(type)} Hint`,
-          value: String(data.hint.value)
-        };
-      }
-
-      if (data.author) {
-        return {
-          type: "author",
-          label: "Author Hint",
-          value: String(data.author)
-        };
-      }
-
-      const legacyAuthorHint = hints.find(h => h && h.type === "author" && h.value);
-      if (legacyAuthorHint) {
-        return {
-          type: "author",
-          label: legacyAuthorHint.label || "Author Hint",
-          value: String(legacyAuthorHint.value)
-        };
-      }
-
-      return null;
     }
 
     function injectStyles() {
@@ -756,7 +718,7 @@ window.HareCryptogramEngine = {
         if (!Array.isArray(merged.revealedLetters)) merged.revealedLetters = [];
 
         if (Array.isArray(merged.usedHints)) {
-          const authorIndex = hints.findIndex(h => h && h.type === "author");
+          const authorIndex = hints.findIndex(h => h.type === "author");
           if (authorIndex >= 0 && merged.usedHints[authorIndex]) {
             merged.usedAuthorHint = true;
           }
@@ -1090,11 +1052,11 @@ window.HareCryptogramEngine = {
     }
 
     function renderAuthorReveal() {
-      if (!puzzleHint || !state.usedAuthorHint) return "";
+      if (!authorHint || !state.usedAuthorHint) return "";
 
       return `
         <div class="hp-crypto-author-reveal">
-          <strong>${escapeHtml(puzzleHint.label.replace(/ Hint$/i, ""))}:</strong> ${escapeHtml(puzzleHint.value)}
+          <strong>Author:</strong> ${escapeHtml(authorHint.value)}
         </div>
       `;
     }
@@ -1204,9 +1166,9 @@ window.HareCryptogramEngine = {
 
           <div class="hp-crypto-actions-row">
             ${
-              puzzleHint
+              authorHint
                 ? `<button type="button" class="hp-crypto-secondary author${state.usedAuthorHint ? " active" : ""}" data-a="toggle-author">
-                    ${state.usedAuthorHint ? `${escapeHtml(puzzleHint.label)}: ON` : escapeHtml(puzzleHint.label)}
+                    ${state.usedAuthorHint ? "Author Hint: ON" : "Author Hint"}
                   </button>`
                 : `<span class="hp-crypto-kb-spacer"></span>`
             }
@@ -1405,7 +1367,7 @@ window.HareCryptogramEngine = {
               <p><span class="hp-help-icon"><span class="material-symbols-outlined">visibility</span></span><strong>Reveal Letter</strong> reveals the plain letter for the selected cipher letter.</p>
               <p><span class="hp-help-icon"><span class="material-symbols-outlined">backspace</span></span><strong>Erase</strong> removes the entry for the selected cipher letter.</p>
               <p><span class="hp-help-icon"><span class="material-symbols-outlined">undo</span></span><strong>Undo</strong> steps backward through your recent actions.</p>
-              <p><strong>Hint</strong> reveals an available clue, such as an author, category, or topic.</p>
+              <p><strong>Author Hint</strong> reveals the quote author.</p>
               <p><strong>Check Progress</strong> highlights correct letters in green and incorrect letters in red.</p>
               <p><strong>Reveal Answer</strong> ends the puzzle and shows the completed quote.</p>
             </div>
