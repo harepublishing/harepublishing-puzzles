@@ -21,10 +21,9 @@ window.HareCryptogramEngine = {
     const puzzleText = String(data.puzzleText || data.cipherText || "");
     const solutionText = String(data.solutionText || data.solution || "");
     const hints = Array.isArray(data.hints) ? data.hints : [];
-    const authorHint = hints.find(h => h.type === "author");
+    const puzzleHint = normalizePuzzleHint(data, hints);
     const MORE_PUZZLES_URL = data.morePuzzlesUrl || "https://www.harepublishing.com/online-puzzles";
     const SHOP_URL = data.shopUrl || "https://www.harepublishing.com/shop";
-    const ARCHIVE_URL = data.archiveUrl || "https://www.harepublishing.com/cryptogram/archive";
     const STORAGE_KEY = data.storageKey || `hp_cg_${puzzleId}`;
 
     if (!puzzleText || !solutionText) {
@@ -32,14 +31,12 @@ window.HareCryptogramEngine = {
       return;
     }
 
-    let overlayOpenedThisPageLoad = false;
-    let recommendation = null;
-
     injectMaterialSymbols();
     injectStyles();
 
     function injectMaterialSymbols() {
       if (document.getElementById("hp-material-symbols-font")) return;
+
       const link = document.createElement("link");
       link.id = "hp-material-symbols-font";
       link.rel = "stylesheet";
@@ -67,6 +64,62 @@ window.HareCryptogramEngine = {
         '"': "&quot;",
         "'": "&#39;"
       }[s]));
+    }
+
+    function titleCase(value) {
+      return String(value || "")
+        .replace(/[_-]+/g, " ")
+        .replace(/\s+/g, " ")
+        .trim()
+        .replace(/\w/g, ch => ch.toUpperCase());
+    }
+
+    function normalizePuzzleHint(dataObject, hintArray) {
+      if (dataObject && dataObject.hint && typeof dataObject.hint === "object" && dataObject.hint.value) {
+        const type = String(dataObject.hint.type || "hint").toLowerCase();
+        const displayName = dataObject.hint.label || titleCase(type) || "Hint";
+        return {
+          type,
+          displayName,
+          buttonLabel: `${displayName} Hint`,
+          activeLabel: `${displayName} Hint: ON`,
+          revealLabel: displayName,
+          value: String(dataObject.hint.value)
+        };
+      }
+
+      if (dataObject && dataObject.author) {
+        return {
+          type: "author",
+          displayName: "Author",
+          buttonLabel: "Author Hint",
+          activeLabel: "Author Hint: ON",
+          revealLabel: "Author",
+          value: String(dataObject.author)
+        };
+      }
+
+      const supportedHint = hintArray.find(h =>
+        h && h.value && h.type && h.type !== "mapping"
+      );
+
+      if (supportedHint) {
+        const type = String(supportedHint.type || "hint").toLowerCase();
+        const displayName = supportedHint.label
+          ? String(supportedHint.label).replace(/\s*hint\s*$/i, "")
+          : titleCase(type) || "Hint";
+
+        return {
+          type,
+          displayName,
+          buttonLabel: `${displayName} Hint`,
+          activeLabel: `${displayName} Hint: ON`,
+          revealLabel: displayName,
+          value: String(supportedHint.value)
+        };
+      }
+
+      return null;
     }
 
     function injectStyles() {
@@ -127,7 +180,6 @@ window.HareCryptogramEngine = {
         }
 
         #hp-cryptogram-container .hp-crypto-card {
-          position: relative;
           background: #fff;
           border: 1px solid #e9eef3;
           border-radius: 18px;
@@ -381,29 +433,17 @@ window.HareCryptogramEngine = {
 
         #hp-cryptogram-container .hp-overlay {
           display: none;
-          align-items: center;
-          justify-content: center;
-        }
-
-        #hp-cryptogram-container .hp-overlay.on {
-          display: flex;
-        }
-
-        #hp-cryptogram-container #hp-crypto-overlay {
-          position: absolute;
-          inset: 0;
-          z-index: 50;
-          background: rgba(255,255,255,.76);
-          border-radius: 18px;
-          padding: 16px;
-        }
-
-        #hp-cryptogram-container #hp-crypto-help-modal {
           position: fixed;
           inset: 0;
           z-index: 99999;
           background: rgba(0,0,0,.45);
+          align-items: center;
+          justify-content: center;
           padding: 20px;
+        }
+
+        #hp-cryptogram-container .hp-overlay.on {
+          display: flex;
         }
 
         #hp-cryptogram-container .hp-modal {
@@ -416,17 +456,6 @@ window.HareCryptogramEngine = {
           color: #222;
         }
 
-        #hp-cryptogram-container #hp-crypto-overlay .hp-modal {
-          width: min(460px, 100%);
-          padding: 18px;
-          border-radius: 18px;
-          box-shadow: 0 18px 48px rgba(0,0,0,.18);
-        }
-
-        #hp-cryptogram-container #hp-crypto-overlay #hp-crypto-overlay-icon {
-          font-size: 24px !important;
-        }
-
         #hp-cryptogram-container .hp-modal h3 {
           margin: 10px 0 14px;
           font-size: 26px;
@@ -434,20 +463,10 @@ window.HareCryptogramEngine = {
           color: var(--hp-cg-primary-dark);
         }
 
-        #hp-cryptogram-container #hp-crypto-overlay .hp-modal h3 {
-          margin: 6px 0 10px;
-          font-size: 22px;
-        }
-
         #hp-cryptogram-container .hp-modal-lead {
           font-size: 17px;
           font-weight: 900;
           margin-bottom: 8px;
-        }
-
-        #hp-cryptogram-container #hp-crypto-overlay .hp-modal-lead {
-          font-size: 15px;
-          margin-bottom: 6px;
         }
 
         #hp-cryptogram-container .hp-modal-subtext {
@@ -457,23 +476,12 @@ window.HareCryptogramEngine = {
           margin-bottom: 5px;
         }
 
-        #hp-cryptogram-container #hp-crypto-overlay .hp-modal-subtext {
-          font-size: 13px;
-          line-height: 1.3;
-          margin-bottom: 4px;
-        }
-
         #hp-cryptogram-container .hp-badges {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
           gap: 8px;
           margin: 10px 0 16px;
-        }
-
-        #hp-cryptogram-container #hp-crypto-overlay .hp-badges {
-          margin: 8px 0 12px;
-          gap: 6px;
         }
 
         #hp-cryptogram-container .hp-badge {
@@ -489,56 +497,11 @@ window.HareCryptogramEngine = {
           font-weight: 900;
         }
 
-        #hp-cryptogram-container .hp-recommend-card {
-          margin: 18px auto 0;
-          padding: 14px 16px;
-          border-radius: 16px;
-          background: #fff8ef;
-          border: 1px solid var(--hp-cg-primary-soft);
-          max-width: 520px;
-        }
-
-        #hp-cryptogram-container #hp-crypto-overlay .hp-recommend-card {
-          margin-top: 12px;
-          padding: 12px 14px;
-          max-width: 420px;
-        }
-
-        #hp-cryptogram-container .hp-recommend-title {
-          font-size: 16px;
-          font-weight: 900;
-          color: var(--hp-cg-primary-dark);
-          margin-bottom: 6px;
-        }
-
-        #hp-cryptogram-container #hp-crypto-overlay .hp-recommend-title {
-          font-size: 14px;
-          margin-bottom: 4px;
-        }
-
-        #hp-cryptogram-container .hp-recommend-copy {
-          font-size: 14px;
-          color: #555;
-          line-height: 1.35;
-          margin-bottom: 10px;
-        }
-
-        #hp-cryptogram-container #hp-crypto-overlay .hp-recommend-copy {
-          font-size: 12px;
-          line-height: 1.3;
-          margin-bottom: 8px;
-        }
-
         #hp-cryptogram-container .hp-modal-actions {
           display: grid;
           grid-template-columns: repeat(2, minmax(0, 1fr));
           gap: 10px;
           margin-top: 18px;
-        }
-
-        #hp-cryptogram-container #hp-crypto-overlay .hp-modal-actions {
-          gap: 8px;
-          margin-top: 12px;
         }
 
         #hp-cryptogram-container .hp-link-btn {
@@ -554,12 +517,6 @@ window.HareCryptogramEngine = {
           justify-content: center;
           font-family: inherit;
           font-size: 14px;
-        }
-
-        #hp-cryptogram-container #hp-crypto-overlay .hp-link-btn {
-          min-height: 36px;
-          padding: 8px 10px;
-          font-size: 12px;
         }
 
         #hp-cryptogram-container .hp-link-btn.primary {
@@ -590,40 +547,19 @@ window.HareCryptogramEngine = {
 
         #hp-cryptogram-container .hp-help-modal-content {
           text-align: left;
-          background: #f7f9fb;
-          border: 1px solid #dce8f2;
-          border-radius: 16px;
-          padding: 18px;
+          display: grid;
+          gap: 10px;
           margin: 14px 0 6px;
         }
 
-        #hp-cryptogram-container .hp-help-modal-content p {
-          margin: 0 0 12px;
-          font-size: 15px;
-          line-height: 1.45;
-          color: #3d4b58;
-        }
-
-        #hp-cryptogram-container .hp-help-modal-content p:last-child {
-          margin-bottom: 0;
-        }
-
-        #hp-cryptogram-container .hp-help-icon {
-          display: inline-flex;
-          width: 28px;
-          height: 28px;
-          margin-right: 6px;
-          align-items: center;
-          justify-content: center;
-          vertical-align: middle;
-          color: var(--hp-cg-blue);
-          background: #edf6ff;
-          border: 1px solid #b9d7ef;
-          border-radius: 8px;
-        }
-
-        #hp-cryptogram-container .hp-help-icon .material-symbols-outlined {
-          font-size: 19px;
+        #hp-cryptogram-container .hp-help-line {
+          display: block;
+          background: #f7f9fb;
+          border: 1px solid #e3e9ef;
+          border-radius: 12px;
+          padding: 11px 12px;
+          font-size: 14px;
+          line-height: 1.4;
         }
 
         #hp-cryptogram-container .hp-modal small {
@@ -631,11 +567,6 @@ window.HareCryptogramEngine = {
           margin-top: 14px;
           color: #777;
           font-size: 12px;
-        }
-
-        #hp-cryptogram-container #hp-crypto-overlay .hp-modal small {
-          margin-top: 10px;
-          font-size: 11px;
         }
 
         @media (max-width: 760px) {
@@ -672,11 +603,7 @@ window.HareCryptogramEngine = {
           }
 
           #hp-cryptogram-container .hp-crypto-function-key .material-symbols-outlined {
-            font-size: 20px;
-          }
-
-          #hp-cryptogram-container .hp-crypto-function-key {
-            padding: 4px;
+            font-size: 24px;
           }
 
           #hp-cryptogram-container .hp-crypto-actions-row {
@@ -696,6 +623,7 @@ window.HareCryptogramEngine = {
       return {
         mappings: {},
         selectedCipher: "",
+        usedHint: false,
         usedAuthorHint: false,
         revealedLetters: [],
         history: [],
@@ -717,9 +645,16 @@ window.HareCryptogramEngine = {
         if (!Array.isArray(merged.history)) merged.history = [];
         if (!Array.isArray(merged.revealedLetters)) merged.revealedLetters = [];
 
-        if (Array.isArray(merged.usedHints)) {
-          const authorIndex = hints.findIndex(h => h.type === "author");
-          if (authorIndex >= 0 && merged.usedHints[authorIndex]) {
+        if (typeof merged.usedHint !== "boolean") {
+          merged.usedHint = Boolean(merged.usedAuthorHint);
+        }
+
+        if (Array.isArray(merged.usedHints) && puzzleHint) {
+          const legacyHintIndex = hints.findIndex(h =>
+            h && h.value && h.type && h.type !== "mapping"
+          );
+          if (legacyHintIndex >= 0 && merged.usedHints[legacyHintIndex]) {
+            merged.usedHint = true;
             merged.usedAuthorHint = true;
           }
         }
@@ -973,7 +908,6 @@ window.HareCryptogramEngine = {
     function startOver() {
       if (!confirm("Start over? This will remove all of your entries for this puzzle.")) return;
       state = defaultState();
-      overlayOpenedThisPageLoad = false;
       saveState();
       hideOverlay();
       hideHelpModal();
@@ -1032,10 +966,10 @@ window.HareCryptogramEngine = {
       const shareData = {
         title: `${puzzleTitle} — Hare Publishing`,
         text: state.solved
-          ? `I cracked ${puzzleTitle} at Hare Publishing! 🧩 Can you decode it too?`
+          ? `I solved ${puzzleTitle} from Hare Publishing!`
           : state.revealed
-            ? `I revealed the answer for ${puzzleTitle} at Hare Publishing — this one was a real codebreaker! 🧩`
-            : `I’m decoding ${puzzleTitle} at Hare Publishing — ${counts.correct}/${counts.total} letters cracked so far. 🧩`,
+            ? `I revealed the answer for ${puzzleTitle} at Hare Publishing.`
+            : `I’m working on ${puzzleTitle} — ${counts.correct}/${counts.total} letters solved so far.`,
         url: window.location.href
       };
 
@@ -1045,18 +979,18 @@ window.HareCryptogramEngine = {
       }
 
       if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(`${shareData.text}\n${shareData.url}`).then(() => {
-          setStatusOnly("Share message copied!");
+        navigator.clipboard.writeText(window.location.href).then(() => {
+          setStatusOnly("Link copied!");
         }).catch(() => {});
       }
     }
 
-    function renderAuthorReveal() {
-      if (!authorHint || !state.usedAuthorHint) return "";
+    function renderHintReveal() {
+      if (!puzzleHint || !state.usedHint) return "";
 
       return `
         <div class="hp-crypto-author-reveal">
-          <strong>Author:</strong> ${escapeHtml(authorHint.value)}
+          <strong>${escapeHtml(puzzleHint.revealLabel)}:</strong> ${escapeHtml(puzzleHint.value)}
         </div>
       `;
     }
@@ -1119,8 +1053,8 @@ window.HareCryptogramEngine = {
     function statusMessage() {
       const counts = countSolvedLetters();
 
-      if (state.solved) return "Cryptogram solved! Back to admire your codebreaking work.";
-      if (state.revealed) return "Answer revealed. Back to review the completed quote.";
+      if (state.solved) return "Cryptogram solved! Great job cracking the quote.";
+      if (state.revealed) return "Answer revealed. Try another puzzle when you are ready.";
       if (state.checked) return "Progress checked. Correct letters are green and incorrect letters are red.";
       if (state.selectedCipher) return `Selected cipher letter: ${state.selectedCipher}`;
       if (counts.filled > 0) return "Keep going — choose another cipher letter or check your progress.";
@@ -1166,9 +1100,9 @@ window.HareCryptogramEngine = {
 
           <div class="hp-crypto-actions-row">
             ${
-              authorHint
-                ? `<button type="button" class="hp-crypto-secondary author${state.usedAuthorHint ? " active" : ""}" data-a="toggle-author">
-                    ${state.usedAuthorHint ? "Author Hint: ON" : "Author Hint"}
+              puzzleHint
+                ? `<button type="button" class="hp-crypto-secondary author${state.usedHint ? " active" : ""}" data-a="toggle-hint">
+                    ${state.usedHint ? escapeHtml(puzzleHint.activeLabel) : escapeHtml(puzzleHint.buttonLabel)}
                   </button>`
                 : `<span class="hp-crypto-kb-spacer"></span>`
             }
@@ -1176,73 +1110,6 @@ window.HareCryptogramEngine = {
             <button type="button" class="hp-crypto-secondary start-over" data-a="start-over">Start Over</button>
             <button type="button" class="hp-crypto-secondary reveal" data-a="reveal-answer">Reveal Answer</button>
           </div>
-        </div>
-      `;
-    }
-
-    function getStoredCryptogramItems() {
-      const items = [];
-
-      for (let i = 0; i < localStorage.length; i++) {
-        const key = localStorage.key(i);
-        if (!key || !key.startsWith("hp_cg_")) continue;
-
-        try {
-          const saved = JSON.parse(localStorage.getItem(key));
-          const id = key.replace("hp_cg_", "");
-          if (saved && id && id !== String(puzzleId)) {
-            items.push({ key, id, saved });
-          }
-        } catch {}
-      }
-
-      return items;
-    }
-
-    function hasProgress(saved) {
-      return Boolean(
-        saved &&
-        saved.mappings &&
-        Object.keys(saved.mappings).length > 0 &&
-        !saved.solved &&
-        !saved.revealed
-      );
-    }
-
-    function findUnfinishedCryptogram() {
-      const unfinished = getStoredCryptogramItems()
-        .filter(item => hasProgress(item.saved))
-        .sort((a, b) => Number(b.id) - Number(a.id));
-
-      return unfinished[0] || null;
-    }
-
-    function renderRecommendationHtml() {
-      const unfinished = findUnfinishedCryptogram();
-
-      if (unfinished) {
-        return `
-          <div class="hp-recommend-card">
-            <div class="hp-recommend-title">Keep the codebreaking going</div>
-            <div class="hp-recommend-copy">
-              You have another Cryptogram already in progress. Pick up where you left off and finish cracking the quote.
-            </div>
-            <a class="hp-link-btn secondary full" href="/cryptogram?puzzle=${encodeURIComponent(unfinished.id)}">
-              Finish Cryptogram Puzzle #${escapeHtml(unfinished.id)}
-            </a>
-          </div>
-        `;
-      }
-
-      return `
-        <div class="hp-recommend-card">
-          <div class="hp-recommend-title">Ready for another code to crack?</div>
-          <div class="hp-recommend-copy">
-            Explore the Cryptogram archive and find your next puzzle challenge.
-          </div>
-          <a class="hp-link-btn secondary full" href="${escapeHtml(ARCHIVE_URL)}">
-            Browse Cryptogram Archive
-          </a>
         </div>
       `;
     }
@@ -1267,7 +1134,6 @@ window.HareCryptogramEngine = {
           <div class="hp-modal-lead">Congratulations — you cracked the code!</div>
           <div class="hp-modal-subtext">Great job decoding this quote.</div>
           <div class="hp-modal-subtext">Keep your puzzle streak going in the Puzzlers Hub.</div>
-          ${renderRecommendationHtml()}
         `;
         return;
       }
@@ -1278,7 +1144,6 @@ window.HareCryptogramEngine = {
         overlayTextEl.innerHTML = `
           <div class="hp-modal-lead">Here is the completed quote.</div>
           <div class="hp-modal-subtext">Try another Cryptogram or explore more puzzles in the Puzzlers Hub.</div>
-          ${renderRecommendationHtml()}
         `;
       }
     }
@@ -1291,7 +1156,6 @@ window.HareCryptogramEngine = {
       overlayEl.classList.add("on");
       overlayEl.setAttribute("aria-hidden", "false");
 
-      overlayOpenedThisPageLoad = true;
       state.overlaySeen = true;
       saveState();
     }
@@ -1325,15 +1189,17 @@ window.HareCryptogramEngine = {
       mount.innerHTML = `
         <div class="hp-crypto-shell">
           <div class="hp-crypto-card">
-            ${renderAuthorReveal()}
+            ${renderHintReveal()}
             <div class="hp-crypto-status">
               <span class="hp-crypto-status-msg">${escapeHtml(statusMessage())}</span>
             </div>
             ${renderPuzzle()}
             ${renderKeyboard()}
+          </div>
+        </div>
 
-            <div class="hp-overlay" id="hp-crypto-overlay" aria-hidden="true">
-              <div class="hp-modal" role="dialog" aria-modal="true" aria-label="Cryptogram result">
+        <div class="hp-overlay" id="hp-crypto-overlay" aria-hidden="true">
+          <div class="hp-modal" role="dialog" aria-modal="true" aria-label="Cryptogram result">
             <div id="hp-crypto-overlay-icon" style="font-size:32px; line-height:1;">🎉</div>
             <h3 id="hp-crypto-overlay-title">You Solved the Cryptogram!</h3>
 
@@ -1352,9 +1218,7 @@ window.HareCryptogramEngine = {
               <button class="hp-link-btn danger full" data-a="start-over">Start Over</button>
             </div>
 
-              <small>Hare Publishing • Cryptogram</small>
-              </div>
-            </div>
+            <small>Hare Publishing • Cryptogram</small>
           </div>
         </div>
 
@@ -1363,13 +1227,14 @@ window.HareCryptogramEngine = {
             <h3>How to Play</h3>
 
             <div class="hp-help-modal-content">
-              <p>Click a <strong>cipher letter</strong>, then choose the plain letter you think it stands for. Every matching cipher letter updates across the whole quote.</p>
-              <p><span class="hp-help-icon"><span class="material-symbols-outlined">visibility</span></span><strong>Reveal Letter</strong> reveals the plain letter for the selected cipher letter.</p>
-              <p><span class="hp-help-icon"><span class="material-symbols-outlined">backspace</span></span><strong>Erase</strong> removes the entry for the selected cipher letter.</p>
-              <p><span class="hp-help-icon"><span class="material-symbols-outlined">undo</span></span><strong>Undo</strong> steps backward through your recent actions.</p>
-              <p><strong>Author Hint</strong> reveals the quote author.</p>
-              <p><strong>Check Progress</strong> highlights correct letters in green and incorrect letters in red.</p>
-              <p><strong>Reveal Answer</strong> ends the puzzle and shows the completed quote.</p>
+              <span class="hp-help-line">Click a <strong>cipher letter</strong>, then choose the plain letter you think it stands for.</span>
+              <span class="hp-help-line">Every matching cipher letter updates across the whole quote.</span>
+              <span class="hp-help-line"><strong>Reveal Letter</strong> reveals the plain letter for the selected cipher letter.</span>
+              <span class="hp-help-line"><strong>Erase</strong> removes the entry for the selected cipher letter.</span>
+              <span class="hp-help-line"><strong>Undo</strong> steps backward through your recent actions.</span>
+              <span class="hp-help-line"><strong>Hint</strong> reveals the author, category, topic, or another helpful clue when one is available.</span>
+              <span class="hp-help-line"><strong>Check Progress</strong> highlights correct letters in green and incorrect letters in red.</span>
+              <span class="hp-help-line"><strong>Reveal Answer</strong> ends the puzzle and shows the completed quote.</span>
             </div>
 
             <div class="hp-modal-actions">
@@ -1383,8 +1248,8 @@ window.HareCryptogramEngine = {
 
       bindEvents();
 
-      if (isFinished() && !overlayOpenedThisPageLoad) {
-        setTimeout(showOverlay, 0);
+      if ((state.solved || state.revealed) && !state.overlaySeen) {
+        showOverlay();
       }
 
       window.dispatchEvent(new CustomEvent("hare:cryptogram-rendered", {
@@ -1423,8 +1288,9 @@ window.HareCryptogramEngine = {
           if (action === "close-overlay") hideOverlay();
           if (action === "close-help-modal") hideHelpModal();
 
-          if (action === "toggle-author") {
-            state.usedAuthorHint = !state.usedAuthorHint;
+          if (action === "toggle-hint" || action === "toggle-author") {
+            state.usedHint = !state.usedHint;
+            state.usedAuthorHint = state.usedHint;
             saveState();
             render();
           }
