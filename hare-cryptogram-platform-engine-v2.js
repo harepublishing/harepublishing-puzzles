@@ -26,27 +26,23 @@ window.HareCryptogramEngine = {
     const SHOP_URL = data.shopUrl || "https://www.harepublishing.com/shop";
     const STORAGE_KEY = data.storageKey || `hp_cg_${puzzleId}`;
 
-    function getEngineBaseUrl() {
-      const scripts = Array.from(document.scripts);
-      const engineScript = scripts.find(script =>
-        script.src && script.src.includes("hare-cryptogram-platform-engine-v2.js")
-      );
-
-      return engineScript
-        ? engineScript.src.replace(/[^/]+$/, "")
-        : "https://cdn.jsdelivr.net/gh/harepublishing/harepublishing-puzzles@main/";
-    }
-
-    const baseUrl = getEngineBaseUrl();
-    const eraseIconUrl = `${baseUrl}icons/erase-button.svg`;
-    const undoIconUrl = `${baseUrl}icons/undo-button.svg`;
-
     if (!puzzleText || !solutionText) {
       mount.innerHTML = errorCard("Configuration Error: puzzleText and solutionText are required.");
       return;
     }
 
+    injectMaterialSymbols();
     injectStyles();
+
+    function injectMaterialSymbols() {
+      if (document.getElementById("hp-material-symbols-font")) return;
+
+      const link = document.createElement("link");
+      link.id = "hp-material-symbols-font";
+      link.rel = "stylesheet";
+      link.href = "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined";
+      document.head.appendChild(link);
+    }
 
     function errorCard(message) {
       return `<div class="hp-crypto-error"><strong>${escapeHtml(message)}</strong></div>`;
@@ -89,6 +85,27 @@ window.HareCryptogramEngine = {
 
         #hp-cryptogram-container * {
           box-sizing: border-box;
+        }
+
+        #hp-cryptogram-container .material-symbols-outlined {
+          font-family: "Material Symbols Outlined";
+          font-weight: normal;
+          font-style: normal;
+          font-size: 28px;
+          line-height: 1;
+          letter-spacing: normal;
+          text-transform: none;
+          display: inline-block;
+          white-space: nowrap;
+          word-wrap: normal;
+          direction: ltr;
+          -webkit-font-feature-settings: "liga";
+          -webkit-font-smoothing: antialiased;
+          font-variation-settings:
+            'FILL' 1,
+            'wght' 500,
+            'GRAD' 0,
+            'opsz' 24;
         }
 
         #hp-cryptogram-container .hp-crypto-error {
@@ -287,7 +304,6 @@ window.HareCryptogramEngine = {
           display: flex;
           align-items: center;
           justify-content: center;
-          gap: 6px;
         }
 
         #hp-cryptogram-container .hp-crypto-function-key:hover {
@@ -295,16 +311,8 @@ window.HareCryptogramEngine = {
           transform: translateY(-1px);
         }
 
-        #hp-cryptogram-container .hp-crypto-function-key img {
-          width: 24px;
-          height: 24px;
-          display: block;
-        }
-
-        #hp-cryptogram-container .hp-crypto-function-key.reveal-letter {
-          font-size: 13px;
-          line-height: 1.1;
-          padding: 4px;
+        #hp-cryptogram-container .hp-crypto-function-key.reveal-letter .material-symbols-outlined {
+          font-size: 28px;
         }
 
         #hp-cryptogram-container .hp-crypto-kb-spacer {
@@ -314,9 +322,9 @@ window.HareCryptogramEngine = {
 
         #hp-cryptogram-container .hp-crypto-actions-row {
           display: grid;
-          grid-template-columns: repeat(2, minmax(0, 1fr));
+          grid-template-columns: repeat(4, minmax(0, 1fr));
           gap: 10px;
-          max-width: 620px;
+          max-width: 820px;
           margin: 0 auto;
           padding: 2px;
         }
@@ -538,16 +546,15 @@ window.HareCryptogramEngine = {
             border-radius: 10px;
           }
 
-          #hp-cryptogram-container .hp-crypto-function-key img {
-            width: 21px;
-            height: 21px;
+          #hp-cryptogram-container .hp-crypto-function-key .material-symbols-outlined {
+            font-size: 24px;
           }
 
-          #hp-cryptogram-container .hp-crypto-function-key.reveal-letter {
-            font-size: 10px;
+          #hp-cryptogram-container .hp-crypto-actions-row {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            max-width: 620px;
           }
 
-          #hp-cryptogram-container .hp-crypto-actions-row,
           #hp-cryptogram-container .hp-modal-actions {
             grid-template-columns: 1fr;
           }
@@ -990,18 +997,10 @@ window.HareCryptogramEngine = {
       return "Select a cipher letter, then choose its matching plain letter.";
     }
 
-    function functionKey(action, label, iconUrl = "") {
-      if (iconUrl) {
-        return `
-          <button type="button" class="hp-crypto-function-key" data-a="${action}" aria-label="${label}">
-            <img src="${escapeHtml(iconUrl)}" alt="">
-          </button>
-        `;
-      }
-
+    function functionKey(action, label, iconName) {
       return `
-        <button type="button" class="hp-crypto-function-key reveal-letter" data-a="${action}">
-          ${escapeHtml(label)}
+        <button type="button" class="hp-crypto-function-key ${action}" data-a="${action}" aria-label="${label}">
+          <span class="material-symbols-outlined" aria-hidden="true">${iconName}</span>
         </button>
       `;
     }
@@ -1025,14 +1024,14 @@ window.HareCryptogramEngine = {
         <div class="hp-crypto-kb-wrap">
           <div class="hp-crypto-kb">
             ${row1.map(letterButton).join("")}
-            ${functionKey("reveal-letter", "Reveal Letter")}
+            ${functionKey("reveal-letter", "Reveal Letter", "visibility")}
 
             ${row2.map(letterButton).join("")}
-            ${functionKey("erase-selected", "Erase", eraseIconUrl)}
+            ${functionKey("erase-selected", "Erase", "backspace")}
 
             ${row3.map(letterButton).join("")}
             <span class="hp-crypto-kb-spacer"></span>
-            ${functionKey("undo", "Undo", undoIconUrl)}
+            ${functionKey("undo", "Undo", "undo")}
           </div>
 
           <div class="hp-crypto-actions-row">
@@ -1041,7 +1040,7 @@ window.HareCryptogramEngine = {
                 ? `<button type="button" class="hp-crypto-secondary author${state.usedAuthorHint ? " active" : ""}" data-a="toggle-author">
                     ${state.usedAuthorHint ? "Author Hint: ON" : "Author Hint"}
                   </button>`
-                : ""
+                : `<span class="hp-crypto-kb-spacer"></span>`
             }
             <button type="button" class="hp-crypto-secondary check" data-a="check">Check Progress</button>
             <button type="button" class="hp-crypto-secondary start-over" data-a="start-over">Start Over</button>
