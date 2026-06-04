@@ -24,6 +24,7 @@ window.HareCryptogramEngine = {
     const authorHint = hints.find(h => h.type === "author");
     const MORE_PUZZLES_URL = data.morePuzzlesUrl || "https://www.harepublishing.com/online-puzzles";
     const SHOP_URL = data.shopUrl || "https://www.harepublishing.com/shop";
+    const ARCHIVE_URL = data.archiveUrl || "https://www.harepublishing.com/cryptogram/archive";
     const STORAGE_KEY = data.storageKey || `hp_cg_${puzzleId}`;
 
     if (!puzzleText || !solutionText) {
@@ -31,12 +32,14 @@ window.HareCryptogramEngine = {
       return;
     }
 
+    let overlayOpenedThisPageLoad = false;
+    let recommendation = null;
+
     injectMaterialSymbols();
     injectStyles();
 
     function injectMaterialSymbols() {
       if (document.getElementById("hp-material-symbols-font")) return;
-
       const link = document.createElement("link");
       link.id = "hp-material-symbols-font";
       link.rel = "stylesheet";
@@ -441,6 +444,29 @@ window.HareCryptogramEngine = {
           font-weight: 900;
         }
 
+        #hp-cryptogram-container .hp-recommend-card {
+          margin: 18px auto 0;
+          padding: 14px 16px;
+          border-radius: 16px;
+          background: #fff8ef;
+          border: 1px solid var(--hp-cg-primary-soft);
+          max-width: 520px;
+        }
+
+        #hp-cryptogram-container .hp-recommend-title {
+          font-size: 16px;
+          font-weight: 900;
+          color: var(--hp-cg-primary-dark);
+          margin-bottom: 6px;
+        }
+
+        #hp-cryptogram-container .hp-recommend-copy {
+          font-size: 14px;
+          color: #555;
+          line-height: 1.35;
+          margin-bottom: 10px;
+        }
+
         #hp-cryptogram-container .hp-modal-actions {
           display: grid;
           grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -491,19 +517,40 @@ window.HareCryptogramEngine = {
 
         #hp-cryptogram-container .hp-help-modal-content {
           text-align: left;
-          display: grid;
-          gap: 10px;
+          background: #f7f9fb;
+          border: 1px solid #dce8f2;
+          border-radius: 16px;
+          padding: 18px;
           margin: 14px 0 6px;
         }
 
-        #hp-cryptogram-container .hp-help-line {
-          display: block;
-          background: #f7f9fb;
-          border: 1px solid #e3e9ef;
-          border-radius: 12px;
-          padding: 11px 12px;
-          font-size: 14px;
-          line-height: 1.4;
+        #hp-cryptogram-container .hp-help-modal-content p {
+          margin: 0 0 12px;
+          font-size: 15px;
+          line-height: 1.45;
+          color: #3d4b58;
+        }
+
+        #hp-cryptogram-container .hp-help-modal-content p:last-child {
+          margin-bottom: 0;
+        }
+
+        #hp-cryptogram-container .hp-help-icon {
+          display: inline-flex;
+          width: 28px;
+          height: 28px;
+          margin-right: 6px;
+          align-items: center;
+          justify-content: center;
+          vertical-align: middle;
+          color: var(--hp-cg-blue);
+          background: #edf6ff;
+          border: 1px solid #b9d7ef;
+          border-radius: 8px;
+        }
+
+        #hp-cryptogram-container .hp-help-icon .material-symbols-outlined {
+          font-size: 19px;
         }
 
         #hp-cryptogram-container .hp-modal small {
@@ -848,6 +895,7 @@ window.HareCryptogramEngine = {
     function startOver() {
       if (!confirm("Start over? This will remove all of your entries for this puzzle.")) return;
       state = defaultState();
+      overlayOpenedThisPageLoad = false;
       saveState();
       hideOverlay();
       hideHelpModal();
@@ -906,10 +954,10 @@ window.HareCryptogramEngine = {
       const shareData = {
         title: `${puzzleTitle} — Hare Publishing`,
         text: state.solved
-          ? `I solved ${puzzleTitle} from Hare Publishing!`
+          ? `I cracked ${puzzleTitle} at Hare Publishing! 🧩 Can you decode it too?`
           : state.revealed
-            ? `I revealed the answer for ${puzzleTitle} at Hare Publishing.`
-            : `I’m working on ${puzzleTitle} — ${counts.correct}/${counts.total} letters solved so far.`,
+            ? `I revealed the answer for ${puzzleTitle} at Hare Publishing — this one was a real codebreaker! 🧩`
+            : `I’m decoding ${puzzleTitle} at Hare Publishing — ${counts.correct}/${counts.total} letters cracked so far. 🧩`,
         url: window.location.href
       };
 
@@ -919,8 +967,8 @@ window.HareCryptogramEngine = {
       }
 
       if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(window.location.href).then(() => {
-          setStatusOnly("Link copied!");
+        navigator.clipboard.writeText(`${shareData.text}\n${shareData.url}`).then(() => {
+          setStatusOnly("Share message copied!");
         }).catch(() => {});
       }
     }
@@ -993,8 +1041,8 @@ window.HareCryptogramEngine = {
     function statusMessage() {
       const counts = countSolvedLetters();
 
-      if (state.solved) return "Cryptogram solved! Great job cracking the quote.";
-      if (state.revealed) return "Answer revealed. Try another puzzle when you are ready.";
+      if (state.solved) return "Cryptogram solved! Back to admire your codebreaking work.";
+      if (state.revealed) return "Answer revealed. Back to review the completed quote.";
       if (state.checked) return "Progress checked. Correct letters are green and incorrect letters are red.";
       if (state.selectedCipher) return `Selected cipher letter: ${state.selectedCipher}`;
       if (counts.filled > 0) return "Keep going — choose another cipher letter or check your progress.";
@@ -1054,6 +1102,73 @@ window.HareCryptogramEngine = {
       `;
     }
 
+    function getStoredCryptogramItems() {
+      const items = [];
+
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (!key || !key.startsWith("hp_cg_")) continue;
+
+        try {
+          const saved = JSON.parse(localStorage.getItem(key));
+          const id = key.replace("hp_cg_", "");
+          if (saved && id && id !== String(puzzleId)) {
+            items.push({ key, id, saved });
+          }
+        } catch {}
+      }
+
+      return items;
+    }
+
+    function hasProgress(saved) {
+      return Boolean(
+        saved &&
+        saved.mappings &&
+        Object.keys(saved.mappings).length > 0 &&
+        !saved.solved &&
+        !saved.revealed
+      );
+    }
+
+    function findUnfinishedCryptogram() {
+      const unfinished = getStoredCryptogramItems()
+        .filter(item => hasProgress(item.saved))
+        .sort((a, b) => Number(b.id) - Number(a.id));
+
+      return unfinished[0] || null;
+    }
+
+    function renderRecommendationHtml() {
+      const unfinished = findUnfinishedCryptogram();
+
+      if (unfinished) {
+        return `
+          <div class="hp-recommend-card">
+            <div class="hp-recommend-title">Keep the codebreaking going</div>
+            <div class="hp-recommend-copy">
+              You have another Cryptogram already in progress. Pick up where you left off and finish cracking the quote.
+            </div>
+            <a class="hp-link-btn secondary full" href="/cryptogram?puzzle=${encodeURIComponent(unfinished.id)}">
+              Finish Cryptogram Puzzle #${escapeHtml(unfinished.id)}
+            </a>
+          </div>
+        `;
+      }
+
+      return `
+        <div class="hp-recommend-card">
+          <div class="hp-recommend-title">Ready for another code to crack?</div>
+          <div class="hp-recommend-copy">
+            Explore the Cryptogram archive and find your next puzzle challenge.
+          </div>
+          <a class="hp-link-btn secondary full" href="${escapeHtml(ARCHIVE_URL)}">
+            Browse Cryptogram Archive
+          </a>
+        </div>
+      `;
+    }
+
     function renderOverlayContent() {
       const badgeIdEl = mount.querySelector("#hp-crypto-badge-id");
       const badgeMetaEl = mount.querySelector("#hp-crypto-badge-meta");
@@ -1074,6 +1189,7 @@ window.HareCryptogramEngine = {
           <div class="hp-modal-lead">Congratulations — you cracked the code!</div>
           <div class="hp-modal-subtext">Great job decoding this quote.</div>
           <div class="hp-modal-subtext">Keep your puzzle streak going in the Puzzlers Hub.</div>
+          ${renderRecommendationHtml()}
         `;
         return;
       }
@@ -1084,6 +1200,7 @@ window.HareCryptogramEngine = {
         overlayTextEl.innerHTML = `
           <div class="hp-modal-lead">Here is the completed quote.</div>
           <div class="hp-modal-subtext">Try another Cryptogram or explore more puzzles in the Puzzlers Hub.</div>
+          ${renderRecommendationHtml()}
         `;
       }
     }
@@ -1096,6 +1213,7 @@ window.HareCryptogramEngine = {
       overlayEl.classList.add("on");
       overlayEl.setAttribute("aria-hidden", "false");
 
+      overlayOpenedThisPageLoad = true;
       state.overlaySeen = true;
       saveState();
     }
@@ -1167,14 +1285,13 @@ window.HareCryptogramEngine = {
             <h3>How to Play</h3>
 
             <div class="hp-help-modal-content">
-              <span class="hp-help-line">Click a <strong>cipher letter</strong>, then choose the plain letter you think it stands for.</span>
-              <span class="hp-help-line">Every matching cipher letter updates across the whole quote.</span>
-              <span class="hp-help-line"><strong>Reveal Letter</strong> reveals the plain letter for the selected cipher letter.</span>
-              <span class="hp-help-line"><strong>Erase</strong> removes the entry for the selected cipher letter.</span>
-              <span class="hp-help-line"><strong>Undo</strong> steps backward through your recent actions.</span>
-              <span class="hp-help-line"><strong>Author Hint</strong> reveals the quote author.</span>
-              <span class="hp-help-line"><strong>Check Progress</strong> highlights correct letters in green and incorrect letters in red.</span>
-              <span class="hp-help-line"><strong>Reveal Answer</strong> ends the puzzle and shows the completed quote.</span>
+              <p>Click a <strong>cipher letter</strong>, then choose the plain letter you think it stands for. Every matching cipher letter updates across the whole quote.</p>
+              <p><span class="hp-help-icon"><span class="material-symbols-outlined">visibility</span></span><strong>Reveal Letter</strong> reveals the plain letter for the selected cipher letter.</p>
+              <p><span class="hp-help-icon"><span class="material-symbols-outlined">backspace</span></span><strong>Erase</strong> removes the entry for the selected cipher letter.</p>
+              <p><span class="hp-help-icon"><span class="material-symbols-outlined">undo</span></span><strong>Undo</strong> steps backward through your recent actions.</p>
+              <p><strong>Author Hint</strong> reveals the quote author.</p>
+              <p><strong>Check Progress</strong> highlights correct letters in green and incorrect letters in red.</p>
+              <p><strong>Reveal Answer</strong> ends the puzzle and shows the completed quote.</p>
             </div>
 
             <div class="hp-modal-actions">
@@ -1188,8 +1305,8 @@ window.HareCryptogramEngine = {
 
       bindEvents();
 
-      if ((state.solved || state.revealed) && !state.overlaySeen) {
-        showOverlay();
+      if (isFinished() && !overlayOpenedThisPageLoad) {
+        setTimeout(showOverlay, 0);
       }
 
       window.dispatchEvent(new CustomEvent("hare:cryptogram-rendered", {
