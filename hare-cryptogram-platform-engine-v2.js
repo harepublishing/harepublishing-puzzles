@@ -547,7 +547,11 @@ window.HareCryptogramEngine = {
           }
 
           #hp-cryptogram-container .hp-crypto-function-key .material-symbols-outlined {
-            font-size: 24px;
+            font-size: 20px;
+          }
+
+          #hp-cryptogram-container .hp-crypto-function-key {
+            padding: 4px;
           }
 
           #hp-cryptogram-container .hp-crypto-actions-row {
