@@ -1,10 +1,470 @@
 [
- {
-  "puzzleId": "78",
-  "puzzleTitle": "Cryptogram #78",
-  "puzzleDate": "2026-06-28",
-  "theme": "Inspirational Quotes",
-  "year": "2026",
-  "status": "published"
-}
+  {
+    "puzzleId": 1,
+    "puzzleDate": "2025-01-05",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 2,
+    "puzzleDate": "2025-01-12",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 3,
+    "puzzleDate": "2025-01-19",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 4,
+    "puzzleDate": "2025-01-26",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 5,
+    "puzzleDate": "2025-02-02",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 6,
+    "puzzleDate": "2025-02-09",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 7,
+    "puzzleDate": "2025-02-16",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 8,
+    "puzzleDate": "2025-02-23",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 9,
+    "puzzleDate": "2025-03-02",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 10,
+    "puzzleDate": "2025-03-09",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 11,
+    "puzzleDate": "2025-03-16",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 12,
+    "puzzleDate": "2025-03-23",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 13,
+    "puzzleDate": "2025-03-30",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 14,
+    "puzzleDate": "2025-04-06",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 15,
+    "puzzleDate": "2025-04-13",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 16,
+    "puzzleDate": "2025-04-20",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 17,
+    "puzzleDate": "2025-04-27",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 18,
+    "puzzleDate": "2025-05-04",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 19,
+    "puzzleDate": "2025-05-11",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 20,
+    "puzzleDate": "2025-05-18",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 21,
+    "puzzleDate": "2025-05-25",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 22,
+    "puzzleDate": "2025-06-01",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 23,
+    "puzzleDate": "2025-06-08",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 24,
+    "puzzleDate": "2025-06-15",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 25,
+    "puzzleDate": "2025-06-22",
+    "year": 2025,
+    "type": "proverb"
+  },
+  {
+    "puzzleId": 26,
+    "puzzleDate": "2025-06-29",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 27,
+    "puzzleDate": "2025-07-06",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 28,
+    "puzzleDate": "2025-07-13",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 29,
+    "puzzleDate": "2025-07-20",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 30,
+    "puzzleDate": "2025-07-27",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 31,
+    "puzzleDate": "2025-08-03",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 32,
+    "puzzleDate": "2025-08-10",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 33,
+    "puzzleDate": "2025-08-17",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 34,
+    "puzzleDate": "2025-08-24",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 35,
+    "puzzleDate": "2025-08-31",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 36,
+    "puzzleDate": "2025-09-07",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 37,
+    "puzzleDate": "2025-09-14",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 38,
+    "puzzleDate": "2025-09-21",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 39,
+    "puzzleDate": "2025-09-28",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 40,
+    "puzzleDate": "2025-10-05",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 41,
+    "puzzleDate": "2025-10-12",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 42,
+    "puzzleDate": "2025-10-19",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 43,
+    "puzzleDate": "2025-10-26",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 44,
+    "puzzleDate": "2025-11-02",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 45,
+    "puzzleDate": "2025-11-09",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 46,
+    "puzzleDate": "2025-11-16",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 47,
+    "puzzleDate": "2025-11-23",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 48,
+    "puzzleDate": "2025-11-30",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 49,
+    "puzzleDate": "2025-12-07",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 50,
+    "puzzleDate": "2025-12-14",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 51,
+    "puzzleDate": "2025-12-21",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 52,
+    "puzzleDate": "2025-12-28",
+    "year": 2025,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 53,
+    "puzzleDate": "2026-01-04",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 54,
+    "puzzleDate": "2026-01-11",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 55,
+    "puzzleDate": "2026-01-18",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 56,
+    "puzzleDate": "2026-01-25",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 57,
+    "puzzleDate": "2026-02-01",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 58,
+    "puzzleDate": "2026-02-08",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 59,
+    "puzzleDate": "2026-02-15",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 60,
+    "puzzleDate": "2026-02-22",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 61,
+    "puzzleDate": "2026-03-01",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 62,
+    "puzzleDate": "2026-03-08",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 63,
+    "puzzleDate": "2026-03-15",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 64,
+    "puzzleDate": "2026-03-22",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 65,
+    "puzzleDate": "2026-03-29",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 66,
+    "puzzleDate": "2026-04-05",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 67,
+    "puzzleDate": "2026-04-12",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 68,
+    "puzzleDate": "2026-04-19",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 69,
+    "puzzleDate": "2026-04-26",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 70,
+    "puzzleDate": "2026-05-03",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 71,
+    "puzzleDate": "2026-05-10",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 72,
+    "puzzleDate": "2026-05-17",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 73,
+    "puzzleDate": "2026-05-24",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 74,
+    "puzzleDate": "2026-05-31",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 75,
+    "puzzleDate": "2026-06-07",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 76,
+    "puzzleDate": "2026-06-14",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 77,
+    "puzzleDate": "2026-06-21",
+    "year": 2026,
+    "type": "quote"
+  },
+  {
+    "puzzleId": 78,
+    "puzzleDate": "2026-06-28",
+    "year": 2026,
+    "type": "quote"
+  }
 ]
