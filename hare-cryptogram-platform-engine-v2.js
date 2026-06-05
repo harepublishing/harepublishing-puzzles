@@ -580,7 +580,7 @@ window.HareCryptogramEngine = {
         }
 
         #hp-cryptogram-container .hp-link-btn {
-          border: 0;
+          border: 2px solid transparent;
           border-radius: 12px;
           min-height: 42px;
           padding: 11px 12px;
@@ -592,6 +592,7 @@ window.HareCryptogramEngine = {
           justify-content: center;
           font-family: inherit;
           font-size: 14px;
+          transition: all .18s ease;
         }
 
         #hp-cryptogram-container #hp-crypto-overlay .hp-link-btn {
@@ -603,6 +604,13 @@ window.HareCryptogramEngine = {
         #hp-cryptogram-container .hp-link-btn.primary {
           background: var(--hp-cg-primary);
           color: #fff;
+          border-color: var(--hp-cg-primary);
+        }
+
+        #hp-cryptogram-container .hp-link-btn.primary:hover {
+          background: #fff;
+          color: var(--hp-cg-primary-dark);
+          border-color: var(--hp-cg-primary-soft);
         }
 
         #hp-cryptogram-container .hp-link-btn.secondary {
@@ -618,14 +626,27 @@ window.HareCryptogramEngine = {
         }
 
         #hp-cryptogram-container .hp-link-btn.neutral {
-          background: #f3f5f7;
+          background: #fff;
           color: #333;
+          border-color: #e1e5ea;
+        }
+
+        #hp-cryptogram-container .hp-link-btn.neutral:hover {
+          background: var(--hp-cg-primary);
+          border-color: var(--hp-cg-primary);
+          color: #fff;
         }
 
         #hp-cryptogram-container .hp-link-btn.danger {
-          background: #fff5f5;
+          background: #fff;
           color: var(--hp-cg-error);
-          border: 1px solid #ffb4b4;
+          border-color: #ffb4b4;
+        }
+
+        #hp-cryptogram-container .hp-link-btn.danger:hover {
+          background: var(--hp-cg-error);
+          border-color: var(--hp-cg-error);
+          color: #fff;
         }
 
         #hp-cryptogram-container .hp-link-btn.full {
@@ -1337,13 +1358,13 @@ window.HareCryptogramEngine = {
       if (nextPuzzle) {
         return `
           <div class="hp-recommend-card">
-            <div class="hp-recommend-title">Play Your Next Cryptogram</div>
+            <div class="hp-recommend-title">Play Your Next Puzzle</div>
             <div class="hp-recommend-copy">
               ${nextPuzzle.isInProgress
                 ? "You have a Cryptogram already in progress. Pick up where you left off and finish cracking the quote."
                 : "Your next available Cryptogram is ready. Keep the fun going with another code to crack."}
             </div>
-            <a class="hp-link-btn secondary full" href="/cryptogram?puzzle=${encodeURIComponent(nextPuzzle.id)}">
+            <a class="hp-link-btn primary full" href="/cryptogram?puzzle=${encodeURIComponent(nextPuzzle.id)}">
               Cryptogram #${escapeHtml(nextPuzzle.id)}
             </a>
           </div>
@@ -1461,8 +1482,8 @@ window.HareCryptogramEngine = {
             <div id="hp-crypto-overlay-text"></div>
 
             <div class="hp-modal-actions">
-              <a class="hp-link-btn secondary" href="${escapeHtml(MORE_PUZZLES_URL)}">More Online Puzzles</a>
-              <a class="hp-link-btn primary" href="${escapeHtml(SHOP_URL)}">Get Puzzle Books</a>
+              <a class="hp-link-btn primary" href="${escapeHtml(MORE_PUZZLES_URL)}">More Online Puzzles</a>
+              <a class="hp-link-btn secondary" href="${escapeHtml(SHOP_URL)}">Get Puzzle Books</a>
               <button class="hp-link-btn neutral" data-a="share">Share</button>
               <button class="hp-link-btn neutral" data-a="close-overlay">Back to Puzzle</button>
               <button class="hp-link-btn danger full" data-a="start-over">Start Over</button>
