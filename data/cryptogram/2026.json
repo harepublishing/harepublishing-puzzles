@@ -1,15 +1,236 @@
 [
   {
-  "puzzleId": "78",
-  "puzzleDate": "2026-06-28",
-  "puzzleText": "WTK FIMUYDOR WDKTY LTPC RQXBB RPDNR. ~ BXI PSM",
-  "solutionText": "Big journeys begin with small steps. ~ Lao Tzu",
-  "hints": [
-    { "label": "Hint 1", "type": "mapping", "cipher": "M", "plain": "U" },
-    { "label": "Hint 2", "type": "mapping", "cipher": "Y", "plain": "N" },
-    { "label": "Hint 3", "type": "author", "value": "Lao Tzu" }
-  ],
-  "morePuzzlesUrl": "https://www.harepublishing.com/online-puzzles",
-  "shopUrl": "https://www.harepublishing.com/shop"
-}
+    "puzzleId": 53,
+    "puzzleDate": "2026-01-04",
+    "type": "quote",
+    "topic": "success",
+    "author": "Thomas Edison",
+    "puzzleText": "RTYQY VO DG OFLORVRFRY EGQ TMQB NGQA. ~ RTGXMO YBVOGD",
+    "solutionText": "There is no substitute for hard work. ~ Thomas Edison"
+  },
+  {
+    "puzzleId": 54,
+    "puzzleDate": "2026-01-11",
+    "type": "quote",
+    "topic": "success",
+    "author": "Plato",
+    "puzzleText": "LDO MOPEWWEWP EZ LDO JGZL EJBGHLUWL BUHL GN LDO IGHT. ~ BSULG",
+    "solutionText": "The beginning is the most important part of the work. ~ Plato"
+  },
+  {
+    "puzzleId": 55,
+    "puzzleDate": "2026-01-18",
+    "type": "quote",
+    "topic": "general",
+    "author": "Carl Jung",
+    "puzzleText": "ZQ VAA OPVWT XPMDM ZT V OWTKWT. ~ OVDA UCQF",
+    "solutionText": "In all chaos there is a cosmos. ~ Carl Jung"
+  },
+  {
+    "puzzleId": 56,
+    "puzzleDate": "2026-01-25",
+    "type": "quote",
+    "topic": "success",
+    "author": "Albert Einstein",
+    "puzzleText": "AYKBLGH KO OLEEHOO KM RGQWGHOO. ~ YBVHGF HKMOFHKM",
+    "solutionText": "Failure is success in progress. ~ Albert Einstein"
+  },
+  {
+    "puzzleId": 57,
+    "puzzleDate": "2026-02-01",
+    "type": "quote",
+    "topic": "general",
+    "author": "George Eliot",
+    "puzzleText": "TF TZ QKUKJ FII BOFK FI AK XEOF LID GTYEF EOUK AKKQ. ~ YKÄ²YK KBTIF",
+    "solutionText": "It is never too late to be what you might have been. ~ George Eliot"
+  },
+  {
+    "puzzleId": 58,
+    "puzzleDate": "2026-02-08",
+    "type": "quote",
+    "topic": "learning",
+    "author": "Charles Morgan",
+    "puzzleText": "IB DQRTEZMHZ VQLKZIBZB, TRQMZK MZZJZQB. ~ LOIKEZB NRKHIQ",
+    "solutionText": "As knowledge increases, wonder deepens. ~ Charles Morgan"
+  },
+  {
+    "puzzleId": 59,
+    "puzzleDate": "2026-02-15",
+    "type": "quote",
+    "topic": "life",
+    "author": "Charles Dederich",
+    "puzzleText": "NHYXG PO NJV KPUON YXG HK NJV UVON HK GHEU RPKV. ~ AJXURVO YVYVUPAJ",
+    "solutionText": "Today is the first day of the rest of your life. ~ Charles Dederich"
+  },
+  {
+    "puzzleId": 60,
+    "puzzleDate": "2026-02-22",
+    "type": "quote",
+    "topic": "creativity",
+    "author": "John Lennon",
+    "puzzleText": "AUWOPNZ OUWBUI W OLN NL NMU PYWQPHWNPLH. ~ SLMH OUHHLH",
+    "solutionText": "Reality leaves a lot to the imagination. ~ John Lennon"
+  },
+  {
+    "puzzleId": 61,
+    "puzzleDate": "2026-03-01",
+    "type": "quote",
+    "topic": "success",
+    "author": "George Bernard Shaw",
+    "puzzleText": "YHH XCZBCGQQ OGXGIOQ ZI WUG EICGYQZIYJHG KYI. ~ BGZCBG JGCIYCO QUYP",
+    "solutionText": "All progress depends on the unreasonable man. ~ George Bernard Shaw"
+  },
+  {
+    "puzzleId": 62,
+    "puzzleDate": "2026-03-08",
+    "type": "quote",
+    "topic": "general",
+    "author": "Earl Nightingale",
+    "puzzleText": "EH KHDNXH EASJ EH JAWQR SKNGJ. ~ HSLB QWMAJWQMSBH",
+    "solutionText": "We become what we think about. ~ Earl Nightingale"
+  },
+  {
+    "puzzleId": 63,
+    "puzzleDate": "2026-03-15",
+    "type": "quote",
+    "topic": "general",
+    "author": "Andre Gide",
+    "puzzleText": "SIY RKGGIB OMNRIQFJ GFX IRFKGN YGHFNN SIY LKQF RIYJKAF. ~ KGOJF AMOF",
+    "solutionText": "You cannot discover new oceans unless you have courage. ~ Andre Gide"
+  },
+  {
+    "puzzleId": 64,
+    "puzzleDate": "2026-03-22",
+    "type": "quote",
+    "topic": "learning",
+    "author": "Francis Bacon",
+    "puzzleText": "DYCIVJWBJ UG NCÄ²X. ~ RXSYTUG QSTCY",
+    "solutionText": "Knowledge is power. ~ Francis Bacon"
+  },
+  {
+    "puzzleId": 65,
+    "puzzleDate": "2026-03-29",
+    "type": "quote",
+    "topic": "life",
+    "author": "Soren Kierkegaard",
+    "puzzleText": "BE OTQZ FY BE KEYZ EHZâ€™Y IEEBFHP LELZHBTQFKA. ~ YEQZH MFZQMZPTTQO",
+    "solutionText": "To dare is to lose oneâ€™s footing momentarily. ~ Soren Kierkegaard"
+  },
+  {
+    "puzzleId": 66,
+    "puzzleDate": "2026-04-05",
+    "type": "quote",
+    "topic": "general",
+    "author": "M. C. Escher",
+    "puzzleText": "IF JIM JMPRFBK RYKVMEFBK. ~ A. V. FKVIFB",
+    "solutionText": "He who wonders discovers. ~ M. C. Escher"
+  },
+  {
+    "puzzleId": 67,
+    "puzzleDate": "2026-04-12",
+    "type": "quote",
+    "topic": "success",
+    "author": "Jim Rohn",
+    "puzzleText": "NDVFDÄ²DCX DV EKX TUDNAX TXEBXXC AYOJV OCN OFFYRÄ²DVKRXCE. ~ PDR UYKC",
+    "solutionText": "Discipline is the bridge between goals and accomplishment. ~ Jim Rohn"
+  },
+  {
+    "puzzleId": 68,
+    "puzzleDate": "2026-04-19",
+    "type": "quote",
+    "topic": "success",
+    "author": "John Ruskin",
+    "puzzleText": "OZSIBFR BA LUJUV SL SWWBPULF. ~ HKQL VZANBL",
+    "solutionText": "Quality is never an accident. ~ John Ruskin"
+  },
+  {
+    "puzzleId": 69,
+    "puzzleDate": "2026-04-26",
+    "type": "quote",
+    "topic": "creativity",
+    "author": "Brene Brown",
+    "puzzleText": "VBQYQ TI ML TMMLKHVTLM JTVBLRV URYTLITVF. ~ XYQMQ XYLJM",
+    "solutionText": "There is no innovation without curiosity. ~ Brene Brown"
+  },
+  {
+    "puzzleId": 70,
+    "puzzleDate": "2026-05-03",
+    "type": "quote",
+    "topic": "success",
+    "author": "Henry David Thoreau",
+    "puzzleText": "MESSQMM EMETUUP SKAQM FK FVKMQ NVK TGQ FKK LEMP FK LQ UKKIRJW XKG RF. ~ VQJGP HTZRH FVKGQTE",
+    "solutionText": "Success usually comes to those who are too busy to be looking for it. ~ Henry David Thoreau"
+  },
+  {
+    "puzzleId": 71,
+    "puzzleDate": "2026-05-10",
+    "type": "quote",
+    "topic": "general",
+    "author": "Lao Tzu",
+    "puzzleText": "VYMCK CSKL CYM RCTM DN JP LRCHH TMMTL. ~ HCJ KWD",
+    "solutionText": "Great acts are made up of small deeds. ~ Lao Tzu"
+  },
+  {
+    "puzzleId": 72,
+    "puzzleDate": "2026-05-17",
+    "type": "quote",
+    "topic": "general",
+    "author": "Allen Ginsberg",
+    "puzzleText": "GDCCDS EDLY HTTPY NDDTCHFRM. ~ QCCPT FHTZJPYF",
+    "solutionText": "Follow your inner moonlight. ~ Allen Ginsberg"
+  },
+  {
+    "puzzleId": 73,
+    "puzzleDate": "2026-05-24",
+    "type": "quote",
+    "topic": "life",
+    "author": "Doug Ivester",
+    "puzzleText": "OYQYS WYA JUFS LYLUSRYC DY VSYPAYS AZPO JUFS KSYPLC. ~ KUFV RQYCAYS",
+    "solutionText": "Never let your memories be greater than your dreams. ~ Doug Ivester"
+  },
+  {
+    "puzzleId": 74,
+    "puzzleDate": "2026-05-31",
+    "type": "quote",
+    "topic": "life",
+    "author": "T. S. Eliot",
+    "puzzleText": "DADJR KLKDWU HE V OJDES NDTHWWHWT. ~ U. E. DGHLU",
+    "solutionText": "Every moment is a fresh beginning. ~ T. S. Eliot"
+  },
+  {
+    "puzzleId": 75,
+    "puzzleDate": "2026-06-07",
+    "type": "quote",
+    "topic": "creativity",
+    "author": "Walt Whitman",
+    "puzzleText": "RS NEDFXEU, JXC YEITOSJCPM. ~ GPMC GQFCOPJ",
+    "solutionText": "Be curious, not judgmental. ~ Walt Whitman"
+  },
+  {
+    "puzzleId": 76,
+    "puzzleDate": "2026-06-14",
+    "type": "quote",
+    "topic": "life",
+    "author": "Suzy Kassem",
+    "puzzleText": "KVAIH GWOOP SVYU KYUNSP HBNL ENWOAYU UZUY XWOO. ~ PACQ GNPPUS",
+    "solutionText": "Doubt kills more dreams than failure ever will. ~ Suzy Kassem"
+  },
+  {
+    "puzzleId": 77,
+    "puzzleDate": "2026-06-21",
+    "type": "quote",
+    "topic": "success",
+    "author": "Benjamin Disraeli",
+    "puzzleText": "WFD JDVUDW TK JGVVDJJ LJ VTSJWNSVH TK CGUCTJD. ~ MDSPNRLS OLJUNDAL",
+    "solutionText": "The secret of success is constancy of purpose. ~ Benjamin Disraeli"
+  },
+  {
+    "puzzleId": 78,
+    "puzzleDate": "2026-06-28",
+    "type": "quote",
+    "topic": "life",
+    "author": "Lao Tzu",
+    "puzzleText": "WTK FIMUYDOR WDKTY LTPC RQXBB RPDNR. ~ BXI PSM",
+    "solutionText": "Big journeys begin with small steps. ~ Lao Tzu"
+  }
 ]
