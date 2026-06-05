@@ -1337,14 +1337,14 @@ window.HareCryptogramEngine = {
       if (nextPuzzle) {
         return `
           <div class="hp-recommend-card">
-            <div class="hp-recommend-title">Keep the codebreaking going</div>
+            <div class="hp-recommend-title">Play Your Next Cryptogram</div>
             <div class="hp-recommend-copy">
               ${nextPuzzle.isInProgress
                 ? "You have a Cryptogram already in progress. Pick up where you left off and finish cracking the quote."
                 : "Your next available Cryptogram is ready. Keep the fun going with another code to crack."}
             </div>
             <a class="hp-link-btn secondary full" href="/cryptogram?puzzle=${encodeURIComponent(nextPuzzle.id)}">
-              ${nextPuzzle.isInProgress ? "Continue" : "Play"} Cryptogram Puzzle #${escapeHtml(nextPuzzle.id)}
+              Cryptogram #${escapeHtml(nextPuzzle.id)}
             </a>
           </div>
         `;
@@ -1356,9 +1356,9 @@ window.HareCryptogramEngine = {
           <div class="hp-recommend-copy">
             Congratulations — every available Cryptogram puzzle has been solved or revealed.
           </div>
-          <a class="hp-link-btn secondary full" href="${escapeHtml(ARCHIVE_URL)}">
-            Browse Cryptogram Archive
-          </a>
+          <span class="hp-link-btn secondary full" role="status">
+            Congratulations!
+          </span>
         </div>
       `;
     }
