@@ -1,9 +1,44 @@
 [
   {
-    "puzzleId": 123,
-    "puzzleDate": "2026-06-07",
+    "puzzleId": 1,
+    "puzzleDate": "2026-06-01",
     "answer": "PLANT",
-    "title": "Wordrow #123",
+    "title": "Wordrow #1",
+    "maxGuesses": 6
+  }
+   {
+    "puzzleId": 2,
+    "puzzleDate": "2026-06-02",
+    "answer": "WINDS",
+    "title": "Wordrow #2",
+    "maxGuesses": 6
+  }
+   {
+    "puzzleId": 3,
+    "puzzleDate": "2026-06-03",
+    "answer": "TIMES",
+    "title": "Wordrow #3",
+    "maxGuesses": 6
+  }
+   {
+    "puzzleId": 4,
+    "puzzleDate": "2026-06-04",
+    "answer": "ALERT",
+    "title": "Wordrow #4",
+    "maxGuesses": 6
+  }
+   {
+    "puzzleId": 5,
+    "puzzleDate": "2026-06-05",
+    "answer": "TESTS",
+    "title": "Wordrow #5",
+    "maxGuesses": 6
+  }
+   {
+    "puzzleId": 6,
+    "puzzleDate": "2026-06-06",
+    "answer": "TRAIN",
+    "title": "Wordrow #6",
     "maxGuesses": 6
   }
 ]
