@@ -1,1 +1,470 @@
-
+[
+  {
+    "puzzleId": 1,
+    "puzzleDate": "2025-01-05",
+    "type": "quote",
+    "topic": "life",
+    "author": "Sean Patrick Flanery",
+    "puzzleText": "YN ONJGKELTR KNYUA KEUK ANWF DWKWFG OGHD PLHH KEUTI ANW DNF. ~ OGUT VUKFLSI DHUTGFA",
+    "solutionText": "Do something today that your future self will thank you for. ~ Sean Patrick Flanery"
+  },
+  {
+    "puzzleId": 2,
+    "puzzleDate": "2025-01-12",
+    "type": "quote",
+    "topic": "general",
+    "author": "Oscar Wilde",
+    "puzzleText": "R JGHN PJN ARDCBNAP PGAPNA. R GD GBVGZA AGPRATRNO VRPJ PJN LNAP. ~ XAQGF VRBON",
+    "solutionText": "I have the simplest tastes. I am always satisfied with the best. ~ Oscar Wilde"
+  },
+  {
+    "puzzleId": 3,
+    "puzzleDate": "2025-01-19",
+    "type": "quote",
+    "topic": "general",
+    "author": "Isak Dinesen",
+    "puzzleText": "YDI QOEI TGE SUAYDRUZ RF FSNY HSYIE: FHISY, YISEF, GE YDI FIS. ~ RFSW KRUIFIU",
+    "solutionText": "The cure for anything is salt water: sweat, tears, or the sea. ~ Isak Dinesen"
+  },
+  {
+    "puzzleId": 4,
+    "puzzleDate": "2025-01-26",
+    "type": "quote",
+    "topic": "general",
+    "author": "Mark Twain",
+    "puzzleText": "FGUUZLIE LB XLQS KJZLIE J WSMD ZGA WGI'D GFS. ~ CJUQ DFJLI",
+    "solutionText": "Worrying is like paying a debt you don't owe. ~ Mark Twain"
+  },
+  {
+    "puzzleId": 5,
+    "puzzleDate": "2025-02-02",
+    "type": "quote",
+    "topic": "life",
+    "author": "Carol Burnett",
+    "puzzleText": "JBYL Q VCB VUCBPN SL YQDN. BJ JBN VCB WJ QI DJT SN. ~ VCTJY GFTBNII",
+    "solutionText": "Only I can change my life. No one can do it for me. ~ Carol Burnett"
+  },
+  {
+    "puzzleId": 6,
+    "puzzleDate": "2025-02-09",
+    "type": "quote",
+    "topic": "life",
+    "author": "Paulo Coelho",
+    "puzzleText": "IBX CRR KXBPNK VBNO XB MDKPAHX GBAP RDTO, KBNO VBNO XB VROCP GBAP HCXF. ~ HCARB VBORFB",
+    "solutionText": "Not all storms come to disrupt your life, some come to clear your path. ~ Paulo Coelho"
+  },
+  {
+    "puzzleId": 7,
+    "puzzleDate": "2025-02-16",
+    "type": "quote",
+    "topic": "learning",
+    "author": "Buddha",
+    "puzzleText": "ZWQ IDRH DN QFQMAZWDRU. GWXZ ABP ZWDRS ABP VQYBIQ. ~ VPHHWX",
+    "solutionText": "The mind is everything. What you think you become. ~ Buddha"
+  },
+  {
+    "puzzleId": 8,
+    "puzzleDate": "2025-02-23",
+    "type": "quote",
+    "topic": "general",
+    "author": "Franklin D. Roosevelt",
+    "puzzleText": "OQM WXIA OQDXK VM QZLM OW HMZG DE HMZG DOEMIH. â€” HGZXTIDX C. GWWEMLMIO",
+    "solutionText": "The only thing we have to fear is fear itself.  â€” Franklin D. Roosevelt"
+  },
+  {
+    "puzzleId": 9,
+    "puzzleDate": "2025-03-02",
+    "type": "quote",
+    "topic": "general",
+    "author": "Vincent van Gogh",
+    "puzzleText": "XBCIL LYVUXT IBC FSUC RK I TCBVCT SD TGIHH LYVUXT RBSWXYL LSXCLYCB. ~ JVUMCUL JIU XSXY",
+    "solutionText": "Great things are done by a series of small things brought together. ~ Vincent van Gogh"
+  },
+  {
+    "puzzleId": 10,
+    "puzzleDate": "2025-03-09",
+    "type": "quote",
+    "topic": "general",
+    "author": "Aristotle",
+    "puzzleText": "YJBB HJMPS DW ZNBR CASJ. ~ NQDWKAKBJ",
+    "solutionText": "Well begun is half done. ~ Aristotle"
+  },
+  {
+    "puzzleId": 11,
+    "puzzleDate": "2025-03-16",
+    "type": "quote",
+    "topic": "general",
+    "author": "Ralph Waldo Emerson",
+    "puzzleText": "IUY GRXBM EYBRWPK IR IUY YWYXPYIHF. ~ XNBJU GNBMR YVYXKRW",
+    "solutionText": "The world belongs to the energetic. ~ Ralph Waldo Emerson"
+  },
+  {
+    "puzzleId": 12,
+    "puzzleDate": "2025-03-23",
+    "type": "quote",
+    "topic": "learning",
+    "author": "Ralph Waldo Emerson",
+    "puzzleText": "WHT MTOXHC KR LWZHN SDT SDZHN. ~ OXZCSWSMT",
+    "solutionText": "One learns by doing the thing. ~ Aristotle"
+  },
+  {
+    "puzzleId": 13,
+    "puzzleDate": "2025-03-30",
+    "type": "quote",
+    "topic": "general",
+    "author": "Beverly Sills",
+    "puzzleText": "LAIOI NOI PV WAVOLDRLW LV NPK EHNDI GVOLA SVXPS. ~ FIZIOHK WXHHW",
+    "solutionText": "There are no shortcuts to any place worth going. ~ Beverly Sills"
+  },
+  {
+    "puzzleId": 14,
+    "puzzleDate": "2025-04-06",
+    "type": "quote",
+    "topic": "success",
+    "author": "Pablo Picasso",
+    "puzzleText": "YWKXMC XA KJQ UMVCBYKXMCYO SQI KM AVWWQAA. ~ ZYLOM ZXWYAAM",
+    "solutionText": "Action is the foundational key to success. ~ Pablo Picasso"
+  },
+  {
+    "puzzleId": 15,
+    "puzzleDate": "2025-04-13",
+    "type": "quote",
+    "topic": "success",
+    "author": "Donald Knuth",
+    "puzzleText": "VTQ QYCJEKQYV JM JYQâ€™D VJJBD WD SY QDDQYVWSB MQSVXGQ JM DXOOQDDMXB AJGI. ~ UJYSBU IYXVT",
+    "solutionText": "The enjoyment of oneâ€™s tools is an essential feature of successful work. ~ Donald Knuth"
+  },
+  {
+    "puzzleId": 16,
+    "puzzleDate": "2025-04-20",
+    "type": "quote",
+    "topic": "general",
+    "author": "Cicero",
+    "puzzleText": "O WFFJ IKEPFDE TFFSR KR YKSV O TFUC IKEPFDE O RFDY. ~ QKQVWF",
+    "solutionText": "A room without books is like a body without a soul. ~ Cicero"
+  },
+  {
+    "puzzleId": 17,
+    "puzzleDate": "2025-04-27",
+    "type": "quote",
+    "topic": "learning",
+    "author": "Confucius",
+    "puzzleText": "QM WN VMXY MV PNLJXRXB RC XNLJ QM SRCYMZ. ~ GMXVDGRDC",
+    "solutionText": "To be fond of learning is near to wisdom. ~ Confucius"
+  },
+  {
+    "puzzleId": 18,
+    "puzzleDate": "2025-05-04",
+    "type": "quote",
+    "topic": "general",
+    "author": "Aristotle",
+    "puzzleText": "EW ZSWXC QTXEXQXJF, CW YWEIXYN. ~ ZTXJEWEGP",
+    "solutionText": "To avoid criticism, do nothing. ~ Aristotle"
+  },
+  {
+    "puzzleId": 19,
+    "puzzleDate": "2025-05-11",
+    "type": "quote",
+    "topic": "general",
+    "author": "Victor Hugo",
+    "puzzleText": "CL DCR RILQE K EHCRRJ GRRF HJRELE K IFXERQ. ~ YXHPRF COWR",
+    "solutionText": "He who opens a school door closes a prison. ~ Victor Hugo"
+  },
+  {
+    "puzzleId": 20,
+    "puzzleDate": "2025-05-18",
+    "type": "quote",
+    "topic": "general",
+    "author": "Ralph Waldo Emerson",
+    "puzzleText": "WPWIQ DÄ²YUJ TDU HYIUJ DB DCDJWMI. ~ IDGZR TDGAF WCWIUFB",
+    "solutionText": "Every artist was first an amateur. ~ Ralph Waldo Emerson"
+  },
+  {
+    "puzzleId": 21,
+    "puzzleDate": "2025-05-25",
+    "type": "quote",
+    "topic": "learning",
+    "author": "Jimi Hendrix",
+    "puzzleText": "ZLKVMSBJS TWSHZT, UGF VATBKN MATFSLT. ~ CANA OSLBQAI",
+    "solutionText": "Knowledge speaks, but wisdom listens. ~ Jimi Hendrix"
+  },
+  {
+    "puzzleId": 22,
+    "puzzleDate": "2025-06-01",
+    "type": "quote",
+    "topic": "general",
+    "author": "Napoleon Hill",
+    "puzzleText": "NCHRP RBH WJH QHZNOONOZ UFNOWP FY RTT YFBWVOHP. ~ ORUFTHFO JNTT",
+    "solutionText": "Ideas are the beginning points of all fortunes. ~ Napoleon Hill"
+  },
+  {
+    "puzzleId": 23,
+    "puzzleDate": "2025-06-08",
+    "type": "quote",
+    "topic": "general",
+    "author": "Johann Wolfgang von Goethe",
+    "puzzleText": "KR KNJZE JQ SDQU. KR DHK JQ Ä²WWJHGOK. ~ CRNDZZ XROWBDZB ARZ BRSKNS",
+    "solutionText": "To think is easy. To act is difficult. ~ Johann Wolfgang von Goethe"
+  },
+  {
+    "puzzleId": 24,
+    "puzzleDate": "2025-06-15",
+    "type": "quote",
+    "topic": "general",
+    "author": "Henry Ford",
+    "puzzleText": "VWPTFVC FG DNBPFYAUNBUE TNBZ FR EWA ZFIFZH FP FVPW GQNUU SWXG. ~ THVBE RWBZ",
+    "solutionText": "Nothing is particularly hard if you divide it into small jobs. ~ Henry Ford"
+  },
+  {
+    "puzzleId": 25,
+    "puzzleDate": "2025-06-22",
+    "type": "proverb",
+    "topic": "learning",
+    "author": "Chinese Proverb",
+    "puzzleText": "DKPGFLFE LW P AGKPWHGK AVPA ULDD YJDDJU LAW JUFKG KMKGQUVKGK. ~ BVLFKWK OGJMKGT",
+    "solutionText": "Learning is a treasure that will follow its owner everywhere. ~ Chinese Proverb"
+  },
+  {
+    "puzzleId": 26,
+    "puzzleDate": "2025-06-29",
+    "type": "quote",
+    "topic": "learning",
+    "author": "George Santayana",
+    "puzzleText": "XIS YAJSJX HABN IZJ JKHSXIABE GSX XK RSZWB. ~ ESKWES JZBXZGZBZ",
+    "solutionText": "The wisest mind has something yet to learn. ~ George Santayana"
+  },
+  {
+    "puzzleId": 27,
+    "puzzleDate": "2025-07-06",
+    "type": "quote",
+    "topic": "general",
+    "author": "John Keats",
+    "puzzleText": "PYSWGPJ XHXZ MXBYNXU ZXDK SGKK GS GU XVLXZGXPBXI. ~ FYWP QXDSU",
+    "solutionText": "Nothing ever becomes real till it is experienced. ~ John Keats"
+  },
+  {
+    "puzzleId": 28,
+    "puzzleDate": "2025-07-13",
+    "type": "quote",
+    "topic": "success",
+    "author": "Ray Bradbury",
+    "puzzleText": "HKZQ KG IOCKEP IDKEPG IT GQQ KZ IDQC FTOW. ~ OBC MOBNMAOC",
+    "solutionText": "Life is trying things to see if they work. ~ Ray Bradbury"
+  },
+  {
+    "puzzleId": 29,
+    "puzzleDate": "2025-07-20",
+    "type": "quote",
+    "topic": "general",
+    "author": "Franklin D. Roosevelt",
+    "puzzleText": "T ONRRLB OYT JYUYA NTHY T OSGKKYH OTGKRA. ~ VATJSKGJ H. ARROYUYKL",
+    "solutionText": "A smooth sea never made a skilled sailor. ~ Franklin D. Roosevelt"
+  },
+  {
+    "puzzleId": 30,
+    "puzzleDate": "2025-07-27",
+    "type": "quote",
+    "topic": "general",
+    "author": "Henri Matisse",
+    "puzzleText": "EYJXFBHBFD FXOJI EGCYXQJ. ~ MJKYB WXFBIÄ²",
+    "solutionText": "Creativity takes courage. ~ Henri Matisse"
+  },
+  {
+    "puzzleId": 31,
+    "puzzleDate": "2025-08-03",
+    "type": "quote",
+    "topic": "general",
+    "author": "Ralph Waldo Emerson",
+    "puzzleText": "GMY FYOIFJ XC I GMQLT OYBB JXLY QR GX MIPY JXLY QG. ~ FIBKM OIBJX YAYFRXL",
+    "solutionText": "The reward of a thing well done is to have done it. ~ Ralph Waldo Emerson"
+  },
+  {
+    "puzzleId": 32,
+    "puzzleDate": "2025-08-10",
+    "type": "quote",
+    "topic": "general",
+    "author": "Thomas Edison",
+    "puzzleText": "BQJ MJTB BQYZIYZX QHT MJJZ EFZJ YZ TFPYBAEJ. ~ BQFOHT JEYTFZ",
+    "solutionText": "The best thinking has been done in solitude. ~ Thomas Edison"
+  },
+  {
+    "puzzleId": 33,
+    "puzzleDate": "2025-08-17",
+    "type": "quote",
+    "topic": "general",
+    "author": "Thomas Carlyle",
+    "puzzleText": "EN WXMIITXM, EN PYRUNEPI. ~ JCNURI VRXGSGM",
+    "solutionText": "No pressure, no diamonds. ~ Thomas Carlyle"
+  },
+  {
+    "puzzleId": 34,
+    "puzzleDate": "2025-08-24",
+    "type": "quote",
+    "topic": "general",
+    "author": "John Muir",
+    "puzzleText": "ZXL WKRLY KA CQOHCBOZCKB QOVLF GF CBACBCZL. ~ SKXB QGCY",
+    "solutionText": "The power of imagination makes us infinite. ~ John Muir"
+  },
+  {
+    "puzzleId": 35,
+    "puzzleDate": "2025-08-31",
+    "type": "quote",
+    "topic": "general",
+    "author": "C. S. Lewis",
+    "puzzleText": "SEMQM WQM UWQ FMSSMQ SEXOYH WEMWL SEWO WOR JM GMWTM FMEXOL. ~ A. H. GMJXH",
+    "solutionText": "There are far better things ahead than any we leave behind. ~ C. S. Lewis"
+  },
+  {
+    "puzzleId": 36,
+    "puzzleDate": "2025-09-07",
+    "type": "quote",
+    "topic": "general",
+    "author": "Will Durant",
+    "puzzleText": "DB YGB DVYP DB GBQBYPBAUS AZ. ~ DXUU AJGYTP",
+    "solutionText": "We are what we repeatedly do. ~ Will Durant"
+  },
+  {
+    "puzzleId": 37,
+    "puzzleDate": "2025-09-14",
+    "type": "quote",
+    "topic": "learning",
+    "author": "Plutarch",
+    "puzzleText": "MYT WUSB UP SRM K LTPPTE MR QT GUEETB QVM K GUCT MR QT OUSBETB. ~ DEVMKCZY",
+    "solutionText": "The mind is not a vessel to be filled but a fire to be kindled. ~ Plutarch"
+  },
+  {
+    "puzzleId": 38,
+    "puzzleDate": "2025-09-21",
+    "type": "quote",
+    "topic": "life",
+    "author": "Friedrich Nietzsche",
+    "puzzleText": "QUD EKQKJD YXENKDXMDI QUD WJDIDXQ BKIQ PI CKMU PI QUD WPIQ. ~ EJYDTJYMU XYDQLIMUD",
+    "solutionText": "The future influences the present just as much as the past. ~ Friedrich Nietzsche"
+  },
+  {
+    "puzzleId": 39,
+    "puzzleDate": "2025-09-28",
+    "type": "quote",
+    "topic": "learning",
+    "author": "Sophocles",
+    "puzzleText": "DOCXBN BVUDYOJQC GRS DYGIUQ. ~ CBTQBHIYC",
+    "solutionText": "Wisdom outweighs any wealth. ~ Sophocles"
+  },
+  {
+    "puzzleId": 40,
+    "puzzleDate": "2025-10-05",
+    "type": "quote",
+    "topic": "general",
+    "author": "Pablo Picasso",
+    "puzzleText": "XLXHDOAUVC DYE TRV UNRCUVX UJ HXRG. ~ KRMGY KUTRJJY",
+    "solutionText": "Everything you can imagine is real. ~ Pablo Picasso"
+  },
+  {
+    "puzzleId": 41,
+    "puzzleDate": "2025-10-12",
+    "type": "quote",
+    "topic": "general",
+    "author": "Alexander the Great",
+    "puzzleText": "VLTYT NE XQVLNXD NZUQEENSCT VQ QXT OLQ ONCC VYJ. ~ FCTPFXHTY VLT DYTFV",
+    "solutionText": "There is nothing impossible to one who will try. ~ Alexander the Great"
+  },
+  {
+    "puzzleId": 42,
+    "puzzleDate": "2025-10-19",
+    "type": "quote",
+    "topic": "general",
+    "author": "Emily Dickinson",
+    "puzzleText": "ONSADQY LYOSJYQPK AWY LNVP. ~ YTJVI PJZXJQKNQ",
+    "solutionText": "Fortune befriends the bold. ~ Emily Dickinson"
+  },
+  {
+    "puzzleId": 43,
+    "puzzleDate": "2025-10-26",
+    "type": "quote",
+    "topic": "success",
+    "author": "Sophocles",
+    "puzzleText": "LEYYCLL NL BCVCPBCPU QP CKKQJU. ~ LQVRQYACL",
+    "solutionText": "Success is dependent on effort. ~ Sophocles"
+  },
+  {
+    "puzzleId": 44,
+    "puzzleDate": "2025-11-02",
+    "type": "quote",
+    "topic": "general",
+    "author": "Elizabeth Barrett Browning",
+    "puzzleText": "VLTPE EMQMJJMD DLEP EMXIU. ~ RVLOIZREP ZÄ²JREE ZJMDHLHT",
+    "solutionText": "Light tomorrow with today. ~ Elizabeth Barrett Browning"
+  },
+  {
+    "puzzleId": 45,
+    "puzzleDate": "2025-11-09",
+    "type": "quote",
+    "topic": "general",
+    "author": "Douglas Horton",
+    "puzzleText": "EZK VAE NH FXLDTXGXEI XF V DRPPTK NH GNLDTKYXEI. ~ JNRUTVF ZNAENW",
+    "solutionText": "The art of simplicity is a puzzle of complexity. ~ Douglas Horton"
+  },
+  {
+    "puzzleId": 46,
+    "puzzleDate": "2025-11-16",
+    "type": "quote",
+    "topic": "learning",
+    "author": "Aristotle",
+    "puzzleText": "OFP PDPWMI UY OFP VQDJ QT OFP PTTPDAP UY EQYP. ~ LWQTOUOEP",
+    "solutionText": "The energy of the mind is the essence of life. ~ Aristotle"
+  },
+  {
+    "puzzleId": 47,
+    "puzzleDate": "2025-11-23",
+    "type": "quote",
+    "topic": "life",
+    "author": "Rainer Maria Rilke",
+    "puzzleText": "IXD HTEA WHQNTDA GF IXD HTD KGIXGT. ~ NCGTDN OCNGC NGEVD",
+    "solutionText": "The only journey is the one within. ~ Rainer Maria Rilke"
+  },
+  {
+    "puzzleId": 48,
+    "puzzleDate": "2025-11-30",
+    "type": "quote",
+    "topic": "learning",
+    "author": "Oprah Winfrey",
+    "puzzleText": "ZAEL QIAE KIALGT MLZI KMTGIP. ~ IYEHU KMLDESQ",
+    "solutionText": "Turn your wounds into wisdom. ~ Oprah Winfrey"
+  },
+  {
+    "puzzleId": 49,
+    "puzzleDate": "2025-12-07",
+    "type": "quote",
+    "topic": "general",
+    "author": "John Augustus Shedd",
+    "puzzleText": "G ENFS FO NGZIPZ FE EGQA, ILU UNGU FE OPU KNGU ENFSE GZA ILFVU QPZ. ~ MPNO GLDLEULE ENAHH",
+    "solutionText": "A ship in harbor is safe, but that is not what ships are built for. ~ John Augustus Shedd"
+  },
+  {
+    "puzzleId": 50,
+    "puzzleDate": "2025-12-14",
+    "type": "quote",
+    "topic": "general",
+    "author": "Albert Einstein",
+    "puzzleText": "VBD AINGLVETV VBATK AJ TGV VG JVGN ZODJVAGTATK. ~ EQPDLV DATJVDAT",
+    "solutionText": "The important thing is not to stop questioning. ~ Albert Einstein"
+  },
+  {
+    "puzzleId": 51,
+    "puzzleDate": "2025-12-21",
+    "type": "quote",
+    "topic": "general",
+    "author": "Dorothy Parker",
+    "puzzleText": "ROQ MXKQ UPK JPKQEPV TC MXKTPCTRA. ~ EPKPROA YIKSQK",
+    "solutionText": "The cure for boredom is curiosity. ~ Dorothy Parker"
+  },
+  {
+    "puzzleId": 52,
+    "puzzleDate": "2025-12-28",
+    "type": "quote",
+    "topic": "general",
+    "author": "Prescott Bush",
+    "puzzleText": "LH YSDFLUBI GD YTFIH L DFIMMGHP DFYHI. ~ MZIDUYFF SADW",
+    "solutionText": "An obstacle is often a stepping stone. ~ Prescott Bush"
+  }
+]
