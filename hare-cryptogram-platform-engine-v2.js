@@ -24,7 +24,7 @@ window.HareCryptogramEngine = {
     const puzzleHint = resolvePuzzleHint();
     const MORE_PUZZLES_URL = data.morePuzzlesUrl || "https://www.harepublishing.com/online-puzzles";
     const SHOP_URL = data.shopUrl || "https://www.harepublishing.com/shop";
-    const ARCHIVE_URL = data.archiveUrl || "https://www.harepublishing.com/cryptogram/archive";
+    const ARCHIVE_URL = data.archiveUrl || "https://www.harepublishing.com/cryptogram-archive";
     const STORAGE_KEY = data.storageKey || `hp_cg_${puzzleId}`;
 
     if (!puzzleText || !solutionText) {
@@ -1234,7 +1234,7 @@ window.HareCryptogramEngine = {
         try {
           const saved = JSON.parse(localStorage.getItem(key));
           const id = key.replace("hp_cg_", "");
-          if (saved && id && id !== String(puzzleId)) {
+          if (saved && id) {
             items.push({ key, id, saved });
           }
         } catch {}
@@ -1253,26 +1253,98 @@ window.HareCryptogramEngine = {
       );
     }
 
-    function findUnfinishedCryptogram() {
-      const unfinished = getStoredCryptogramItems()
-        .filter(item => hasProgress(item.saved))
-        .sort((a, b) => Number(b.id) - Number(a.id));
+    function getSavedCryptogramState(id) {
+      try {
+        return JSON.parse(localStorage.getItem(`hp_cg_${id}`));
+      } catch {
+        return null;
+      }
+    }
 
-      return unfinished[0] || null;
+    function isSolvedOrRevealed(saved) {
+      return Boolean(
+        saved &&
+        (
+          saved.solved ||
+          saved.revealed ||
+          saved.completed ||
+          saved.isSolved ||
+          saved.status === "solved" ||
+          saved.status === "complete" ||
+          saved.completedAt ||
+          saved.solvedAt ||
+          saved.revealedAt
+        )
+      );
+    }
+
+    function parsePuzzleDate(dateString) {
+      const parts = String(dateString || "").split("-");
+      if (parts.length !== 3) return null;
+
+      const date = new Date(
+        Number(parts[0]),
+        Number(parts[1]) - 1,
+        Number(parts[2]),
+        23,
+        59,
+        59,
+        999
+      );
+
+      return isNaN(date) ? null : date;
+    }
+
+    function getAvailableIndexItems() {
+      const index = Array.isArray(window.HareCryptogramIndex) ? window.HareCryptogramIndex : [];
+      const today = new Date();
+      today.setHours(23, 59, 59, 999);
+
+      return index
+        .filter(item => {
+          const date = parsePuzzleDate(item.puzzleDate);
+          return date && date <= today;
+        })
+        .sort((a, b) => {
+          const dateA = parsePuzzleDate(a.puzzleDate);
+          const dateB = parsePuzzleDate(b.puzzleDate);
+          if (dateB - dateA !== 0) return dateB - dateA;
+          return Number(b.puzzleId) - Number(a.puzzleId);
+        });
+    }
+
+    function findNextPlayableCryptogram() {
+      const available = getAvailableIndexItems();
+
+      for (const item of available) {
+        const id = String(item.puzzleId);
+        const saved = getSavedCryptogramState(id);
+
+        if (!isSolvedOrRevealed(saved)) {
+          return {
+            id,
+            isInProgress: hasProgress(saved)
+          };
+        }
+      }
+
+      return null;
     }
 
     function renderRecommendationHtml() {
-      const unfinished = findUnfinishedCryptogram();
+      const nextPuzzle = findNextPlayableCryptogram();
 
-      if (unfinished) {
+      if (nextPuzzle) {
         return `
           <div class="hp-recommend-card">
             <div class="hp-recommend-title">Keep the codebreaking going</div>
             <div class="hp-recommend-copy">
-              You have another Cryptogram already in progress. Pick up where you left off and finish cracking the quote.
+              ${nextPuzzle.isInProgress
+                ? "You have a Cryptogram already in progress. Pick up where you left off and finish cracking the quote."
+                : "Your next available Cryptogram is ready. Keep the fun going with another code to crack."}
             </div>
-            <a class="hp-link-btn secondary full" href="/cryptogram?puzzle=${encodeURIComponent(unfinished.id)}">
-              Finish Cryptogram Puzzle #${escapeHtml(unfinished.id)}
+            <a class="hp-link-btn secondary full" href="/cryptogram?puzzle=${encodeURIComponent(nextPuzzle.id)}">
+              ${nextPuzzle.isInProgress ? "Continue" : "Play"} Cryptogram Puzzle #${escapeHtml(nextPuzzle.id)}
             </a>
           </div>
         `;
@@ -1280,9 +1352,9 @@ window.HareCryptogramEngine = {
 
       return `
         <div class="hp-recommend-card">
-          <div class="hp-recommend-title">Ready for another code to crack?</div>
+          <div class="hp-recommend-title">All caught up!</div>
           <div class="hp-recommend-copy">
-            Explore the Cryptogram archive and find your next puzzle challenge.
+            Congratulations — every available Cryptogram puzzle has been solved or revealed.
           </div>
           <a class="hp-link-btn secondary full" href="${escapeHtml(ARCHIVE_URL)}">
             Browse Cryptogram Archive
