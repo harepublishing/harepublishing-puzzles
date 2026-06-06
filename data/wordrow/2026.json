@@ -1,44 +1,184 @@
 [
   {
-    "puzzleId": 1,
-    "puzzleDate": "2026-06-01",
-    "answer": "PLANT",
-    "title": "Wordrow #1",
+    "puzzleId": 53,
+    "puzzleDate": "2026-01-03",
+    "answer": "STORM",
+    "title": "Wordrow #53",
     "maxGuesses": 6
   },
-   {
-    "puzzleId": 2,
-    "puzzleDate": "2026-06-02",
-    "answer": "WINDS",
-    "title": "Wordrow #2",
+  {
+    "puzzleId": 54,
+    "puzzleDate": "2026-01-10",
+    "answer": "FRUIT",
+    "title": "Wordrow #54",
     "maxGuesses": 6
   },
-   {
-    "puzzleId": 3,
-    "puzzleDate": "2026-06-03",
-    "answer": "TIMES",
-    "title": "Wordrow #3",
+  {
+    "puzzleId": 55,
+    "puzzleDate": "2026-01-17",
+    "answer": "PLANE",
+    "title": "Wordrow #55",
     "maxGuesses": 6
   },
-   {
-    "puzzleId": 4,
-    "puzzleDate": "2026-06-04",
+  {
+    "puzzleId": 56,
+    "puzzleDate": "2026-01-24",
+    "answer": "GRAPH",
+    "title": "Wordrow #56",
+    "maxGuesses": 6
+  },
+  {
+    "puzzleId": 57,
+    "puzzleDate": "2026-01-31",
+    "answer": "BRUSH",
+    "title": "Wordrow #57",
+    "maxGuesses": 6
+  },
+  {
+    "puzzleId": 58,
+    "puzzleDate": "2026-02-07",
+    "answer": "TRACK",
+    "title": "Wordrow #58",
+    "maxGuesses": 6
+  },
+  {
+    "puzzleId": 59,
+    "puzzleDate": "2026-02-14",
+    "answer": "EARTH",
+    "title": "Wordrow #59",
+    "maxGuesses": 6
+  },
+  {
+    "puzzleId": 60,
+    "puzzleDate": "2026-02-21",
+    "answer": "HONEY",
+    "title": "Wordrow #60",
+    "maxGuesses": 6
+  },
+  {
+    "puzzleId": 61,
+    "puzzleDate": "2026-02-28",
+    "answer": "SHORE",
+    "title": "Wordrow #61",
+    "maxGuesses": 6
+  },
+  {
+    "puzzleId": 62,
+    "puzzleDate": "2026-03-07",
+    "answer": "DAILY",
+    "title": "Wordrow #62",
+    "maxGuesses": 6
+  },
+  {
+    "puzzleId": 63,
+    "puzzleDate": "2026-03-14",
+    "answer": "SHADE",
+    "title": "Wordrow #63",
+    "maxGuesses": 6
+  },
+  {
+    "puzzleId": 64,
+    "puzzleDate": "2026-03-21",
+    "answer": "BEACH",
+    "title": "Wordrow #64",
+    "maxGuesses": 6
+  },
+  {
+    "puzzleId": 65,
+    "puzzleDate": "2026-03-28",
+    "answer": "BUYER",
+    "title": "Wordrow #65",
+    "maxGuesses": 6
+  },
+  {
+    "puzzleId": 66,
+    "puzzleDate": "2026-04-04",
     "answer": "ALERT",
-    "title": "Wordrow #4",
+    "title": "Wordrow #66",
     "maxGuesses": 6
   },
-   {
-    "puzzleId": 5,
-    "puzzleDate": "2026-06-05",
-    "answer": "TESTS",
-    "title": "Wordrow #5",
+  {
+    "puzzleId": 67,
+    "puzzleDate": "2026-04-11",
+    "answer": "BLEND",
+    "title": "Wordrow #67",
     "maxGuesses": 6
   },
-   {
-    "puzzleId": 6,
+  {
+    "puzzleId": 68,
+    "puzzleDate": "2026-04-18",
+    "answer": "CLOUD",
+    "title": "Wordrow #68",
+    "maxGuesses": 6
+  },
+  {
+    "puzzleId": 69,
+    "puzzleDate": "2026-04-25",
+    "answer": "CROWN",
+    "title": "Wordrow #69",
+    "maxGuesses": 6
+  },
+  {
+    "puzzleId": 70,
+    "puzzleDate": "2026-05-02",
+    "answer": "EMBER",
+    "title": "Wordrow #70",
+    "maxGuesses": 6
+  },
+  {
+    "puzzleId": 71,
+    "puzzleDate": "2026-05-09",
+    "answer": "FEAST",
+    "title": "Wordrow #71",
+    "maxGuesses": 6
+  },
+  {
+    "puzzleId": 72,
+    "puzzleDate": "2026-05-16",
+    "answer": "FLOCK",
+    "title": "Wordrow #72",
+    "maxGuesses": 6
+  },
+  {
+    "puzzleId": 73,
+    "puzzleDate": "2026-05-23",
+    "answer": "GIANT",
+    "title": "Wordrow #73",
+    "maxGuesses": 6
+  },
+  {
+    "puzzleId": 74,
+    "puzzleDate": "2026-05-30",
+    "answer": "GLOBE",
+    "title": "Wordrow #74",
+    "maxGuesses": 6
+  },
+  {
+    "puzzleId": 75,
     "puzzleDate": "2026-06-06",
-    "answer": "TRAIN",
-    "title": "Wordrow #6",
+    "answer": "GRAVY",
+    "title": "Wordrow #75",
+    "maxGuesses": 6
+  },
+  {
+    "puzzleId": 76,
+    "puzzleDate": "2026-06-13",
+    "answer": "IONIC",
+    "title": "Wordrow #76",
+    "maxGuesses": 6
+  },
+  {
+    "puzzleId": 77,
+    "puzzleDate": "2026-06-20",
+    "answer": "WHITE",
+    "title": "Wordrow #77",
+    "maxGuesses": 6
+  },
+  {
+    "puzzleId": 78,
+    "puzzleDate": "2026-06-27",
+    "answer": "PLUTO",
+    "title": "Wordrow #78",
     "maxGuesses": 6
   }
 ]
