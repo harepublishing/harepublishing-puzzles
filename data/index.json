@@ -1,0 +1,158 @@
+[
+  {
+    "puzzleId": 1,
+    "puzzleDate": "2026-01-06",
+    "year": 2026,
+    "theme": "Backyard Gardening"
+  },
+  {
+    "puzzleId": 2,
+    "puzzleDate": "2026-01-13",
+    "year": 2026,
+    "theme": "Book Genres"
+  },
+  {
+    "puzzleId": 3,
+    "puzzleDate": "2026-01-20",
+    "year": 2026,
+    "theme": "Brain Health & Wellness"
+  },
+  {
+    "puzzleId": 4,
+    "puzzleDate": "2026-01-27",
+    "year": 2026,
+    "theme": "Canadian Cities"
+  },
+  {
+    "puzzleId": 5,
+    "puzzleDate": "2026-02-03",
+    "year": 2026,
+    "theme": "Business Terms"
+  },
+  {
+    "puzzleId": 6,
+    "puzzleDate": "2026-02-10",
+    "year": 2026,
+    "theme": "Classic Literature"
+  },
+  {
+    "puzzleId": 7,
+    "puzzleDate": "2026-02-17",
+    "year": 2026,
+    "theme": "Coffee Culture"
+  },
+  {
+    "puzzleId": 8,
+    "puzzleDate": "2026-02-24",
+    "year": 2026,
+    "theme": "Tea Culture"
+  },
+  {
+    "puzzleId": 9,
+    "puzzleDate": "2026-03-03",
+    "year": 2026,
+    "theme": "Culinary Terms"
+  },
+  {
+    "puzzleId": 10,
+    "puzzleDate": "2026-03-10",
+    "year": 2026,
+    "theme": "European Travel"
+  },
+  {
+    "puzzleId": 11,
+    "puzzleDate": "2026-03-17",
+    "year": 2026,
+    "theme": "Famous Inventions"
+  },
+  {
+    "puzzleId": 12,
+    "puzzleDate": "2026-03-24",
+    "year": 2026,
+    "theme": "Fine Dining"
+  },
+  {
+    "puzzleId": 13,
+    "puzzleDate": "2026-03-31",
+    "year": 2026,
+    "theme": "Financial Terms"
+  },
+  {
+    "puzzleId": 14,
+    "puzzleDate": "2026-04-07",
+    "year": 2026,
+    "theme": "Home Improvement"
+  },
+  {
+    "puzzleId": 15,
+    "puzzleDate": "2026-04-14",
+    "year": 2026,
+    "theme": "Interior Design"
+  },
+  {
+    "puzzleId": 16,
+    "puzzleDate": "2026-04-21",
+    "year": 2026,
+    "theme": "Word Languages"
+  },
+  {
+    "puzzleId": 17,
+    "puzzleDate": "2026-04-28",
+    "year": 2026,
+    "theme": "Mindful Meditation"
+  },
+  {
+    "puzzleId": 18,
+    "puzzleDate": "2026-05-05",
+    "year": 2026,
+    "theme": "Music Genres"
+  },
+  {
+    "puzzleId": 19,
+    "puzzleDate": "2026-05-12",
+    "year": 2026,
+    "theme": "Nature"
+  },
+  {
+    "puzzleId": 20,
+    "puzzleDate": "2026-05-19",
+    "year": 2026,
+    "theme": "Ocean Life"
+  },
+  {
+    "puzzleId": 21,
+    "puzzleDate": "2026-05-26",
+    "year": 2026,
+    "theme": "Philosophy"
+  },
+  {
+    "puzzleId": 22,
+    "puzzleDate": "2026-06-02",
+    "year": 2026,
+    "theme": "Photography"
+  },
+  {
+    "puzzleId": 23,
+    "puzzleDate": "2026-06-09",
+    "year": 2026,
+    "theme": "Popular Hobbies"
+  },
+  {
+    "puzzleId": 24,
+    "puzzleDate": "2026-06-16",
+    "year": 2026,
+    "theme": "Science"
+  },
+  {
+    "puzzleId": 25,
+    "puzzleDate": "2026-06-23",
+    "year": 2026,
+    "theme": "Space"
+  },
+  {
+    "puzzleId": 26,
+    "puzzleDate": "2026-06-30",
+    "year": 2026,
+    "theme": "Technology"
+  }
+]

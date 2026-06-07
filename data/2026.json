@@ -1,0 +1,2784 @@
+[
+  {
+    "puzzleId": 1,
+    "puzzleDate": "2026-01-06",
+    "theme": "Backyard Gardening",
+    "entries": [
+      {
+        "answer": "AERATE",
+        "clue": "To loosen soil so air and water can pass through",
+        "clue2": "A 6-letter word that starts with A and ends with E."
+      },
+      {
+        "answer": "ANNUALS",
+        "clue": "Plants that complete their life cycle in one season",
+        "clue2": "A 7-letter word that starts with A and ends with S."
+      },
+      {
+        "answer": "BULBS",
+        "clue": "Underground plant structures like tulips or daffodils",
+        "clue2": "A 5-letter word that starts with B and ends with S."
+      },
+      {
+        "answer": "COMPOST",
+        "clue": "Decayed organic matter used to enrich soil",
+        "clue2": "A 7-letter word that starts with C and ends with T."
+      },
+      {
+        "answer": "CULTIVATE",
+        "clue": "To prepare and work the soil for planting",
+        "clue2": "A 9-letter word that starts with C and ends with E."
+      },
+      {
+        "answer": "FERTILIZE",
+        "clue": "To add nutrients to soil to help plants grow",
+        "clue2": "A 9-letter word that starts with F and ends with E."
+      },
+      {
+        "answer": "GERMINATE",
+        "clue": "When a seed begins to sprout",
+        "clue2": "A 9-letter word that starts with G and ends with E."
+      },
+      {
+        "answer": "GREENHOUSE",
+        "clue": "Structure used to grow plants in controlled conditions",
+        "clue2": "A 10-letter word that starts with G and ends with E."
+      },
+      {
+        "answer": "HARVEST",
+        "clue": "To gather ripe crops from the garden",
+        "clue2": "A 7-letter word that starts with H and ends with T."
+      },
+      {
+        "answer": "HOSE",
+        "clue": "Used to water plants in the yard",
+        "clue2": "A 4-letter word that starts with H and ends with E."
+      },
+      {
+        "answer": "MULCH",
+        "clue": "Material spread over soil to retain moisture",
+        "clue2": "A 5-letter word that starts with M and ends with H."
+      },
+      {
+        "answer": "PERENNIAL",
+        "clue": "Plant that returns year after year",
+        "clue2": "A 9-letter word that starts with P and ends with L."
+      },
+      {
+        "answer": "PLANTER",
+        "clue": "Container used to grow flowers or vegetables",
+        "clue2": "A 7-letter word that starts with P and ends with R."
+      },
+      {
+        "answer": "PRUNING",
+        "clue": "Cutting back plants to encourage healthy growth",
+        "clue2": "A 7-letter word that starts with P and ends with G."
+      },
+      {
+        "answer": "RAKE",
+        "clue": "Tool used to gather leaves or level soil",
+        "clue2": "A 4-letter word that starts with R and ends with E."
+      },
+      {
+        "answer": "SEEDLING",
+        "clue": "A young plant just starting to grow",
+        "clue2": "A 8-letter word that starts with S and ends with G."
+      },
+      {
+        "answer": "SHOVEL",
+        "clue": "Tool used for digging holes in the ground",
+        "clue2": "A 6-letter word that starts with S and ends with L."
+      },
+      {
+        "answer": "SPADE",
+        "clue": "Flat-bladed tool for digging and edging",
+        "clue2": "A 5-letter word that starts with S and ends with E."
+      },
+      {
+        "answer": "TRELLIS",
+        "clue": "Support structure for climbing plants",
+        "clue2": "A 7-letter word that starts with T and ends with S."
+      },
+      {
+        "answer": "WEEDING",
+        "clue": "Removing unwanted plants from the garden",
+        "clue2": "A 7-letter word that starts with W and ends with G."
+      }
+    ]
+  },
+  {
+    "puzzleId": 2,
+    "puzzleDate": "2026-01-13",
+    "theme": "Book Genres",
+    "entries": [
+      {
+        "answer": "FANTASY",
+        "clue": "Stories with magic, dragons, or imaginary worlds",
+        "clue2": "A 7-letter word that starts with F and ends with Y."
+      },
+      {
+        "answer": "MYSTERY",
+        "clue": "Focuses on solving a crime or uncovering secrets",
+        "clue2": "A 7-letter word that starts with M and ends with Y."
+      },
+      {
+        "answer": "ROMANCE",
+        "clue": "Centers on love and relationships",
+        "clue2": "A 7-letter word that starts with R and ends with E."
+      },
+      {
+        "answer": "THRILLER",
+        "clue": "Fast-paced stories full of suspense and danger",
+        "clue2": "A 8-letter word that starts with T and ends with R."
+      },
+      {
+        "answer": "HORROR",
+        "clue": "Designed to scare or create fear",
+        "clue2": "A 6-letter word that starts with H and ends with R."
+      },
+      {
+        "answer": "SCIENCE",
+        "clue": "Based on scientific ideas or discoveries",
+        "clue2": "A 7-letter word that starts with S and ends with E."
+      },
+      {
+        "answer": "FICTION",
+        "clue": "Stories that are imagined, not real",
+        "clue2": "A 7-letter word that starts with F and ends with N."
+      },
+      {
+        "answer": "POETRY",
+        "clue": "Uses rhythm and imagery to express ideas",
+        "clue2": "A 6-letter word that starts with P and ends with Y."
+      },
+      {
+        "answer": "DRAMA",
+        "clue": "Serious stories with emotional conflict",
+        "clue2": "A 5-letter word that starts with D and ends with A."
+      },
+      {
+        "answer": "SATIRE",
+        "clue": "Uses humor or irony to criticize society",
+        "clue2": "A 6-letter word that starts with S and ends with E."
+      },
+      {
+        "answer": "BIOGRAPH",
+        "clue": "The life story of a real person",
+        "clue2": "A 8-letter word that starts with B and ends with H."
+      },
+      {
+        "answer": "HISTORY",
+        "clue": "Books about past events and people",
+        "clue2": "A 7-letter word that starts with H and ends with Y."
+      },
+      {
+        "answer": "ADVENTUR",
+        "clue": "Exciting stories involving journeys or risks",
+        "clue2": "A 8-letter word that starts with A and ends with R."
+      },
+      {
+        "answer": "DYSTOPIA",
+        "clue": "Imagines a dark or oppressive future society",
+        "clue2": "A 8-letter word that starts with D and ends with A."
+      },
+      {
+        "answer": "MEMOIR",
+        "clue": "Personal account of real experiences",
+        "clue2": "A 6-letter word that starts with M and ends with R."
+      },
+      {
+        "answer": "CLASSICS",
+        "clue": "Well-known books that have stood the test of time",
+        "clue2": "A 8-letter word that starts with C and ends with S."
+      },
+      {
+        "answer": "CRIME",
+        "clue": "Focuses on illegal acts and investigations",
+        "clue2": "A 5-letter word that starts with C and ends with E."
+      },
+      {
+        "answer": "ESSAYS",
+        "clue": "Short pieces expressing ideas or opinions",
+        "clue2": "A 6-letter word that starts with E and ends with S."
+      },
+      {
+        "answer": "MYTHS",
+        "clue": "Traditional stories involving gods or legends",
+        "clue2": "A 5-letter word that starts with M and ends with S."
+      },
+      {
+        "answer": "FABLES",
+        "clue": "Short stories with a moral lesson",
+        "clue2": "A 6-letter word that starts with F and ends with S."
+      }
+    ]
+  },
+  {
+    "puzzleId": 3,
+    "puzzleDate": "2026-01-20",
+    "theme": "Brain Health & Wellness",
+    "entries": [
+      {
+        "answer": "BALANCE",
+        "clue": "A state of mental and emotional stability",
+        "clue2": "A 7-letter word that starts with B and ends with E."
+      },
+      {
+        "answer": "BREATHE",
+        "clue": "To take in air, often used to calm the mind",
+        "clue2": "A 7-letter word that starts with B and ends with E."
+      },
+      {
+        "answer": "CALM",
+        "clue": "A peaceful and relaxed state of mind",
+        "clue2": "A 4-letter word that starts with C and ends with M."
+      },
+      {
+        "answer": "CLARITY",
+        "clue": "Clear thinking and understanding",
+        "clue2": "A 7-letter word that starts with C and ends with Y."
+      },
+      {
+        "answer": "FOCUS",
+        "clue": "To concentrate attention on a task",
+        "clue2": "A 5-letter word that starts with F and ends with S."
+      },
+      {
+        "answer": "HEALTH",
+        "clue": "The state of being well in body and mind",
+        "clue2": "A 6-letter word that starts and ends with H."
+      },
+      {
+        "answer": "MEMORY",
+        "clue": "Ability to store and recall information",
+        "clue2": "A 6-letter word that starts with M and ends with Y."
+      },
+      {
+        "answer": "MINDFUL",
+        "clue": "Being fully aware in the present moment",
+        "clue2": "A 7-letter word that starts with M and ends with L."
+      },
+      {
+        "answer": "NAP",
+        "clue": "A short sleep to refresh the brain",
+        "clue2": "A 3-letter word that starts with N and ends with P."
+      },
+      {
+        "answer": "NATURE",
+        "clue": "The outdoors, often linked to relaxation",
+        "clue2": "A 6-letter word that starts with N and ends with E."
+      },
+      {
+        "answer": "PUZZLES",
+        "clue": "Activities that challenge and train the brain",
+        "clue2": "A 7-letter word that starts with P and ends with S."
+      },
+      {
+        "answer": "RELAX",
+        "clue": "To reduce stress and tension",
+        "clue2": "A 5-letter word that starts with R and ends with X."
+      },
+      {
+        "answer": "REST",
+        "clue": "Time spent recovering energy",
+        "clue2": "A 4-letter word that starts with R and ends with T."
+      },
+      {
+        "answer": "ROUTINE",
+        "clue": "Regular habits that support mental stability",
+        "clue2": "A 7-letter word that starts with R and ends with E."
+      },
+      {
+        "answer": "SLEEP",
+        "clue": "Essential rest that restores the brain",
+        "clue2": "A 5-letter word that starts with S and ends with P."
+      },
+      {
+        "answer": "STRETCH",
+        "clue": "Gentle movement to release tension",
+        "clue2": "A 7-letter word that starts with S and ends with H."
+      },
+      {
+        "answer": "THERAPY",
+        "clue": "Treatment to improve mental well-being",
+        "clue2": "A 7-letter word that starts with T and ends with Y."
+      },
+      {
+        "answer": "WALK",
+        "clue": "Simple exercise that supports brain health",
+        "clue2": "A 4-letter word that starts with W and ends with K."
+      },
+      {
+        "answer": "WATER",
+        "clue": "Hydration that helps brain function",
+        "clue2": "A 5-letter word that starts with W and ends with R."
+      },
+      {
+        "answer": "WELLNESS",
+        "clue": "Overall state of good mental and physical health",
+        "clue2": "A 8-letter word that starts with W and ends with S."
+      }
+    ]
+  },
+  {
+    "puzzleId": 4,
+    "puzzleDate": "2026-01-27",
+    "theme": "Canadian Cities",
+    "entries": [
+      {
+        "answer": "TORONTO",
+        "clue": "Canada\u2019s biggest city, home of the CN Tower",
+        "clue2": "A 7-letter word that starts with T and ends with O."
+      },
+      {
+        "answer": "MONTREAL",
+        "clue": "Quebec city famous for festivals, bagels, and French culture",
+        "clue2": "A 8-letter word that starts with M and ends with L."
+      },
+      {
+        "answer": "CALGARY",
+        "clue": "Alberta city known for cowboy hats and the Stampede",
+        "clue2": "A 7-letter word that starts with C and ends with Y."
+      },
+      {
+        "answer": "OTTAWA",
+        "clue": "Canada\u2019s capital, where Parliament Hill stands",
+        "clue2": "A 6-letter word that starts with O and ends with A."
+      },
+      {
+        "answer": "EDMONTON",
+        "clue": "Northern Alberta city famous for its massive mall",
+        "clue2": "A 8-letter word that starts with E and ends with N."
+      },
+      {
+        "answer": "WINNIPEG",
+        "clue": "Prairie city known for extreme winters and arts culture",
+        "clue2": "A 8-letter word that starts with W and ends with G."
+      },
+      {
+        "answer": "HALIFAX",
+        "clue": "Atlantic port city known for seafood and maritime history",
+        "clue2": "A 7-letter word that starts with H and ends with X."
+      },
+      {
+        "answer": "VICTORIA",
+        "clue": "Coastal BC capital known for gardens and afternoon tea",
+        "clue2": "A 8-letter word that starts with V and ends with A."
+      },
+      {
+        "answer": "REGINA",
+        "clue": "Prairie capital with a famous Royal Canadian Mounted Police academy",
+        "clue2": "A 6-letter word that starts with R and ends with A."
+      },
+      {
+        "answer": "SASKATOON",
+        "clue": "Saskatchewan city named after a local berry",
+        "clue2": "A 9-letter word that starts with S and ends with N."
+      },
+      {
+        "answer": "LONDON",
+        "clue": "Ontario city sharing its name with England\u2019s capital",
+        "clue2": "A 6-letter word that starts with L and ends with N."
+      },
+      {
+        "answer": "KINGSTON",
+        "clue": "Historic Ontario city once considered Canada\u2019s capital",
+        "clue2": "A 8-letter word that starts with K and ends with N."
+      },
+      {
+        "answer": "SUDBURY",
+        "clue": "Northern Ontario city famous for mining and a giant nickel",
+        "clue2": "A 7-letter word that starts with S and ends with Y."
+      },
+      {
+        "answer": "GUELPH",
+        "clue": "Ontario city nicknamed the Royal City",
+        "clue2": "A 6-letter word that starts with G and ends with H."
+      },
+      {
+        "answer": "BRAMPTON",
+        "clue": "Fast-growing Ontario city west of Toronto",
+        "clue2": "A 8-letter word that starts with B and ends with N."
+      },
+      {
+        "answer": "MARKHAM",
+        "clue": "Technology hub just north of Toronto",
+        "clue2": "A 7-letter word that starts and ends with M."
+      },
+      {
+        "answer": "BURNABY",
+        "clue": "British Columbia city beside Vancouver",
+        "clue2": "A 7-letter word that starts with B and ends with Y."
+      },
+      {
+        "answer": "RICHMOND",
+        "clue": "BC city known for great Asian food and an international airport",
+        "clue2": "A 8-letter word that starts with R and ends with D."
+      },
+      {
+        "answer": "KELOWNA",
+        "clue": "Okanagan city surrounded by lakes, orchards, and wineries",
+        "clue2": "A 7-letter word that starts with K and ends with A."
+      },
+      {
+        "answer": "WHITBY",
+        "clue": "Ontario lakeside town east of Toronto",
+        "clue2": "A 6-letter word that starts with W and ends with Y."
+      }
+    ]
+  },
+  {
+    "puzzleId": 5,
+    "puzzleDate": "2026-02-03",
+    "theme": "Business Terms",
+    "entries": [
+      {
+        "answer": "ASSETS",
+        "clue": "Resources owned by a company",
+        "clue2": "A 6-letter word that starts with A and ends with S."
+      },
+      {
+        "answer": "BUDGET",
+        "clue": "Plan for managing income and expenses",
+        "clue2": "A 6-letter word that starts with B and ends with T."
+      },
+      {
+        "answer": "CAPITAL",
+        "clue": "Money used to start or run a business",
+        "clue2": "A 7-letter word that starts with C and ends with L."
+      },
+      {
+        "answer": "CLIENT",
+        "clue": "A person or company that buys services",
+        "clue2": "A 6-letter word that starts with C and ends with T."
+      },
+      {
+        "answer": "COSTS",
+        "clue": "Expenses required to run a business",
+        "clue2": "A 5-letter word that starts with C and ends with S."
+      },
+      {
+        "answer": "DEMAND",
+        "clue": "Desire for a product or service",
+        "clue2": "A 6-letter word that starts and ends with D."
+      },
+      {
+        "answer": "EXPORT",
+        "clue": "Selling goods to another country",
+        "clue2": "A 6-letter word that starts with E and ends with T."
+      },
+      {
+        "answer": "IMPORT",
+        "clue": "Buying goods from another country",
+        "clue2": "A 6-letter word that starts with I and ends with T."
+      },
+      {
+        "answer": "INCOME",
+        "clue": "Money earned by a business",
+        "clue2": "A 6-letter word that starts with I and ends with E."
+      },
+      {
+        "answer": "INVOICE",
+        "clue": "Bill sent to request payment",
+        "clue2": "A 7-letter word that starts with I and ends with E."
+      },
+      {
+        "answer": "MARKET",
+        "clue": "Place or system where goods are sold",
+        "clue2": "A 6-letter word that starts with M and ends with T."
+      },
+      {
+        "answer": "PROFIT",
+        "clue": "Money left after expenses are paid",
+        "clue2": "A 6-letter word that starts with P and ends with T."
+      },
+      {
+        "answer": "REVENUE",
+        "clue": "Total money earned before expenses",
+        "clue2": "A 7-letter word that starts with R and ends with E."
+      },
+      {
+        "answer": "SALARY",
+        "clue": "Fixed regular payment to an employee",
+        "clue2": "A 6-letter word that starts with S and ends with Y."
+      },
+      {
+        "answer": "SALES",
+        "clue": "Transactions of selling products or services",
+        "clue2": "A 5-letter word that starts and ends with S."
+      },
+      {
+        "answer": "SHARES",
+        "clue": "Units of ownership in a company",
+        "clue2": "A 6-letter word that starts and ends with S."
+      },
+      {
+        "answer": "STOCKS",
+        "clue": "Another term for company shares",
+        "clue2": "A 6-letter word that starts and ends with S."
+      },
+      {
+        "answer": "SUPPLY",
+        "clue": "Amount of a product available for sale",
+        "clue2": "A 6-letter word that starts with S and ends with Y."
+      },
+      {
+        "answer": "TRADE",
+        "clue": "Exchange of goods or services",
+        "clue2": "A 5-letter word that starts with T and ends with E."
+      },
+      {
+        "answer": "VALUE",
+        "clue": "Worth of a product, service, or company",
+        "clue2": "A 5-letter word that starts with V and ends with E."
+      }
+    ]
+  },
+  {
+    "puzzleId": 6,
+    "puzzleDate": "2026-02-10",
+    "theme": "Classic Literature",
+    "entries": [
+      {
+        "answer": "ODYSSEY",
+        "clue": "Epic journey by Homer",
+        "clue2": "A 7-letter word that starts with O and ends with Y."
+      },
+      {
+        "answer": "ILIAD",
+        "clue": "Ancient Greek epic about the Trojan War",
+        "clue2": "A 5-letter word that starts with I and ends with D."
+      },
+      {
+        "answer": "HAMLET",
+        "clue": "Shakespeare play about a troubled prince",
+        "clue2": "A 6-letter word that starts with H and ends with T."
+      },
+      {
+        "answer": "MACBETH",
+        "clue": "Shakespeare tragedy about ambition and power",
+        "clue2": "A 7-letter word that starts with M and ends with H."
+      },
+      {
+        "answer": "OTHELLO",
+        "clue": "Shakespeare play about jealousy and betrayal",
+        "clue2": "A 7-letter word that starts and ends with O."
+      },
+      {
+        "answer": "LEAR",
+        "clue": "A king divided among his daughters",
+        "clue2": "A 4-letter word that starts with L and ends with R."
+      },
+      {
+        "answer": "EMMA",
+        "clue": "Jane Austen novel about matchmaking",
+        "clue2": "A 4-letter word that starts with E and ends with A."
+      },
+      {
+        "answer": "DRACULA",
+        "clue": "Famous vampire novel by Bram Stoker",
+        "clue2": "A 7-letter word that starts with D and ends with A."
+      },
+      {
+        "answer": "FRANKEN",
+        "clue": "Mary Shelley novel about a created monster",
+        "clue2": "A 7-letter word that starts with F and ends with N."
+      },
+      {
+        "answer": "GATSBY",
+        "clue": "Novel about wealth and illusion in the Jazz Age",
+        "clue2": "A 6-letter word that starts with G and ends with Y."
+      },
+      {
+        "answer": "MOBYDICK",
+        "clue": "Story of a captain hunting a white whale",
+        "clue2": "A 8-letter word that starts with M and ends with K."
+      },
+      {
+        "answer": "SCARLET",
+        "clue": "Novel about sin and society in Puritan times",
+        "clue2": "A 7-letter word that starts with S and ends with T."
+      },
+      {
+        "answer": "LOLITA",
+        "clue": "Controversial novel by Vladimir Nabokov",
+        "clue2": "A 6-letter word that starts with L and ends with A."
+      },
+      {
+        "answer": "CANDIDE",
+        "clue": "Satirical novel by Voltaire",
+        "clue2": "A 7-letter word that starts with C and ends with E."
+      },
+      {
+        "answer": "FAUST",
+        "clue": "Story of a man who makes a deal with the devil",
+        "clue2": "A 5-letter word that starts with F and ends with T."
+      },
+      {
+        "answer": "BEOWULF",
+        "clue": "Old English epic about a heroic warrior",
+        "clue2": "A 7-letter word that starts with B and ends with F."
+      },
+      {
+        "answer": "DORIAN",
+        "clue": "Character who never ages in a famous novel",
+        "clue2": "A 6-letter word that starts with D and ends with N."
+      },
+      {
+        "answer": "ALICE",
+        "clue": "Girl who travels to a wonderland",
+        "clue2": "A 5-letter word that starts with A and ends with E."
+      },
+      {
+        "answer": "INFERNO",
+        "clue": "First part of Dante\u2019s Divine Comedy",
+        "clue2": "A 7-letter word that starts with I and ends with O."
+      },
+      {
+        "answer": "UTOPIA",
+        "clue": "Ideal society described by Thomas More",
+        "clue2": "A 6-letter word that starts with U and ends with A."
+      }
+    ]
+  },
+  {
+    "puzzleId": 7,
+    "puzzleDate": "2026-02-17",
+    "theme": "Coffee Culture",
+    "entries": [
+      {
+        "answer": "AROMA",
+        "clue": "The rich smell of freshly brewed coffee",
+        "clue2": "A 5-letter word that starts and ends with A."
+      },
+      {
+        "answer": "BARISTA",
+        "clue": "Person who prepares and serves coffee drinks",
+        "clue2": "A 7-letter word that starts with B and ends with A."
+      },
+      {
+        "answer": "BEANS",
+        "clue": "Roasted seeds used to make coffee",
+        "clue2": "A 5-letter word that starts with B and ends with S."
+      },
+      {
+        "answer": "BREW",
+        "clue": "To make coffee by mixing with hot water",
+        "clue2": "A 4-letter word that starts with B and ends with W."
+      },
+      {
+        "answer": "CAFE",
+        "clue": "Place where coffee is served",
+        "clue2": "A 4-letter word that starts with C and ends with E."
+      },
+      {
+        "answer": "CREAM",
+        "clue": "Added to coffee to make it richer",
+        "clue2": "A 5-letter word that starts with C and ends with M."
+      },
+      {
+        "answer": "DARKROST",
+        "clue": "Coffee roasted longer for a bold flavor",
+        "clue2": "A 8-letter word that starts with D and ends with T."
+      },
+      {
+        "answer": "DECAF",
+        "clue": "Coffee with little or no caffeine",
+        "clue2": "A 5-letter word that starts with D and ends with F."
+      },
+      {
+        "answer": "ESPRESSO",
+        "clue": "Strong, concentrated coffee shot",
+        "clue2": "A 8-letter word that starts with E and ends with O."
+      },
+      {
+        "answer": "FILTER",
+        "clue": "Used to strain grounds from brewed coffee",
+        "clue2": "A 6-letter word that starts with F and ends with R."
+      },
+      {
+        "answer": "FROTH",
+        "clue": "Foamy milk often added to drinks",
+        "clue2": "A 5-letter word that starts with F and ends with H."
+      },
+      {
+        "answer": "GRINDER",
+        "clue": "Machine used to crush coffee beans",
+        "clue2": "A 7-letter word that starts with G and ends with R."
+      },
+      {
+        "answer": "LATTE",
+        "clue": "Espresso drink with lots of steamed milk",
+        "clue2": "A 5-letter word that starts with L and ends with E."
+      },
+      {
+        "answer": "MOCHA",
+        "clue": "Coffee drink with chocolate flavor",
+        "clue2": "A 5-letter word that starts with M and ends with A."
+      },
+      {
+        "answer": "MUG",
+        "clue": "Common cup used for drinking coffee",
+        "clue2": "A 3-letter word that starts with M and ends with G."
+      },
+      {
+        "answer": "ROASTER",
+        "clue": "Machine or person who roasts coffee beans",
+        "clue2": "A 7-letter word that starts and ends with R."
+      },
+      {
+        "answer": "STEAM",
+        "clue": "Hot vapor used to heat and foam milk",
+        "clue2": "A 5-letter word that starts with S and ends with M."
+      },
+      {
+        "answer": "SUGAR",
+        "clue": "Sweetener often added to coffee",
+        "clue2": "A 5-letter word that starts with S and ends with R."
+      },
+      {
+        "answer": "TAKEOUT",
+        "clue": "Coffee ordered to go",
+        "clue2": "A 7-letter word that starts and ends with T."
+      },
+      {
+        "answer": "THERMOS",
+        "clue": "Container that keeps coffee hot",
+        "clue2": "A 7-letter word that starts with T and ends with S."
+      }
+    ]
+  },
+  {
+    "puzzleId": 8,
+    "puzzleDate": "2026-02-24",
+    "theme": "Tea Culture",
+    "entries": [
+      {
+        "answer": "AROMA",
+        "clue": "The pleasant smell of brewed tea",
+        "clue2": "A 5-letter word that starts and ends with A."
+      },
+      {
+        "answer": "BLEND",
+        "clue": "A mix of different teas or flavors",
+        "clue2": "A 5-letter word that starts with B and ends with D."
+      },
+      {
+        "answer": "BREW",
+        "clue": "To make tea by steeping leaves in hot water",
+        "clue2": "A 4-letter word that starts with B and ends with W."
+      },
+      {
+        "answer": "CADDY",
+        "clue": "Container used to store loose tea",
+        "clue2": "A 5-letter word that starts with C and ends with Y."
+      },
+      {
+        "answer": "CHAI",
+        "clue": "Spiced tea popular in India",
+        "clue2": "A 4-letter word that starts with C and ends with I."
+      },
+      {
+        "answer": "CUP",
+        "clue": "Small vessel used to drink tea",
+        "clue2": "A 3-letter word that starts with C and ends with P."
+      },
+      {
+        "answer": "HERBAL",
+        "clue": "Tea made from herbs, not tea leaves",
+        "clue2": "A 6-letter word that starts with H and ends with L."
+      },
+      {
+        "answer": "HONEY",
+        "clue": "Natural sweetener often added to tea",
+        "clue2": "A 5-letter word that starts with H and ends with Y."
+      },
+      {
+        "answer": "ICEDTEA",
+        "clue": "Tea served cold, often with ice",
+        "clue2": "A 7-letter word that starts with I and ends with A."
+      },
+      {
+        "answer": "INFUSE",
+        "clue": "To extract flavor by soaking in liquid",
+        "clue2": "A 6-letter word that starts with I and ends with E."
+      },
+      {
+        "answer": "KETTLE",
+        "clue": "Used to boil water for tea",
+        "clue2": "A 6-letter word that starts with K and ends with E."
+      },
+      {
+        "answer": "LEAVES",
+        "clue": "Dried plant parts used to make tea",
+        "clue2": "A 6-letter word that starts with L and ends with S."
+      },
+      {
+        "answer": "MATCHA",
+        "clue": "Powdered green tea from Japan",
+        "clue2": "A 6-letter word that starts with M and ends with A."
+      },
+      {
+        "answer": "MINT",
+        "clue": "Common herb used in tea blends",
+        "clue2": "A 4-letter word that starts with M and ends with T."
+      },
+      {
+        "answer": "OOLONG",
+        "clue": "Traditional Chinese tea, partly oxidized",
+        "clue2": "A 6-letter word that starts with O and ends with G."
+      },
+      {
+        "answer": "POT",
+        "clue": "Container used to brew and serve tea",
+        "clue2": "A 3-letter word that starts with P and ends with T."
+      },
+      {
+        "answer": "STEAM",
+        "clue": "Hot vapor from boiling water",
+        "clue2": "A 5-letter word that starts with S and ends with M."
+      },
+      {
+        "answer": "STRAIN",
+        "clue": "To separate leaves from liquid",
+        "clue2": "A 6-letter word that starts with S and ends with N."
+      },
+      {
+        "answer": "TEABAG",
+        "clue": "Small pouch filled with tea leaves",
+        "clue2": "A 6-letter word that starts with T and ends with G."
+      },
+      {
+        "answer": "TEACUP",
+        "clue": "Cup specifically used for drinking tea",
+        "clue2": "A 6-letter word that starts with T and ends with P."
+      }
+    ]
+  },
+  {
+    "puzzleId": 9,
+    "puzzleDate": "2026-03-03",
+    "theme": "Culinary Terms",
+    "entries": [
+      {
+        "answer": "BAKING",
+        "clue": "Cooking food using dry heat in an oven",
+        "clue2": "A 6-letter word that starts with B and ends with G."
+      },
+      {
+        "answer": "BOILING",
+        "clue": "Cooking in water at high temperature",
+        "clue2": "A 7-letter word that starts with B and ends with G."
+      },
+      {
+        "answer": "BROIL",
+        "clue": "Cooking with direct high heat from above",
+        "clue2": "A 5-letter word that starts with B and ends with L."
+      },
+      {
+        "answer": "CHOP",
+        "clue": "To cut food into smaller pieces",
+        "clue2": "A 4-letter word that starts with C and ends with P."
+      },
+      {
+        "answer": "DICING",
+        "clue": "Cutting food into small cubes",
+        "clue2": "A 6-letter word that starts with D and ends with G."
+      },
+      {
+        "answer": "FRYING",
+        "clue": "Cooking food in hot oil",
+        "clue2": "A 6-letter word that starts with F and ends with G."
+      },
+      {
+        "answer": "GLAZE",
+        "clue": "Shiny coating added to food",
+        "clue2": "A 5-letter word that starts with G and ends with E."
+      },
+      {
+        "answer": "GRILL",
+        "clue": "Cooking over an open flame or heat source",
+        "clue2": "A 5-letter word that starts with G and ends with L."
+      },
+      {
+        "answer": "KNEAD",
+        "clue": "To work dough by hand",
+        "clue2": "A 5-letter word that starts with K and ends with D."
+      },
+      {
+        "answer": "MARINATE",
+        "clue": "Soaking food in seasoned liquid",
+        "clue2": "A 8-letter word that starts with M and ends with E."
+      },
+      {
+        "answer": "MIXING",
+        "clue": "Combining ingredients together",
+        "clue2": "A 6-letter word that starts with M and ends with G."
+      },
+      {
+        "answer": "PEEL",
+        "clue": "To remove the outer skin of food",
+        "clue2": "A 4-letter word that starts with P and ends with L."
+      },
+      {
+        "answer": "ROAST",
+        "clue": "Cooking with dry heat, often in an oven",
+        "clue2": "A 5-letter word that starts with R and ends with T."
+      },
+      {
+        "answer": "SAUTE",
+        "clue": "Cooking quickly in a small amount of fat",
+        "clue2": "A 5-letter word that starts with S and ends with E."
+      },
+      {
+        "answer": "SEASON",
+        "clue": "To add flavor with herbs or spices",
+        "clue2": "A 6-letter word that starts with S and ends with N."
+      },
+      {
+        "answer": "SIMMER",
+        "clue": "Cooking just below boiling point",
+        "clue2": "A 6-letter word that starts with S and ends with R."
+      },
+      {
+        "answer": "SLICE",
+        "clue": "To cut into thin pieces",
+        "clue2": "A 5-letter word that starts with S and ends with E."
+      },
+      {
+        "answer": "STEAM",
+        "clue": "Cooking using vapor from boiling water",
+        "clue2": "A 5-letter word that starts with S and ends with M."
+      },
+      {
+        "answer": "STIR",
+        "clue": "To mix ingredients by moving them around",
+        "clue2": "A 4-letter word that starts with S and ends with R."
+      },
+      {
+        "answer": "WHISK",
+        "clue": "To beat ingredients to add air",
+        "clue2": "A 5-letter word that starts with W and ends with K."
+      }
+    ]
+  },
+  {
+    "puzzleId": 10,
+    "puzzleDate": "2026-03-10",
+    "theme": "European Travel",
+    "entries": [
+      {
+        "answer": "AIRPORT",
+        "clue": "Place where flights arrive and depart",
+        "clue2": "A 7-letter word that starts with A and ends with T."
+      },
+      {
+        "answer": "BAGGAGE",
+        "clue": "Suitcases and travel belongings",
+        "clue2": "A 7-letter word that starts with B and ends with E."
+      },
+      {
+        "answer": "BERLIN",
+        "clue": "Capital city of Germany",
+        "clue2": "A 6-letter word that starts with B and ends with N."
+      },
+      {
+        "answer": "DUBLIN",
+        "clue": "Capital city of Ireland",
+        "clue2": "A 6-letter word that starts with D and ends with N."
+      },
+      {
+        "answer": "EUROPE",
+        "clue": "Continent known for rich history and culture",
+        "clue2": "A 6-letter word that starts and ends with E."
+      },
+      {
+        "answer": "FLIGHT",
+        "clue": "Air travel from one place to another",
+        "clue2": "A 6-letter word that starts with F and ends with T."
+      },
+      {
+        "answer": "HOSTEL",
+        "clue": "Budget-friendly shared accommodation",
+        "clue2": "A 6-letter word that starts with H and ends with L."
+      },
+      {
+        "answer": "HOTEL",
+        "clue": "Place where travelers stay overnight",
+        "clue2": "A 5-letter word that starts with H and ends with L."
+      },
+      {
+        "answer": "ITALY",
+        "clue": "Country famous for pasta and pizza",
+        "clue2": "A 5-letter word that starts with I and ends with Y."
+      },
+      {
+        "answer": "LONDON",
+        "clue": "Capital city of the United Kingdom",
+        "clue2": "A 6-letter word that starts with L and ends with N."
+      },
+      {
+        "answer": "MADRID",
+        "clue": "Capital city of Spain",
+        "clue2": "A 6-letter word that starts with M and ends with D."
+      },
+      {
+        "answer": "METRO",
+        "clue": "Underground train system in cities",
+        "clue2": "A 5-letter word that starts with M and ends with O."
+      },
+      {
+        "answer": "MUSEUM",
+        "clue": "Place to view art, history, or artifacts",
+        "clue2": "A 6-letter word that starts and ends with M."
+      },
+      {
+        "answer": "PARIS",
+        "clue": "French capital known for the Eiffel Tower",
+        "clue2": "A 5-letter word that starts with P and ends with S."
+      },
+      {
+        "answer": "PASSPORT",
+        "clue": "Document needed for international travel",
+        "clue2": "A 8-letter word that starts with P and ends with T."
+      },
+      {
+        "answer": "PRAGUE",
+        "clue": "Historic capital of the Czech Republic",
+        "clue2": "A 6-letter word that starts with P and ends with E."
+      },
+      {
+        "answer": "ROME",
+        "clue": "Capital of Italy with ancient ruins",
+        "clue2": "A 4-letter word that starts with R and ends with E."
+      },
+      {
+        "answer": "TICKETS",
+        "clue": "Required for travel or entry",
+        "clue2": "A 7-letter word that starts with T and ends with S."
+      },
+      {
+        "answer": "TOUR",
+        "clue": "Guided trip around sights or landmarks",
+        "clue2": "A 4-letter word that starts with T and ends with R."
+      },
+      {
+        "answer": "VIENNA",
+        "clue": "Capital of Austria",
+        "clue2": "A 6-letter word that starts with V and ends with A."
+      }
+    ]
+  },
+  {
+    "puzzleId": 11,
+    "puzzleDate": "2026-03-17",
+    "theme": "Famous Inventions",
+    "entries": [
+      {
+        "answer": "AIRPLANE",
+        "clue": "Machine that allows humans to fly",
+        "clue2": "A 8-letter word that starts with A and ends with E."
+      },
+      {
+        "answer": "BATTERY",
+        "clue": "Device that stores electrical energy",
+        "clue2": "A 7-letter word that starts with B and ends with Y."
+      },
+      {
+        "answer": "BICYCLE",
+        "clue": "Two-wheeled vehicle powered by pedaling",
+        "clue2": "A 7-letter word that starts with B and ends with E."
+      },
+      {
+        "answer": "CAMERA",
+        "clue": "Device used to capture photographs",
+        "clue2": "A 6-letter word that starts with C and ends with A."
+      },
+      {
+        "answer": "COMPASS",
+        "clue": "Tool used to find direction",
+        "clue2": "A 7-letter word that starts with C and ends with S."
+      },
+      {
+        "answer": "COMPUTER",
+        "clue": "Electronic device for processing information",
+        "clue2": "A 8-letter word that starts with C and ends with R."
+      },
+      {
+        "answer": "ENGINE",
+        "clue": "Machine that converts energy into motion",
+        "clue2": "A 6-letter word that starts and ends with E."
+      },
+      {
+        "answer": "GLASSES",
+        "clue": "Worn to improve vision",
+        "clue2": "A 7-letter word that starts with G and ends with S."
+      },
+      {
+        "answer": "INTERNET",
+        "clue": "Global network connecting computers",
+        "clue2": "A 8-letter word that starts with I and ends with T."
+      },
+      {
+        "answer": "MICROCHIP",
+        "clue": "Tiny circuit used in electronic devices",
+        "clue2": "A 9-letter word that starts with M and ends with P."
+      },
+      {
+        "answer": "MOTOR",
+        "clue": "Device that creates motion using power",
+        "clue2": "A 5-letter word that starts with M and ends with R."
+      },
+      {
+        "answer": "PAPER",
+        "clue": "Material used for writing and printing",
+        "clue2": "A 5-letter word that starts with P and ends with R."
+      },
+      {
+        "answer": "RADAR",
+        "clue": "System used to detect distant objects",
+        "clue2": "A 5-letter word that starts and ends with R."
+      },
+      {
+        "answer": "RADIO",
+        "clue": "Device for receiving audio broadcasts",
+        "clue2": "A 5-letter word that starts with R and ends with O."
+      },
+      {
+        "answer": "SCISSORS",
+        "clue": "Tool used for cutting",
+        "clue2": "A 8-letter word that starts and ends with S."
+      },
+      {
+        "answer": "TELEGRAM",
+        "clue": "Early method of sending messages over distance",
+        "clue2": "A 8-letter word that starts with T and ends with M."
+      },
+      {
+        "answer": "TELEPHONE",
+        "clue": "Invention used for voice communication over distance",
+        "clue2": "A 9-letter word that starts with T and ends with E."
+      },
+      {
+        "answer": "TOASTER",
+        "clue": "Appliance used to brown slices of bread",
+        "clue2": "A 7-letter word that starts with T and ends with R."
+      },
+      {
+        "answer": "TRACTOR",
+        "clue": "Vehicle that transformed farming work",
+        "clue2": "A 7-letter word that starts with T and ends with R."
+      },
+      {
+        "answer": "VACCINE",
+        "clue": "Medical invention that helps prevent disease",
+        "clue2": "A 7-letter word that starts with V and ends with E."
+      }
+    ]
+  },
+  {
+    "puzzleId": 12,
+    "puzzleDate": "2026-03-24",
+    "theme": "Fine Dining",
+    "entries": [
+      {
+        "answer": "AMBIANCE",
+        "clue": "The elegant atmosphere of a restaurant",
+        "clue2": "A 8-letter word that starts with A and ends with E."
+      },
+      {
+        "answer": "APERITIF",
+        "clue": "Drink served before a meal to stimulate appetite",
+        "clue2": "A 8-letter word that starts with A and ends with F."
+      },
+      {
+        "answer": "BISTRO",
+        "clue": "Small stylish restaurant serving quality meals",
+        "clue2": "A 6-letter word that starts with B and ends with O."
+      },
+      {
+        "answer": "CAVIAR",
+        "clue": "Luxury food made from salted fish eggs",
+        "clue2": "A 6-letter word that starts with C and ends with R."
+      },
+      {
+        "answer": "DESSERT",
+        "clue": "Sweet course served at the end of a meal",
+        "clue2": "A 7-letter word that starts with D and ends with T."
+      },
+      {
+        "answer": "ENTREE",
+        "clue": "The main course of a formal dinner",
+        "clue2": "A 6-letter word that starts and ends with E."
+      },
+      {
+        "answer": "GOURMET",
+        "clue": "Associated with high-quality food and refined taste",
+        "clue2": "A 7-letter word that starts with G and ends with T."
+      },
+      {
+        "answer": "LINEN",
+        "clue": "Elegant cloth often covering restaurant tables",
+        "clue2": "A 5-letter word that starts with L and ends with N."
+      },
+      {
+        "answer": "MENU",
+        "clue": "List of dishes available at a restaurant",
+        "clue2": "A 4-letter word that starts with M and ends with U."
+      },
+      {
+        "answer": "NAPKINS",
+        "clue": "Folded cloths placed beside formal place settings",
+        "clue2": "A 7-letter word that starts with N and ends with S."
+      },
+      {
+        "answer": "PAELLA",
+        "clue": "Spanish rice dish often served in upscale restaurants",
+        "clue2": "A 6-letter word that starts with P and ends with A."
+      },
+      {
+        "answer": "RISOTTO",
+        "clue": "Creamy Italian rice dish",
+        "clue2": "A 7-letter word that starts with R and ends with O."
+      },
+      {
+        "answer": "SAFFRON",
+        "clue": "Expensive spice used in gourmet cooking",
+        "clue2": "A 7-letter word that starts with S and ends with N."
+      },
+      {
+        "answer": "SERVICE",
+        "clue": "The quality of attention given by restaurant staff",
+        "clue2": "A 7-letter word that starts with S and ends with E."
+      },
+      {
+        "answer": "SOMMELIER",
+        "clue": "Wine expert in a fine restaurant",
+        "clue2": "A 9-letter word that starts with S and ends with R."
+      },
+      {
+        "answer": "SOUFFLE",
+        "clue": "Light baked dish known for rising dramatically",
+        "clue2": "A 7-letter word that starts with S and ends with E."
+      },
+      {
+        "answer": "TABLETOP",
+        "clue": "Surface where meals and place settings are arranged",
+        "clue2": "A 8-letter word that starts with T and ends with P."
+      },
+      {
+        "answer": "TASTING",
+        "clue": "Small-course dining experience with multiple dishes",
+        "clue2": "A 7-letter word that starts with T and ends with G."
+      },
+      {
+        "answer": "TRUFFLES",
+        "clue": "Rare delicacies prized in gourmet cuisine",
+        "clue2": "A 8-letter word that starts with T and ends with S."
+      },
+      {
+        "answer": "VINTAGE",
+        "clue": "Term describing wine from a specific year",
+        "clue2": "A 7-letter word that starts with V and ends with E."
+      }
+    ]
+  },
+  {
+    "puzzleId": 13,
+    "puzzleDate": "2026-03-31",
+    "theme": "Financial Terms",
+    "entries": [
+      {
+        "answer": "ASSETS",
+        "clue": "Resources or valuables owned by a person or company",
+        "clue2": "A 6-letter word that starts with A and ends with S."
+      },
+      {
+        "answer": "BALANCE",
+        "clue": "Amount remaining in an account",
+        "clue2": "A 7-letter word that starts with B and ends with E."
+      },
+      {
+        "answer": "BANKING",
+        "clue": "Industry focused on managing money and accounts",
+        "clue2": "A 7-letter word that starts with B and ends with G."
+      },
+      {
+        "answer": "BUDGET",
+        "clue": "Plan for spending and saving money",
+        "clue2": "A 6-letter word that starts with B and ends with T."
+      },
+      {
+        "answer": "CAPITAL",
+        "clue": "Money available for investment or business use",
+        "clue2": "A 7-letter word that starts with C and ends with L."
+      },
+      {
+        "answer": "CREDIT",
+        "clue": "Ability to borrow money with trust of repayment",
+        "clue2": "A 6-letter word that starts with C and ends with T."
+      },
+      {
+        "answer": "DEPOSIT",
+        "clue": "Money placed into a bank account",
+        "clue2": "A 7-letter word that starts with D and ends with T."
+      },
+      {
+        "answer": "DIVIDEND",
+        "clue": "Payment made to shareholders from company profits",
+        "clue2": "A 8-letter word that starts and ends with D."
+      },
+      {
+        "answer": "EQUITY",
+        "clue": "Ownership value in a company or property",
+        "clue2": "A 6-letter word that starts with E and ends with Y."
+      },
+      {
+        "answer": "EXPENSE",
+        "clue": "Cost incurred while spending money",
+        "clue2": "A 7-letter word that starts and ends with E."
+      },
+      {
+        "answer": "FINANCE",
+        "clue": "Management of money and investments",
+        "clue2": "A 7-letter word that starts with F and ends with E."
+      },
+      {
+        "answer": "INTEREST",
+        "clue": "Extra money paid for borrowing funds",
+        "clue2": "A 8-letter word that starts with I and ends with T."
+      },
+      {
+        "answer": "INVOICE",
+        "clue": "Bill requesting payment for goods or services",
+        "clue2": "A 7-letter word that starts with I and ends with E."
+      },
+      {
+        "answer": "LOAN",
+        "clue": "Money borrowed that must be repaid",
+        "clue2": "A 4-letter word that starts with L and ends with N."
+      },
+      {
+        "answer": "MORTGAGE",
+        "clue": "Loan used to purchase property",
+        "clue2": "A 8-letter word that starts with M and ends with E."
+      },
+      {
+        "answer": "PROFIT",
+        "clue": "Money remaining after costs are deducted",
+        "clue2": "A 6-letter word that starts with P and ends with T."
+      },
+      {
+        "answer": "REVENUE",
+        "clue": "Total income earned before expenses",
+        "clue2": "A 7-letter word that starts with R and ends with E."
+      },
+      {
+        "answer": "SAVINGS",
+        "clue": "Money set aside for future use",
+        "clue2": "A 7-letter word that starts and ends with S."
+      },
+      {
+        "answer": "SHARES",
+        "clue": "Units of ownership in a company",
+        "clue2": "A 6-letter word that starts and ends with S."
+      },
+      {
+        "answer": "WALLET",
+        "clue": "Holder used for carrying money and cards",
+        "clue2": "A 6-letter word that starts with W and ends with T."
+      }
+    ]
+  },
+  {
+    "puzzleId": 14,
+    "puzzleDate": "2026-04-07",
+    "theme": "Home Improvement",
+    "entries": [
+      {
+        "answer": "CABINET",
+        "clue": "Built-in storage often found in kitchens",
+        "clue2": "A 7-letter word that starts with C and ends with T."
+      },
+      {
+        "answer": "CAULKING",
+        "clue": "Sealing gaps around windows, tubs, or trim",
+        "clue2": "A 8-letter word that starts with C and ends with G."
+      },
+      {
+        "answer": "DECKING",
+        "clue": "Outdoor boards used to build a patio area",
+        "clue2": "A 7-letter word that starts with D and ends with G."
+      },
+      {
+        "answer": "DRYWALL",
+        "clue": "Interior wall material made in large panels",
+        "clue2": "A 7-letter word that starts with D and ends with L."
+      },
+      {
+        "answer": "FLOORING",
+        "clue": "Material used to cover the surface you walk on",
+        "clue2": "A 8-letter word that starts with F and ends with G."
+      },
+      {
+        "answer": "GROUT",
+        "clue": "Filler placed between tiles",
+        "clue2": "A 5-letter word that starts with G and ends with T."
+      },
+      {
+        "answer": "HAMMER",
+        "clue": "Tool used to drive nails",
+        "clue2": "A 6-letter word that starts with H and ends with R."
+      },
+      {
+        "answer": "HINGES",
+        "clue": "Hardware that lets doors swing open and shut",
+        "clue2": "A 6-letter word that starts with H and ends with S."
+      },
+      {
+        "answer": "INSULATE",
+        "clue": "To add material that helps control heat loss",
+        "clue2": "A 8-letter word that starts with I and ends with E."
+      },
+      {
+        "answer": "LADDER",
+        "clue": "Tool used to reach high places safely",
+        "clue2": "A 6-letter word that starts with L and ends with R."
+      },
+      {
+        "answer": "PAINT",
+        "clue": "Colored coating used to refresh walls",
+        "clue2": "A 5-letter word that starts with P and ends with T."
+      },
+      {
+        "answer": "PLUMBING",
+        "clue": "Pipes and fixtures that carry water",
+        "clue2": "A 8-letter word that starts with P and ends with G."
+      },
+      {
+        "answer": "RENOVATE",
+        "clue": "To improve or update a room or building",
+        "clue2": "A 8-letter word that starts with R and ends with E."
+      },
+      {
+        "answer": "ROOFING",
+        "clue": "Materials used to cover the top of a house",
+        "clue2": "A 7-letter word that starts with R and ends with G."
+      },
+      {
+        "answer": "SANDING",
+        "clue": "Smoothing a surface with abrasive paper",
+        "clue2": "A 7-letter word that starts with S and ends with G."
+      },
+      {
+        "answer": "SCREWS",
+        "clue": "Fasteners turned into wood or metal",
+        "clue2": "A 6-letter word that starts and ends with S."
+      },
+      {
+        "answer": "SHELVES",
+        "clue": "Flat storage surfaces mounted on walls",
+        "clue2": "A 7-letter word that starts and ends with S."
+      },
+      {
+        "answer": "TILING",
+        "clue": "Covering a surface with ceramic or stone pieces",
+        "clue2": "A 6-letter word that starts with T and ends with G."
+      },
+      {
+        "answer": "TRIM",
+        "clue": "Decorative edging around walls, doors, or windows",
+        "clue2": "A 4-letter word that starts with T and ends with M."
+      },
+      {
+        "answer": "WIRING",
+        "clue": "Electrical lines hidden inside walls",
+        "clue2": "A 6-letter word that starts with W and ends with G."
+      }
+    ]
+  },
+  {
+    "puzzleId": 15,
+    "puzzleDate": "2026-04-14",
+    "theme": "Interior Design",
+    "entries": [
+      {
+        "answer": "ACCENTS",
+        "clue": "Decor pieces that add style or contrast",
+        "clue2": "A 7-letter word that starts with A and ends with S."
+      },
+      {
+        "answer": "ARMOIRE",
+        "clue": "Tall cabinet used for storage or clothing",
+        "clue2": "A 7-letter word that starts with A and ends with E."
+      },
+      {
+        "answer": "BALANCE",
+        "clue": "Visual harmony within a room layout",
+        "clue2": "A 7-letter word that starts with B and ends with E."
+      },
+      {
+        "answer": "CUSHIONS",
+        "clue": "Soft decorative pillows for furniture",
+        "clue2": "A 8-letter word that starts with C and ends with S."
+      },
+      {
+        "answer": "DECOR",
+        "clue": "Style and furnishings within a space",
+        "clue2": "A 5-letter word that starts with D and ends with R."
+      },
+      {
+        "answer": "DRAPERY",
+        "clue": "Elegant fabric window coverings",
+        "clue2": "A 7-letter word that starts with D and ends with Y."
+      },
+      {
+        "answer": "FIXTURE",
+        "clue": "Permanent feature such as a sink or light",
+        "clue2": "A 7-letter word that starts with F and ends with E."
+      },
+      {
+        "answer": "LAMPS",
+        "clue": "Lighting pieces placed on tables or floors",
+        "clue2": "A 5-letter word that starts with L and ends with S."
+      },
+      {
+        "answer": "LAYOUT",
+        "clue": "Arrangement of furniture and space",
+        "clue2": "A 6-letter word that starts with L and ends with T."
+      },
+      {
+        "answer": "MARBLE",
+        "clue": "Luxury stone often used in interiors",
+        "clue2": "A 6-letter word that starts with M and ends with E."
+      },
+      {
+        "answer": "MINIMAL",
+        "clue": "Style focused on simplicity and clean lines",
+        "clue2": "A 7-letter word that starts with M and ends with L."
+      },
+      {
+        "answer": "MIRRORS",
+        "clue": "Decor items that reflect light and space",
+        "clue2": "A 7-letter word that starts with M and ends with S."
+      },
+      {
+        "answer": "PALETTE",
+        "clue": "Selected range of colors for a room",
+        "clue2": "A 7-letter word that starts with P and ends with E."
+      },
+      {
+        "answer": "RUGS",
+        "clue": "Fabric floor coverings that add warmth",
+        "clue2": "A 4-letter word that starts with R and ends with S."
+      },
+      {
+        "answer": "SHELVING",
+        "clue": "Wall-mounted storage for books or decor",
+        "clue2": "A 8-letter word that starts with S and ends with G."
+      },
+      {
+        "answer": "SOFAS",
+        "clue": "Large upholstered seating furniture",
+        "clue2": "A 5-letter word that starts and ends with S."
+      },
+      {
+        "answer": "TEXTURE",
+        "clue": "Surface quality that adds visual interest",
+        "clue2": "A 7-letter word that starts with T and ends with E."
+      },
+      {
+        "answer": "VASES",
+        "clue": "Decorative containers often used for flowers",
+        "clue2": "A 5-letter word that starts with V and ends with S."
+      },
+      {
+        "answer": "VINTAGE",
+        "clue": "Style inspired by older classic designs",
+        "clue2": "A 7-letter word that starts with V and ends with E."
+      },
+      {
+        "answer": "WALLART",
+        "clue": "Decorative artwork displayed on walls",
+        "clue2": "A 7-letter word that starts with W and ends with T."
+      }
+    ]
+  },
+  {
+    "puzzleId": 16,
+    "puzzleDate": "2026-04-21",
+    "theme": "Word Languages",
+    "entries": [
+      {
+        "answer": "ARABIC",
+        "clue": "Language widely spoken across the Middle East",
+        "clue2": "A 6-letter word that starts with A and ends with C."
+      },
+      {
+        "answer": "BENGALI",
+        "clue": "Major language spoken in Bangladesh and India",
+        "clue2": "A 7-letter word that starts with B and ends with I."
+      },
+      {
+        "answer": "DANISH",
+        "clue": "Language spoken in Denmark",
+        "clue2": "A 6-letter word that starts with D and ends with H."
+      },
+      {
+        "answer": "ENGLISH",
+        "clue": "One of the world\u2019s most widely spoken languages",
+        "clue2": "A 7-letter word that starts with E and ends with H."
+      },
+      {
+        "answer": "FRENCH",
+        "clue": "Romance language spoken in France and Quebec",
+        "clue2": "A 6-letter word that starts with F and ends with H."
+      },
+      {
+        "answer": "GERMAN",
+        "clue": "Language primarily spoken in Germany and Austria",
+        "clue2": "A 6-letter word that starts with G and ends with N."
+      },
+      {
+        "answer": "GREEK",
+        "clue": "Ancient language still spoken in modern Greece",
+        "clue2": "A 5-letter word that starts with G and ends with K."
+      },
+      {
+        "answer": "HEBREW",
+        "clue": "Official language of Israel",
+        "clue2": "A 6-letter word that starts with H and ends with W."
+      },
+      {
+        "answer": "HINDI",
+        "clue": "One of the main languages spoken in India",
+        "clue2": "A 5-letter word that starts with H and ends with I."
+      },
+      {
+        "answer": "ITALIAN",
+        "clue": "Language associated with Rome and Venice",
+        "clue2": "A 7-letter word that starts with I and ends with N."
+      },
+      {
+        "answer": "JAPANESE",
+        "clue": "Language spoken in Tokyo and throughout Japan",
+        "clue2": "A 8-letter word that starts with J and ends with E."
+      },
+      {
+        "answer": "KOREAN",
+        "clue": "Language spoken in North and South Korea",
+        "clue2": "A 6-letter word that starts with K and ends with N."
+      },
+      {
+        "answer": "LATIN",
+        "clue": "Ancient Roman language used in many scientific terms",
+        "clue2": "A 5-letter word that starts with L and ends with N."
+      },
+      {
+        "answer": "MANDARIN",
+        "clue": "Most widely spoken form of Chinese",
+        "clue2": "A 8-letter word that starts with M and ends with N."
+      },
+      {
+        "answer": "NORWEGIAN",
+        "clue": "Language spoken in Norway",
+        "clue2": "A 9-letter word that starts and ends with N."
+      },
+      {
+        "answer": "POLISH",
+        "clue": "Language spoken in Poland",
+        "clue2": "A 6-letter word that starts with P and ends with H."
+      },
+      {
+        "answer": "PORTUGUE",
+        "clue": "Language spoken in Portugal and Brazil",
+        "clue2": "A 8-letter word that starts with P and ends with E."
+      },
+      {
+        "answer": "SPANISH",
+        "clue": "Language spoken across much of Latin America",
+        "clue2": "A 7-letter word that starts with S and ends with H."
+      },
+      {
+        "answer": "SWAHILI",
+        "clue": "Language commonly spoken in East Africa",
+        "clue2": "A 7-letter word that starts with S and ends with I."
+      },
+      {
+        "answer": "TURKISH",
+        "clue": "Language spoken in T\u00fcrkiye",
+        "clue2": "A 7-letter word that starts with T and ends with H."
+      }
+    ]
+  },
+  {
+    "puzzleId": 17,
+    "puzzleDate": "2026-04-28",
+    "theme": "Mindful Meditation",
+    "entries": [
+      {
+        "answer": "BALANCE",
+        "clue": "A calm and steady state of mind",
+        "clue2": "A 7-letter word that starts with B and ends with E."
+      },
+      {
+        "answer": "BREATHE",
+        "clue": "To slowly take in and release air",
+        "clue2": "A 7-letter word that starts with B and ends with E."
+      },
+      {
+        "answer": "CALMING",
+        "clue": "Helping the mind feel peaceful and relaxed",
+        "clue2": "A 7-letter word that starts with C and ends with G."
+      },
+      {
+        "answer": "CENTERED",
+        "clue": "Feeling mentally grounded and focused",
+        "clue2": "A 8-letter word that starts with C and ends with D."
+      },
+      {
+        "answer": "CHAKRAS",
+        "clue": "Energy points often referenced in meditation practices",
+        "clue2": "A 7-letter word that starts with C and ends with S."
+      },
+      {
+        "answer": "FOCUS",
+        "clue": "Directing attention toward one thought or activity",
+        "clue2": "A 5-letter word that starts with F and ends with S."
+      },
+      {
+        "answer": "GRATITUDE",
+        "clue": "Appreciation for the good things in life",
+        "clue2": "A 9-letter word that starts with G and ends with E."
+      },
+      {
+        "answer": "HEALING",
+        "clue": "Process of becoming mentally or emotionally restored",
+        "clue2": "A 7-letter word that starts with H and ends with G."
+      },
+      {
+        "answer": "JOURNAL",
+        "clue": "Notebook used for reflection and thoughts",
+        "clue2": "A 7-letter word that starts with J and ends with L."
+      },
+      {
+        "answer": "MANTRAS",
+        "clue": "Repeated words or phrases used during meditation",
+        "clue2": "A 7-letter word that starts with M and ends with S."
+      },
+      {
+        "answer": "MINDFUL",
+        "clue": "Fully aware of the present moment",
+        "clue2": "A 7-letter word that starts with M and ends with L."
+      },
+      {
+        "answer": "PEACEFUL",
+        "clue": "Free from stress or inner conflict",
+        "clue2": "A 8-letter word that starts with P and ends with L."
+      },
+      {
+        "answer": "REFLECT",
+        "clue": "To think deeply and quietly",
+        "clue2": "A 7-letter word that starts with R and ends with T."
+      },
+      {
+        "answer": "RELAX",
+        "clue": "To release tension and stress",
+        "clue2": "A 5-letter word that starts with R and ends with X."
+      },
+      {
+        "answer": "SERENITY",
+        "clue": "State of being calm and tranquil",
+        "clue2": "A 8-letter word that starts with S and ends with Y."
+      },
+      {
+        "answer": "SILENCE",
+        "clue": "Quiet often used during meditation",
+        "clue2": "A 7-letter word that starts with S and ends with E."
+      },
+      {
+        "answer": "STILLNESS",
+        "clue": "Complete calm without movement or noise",
+        "clue2": "A 9-letter word that starts and ends with S."
+      },
+      {
+        "answer": "UNWIND",
+        "clue": "To let go of stress after a busy day",
+        "clue2": "A 6-letter word that starts with U and ends with D."
+      },
+      {
+        "answer": "VISUALIZE",
+        "clue": "To form calming mental images",
+        "clue2": "A 9-letter word that starts with V and ends with E."
+      },
+      {
+        "answer": "WELLNESS",
+        "clue": "Overall state of healthy body and mind",
+        "clue2": "A 8-letter word that starts with W and ends with S."
+      }
+    ]
+  },
+  {
+    "puzzleId": 18,
+    "puzzleDate": "2026-05-05",
+    "theme": "Music Genres",
+    "entries": [
+      {
+        "answer": "BLUES",
+        "clue": "Soulful music style rooted in deep emotion",
+        "clue2": "A 5-letter word that starts with B and ends with S."
+      },
+      {
+        "answer": "COUNTRY",
+        "clue": "Genre known for storytelling and acoustic instruments",
+        "clue2": "A 7-letter word that starts with C and ends with Y."
+      },
+      {
+        "answer": "DISCO",
+        "clue": "Dance music popular in the 1970s",
+        "clue2": "A 5-letter word that starts with D and ends with O."
+      },
+      {
+        "answer": "EMO",
+        "clue": "Emotional style of alternative rock music",
+        "clue2": "A 3-letter word that starts with E and ends with O."
+      },
+      {
+        "answer": "FOLK",
+        "clue": "Traditional music often passed through generations",
+        "clue2": "A 4-letter word that starts with F and ends with K."
+      },
+      {
+        "answer": "FUNK",
+        "clue": "Groove-heavy music with strong bass rhythms",
+        "clue2": "A 4-letter word that starts with F and ends with K."
+      },
+      {
+        "answer": "GOSPEL",
+        "clue": "Spiritual music often performed in churches",
+        "clue2": "A 6-letter word that starts with G and ends with L."
+      },
+      {
+        "answer": "GRUNGE",
+        "clue": "Raw rock genre associated with Seattle in the 1990s",
+        "clue2": "A 6-letter word that starts with G and ends with E."
+      },
+      {
+        "answer": "JAZZ",
+        "clue": "Improvisational music style with deep roots in New Orleans",
+        "clue2": "A 4-letter word that starts with J and ends with Z."
+      },
+      {
+        "answer": "LATIN",
+        "clue": "Music influenced by rhythms from Central and South America",
+        "clue2": "A 5-letter word that starts with L and ends with N."
+      },
+      {
+        "answer": "METAL",
+        "clue": "Heavy, aggressive form of rock music",
+        "clue2": "A 5-letter word that starts with M and ends with L."
+      },
+      {
+        "answer": "OPERA",
+        "clue": "Dramatic musical performance with orchestral accompaniment",
+        "clue2": "A 5-letter word that starts with O and ends with A."
+      },
+      {
+        "answer": "POP",
+        "clue": "Catchy mainstream music genre",
+        "clue2": "A 3-letter word that starts and ends with P."
+      },
+      {
+        "answer": "PUNK",
+        "clue": "Fast, rebellious rock music style",
+        "clue2": "A 4-letter word that starts with P and ends with K."
+      },
+      {
+        "answer": "RAP",
+        "clue": "Rhythmic spoken lyrics over beats",
+        "clue2": "A 3-letter word that starts with R and ends with P."
+      },
+      {
+        "answer": "REGGAE",
+        "clue": "Jamaican genre known for laid-back rhythms",
+        "clue2": "A 6-letter word that starts with R and ends with E."
+      },
+      {
+        "answer": "ROCK",
+        "clue": "Popular genre driven by guitars and drums",
+        "clue2": "A 4-letter word that starts with R and ends with K."
+      },
+      {
+        "answer": "SALSA",
+        "clue": "Energetic Latin dance music style",
+        "clue2": "A 5-letter word that starts with S and ends with A."
+      },
+      {
+        "answer": "SOUL",
+        "clue": "Emotion-filled genre blending gospel and rhythm",
+        "clue2": "A 4-letter word that starts with S and ends with L."
+      },
+      {
+        "answer": "TECHNO",
+        "clue": "Electronic dance music with repetitive beats",
+        "clue2": "A 6-letter word that starts with T and ends with O."
+      }
+    ]
+  },
+  {
+    "puzzleId": 19,
+    "puzzleDate": "2026-05-12",
+    "theme": "Nature",
+    "entries": [
+      {
+        "answer": "AURORA",
+        "clue": "Colorful lights seen in northern skies",
+        "clue2": "A 6-letter word that starts and ends with A."
+      },
+      {
+        "answer": "CANYON",
+        "clue": "Deep valley carved by water over time",
+        "clue2": "A 6-letter word that starts with C and ends with N."
+      },
+      {
+        "answer": "CASCADE",
+        "clue": "Small waterfall flowing over rocks",
+        "clue2": "A 7-letter word that starts with C and ends with E."
+      },
+      {
+        "answer": "DESERT",
+        "clue": "Dry landscape with very little rainfall",
+        "clue2": "A 6-letter word that starts with D and ends with T."
+      },
+      {
+        "answer": "FOREST",
+        "clue": "Large area filled with trees and wildlife",
+        "clue2": "A 6-letter word that starts with F and ends with T."
+      },
+      {
+        "answer": "GLACIER",
+        "clue": "Slow-moving mass of ice",
+        "clue2": "A 7-letter word that starts with G and ends with R."
+      },
+      {
+        "answer": "ISLAND",
+        "clue": "Land completely surrounded by water",
+        "clue2": "A 6-letter word that starts with I and ends with D."
+      },
+      {
+        "answer": "JUNGLE",
+        "clue": "Dense tropical forest with rich wildlife",
+        "clue2": "A 6-letter word that starts with J and ends with E."
+      },
+      {
+        "answer": "LAGOON",
+        "clue": "Shallow body of water near the ocean",
+        "clue2": "A 6-letter word that starts with L and ends with N."
+      },
+      {
+        "answer": "MEADOW",
+        "clue": "Open grassy field filled with wildflowers",
+        "clue2": "A 6-letter word that starts with M and ends with W."
+      },
+      {
+        "answer": "MOUNTAIN",
+        "clue": "Very high natural rise of land",
+        "clue2": "A 8-letter word that starts with M and ends with N."
+      },
+      {
+        "answer": "OASIS",
+        "clue": "Fertile area found within a desert",
+        "clue2": "A 5-letter word that starts with O and ends with S."
+      },
+      {
+        "answer": "OCEAN",
+        "clue": "Vast body of salt water covering Earth",
+        "clue2": "A 5-letter word that starts with O and ends with N."
+      },
+      {
+        "answer": "PRAIRIE",
+        "clue": "Wide open grassland landscape",
+        "clue2": "A 7-letter word that starts with P and ends with E."
+      },
+      {
+        "answer": "RAINFOREST",
+        "clue": "Dense forest with heavy rainfall year-round",
+        "clue2": "A 10-letter word that starts with R and ends with T."
+      },
+      {
+        "answer": "RIVER",
+        "clue": "Natural flowing body of water",
+        "clue2": "A 5-letter word that starts and ends with R."
+      },
+      {
+        "answer": "SUNRISE",
+        "clue": "The moment the sun appears in the morning",
+        "clue2": "A 7-letter word that starts with S and ends with E."
+      },
+      {
+        "answer": "SUNSET",
+        "clue": "The colorful close of the day",
+        "clue2": "A 6-letter word that starts with S and ends with T."
+      },
+      {
+        "answer": "VALLEY",
+        "clue": "Low land between hills or mountains",
+        "clue2": "A 6-letter word that starts with V and ends with Y."
+      },
+      {
+        "answer": "VOLCANO",
+        "clue": "Mountain that can erupt with lava",
+        "clue2": "A 7-letter word that starts with V and ends with O."
+      }
+    ]
+  },
+  {
+    "puzzleId": 20,
+    "puzzleDate": "2026-05-19",
+    "theme": "Ocean Life",
+    "entries": [
+      {
+        "answer": "CLAM",
+        "clue": "Shellfish that lives buried in sand",
+        "clue2": "A 4-letter word that starts with C and ends with M."
+      },
+      {
+        "answer": "CORAL",
+        "clue": "Colorful reef-building sea organism",
+        "clue2": "A 5-letter word that starts with C and ends with L."
+      },
+      {
+        "answer": "DOLPHIN",
+        "clue": "Highly intelligent marine mammal",
+        "clue2": "A 7-letter word that starts with D and ends with N."
+      },
+      {
+        "answer": "JELLYFISH",
+        "clue": "Soft-bodied sea creature with stinging tentacles",
+        "clue2": "A 9-letter word that starts with J and ends with H."
+      },
+      {
+        "answer": "KELP",
+        "clue": "Large seaweed found in underwater forests",
+        "clue2": "A 4-letter word that starts with K and ends with P."
+      },
+      {
+        "answer": "LOBSTER",
+        "clue": "Large crustacean with strong claws",
+        "clue2": "A 7-letter word that starts with L and ends with R."
+      },
+      {
+        "answer": "MANATEE",
+        "clue": "Gentle marine mammal sometimes called a sea cow",
+        "clue2": "A 7-letter word that starts with M and ends with E."
+      },
+      {
+        "answer": "NARWHAL",
+        "clue": "Arctic whale known for its long tusk",
+        "clue2": "A 7-letter word that starts with N and ends with L."
+      },
+      {
+        "answer": "OCTOPUS",
+        "clue": "Eight-armed sea creature known for intelligence",
+        "clue2": "A 7-letter word that starts with O and ends with S."
+      },
+      {
+        "answer": "ORCA",
+        "clue": "Black-and-white whale also called a killer whale",
+        "clue2": "A 4-letter word that starts with O and ends with A."
+      },
+      {
+        "answer": "OTTER",
+        "clue": "Playful aquatic mammal that floats on its back",
+        "clue2": "A 5-letter word that starts with O and ends with R."
+      },
+      {
+        "answer": "OYSTER",
+        "clue": "Shellfish sometimes known for producing pearls",
+        "clue2": "A 6-letter word that starts with O and ends with R."
+      },
+      {
+        "answer": "PELICAN",
+        "clue": "Large seabird with a pouch-like bill",
+        "clue2": "A 7-letter word that starts with P and ends with N."
+      },
+      {
+        "answer": "PUFFER",
+        "clue": "Fish that inflates itself when threatened",
+        "clue2": "A 6-letter word that starts with P and ends with R."
+      },
+      {
+        "answer": "SEAHORSE",
+        "clue": "Tiny fish with a curled tail and horse-like head",
+        "clue2": "A 8-letter word that starts with S and ends with E."
+      },
+      {
+        "answer": "SEAL",
+        "clue": "Marine mammal often seen resting on rocks",
+        "clue2": "A 4-letter word that starts with S and ends with L."
+      },
+      {
+        "answer": "SHARK",
+        "clue": "Predatory fish with rows of sharp teeth",
+        "clue2": "A 5-letter word that starts with S and ends with K."
+      },
+      {
+        "answer": "SQUID",
+        "clue": "Fast-swimming sea creature with tentacles",
+        "clue2": "A 5-letter word that starts with S and ends with D."
+      },
+      {
+        "answer": "STARFISH",
+        "clue": "Sea creature with radiating arms",
+        "clue2": "A 8-letter word that starts with S and ends with H."
+      },
+      {
+        "answer": "WALRUS",
+        "clue": "Large Arctic marine mammal with tusks",
+        "clue2": "A 6-letter word that starts with W and ends with S."
+      }
+    ]
+  },
+  {
+    "puzzleId": 21,
+    "puzzleDate": "2026-05-26",
+    "theme": "Philosophy",
+    "entries": [
+      {
+        "answer": "ETHICS",
+        "clue": "Study of right and wrong behavior",
+        "clue2": "A 6-letter word that starts with E and ends with S."
+      },
+      {
+        "answer": "LOGIC",
+        "clue": "Reasoning based on valid principles",
+        "clue2": "A 5-letter word that starts with L and ends with C."
+      },
+      {
+        "answer": "MORALS",
+        "clue": "Personal beliefs about right and wrong",
+        "clue2": "A 6-letter word that starts with M and ends with S."
+      },
+      {
+        "answer": "REASON",
+        "clue": "Ability to think clearly and rationally",
+        "clue2": "A 6-letter word that starts with R and ends with N."
+      },
+      {
+        "answer": "TRUTH",
+        "clue": "What is real or accurate",
+        "clue2": "A 5-letter word that starts with T and ends with H."
+      },
+      {
+        "answer": "VIRTUE",
+        "clue": "Moral excellence or good character",
+        "clue2": "A 6-letter word that starts with V and ends with E."
+      },
+      {
+        "answer": "WISDOM",
+        "clue": "Deep understanding gained through experience",
+        "clue2": "A 6-letter word that starts with W and ends with M."
+      },
+      {
+        "answer": "BELIEF",
+        "clue": "Something accepted as true",
+        "clue2": "A 6-letter word that starts with B and ends with F."
+      },
+      {
+        "answer": "JUSTICE",
+        "clue": "Fair treatment under laws or principles",
+        "clue2": "A 7-letter word that starts with J and ends with E."
+      },
+      {
+        "answer": "LIBERTY",
+        "clue": "Freedom from unnecessary control",
+        "clue2": "A 7-letter word that starts with L and ends with Y."
+      },
+      {
+        "answer": "MEANING",
+        "clue": "Sense of purpose or significance in life",
+        "clue2": "A 7-letter word that starts with M and ends with G."
+      },
+      {
+        "answer": "REALITY",
+        "clue": "The state of things as they truly exist",
+        "clue2": "A 7-letter word that starts with R and ends with Y."
+      },
+      {
+        "answer": "SOCRATES",
+        "clue": "Ancient Greek philosopher known for questioning ideas",
+        "clue2": "A 8-letter word that starts and ends with S."
+      },
+      {
+        "answer": "PLATO",
+        "clue": "Greek philosopher who wrote about ideal forms",
+        "clue2": "A 5-letter word that starts with P and ends with O."
+      },
+      {
+        "answer": "ARISTOTLE",
+        "clue": "Greek thinker who studied logic and science",
+        "clue2": "A 9-letter word that starts with A and ends with E."
+      },
+      {
+        "answer": "STOICISM",
+        "clue": "Philosophy focused on self-control and resilience",
+        "clue2": "A 8-letter word that starts with S and ends with M."
+      },
+      {
+        "answer": "NIHILISM",
+        "clue": "Belief that life lacks inherent meaning",
+        "clue2": "A 8-letter word that starts with N and ends with M."
+      },
+      {
+        "answer": "DUALISM",
+        "clue": "Idea that mind and body are separate",
+        "clue2": "A 7-letter word that starts with D and ends with M."
+      },
+      {
+        "answer": "MAXIMS",
+        "clue": "Short statements expressing general truths",
+        "clue2": "A 6-letter word that starts with M and ends with S."
+      },
+      {
+        "answer": "DEBATE",
+        "clue": "Formal discussion involving opposing viewpoints",
+        "clue2": "A 6-letter word that starts with D and ends with E."
+      }
+    ]
+  },
+  {
+    "puzzleId": 22,
+    "puzzleDate": "2026-06-02",
+    "theme": "Photography",
+    "entries": [
+      {
+        "answer": "APERTURE",
+        "clue": "Opening in a lens that controls light entry",
+        "clue2": "A 8-letter word that starts with A and ends with E."
+      },
+      {
+        "answer": "BOKEH",
+        "clue": "Soft blur effect in out-of-focus backgrounds",
+        "clue2": "A 5-letter word that starts with B and ends with H."
+      },
+      {
+        "answer": "CAMERA",
+        "clue": "Device used to capture photographs",
+        "clue2": "A 6-letter word that starts with C and ends with A."
+      },
+      {
+        "answer": "CANDID",
+        "clue": "Natural photo taken without posing",
+        "clue2": "A 6-letter word that starts with C and ends with D."
+      },
+      {
+        "answer": "CONTRAST",
+        "clue": "Difference between light and dark areas",
+        "clue2": "A 8-letter word that starts with C and ends with T."
+      },
+      {
+        "answer": "CROP",
+        "clue": "To trim unwanted parts of an image",
+        "clue2": "A 4-letter word that starts with C and ends with P."
+      },
+      {
+        "answer": "EXPOSURE",
+        "clue": "Amount of light captured in a photograph",
+        "clue2": "A 8-letter word that starts and ends with E."
+      },
+      {
+        "answer": "FILTER",
+        "clue": "Accessory used to alter light or color",
+        "clue2": "A 6-letter word that starts with F and ends with R."
+      },
+      {
+        "answer": "FLASH",
+        "clue": "Burst of light used in low-light conditions",
+        "clue2": "A 5-letter word that starts with F and ends with H."
+      },
+      {
+        "answer": "FOCUS",
+        "clue": "Adjustment that makes a subject appear sharp",
+        "clue2": "A 5-letter word that starts with F and ends with S."
+      },
+      {
+        "answer": "FRAMING",
+        "clue": "How elements are arranged within a photo",
+        "clue2": "A 7-letter word that starts with F and ends with G."
+      },
+      {
+        "answer": "ISO",
+        "clue": "Camera setting that controls light sensitivity",
+        "clue2": "A 3-letter word that starts with I and ends with O."
+      },
+      {
+        "answer": "LANDSCAPE",
+        "clue": "Photo featuring scenery or natural views",
+        "clue2": "A 9-letter word that starts with L and ends with E."
+      },
+      {
+        "answer": "LENS",
+        "clue": "Optical component that gathers and directs light",
+        "clue2": "A 4-letter word that starts with L and ends with S."
+      },
+      {
+        "answer": "MACRO",
+        "clue": "Style of photography for close-up subjects",
+        "clue2": "A 5-letter word that starts with M and ends with O."
+      },
+      {
+        "answer": "PORTRAIT",
+        "clue": "Photograph focused on a person",
+        "clue2": "A 8-letter word that starts with P and ends with T."
+      },
+      {
+        "answer": "SHUTTER",
+        "clue": "Camera mechanism that controls exposure time",
+        "clue2": "A 7-letter word that starts with S and ends with R."
+      },
+      {
+        "answer": "SNAPSHOT",
+        "clue": "Casual photograph taken quickly",
+        "clue2": "A 8-letter word that starts with S and ends with T."
+      },
+      {
+        "answer": "TRIPOD",
+        "clue": "Three-legged stand that stabilizes a camera",
+        "clue2": "A 6-letter word that starts with T and ends with D."
+      },
+      {
+        "answer": "ZOOM",
+        "clue": "To make a subject appear closer",
+        "clue2": "A 4-letter word that starts with Z and ends with M."
+      }
+    ]
+  },
+  {
+    "puzzleId": 23,
+    "puzzleDate": "2026-06-09",
+    "theme": "Popular Hobbies",
+    "entries": [
+      {
+        "answer": "BAKING",
+        "clue": "Making breads, cakes, and other treats",
+        "clue2": "A 6-letter word that starts with B and ends with G."
+      },
+      {
+        "answer": "BLOGGING",
+        "clue": "Writing and sharing content online",
+        "clue2": "A 8-letter word that starts with B and ends with G."
+      },
+      {
+        "answer": "CAMPING",
+        "clue": "Spending time outdoors, often in a tent",
+        "clue2": "A 7-letter word that starts with C and ends with G."
+      },
+      {
+        "answer": "CRAFMTS",
+        "clue": "Creative projects made by hand",
+        "clue2": "A 7-letter word that starts with C and ends with S."
+      },
+      {
+        "answer": "CYCLING",
+        "clue": "Riding a bicycle for fun or fitness",
+        "clue2": "A 7-letter word that starts with C and ends with G."
+      },
+      {
+        "answer": "DRAWING",
+        "clue": "Creating pictures with pencils or pens",
+        "clue2": "A 7-letter word that starts with D and ends with G."
+      },
+      {
+        "answer": "FISHING",
+        "clue": "Catching fish for recreation",
+        "clue2": "A 7-letter word that starts with F and ends with G."
+      },
+      {
+        "answer": "GAMING",
+        "clue": "Playing video or tabletop games",
+        "clue2": "A 6-letter word that starts and ends with G."
+      },
+      {
+        "answer": "GARDENING",
+        "clue": "Growing flowers, vegetables, or plants",
+        "clue2": "A 9-letter word that starts and ends with G."
+      },
+      {
+        "answer": "HIKING",
+        "clue": "Walking on trails through nature",
+        "clue2": "A 6-letter word that starts with H and ends with G."
+      },
+      {
+        "answer": "KNITTING",
+        "clue": "Making fabric from yarn and needles",
+        "clue2": "A 8-letter word that starts with K and ends with G."
+      },
+      {
+        "answer": "PAINTING",
+        "clue": "Creating artwork with brushes and color",
+        "clue2": "A 8-letter word that starts with P and ends with G."
+      },
+      {
+        "answer": "CRAFTING",
+        "clue": "Making creative projects by hand",
+        "clue2": "A 8-letter word that starts with C and ends with G."
+      },
+      {
+        "answer": "READING",
+        "clue": "Enjoying books, magazines, or articles",
+        "clue2": "A 7-letter word that starts with R and ends with G."
+      },
+      {
+        "answer": "SEWING",
+        "clue": "Joining fabric with needle and thread",
+        "clue2": "A 6-letter word that starts with S and ends with G."
+      },
+      {
+        "answer": "SKETCHING",
+        "clue": "Making quick drawings by hand",
+        "clue2": "A 9-letter word that starts with S and ends with G."
+      },
+      {
+        "answer": "TRAVEL",
+        "clue": "Visiting new places and destinations",
+        "clue2": "A 6-letter word that starts with T and ends with L."
+      },
+      {
+        "answer": "WOODWORK",
+        "clue": "Building or carving items from wood",
+        "clue2": "A 8-letter word that starts with W and ends with K."
+      },
+      {
+        "answer": "WRITING",
+        "clue": "Creating stories, articles, or journals",
+        "clue2": "A 7-letter word that starts with W and ends with G."
+      },
+      {
+        "answer": "YOGA",
+        "clue": "Practice combining movement, breathing, and mindfulness",
+        "clue2": "A 4-letter word that starts with Y and ends with A."
+      }
+    ]
+  },
+  {
+    "puzzleId": 24,
+    "puzzleDate": "2026-06-16",
+    "theme": "Science",
+    "entries": [
+      {
+        "answer": "ATOM",
+        "clue": "Basic building block of matter",
+        "clue2": "A 4-letter word that starts with A and ends with M."
+      },
+      {
+        "answer": "CELL",
+        "clue": "Smallest living unit of an organism",
+        "clue2": "A 4-letter word that starts with C and ends with L."
+      },
+      {
+        "answer": "DNA",
+        "clue": "Molecule that carries genetic information",
+        "clue2": "A 3-letter word that starts with D and ends with A."
+      },
+      {
+        "answer": "ENERGY",
+        "clue": "Ability to do work or cause change",
+        "clue2": "A 6-letter word that starts with E and ends with Y."
+      },
+      {
+        "answer": "FOSSIL",
+        "clue": "Preserved remains of an ancient organism",
+        "clue2": "A 6-letter word that starts with F and ends with L."
+      },
+      {
+        "answer": "GALAXY",
+        "clue": "Huge collection of stars, gas, and dust",
+        "clue2": "A 6-letter word that starts with G and ends with Y."
+      },
+      {
+        "answer": "GENE",
+        "clue": "Unit of heredity passed from parents to offspring",
+        "clue2": "A 4-letter word that starts with G and ends with E."
+      },
+      {
+        "answer": "GRAVITY",
+        "clue": "Force that pulls objects toward one another",
+        "clue2": "A 7-letter word that starts with G and ends with Y."
+      },
+      {
+        "answer": "LAB",
+        "clue": "Place where scientific experiments are conducted",
+        "clue2": "A 3-letter word that starts with L and ends with B."
+      },
+      {
+        "answer": "LASER",
+        "clue": "Focused beam of intense light",
+        "clue2": "A 5-letter word that starts with L and ends with R."
+      },
+      {
+        "answer": "MAGNET",
+        "clue": "Object that attracts certain metals",
+        "clue2": "A 6-letter word that starts with M and ends with T."
+      },
+      {
+        "answer": "MOLECULE",
+        "clue": "Group of atoms bonded together",
+        "clue2": "A 8-letter word that starts with M and ends with E."
+      },
+      {
+        "answer": "NEURON",
+        "clue": "Nerve cell that transmits information",
+        "clue2": "A 6-letter word that starts and ends with N."
+      },
+      {
+        "answer": "ORBIT",
+        "clue": "Path of one object around another in space",
+        "clue2": "A 5-letter word that starts with O and ends with T."
+      },
+      {
+        "answer": "PLASMA",
+        "clue": "State of matter found in stars",
+        "clue2": "A 6-letter word that starts with P and ends with A."
+      },
+      {
+        "answer": "PROTON",
+        "clue": "Positively charged particle in an atom",
+        "clue2": "A 6-letter word that starts with P and ends with N."
+      },
+      {
+        "answer": "ROCKET",
+        "clue": "Vehicle designed for travel into space",
+        "clue2": "A 6-letter word that starts with R and ends with T."
+      },
+      {
+        "answer": "THEORY",
+        "clue": "Well-supported explanation of natural phenomena",
+        "clue2": "A 6-letter word that starts with T and ends with Y."
+      },
+      {
+        "answer": "VIRUS",
+        "clue": "Tiny infectious agent that requires a host",
+        "clue2": "A 5-letter word that starts with V and ends with S."
+      },
+      {
+        "answer": "WAVES",
+        "clue": "Disturbances that transfer energy through a medium",
+        "clue2": "A 5-letter word that starts with W and ends with S."
+      }
+    ]
+  },
+  {
+    "puzzleId": 25,
+    "puzzleDate": "2026-06-23",
+    "theme": "Space",
+    "entries": [
+      {
+        "answer": "ASTEROID",
+        "clue": "Rocky object orbiting the Sun",
+        "clue2": "A 8-letter word that starts with A and ends with D."
+      },
+      {
+        "answer": "COMET",
+        "clue": "Icy object that develops a glowing tail",
+        "clue2": "A 5-letter word that starts with C and ends with T."
+      },
+      {
+        "answer": "COSMOS",
+        "clue": "The universe viewed as an ordered system",
+        "clue2": "A 6-letter word that starts with C and ends with S."
+      },
+      {
+        "answer": "CRATER",
+        "clue": "Bowl-shaped depression found on planets and moons",
+        "clue2": "A 6-letter word that starts with C and ends with R."
+      },
+      {
+        "answer": "ECLIPSE",
+        "clue": "Event where one celestial body blocks another",
+        "clue2": "A 7-letter word that starts and ends with E."
+      },
+      {
+        "answer": "GALAXY",
+        "clue": "Massive collection of stars, gas, and dust",
+        "clue2": "A 6-letter word that starts with G and ends with Y."
+      },
+      {
+        "answer": "JUPITER",
+        "clue": "Largest planet in our solar system",
+        "clue2": "A 7-letter word that starts with J and ends with R."
+      },
+      {
+        "answer": "MARS",
+        "clue": "The red planet",
+        "clue2": "A 4-letter word that starts with M and ends with S."
+      },
+      {
+        "answer": "METEOR",
+        "clue": "Streak of light from a space rock entering Earth's atmosphere",
+        "clue2": "A 6-letter word that starts with M and ends with R."
+      },
+      {
+        "answer": "NEBULA",
+        "clue": "Cloud of gas and dust in space",
+        "clue2": "A 6-letter word that starts with N and ends with A."
+      },
+      {
+        "answer": "ORBIT",
+        "clue": "Path followed by an object around another object",
+        "clue2": "A 5-letter word that starts with O and ends with T."
+      },
+      {
+        "answer": "PLANET",
+        "clue": "Large body that travels around a star",
+        "clue2": "A 6-letter word that starts with P and ends with T."
+      },
+      {
+        "answer": "ROCKET",
+        "clue": "Vehicle used for space travel",
+        "clue2": "A 6-letter word that starts with R and ends with T."
+      },
+      {
+        "answer": "SATURN",
+        "clue": "Planet famous for its rings",
+        "clue2": "A 6-letter word that starts with S and ends with N."
+      },
+      {
+        "answer": "SHUTTLE",
+        "clue": "Reusable spacecraft used by NASA",
+        "clue2": "A 7-letter word that starts with S and ends with E."
+      },
+      {
+        "answer": "SOLAR",
+        "clue": "Relating to the Sun",
+        "clue2": "A 5-letter word that starts with S and ends with R."
+      },
+      {
+        "answer": "SPACEX",
+        "clue": "Private company known for reusable rockets",
+        "clue2": "A 6-letter word that starts with S and ends with X."
+      },
+      {
+        "answer": "STAR",
+        "clue": "Massive glowing sphere of hot gas",
+        "clue2": "A 4-letter word that starts with S and ends with R."
+      },
+      {
+        "answer": "SUNSPOT",
+        "clue": "Dark, cooler area on the Sun's surface",
+        "clue2": "A 7-letter word that starts with S and ends with T."
+      },
+      {
+        "answer": "VENUS",
+        "clue": "Planet often called Earth's twin",
+        "clue2": "A 5-letter word that starts with V and ends with S."
+      }
+    ]
+  },
+  {
+    "puzzleId": 26,
+    "puzzleDate": "2026-06-30",
+    "theme": "Technology",
+    "entries": [
+      {
+        "answer": "ALGORITHM",
+        "clue": "Step-by-step instructions for solving a problem",
+        "clue2": "A 9-letter word that starts with A and ends with M."
+      },
+      {
+        "answer": "ANDROID",
+        "clue": "Popular operating system used on many smartphones",
+        "clue2": "A 7-letter word that starts with A and ends with D."
+      },
+      {
+        "answer": "BROWSER",
+        "clue": "Program used to access websites",
+        "clue2": "A 7-letter word that starts with B and ends with R."
+      },
+      {
+        "answer": "CODING",
+        "clue": "Writing instructions for computers",
+        "clue2": "A 6-letter word that starts with C and ends with G."
+      },
+      {
+        "answer": "CLOUD",
+        "clue": "Remote online storage and computing services",
+        "clue2": "A 5-letter word that starts with C and ends with D."
+      },
+      {
+        "answer": "CURSOR",
+        "clue": "Blinking indicator showing where text will appear",
+        "clue2": "A 6-letter word that starts with C and ends with R."
+      },
+      {
+        "answer": "DATA",
+        "clue": "Information processed by computers",
+        "clue2": "A 4-letter word that starts with D and ends with A."
+      },
+      {
+        "answer": "DIGITAL",
+        "clue": "Based on electronic technology and binary data",
+        "clue2": "A 7-letter word that starts with D and ends with L."
+      },
+      {
+        "answer": "DOMAIN",
+        "clue": "Unique address used to identify a website",
+        "clue2": "A 6-letter word that starts with D and ends with N."
+      },
+      {
+        "answer": "EMAIL",
+        "clue": "Electronic message sent over the internet",
+        "clue2": "A 5-letter word that starts with E and ends with L."
+      },
+      {
+        "answer": "GADGET",
+        "clue": "Small technological device with a useful function",
+        "clue2": "A 6-letter word that starts with G and ends with T."
+      },
+      {
+        "answer": "LAPTOP",
+        "clue": "Portable personal computer",
+        "clue2": "A 6-letter word that starts with L and ends with P."
+      },
+      {
+        "answer": "NETWORK",
+        "clue": "Connected system of computers and devices",
+        "clue2": "A 7-letter word that starts with N and ends with K."
+      },
+      {
+        "answer": "ONLINE",
+        "clue": "Connected to the internet",
+        "clue2": "A 6-letter word that starts with O and ends with E."
+      },
+      {
+        "answer": "PASSWORD",
+        "clue": "Secret word used to access an account",
+        "clue2": "A 8-letter word that starts with P and ends with D."
+      },
+      {
+        "answer": "ROBOT",
+        "clue": "Machine capable of carrying out tasks automatically",
+        "clue2": "A 5-letter word that starts with R and ends with T."
+      },
+      {
+        "answer": "SERVER",
+        "clue": "Computer that provides services to other computers",
+        "clue2": "A 6-letter word that starts with S and ends with R."
+      },
+      {
+        "answer": "TABLET",
+        "clue": "Touchscreen device larger than a phone",
+        "clue2": "A 6-letter word that starts and ends with T."
+      },
+      {
+        "answer": "VIRTUAL",
+        "clue": "Existing in a digital rather than physical form",
+        "clue2": "A 7-letter word that starts with V and ends with L."
+      },
+      {
+        "answer": "WEBSITE",
+        "clue": "Collection of related web pages",
+        "clue2": "A 7-letter word that starts with W and ends with E."
+      }
+    ]
+  }
+]
