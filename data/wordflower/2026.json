@@ -1,41 +1,227 @@
 [
   {
-    "puzzleId": 91,
-    "puzzleDate": "2026-06-08",
-    "minWordLength": 4,
-    "pangramBonus": 7,
-    "centerLetter": "K",
-    "outerLetters": [
-      "I",
-      "Y",
-      "A",
-      "O",
-      "G",
-      "N"
-    ],
-    "allowedWords": [
-      "AKIN",
-      "GINKGO",
-      "INKING",
-      "KAYAK",
-      "KAYAKING",
-      "KAYOING",
-      "KINKING",
-      "KINKY",
-      "KONGO",
-      "KOOKY",
-      "NANAK",
-      "NANOOK",
-      "NIKKI",
-      "NIKON",
-      "NOKIA",
-      "NOOKY",
-      "OINKING",
-      "OKAYING",
-      "OKING",
-      "YAKKING",
-      "YANKING",
-      "YOKING"
-    ]
-  }
+  "puzzleId": 67,
+  "puzzleDate": "2026-01-07",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "C",
+  "outerLetters": ["N", "H", "E", "T", "R", "M"],
+  "allowedWords": ["CEMENT", "CEMENTER", "CENT", "CENTER", "CEREMENT", "CERMET", "CHEER", "CHEERER", "CRECHE", "CREME", "EMCEE", "ENTRENCH", "ENTRENCHMENT", "ERECT", "ETCH", "ETCHER", "HENCE", "HENCHMEN", "MERCER", "RECCE", "RECENT", "RECENTER", "RECHERCHE", "RETCH", "RETRENCH", "RETRENCHMENT", "THENCE", "TRENCH", "TRENCHER", "TRENCHERMEN"]
+},
+{
+  "puzzleId": 68,
+  "puzzleDate": "2026-01-14",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "F",
+  "outerLetters": ["E", "R", "M", "N", "S", "H"],
+  "allowedWords": ["FEES", "FEMME", "FEMMES", "FERN", "FERNS", "FESSES", "FREE", "FREEMEN", "FREER", "FREES", "FRESH", "FRESHEN", "FRESHENER", "FRESHENERS", "FRESHENS", "FRESHER", "FRESHERS", "FRESHMEN", "FRESHNESS", "REEF", "REEFER", "REEFERS", "REEFS", "REFER", "REFEREE", "REFEREES", "REFERRER", "REFERRERS", "REFERS", "REFRESH", "REFRESHER", "REFRESHERS", "REFRESHES"]
+},
+{
+  "puzzleId": 69,
+  "puzzleDate": "2026-01-21",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "L",
+  "outerLetters": ["V", "B", "N", "O", "T", "E"],
+  "allowedWords": ["BEETLE", "BELL", "BELLE", "BELT", "BENEVOLENT", "BEVEL", "BLOB", "BLOT", "BOBBLE", "BOLT", "BOTTLE", "ELEVEN", "ENNOBLE", "EVOLVE", "LENT", "LENTO", "LEVEE", "LEVEL", "LOBE", "LOLL", "LONE", "LOON", "LOOT", "LOTTO", "LOVE", "NETTLE", "NOBBLE", "NOBLE", "NOTELET", "NOVEL", "NOVELETTE", "TELL", "TELNET", "TOLL", "TOOL", "TOOTLE", "VELVET", "VELVETEEN", "VOLT"]
+},
+{
+  "puzzleId": 70,
+  "puzzleDate": "2026-01-28",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "V",
+  "outerLetters": ["E", "T", "S", "I", "P", "O"],
+  "allowedWords": ["EVES", "IVIES", "PEEVE", "PEEVES", "PIVOT", "PIVOTS", "POSITIVE", "POSITIVES", "POSITIVIST", "POSITIVISTS", "POSITIVITIES", "POSSESSIVE", "POSSESSIVES", "SIEVE", "SIEVES", "SOVIET", "SOVIETS", "STOVE", "STOVEPIPE", "STOVEPIPES", "STOVES", "STOVETOP", "STOVETOPS", "VEEPS", "VEST", "VESTS", "VETO", "VETOES", "VETS", "VIES", "VISE", "VISES", "VISIT", "VISITS", "VOTE", "VOTES", "VOTIVE"]
+},
+{
+  "puzzleId": 71,
+  "puzzleDate": "2026-02-04",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "U",
+  "outerLetters": ["R", "G", "O", "I", "N", "D"],
+  "allowedWords": ["DOUR", "DRUDGING", "DRUG", "DRUGGING", "DRUID", "DUDING", "DUNG", "DUNGING", "DUNNING", "DURING", "GOUGING", "GOURD", "GROUND", "GROUNDING", "GRUDGING", "GRUNION", "GUIDING", "GUNNING", "GUNRUNNING", "GURU", "INDUING", "INURING", "NONUNION", "NOUN", "NUDGING", "ROUGING", "ROUND", "ROUNDING", "RUIN", "RUING", "RUINING", "RUNG", "RUNNING", "UNDID", "UNDO", "UNDOING", "UNGRUDGING", "UNION", "URGING"]
+},
+{
+  "puzzleId": 72,
+  "puzzleDate": "2026-02-11",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "D",
+  "outerLetters": ["F", "S", "B", "L", "I", "O"],
+  "allowedWords": ["BIDS", "BILLFOLD", "BILLFOLDS", "BLOOD", "BLOODS", "BOLD", "DIDOS", "DILL", "DILLS", "DODO", "DODOS", "DOLL", "DOLLS", "FLOOD", "FLOODS", "FOLD", "FOLDS", "FOOD", "FOODS", "IDOL", "IDOLS", "LIBIDOS", "LIDOS", "LIDS", "ODDS", "SLID", "SODS", "SOLD", "SOLID", "SOLIDI", "SOLIDS"]
+},
+{
+  "puzzleId": 73,
+  "puzzleDate": "2026-02-18",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "C",
+  "outerLetters": ["L", "R", "I", "F", "S", "O"],
+  "allowedWords": ["CIRRI", "CISCO", "CLIFF", "CLIFFS", "COCOS", "COIFS", "COIL", "COILS", "COLIC", "COLOR", "COLORS", "COLOSSI", "COOL", "COOLS", "COOS", "CRIOLLO", "CRISIS", "CRISSCROSS", "CROSS", "FOLIC", "FROLIC", "FROLICS", "LOCOS", "ROCOCO", "SCISSOR", "SCISSORS", "SCOFF", "SCOFFS", "SCROLL", "SCROLLS", "SICS", "SIROCCO", "SIROCCOS"]
+},
+{
+  "puzzleId": 74,
+  "puzzleDate": "2026-02-25",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "F",
+  "outerLetters": ["X", "L", "I", "E", "Y", "D"],
+  "allowedWords": ["DEFIED", "DEFILE", "DEFILED", "DEFY", "DEIFIED", "DEIFY", "DIFFED", "EDIFIED", "EDIFY", "EFFED", "FEED", "FEEL", "FELL", "FELLED", "FIDDLE", "FIDDLED", "FIDDLY", "FIELD", "FIELDED", "FILE", "FILED", "FILL", "FILLY", "FIXED", "FIXEDLY", "FLED", "FLEE", "FLEX", "FLEXED", "FLIED", "LIFE"]
+},
+{
+  "puzzleId": 75,
+  "puzzleDate": "2026-03-04",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "A",
+  "outerLetters": ["H", "I", "G", "N", "K", "C"],
+  "allowedWords": ["ACACIA", "ACHING", "ACING", "AGAIN", "AGING", "AKIN", "ANGINA", "CACHING", "CAGING", "CAKING", "CANCAN", "CANING", "CANNING", "CHAIN", "CHAINING", "CHANCING", "CHANGING", "GAGGING", "GAIN", "GAINING", "GANG", "GANGING", "HACK", "HACKING", "HANG", "HANGING", "KHAKI", "KNACK", "NAGGING", "NIACIN"]
+},
+{
+  "puzzleId": 76,
+  "puzzleDate": "2026-03-11",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "L",
+  "outerLetters": ["Y", "R", "A", "I", "G", "P"],
+  "allowedWords": ["AIRILY", "AIRPLAY", "ALGAL", "ALLAY", "ALLY", "APPAL", "APPALL", "APPLY", "GAILY", "GALA", "GALL", "GIGGLY", "GILL", "GIRL", "GIRLY", "GRAIL", "GRILL", "LAIR", "LALLYGAG", "LIAR", "LILY", "LIPPY", "PAIL", "PALL", "PALLY", "PAPAL", "PAPILLA", "PAPILLARY", "PARLAY", "PILL", "PILLAR", "PLAGIARY", "PLAY", "PLAYA", "PLAYGIRL", "RAIL", "RALLY", "RIPPLY", "RIYAL"]
+},
+{
+  "puzzleId": 77,
+  "puzzleDate": "2026-03-18",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "H",
+  "outerLetters": ["P", "A", "R", "E", "L", "I"],
+  "allowedWords": ["ALPHA", "HAIL", "HAIR", "HAIRIER", "HALAL", "HALE", "HALER", "HALL", "HAPPIER", "HARE", "HARELIP", "HARP", "HARPER", "HARRIER", "HEAL", "HEALER", "HEAP", "HEAR", "HEARER", "HEEL", "HEIR", "HELLER", "HELP", "HELPER", "HERE", "HILL", "HILLIER", "HIPPER", "HIPPIE", "HIRE", "PARIAH", "PERIHELIA", "PERIPHERAL", "PHIAL", "REHEAR", "REHIRE"]
+},
+{
+  "puzzleId": 78,
+  "puzzleDate": "2026-03-25",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "F",
+  "outerLetters": ["P", "E", "T", "Y", "I", "R"],
+  "allowedWords": ["EFFETE", "FEET", "FERRET", "FERRY", "FETE", "FETTER", "FIERIER", "FIERY", "FIFER", "FIFTY", "FIRE", "FIREPIT", "FIRER", "FITTER", "FREE", "FREER", "FRET", "FRIPPERY", "FRITTER", "FRYER", "IFFIER", "PETRIFY", "PREFER", "PRETTIFY", "REEF", "REEFER", "REFER", "REFEREE", "REFERRER", "REFIT", "REIFY", "RIFE", "RIFER", "RIFT", "TERRIFY", "TIFF", "TYPIFY"]
+},
+{
+  "puzzleId": 79,
+  "puzzleDate": "2026-04-01",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "O",
+  "outerLetters": ["D", "E", "V", "R", "J", "Y"],
+  "allowedWords": ["DODDER", "DODDERED", "DODDERY", "DODO", "DOER", "DOOR", "DOVE", "DOVER", "DROVE", "DROVER", "ERODE", "ERODED", "ERROR", "JOYED", "JOYRODE", "ODDER", "ODOR", "ODORED", "ORDER", "ORDERED", "OVER", "OVERDO", "OVERJOY", "OVERJOYED", "OVERRODE", "REDO", "REORDER", "REORDERED", "RODE", "RODEO", "ROVED", "ROVER", "VOODOO", "VOODOOED"]
+},
+{
+  "puzzleId": 80,
+  "puzzleDate": "2026-04-08",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "H",
+  "outerLetters": ["G", "T", "N", "E", "R", "S"],
+  "allowedWords": ["ETHER", "HENS", "HERE", "HERS", "NETHER", "RESTRENGTHEN", "RESTRENGTHENS", "SEETHE", "SEETHES", "SHEEN", "SHEER", "SHEERER", "SHEEREST", "SHEERNESS", "SHEERS", "SHEET", "SHEETS", "STRENGTH", "STRENGTHEN", "STRENGTHENER", "STRENGTHENERS", "STRENGTHENS", "STRENGTHS", "TEETH", "TEETHE", "TEETHES", "TENTH", "TENTHS", "TETHER", "TETHERS", "THEN", "THERE", "THESE", "THESES", "THREE", "THREES", "THRESH", "THRESHER", "THRESHERS", "THRESHES"]
+},
+{
+  "puzzleId": 81,
+  "puzzleDate": "2026-04-15",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "H",
+  "outerLetters": ["I", "R", "E", "V", "C", "L"],
+  "allowedWords": ["CEVICHE", "CHEER", "CHEERER", "CHEERIER", "CHERVIL", "CHIC", "CHICER", "CHICHI", "CHICLE", "CHILI", "CHILL", "CHILLER", "CHILLIER", "CHIVE", "CLICHE", "CRECHE", "HEEL", "HEIR", "HELLER", "HELVE", "HERE", "HILL", "HILLIER", "HIRE", "HIVE", "LEECH", "RECHERCHE", "REHIRE", "RICH", "RICHER", "VEHICLE"]
+},
+{
+  "puzzleId": 82,
+  "puzzleDate": "2026-04-22",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "C",
+  "outerLetters": ["P", "T", "J", "R", "E", "O"],
+  "allowedWords": ["COERCE", "COERCER", "COOP", "COOPER", "COPE", "COPPER", "COPTER", "CORE", "CORER", "CORRECT", "CORRECTER", "CORRECTOR", "COTTER", "CREEP", "CREEPER", "CREPE", "CREPT", "CROP", "CROPPER", "EJECT", "EJECTOR", "ERECT", "ERECTOR", "OCTET", "PRECEPT", "PRECEPTOR", "PROCTOR", "PROJECT", "PROJECTOR", "PROTECT", "PROTECTOR", "RECCE", "RECEPTOR", "RECTO", "RECTOR", "REJECT", "ROCOCO"]
+},
+{
+  "puzzleId": 83,
+  "puzzleDate": "2026-04-29",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "F",
+  "outerLetters": ["N", "G", "U", "L", "I", "R"],
+  "allowedWords": ["FIGURING", "FILING", "FILL", "FINING", "FIRING", "FLING", "FLINGING", "FLUFF", "FLUFFING", "FLUNG", "FRIGGING", "FRILL", "FRINGING", "FULFIL", "FULFILL", "FULFILLING", "FULL", "FULLING", "FUNGI", "FURL", "FURLING", "FURRING", "GRIFFIN", "GRUFF", "GULF", "INFILL", "INFILLING", "INFRINGING", "LUFFING", "LUNGFUL", "RIFFING", "RIFFLING", "RIFLING", "RUFF", "RUFFING", "RUFFLING", "UNFULFILLING", "UNFURL", "UNFURLING"]
+},
+{
+  "puzzleId": 84,
+  "puzzleDate": "2026-05-06",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "G",
+  "outerLetters": ["E", "A", "C", "S", "N", "H"],
+  "allowedWords": ["AGES", "CAGE", "CAGES", "CHANGE", "CHANGES", "EGGS", "ENGAGE", "ENGAGES", "GAGS", "GANACHE", "GANACHES", "GANG", "GANGES", "GANGS", "GASES", "GASH", "GASHES", "GEES", "GEESE", "GENE", "GENES", "GENESES", "GNASH", "GNASHES", "HAGS", "HANG", "HANGS", "NAGS", "SAGA", "SAGAS", "SAGE", "SAGES", "SAGS", "SANG", "SNAG", "SNAGS"]
+},
+{
+  "puzzleId": 85,
+  "puzzleDate": "2026-05-13",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "O",
+  "outerLetters": ["L", "B", "E", "D", "Z", "U"],
+  "allowedWords": ["BLOB", "BLOBBED", "BLOOD", "BLOODED", "BLUEBLOOD", "BOBBED", "BOBBLE", "BOBBLED", "BODE", "BODED", "BOLD", "BOOBOO", "BOOED", "BULLDOZE", "BULLDOZED", "DOBBED", "DODDLE", "DODO", "DOLE", "DOLED", "DOLL", "DOODLE", "DOODLED", "DOUBLE", "DOUBLED", "DOZE", "DOZED", "LOBBED", "LOBE", "LOBED", "LOLL", "LOLLED", "LOUD", "OBOE", "OOZE", "OOZED"]
+},
+{
+  "puzzleId": 86,
+  "puzzleDate": "2026-05-20",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "C",
+  "outerLetters": ["P", "O", "I", "G", "N", "M"],
+  "allowedWords": ["COCOON", "COCOONING", "COIN", "COINING", "COMIC", "COMING", "COMMON", "COMPING", "COMPO", "CONIC", "CONING", "CONNING", "COOING", "COOP", "COOPING", "COPING", "COPPING", "GNOMIC", "ICING", "ICON", "ICONIC", "INCING", "INCOMING", "IONIC", "MIMIC", "MINCING", "NINCOMPOOP", "NONCOM", "ONCOMING", "PICNIC", "PONCING"]
+},
+{
+  "puzzleId": 87,
+  "puzzleDate": "2026-05-27",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "Y",
+  "outerLetters": ["P", "E", "B", "R", "S", "T"],
+  "allowedWords": ["BEERY", "BERRY", "BYES", "BYRES", "BYTE", "BYTES", "EYES", "PEPPERY", "PEPPY", "PERRY", "PETTY", "PREPPY", "PRESBYTER", "PRESBYTERS", "PRESBYTERY", "PRETTY", "PREY", "PREYS", "PYRE", "PYRES", "RETRY", "RETYPE", "RETYPES", "SPRY", "STYES", "TERRY", "TESTY", "TREYS", "TRYSTS", "TYPE", "TYPES", "TYPESET", "TYPESETS", "TYPESETTER", "TYPESETTERS", "YESES"]
+},
+{
+  "puzzleId": 88,
+  "puzzleDate": "2026-06-03",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "M",
+  "outerLetters": ["G", "D", "X", "N", "A", "I"],
+  "allowedWords": ["ADMAN", "ADMIX", "ADMIXING", "AIMING", "AMID", "DAMAGING", "DAMMING", "DIMMING", "GAMIN", "GAMING", "GAMMA", "IMAGING", "IMAGINING", "MADAM", "MADDING", "MADMAN", "MAGMA", "MAID", "MAIM", "MAIMING", "MAIN", "MAMA", "MAMMA", "MANAGING", "MANANA", "MANGA", "MANIA", "MANNA", "MAXIM", "MAXIMA", "MAXING", "MIMING", "MIND", "MINDING", "MINIM", "MINIMA", "MINING", "MIXING", "NAMING"]
+},
+{
+  "puzzleId": 89,
+  "puzzleDate": "2026-06-10",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "H",
+  "outerLetters": ["G", "I", "A", "N", "R", "C"],
+  "allowedWords": ["ACHING", "ANARCHIC", "ARCH", "ARCHAIC", "ARCHING", "CACHING", "CHAGRIN", "CHAGRINING", "CHAIN", "CHAINING", "CHAIR", "CHAIRING", "CHANCING", "CHANGING", "CHAR", "CHARGING", "CHARRING", "CHIC", "CHICHI", "CHIN", "CHINNING", "CINCH", "CINCHING", "HAIR", "HANG", "HANGAR", "HANGING", "HARING", "HIGH", "HIGHCHAIR", "HINGING", "HIRAGANA", "HIRING", "INCH", "INCHING", "NIGH", "RANCH", "RANCHING", "RICH"]
+},
+{
+  "puzzleId": 90,
+  "puzzleDate": "2026-06-17",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "Y",
+  "outerLetters": ["O", "D", "S", "T", "L", "I"],
+  "allowedWords": ["DIDDLY", "DILLY", "DITSY", "DITTY", "DOILY", "DOLLY", "DOTTY", "IDLY", "IDYLL", "IDYLLS", "LILY", "LOLLY", "ODDITY", "ODDLY", "OILY", "SILLY", "SILTY", "SISSY", "SLYLY", "SOLIDITY", "SOLIDLY", "SOOTY", "STOLIDITY", "STOLIDLY", "STYLI", "STYLIST", "STYLISTS", "TIDDLY", "TIDILY", "TIDY", "TODDY", "TOYS"]
+},
+{
+  "puzzleId": 91,
+  "puzzleDate": "2026-06-24",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "H",
+  "outerLetters": ["R", "C", "N", "E", "I", "U"],
+  "allowedWords": ["CHEER", "CHEERER", "CHEERIER", "CHIC", "CHICER", "CHICHI", "CHIN", "CHINE", "CHURCH", "CHURN", "CHURNER", "CINCH", "CRECHE", "CRUNCH", "CRUNCHER", "CRUNCHIER", "ENRICH", "EUCHRE", "EUNUCH", "HEIR", "HENCE", "HERE", "HEREIN", "HIRE", "HUNCH", "INCH", "INHERE", "NICHE", "RECHERCHE", "REHIRE", "RICH", "RICHER", "URCHIN"]
+}
 ]

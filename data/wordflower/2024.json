@@ -1,0 +1,119 @@
+[
+{
+  "puzzleId": 1,
+  "puzzleDate": "2024-10-02",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "H",
+  "outerLetters": ["W", "Z", "I", "S", "E", "N"],
+  "allowedWords": ["HENS", "HEWN", "HEWS", "HINES", "HISS", "HISSES", "NEWISH", "SHEEN", "SHIES", "SHIN", "SHINE", "SHINES", "SHININESS", "SHINNIES", "SHINS", "SWINISH", "SWISH", "SWISHES", "WHEEZE", "WHEEZES", "WHEEZINESS", "WHEN", "WHENS", "WHEW", "WHINE", "WHINES", "WHINNIES", "WHIZ", "WHIZZES", "WISH", "WISHES"]
+},
+{
+  "puzzleId": 2,
+  "puzzleDate": "2024-10-09",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "C",
+  "outerLetters": ["N", "E", "I", "X", "T", "D"],
+  "allowedWords": ["CEDE", "CEDED", "CENT", "CITE", "CITED", "DECEDENT", "DECEIT", "DECENT", "DECIDE", "DECIDED", "DEICE", "DEICED", "DETECT", "DETECTED", "DICE", "DICED", "DIETETIC", "EDICT", "ENTICE", "ENTICED", "EXCEED", "EXCEEDED", "EXCITE", "EXCITED", "EXTINCT", "EXTINCTED", "ICED", "INCED", "INCIDENCE", "INCIDENT", "INCITE", "INCITED", "INDECENT", "INDICT", "INDICTED", "NICE", "NIECE"]
+},
+{
+  "puzzleId": 3,
+  "puzzleDate": "2024-10-16",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "F",
+  "outerLetters": ["A", "M", "O", "L", "R", "S"],
+  "allowedWords": ["AFAR", "ALFALFA", "ALOOF", "FALL", "FALLOFF", "FALLOFFS", "FALLS", "FARM", "FARMS", "FLOOR", "FLOORS", "FLORA", "FLORAL", "FLORALS", "FLORAS", "FLOSS", "FOAL", "FOALS", "FOAM", "FOAMS", "FOOL", "FOOLS", "FORM", "FORMAL", "FORMALS", "FORMS", "FOSSA", "FROM", "LOAF", "LOAFS", "OAFS", "OFFAL", "OFFS", "ROOF", "ROOFS", "SASSAFRAS", "SOFA", "SOFAS"]
+},
+{
+  "puzzleId": 4,
+  "puzzleDate": "2024-10-23",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "R",
+  "outerLetters": ["N", "E", "C", "U", "P", "H"],
+  "allowedWords": ["CHEER", "CHEERER", "CHURCH", "CHURN", "CHURNER", "CRECHE", "CREEP", "CREEPER", "CREPE", "CRUNCH", "CRUNCHER", "CRUPPER", "CURE", "CURER", "ENURE", "EUCHRE", "HERE", "PEEPER", "PEER", "PEPPER", "PERCH", "PREEN", "PRENUP", "PREPUCE", "PRUNE", "PRUNER", "PUNCHER", "PURE", "PUREE", "PURER", "PURR", "RECCE", "RECHERCHE", "RECUR", "RECURRENCE", "RERUN", "RUNNER", "RUPEE", "UPPER"]
+},
+{
+  "puzzleId": 5,
+  "puzzleDate": "2024-10-30",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "T",
+  "outerLetters": ["N", "O", "D", "I", "C", "U"],
+  "allowedWords": ["COCONUT", "CONCOCT", "CONCOCTION", "CONDITION", "CONDUCT", "CONDUCTION", "CONDUIT", "COTTON", "COUNT", "CUTOUT", "DICTION", "DITTO", "DONUT", "DUCT", "IDIOT", "IDIOTIC", "INDICT", "INDUCT", "INDUCTION", "INITIO", "INNIT", "INTO", "INTUIT", "INTUITION", "NOTION", "ONTO", "OUTDID", "OUTDO", "TINT", "TONIC", "TOOT", "TUITION", "TUNIC", "TUTTI", "UNCTION", "UNCUT", "UNTO"]
+},
+{
+  "puzzleId": 6,
+  "puzzleDate": "2024-11-06",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "M",
+  "outerLetters": ["G", "R", "O", "N", "L", "E"],
+  "allowedWords": ["ELMER", "EMERGE", "GENOME", "GERM", "GLOOM", "GNOME", "GOLEM", "GREENROOM", "GROOM", "GROOMER", "LEGMEN", "LEGROOM", "LEMME", "LEMON", "LOOM", "MELEE", "MELON", "MEMO", "MERE", "MERGE", "MERGER", "MERLE", "MERMEN", "MOLE", "MONGER", "MONGOL", "MONGREL", "MONOMER", "MOON", "MOOR", "MORE", "MOREL", "MORN", "MORON", "NORM", "OMEN", "REEMERGE", "ROMEO", "ROOM", "ROOMER"]
+},
+{
+  "puzzleId": 7,
+  "puzzleDate": "2024-11-13",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "P",
+  "outerLetters": ["G", "N", "A", "K", "C", "I"],
+  "allowedWords": ["APING", "CAPPING", "GAPING", "KAPPA", "KINGPIN", "KIPPING", "NAPKIN", "NAPPING", "NIPPING", "PACING", "PACK", "PACKAGING", "PACKING", "PAGAN", "PAGING", "PAIN", "PAINING", "PANCAKING", "PANG", "PANIC", "PANICKING", "PANINI", "PANNING", "PAPA", "PICK", "PICKING", "PICNIC", "PICNICKING", "PIGGING", "PIING", "PIKING", "PINGING", "PINING", "PINK", "PINKING", "PINNING", "PIPING", "PIPPIN", "PIPPING"]
+},
+{
+  "puzzleId": 8,
+  "puzzleDate": "2024-11-20",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "F",
+  "outerLetters": ["H", "I", "E", "G", "L", "R"],
+  "allowedWords": ["FEEL", "FEELER", "FELL", "FELLER", "FIERIER", "FIFER", "FILE", "FILER", "FILIGREE", "FILL", "FILLER", "FIRE", "FIRER", "FLEE", "FLIER", "FREE", "FREER", "FRILL", "FRILLIER", "GRIEF", "HEIFER", "HELLFIRE", "HIGHFLIER", "IFFIER", "LIEFER", "LIFE", "LIFER", "REEF", "REFER", "REFEREE", "REFERRER", "REFILE", "REFILL", "RELIEF", "RIFE", "RIFER", "RIFFLE", "RIFLE", "RIFLER"]
+},
+{
+  "puzzleId": 9,
+  "puzzleDate": "2024-11-27",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "K",
+  "outerLetters": ["L", "W", "E", "S", "P", "O"],
+  "allowedWords": ["EKES", "ELKS", "KEEL", "KEELS", "KEEP", "KEEPS", "KELP", "KOOKS", "KOPEK", "KOPEKS", "LEEK", "LEEKS", "LOOK", "LOOKS", "PEEK", "PEEKS", "PEKES", "PEKOE", "POKE", "POKES", "SEEK", "SEEKS", "SKEW", "SKEWS", "SLEEK", "SLEEKS", "SLOWPOKE", "SLOWPOKES", "SPOKE", "SPOKES", "SPOKESPEOPLE", "SPOOK", "SPOOKS", "WEEK", "WEEKS", "WOKE", "WOKS"]
+},
+{
+  "puzzleId": 10,
+  "puzzleDate": "2024-12-04",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "T",
+  "outerLetters": ["A", "U", "C", "F", "E", "O"],
+  "allowedWords": ["ACETATE", "ACTUATE", "ACUTE", "AFFECT", "AFOOT", "AUTO", "COAT", "CUTE", "CUTOFF", "CUTOUT", "EFFECT", "EFFECTUATE", "EFFETE", "FACET", "FACT", "FATE", "FAUCET", "FEAT", "FEET", "FETE", "FOOT", "OCTET", "OUTFACE", "OUTTA", "TACO", "TACT", "TAFFETA", "TATTOO", "TAUT", "TEAT", "TOCCATA", "TOFFEE", "TOOT", "TOTE", "TUFT"]
+},
+{
+  "puzzleId": 11,
+  "puzzleDate": "2024-12-11",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "O",
+  "outerLetters": ["F", "A", "N", "R", "G", "I"],
+  "allowedWords": ["AGGRO", "ARGON", "FARRAGO", "FOGGING", "FORAGING", "FORGING", "FORGO", "FORGOING", "FROG", "GOING", "GONG", "GONGING", "GOOF", "GOOFING", "GOON", "GORGING", "GORGON", "GORING", "GRIFFON", "GRINGO", "GROAN", "GROANING", "IGNORING", "INFO", "IRON", "IRONING", "NOGGIN", "NOON", "OARING", "OFFING", "ONGOING", "ONION", "ORGAN", "ORIGIN", "RIGOR", "ROAR", "ROARING", "ROOF", "ROOFING"]
+},
+{
+  "puzzleId": 12,
+  "puzzleDate": "2024-12-18",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "G",
+  "outerLetters": ["I", "T", "O", "M", "S", "A"],
+  "allowedWords": ["AMIGO", "AMIGOS", "ASTIGMATISMS", "GAGS", "GAIT", "GAITS", "GAMMA", "GAMMAS", "GIGS", "GIST", "GOAT", "GOATS", "GOTTA", "IMAGO", "IMAGOS", "MAGGOT", "MAGGOTS", "MAGMA", "MISOGAMIST", "MISOGAMISTS", "SAGA", "SAGAS", "SAGS", "SIGMA", "SIGMAS", "SMOG", "SMOGS", "STAG", "STAGS", "STIGMA", "STIGMAS", "STIGMATA", "TAGS", "TAIGA", "TAIGAS", "TOGA", "TOGAS"]
+},
+{
+  "puzzleId": 13,
+  "puzzleDate": "2024-12-25",
+  "minWordLength": 4,
+  "pangramBonus": 7,
+  "centerLetter": "W",
+  "outerLetters": ["R", "O", "A", "F", "E", "T"],
+  "allowedWords": ["ARROW", "ARROWROOT", "AWARE", "FARROW", "FATWA", "FEWER", "FOOTWEAR", "FREEWARE", "RAWER", "RETWEET", "REWROTE", "ROWER", "TERAWATT", "TOWER", "TWEE", "TWEET", "TWEETER", "TWOFER", "WAFER", "WAFT", "WARFARE", "WART", "WATER", "WATT", "WEAR", "WEARER", "WEER", "WERE", "WETTER", "WETWARE", "WOOER", "WOOF", "WOOFER", "WORE", "WROTE"]
+}
+]
