@@ -93,6 +93,7 @@ window.HareCryptogramEngine = {
 
     injectMaterialSymbols();
     injectStyles();
+    injectSchema();
 
     function injectMaterialSymbols() {
       if (document.getElementById("hp-material-symbols-font")) return;
@@ -101,6 +102,45 @@ window.HareCryptogramEngine = {
       link.rel = "stylesheet";
       link.href = "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined";
       document.head.appendChild(link);
+    }
+
+    function injectSchema() {
+      const schemaId = "hp-schema-cryptogram-platform";
+      const existing = document.getElementById(schemaId);
+      if (existing) existing.remove();
+
+      const pageUrl = window.location.href;
+      const puzzleDate = String(data.puzzleDate || "").trim();
+
+      const schemaData = {
+        "@context": "https://schema.org",
+        "@type": "Game",
+        "name": puzzleTitle,
+        "description": `Play ${puzzleTitle} online from Hare Publishing.`,
+        "url": pageUrl,
+        "genre": "Puzzle",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Hare Publishing",
+          "url": "https://www.harepublishing.com"
+        },
+        "isPartOf": {
+          "@type": "CollectionPage",
+          "name": "Cryptogram",
+          "url": "https://www.harepublishing.com/cryptogram"
+        }
+      };
+
+      if (puzzleDate) {
+        schemaData.datePublished = puzzleDate;
+      }
+
+      const script = document.createElement("script");
+      script.id = schemaId;
+      script.type = "application/ld+json";
+      script.textContent = JSON.stringify(schemaData);
+      document.head.appendChild(script);
     }
 
     function errorCard(message) {
