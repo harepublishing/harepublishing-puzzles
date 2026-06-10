@@ -1,0 +1,3530 @@
+[
+  {
+    "puzzleId": 53,
+    "puzzleDate": "2026-01-01",
+    "theme": "Astronomy Terms",
+    "minRows": 16,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "GRAVITY",
+        "row": 0,
+        "col": 2,
+        "dir": "across"
+      },
+      {
+        "word": "ECLIPSE",
+        "row": 1,
+        "col": 9,
+        "dir": "across"
+      },
+      {
+        "word": "ORBIT",
+        "row": 2,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "COMET",
+        "row": 3,
+        "col": 11,
+        "dir": "across"
+      },
+      {
+        "word": "RADIATION",
+        "row": 5,
+        "col": 7,
+        "dir": "across"
+      },
+      {
+        "word": "CONSTELLATION",
+        "row": 8,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "AXIS",
+        "row": 13,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "SUPERNOVA",
+        "row": 14,
+        "col": 7,
+        "dir": "across"
+      },
+      {
+        "word": "GALAXY",
+        "row": 15,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "ASTEROID",
+        "row": 0,
+        "col": 14,
+        "dir": "down"
+      },
+      {
+        "word": "COSMOS",
+        "row": 1,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "BLACKHOLE",
+        "row": 2,
+        "col": 2,
+        "dir": "down"
+      },
+      {
+        "word": "TELESCOPE",
+        "row": 4,
+        "col": 4,
+        "dir": "down"
+      },
+      {
+        "word": "SATELLITE",
+        "row": 4,
+        "col": 8,
+        "dir": "down"
+      },
+      {
+        "word": "LIGHTYEAR",
+        "row": 4,
+        "col": 10,
+        "dir": "down"
+      },
+      {
+        "word": "SPECTRUM",
+        "row": 6,
+        "col": 6,
+        "dir": "down"
+      },
+      {
+        "word": "SOLARWIND",
+        "row": 7,
+        "col": 12,
+        "dir": "down"
+      },
+      {
+        "word": "PULSAR",
+        "row": 9,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "NEBULA",
+        "row": 9,
+        "col": 15,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 54,
+    "puzzleDate": "2026-01-08",
+    "theme": "Word Religions",
+    "minRows": 16,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "SHINTO",
+        "row": 1,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "MOSQUE",
+        "row": 1,
+        "col": 10,
+        "dir": "across"
+      },
+      {
+        "word": "HINDUISM",
+        "row": 5,
+        "col": 8,
+        "dir": "across"
+      },
+      {
+        "word": "CHRISTIANITY",
+        "row": 8,
+        "col": 2,
+        "dir": "across"
+      },
+      {
+        "word": "MONOTHEISM",
+        "row": 11,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "CLERGY",
+        "row": 13,
+        "col": 9,
+        "dir": "across"
+      },
+      {
+        "word": "SIKHISM",
+        "row": 15,
+        "col": 5,
+        "dir": "across"
+      },
+      {
+        "word": "POLYTHEISM",
+        "row": 0,
+        "col": 6,
+        "dir": "down"
+      },
+      {
+        "word": "CHURCH",
+        "row": 0,
+        "col": 8,
+        "dir": "down"
+      },
+      {
+        "word": "JUDAISM",
+        "row": 0,
+        "col": 14,
+        "dir": "down"
+      },
+      {
+        "word": "CONFUCIANISM",
+        "row": 3,
+        "col": 2,
+        "dir": "down"
+      },
+      {
+        "word": "BUDDHISM",
+        "row": 3,
+        "col": 11,
+        "dir": "down"
+      },
+      {
+        "word": "PILGRIMAGE",
+        "row": 5,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "ISLAM",
+        "row": 5,
+        "col": 9,
+        "dir": "down"
+      },
+      {
+        "word": "SCRIPTURE",
+        "row": 6,
+        "col": 4,
+        "dir": "down"
+      },
+      {
+        "word": "SYNAGOGUE",
+        "row": 7,
+        "col": 13,
+        "dir": "down"
+      },
+      {
+        "word": "PRAYER",
+        "row": 7,
+        "col": 15,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 55,
+    "puzzleDate": "2026-01-15",
+    "theme": "Photography",
+    "minRows": 16,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "EDITING",
+        "row": 0,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "FILTER",
+        "row": 1,
+        "col": 10,
+        "dir": "across"
+      },
+      {
+        "word": "PIXEL",
+        "row": 2,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "ZOOM",
+        "row": 4,
+        "col": 5,
+        "dir": "across"
+      },
+      {
+        "word": "RESOLUTION",
+        "row": 6,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "SATURATION",
+        "row": 8,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "TRIPOD",
+        "row": 10,
+        "col": 6,
+        "dir": "across"
+      },
+      {
+        "word": "LANDSCAPE",
+        "row": 12,
+        "col": 6,
+        "dir": "across"
+      },
+      {
+        "word": "FOCUS",
+        "row": 14,
+        "col": 9,
+        "dir": "across"
+      },
+      {
+        "word": "ISO",
+        "row": 15,
+        "col": 5,
+        "dir": "across"
+      },
+      {
+        "word": "EXPOSURE",
+        "row": 0,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "FRAME",
+        "row": 0,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "FLASH",
+        "row": 1,
+        "col": 10,
+        "dir": "down"
+      },
+      {
+        "word": "LIGHTING",
+        "row": 1,
+        "col": 12,
+        "dir": "down"
+      },
+      {
+        "word": "COMPOSITION",
+        "row": 2,
+        "col": 8,
+        "dir": "down"
+      },
+      {
+        "word": "PORTRAIT",
+        "row": 3,
+        "col": 6,
+        "dir": "down"
+      },
+      {
+        "word": "CONTRAST",
+        "row": 5,
+        "col": 3,
+        "dir": "down"
+      },
+      {
+        "word": "APERTURE",
+        "row": 5,
+        "col": 14,
+        "dir": "down"
+      },
+      {
+        "word": "SHUTTER",
+        "row": 8,
+        "col": 1,
+        "dir": "down"
+      },
+      {
+        "word": "LENS",
+        "row": 12,
+        "col": 6,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 56,
+    "puzzleDate": "2026-01-22",
+    "theme": "Maritime Terms",
+    "minRows": 16,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "VOYAGE",
+        "row": 1,
+        "col": 10,
+        "dir": "across"
+      },
+      {
+        "word": "HULL",
+        "row": 2,
+        "col": 3,
+        "dir": "across"
+      },
+      {
+        "word": "CAPTAIN",
+        "row": 4,
+        "col": 7,
+        "dir": "across"
+      },
+      {
+        "word": "MAST",
+        "row": 5,
+        "col": 2,
+        "dir": "across"
+      },
+      {
+        "word": "KEEL",
+        "row": 7,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "STARBOARD",
+        "row": 8,
+        "col": 6,
+        "dir": "across"
+      },
+      {
+        "word": "RIGGING",
+        "row": 10,
+        "col": 4,
+        "dir": "across"
+      },
+      {
+        "word": "CREW",
+        "row": 10,
+        "col": 12,
+        "dir": "across"
+      },
+      {
+        "word": "CARGO",
+        "row": 12,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "BUOY",
+        "row": 12,
+        "col": 10,
+        "dir": "across"
+      },
+      {
+        "word": "COMPASS",
+        "row": 0,
+        "col": 11,
+        "dir": "down"
+      },
+      {
+        "word": "CABIN",
+        "row": 0,
+        "col": 13,
+        "dir": "down"
+      },
+      {
+        "word": "DECK",
+        "row": 0,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "FLEET",
+        "row": 1,
+        "col": 5,
+        "dir": "down"
+      },
+      {
+        "word": "NAVIGATION",
+        "row": 3,
+        "col": 8,
+        "dir": "down"
+      },
+      {
+        "word": "SAIL",
+        "row": 4,
+        "col": 3,
+        "dir": "down"
+      },
+      {
+        "word": "HARBOR",
+        "row": 8,
+        "col": 4,
+        "dir": "down"
+      },
+      {
+        "word": "ANCHOR",
+        "row": 8,
+        "col": 12,
+        "dir": "down"
+      },
+      {
+        "word": "DOCK",
+        "row": 10,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "PORT",
+        "row": 10,
+        "col": 2,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 57,
+    "puzzleDate": "2026-01-29",
+    "theme": "Filmmaking",
+    "minRows": 16,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "SEQUENCE",
+        "row": 0,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "EDITING",
+        "row": 2,
+        "col": 4,
+        "dir": "across"
+      },
+      {
+        "word": "REHEARSAL",
+        "row": 4,
+        "col": 5,
+        "dir": "across"
+      },
+      {
+        "word": "FRAME",
+        "row": 6,
+        "col": 6,
+        "dir": "across"
+      },
+      {
+        "word": "PRODUCTION",
+        "row": 8,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "SCREENPLAY",
+        "row": 10,
+        "col": 6,
+        "dir": "across"
+      },
+      {
+        "word": "CUT",
+        "row": 11,
+        "col": 2,
+        "dir": "across"
+      },
+      {
+        "word": "LIGHTING",
+        "row": 16,
+        "col": 5,
+        "dir": "across"
+      },
+      {
+        "word": "SCRIPT",
+        "row": 0,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "ACTOR",
+        "row": 0,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "CINEMATOGRAPHY",
+        "row": 1,
+        "col": 8,
+        "dir": "down"
+      },
+      {
+        "word": "DIALOGUE",
+        "row": 1,
+        "col": 13,
+        "dir": "down"
+      },
+      {
+        "word": "DIRECTOR",
+        "row": 2,
+        "col": 2,
+        "dir": "down"
+      },
+      {
+        "word": "SOUNDTRACK",
+        "row": 6,
+        "col": 4,
+        "dir": "down"
+      },
+      {
+        "word": "STORYBOARD",
+        "row": 6,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "TRANSITION",
+        "row": 7,
+        "col": 11,
+        "dir": "down"
+      },
+      {
+        "word": "PRODUCER",
+        "row": 8,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "SCENE",
+        "row": 10,
+        "col": 6,
+        "dir": "down"
+      },
+      {
+        "word": "CAMERA",
+        "row": 11,
+        "col": 2,
+        "dir": "down"
+      },
+      {
+        "word": "SHOT",
+        "row": 12,
+        "col": 13,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 58,
+    "puzzleDate": "2026-02-05",
+    "theme": "World Currencies",
+    "minRows": 18,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "REAL",
+        "row": 2,
+        "col": 4,
+        "dir": "across"
+      },
+      {
+        "word": "PESO",
+        "row": 3,
+        "col": 10,
+        "dir": "across"
+      },
+      {
+        "word": "RIYAL",
+        "row": 5,
+        "col": 4,
+        "dir": "across"
+      },
+      {
+        "word": "KRONE",
+        "row": 5,
+        "col": 10,
+        "dir": "across"
+      },
+      {
+        "word": "DIRHAM",
+        "row": 7,
+        "col": 3,
+        "dir": "across"
+      },
+      {
+        "word": "DINAR",
+        "row": 9,
+        "col": 7,
+        "dir": "across"
+      },
+      {
+        "word": "DOLLAR",
+        "row": 11,
+        "col": 4,
+        "dir": "across"
+      },
+      {
+        "word": "BAHT",
+        "row": 11,
+        "col": 11,
+        "dir": "across"
+      },
+      {
+        "word": "EURO",
+        "row": 13,
+        "col": 11,
+        "dir": "across"
+      },
+      {
+        "word": "KORUNA",
+        "row": 14,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "YEN",
+        "row": 15,
+        "col": 11,
+        "dir": "across"
+      },
+      {
+        "word": "LIRA",
+        "row": 2,
+        "col": 7,
+        "dir": "down"
+      },
+      {
+        "word": "POUND",
+        "row": 2,
+        "col": 13,
+        "dir": "down"
+      },
+      {
+        "word": "LEMPIRA",
+        "row": 5,
+        "col": 8,
+        "dir": "down"
+      },
+      {
+        "word": "KRONA",
+        "row": 5,
+        "col": 10,
+        "dir": "down"
+      },
+      {
+        "word": "KYAT",
+        "row": 8,
+        "col": 14,
+        "dir": "down"
+      },
+      {
+        "word": "RUBLE",
+        "row": 9,
+        "col": 11,
+        "dir": "down"
+      },
+      {
+        "word": "FORINT",
+        "row": 10,
+        "col": 5,
+        "dir": "down"
+      },
+      {
+        "word": "SHEKEL",
+        "row": 11,
+        "col": 1,
+        "dir": "down"
+      },
+      {
+        "word": "RUPEE",
+        "row": 11,
+        "col": 9,
+        "dir": "down"
+      },
+      {
+        "word": "FRANC",
+        "row": 13,
+        "col": 3,
+        "dir": "down"
+      },
+      {
+        "word": "RAND",
+        "row": 13,
+        "col": 13,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 59,
+    "puzzleDate": "2026-02-12",
+    "theme": "Famous Castles",
+    "minRows": 19,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "CORVIN",
+        "row": 0,
+        "col": 2,
+        "dir": "across"
+      },
+      {
+        "word": "DRACULA",
+        "row": 0,
+        "col": 9,
+        "dir": "across"
+      },
+      {
+        "word": "NEUSCHWANSTEIN",
+        "row": 2,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "MONTSAINTMICHEL",
+        "row": 4,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "PELES",
+        "row": 6,
+        "col": 6,
+        "dir": "across"
+      },
+      {
+        "word": "HOHENSALZBURG",
+        "row": 13,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "HEARST",
+        "row": 16,
+        "col": 10,
+        "dir": "across"
+      },
+      {
+        "word": "WARWICK",
+        "row": 18,
+        "col": 9,
+        "dir": "across"
+      },
+      {
+        "word": "CAERNARFON",
+        "row": 0,
+        "col": 2,
+        "dir": "down"
+      },
+      {
+        "word": "CASTELLOSFORZESCO",
+        "row": 1,
+        "col": 8,
+        "dir": "down"
+      },
+      {
+        "word": "MALBORK",
+        "row": 4,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "STIRLING",
+        "row": 4,
+        "col": 4,
+        "dir": "down"
+      },
+      {
+        "word": "VERSAILLES",
+        "row": 5,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "PRAGUECASTLE",
+        "row": 6,
+        "col": 6,
+        "dir": "down"
+      },
+      {
+        "word": "KRONBORG",
+        "row": 6,
+        "col": 12,
+        "dir": "down"
+      },
+      {
+        "word": "EDINBURGH",
+        "row": 8,
+        "col": 10,
+        "dir": "down"
+      },
+      {
+        "word": "ALHAMBRA",
+        "row": 11,
+        "col": 2,
+        "dir": "down"
+      },
+      {
+        "word": "CHILLON",
+        "row": 12,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "ELTZ",
+        "row": 15,
+        "col": 4,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 60,
+    "puzzleDate": "2026-02-19",
+    "theme": "Internet Terms",
+    "minRows": 18,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "DOMAIN",
+        "row": 0,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "PASSWORD",
+        "row": 0,
+        "col": 7,
+        "dir": "across"
+      },
+      {
+        "word": "BANDWIDTH",
+        "row": 2,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "UPLOAD",
+        "row": 3,
+        "col": 10,
+        "dir": "across"
+      },
+      {
+        "word": "DOWNLOAD",
+        "row": 4,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "SEARCHENGINE",
+        "row": 9,
+        "col": 2,
+        "dir": "across"
+      },
+      {
+        "word": "SERVER",
+        "row": 11,
+        "col": 10,
+        "dir": "across"
+      },
+      {
+        "word": "FIREWALL",
+        "row": 12,
+        "col": 2,
+        "dir": "across"
+      },
+      {
+        "word": "COOKIE",
+        "row": 14,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "ALGORITHM",
+        "row": 14,
+        "col": 7,
+        "dir": "across"
+      },
+      {
+        "word": "CACHE",
+        "row": 16,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "STREAMING",
+        "row": 17,
+        "col": 6,
+        "dir": "across"
+      },
+      {
+        "word": "NEWSLETTER",
+        "row": 0,
+        "col": 5,
+        "dir": "down"
+      },
+      {
+        "word": "PODCAST",
+        "row": 0,
+        "col": 7,
+        "dir": "down"
+      },
+      {
+        "word": "WEBPAGE",
+        "row": 0,
+        "col": 11,
+        "dir": "down"
+      },
+      {
+        "word": "HOMEPAGE",
+        "row": 2,
+        "col": 13,
+        "dir": "down"
+      },
+      {
+        "word": "BLOGGER",
+        "row": 6,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "HYPERLINK",
+        "row": 6,
+        "col": 3,
+        "dir": "down"
+      },
+      {
+        "word": "LIVESTREAM",
+        "row": 8,
+        "col": 11,
+        "dir": "down"
+      },
+      {
+        "word": "USERNAME",
+        "row": 8,
+        "col": 15,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 61,
+    "puzzleDate": "2026-02-26",
+    "theme": "Famous Rivers",
+    "minRows": 18,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "RHINE",
+        "row": 1,
+        "col": 9,
+        "dir": "across"
+      },
+      {
+        "word": "HUDSON",
+        "row": 2,
+        "col": 3,
+        "dir": "across"
+      },
+      {
+        "word": "DANUBE",
+        "row": 4,
+        "col": 8,
+        "dir": "across"
+      },
+      {
+        "word": "COLORADO",
+        "row": 5,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "YANGTZE",
+        "row": 7,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "CONGO",
+        "row": 7,
+        "col": 11,
+        "dir": "across"
+      },
+      {
+        "word": "MISSISSIPPI",
+        "row": 9,
+        "col": 2,
+        "dir": "across"
+      },
+      {
+        "word": "NILE",
+        "row": 10,
+        "col": 12,
+        "dir": "across"
+      },
+      {
+        "word": "PARANA",
+        "row": 13,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "AMAZON",
+        "row": 13,
+        "col": 8,
+        "dir": "across"
+      },
+      {
+        "word": "MEKONG",
+        "row": 15,
+        "col": 3,
+        "dir": "across"
+      },
+      {
+        "word": "SEINE",
+        "row": 16,
+        "col": 10,
+        "dir": "across"
+      },
+      {
+        "word": "TIGRIS",
+        "row": 17,
+        "col": 3,
+        "dir": "across"
+      },
+      {
+        "word": "VOLGA",
+        "row": 0,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "EUPHRATES",
+        "row": 1,
+        "col": 4,
+        "dir": "down"
+      },
+      {
+        "word": "PO",
+        "row": 1,
+        "col": 7,
+        "dir": "down"
+      },
+      {
+        "word": "INDUS",
+        "row": 1,
+        "col": 11,
+        "dir": "down"
+      },
+      {
+        "word": "ELBE",
+        "row": 1,
+        "col": 13,
+        "dir": "down"
+      },
+      {
+        "word": "ZAMBEZI",
+        "row": 3,
+        "col": 9,
+        "dir": "down"
+      },
+      {
+        "word": "LOIRE",
+        "row": 6,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "YUKON",
+        "row": 7,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "ORINOCO",
+        "row": 7,
+        "col": 12,
+        "dir": "down"
+      },
+      {
+        "word": "MURRAY",
+        "row": 9,
+        "col": 2,
+        "dir": "down"
+      },
+      {
+        "word": "THAMES",
+        "row": 11,
+        "col": 10,
+        "dir": "down"
+      },
+      {
+        "word": "GANGES",
+        "row": 12,
+        "col": 8,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 62,
+    "puzzleDate": "2026-03-05",
+    "theme": "Airline Names",
+    "minRows": 18,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "SWISSAIR",
+        "row": 1,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "SPIRIT",
+        "row": 2,
+        "col": 8,
+        "dir": "across"
+      },
+      {
+        "word": "EMIRATES",
+        "row": 4,
+        "col": 4,
+        "dir": "across"
+      },
+      {
+        "word": "FRONTIER",
+        "row": 6,
+        "col": 7,
+        "dir": "across"
+      },
+      {
+        "word": "ETHIOPIAN",
+        "row": 9,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "AVIANCA",
+        "row": 10,
+        "col": 8,
+        "dir": "across"
+      },
+      {
+        "word": "LUFTHANSA",
+        "row": 12,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "KLM",
+        "row": 15,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "IBERIA",
+        "row": 15,
+        "col": 7,
+        "dir": "across"
+      },
+      {
+        "word": "WESTJET",
+        "row": 17,
+        "col": 2,
+        "dir": "across"
+      },
+      {
+        "word": "CATHAY",
+        "row": 17,
+        "col": 10,
+        "dir": "across"
+      },
+      {
+        "word": "VIRGIN",
+        "row": 0,
+        "col": 6,
+        "dir": "down"
+      },
+      {
+        "word": "JETBLUE",
+        "row": 0,
+        "col": 13,
+        "dir": "down"
+      },
+      {
+        "word": "ETIHAD",
+        "row": 0,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "SINGAPORE",
+        "row": 1,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "TURKISH",
+        "row": 3,
+        "col": 2,
+        "dir": "down"
+      },
+      {
+        "word": "AEROFLOT",
+        "row": 3,
+        "col": 4,
+        "dir": "down"
+      },
+      {
+        "word": "AIRCANADA",
+        "row": 4,
+        "col": 8,
+        "dir": "down"
+      },
+      {
+        "word": "QANTAS",
+        "row": 8,
+        "col": 12,
+        "dir": "down"
+      },
+      {
+        "word": "RYANAIR",
+        "row": 8,
+        "col": 14,
+        "dir": "down"
+      },
+      {
+        "word": "FINNAIR",
+        "row": 9,
+        "col": 10,
+        "dir": "down"
+      },
+      {
+        "word": "ALASKA",
+        "row": 11,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "EASYJET",
+        "row": 11,
+        "col": 5,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 63,
+    "puzzleDate": "2026-03-12",
+    "theme": "Garden Plants",
+    "minRows": 18,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "HIBISCUS",
+        "row": 1,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "JASMINE",
+        "row": 1,
+        "col": 9,
+        "dir": "across"
+      },
+      {
+        "word": "GERANIUM",
+        "row": 3,
+        "col": 6,
+        "dir": "across"
+      },
+      {
+        "word": "LILAC",
+        "row": 5,
+        "col": 10,
+        "dir": "across"
+      },
+      {
+        "word": "AZALEA",
+        "row": 7,
+        "col": 10,
+        "dir": "across"
+      },
+      {
+        "word": "HYDRANGEA",
+        "row": 9,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "IVY",
+        "row": 11,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "SNAPDRAGON",
+        "row": 11,
+        "col": 4,
+        "dir": "across"
+      },
+      {
+        "word": "ROSEMARY",
+        "row": 15,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "CLEMATIS",
+        "row": 17,
+        "col": 6,
+        "dir": "across"
+      },
+      {
+        "word": "MAGNOLIA",
+        "row": 0,
+        "col": 10,
+        "dir": "down"
+      },
+      {
+        "word": "PEONY",
+        "row": 0,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "BOXWOOD",
+        "row": 1,
+        "col": 2,
+        "dir": "down"
+      },
+      {
+        "word": "SUNFLOWER",
+        "row": 1,
+        "col": 4,
+        "dir": "down"
+      },
+      {
+        "word": "DAHLIA",
+        "row": 3,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "RHODODENDRON",
+        "row": 3,
+        "col": 8,
+        "dir": "down"
+      },
+      {
+        "word": "BEGONIA",
+        "row": 5,
+        "col": 6,
+        "dir": "down"
+      },
+      {
+        "word": "MARIGOLD",
+        "row": 6,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "LAVENDER",
+        "row": 7,
+        "col": 13,
+        "dir": "down"
+      },
+      {
+        "word": "WISTERIA",
+        "row": 10,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "CAMELLIA",
+        "row": 10,
+        "col": 10,
+        "dir": "down"
+      },
+      {
+        "word": "HOSTA",
+        "row": 13,
+        "col": 2,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 64,
+    "puzzleDate": "2026-03-19",
+    "theme": "Medieval Terms",
+    "minRows": 18,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "FEUDALISM",
+        "row": 0,
+        "col": 3,
+        "dir": "across"
+      },
+      {
+        "word": "ARMOR",
+        "row": 2,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "FALCONER",
+        "row": 2,
+        "col": 6,
+        "dir": "across"
+      },
+      {
+        "word": "SHIELD",
+        "row": 4,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "DRAWBRIDGE",
+        "row": 6,
+        "col": 6,
+        "dir": "across"
+      },
+      {
+        "word": "KNIGHT",
+        "row": 7,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "PEASANT",
+        "row": 9,
+        "col": 5,
+        "dir": "across"
+      },
+      {
+        "word": "TREBUCHET",
+        "row": 12,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "HERALDRY",
+        "row": 13,
+        "col": 8,
+        "dir": "across"
+      },
+      {
+        "word": "JOUST",
+        "row": 15,
+        "col": 7,
+        "dir": "across"
+      },
+      {
+        "word": "LANCE",
+        "row": 16,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "PLAGUE",
+        "row": 17,
+        "col": 6,
+        "dir": "across"
+      },
+      {
+        "word": "MOAT",
+        "row": 0,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "MANUSCRIPT",
+        "row": 0,
+        "col": 11,
+        "dir": "down"
+      },
+      {
+        "word": "BARON",
+        "row": 0,
+        "col": 13,
+        "dir": "down"
+      },
+      {
+        "word": "MONASTERY",
+        "row": 0,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "BLACKSMITH",
+        "row": 4,
+        "col": 8,
+        "dir": "down"
+      },
+      {
+        "word": "DUKE",
+        "row": 5,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "MINSTREL",
+        "row": 6,
+        "col": 2,
+        "dir": "down"
+      },
+      {
+        "word": "KINGDOM",
+        "row": 9,
+        "col": 13,
+        "dir": "down"
+      },
+      {
+        "word": "CATAPULT",
+        "row": 10,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "CRUSADE",
+        "row": 10,
+        "col": 4,
+        "dir": "down"
+      },
+      {
+        "word": "CASTLE",
+        "row": 12,
+        "col": 11,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 65,
+    "puzzleDate": "2026-03-26",
+    "theme": "Ancient Egypt",
+    "minRows": 18,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "CROOK",
+        "row": 0,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "HORUS",
+        "row": 0,
+        "col": 7,
+        "dir": "across"
+      },
+      {
+        "word": "TUTANKHAMUN",
+        "row": 4,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "ISIS",
+        "row": 6,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "HIEROGLYPH",
+        "row": 7,
+        "col": 4,
+        "dir": "across"
+      },
+      {
+        "word": "PYRAMID",
+        "row": 10,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "OBELISK",
+        "row": 12,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "LUXOR",
+        "row": 14,
+        "col": 2,
+        "dir": "across"
+      },
+      {
+        "word": "PAPYRUS",
+        "row": 14,
+        "col": 9,
+        "dir": "across"
+      },
+      {
+        "word": "SCARAB",
+        "row": 16,
+        "col": 2,
+        "dir": "across"
+      },
+      {
+        "word": "BASTET",
+        "row": 16,
+        "col": 10,
+        "dir": "across"
+      },
+      {
+        "word": "RA",
+        "row": 0,
+        "col": 1,
+        "dir": "down"
+      },
+      {
+        "word": "SPHINX",
+        "row": 0,
+        "col": 11,
+        "dir": "down"
+      },
+      {
+        "word": "PHARAOH",
+        "row": 1,
+        "col": 13,
+        "dir": "down"
+      },
+      {
+        "word": "ANUBIS",
+        "row": 2,
+        "col": 2,
+        "dir": "down"
+      },
+      {
+        "word": "CANOPIC",
+        "row": 2,
+        "col": 5,
+        "dir": "down"
+      },
+      {
+        "word": "SARCOPHAGUS",
+        "row": 3,
+        "col": 8,
+        "dir": "down"
+      },
+      {
+        "word": "TEMPLE",
+        "row": 4,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "NILE",
+        "row": 5,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "CLEOPATRA",
+        "row": 6,
+        "col": 10,
+        "dir": "down"
+      },
+      {
+        "word": "FLAIL",
+        "row": 8,
+        "col": 3,
+        "dir": "down"
+      },
+      {
+        "word": "MUMMY",
+        "row": 10,
+        "col": 12,
+        "dir": "down"
+      },
+      {
+        "word": "OSIRIS",
+        "row": 12,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "KARNAK",
+        "row": 12,
+        "col": 6,
+        "dir": "down"
+      },
+      {
+        "word": "AMULET",
+        "row": 12,
+        "col": 14,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 66,
+    "puzzleDate": "2026-04-02",
+    "theme": "Coffee Drinks",
+    "minRows": 18,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "CAPPUCCINO",
+        "row": 0,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "DECAF",
+        "row": 2,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "IRISHCOFFEE",
+        "row": 8,
+        "col": 4,
+        "dir": "across"
+      },
+      {
+        "word": "BREVE",
+        "row": 10,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "DOPPIO",
+        "row": 10,
+        "col": 10,
+        "dir": "across"
+      },
+      {
+        "word": "VIENNACOFFEE",
+        "row": 12,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "ICEDCOFFEE",
+        "row": 14,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "MOCHACCINO",
+        "row": 16,
+        "col": 5,
+        "dir": "across"
+      },
+      {
+        "word": "LATTE",
+        "row": 17,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "AMERICANO",
+        "row": 0,
+        "col": 1,
+        "dir": "down"
+      },
+      {
+        "word": "CAFEAULAIT",
+        "row": 0,
+        "col": 6,
+        "dir": "down"
+      },
+      {
+        "word": "COLDBREW",
+        "row": 0,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "AFFOGATO",
+        "row": 1,
+        "col": 10,
+        "dir": "down"
+      },
+      {
+        "word": "FRAPPE",
+        "row": 1,
+        "col": 13,
+        "dir": "down"
+      },
+      {
+        "word": "FLATWHITE",
+        "row": 2,
+        "col": 4,
+        "dir": "down"
+      },
+      {
+        "word": "TURKISHCOFFEE",
+        "row": 2,
+        "col": 8,
+        "dir": "down"
+      },
+      {
+        "word": "ESPRESSINO",
+        "row": 8,
+        "col": 13,
+        "dir": "down"
+      },
+      {
+        "word": "REDEYE",
+        "row": 9,
+        "col": 2,
+        "dir": "down"
+      },
+      {
+        "word": "CORTADO",
+        "row": 9,
+        "col": 15,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 67,
+    "puzzleDate": "2026-04-09",
+    "theme": "Ice Cream Flavors",
+    "minRows": 18,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "MANGO",
+        "row": 4,
+        "col": 11,
+        "dir": "across"
+      },
+      {
+        "word": "RASPBERRY",
+        "row": 6,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "SALTEDCARAMEL",
+        "row": 9,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "COOKIEDOUGH",
+        "row": 13,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "STRAWBERRY",
+        "row": 15,
+        "col": 2,
+        "dir": "across"
+      },
+      {
+        "word": "COTTONCANDY",
+        "row": 17,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "BLUEBERRY",
+        "row": 0,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "PEANUTBUTTER",
+        "row": 0,
+        "col": 4,
+        "dir": "down"
+      },
+      {
+        "word": "BANANA",
+        "row": 0,
+        "col": 9,
+        "dir": "down"
+      },
+      {
+        "word": "CARAMEL",
+        "row": 0,
+        "col": 11,
+        "dir": "down"
+      },
+      {
+        "word": "LEMON",
+        "row": 0,
+        "col": 13,
+        "dir": "down"
+      },
+      {
+        "word": "NEAPOLITAN",
+        "row": 0,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "BUTTERPECAN",
+        "row": 1,
+        "col": 7,
+        "dir": "down"
+      },
+      {
+        "word": "CHEESECAKE",
+        "row": 2,
+        "col": 2,
+        "dir": "down"
+      },
+      {
+        "word": "MAPLEWALNUT",
+        "row": 6,
+        "col": 13,
+        "dir": "down"
+      },
+      {
+        "word": "BLACKCHERRY",
+        "row": 7,
+        "col": 10,
+        "dir": "down"
+      },
+      {
+        "word": "MOCHA",
+        "row": 11,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "VANILLA",
+        "row": 11,
+        "col": 15,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 68,
+    "puzzleDate": "2026-04-16",
+    "theme": "Wine Regions",
+    "minRows": 19,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "BORDEAUX",
+        "row": 0,
+        "col": 3,
+        "dir": "across"
+      },
+      {
+        "word": "CHAMPAGNE",
+        "row": 2,
+        "col": 5,
+        "dir": "across"
+      },
+      {
+        "word": "DOURO",
+        "row": 5,
+        "col": 9,
+        "dir": "across"
+      },
+      {
+        "word": "MOSEL",
+        "row": 6,
+        "col": 4,
+        "dir": "across"
+      },
+      {
+        "word": "MARGARETRIVER",
+        "row": 9,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "RHONEVALLEY",
+        "row": 12,
+        "col": 5,
+        "dir": "across"
+      },
+      {
+        "word": "SONOMA",
+        "row": 14,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "ALSACE",
+        "row": 14,
+        "col": 9,
+        "dir": "across"
+      },
+      {
+        "word": "PIEDMONT",
+        "row": 16,
+        "col": 8,
+        "dir": "across"
+      },
+      {
+        "word": "WILLAMETTE",
+        "row": 18,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "MAIPO",
+        "row": 18,
+        "col": 11,
+        "dir": "across"
+      },
+      {
+        "word": "BURGUNDY",
+        "row": 0,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "FINGERLAKES",
+        "row": 0,
+        "col": 12,
+        "dir": "down"
+      },
+      {
+        "word": "MCLARENVALE",
+        "row": 1,
+        "col": 2,
+        "dir": "down"
+      },
+      {
+        "word": "NAPAVALLEY",
+        "row": 3,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "STELLENBOSCH",
+        "row": 4,
+        "col": 7,
+        "dir": "down"
+      },
+      {
+        "word": "COONAWARRA",
+        "row": 5,
+        "col": 5,
+        "dir": "down"
+      },
+      {
+        "word": "LOIREVALLEY",
+        "row": 7,
+        "col": 10,
+        "dir": "down"
+      },
+      {
+        "word": "BAROSSA",
+        "row": 10,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "RIOJA",
+        "row": 12,
+        "col": 3,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 69,
+    "puzzleDate": "2026-04-23",
+    "theme": "Human Anatomy",
+    "minRows": 18,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "BICEPS",
+        "row": 0,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "SPINE",
+        "row": 0,
+        "col": 7,
+        "dir": "across"
+      },
+      {
+        "word": "TIBIA",
+        "row": 2,
+        "col": 11,
+        "dir": "across"
+      },
+      {
+        "word": "PELVIS",
+        "row": 3,
+        "col": 5,
+        "dir": "across"
+      },
+      {
+        "word": "BLADDER",
+        "row": 6,
+        "col": 3,
+        "dir": "across"
+      },
+      {
+        "word": "FIBULA",
+        "row": 7,
+        "col": 10,
+        "dir": "across"
+      },
+      {
+        "word": "CARTILAGE",
+        "row": 9,
+        "col": 3,
+        "dir": "across"
+      },
+      {
+        "word": "KIDNEY",
+        "row": 11,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "TRICEPS",
+        "row": 12,
+        "col": 6,
+        "dir": "across"
+      },
+      {
+        "word": "AORTA",
+        "row": 13,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "LARYNX",
+        "row": 14,
+        "col": 10,
+        "dir": "across"
+      },
+      {
+        "word": "RIBCAGE",
+        "row": 15,
+        "col": 2,
+        "dir": "across"
+      },
+      {
+        "word": "PANCREAS",
+        "row": 17,
+        "col": 4,
+        "dir": "across"
+      },
+      {
+        "word": "CORNEA",
+        "row": 0,
+        "col": 2,
+        "dir": "down"
+      },
+      {
+        "word": "SCAPULA",
+        "row": 0,
+        "col": 5,
+        "dir": "down"
+      },
+      {
+        "word": "SKULL",
+        "row": 0,
+        "col": 7,
+        "dir": "down"
+      },
+      {
+        "word": "LUNGS",
+        "row": 2,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "LIVER",
+        "row": 2,
+        "col": 9,
+        "dir": "down"
+      },
+      {
+        "word": "FEMUR",
+        "row": 4,
+        "col": 13,
+        "dir": "down"
+      },
+      {
+        "word": "HEART",
+        "row": 5,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "LIGAMENT",
+        "row": 6,
+        "col": 4,
+        "dir": "down"
+      },
+      {
+        "word": "RETINA",
+        "row": 8,
+        "col": 1,
+        "dir": "down"
+      },
+      {
+        "word": "CLAVICLE",
+        "row": 8,
+        "col": 8,
+        "dir": "down"
+      },
+      {
+        "word": "ESOPHAGUS",
+        "row": 9,
+        "col": 11,
+        "dir": "down"
+      },
+      {
+        "word": "TENDON",
+        "row": 12,
+        "col": 14,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 70,
+    "puzzleDate": "2026-04-30",
+    "theme": "Musical Genres",
+    "minRows": 18,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "TECHNO",
+        "row": 0,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "FOLK",
+        "row": 0,
+        "col": 11,
+        "dir": "across"
+      },
+      {
+        "word": "KPOP",
+        "row": 2,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "GRUNGE",
+        "row": 2,
+        "col": 7,
+        "dir": "across"
+      },
+      {
+        "word": "COUNTRY",
+        "row": 4,
+        "col": 2,
+        "dir": "across"
+      },
+      {
+        "word": "JAZZ",
+        "row": 4,
+        "col": 11,
+        "dir": "across"
+      },
+      {
+        "word": "HOUSE",
+        "row": 6,
+        "col": 8,
+        "dir": "across"
+      },
+      {
+        "word": "ELECTRONICA",
+        "row": 9,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "DISCO",
+        "row": 11,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "SOUL",
+        "row": 12,
+        "col": 5,
+        "dir": "across"
+      },
+      {
+        "word": "REGGAE",
+        "row": 12,
+        "col": 10,
+        "dir": "across"
+      },
+      {
+        "word": "ROCK",
+        "row": 14,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "BLUEGRASS",
+        "row": 14,
+        "col": 5,
+        "dir": "across"
+      },
+      {
+        "word": "BLUES",
+        "row": 16,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "SALSA",
+        "row": 17,
+        "col": 11,
+        "dir": "across"
+      },
+      {
+        "word": "HIPHOP",
+        "row": 0,
+        "col": 3,
+        "dir": "down"
+      },
+      {
+        "word": "OPERA",
+        "row": 0,
+        "col": 12,
+        "dir": "down"
+      },
+      {
+        "word": "FUNK",
+        "row": 2,
+        "col": 5,
+        "dir": "down"
+      },
+      {
+        "word": "RHYTHMANDBLUES",
+        "row": 2,
+        "col": 8,
+        "dir": "down"
+      },
+      {
+        "word": "PUNK",
+        "row": 5,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "TRANCE",
+        "row": 7,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "CLASSICAL",
+        "row": 8,
+        "col": 2,
+        "dir": "down"
+      },
+      {
+        "word": "METAL",
+        "row": 11,
+        "col": 11,
+        "dir": "down"
+      },
+      {
+        "word": "GOSPEL",
+        "row": 12,
+        "col": 13,
+        "dir": "down"
+      },
+      {
+        "word": "SKA",
+        "row": 15,
+        "col": 15,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 71,
+    "puzzleDate": "2026-05-07",
+    "theme": "Camping Gear",
+    "minRows": 18,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "COOKWARE",
+        "row": 0,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "POCKETKNIFE",
+        "row": 2,
+        "col": 3,
+        "dir": "across"
+      },
+      {
+        "word": "WATERBOTTLE",
+        "row": 4,
+        "col": 5,
+        "dir": "across"
+      },
+      {
+        "word": "SLEEPINGBAG",
+        "row": 8,
+        "col": 2,
+        "dir": "across"
+      },
+      {
+        "word": "HIKINGBOOTS",
+        "row": 11,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "TARP",
+        "row": 14,
+        "col": 3,
+        "dir": "across"
+      },
+      {
+        "word": "HAMMOCK",
+        "row": 15,
+        "col": 9,
+        "dir": "across"
+      },
+      {
+        "word": "CAMPSTOVE",
+        "row": 17,
+        "col": 2,
+        "dir": "across"
+      },
+      {
+        "word": "COOLER",
+        "row": 0,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "CANTEEN",
+        "row": 0,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "BINOCULARS",
+        "row": 1,
+        "col": 11,
+        "dir": "down"
+      },
+      {
+        "word": "TENT",
+        "row": 1,
+        "col": 13,
+        "dir": "down"
+      },
+      {
+        "word": "TREKKINGPOLES",
+        "row": 2,
+        "col": 8,
+        "dir": "down"
+      },
+      {
+        "word": "COMPASS",
+        "row": 3,
+        "col": 2,
+        "dir": "down"
+      },
+      {
+        "word": "SLEEPINGPAD",
+        "row": 5,
+        "col": 4,
+        "dir": "down"
+      },
+      {
+        "word": "MAP",
+        "row": 6,
+        "col": 6,
+        "dir": "down"
+      },
+      {
+        "word": "FLASHLIGHT",
+        "row": 7,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "BACKPACK",
+        "row": 8,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "FIREWOOD",
+        "row": 10,
+        "col": 13,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 72,
+    "puzzleDate": "2026-05-14",
+    "theme": "Winter Activities",
+    "minRows": 20,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "SNOWSHOEING",
+        "row": 0,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "SNOWBOARDING",
+        "row": 2,
+        "col": 3,
+        "dir": "across"
+      },
+      {
+        "word": "CROSSCOUNTRY",
+        "row": 5,
+        "col": 3,
+        "dir": "across"
+      },
+      {
+        "word": "HOLIDAYLIGHTS",
+        "row": 10,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "SKIING",
+        "row": 12,
+        "col": 8,
+        "dir": "across"
+      },
+      {
+        "word": "HIKING",
+        "row": 15,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "SNOWMEN",
+        "row": 15,
+        "col": 9,
+        "dir": "across"
+      },
+      {
+        "word": "HOTCHOCOLATE",
+        "row": 17,
+        "col": 4,
+        "dir": "across"
+      },
+      {
+        "word": "DOGSLEDDING",
+        "row": 19,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "SLEDDING",
+        "row": 0,
+        "col": 1,
+        "dir": "down"
+      },
+      {
+        "word": "WINTERCAMPING",
+        "row": 0,
+        "col": 4,
+        "dir": "down"
+      },
+      {
+        "word": "BONFIRE",
+        "row": 0,
+        "col": 13,
+        "dir": "down"
+      },
+      {
+        "word": "CURLING",
+        "row": 4,
+        "col": 10,
+        "dir": "down"
+      },
+      {
+        "word": "SNOWBALLFIGHT",
+        "row": 5,
+        "col": 6,
+        "dir": "down"
+      },
+      {
+        "word": "SKATING",
+        "row": 7,
+        "col": 12,
+        "dir": "down"
+      },
+      {
+        "word": "POLARPLUNGE",
+        "row": 7,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "SNOWMOBILING",
+        "row": 8,
+        "col": 2,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 73,
+    "puzzleDate": "2026-05-21",
+    "theme": "Desert Landscapes",
+    "minRows": 18,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "REDROCKS",
+        "row": 0,
+        "col": 3,
+        "dir": "across"
+      },
+      {
+        "word": "BUTTE",
+        "row": 2,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "DESERTPLAIN",
+        "row": 3,
+        "col": 5,
+        "dir": "across"
+      },
+      {
+        "word": "WADI",
+        "row": 6,
+        "col": 5,
+        "dir": "across"
+      },
+      {
+        "word": "SANDSTONE",
+        "row": 9,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "DUNES",
+        "row": 10,
+        "col": 8,
+        "dir": "across"
+      },
+      {
+        "word": "OASIS",
+        "row": 11,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "ROCKFORMATION",
+        "row": 13,
+        "col": 3,
+        "dir": "across"
+      },
+      {
+        "word": "MESA",
+        "row": 15,
+        "col": 4,
+        "dir": "across"
+      },
+      {
+        "word": "DRYLAKE",
+        "row": 17,
+        "col": 3,
+        "dir": "across"
+      },
+      {
+        "word": "SALTFLATS",
+        "row": 0,
+        "col": 10,
+        "dir": "down"
+      },
+      {
+        "word": "BASIN",
+        "row": 0,
+        "col": 14,
+        "dir": "down"
+      },
+      {
+        "word": "VOLCANICASH",
+        "row": 1,
+        "col": 12,
+        "dir": "down"
+      },
+      {
+        "word": "PETRIFIEDWOOD",
+        "row": 2,
+        "col": 8,
+        "dir": "down"
+      },
+      {
+        "word": "BADLANDS",
+        "row": 4,
+        "col": 2,
+        "dir": "down"
+      },
+      {
+        "word": "SANDSTORM",
+        "row": 5,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "ESCARPMENT",
+        "row": 5,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "ARROYO",
+        "row": 6,
+        "col": 6,
+        "dir": "down"
+      },
+      {
+        "word": "DUSTSTORM",
+        "row": 7,
+        "col": 4,
+        "dir": "down"
+      },
+      {
+        "word": "CANYON",
+        "row": 12,
+        "col": 11,
+        "dir": "down"
+      },
+      {
+        "word": "MIRAGE",
+        "row": 12,
+        "col": 13,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 74,
+    "puzzleDate": "2026-05-28",
+    "theme": "Marine Creatures",
+    "minRows": 18,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "LOBSTER",
+        "row": 1,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "MARLIN",
+        "row": 3,
+        "col": 10,
+        "dir": "across"
+      },
+      {
+        "word": "OYSTER",
+        "row": 5,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "DOLPHIN",
+        "row": 5,
+        "col": 7,
+        "dir": "across"
+      },
+      {
+        "word": "JELLYFISH",
+        "row": 7,
+        "col": 4,
+        "dir": "across"
+      },
+      {
+        "word": "BARRACUDA",
+        "row": 9,
+        "col": 3,
+        "dir": "across"
+      },
+      {
+        "word": "CRAB",
+        "row": 11,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "OCTOPUS",
+        "row": 11,
+        "col": 6,
+        "dir": "across"
+      },
+      {
+        "word": "SHRIMP",
+        "row": 13,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "MANTARAY",
+        "row": 13,
+        "col": 8,
+        "dir": "across"
+      },
+      {
+        "word": "MANATEE",
+        "row": 15,
+        "col": 5,
+        "dir": "across"
+      },
+      {
+        "word": "TUNA",
+        "row": 17,
+        "col": 2,
+        "dir": "across"
+      },
+      {
+        "word": "SEAHORSE",
+        "row": 0,
+        "col": 5,
+        "dir": "down"
+      },
+      {
+        "word": "CLAM",
+        "row": 0,
+        "col": 10,
+        "dir": "down"
+      },
+      {
+        "word": "STARFISH",
+        "row": 0,
+        "col": 12,
+        "dir": "down"
+      },
+      {
+        "word": "SQUID",
+        "row": 0,
+        "col": 14,
+        "dir": "down"
+      },
+      {
+        "word": "ANCHOVY",
+        "row": 1,
+        "col": 8,
+        "dir": "down"
+      },
+      {
+        "word": "CORAL",
+        "row": 4,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "SEAL",
+        "row": 5,
+        "col": 2,
+        "dir": "down"
+      },
+      {
+        "word": "ORCA",
+        "row": 6,
+        "col": 14,
+        "dir": "down"
+      },
+      {
+        "word": "SEATURTLE",
+        "row": 7,
+        "col": 11,
+        "dir": "down"
+      },
+      {
+        "word": "WALRUS",
+        "row": 10,
+        "col": 2,
+        "dir": "down"
+      },
+      {
+        "word": "WHALE",
+        "row": 11,
+        "col": 14,
+        "dir": "down"
+      },
+      {
+        "word": "SHARK",
+        "row": 13,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "EEL",
+        "row": 15,
+        "col": 10,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 75,
+    "puzzleDate": "2026-06-04",
+    "theme": "Aviation Terms",
+    "minRows": 18,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "AIRSPACE",
+        "row": 0,
+        "col": 3,
+        "dir": "across"
+      },
+      {
+        "word": "AIRSPEED",
+        "row": 2,
+        "col": 2,
+        "dir": "across"
+      },
+      {
+        "word": "AIRCRAFT",
+        "row": 4,
+        "col": 2,
+        "dir": "across"
+      },
+      {
+        "word": "NAVIGATION",
+        "row": 7,
+        "col": 4,
+        "dir": "across"
+      },
+      {
+        "word": "ASCENT",
+        "row": 9,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "PROPELLER",
+        "row": 11,
+        "col": 2,
+        "dir": "across"
+      },
+      {
+        "word": "TAILWIND",
+        "row": 13,
+        "col": 2,
+        "dir": "across"
+      },
+      {
+        "word": "JETSTREAM",
+        "row": 15,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "FUSELAGE",
+        "row": 17,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "LANDING",
+        "row": 17,
+        "col": 9,
+        "dir": "across"
+      },
+      {
+        "word": "GLIDER",
+        "row": 0,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "TURBULENCE",
+        "row": 0,
+        "col": 13,
+        "dir": "down"
+      },
+      {
+        "word": "RADAR",
+        "row": 1,
+        "col": 2,
+        "dir": "down"
+      },
+      {
+        "word": "CHECKLIST",
+        "row": 1,
+        "col": 11,
+        "dir": "down"
+      },
+      {
+        "word": "ALTITUDE",
+        "row": 3,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "FLIGHTPLAN",
+        "row": 4,
+        "col": 8,
+        "dir": "down"
+      },
+      {
+        "word": "BLACKBOX",
+        "row": 7,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "COCKPIT",
+        "row": 7,
+        "col": 2,
+        "dir": "down"
+      },
+      {
+        "word": "AUTOPILOT",
+        "row": 7,
+        "col": 5,
+        "dir": "down"
+      },
+      {
+        "word": "HEADWIND",
+        "row": 10,
+        "col": 12,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 76,
+    "puzzleDate": "2026-06-11",
+    "theme": "Famous Universities",
+    "minRows": 17,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "COLUMBIA",
+        "row": 0,
+        "col": 2,
+        "dir": "across"
+      },
+      {
+        "word": "BROWN",
+        "row": 0,
+        "col": 11,
+        "dir": "across"
+      },
+      {
+        "word": "MCGILL",
+        "row": 2,
+        "col": 2,
+        "dir": "across"
+      },
+      {
+        "word": "HARVARD",
+        "row": 2,
+        "col": 9,
+        "dir": "across"
+      },
+      {
+        "word": "BERKELEY",
+        "row": 4,
+        "col": 4,
+        "dir": "across"
+      },
+      {
+        "word": "DARTMOUTH",
+        "row": 6,
+        "col": 6,
+        "dir": "across"
+      },
+      {
+        "word": "HEIDELBERG",
+        "row": 8,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "PRINCETON",
+        "row": 10,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "MONASH",
+        "row": 12,
+        "col": 6,
+        "dir": "across"
+      },
+      {
+        "word": "TSINGHUA",
+        "row": 14,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "OXFORD",
+        "row": 14,
+        "col": 9,
+        "dir": "across"
+      },
+      {
+        "word": "UCLA",
+        "row": 16,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "SORBONNE",
+        "row": 16,
+        "col": 6,
+        "dir": "across"
+      },
+      {
+        "word": "CORNELL",
+        "row": 0,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "CAMBRIDGE",
+        "row": 0,
+        "col": 2,
+        "dir": "down"
+      },
+      {
+        "word": "YALE",
+        "row": 1,
+        "col": 10,
+        "dir": "down"
+      },
+      {
+        "word": "DUKE",
+        "row": 2,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "GEORGETOWN",
+        "row": 3,
+        "col": 8,
+        "dir": "down"
+      },
+      {
+        "word": "STANFORD",
+        "row": 5,
+        "col": 13,
+        "dir": "down"
+      },
+      {
+        "word": "EDINBURGH",
+        "row": 7,
+        "col": 4,
+        "dir": "down"
+      },
+      {
+        "word": "CALTECH",
+        "row": 7,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "MIT",
+        "row": 12,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "BONN",
+        "row": 13,
+        "col": 12,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 77,
+    "puzzleDate": "2026-06-18",
+    "theme": "Hiking Terms",
+    "minRows": 18,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "CANYON",
+        "row": 0,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "ASCENT",
+        "row": 0,
+        "col": 9,
+        "dir": "across"
+      },
+      {
+        "word": "TREKPOLES",
+        "row": 2,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "SUMMIT",
+        "row": 4,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "ALTITUDE",
+        "row": 5,
+        "col": 8,
+        "dir": "across"
+      },
+      {
+        "word": "VIEWPOINT",
+        "row": 6,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "SWITCHBACK",
+        "row": 9,
+        "col": 6,
+        "dir": "across"
+      },
+      {
+        "word": "WILDERNESS",
+        "row": 11,
+        "col": 5,
+        "dir": "across"
+      },
+      {
+        "word": "BOOTS",
+        "row": 13,
+        "col": 10,
+        "dir": "across"
+      },
+      {
+        "word": "RIDGELINE",
+        "row": 15,
+        "col": 3,
+        "dir": "across"
+      },
+      {
+        "word": "WATERFALL",
+        "row": 17,
+        "col": 6,
+        "dir": "across"
+      },
+      {
+        "word": "CAMPFIRE",
+        "row": 0,
+        "col": 11,
+        "dir": "down"
+      },
+      {
+        "word": "FOOTHILLS",
+        "row": 1,
+        "col": 6,
+        "dir": "down"
+      },
+      {
+        "word": "DESCENT",
+        "row": 1,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "MAP",
+        "row": 4,
+        "col": 4,
+        "dir": "down"
+      },
+      {
+        "word": "PATHFINDER",
+        "row": 4,
+        "col": 8,
+        "dir": "down"
+      },
+      {
+        "word": "WAYPOINT",
+        "row": 6,
+        "col": 3,
+        "dir": "down"
+      },
+      {
+        "word": "BACKPACK",
+        "row": 8,
+        "col": 1,
+        "dir": "down"
+      },
+      {
+        "word": "CARABINER",
+        "row": 9,
+        "col": 10,
+        "dir": "down"
+      },
+      {
+        "word": "TRAIL",
+        "row": 13,
+        "col": 13,
+        "dir": "down"
+      }
+    ]
+  },
+  {
+    "puzzleId": 78,
+    "puzzleDate": "2026-06-25",
+    "theme": "Space Missions",
+    "minRows": 18,
+    "minCols": 16,
+    "placements": [
+      {
+        "word": "CURIOSITY",
+        "row": 0,
+        "col": 4,
+        "dir": "across"
+      },
+      {
+        "word": "EXOMARS",
+        "row": 2,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "GALILEO",
+        "row": 4,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "MARINER",
+        "row": 6,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "VOYAGER",
+        "row": 7,
+        "col": 7,
+        "dir": "across"
+      },
+      {
+        "word": "PERSEVERANCE",
+        "row": 9,
+        "col": 2,
+        "dir": "across"
+      },
+      {
+        "word": "MIR",
+        "row": 10,
+        "col": 13,
+        "dir": "across"
+      },
+      {
+        "word": "JUNO",
+        "row": 11,
+        "col": 0,
+        "dir": "across"
+      },
+      {
+        "word": "ATLANTIS",
+        "row": 13,
+        "col": 3,
+        "dir": "across"
+      },
+      {
+        "word": "SKYLAB",
+        "row": 14,
+        "col": 10,
+        "dir": "across"
+      },
+      {
+        "word": "HORIZONS",
+        "row": 15,
+        "col": 1,
+        "dir": "across"
+      },
+      {
+        "word": "PIONEER",
+        "row": 17,
+        "col": 9,
+        "dir": "across"
+      },
+      {
+        "word": "CHALLENGER",
+        "row": 0,
+        "col": 4,
+        "dir": "down"
+      },
+      {
+        "word": "TIANGONG",
+        "row": 0,
+        "col": 11,
+        "dir": "down"
+      },
+      {
+        "word": "SOYUZ",
+        "row": 0,
+        "col": 14,
+        "dir": "down"
+      },
+      {
+        "word": "DISCOVERY",
+        "row": 3,
+        "col": 8,
+        "dir": "down"
+      },
+      {
+        "word": "GEMINI",
+        "row": 4,
+        "col": 0,
+        "dir": "down"
+      },
+      {
+        "word": "MERCURY",
+        "row": 5,
+        "col": 15,
+        "dir": "down"
+      },
+      {
+        "word": "ARTEMIS",
+        "row": 6,
+        "col": 13,
+        "dir": "down"
+      },
+      {
+        "word": "ENDEAVOUR",
+        "row": 9,
+        "col": 6,
+        "dir": "down"
+      },
+      {
+        "word": "LUNOKHOD",
+        "row": 10,
+        "col": 1,
+        "dir": "down"
+      },
+      {
+        "word": "CASSINI",
+        "row": 11,
+        "col": 10,
+        "dir": "down"
+      }
+    ]
+  }
+]
