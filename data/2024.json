@@ -1,0 +1,401 @@
+[
+  {
+    "puzzleId": 1,
+    "puzzleDate": "2024-10-25",
+    "theme": "Jungle Animals",
+    "grid": [
+      "RDZTHJANOELEMAHC", "BTAPIRALNWIRBJJB", "MQMPPOOGLONACUOT", "MYRTPIEGUIHZMHLI",
+      "ASPROCYONAGTHREZ", "NYRIPRRRNIRAYTOG", "AEBNODRODDMMTPPI", "CKAATUTACUSALOAB",
+      "ONBTAOQNPOTDLWRS", "NOOUMLGGACDOUFDQ", "DMOGUJLRLHHILHWV", "ALNNSAEULKPELERP",
+      "WNOACGMXIXMEEECX", "DECRGFUPRDHALTPO", "HINOUURROKIXBEAM", "WPVBAJZAGCNPBTZH"
+    ],
+    "words": [
+      "ALLIGATOR", "ANACONDA", "BABOON", "CHAMELEON", "CHEETAH",
+      "CROCODILE", "ELEPHANT", "FLAMINGO", "GORILLA", "HIPPOPOTAMUS",
+      "JAGUAR", "LEMUR", "LEOPARD", "MONKEY", "OCELOT",
+      "ORANGUTAN", "PARROT", "PYTHON", "TAPIR", "TOUCAN"
+    ],
+    "placements": [
+      {"word":"ALLIGATOR","row":0,"col":6,"dr":1,"dc":1},
+      {"word":"ANACONDA","row":4,"col":0,"dr":1,"dc":0},
+      {"word":"BABOON","row":6,"col":2,"dr":1,"dc":0},
+      {"word":"CHAMELEON","row":0,"col":15,"dr":0,"dc":-1},
+      {"word":"CHEETAH","row":9,"col":9,"dr":1,"dc":1},
+      {"word":"CROCODILE","row":4,"col":5,"dr":1,"dc":1},
+      {"word":"ELEPHANT","row":14,"col":13,"dr":-1,"dc":-1},
+      {"word":"FLAMINGO","row":9,"col":13,"dr":-1,"dc":-1},
+      {"word":"GORILLA","row":15,"col":8,"dr":-1,"dc":0},
+      {"word":"HIPPOPOTAMUS","row":0,"col":4,"dr":1,"dc":0},
+      {"word":"JAGUAR","row":0,"col":5,"dr":1,"dc":1},
+      {"word":"LEMUR","row":10,"col":6,"dr":1,"dc":0},
+      {"word":"LEOPARD","row":3,"col":14,"dr":1,"dc":0},
+      {"word":"MONKEY","row":10,"col":1,"dr":-1,"dc":0},
+      {"word":"OCELOT","row":13,"col":15,"dr":-1,"dc":-1},
+      {"word":"ORANGUTAN","row":14,"col":3,"dr":-1,"dc":0},
+      {"word":"PARROT","row":8,"col":8,"dr":-1,"dc":-1},
+      {"word":"PYTHON","row":6,"col":13,"dr":-1,"dc":-1},
+      {"word":"TAPIR","row":1,"col":1,"dr":0,"dc":1},
+      {"word":"TOUCAN","row":2,"col":15,"dr":0,"dc":-1}
+    ]
+  },
+
+  {
+    "puzzleId": 2,
+    "puzzleDate": "2024-11-01",
+    "theme": "Roman Mythology",
+    "grid": [
+      "AANAIDQVENUSNWMK", "OQSUNAJPBUBRYILN", "WBNNACLUVTENNISG", "EEBEMPUGYTXEVKEM",
+      "RPEHPDULIRRICSRP", "ZTUXVTEPTVUPYGEB", "SRAMEKUZAEUCIACK", "AANWSJTNZAVWRCMA",
+      "FRAXTDNEEFBBQEVS", "AQOJARIDIPUCDXMX", "UFHLUXKMQQAPOLLO", "NQVTFJLARESFFETS",
+      "UCASUHCCABGALUMX", "SSONUJURQWHLLUPP", "HMDJGXKMKCIPBDAJ", "GXDOLEPIJZZVTEMI"
+    ],
+    "words": [
+      "APOLLO", "BACCHUS", "CERES", "CUPID", "DIANA",
+      "FAUNUS", "FLORA", "JANUS", "JUNO", "JUPITER",
+      "LARES", "MARS", "MERCURY", "MINERVA", "NEPTUNE",
+      "PLUTO", "SATURN", "VENUS", "VESTA", "VULCAN"
+    ],
+    "placements": [
+      {"word":"APOLLO","row":10,"col":10,"dr":0,"dc":1},
+      {"word":"BACCHUS","row":12,"col":9,"dr":0,"dc":-1},
+      {"word":"CERES","row":6,"col":14,"dr":-1,"dc":0},
+      {"word":"CUPID","row":9,"col":11,"dr":0,"dc":-1},
+      {"word":"DIANA","row":0,"col":5,"dr":0,"dc":-1},
+      {"word":"FAUNUS","row":8,"col":0,"dr":1,"dc":0},
+      {"word":"FLORA","row":11,"col":4,"dr":-1,"dc":-1},
+      {"word":"JANUS","row":1,"col":6,"dr":0,"dc":-1},
+      {"word":"JUNO","row":13,"col":5,"dr":0,"dc":-1},
+      {"word":"JUPITER","row":7,"col":5,"dr":-1,"dc":1},
+      {"word":"LARES","row":11,"col":6,"dr":0,"dc":1},
+      {"word":"MARS","row":6,"col":3,"dr":0,"dc":-1},
+      {"word":"MERCURY","row":9,"col":14,"dr":-1,"dc":-1},
+      {"word":"MINERVA","row":0,"col":14,"dr":1,"dc":-1},
+      {"word":"NEPTUNE","row":2,"col":2,"dr":1,"dc":1},
+      {"word":"PLUTO","row":14,"col":11,"dr":-1,"dc":1},
+      {"word":"SATURN","row":13,"col":1,"dr":-1,"dc":1},
+      {"word":"VENUS","row":0,"col":7,"dr":0,"dc":1},
+      {"word":"VESTA","row":5,"col":4,"dr":1,"dc":0},
+      {"word":"VULCAN","row":2,"col":8,"dr":0,"dc":-1}
+    ]
+  },
+
+  {
+    "puzzleId": 3,
+    "puzzleDate": "2024-11-08",
+    "theme": "The Virtues",
+    "grid": [
+      "VKEECLBYRHRFTHFH", "BNYJCORKFCOXUIOC", "PMDHUEMFYRHMDNOM", "IXXNVSXPGUIAEXOY",
+      "EUIAHOTIALRSRAWE", "GCRGBGVIISTURIDS", "ABNMPEETCYSEOUTS", "RWJANAYNKESITNSY",
+      "UNIEROTCEPOIOEON", "OFSSGEYIERTONNHH", "CSAEDTPCEAODBOIT", "PYAIIOTMRNNSPRUF",
+      "LJMNTAMGEICEIMKX", "VRGYOHVBKTOEOTMI", "MIAQLOYALTYGYSYJ", "DBLTEIMVGTEAGAIM"
+    ],
+    "words": [
+      "BRAVERY", "CHARITY", "COMPASSION", "COURAGE", "DIGNITY",
+      "FAITH", "FORGIVENESS", "GENEROSITY", "GRATITUDE", "HONESTY",
+      "HONOUR", "HOPE", "HUMILITY", "JUSTICE", "KINDNESS",
+      "LOYALTY", "PATIENCE", "RESPECT", "TEMPERANCE", "WISDOM"
+    ],
+    "placements": [
+      {"word":"BRAVERY","row":6,"col":1,"dr":-1,"dc":1},
+      {"word":"CHARITY","row":1,"col":9,"dr":1,"dc":1},
+      {"word":"COMPASSION","row":0,"col":4,"dr":1,"dc":1},
+      {"word":"COURAGE","row":10,"col":0,"dr":-1,"dc":0},
+      {"word":"DIGNITY","row":15,"col":0,"dr":-1,"dc":1},
+      {"word":"FAITH","row":9,"col":1,"dr":1,"dc":1},
+      {"word":"FORGIVENESS","row":0,"col":11,"dr":1,"dc":-1},
+      {"word":"GENEROSITY","row":5,"col":5,"dr":1,"dc":1},
+      {"word":"GRATITUDE","row":12,"col":7,"dr":-1,"dc":1},
+      {"word":"HONESTY","row":0,"col":15,"dr":1,"dc":-1},
+      {"word":"HONOUR","row":9,"col":15,"dr":-1,"dc":-1},
+      {"word":"HOPE","row":9,"col":14,"dr":1,"dc":-1},
+      {"word":"HUMILITY","row":0,"col":13,"dr":1,"dc":-1},
+      {"word":"JUSTICE","row":1,"col":3,"dr":1,"dc":1},
+      {"word":"KINDNESS","row":13,"col":8,"dr":-1,"dc":1},
+      {"word":"LOYALTY","row":14,"col":4,"dr":0,"dc":1},
+      {"word":"PATIENCE","row":6,"col":4,"dr":1,"dc":1},
+      {"word":"RESPECT","row":5,"col":12,"dr":1,"dc":-1},
+      {"word":"TEMPERANCE","row":13,"col":9,"dr":-1,"dc":-1},
+      {"word":"WISDOM","row":7,"col":1,"dr":1,"dc":1}
+    ]
+  },
+
+  {
+    "puzzleId": 4,
+    "puzzleDate": "2024-11-15",
+    "theme": "Caribbean Islands",
+    "grid": [
+      "SAINTLUCIARUBACX", "ZPWEIAUGITNADYQO", "ABLFCDRVHWDRGSGU", "BAHAMASRYEOIVAPI",
+      "OROYADMREGTQBEZT", "MBCDAIORNSNOGSGA", "OAIINNVIRBTEOKVM", "ODRBGIGAVJSNEVIS",
+      "UOOTURKSCAICOSJY", "PSTBITECNIEAWMCC", "QZRVLNUQMLNCSUBR", "CCERLRITIAHIBKXS",
+      "IKUGAPHQVITAMTVW", "FHPCMPNPUPNMYOIP", "BQAEBCLGRENADADW", "BOLZCLWQXHVJCIGX"
+    ],
+    "words": [
+      "TURKSCAICOS", "VIRGINGORDA", "MARTINIQUE", "MONTSERRAT", "PUERTORICO",
+      "SAINTLUCIA", "ANGUILLA", "BARBADOS", "DOMINICA", "TRINIDAD",
+      "ANTIGUA", "BAHAMAS", "CURACAO", "GRENADA", "JAMAICA",
+      "TOBAGO", "ARUBA", "HAITI", "NEVIS", "CUBA"
+    ],
+    "placements": [
+      {"word":"ANGUILLA","row":5,"col":4,"dr":1,"dc":0},
+      {"word":"ANTIGUA","row":1,"col":11,"dr":0,"dc":-1},
+      {"word":"ARUBA","row":0,"col":9,"dr":0,"dc":1},
+      {"word":"BAHAMAS","row":3,"col":0,"dr":0,"dc":1},
+      {"word":"BARBADOS","row":2,"col":1,"dr":1,"dc":0},
+      {"word":"CUBA","row":9,"col":14,"dr":1,"dc":-1},
+      {"word":"CURACAO","row":9,"col":7,"dr":1,"dc":-1},
+      {"word":"DOMINICA","row":14,"col":14,"dr":-1,"dc":-1},
+      {"word":"GRENADA","row":14,"col":7,"dr":0,"dc":1},
+      {"word":"HAITI","row":11,"col":10,"dr":0,"dc":-1},
+      {"word":"JAMAICA","row":15,"col":11,"dr":-1,"dc":0},
+      {"word":"MARTINIQUE","row":5,"col":0,"dr":1,"dc":1},
+      {"word":"MONTSERRAT","row":9,"col":13,"dr":-1,"dc":-1},
+      {"word":"NEVIS","row":7,"col":11,"dr":0,"dc":1},
+      {"word":"PUERTORICO","row":13,"col":2,"dr":-1,"dc":0},
+      {"word":"SAINTLUCIA","row":0,"col":0,"dr":0,"dc":1},
+      {"word":"TOBAGO","row":6,"col":10,"dr":-1,"dc":1},
+      {"word":"TRINIDAD","row":9,"col":5,"dr":-1,"dc":0},
+      {"word":"TURKSCAICOS","row":8,"col":3,"dr":0,"dc":1},
+      {"word":"VIRGINGORDA","row":10,"col":3,"dr":-1,"dc":1}
+    ]
+  },
+
+  {
+    "puzzleId": 5,
+    "puzzleDate": "2024-11-22",
+    "theme": "Sports 🤾‍♀️",
+    "grid": [
+      "ZODFTZSCGLRVGPTK", "FWZSDPYIWJKIGWSO", "IIXGOCRICKETROGK", "UJMNLCBLLCLLQHLI",
+      "BYUILAZBLLABTOOF", "NSNIBKBLAANZYHGR", "SGEKQRABBDBLCONE", "XMASEBYGTGMESWIL",
+      "KHECDENTENNISCXH", "SFCNLNOSKIRFNAOY", "WOALWFHASCOUXTBH", "SHOSCITSANMYGGOI",
+      "CVUXUPAWBELWUCZN", "RLNCCGRIXFFRKKVZ", "YREHCRAGNYZEYDSD", "VVGNIMMIWSYJPVKM"
+    ],
+    "words": [
+      "BASKETBALL", "GYMNASTICS", "VOLLEYBALL", "BADMINTON", "BASEBALL",
+      "FOOTBALL", "HANDBALL", "MARATHON", "SWIMMING", "ARCHERY",
+      "CRICKET", "CYCLING", "FENCING", "BOXING", "HOCKEY",
+      "SKIING", "SOCCER", "TENNIS", "RUGBY", "GOLF"
+    ],
+    "placements": [
+      {"word":"ARCHERY","row":14,"col":6,"dr":0,"dc":-1},
+      {"word":"BADMINTON","row":4,"col":7,"dr":1,"dc":1},
+      {"word":"BASEBALL","row":10,"col":14,"dr":-1,"dc":-1},
+      {"word":"BASKETBALL","row":12,"col":8,"dr":-1,"dc":0},
+      {"word":"BOXING","row":10,"col":14,"dr":-1,"dc":0},
+      {"word":"CRICKET","row":2,"col":5,"dr":0,"dc":1},
+      {"word":"CYCLING","row":0,"col":7,"dr":1,"dc":-1},
+      {"word":"FENCING","row":13,"col":9,"dr":-1,"dc":0},
+      {"word":"FOOTBALL","row":4,"col":15,"dr":0,"dc":-1},
+      {"word":"GOLF","row":1,"col":12,"dr":1,"dc":1},
+      {"word":"GYMNASTICS","row":11,"col":12,"dr":0,"dc":-1},
+      {"word":"HANDBALL","row":11,"col":1,"dr":-1,"dc":1},
+      {"word":"HOCKEY","row":10,"col":15,"dr":1,"dc":-1},
+      {"word":"MARATHON","row":15,"col":6,"dr":-1,"dc":0},
+      {"word":"RUGBY","row":13,"col":11,"dr":-1,"dc":1},
+      {"word":"SKIING","row":7,"col":3,"dr":-1,"dc":0},
+      {"word":"SOCCER","row":11,"col":0,"dr":-1,"dc":1},
+      {"word":"SWIMMING","row":15,"col":9,"dr":0,"dc":-1},
+      {"word":"TENNIS","row":8,"col":7,"dr":0,"dc":1},
+      {"word":"VOLLEYBALL","row":12,"col":1,"dr":-1,"dc":1}
+    ]
+  },
+
+  {
+    "puzzleId": 6,
+    "puzzleDate": "2024-11-29",
+    "theme": "Winter ❄️",
+    "grid": [
+      "OQSNOWSUITEMVWFS", "SBUYEKALFWONSRFP", "UWSZDEICICLEOLMY", "RHNIKSRICMZSVQIT",
+      "HGONVHKGHKTZTETZ", "WIWSDHRIRWFQKOTX", "OEMPDVBUIESEBAEV", "GLACIERNSNVOSFNV",
+      "JSNBRBKKTGGEHESR", "YWCNHLPFMGFRACSU", "WGAEIIECALPERIFF", "OTKNOZUNSUEOQTFR",
+      "EAGRUZPXPUCYDSED", "CALXBAOCOCTOHLUP", "CKRKKRCHILLYGOOZ", "ROMVADQLHKVNUSEO"
+    ],
+    "words": [
+      "CHRISTMAS", "EVERGREEN", "FIREPLACE", "HIBERNATE", "SNOWFLAKE",
+      "SNOWSUITE", "TWINKLING", "BLIZZARD", "HOTCOCOA", "SOLSTICE",
+      "TOBOGGAN", "GLACIER", "MITTENS", "SNOWMAN", "CHILLY",
+      "ICICLE", "SKIING", "SLEIGH", "FROST", "SCARF"
+    ],
+    "placements": [
+      {"word":"BLIZZARD","row":8,"col":5,"dr":1,"dc":0},
+      {"word":"CHILLY","row":14,"col":6,"dr":0,"dc":1},
+      {"word":"CHRISTMAS","row":3,"col":8,"dr":1,"dc":0},
+      {"word":"EVERGREEN","row":8,"col":11,"dr":-1,"dc":-1},
+      {"word":"FIREPLACE","row":10,"col":14,"dr":0,"dc":-1},
+      {"word":"FROST","row":0,"col":14,"dr":1,"dc":-1},
+      {"word":"GLACIER","row":7,"col":0,"dr":0,"dc":1},
+      {"word":"HIBERNATE","row":4,"col":8,"dr":1,"dc":-1},
+      {"word":"HOTCOCOA","row":13,"col":12,"dr":0,"dc":-1},
+      {"word":"ICICLE","row":2,"col":6,"dr":0,"dc":1},
+      {"word":"MITTENS","row":2,"col":14,"dr":1,"dc":0},
+      {"word":"SCARF","row":9,"col":14,"dr":0,"dc":-1},
+      {"word":"SKIING","row":3,"col":5,"dr":1,"dc":1},
+      {"word":"SLEIGH","row":8,"col":1,"dr":-1,"dc":0},
+      {"word":"SNOWFLAKE","row":1,"col":12,"dr":0,"dc":-1},
+      {"word":"SNOWMAN","row":2,"col":2,"dr":1,"dc":0},
+      {"word":"SNOWSUITE","row":0,"col":2,"dr":0,"dc":1},
+      {"word":"SOLSTICE","row":15,"col":13,"dr":-1,"dc":0},
+      {"word":"TOBOGGAN","row":4,"col":14,"dr":1,"dc":-1},
+      {"word":"TWINKLING","row":4,"col":10,"dr":1,"dc":-1}
+    ]
+  },
+
+  {
+    "puzzleId": 7,
+    "puzzleDate": "2024-12-06",
+    "theme": "European Cities",
+    "grid": [
+      "CGDUHLONDONBJHCQ", "KXPEFGIBLKNQHQII", "EVWCRLRSENZUUKMP", "KXVNRODUBLINNIRJ",
+      "CDREEMAABOGYWZNR", "VQBRBGASTNNRZMZP", "PXEOGAADBHINALIM", "FRJLDNTHREEDODBC",
+      "JKHFBOESNIRNEIEA", "NFBJRLLWEEDLSMUT", "PARISEVMTPPTMWGI", "HZGISCOSKLAOJMAW",
+      "UHNSKRMQONZDCIRV", "DKUSWAKUBKNEUNPL", "IRGMUBXUUKWDGBFW", "BXAVDDLWBWEGKAGM"
+    ],
+    "words": [
+      "COPENHAGEN", "AMSTERDAM", "BARCELONA", "EDINBURGH", "BELGRADE",
+      "BRUSSELS", "BUDAPEST", "FLORENCE", "HELSINKI", "ISTANBUL",
+      "ATHENS", "BERLIN", "DUBLIN", "LISBON", "LONDON",
+      "MADRID", "PRAGUE", "MILAN", "PARIS", "ROME"
+    ],
+    "placements": [
+      {"word":"AMSTERDAM","row":13,"col":5,"dr":-1,"dc":1},
+      {"word":"ATHENS","row":4,"col":7,"dr":1,"dc":1},
+      {"word":"BARCELONA","row":14,"col":5,"dr":-1,"dc":0},
+      {"word":"BELGRADE","row":1,"col":7,"dr":1,"dc":1},
+      {"word":"BERLIN","row":5,"col":2,"dr":-1,"dc":1},
+      {"word":"BRUSSELS","row":15,"col":0,"dr":-1,"dc":1},
+      {"word":"BUDAPEST","row":14,"col":13,"dr":-1,"dc":-1},
+      {"word":"COPENHAGEN","row":12,"col":12,"dr":-1,"dc":-1},
+      {"word":"DUBLIN","row":3,"col":6,"dr":0,"dc":1},
+      {"word":"EDINBURGH","row":8,"col":12,"dr":-1,"dc":-1},
+      {"word":"FLORENCE","row":8,"col":3,"dr":-1,"dc":0},
+      {"word":"HELSINKI","row":7,"col":7,"dr":1,"dc":-1},
+      {"word":"ISTANBUL","row":8,"col":13,"dr":1,"dc":-1},
+      {"word":"LISBON","row":0,"col":5,"dr":1,"dc":1},
+      {"word":"LONDON","row":0,"col":5,"dr":0,"dc":1},
+      {"word":"MADRID","row":4,"col":5,"dr":1,"dc":1},
+      {"word":"MILAN","row":6,"col":15,"dr":0,"dc":-1},
+      {"word":"PARIS","row":10,"col":0,"dr":0,"dc":1},
+      {"word":"PRAGUE","row":13,"col":14,"dr":-1,"dc":0},
+      {"word":"ROME","row":12,"col":5,"dr":-1,"dc":1}
+    ]
+  },
+
+  {
+    "puzzleId": 8,
+    "puzzleDate": "2024-12-13",
+    "theme": "Countries 🌎",
+    "grid": [
+      "MFVLLLDMVLAZSSXC", "GBRIYNAMREGOWSPS", "USYRAGNUHLDREALS", "MIQLMVROSKLPDIZX",
+      "FRODWUNWCTOOESTI", "IPVDNOIGORRFNSRP", "MADRRARGTGLIMUWK", "JSOWXELULECNARFH",
+      "WWALESGGAESLRLLL", "ZYOCLAGYNTBAKXCP", "ELEMLFGQDEDNCZRH", "ZAZHGIRELANDPWIO",
+      "STVWSPAINIHVYSMM", "TIBOFQEAZJCCOBLY", "OFLLUCCPHPNFCZID", "NWDULZJVMLEFKWIB"
+    ],
+    "words": [
+      "PORTUGAL", "SCOTLAND", "AUSTRIA", "BELGIUM", "DENMARK",
+      "ENGLAND", "FINLAND", "GERMANY", "HUNGARY", "IRELAND",
+      "CANADA", "FRANCE", "GREECE", "NORWAY", "POLAND",
+      "RUSSIA", "SWEDEN", "ITALY", "SPAIN", "WALES"
+    ],
+    "placements": [
+      {"word":"AUSTRIA","row":1,"col":6,"dr":1,"dc":1},
+      {"word":"BELGIUM","row":9,"col":10,"dr":-1,"dc":-1},
+      {"word":"CANADA","row":14,"col":6,"dr":-1,"dc":1},
+      {"word":"DENMARK","row":3,"col":12,"dr":1,"dc":0},
+      {"word":"ENGLAND","row":10,"col":9,"dr":-1,"dc":-1},
+      {"word":"FINLAND","row":5,"col":11,"dr":1,"dc":0},
+      {"word":"FRANCE","row":7,"col":14,"dr":0,"dc":-1},
+      {"word":"GERMANY","row":1,"col":10,"dr":0,"dc":-1},
+      {"word":"GREECE","row":5,"col":7,"dr":1,"dc":-1},
+      {"word":"HUNGARY","row":2,"col":8,"dr":0,"dc":-1},
+      {"word":"IRELAND","row":11,"col":5,"dr":0,"dc":1},
+      {"word":"ITALY","row":13,"col":1,"dr":-1,"dc":0},
+      {"word":"NORWAY","row":4,"col":6,"dr":1,"dc":-1},
+      {"word":"POLAND","row":5,"col":1,"dr":-1,"dc":1},
+      {"word":"PORTUGAL","row":3,"col":11,"dr":1,"dc":-1},
+      {"word":"RUSSIA","row":7,"col":13,"dr":-1,"dc":0},
+      {"word":"SCOTLAND","row":3,"col":8,"dr":1,"dc":0},
+      {"word":"SPAIN","row":12,"col":4,"dr":0,"dc":1},
+      {"word":"SWEDEN","row":0,"col":12,"dr":1,"dc":0},
+      {"word":"WALES","row":8,"col":1,"dr":0,"dc":1}
+    ]
+  },
+
+  {
+    "puzzleId": 9,
+    "puzzleDate": "2024-12-20",
+    "theme": "Classic Literature 🖋️",
+    "grid": [
+      "LAHTODYSSEYEGISU", "TOOOLBMACBETHZSD", "GTMGEDRACULAEBBB", "IDRIMOBYDICKSUNE",
+      "CQNEMTSIWTREVILO", "ANIMALFARMLSEIQW", "CHSESSYLUBWTOGMU", "CUAYIOUHAYSPTTEL",
+      "EHAMLETRYNYIHTRF", "BINAPRETEPREEHYO", "ECPXQSYKVIIYLTEU", "RYYYIKNEPLSHLXEC",
+      "LVYMPAATILOLOFNC", "AGSTRECAEPDNARAW", "METFPSDLNTSWJNJT", "LCNKDUGHVFEXOYDM"
+    ],
+    "words": [
+      "TREASUREISLAND", "LESMISERABLES", "FRANKENSTEIN", "OLIVERTWIST", "WARANDPEACE",
+      "ANIMALFARM", "JANEEYRE", "MOBYDICK", "PETERPAN", "THEILIAD",
+      "BEOWULF", "DRACULA", "MACBETH", "ODYSSEY", "OTHELLO",
+      "REBECCA", "ULYSSES", "HAMLET", "LOLITA", "EMMA"
+    ],
+    "placements": [
+      {"word":"ANIMALFARM","row":5,"col":0,"dr":0,"dc":1},
+      {"word":"BEOWULF","row":2,"col":15,"dr":1,"dc":0},
+      {"word":"DRACULA","row":2,"col":5,"dr":0,"dc":1},
+      {"word":"EMMA","row":2,"col":4,"dr":1,"dc":0},
+      {"word":"FRANKENSTEIN","row":14,"col":3,"dr":-1,"dc":1},
+      {"word":"HAMLET","row":8,"col":1,"dr":0,"dc":1},
+      {"word":"JANEEYRE","row":14,"col":14,"dr":-1,"dc":0},
+      {"word":"LESMISERABLES","row":15,"col":0,"dr":-1,"dc":1},
+      {"word":"LOLITA","row":12,"col":11,"dr":0,"dc":-1},
+      {"word":"MACBETH","row":1,"col":6,"dr":0,"dc":1},
+      {"word":"MOBYDICK","row":3,"col":4,"dr":0,"dc":1},
+      {"word":"ODYSSEY","row":0,"col":4,"dr":0,"dc":1},
+      {"word":"OLIVERTWIST","row":4,"col":15,"dr":0,"dc":-1},
+      {"word":"OTHELLO","row":6,"col":12,"dr":1,"dc":0},
+      {"word":"PETERPAN","row":9,"col":9,"dr":0,"dc":-1},
+      {"word":"REBECCA","row":11,"col":0,"dr":-1,"dc":0},
+      {"word":"THEILIAD","row":7,"col":13,"dr":1,"dc":-1},
+      {"word":"TREASUREISLAND","row":2,"col":1,"dr":1,"dc":1},
+      {"word":"ULYSSES","row":6,"col":8,"dr":0,"dc":-1},
+      {"word":"WARANDPEACE","row":13,"col":15,"dr":0,"dc":-1}
+    ]
+  },
+
+  {
+    "puzzleId": 10,
+    "puzzleDate": "2024-12-27",
+    "theme": "World Travel Destinations 🧳",
+    "grid": [
+      "VKIBPNFKBCNYUXEB", "FVTSHVLKAILARSOH", "OTSOEUOILWNFHBLJ", "NXSPRTRRIOWACYOD",
+      "PIRKOOEALZNRGPEK", "WALYUBNEKCHDAMVS", "TBKBDPCTDPCRONXX", "OUOXUREIOTIRBNEH",
+      "EDOMADRETSMAUIKM", "HCDBBLIKTAPTPLBT", "MQICOAEALRJHFCJD", "YWUNYCNDAPDEHNBZ",
+      "TSIGEBIGFRHNDFRS", "LDSJUVUUKVSSZNFK", "YEWLEESPEOYQBSRX", "VXTSYDNEYSKHHMJB"
+    ],
+    "words": [
+      "AMSTERDAM", "BARCELONA", "FLORENCE", "ISTANBUL", "MALDIVES",
+      "BANGKOK", "TORONTO", "ATHENS", "BERLIN", "DUBLIN",
+      "LONDON", "PRAGUE", "SYDNEY", "VENICE", "CAIRO",
+      "DUBAI", "KYOTO", "PARIS", "BALI", "ROME"
+    ],
+    "placements": [
+      {"word":"AMSTERDAM","row":8,"col":11,"dr":0,"dc":-1},
+      {"word":"ATHENS","row":8,"col":11,"dr":1,"dc":0},
+      {"word":"BALI","row":0,"col":8,"dr":1,"dc":0},
+      {"word":"BANGKOK","row":9,"col":4,"dr":1,"dc":1},
+      {"word":"BARCELONA","row":9,"col":3,"dr":-1,"dc":1},
+      {"word":"BERLIN","row":5,"col":5,"dr":-1,"dc":1},
+      {"word":"CAIRO","row":0,"col":9,"dr":1,"dc":-1},
+      {"word":"DUBAI","row":8,"col":1,"dr":-1,"dc":0},
+      {"word":"DUBLIN","row":8,"col":5,"dr":-1,"dc":-1},
+      {"word":"FLORENCE","row":0,"col":6,"dr":1,"dc":0},
+      {"word":"ISTANBUL","row":7,"col":10,"dr":1,"dc":-1},
+      {"word":"KYOTO","row":6,"col":2,"dr":-1,"dc":1},
+      {"word":"LONDON","row":2,"col":8,"dr":1,"dc":1},
+      {"word":"MALDIVES","row":8,"col":10,"dr":1,"dc":-1},
+      {"word":"PARIS","row":4,"col":13,"dr":1,"dc":-1},
+      {"word":"PRAGUE","row":9,"col":10,"dr":1,"dc":-1},
+      {"word":"ROME","row":7,"col":11,"dr":-1,"dc":1},
+      {"word":"SYDNEY","row":15,"col":3,"dr":0,"dc":1},
+      {"word":"TORONTO","row":1,"col":2,"dr":1,"dc":1},
+      {"word":"VENICE","row":13,"col":5,"dr":-1,"dc":-1}
+    ]
+  }
+]
