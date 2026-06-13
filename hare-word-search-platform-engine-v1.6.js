@@ -1,10 +1,10 @@
 /* =========================================================
    HARE PUBLISHING WORD SEARCH PLATFORM ENGINE
    GitHub/jsDelivr hosted engine file
-   Updated: 2026-06-13 v1.6 — Assist modal, word-list polish, mobile controls update
+   Updated: 2026-06-13 v1.6 — Assist tray communication-center update
 
    Suggested filename:
-   hare-word-search-platform-engine-v1.5.js
+   hare-word-search-platform-engine-v1.6.js
 
    Expected page setup:
    - A container with id="hp-wordsearch-container"
@@ -274,7 +274,8 @@ window.HareWordSearchEngine = {
 
     let previewPath = [];
     let selectedAssistWord = null;
-    let assistMode = "";
+    let assistDirectionOn = false;
+    let assistFirstLetterOn = false;
     let assistOpen = false;
 
     function isFinished() {
@@ -388,7 +389,6 @@ window.HareWordSearchEngine = {
       state.anchor = null;
       previewPath = [];
       selectedAssistWord = null;
-      assistMode = "";
       assistOpen = false;
       saveState();
       renderStatus();
@@ -411,8 +411,8 @@ window.HareWordSearchEngine = {
       state.revealedAt = "";
       previewPath = [];
       selectedAssistWord = null;
-      assistMode = "";
-      assistOpen = false;
+      assistDirectionOn = false;
+      assistFirstLetterOn = false;
       assistOpen = false;
 
       saveState();
@@ -438,7 +438,8 @@ window.HareWordSearchEngine = {
       state.anchor = null;
       previewPath = [];
       selectedAssistWord = null;
-      assistMode = "";
+      assistDirectionOn = false;
+      assistFirstLetterOn = false;
 
       saveState();
       recordPuzzleEvent("revealed", { wordsFound: state.foundWords.length, totalWords: normalizedWords.length, startedAt: state.startedAt, revealedAt: state.revealedAt });
@@ -458,6 +459,36 @@ window.HareWordSearchEngine = {
       if (state.solved) return "Word search solved! 🎉";
       if (state.revealed) return "Answers revealed.";
       if (state.anchor) return `Start selected: Row ${state.anchor.r + 1}, Col ${state.anchor.c + 1}. Now choose the last letter.`;
+
+      const hasAssist = assistDirectionOn || assistFirstLetterOn;
+
+      if (hasAssist && selectedAssistWord) {
+        const parts = [];
+        const placement = getPlacementForWord(selectedAssistWord);
+
+        if (assistDirectionOn) {
+          parts.push(`Direction: ${directionTextForPlacement(placement)}`);
+        }
+
+        if (assistFirstLetterOn) {
+          parts.push(`Showing every ${selectedAssistLetter()} in the grid.`);
+        }
+
+        return parts.join(" • ");
+      }
+
+      if (assistDirectionOn && assistFirstLetterOn) {
+        return "Word Direction and Show First Letter assists active. Select a word from the list.";
+      }
+
+      if (assistDirectionOn) {
+        return "Word Direction assist active. Select a word from the list.";
+      }
+
+      if (assistFirstLetterOn) {
+        return "Show First Letter assist active. Select a word from the list.";
+      }
+
       return "Click the first letter, then click the last letter of a hidden word.";
     }
 
@@ -489,50 +520,33 @@ window.HareWordSearchEngine = {
     }
 
     function renderAssistOnly() {
-      const popoverEl = mount.querySelector("#hp-ws-assist-popover");
+      const trayEl = mount.querySelector("#hp-ws-assist-tray");
       const toggleBtn = mount.querySelector('[data-a="toggle-assist-modal"]');
-      const msgEl = mount.querySelector("#hp-ws-assist-msg");
-      const selectedEl = mount.querySelector("#hp-ws-assist-selected");
       const dirBtn = mount.querySelector('[data-a="assist-direction"]');
       const firstBtn = mount.querySelector('[data-a="assist-first-letter"]');
 
-      if (popoverEl) {
-        popoverEl.classList.toggle("open", assistOpen);
-        popoverEl.setAttribute("aria-hidden", assistOpen ? "false" : "true");
+      if (trayEl) {
+        trayEl.classList.toggle("open", assistOpen);
+        trayEl.setAttribute("aria-hidden", assistOpen ? "false" : "true");
       }
 
       if (toggleBtn) {
-        toggleBtn.classList.toggle("active", assistOpen || Boolean(assistMode));
+        toggleBtn.classList.toggle("active", assistOpen || assistDirectionOn || assistFirstLetterOn);
         toggleBtn.setAttribute("aria-expanded", assistOpen ? "true" : "false");
+        toggleBtn.setAttribute("aria-label", assistOpen ? "Close assist tools" : "Open assist tools");
       }
 
-      if (selectedEl) {
-        selectedEl.textContent = selectedAssistWord ? `Selected: ${selectedAssistWord}` : "Select a word";
+      if (dirBtn) {
+        dirBtn.classList.toggle("active", assistDirectionOn);
+        dirBtn.setAttribute("aria-pressed", assistDirectionOn ? "true" : "false");
       }
 
-      if (dirBtn) dirBtn.classList.toggle("active", assistMode === "direction");
-      if (firstBtn) firstBtn.classList.toggle("active", assistMode === "first-letter");
-
-      if (!msgEl) return;
-
-      if (!selectedAssistWord) {
-        msgEl.textContent = "Select a word from the word list to use an assist.";
-        return;
+      if (firstBtn) {
+        firstBtn.classList.toggle("active", assistFirstLetterOn);
+        firstBtn.setAttribute("aria-pressed", assistFirstLetterOn ? "true" : "false");
       }
 
-      const placement = getPlacementForWord(selectedAssistWord);
-
-      if (assistMode === "direction") {
-        msgEl.textContent = `Direction: ${directionTextForPlacement(placement)}`;
-        return;
-      }
-
-      if (assistMode === "first-letter") {
-        msgEl.textContent = `Showing every ${selectedAssistLetter()} in the grid.`;
-        return;
-      }
-
-      msgEl.textContent = "Choose an assist for the selected word.";
+      renderStatus();
     }
 
     function toggleAssistModal() {
@@ -548,21 +562,23 @@ window.HareWordSearchEngine = {
       renderAssistOnly();
       renderWordListOnly();
       renderBoardOnly();
+      renderStatus();
     }
 
     function setAssistMode(mode) {
       if (isFinished()) return;
 
-      if (!selectedAssistWord) {
-        renderAssistOnly();
-        const statusEl = mount.querySelector("#hp-ws-status-msg");
-        if (statusEl) statusEl.textContent = "Select a word from the word list to use an assist.";
-        return;
+      if (mode === "direction") {
+        assistDirectionOn = !assistDirectionOn;
       }
 
-      assistMode = assistMode === mode ? "" : mode;
+      if (mode === "first-letter") {
+        assistFirstLetterOn = !assistFirstLetterOn;
+      }
+
       renderAssistOnly();
       renderBoardOnly();
+      renderStatus();
     }
 
     function renderStats() {
@@ -573,7 +589,7 @@ window.HareWordSearchEngine = {
       const wordCountValue = mount.querySelector("#hp-ws-word-count");
 
       if (foundValue) foundValue.textContent = formatFoundCount();
-      if (wordCountValue) wordCountValue.textContent = `Words Found: ${state.foundWords.length}/${normalizedWords.length}`;
+      if (wordCountValue) wordCountValue.textContent = `Words Found: ${state.foundWords.length} of ${normalizedWords.length}`;
       if (remainingValue) remainingValue.textContent = String(normalizedWords.length - state.foundWords.length);
       if (sizeValue) sizeValue.textContent = `${gridSize}×${gridSize}`;
       if (progressFill) progressFill.style.width = `${progressPercent()}%`;
@@ -610,7 +626,7 @@ window.HareWordSearchEngine = {
       if (foundHere) classes.push("is-found");
       if (revealedOnlyHere) classes.push("is-revealed");
 
-      if (!isFinished() && assistMode === "first-letter" && selectedAssistWord && board[r][c] === selectedAssistLetter()) {
+      if (!isFinished() && assistFirstLetterOn && selectedAssistWord && board[r][c] === selectedAssistLetter()) {
         classes.push("is-assist-letter");
       }
 
@@ -792,16 +808,17 @@ window.HareWordSearchEngine = {
 
           <div class="hp-ws-col-right">
             <div class="hp-ws-panel">
-              <div class="hp-puzzle-tools" aria-label="Word Search puzzle controls">
-                <button type="button" class="hp-tool-btn assist-toggle" data-a="toggle-assist-modal" aria-expanded="false" aria-controls="hp-ws-assist-popover">Assist</button>
-                <button type="button" class="hp-tool-btn clear-tool" data-a="clear-selection">Clear</button>
-                <div class="hp-ws-assist-popover" id="hp-ws-assist-popover" aria-hidden="true">
-                  <div class="hp-ws-assist-selected" id="hp-ws-assist-selected">Select a word</div>
-                  <p class="hp-ws-assist-msg" id="hp-ws-assist-msg">Select a word from the word list to use an assist.</p>
-                  <div class="hp-ws-assist-options">
-                    <button type="button" class="hp-ws-assist-option" data-a="assist-direction">Word Direction</button>
-                    <button type="button" class="hp-ws-assist-option" data-a="assist-first-letter">Show First Letter</button>
+              <div class="hp-puzzle-tools" aria-label="Word Search assist controls">
+                <button type="button" class="hp-tool-btn assist-toggle" data-a="toggle-assist-modal" aria-expanded="false" aria-controls="hp-ws-assist-tray">
+                  <span class="material-symbols-outlined" aria-hidden="true">tips_and_updates</span>
+                  <span>Assist</span>
+                </button>
+                <div class="hp-ws-assist-tray" id="hp-ws-assist-tray" aria-hidden="true">
+                  <div class="hp-ws-assist-options" aria-label="Assist options">
+                    <button type="button" class="hp-ws-assist-option" data-a="assist-direction" aria-pressed="false">Word Direction</button>
+                    <button type="button" class="hp-ws-assist-option" data-a="assist-first-letter" aria-pressed="false">Show First Letter</button>
                   </div>
+                  <p class="hp-ws-assist-instruction">Select assistance type, then select word.</p>
                 </div>
               </div>
 
@@ -846,8 +863,7 @@ window.HareWordSearchEngine = {
               <span class="hp-help-line">Click the <strong>first letter</strong> of a hidden word, then click the <strong>last letter</strong>.</span>
               <span class="hp-help-line">Words may run <strong>horizontally</strong>, <strong>vertically</strong>, or <strong>diagonally</strong>.</span>
               <span class="hp-help-line">Words may also appear <strong>backward</strong>.</span>
-              <span class="hp-help-line"><strong>Clear</strong> removes the current start-letter selection.</span>
-              <span class="hp-help-line"><strong>Assist</strong> can show the direction of a selected word or highlight every matching first letter in the grid.</span>
+              <span class="hp-help-line"><strong>Assist</strong> can show a selected word’s direction or highlight every matching first letter in the grid.</span>
               <span class="hp-help-line"><strong>Start Over</strong> clears your progress and restarts the puzzle.</span>
             </div>
 
@@ -977,18 +993,18 @@ window.HareWordSearchEngine = {
 
       const helpModalEl = mount.querySelector("#hp-ws-help-modal");
       if (helpModalEl && helpModalEl.classList.contains("on")) {
-        if (e.key === "Escape") {
+        if (e.key === "Escape") hideHelpModal();
+        return;
+      }
+
+      if (e.key === "Escape") {
         if (assistOpen) {
           assistOpen = false;
           renderAssistOnly();
           return;
         }
-        hideHelpModal();
+        clearAnchor();
       }
-        return;
-      }
-
-      if (e.key === "Escape") clearAnchor();
     });
 
     if (state.solved && state.foundWords.length !== normalizedWords.length) {
