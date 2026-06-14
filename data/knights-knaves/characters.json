@@ -1,0 +1,204 @@
+{
+  "characters": [
+    {
+      "name": "Adelaide",
+      "image": "Adelaide.webp"
+    },
+    {
+      "name": "Agnes",
+      "image": "Agnes.webp"
+    },
+    {
+      "name": "Alaric",
+      "image": "Alaric.webp"
+    },
+    {
+      "name": "Aldric",
+      "image": "Aldric.webp"
+    },
+    {
+      "name": "Amabel",
+      "image": "Amabel.webp"
+    },
+    {
+      "name": "Aveline",
+      "image": "Aveline.webp"
+    },
+    {
+      "name": "Beatrice",
+      "image": "Beatrice.webp"
+    },
+    {
+      "name": "Benedict",
+      "image": "Benedict.webp"
+    },
+    {
+      "name": "Cedric",
+      "image": "Cedric.webp"
+    },
+    {
+      "name": "Celia",
+      "image": "Celia.webp"
+    },
+    {
+      "name": "Clara",
+      "image": "Clara.webp"
+    },
+    {
+      "name": "Conrad",
+      "image": "Conrad.webp"
+    },
+    {
+      "name": "Constance",
+      "image": "Constance.webp"
+    },
+    {
+      "name": "Dorian",
+      "image": "Dorian.webp"
+    },
+    {
+      "name": "Edith",
+      "image": "Edith.webp"
+    },
+    {
+      "name": "Edmund",
+      "image": "Edmund.webp"
+    },
+    {
+      "name": "Elinor",
+      "image": "Elinor.webp"
+    },
+    {
+      "name": "Eveline",
+      "image": "Eveline.webp"
+    },
+    {
+      "name": "Finnian",
+      "image": "Finnian.webp"
+    },
+    {
+      "name": "Garrick",
+      "image": "Garrick.webp"
+    },
+    {
+      "name": "Giles",
+      "image": "Giles.webp"
+    },
+    {
+      "name": "Guinevere",
+      "image": "Guinevere.webp"
+    },
+    {
+      "name": "Helena",
+      "image": "Helena.webp"
+    },
+    {
+      "name": "Hugo",
+      "image": "Hugo.webp"
+    },
+    {
+      "name": "Isolde",
+      "image": "Isolde.webp"
+    },
+    {
+      "name": "Kenji",
+      "image": "Kenji.webp"
+    },
+    {
+      "name": "Lenora",
+      "image": "Lenora.webp"
+    },
+    {
+      "name": "Leofric",
+      "image": "Leofric.webp"
+    },
+    {
+      "name": "Lila",
+      "image": "Lila.webp"
+    },
+    {
+      "name": "Lucia",
+      "image": "Lucia.webp"
+    },
+    {
+      "name": "Magnus",
+      "image": "Magnus.webp"
+    },
+    {
+      "name": "Margery",
+      "image": "Margery.webp"
+    },
+    {
+      "name": "Marian",
+      "image": "Marian.webp"
+    },
+    {
+      "name": "Marton",
+      "image": "Marton.webp"
+    },
+    {
+      "name": "Matilda",
+      "image": "Matilda.webp"
+    },
+    {
+      "name": "Neville",
+      "image": "Neville.webp"
+    },
+    {
+      "name": "Oswin",
+      "image": "Oswin.webp"
+    },
+    {
+      "name": "Percival",
+      "image": "Percival.webp"
+    },
+    {
+      "name": "Roderic",
+      "image": "Roderic.webp"
+    },
+    {
+      "name": "Roland",
+      "image": "Roland.webp"
+    },
+    {
+      "name": "Rosalind",
+      "image": "Rosalind.webp"
+    },
+    {
+      "name": "Rowan",
+      "image": "Rowan.webp"
+    },
+    {
+      "name": "Rowena",
+      "image": "Rowena.webp"
+    },
+    {
+      "name": "Selene",
+      "image": "Selene.webp"
+    },
+    {
+      "name": "Severin",
+      "image": "Severin.webp"
+    },
+    {
+      "name": "Sibyl",
+      "image": "Sibyl.webp"
+    },
+    {
+      "name": "Silas",
+      "image": "Silas.webp"
+    },
+    {
+      "name": "Thaddeus",
+      "image": "Thaddeus.webp"
+    },
+    {
+      "name": "Tristan",
+      "image": "tristan.webp"
+    },
+    {
+      "name": "Ysabel",
+      "image": "Ysabel.webp"
+    }
+  ]
+}
