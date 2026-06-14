@@ -1,304 +1,304 @@
 {
-“characters”: [
-{
-“name”: “Adelaide”,
-“image”: “Adelaide.webp”,
-“gender”: “female”,
-“active”: true
-},
-{
-“name”: “Agnes”,
-“image”: “Agnes.webp”,
-“gender”: “female”,
-“active”: true
-},
-{
-“name”: “Alaric”,
-“image”: “Alaric.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Aldric”,
-“image”: “Aldric.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Amabel”,
-“image”: “Amabel.webp”,
-“gender”: “female”,
-“active”: true
-},
-{
-“name”: “Aveline”,
-“image”: “Aveline.webp”,
-“gender”: “female”,
-“active”: true
-},
-{
-“name”: “Beatrice”,
-“image”: “Beatrice.webp”,
-“gender”: “female”,
-“active”: true
-},
-{
-“name”: “Benedict”,
-“image”: “Benedict.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Cedric”,
-“image”: “Cedric.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Celia”,
-“image”: “Celia.webp”,
-“gender”: “female”,
-“active”: true
-},
-{
-“name”: “Clara”,
-“image”: “Clara.webp”,
-“gender”: “female”,
-“active”: true
-},
-{
-“name”: “Conrad”,
-“image”: “Conrad.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Constance”,
-“image”: “Constance.webp”,
-“gender”: “female”,
-“active”: true
-},
-{
-“name”: “Dorian”,
-“image”: “Dorian.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Edith”,
-“image”: “Edith.webp”,
-“gender”: “female”,
-“active”: true
-},
-{
-“name”: “Edmund”,
-“image”: “Edmund.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Elinor”,
-“image”: “Elinor.webp”,
-“gender”: “female”,
-“active”: true
-},
-{
-“name”: “Eveline”,
-“image”: “Eveline.webp”,
-“gender”: “female”,
-“active”: true
-},
-{
-“name”: “Finnian”,
-“image”: “Finnian.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Garrick”,
-“image”: “Garrick.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Giles”,
-“image”: “Giles.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Guinevere”,
-“image”: “Guinevere.webp”,
-“gender”: “female”,
-“active”: true
-},
-{
-“name”: “Helena”,
-“image”: “Helena.webp”,
-“gender”: “female”,
-“active”: true
-},
-{
-“name”: “Hugo”,
-“image”: “Hugo.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Isolde”,
-“image”: “Isolde.webp”,
-“gender”: “female”,
-“active”: true
-},
-{
-“name”: “Kenji”,
-“image”: “Kenji.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Lenora”,
-“image”: “Lenora.webp”,
-“gender”: “female”,
-“active”: true
-},
-{
-“name”: “Leofric”,
-“image”: “Leofric.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Lila”,
-“image”: “Lila.webp”,
-“gender”: “female”,
-“active”: true
-},
-{
-“name”: “Lucia”,
-“image”: “Lucia.webp”,
-“gender”: “female”,
-“active”: true
-},
-{
-“name”: “Magnus”,
-“image”: “Magnus.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Margery”,
-“image”: “Margery.webp”,
-“gender”: “female”,
-“active”: true
-},
-{
-“name”: “Marian”,
-“image”: “Marian.webp”,
-“gender”: “female”,
-“active”: true
-},
-{
-“name”: “Marton”,
-“image”: “Marton.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Matilda”,
-“image”: “Matilda.webp”,
-“gender”: “female”,
-“active”: true
-},
-{
-“name”: “Neville”,
-“image”: “Neville.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Oswin”,
-“image”: “Oswin.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Percival”,
-“image”: “Percival.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Roderic”,
-“image”: “Roderic.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Roland”,
-“image”: “Roland.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Rosalind”,
-“image”: “Rosalind.webp”,
-“gender”: “female”,
-“active”: true
-},
-{
-“name”: “Rowan”,
-“image”: “Rowan.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Rowena”,
-“image”: “Rowena.webp”,
-“gender”: “female”,
-“active”: true
-},
-{
-“name”: “Selene”,
-“image”: “Selene.webp”,
-“gender”: “female”,
-“active”: true
-},
-{
-“name”: “Severin”,
-“image”: “Severin.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Sibyl”,
-“image”: “Sibyl.webp”,
-“gender”: “female”,
-“active”: true
-},
-{
-“name”: “Silas”,
-“image”: “Silas.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Thaddeus”,
-“image”: “Thaddeus.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Tristan”,
-“image”: “Tristan.webp”,
-“gender”: “male”,
-“active”: true
-},
-{
-“name”: “Ysabel”,
-“image”: “Ysabel.webp”,
-“gender”: “female”,
-“active”: true
-}
-]
+  "characters": [
+    {
+      "name": "Adelaide",
+      "image": "Adelaide.webp",
+      "gender": "female",
+      "active": true
+    },
+    {
+      "name": "Agnes",
+      "image": "Agnes.webp",
+      "gender": "female",
+      "active": true
+    },
+    {
+      "name": "Alaric",
+      "image": "Alaric.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Aldric",
+      "image": "Aldric.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Amabel",
+      "image": "Amabel.webp",
+      "gender": "female",
+      "active": true
+    },
+    {
+      "name": "Aveline",
+      "image": "Aveline.webp",
+      "gender": "female",
+      "active": true
+    },
+    {
+      "name": "Beatrice",
+      "image": "Beatrice.webp",
+      "gender": "female",
+      "active": true
+    },
+    {
+      "name": "Benedict",
+      "image": "Benedict.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Cedric",
+      "image": "Cedric.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Celia",
+      "image": "Celia.webp",
+      "gender": "female",
+      "active": true
+    },
+    {
+      "name": "Clara",
+      "image": "Clara.webp",
+      "gender": "female",
+      "active": true
+    },
+    {
+      "name": "Conrad",
+      "image": "Conrad.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Constance",
+      "image": "Constance.webp",
+      "gender": "female",
+      "active": true
+    },
+    {
+      "name": "Dorian",
+      "image": "Dorian.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Edith",
+      "image": "Edith.webp",
+      "gender": "female",
+      "active": true
+    },
+    {
+      "name": "Edmund",
+      "image": "Edmund.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Elinor",
+      "image": "Elinor.webp",
+      "gender": "female",
+      "active": true
+    },
+    {
+      "name": "Eveline",
+      "image": "Eveline.webp",
+      "gender": "female",
+      "active": true
+    },
+    {
+      "name": "Finnian",
+      "image": "Finnian.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Garrick",
+      "image": "Garrick.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Giles",
+      "image": "Giles.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Guinevere",
+      "image": "Guinevere.webp",
+      "gender": "female",
+      "active": true
+    },
+    {
+      "name": "Helena",
+      "image": "Helena.webp",
+      "gender": "female",
+      "active": true
+    },
+    {
+      "name": "Hugo",
+      "image": "Hugo.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Isolde",
+      "image": "Isolde.webp",
+      "gender": "female",
+      "active": true
+    },
+    {
+      "name": "Kenji",
+      "image": "Kenji.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Lenora",
+      "image": "Lenora.webp",
+      "gender": "female",
+      "active": true
+    },
+    {
+      "name": "Leofric",
+      "image": "Leofric.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Lila",
+      "image": "Lila.webp",
+      "gender": "female",
+      "active": true
+    },
+    {
+      "name": "Lucia",
+      "image": "Lucia.webp",
+      "gender": "female",
+      "active": true
+    },
+    {
+      "name": "Magnus",
+      "image": "Magnus.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Margery",
+      "image": "Margery.webp",
+      "gender": "female",
+      "active": true
+    },
+    {
+      "name": "Marian",
+      "image": "Marian.webp",
+      "gender": "female",
+      "active": true
+    },
+    {
+      "name": "Marton",
+      "image": "Marton.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Matilda",
+      "image": "Matilda.webp",
+      "gender": "female",
+      "active": true
+    },
+    {
+      "name": "Neville",
+      "image": "Neville.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Oswin",
+      "image": "Oswin.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Percival",
+      "image": "Percival.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Roderic",
+      "image": "Roderic.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Roland",
+      "image": "Roland.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Rosalind",
+      "image": "Rosalind.webp",
+      "gender": "female",
+      "active": true
+    },
+    {
+      "name": "Rowan",
+      "image": "Rowan.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Rowena",
+      "image": "Rowena.webp",
+      "gender": "female",
+      "active": true
+    },
+    {
+      "name": "Selene",
+      "image": "Selene.webp",
+      "gender": "female",
+      "active": true
+    },
+    {
+      "name": "Severin",
+      "image": "Severin.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Sibyl",
+      "image": "Sibyl.webp",
+      "gender": "female",
+      "active": true
+    },
+    {
+      "name": "Silas",
+      "image": "Silas.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Thaddeus",
+      "image": "Thaddeus.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Tristan",
+      "image": "Tristan.webp",
+      "gender": "male",
+      "active": true
+    },
+    {
+      "name": "Ysabel",
+      "image": "Ysabel.webp",
+      "gender": "female",
+      "active": true
+    }
+  ]
 }
