@@ -84,7 +84,7 @@ window.HareSudokuPlatformEngine = {
       }
     }
 
-    const LINK_MORE_ONLINE = "https://harepublishing.com/online-puzzles";
+    const LINK_MORE_ONLINE = "https://harepublishing.com/puzzlers-hub";
     const LINK_SHOP = "https://harepublishing.com/shop";
     const Core = window.HarePuzzleCore || null;
     const DEFAULT_MODE = "easy";
