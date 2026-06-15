@@ -10,7 +10,7 @@ window.HareWordFlowerEngine = (() => {
   const Core = window.HarePuzzleCore || null;
   const STORAGE_PREFIX = "hp_wf2_";
   const SAVE_VERSION = 2;
-  const MORE_PUZZLES_URL = "https://www.harepublishing.com/online-puzzles";
+  const MORE_PUZZLES_URL = "https://www.harepublishing.com/puzzlers-hub";
   const SHOP_URL = "https://www.harepublishing.com/shop";
 
   const LEVELS = [
