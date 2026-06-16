@@ -466,5 +466,78 @@
     "puzzleDate": "2026-06-04",
     "year": 2026,
     "type": "quote"
-  }
+  },
+  {
+  "puzzleId": 79,
+  "puzzleDate": "2026-06-05",
+  "year": 2026,
+  "type": "dad joke"
+},
+{
+  "puzzleId": 80,
+  "puzzleDate": "2026-06-06",
+  "year": 2026,
+  "type": "quote"
+},
+{
+  "puzzleId": 81,
+  "puzzleDate": "2026-06-07",
+  "year": 2026,
+  "type": "trivia"
+},
+{
+  "puzzleId": 82,
+  "puzzleDate": "2026-06-08",
+  "year": 2026,
+  "type": "quote"
+},
+{
+  "puzzleId": 83,
+  "puzzleDate": "2026-06-09",
+  "year": 2026,
+  "type": "quote"
+},
+{
+  "puzzleId": 84,
+  "puzzleDate": "2026-06-10",
+  "year": 2026,
+  "type": "dad joke"
+},
+{
+  "puzzleId": 85,
+  "puzzleDate": "2026-06-11",
+  "year": 2026,
+  "type": "trivia"
+},
+{
+  "puzzleId": 86,
+  "puzzleDate": "2026-06-12",
+  "year": 2026,
+  "type": "quote"
+},
+{
+  "puzzleId": 87,
+  "puzzleDate": "2026-06-13",
+  "year": 2026,
+  "type": "quote"
+},
+{
+  "puzzleId": 88,
+  "puzzleDate": "2026-06-14",
+  "year": 2026,
+  "type": "quote"
+},
+{
+  "puzzleId": 89,
+  "puzzleDate": "2026-06-15",
+  "year": 2026,
+  "type": "dad joke"
+},
+{
+  "puzzleId": 90,
+  "puzzleDate": "2026-06-16",
+  "year": 2026,
+  "type": "quote"
+}
+
 ]
