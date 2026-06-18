@@ -1,366 +1,54 @@
 [
-  {
-    "puzzleId": 1,
-    "puzzleDate": "2025-01-04",
-    "answer": "MOUSE",
-    "title": "Wordrow #1",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 2,
-    "puzzleDate": "2025-01-11",
-    "answer": "HAPPY",
-    "title": "Wordrow #2",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 3,
-    "puzzleDate": "2025-01-18",
-    "answer": "CHARM",
-    "title": "Wordrow #3",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 4,
-    "puzzleDate": "2025-01-25",
-    "answer": "PLANK",
-    "title": "Wordrow #4",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 5,
-    "puzzleDate": "2025-02-01",
-    "answer": "BRAIN",
-    "title": "Wordrow #5",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 6,
-    "puzzleDate": "2025-02-08",
-    "answer": "BUILD",
-    "title": "Wordrow #6",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 7,
-    "puzzleDate": "2025-02-15",
-    "answer": "DREAM",
-    "title": "Wordrow #7",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 8,
-    "puzzleDate": "2025-02-22",
-    "answer": "TIMES",
-    "title": "Wordrow #8",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 9,
-    "puzzleDate": "2025-03-01",
-    "answer": "RAISE",
-    "title": "Wordrow #9",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 10,
-    "puzzleDate": "2025-03-08",
-    "answer": "DEPTH",
-    "title": "Wordrow #10",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 11,
-    "puzzleDate": "2025-03-15",
-    "answer": "CHAIR",
-    "title": "Wordrow #11",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 12,
-    "puzzleDate": "2025-03-22",
-    "answer": "FABLE",
-    "title": "Wordrow #12",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 13,
-    "puzzleDate": "2025-03-29",
-    "answer": "DANCE",
-    "title": "Wordrow #13",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 14,
-    "puzzleDate": "2025-04-05",
-    "answer": "COINS",
-    "title": "Wordrow #14",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 15,
-    "puzzleDate": "2025-04-12",
-    "answer": "KNIFE",
-    "title": "Wordrow #15",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 16,
-    "puzzleDate": "2025-04-19",
-    "answer": "SMILE",
-    "title": "Wordrow #16",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 17,
-    "puzzleDate": "2025-04-26",
-    "answer": "GLORY",
-    "title": "Wordrow #17",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 18,
-    "puzzleDate": "2025-05-03",
-    "answer": "TULIP",
-    "title": "Wordrow #18",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 19,
-    "puzzleDate": "2025-05-10",
-    "answer": "PRIDE",
-    "title": "Wordrow #19",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 20,
-    "puzzleDate": "2025-05-17",
-    "answer": "DRIVE",
-    "title": "Wordrow #20",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 21,
-    "puzzleDate": "2025-05-24",
-    "answer": "GRACE",
-    "title": "Wordrow #21",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 22,
-    "puzzleDate": "2025-05-31",
-    "answer": "MOUNT",
-    "title": "Wordrow #22",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 23,
-    "puzzleDate": "2025-06-07",
-    "answer": "QUIET",
-    "title": "Wordrow #23",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 24,
-    "puzzleDate": "2025-06-14",
-    "answer": "CRANE",
-    "title": "Wordrow #24",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 25,
-    "puzzleDate": "2025-06-21",
-    "answer": "SHARP",
-    "title": "Wordrow #25",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 26,
-    "puzzleDate": "2025-06-28",
-    "answer": "MIGHT",
-    "title": "Wordrow #26",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 27,
-    "puzzleDate": "2025-07-05",
-    "answer": "FRAME",
-    "title": "Wordrow #27",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 28,
-    "puzzleDate": "2025-07-12",
-    "answer": "LATCH",
-    "title": "Wordrow #28",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 29,
-    "puzzleDate": "2025-07-19",
-    "answer": "SLICE",
-    "title": "Wordrow #29",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 30,
-    "puzzleDate": "2025-07-26",
-    "answer": "BRICK",
-    "title": "Wordrow #30",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 31,
-    "puzzleDate": "2025-08-02",
-    "answer": "LEMON",
-    "title": "Wordrow #31",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 32,
-    "puzzleDate": "2025-08-09",
-    "answer": "BREAD",
-    "title": "Wordrow #32",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 33,
-    "puzzleDate": "2025-08-16",
-    "answer": "HAPPY",
-    "title": "Wordrow #33",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 34,
-    "puzzleDate": "2025-08-23",
-    "answer": "CRISP",
-    "title": "Wordrow #34",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 35,
-    "puzzleDate": "2025-08-30",
-    "answer": "RANGE",
-    "title": "Wordrow #35",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 36,
-    "puzzleDate": "2025-09-06",
-    "answer": "TABLE",
-    "title": "Wordrow #36",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 37,
-    "puzzleDate": "2025-09-13",
-    "answer": "NIGHT",
-    "title": "Wordrow #37",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 38,
-    "puzzleDate": "2025-09-20",
-    "answer": "TRAIL",
-    "title": "Wordrow #38",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 39,
-    "puzzleDate": "2025-09-27",
-    "answer": "LAUGH",
-    "title": "Wordrow #39",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 40,
-    "puzzleDate": "2025-10-04",
-    "answer": "WATER",
-    "title": "Wordrow #40",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 41,
-    "puzzleDate": "2025-10-11",
-    "answer": "PAINT",
-    "title": "Wordrow #41",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 42,
-    "puzzleDate": "2025-10-18",
-    "answer": "JUMPS",
-    "title": "Wordrow #42",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 43,
-    "puzzleDate": "2025-10-25",
-    "answer": "LUNCH",
-    "title": "Wordrow #43",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 44,
-    "puzzleDate": "2025-11-01",
-    "answer": "PLANT",
-    "title": "Wordrow #44",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 45,
-    "puzzleDate": "2025-11-08",
-    "answer": "BOOKS",
-    "title": "Wordrow #45",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 46,
-    "puzzleDate": "2025-11-15",
-    "answer": "CHEER",
-    "title": "Wordrow #46",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 47,
-    "puzzleDate": "2025-11-22",
-    "answer": "SMILE",
-    "title": "Wordrow #47",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 48,
-    "puzzleDate": "2025-11-29",
-    "answer": "SUNNY",
-    "title": "Wordrow #48",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 49,
-    "puzzleDate": "2025-12-06",
-    "answer": "JOLLY",
-    "title": "Wordrow #49",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 50,
-    "puzzleDate": "2025-12-13",
-    "answer": "FLAIR",
-    "title": "Wordrow #50",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 51,
-    "puzzleDate": "2025-12-20",
-    "answer": "SPACE",
-    "title": "Wordrow #51",
-    "maxGuesses": 6
-  },
-  {
-    "puzzleId": 52,
-    "puzzleDate": "2025-12-27",
-    "answer": "CLEAR",
-    "title": "Wordrow #52",
-    "maxGuesses": 6
-  }
+{"puzzleId":1,"puzzleDate":"2025-01-04","answer":"MOUSE","maxGuesses":6},
+{"puzzleId":2,"puzzleDate":"2025-01-11","answer":"HAPPY","maxGuesses":6},
+{"puzzleId":3,"puzzleDate":"2025-01-18","answer":"CHARM","maxGuesses":6},
+{"puzzleId":4,"puzzleDate":"2025-01-25","answer":"PLANK","maxGuesses":6},
+{"puzzleId":5,"puzzleDate":"2025-02-01","answer":"BRAIN","maxGuesses":6},
+{"puzzleId":6,"puzzleDate":"2025-02-08","answer":"BUILD","maxGuesses":6},
+{"puzzleId":7,"puzzleDate":"2025-02-15","answer":"DREAM","maxGuesses":6},
+{"puzzleId":8,"puzzleDate":"2025-02-22","answer":"TIMES","maxGuesses":6},
+{"puzzleId":9,"puzzleDate":"2025-03-01","answer":"RAISE","maxGuesses":6},
+{"puzzleId":10,"puzzleDate":"2025-03-08","answer":"DEPTH","maxGuesses":6},
+{"puzzleId":11,"puzzleDate":"2025-03-15","answer":"CHAIR","maxGuesses":6},
+{"puzzleId":12,"puzzleDate":"2025-03-22","answer":"FABLE","maxGuesses":6},
+{"puzzleId":13,"puzzleDate":"2025-03-29","answer":"DANCE","maxGuesses":6},
+{"puzzleId":14,"puzzleDate":"2025-04-05","answer":"COINS","maxGuesses":6},
+{"puzzleId":15,"puzzleDate":"2025-04-12","answer":"KNIFE","maxGuesses":6},
+{"puzzleId":16,"puzzleDate":"2025-04-19","answer":"SMILE","maxGuesses":6},
+{"puzzleId":17,"puzzleDate":"2025-04-26","answer":"GLORY","maxGuesses":6},
+{"puzzleId":18,"puzzleDate":"2025-05-03","answer":"TULIP","maxGuesses":6},
+{"puzzleId":19,"puzzleDate":"2025-05-10","answer":"PRIDE","maxGuesses":6},
+{"puzzleId":20,"puzzleDate":"2025-05-17","answer":"DRIVE","maxGuesses":6},
+{"puzzleId":21,"puzzleDate":"2025-05-24","answer":"GRACE","maxGuesses":6},
+{"puzzleId":22,"puzzleDate":"2025-05-31","answer":"MOUNT","maxGuesses":6},
+{"puzzleId":23,"puzzleDate":"2025-06-07","answer":"QUIET","maxGuesses":6},
+{"puzzleId":24,"puzzleDate":"2025-06-14","answer":"CRANE","maxGuesses":6},
+{"puzzleId":25,"puzzleDate":"2025-06-21","answer":"SHARP","maxGuesses":6},
+{"puzzleId":26,"puzzleDate":"2025-06-28","answer":"MIGHT","maxGuesses":6},
+{"puzzleId":27,"puzzleDate":"2025-07-05","answer":"FRAME","maxGuesses":6},
+{"puzzleId":28,"puzzleDate":"2025-07-12","answer":"LATCH","maxGuesses":6},
+{"puzzleId":29,"puzzleDate":"2025-07-19","answer":"SLICE","maxGuesses":6},
+{"puzzleId":30,"puzzleDate":"2025-07-26","answer":"BRICK","maxGuesses":6},
+{"puzzleId":31,"puzzleDate":"2025-08-02","answer":"LEMON","maxGuesses":6},
+{"puzzleId":32,"puzzleDate":"2025-08-09","answer":"BREAD","maxGuesses":6},
+{"puzzleId":33,"puzzleDate":"2025-08-16","answer":"ZESTY","maxGuesses":6},
+{"puzzleId":34,"puzzleDate":"2025-08-23","answer":"CRISP","maxGuesses":6},
+{"puzzleId":35,"puzzleDate":"2025-08-30","answer":"RANGE","maxGuesses":6},
+{"puzzleId":36,"puzzleDate":"2025-09-06","answer":"TABLE","maxGuesses":6},
+{"puzzleId":37,"puzzleDate":"2025-09-13","answer":"NIGHT","maxGuesses":6},
+{"puzzleId":38,"puzzleDate":"2025-09-20","answer":"TRAIL","maxGuesses":6},
+{"puzzleId":39,"puzzleDate":"2025-09-27","answer":"LAUGH","maxGuesses":6},
+{"puzzleId":40,"puzzleDate":"2025-10-04","answer":"WATER","maxGuesses":6},
+{"puzzleId":41,"puzzleDate":"2025-10-11","answer":"PAINT","maxGuesses":6},
+{"puzzleId":42,"puzzleDate":"2025-10-18","answer":"JUMPS","maxGuesses":6},
+{"puzzleId":43,"puzzleDate":"2025-10-25","answer":"LUNCH","maxGuesses":6},
+{"puzzleId":44,"puzzleDate":"2025-11-01","answer":"PLANT","maxGuesses":6},
+{"puzzleId":45,"puzzleDate":"2025-11-08","answer":"BOOKS","maxGuesses":6},
+{"puzzleId":46,"puzzleDate":"2025-11-15","answer":"CHEER","maxGuesses":6},
+{"puzzleId":47,"puzzleDate":"2025-11-22","answer":"TIGER","maxGuesses":6},
+{"puzzleId":48,"puzzleDate":"2025-11-29","answer":"SUNNY","maxGuesses":6},
+{"puzzleId":49,"puzzleDate":"2025-12-06","answer":"JOLLY","maxGuesses":6},
+{"puzzleId":50,"puzzleDate":"2025-12-13","answer":"FLAIR","maxGuesses":6},
+{"puzzleId":51,"puzzleDate":"2025-12-20","answer":"SPACE","maxGuesses":6},
+{"puzzleId":52,"puzzleDate":"2025-12-27","answer":"CLEAR","maxGuesses":6}
 ]
