@@ -1,470 +1,80 @@
 [
-  {
-    "puzzleId": 1,
-    "puzzleDate": "2025-01-02",
-    "year": 2025,
-    "theme": "Police Terms"
-  },
-  {
-    "puzzleId": 2,
-    "puzzleDate": "2025-01-09",
-    "year": 2025,
-    "theme": "Classic Mystery"
-  },
-  {
-    "puzzleId": 3,
-    "puzzleDate": "2025-01-16",
-    "year": 2025,
-    "theme": "Social Media Terms"
-  },
-  {
-    "puzzleId": 4,
-    "puzzleDate": "2025-01-23",
-    "year": 2025,
-    "theme": "Technology Brands"
-  },
-  {
-    "puzzleId": 5,
-    "puzzleDate": "2025-01-30",
-    "year": 2025,
-    "theme": "Business Terms"
-  },
-  {
-    "puzzleId": 6,
-    "puzzleDate": "2025-02-06",
-    "year": 2025,
-    "theme": "Personal Finance"
-  },
-  {
-    "puzzleId": 7,
-    "puzzleDate": "2025-02-13",
-    "year": 2025,
-    "theme": "Card Games"
-  },
-  {
-    "puzzleId": 8,
-    "puzzleDate": "2025-02-20",
-    "year": 2025,
-    "theme": "Flower Names"
-  },
-  {
-    "puzzleId": 9,
-    "puzzleDate": "2025-02-27",
-    "year": 2025,
-    "theme": "Culinary Herbs"
-  },
-  {
-    "puzzleId": 10,
-    "puzzleDate": "2025-03-06",
-    "year": 2025,
-    "theme": "Birds of the World"
-  },
-  {
-    "puzzleId": 11,
-    "puzzleDate": "2025-03-13",
-    "year": 2025,
-    "theme": "Beach Vacation"
-  },
-  {
-    "puzzleId": 12,
-    "puzzleDate": "2025-03-20",
-    "year": 2025,
-    "theme": "Around the House"
-  },
-  {
-    "puzzleId": 13,
-    "puzzleDate": "2025-03-27",
-    "year": 2025,
-    "theme": "Coffee Culture"
-  },
-  {
-    "puzzleId": 14,
-    "puzzleDate": "2025-04-03",
-    "year": 2025,
-    "theme": "Festive Holidays"
-  },
-  {
-    "puzzleId": 15,
-    "puzzleDate": "2025-04-10",
-    "year": 2025,
-    "theme": "Incredible Mountain Peeks"
-  },
-  {
-    "puzzleId": 16,
-    "puzzleDate": "2025-04-17",
-    "year": 2025,
-    "theme": "World Landmarks"
-  },
-  {
-    "puzzleId": 17,
-    "puzzleDate": "2025-04-24",
-    "year": 2025,
-    "theme": "Classic Literature"
-  },
-  {
-    "puzzleId": 18,
-    "puzzleDate": "2025-05-01",
-    "year": 2025,
-    "theme": "Space Exploration"
-  },
-  {
-    "puzzleId": 19,
-    "puzzleDate": "2025-05-08",
-    "year": 2025,
-    "theme": "Famous Artists"
-  },
-  {
-    "puzzleId": 20,
-    "puzzleDate": "2025-05-15",
-    "year": 2025,
-    "theme": "Legendary Myths"
-  },
-  {
-    "puzzleId": 21,
-    "puzzleDate": "2025-05-22",
-    "year": 2025,
-    "theme": "Historic Battles"
-  },
-  {
-    "puzzleId": 22,
-    "puzzleDate": "2025-05-29",
-    "year": 2025,
-    "theme": "Luxury Brands"
-  },
-  {
-    "puzzleId": 23,
-    "puzzleDate": "2025-06-05",
-    "year": 2025,
-    "theme": "Culinary Techniques"
-  },
-  {
-    "puzzleId": 24,
-    "puzzleDate": "2025-06-12",
-    "year": 2025,
-    "theme": "Ancient Civilizations"
-  },
-  {
-    "puzzleId": 25,
-    "puzzleDate": "2025-06-19",
-    "year": 2025,
-    "theme": "Movie Genres"
-  },
-  {
-    "puzzleId": 26,
-    "puzzleDate": "2025-06-26",
-    "year": 2025,
-    "theme": "Famous Monuments"
-  },
-  {
-    "puzzleId": 27,
-    "puzzleDate": "2025-07-03",
-    "year": 2025,
-    "theme": "Wines and Vineyards"
-  },
-  {
-    "puzzleId": 28,
-    "puzzleDate": "2025-07-10",
-    "year": 2025,
-    "theme": "Historical Figures"
-  },
-  {
-    "puzzleId": 29,
-    "puzzleDate": "2025-07-17",
-    "year": 2025,
-    "theme": "Philosophical Concepts"
-  },
-  {
-    "puzzleId": 30,
-    "puzzleDate": "2025-07-24",
-    "year": 2025,
-    "theme": "Shakespearean Characters"
-  },
-  {
-    "puzzleId": 31,
-    "puzzleDate": "2025-07-31",
-    "year": 2025,
-    "theme": "Precious Gems And Minerals"
-  },
-  {
-    "puzzleId": 32,
-    "puzzleDate": "2025-08-07",
-    "year": 2025,
-    "theme": "Famous Explorers"
-  },
-  {
-    "puzzleId": 33,
-    "puzzleDate": "2025-08-14",
-    "year": 2025,
-    "theme": "Ancient Wonders"
-  },
-  {
-    "puzzleId": 34,
-    "puzzleDate": "2025-08-21",
-    "year": 2025,
-    "theme": "Mythical Creatures"
-  },
-  {
-    "puzzleId": 35,
-    "puzzleDate": "2025-08-28",
-    "year": 2025,
-    "theme": "Famous Sports Legends"
-  },
-  {
-    "puzzleId": 36,
-    "puzzleDate": "2025-09-04",
-    "year": 2025,
-    "theme": "Famous Ships"
-  },
-  {
-    "puzzleId": 37,
-    "puzzleDate": "2025-09-11",
-    "year": 2025,
-    "theme": "Art Movements"
-  },
-  {
-    "puzzleId": 38,
-    "puzzleDate": "2025-09-18",
-    "year": 2025,
-    "theme": "Classic Board Games"
-  },
-  {
-    "puzzleId": 39,
-    "puzzleDate": "2025-09-25",
-    "year": 2025,
-    "theme": "Famous Bridges"
-  },
-  {
-    "puzzleId": 40,
-    "puzzleDate": "2025-10-02",
-    "year": 2025,
-    "theme": "Iconic TV Shows"
-  },
-  {
-    "puzzleId": 41,
-    "puzzleDate": "2025-10-09",
-    "year": 2025,
-    "theme": "Popular Cocktails"
-  },
-  {
-    "puzzleId": 42,
-    "puzzleDate": "2025-10-16",
-    "year": 2025,
-    "theme": "Historical Inventions"
-  },
-  {
-    "puzzleId": 43,
-    "puzzleDate": "2025-10-23",
-    "year": 2025,
-    "theme": "Luxury Cars"
-  },
-  {
-    "puzzleId": 44,
-    "puzzleDate": "2025-10-30",
-    "year": 2025,
-    "theme": "Literary Genres"
-  },
-  {
-    "puzzleId": 45,
-    "puzzleDate": "2025-11-06",
-    "year": 2025,
-    "theme": "Olympic Sports"
-  },
-  {
-    "puzzleId": 46,
-    "puzzleDate": "2025-11-13",
-    "year": 2025,
-    "theme": "Mystery Novels"
-  },
-  {
-    "puzzleId": 47,
-    "puzzleDate": "2025-11-20",
-    "year": 2025,
-    "theme": "Hobbies"
-  },
-  {
-    "puzzleId": 48,
-    "puzzleDate": "2025-11-27",
-    "year": 2025,
-    "theme": "Trains"
-  },
-  {
-    "puzzleId": 49,
-    "puzzleDate": "2025-12-04",
-    "year": 2025,
-    "theme": "Psychology Terms"
-  },
-  {
-    "puzzleId": 50,
-    "puzzleDate": "2025-12-11",
-    "year": 2025,
-    "theme": "Legal Terms"
-  },
-  {
-    "puzzleId": 51,
-    "puzzleDate": "2025-12-18",
-    "year": 2025,
-    "theme": "Architecture"
-  },
-  {
-    "puzzleId": 52,
-    "puzzleDate": "2025-12-25",
-    "year": 2025,
-    "theme": "Economics"
-  },
-  {
-    "puzzleId": 53,
-    "puzzleDate": "2026-01-01",
-    "year": 2026,
-    "theme": "Astronomy Terms"
-  },
-  {
-    "puzzleId": 54,
-    "puzzleDate": "2026-01-08",
-    "year": 2026,
-    "theme": "Word Religions"
-  },
-  {
-    "puzzleId": 55,
-    "puzzleDate": "2026-01-15",
-    "year": 2026,
-    "theme": "Photography"
-  },
-  {
-    "puzzleId": 56,
-    "puzzleDate": "2026-01-22",
-    "year": 2026,
-    "theme": "Maritime Terms"
-  },
-  {
-    "puzzleId": 57,
-    "puzzleDate": "2026-01-29",
-    "year": 2026,
-    "theme": "Filmmaking"
-  },
-  {
-    "puzzleId": 58,
-    "puzzleDate": "2026-02-05",
-    "year": 2026,
-    "theme": "World Currencies"
-  },
-  {
-    "puzzleId": 59,
-    "puzzleDate": "2026-02-12",
-    "year": 2026,
-    "theme": "Famous Castles"
-  },
-  {
-    "puzzleId": 60,
-    "puzzleDate": "2026-02-19",
-    "year": 2026,
-    "theme": "Internet Terms"
-  },
-  {
-    "puzzleId": 61,
-    "puzzleDate": "2026-02-26",
-    "year": 2026,
-    "theme": "Famous Rivers"
-  },
-  {
-    "puzzleId": 62,
-    "puzzleDate": "2026-03-05",
-    "year": 2026,
-    "theme": "Airline Names"
-  },
-  {
-    "puzzleId": 63,
-    "puzzleDate": "2026-03-12",
-    "year": 2026,
-    "theme": "Garden Plants"
-  },
-  {
-    "puzzleId": 64,
-    "puzzleDate": "2026-03-19",
-    "year": 2026,
-    "theme": "Medieval Terms"
-  },
-  {
-    "puzzleId": 65,
-    "puzzleDate": "2026-03-26",
-    "year": 2026,
-    "theme": "Ancient Egypt"
-  },
-  {
-    "puzzleId": 66,
-    "puzzleDate": "2026-04-02",
-    "year": 2026,
-    "theme": "Coffee Drinks"
-  },
-  {
-    "puzzleId": 67,
-    "puzzleDate": "2026-04-09",
-    "year": 2026,
-    "theme": "Ice Cream Flavors"
-  },
-  {
-    "puzzleId": 68,
-    "puzzleDate": "2026-04-16",
-    "year": 2026,
-    "theme": "Wine Regions"
-  },
-  {
-    "puzzleId": 69,
-    "puzzleDate": "2026-04-23",
-    "year": 2026,
-    "theme": "Human Anatomy"
-  },
-  {
-    "puzzleId": 70,
-    "puzzleDate": "2026-04-30",
-    "year": 2026,
-    "theme": "Musical Genres"
-  },
-  {
-    "puzzleId": 71,
-    "puzzleDate": "2026-05-07",
-    "year": 2026,
-    "theme": "Camping Gear"
-  },
-  {
-    "puzzleId": 72,
-    "puzzleDate": "2026-05-14",
-    "year": 2026,
-    "theme": "Winter Activities"
-  },
-  {
-    "puzzleId": 73,
-    "puzzleDate": "2026-05-21",
-    "year": 2026,
-    "theme": "Desert Landscapes"
-  },
-  {
-    "puzzleId": 74,
-    "puzzleDate": "2026-05-28",
-    "year": 2026,
-    "theme": "Marine Creatures"
-  },
-  {
-    "puzzleId": 75,
-    "puzzleDate": "2026-06-04",
-    "year": 2026,
-    "theme": "Aviation Terms"
-  },
-  {
-    "puzzleId": 76,
-    "puzzleDate": "2026-06-11",
-    "year": 2026,
-    "theme": "Famous Universities"
-  },
-  {
-    "puzzleId": 77,
-    "puzzleDate": "2026-06-18",
-    "year": 2026,
-    "theme": "Hiking Terms"
-  },
-  {
-    "puzzleId": 78,
-    "puzzleDate": "2026-06-25",
-    "year": 2026,
-    "theme": "Space Missions"
-  }
+{"puzzleId":1,"puzzleDate":"2025-01-02","year":2025,"theme":"Police Terms"},
+{"puzzleId":2,"puzzleDate":"2025-01-09","year":2025,"theme":"Classic Mystery"},
+{"puzzleId":3,"puzzleDate":"2025-01-16","year":2025,"theme":"Social Media Terms"},
+{"puzzleId":4,"puzzleDate":"2025-01-23","year":2025,"theme":"Technology Brands"},
+{"puzzleId":5,"puzzleDate":"2025-01-30","year":2025,"theme":"Business Terms"},
+{"puzzleId":6,"puzzleDate":"2025-02-06","year":2025,"theme":"Personal Finance"},
+{"puzzleId":7,"puzzleDate":"2025-02-13","year":2025,"theme":"Card Games"},
+{"puzzleId":8,"puzzleDate":"2025-02-20","year":2025,"theme":"Flower Names"},
+{"puzzleId":9,"puzzleDate":"2025-02-27","year":2025,"theme":"Culinary Herbs"},
+{"puzzleId":10,"puzzleDate":"2025-03-06","year":2025,"theme":"Birds of the World"},
+{"puzzleId":11,"puzzleDate":"2025-03-13","year":2025,"theme":"Beach Vacation"},
+{"puzzleId":12,"puzzleDate":"2025-03-20","year":2025,"theme":"Around the House"},
+{"puzzleId":13,"puzzleDate":"2025-03-27","year":2025,"theme":"Coffee Culture"},
+{"puzzleId":14,"puzzleDate":"2025-04-03","year":2025,"theme":"Festive Holidays"},
+{"puzzleId":15,"puzzleDate":"2025-04-10","year":2025,"theme":"Incredible Mountain Peeks"},
+{"puzzleId":16,"puzzleDate":"2025-04-17","year":2025,"theme":"World Landmarks"},
+{"puzzleId":17,"puzzleDate":"2025-04-24","year":2025,"theme":"Classic Literature"},
+{"puzzleId":18,"puzzleDate":"2025-05-01","year":2025,"theme":"Space Exploration"},
+{"puzzleId":19,"puzzleDate":"2025-05-08","year":2025,"theme":"Famous Artists"},
+{"puzzleId":20,"puzzleDate":"2025-05-15","year":2025,"theme":"Legendary Myths"},
+{"puzzleId":21,"puzzleDate":"2025-05-22","year":2025,"theme":"Historic Battles"},
+{"puzzleId":22,"puzzleDate":"2025-05-29","year":2025,"theme":"Luxury Brands"},
+{"puzzleId":23,"puzzleDate":"2025-06-05","year":2025,"theme":"Culinary Techniques"},
+{"puzzleId":24,"puzzleDate":"2025-06-12","year":2025,"theme":"Ancient Civilizations"},
+{"puzzleId":25,"puzzleDate":"2025-06-19","year":2025,"theme":"Movie Genres"},
+{"puzzleId":26,"puzzleDate":"2025-06-26","year":2025,"theme":"Famous Monuments"},
+{"puzzleId":27,"puzzleDate":"2025-07-03","year":2025,"theme":"Wines and Vineyards"},
+{"puzzleId":28,"puzzleDate":"2025-07-10","year":2025,"theme":"Historical Figures"},
+{"puzzleId":29,"puzzleDate":"2025-07-17","year":2025,"theme":"Philosophical Concepts"},
+{"puzzleId":30,"puzzleDate":"2025-07-24","year":2025,"theme":"Shakespearean Characters"},
+{"puzzleId":31,"puzzleDate":"2025-07-31","year":2025,"theme":"Precious Gems And Minerals"},
+{"puzzleId":32,"puzzleDate":"2025-08-07","year":2025,"theme":"Famous Explorers"},
+{"puzzleId":33,"puzzleDate":"2025-08-14","year":2025,"theme":"Ancient Wonders"},
+{"puzzleId":34,"puzzleDate":"2025-08-21","year":2025,"theme":"Mythical Creatures"},
+{"puzzleId":35,"puzzleDate":"2025-08-28","year":2025,"theme":"Famous Sports Legends"},
+{"puzzleId":36,"puzzleDate":"2025-09-04","year":2025,"theme":"Famous Ships"},
+{"puzzleId":37,"puzzleDate":"2025-09-11","year":2025,"theme":"Art Movements"},
+{"puzzleId":38,"puzzleDate":"2025-09-18","year":2025,"theme":"Classic Board Games"},
+{"puzzleId":39,"puzzleDate":"2025-09-25","year":2025,"theme":"Famous Bridges"},
+{"puzzleId":40,"puzzleDate":"2025-10-02","year":2025,"theme":"Iconic TV Shows"},
+{"puzzleId":41,"puzzleDate":"2025-10-09","year":2025,"theme":"Popular Cocktails"},
+{"puzzleId":42,"puzzleDate":"2025-10-16","year":2025,"theme":"Historical Inventions"},
+{"puzzleId":43,"puzzleDate":"2025-10-23","year":2025,"theme":"Luxury Cars"},
+{"puzzleId":44,"puzzleDate":"2025-10-30","year":2025,"theme":"Literary Genres"},
+{"puzzleId":45,"puzzleDate":"2025-11-06","year":2025,"theme":"Olympic Sports"},
+{"puzzleId":46,"puzzleDate":"2025-11-13","year":2025,"theme":"Mystery Novels"},
+{"puzzleId":47,"puzzleDate":"2025-11-20","year":2025,"theme":"Hobbies"},
+{"puzzleId":48,"puzzleDate":"2025-11-27","year":2025,"theme":"Trains"},
+{"puzzleId":49,"puzzleDate":"2025-12-04","year":2025,"theme":"Psychology Terms"},
+{"puzzleId":50,"puzzleDate":"2025-12-11","year":2025,"theme":"Legal Terms"},
+{"puzzleId":51,"puzzleDate":"2025-12-18","year":2025,"theme":"Architecture"},
+{"puzzleId":52,"puzzleDate":"2025-12-25","year":2025,"theme":"Economics"},
+{"puzzleId":53,"puzzleDate":"2026-01-01","year":2026,"theme":"Astronomy Terms"},
+{"puzzleId":54,"puzzleDate":"2026-01-08","year":2026,"theme":"Word Religions"},
+{"puzzleId":55,"puzzleDate":"2026-01-15","year":2026,"theme":"Photography"},
+{"puzzleId":56,"puzzleDate":"2026-01-22","year":2026,"theme":"Maritime Terms"},
+{"puzzleId":57,"puzzleDate":"2026-01-29","year":2026,"theme":"Filmmaking"},
+{"puzzleId":58,"puzzleDate":"2026-02-05","year":2026,"theme":"World Currencies"},
+{"puzzleId":59,"puzzleDate":"2026-02-12","year":2026,"theme":"Famous Castles"},
+{"puzzleId":60,"puzzleDate":"2026-02-19","year":2026,"theme":"Internet Terms"},
+{"puzzleId":61,"puzzleDate":"2026-02-26","year":2026,"theme":"Famous Rivers"},
+{"puzzleId":62,"puzzleDate":"2026-03-05","year":2026,"theme":"Airline Names"},
+{"puzzleId":63,"puzzleDate":"2026-03-12","year":2026,"theme":"Garden Plants"},
+{"puzzleId":64,"puzzleDate":"2026-03-19","year":2026,"theme":"Medieval Terms"},
+{"puzzleId":65,"puzzleDate":"2026-03-26","year":2026,"theme":"Ancient Egypt"},
+{"puzzleId":66,"puzzleDate":"2026-04-02","year":2026,"theme":"Coffee Drinks"},
+{"puzzleId":67,"puzzleDate":"2026-04-09","year":2026,"theme":"Ice Cream Flavors"},
+{"puzzleId":68,"puzzleDate":"2026-04-16","year":2026,"theme":"Wine Regions"},
+{"puzzleId":69,"puzzleDate":"2026-04-23","year":2026,"theme":"Human Anatomy"},
+{"puzzleId":70,"puzzleDate":"2026-04-30","year":2026,"theme":"Musical Genres"},
+{"puzzleId":71,"puzzleDate":"2026-05-07","year":2026,"theme":"Camping Gear"},
+{"puzzleId":72,"puzzleDate":"2026-05-14","year":2026,"theme":"Winter Activities"},
+{"puzzleId":73,"puzzleDate":"2026-05-21","year":2026,"theme":"Desert Landscapes"},
+{"puzzleId":74,"puzzleDate":"2026-05-28","year":2026,"theme":"Marine Creatures"},
+{"puzzleId":75,"puzzleDate":"2026-06-04","year":2026,"theme":"Aviation Terms"},
+{"puzzleId":76,"puzzleDate":"2026-06-11","year":2026,"theme":"Famous Universities"},
+{"puzzleId":77,"puzzleDate":"2026-06-18","year":2026,"theme":"Hiking Terms"},
+{"puzzleId":78,"puzzleDate":"2026-06-25","year":2026,"theme":"Space Missions"}
 ]
