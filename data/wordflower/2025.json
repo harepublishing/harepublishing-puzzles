@@ -1,479 +1,55 @@
 [
- {
-  "puzzleId": 14,
-  "puzzleDate": "2025-01-01",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "U",
-  "outerLetters": ["A", "I", "L", "F", "E", "R"],
-  "allowedWords": ["ALLURE", "AURA", "AURAL", "EARFUL", "FAILURE", "FEARFUL", "FERRULE", "FERULE", "FLUE", "FLUFF", "FLUFFIER", "FUEL", "FULFIL", "FULFILL", "FULL", "FULLER", "FURL", "FURRIER", "IREFUL", "LAUREL", "LIEU", "LULL", "LURE", "REFUEL", "RUEFUL", "RUFF", "RUFFLE", "RULE", "RULER", "RURAL"]
-},
- {
-  "puzzleId": 15,
-  "puzzleDate": "2025-01-08",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "W",
-  "outerLetters": ["J", "S", "H", "E", "N", "I"],
-  "allowedWords": ["EWES", "HEWN", "HEWS", "JEWISHNESS", "NEWISH", "NEWNESS", "NEWS", "SEWN", "SEWS", "SINEW", "SINEWS", "SWINE", "SWINES", "SWINISH", "SWISH", "SWISHES", "SWISSES", "WEENIE", "WEENIES", "WEENS", "WEES", "WHEN", "WHENS", "WHEW", "WHINE", "WHINES", "WHINNIES", "WIENIE", "WIENIES", "WINE", "WINES", "WINS", "WISE", "WISES", "WISH", "WISHES"]
-},
-{
-  "puzzleId": 16,
-  "puzzleDate": "2025-01-15",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "I",
-  "outerLetters": ["S", "N", "R", "H", "V", "A"],
-  "allowedWords": ["AIRS", "ARIA", "ARIAS", "ASSASSIN", "ASSASSINS", "AVIAN", "HAIR", "HAIRS", "HARISSA", "HASHISH", "HISS", "INNS", "IRIS", "NIRVANA", "RAIN", "RAINS", "RAISIN", "RAISINS", "RANIS", "RAVISH", "SARI", "SARIN", "SARIS", "SHARIA", "SHARIAH", "SHIN", "SHINS", "SHIRRS", "SHIVA", "SINS", "SIRRAH", "SIRS", "VAIN", "VANISH", "VARNISH", "VISA", "VISAS", "VIVARIA", "VIVAS"]
-},
-{
-  "puzzleId": 17,
-  "puzzleDate": "2025-01-22",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "H",
-  "outerLetters": ["O", "G", "U", "D", "S", "R"],
-  "allowedWords": ["DOUGH", "GODHOOD", "GOSH", "GUSH", "HOGS", "HOOD", "HOODOO", "HOODOOS", "HOODS", "HORROR", "HORRORS", "HOUR", "HOURS", "HUGS", "HUSH", "ROUGH", "ROUGHS", "ROUGHSHOD", "RUSH", "SHOD", "SHOO", "SHOOS", "SHROUD", "SHROUDS", "SHRUG", "SHRUGS", "SOUGH", "SOUGHS", "SOURDOUGH", "SOURDOUGHS"]
-},
-{
-  "puzzleId": 18,
-  "puzzleDate": "2025-01-29",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "E",
-  "outerLetters": ["O", "L", "U", "T", "N", "Q"],
-  "allowedWords": ["ELOQUENT", "ENQUEUE", "ENTENTE", "LENT", "LENTO", "LONE", "LUTE", "NEON", "NETTLE", "NONE", "NOTE", "NOTELET", "OUTLET", "QUEEN", "QUELL", "QUEUE", "QUOTE", "TELL", "TELNET", "TENET", "TENON", "TENT", "TOLUENE", "TONE", "TONNE", "TOOTLE", "TOQUE", "TOTE", "TULLE", "TUNE", "TUNNEL", "TUQUE", "UNQUOTE"]
-},
-{
-  "puzzleId": 19,
-  "puzzleDate": "2025-02-05",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "S",
-  "outerLetters": ["G", "R", "M", "I", "T", "H"],
-  "allowedWords": ["GIGS", "GIRTHS", "GIST", "GRITS", "HIGHS", "HISS", "HITS", "IRIS", "MISHIT", "MISHITS", "MISS", "MISSIS", "MIST", "MISTS", "MITTS", "RIGHTISM", "RIGHTIST", "RIGHTISTS", "RIGHTS", "RIGS", "RIMS", "SHIRRS", "SHIRT", "SHIRTS", "SIGH", "SIGHS", "SIGHT", "SIGHTS", "SIRS", "SITS", "SMITH", "SMITHS", "STIR", "STIRS", "THIGHS", "THIRST", "THIRSTS", "THIS", "TIGHTS", "TRIMS"]
-},
-{
-  "puzzleId": 20,
-  "puzzleDate": "2025-02-12",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "A",
-  "outerLetters": ["O", "L", "I", "M", "X", "B"],
-  "allowedWords": ["ABLOOM", "ALIBI", "AMMO", "AXIAL", "AXIOM", "BAIL", "BALL", "BALM", "BAMBOO", "BAOBAB", "BLAB", "IAMBI", "LABIA", "LABIAL", "LAMB", "LLAMA", "LOAM", "MAIL", "MAILBOMB", "MAILBOX", "MAIM", "MALL", "MAMA", "MAMBA", "MAMBO", "MAMMA", "MAMMAL", "MAXILLA", "MAXIM", "MAXIMA", "MAXIMAL"]
-},
-{
-  "puzzleId": 21,
-  "puzzleDate": "2025-02-19",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "S",
-  "outerLetters": ["C", "K", "I", "Y", "H", "E"],
-  "allowedWords": ["CHECKS", "CHEEKS", "CHEESE", "CHEESES", "CHEESY", "CHESS", "CHICHIS", "CHICKS", "EKES", "EYES", "HICKEYS", "HICKS", "HIKES", "HISS", "HISSES", "ICES", "KEYS", "KICKS", "KISS", "KISSES", "SEEK", "SEEKS", "SEES", "SHEIK", "SHEIKH", "SHEIKHS", "SHEIKS", "SHIES", "SICK", "SICKIE", "SICKIES", "SICKISH", "SICKS", "SICS", "SISSIES", "SISSY", "SKIES", "SKIS", "YESES"]
-},
-{
-  "puzzleId": 22,
-  "puzzleDate": "2025-02-26",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "L",
-  "outerLetters": ["Y", "U", "C", "K", "A", "B"],
-  "allowedWords": ["ABLY", "ALLAY", "ALLY", "BALK", "BALKY", "BALL", "BLAB", "BLACK", "BLACKBALL", "BLACKLY", "BUBBLY", "BUCKYBALL", "BULB", "BULK", "BULKY", "BULL", "BULLY", "CABAL", "CALK", "CALL", "CALLA", "CALLBACK", "CAULK", "CLACK", "CLAY", "CLUB", "CLUCK", "CULL", "LACK", "LACY", "LUCK", "LUCKY", "LULL", "LULLABY"]
-},
-{
-  "puzzleId": 23,
-  "puzzleDate": "2025-03-05",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "H",
-  "outerLetters": ["S", "O", "P", "A", "W", "N"],
-  "allowedWords": ["AWASH", "HASH", "HOOP", "HOOPS", "HOPS", "HOSANNA", "HOSANNAS", "HOWS", "NOHOW", "PASHA", "PASHAS", "PAWNSHOP", "PAWNSHOPS", "PHONON", "POOHS", "PSHAWS", "SASH", "SHOO", "SHOOS", "SHOP", "SHOPS", "SHOW", "SHOWN", "SHOWS", "SWOOSH", "WASH", "WHOA", "WHOOP", "WHOOPS", "WHOOSH", "WHOSO"]
-},
-{
-  "puzzleId": 24,
-  "puzzleDate": "2025-03-12",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "L",
-  "outerLetters": ["B", "I", "R", "Q", "E", "U"],
-  "allowedWords": ["BELL", "BELLE", "BILE", "BILL", "BLUBBER", "BLUE", "BLUEBELL", "BLUER", "BLUR", "BLURB", "BLURRIER", "BUBBLE", "BUBBLIER", "BULB", "BULL", "BURBLE", "BURLIER", "LEER", "LEERIER", "LIBBER", "LIBEL", "LIBELER", "LIBELLER", "LIEU", "LIQUEUR", "LUBBER", "LULL", "LURE", "QUELL", "QUIBBLE", "QUIBBLER", "QUILL", "REBEL", "REEL", "RILE", "RUBBLE", "RUBLE", "RULE", "RULER"]
-},
-{
-  "puzzleId": 25,
-  "puzzleDate": "2025-03-19",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "R",
-  "outerLetters": ["U", "M", "E", "I", "N", "H"],
-  "allowedWords": ["EERIE", "EERIER", "EMIR", "ENURE", "ERMINE", "HEIR", "HEMMER", "HERE", "HEREIN", "HIRE", "HUMERI", "HUMMER", "IMMURE", "INHERE", "INNER", "INURE", "MERE", "MERMEN", "MERRIER", "MINER", "MIRE", "MIRIER", "MUMMER", "MURINE", "MURMUR", "MURMURER", "REHIRE", "REIN", "RENNIN", "RERUN", "RHENIUM", "RHEUM", "RUIN", "RUMMER", "RUNNER", "RUNNIER"]
-},
-{
-  "puzzleId": 26,
-  "puzzleDate": "2025-03-26",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "F",
-  "outerLetters": ["G", "S", "A", "O", "N", "L"],
-  "allowedWords": ["ALFALFA", "ALOOF", "FALL", "FALLOFF", "FALLOFFS", "FALLS", "FANG", "FANGS", "FANS", "FLAG", "FLAGON", "FLAGONS", "FLAGS", "FLOG", "FLOGS", "FLOSS", "FOAL", "FOALS", "FOGS", "FOOL", "FOOLS", "FOSSA", "GOLF", "GOLFS", "GOOF", "GOOFS", "LOAF", "LOAFS", "LOGOFF", "LOGOFFS", "OAFS", "OFFAL", "OFFS", "SOFA", "SOFAS"]
-},
-{
-  "puzzleId": 27,
-  "puzzleDate": "2025-04-02",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "G",
-  "outerLetters": ["I", "Q", "S", "L", "U", "E"],
-  "allowedWords": ["EGGS", "ELEGIES", "GEES", "GEESE", "GIGGLE", "GIGGLES", "GIGS", "GILL", "GILLIE", "GILLIES", "GILLS", "GLEE", "GLUE", "GLUES", "GUESS", "GUESSES", "GUILE", "GUILELESS", "GUISE", "GUISES", "GULL", "GULLIES", "GULLS", "GUSSIES", "LEGLESS", "LEGS", "LIEGE", "LIEGES", "LUGES", "LUGS", "SEGUE", "SEGUES", "SIEGE", "SIEGES", "SLUG", "SLUGS", "SQUEEGEE", "SQUEEGEES", "SQUIGGLE", "SQUIGGLES"]
-},
-{
-  "puzzleId": 28,
-  "puzzleDate": "2025-04-09",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "M",
-  "outerLetters": ["E", "H", "O", "P", "N", "A"],
-  "allowedWords": ["AMEN", "AMMO", "ANEMONE", "HEMP", "HEMPEN", "HOME", "HOMOPHONE", "MAMA", "MAMMA", "MAMMAE", "MAMMON", "MANANA", "MANE", "MANNA", "MEAN", "MEMO", "MOAN", "MOON", "MOPE", "NAME", "OMEN", "OOMPH", "PANAMA", "PENMAN", "PENMEN", "PENNAME", "PHENOM", "PHENOMENA", "PHENOMENON", "PHONEME", "POEM", "POMP", "POMPANO", "POMPOM"]
-},
-{
-  "puzzleId": 29,
-  "puzzleDate": "2025-04-16",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "K",
-  "outerLetters": ["C", "S", "O", "D", "T", "E"],
-  "allowedWords": ["COCKED", "COKE", "COKED", "COKES", "COOK", "COOKED", "COOKS", "DECK", "DECKED", "DECKS", "DESK", "DESKS", "DOCK", "DOCKED", "DOCKET", "DOCKETED", "DOCKETS", "DOCKS", "EKED", "EKES", "KOOKS", "SEEK", "SEEKS", "SKEET", "SOCK", "SOCKED", "SOCKET", "SOCKETS", "SOCKS", "STOCK", "STOCKED", "STOCKS", "STOKE", "STOKED", "STOKES", "TOKED", "TOKES", "TOOK"]
-},
-{
-  "puzzleId": 30,
-  "puzzleDate": "2025-04-23",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "H",
-  "outerLetters": ["B", "S", "L", "O", "D", "T"],
-  "allowedWords": ["BLOODSHOT", "BOOTH", "BOOTHS", "BOTH", "HOBO", "HOBOS", "HOLD", "HOLDS", "HOOD", "HOODOO", "HOODOOS", "HOODS", "HOOT", "HOOTS", "HOST", "HOSTS", "HOTSHOT", "HOTSHOTS", "SHOD", "SHOO", "SHOOS", "SHOOT", "SHOOTS", "SHOT", "SHOTS", "SLOSH", "SLOTH", "SLOTHS", "SOOTH", "TOLLBOOTH", "TOLLBOOTHS", "TOOTH"]
-},
-{
-  "puzzleId": 31,
-  "puzzleDate": "2025-04-30",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "M",
-  "outerLetters": ["G", "T", "E", "N", "I", "P"],
-  "allowedWords": ["EMINENT", "EMIT", "EMITTING", "GIMME", "GIMPING", "IMMINENT", "IMPENITENT", "IMPINGE", "IMPINGEMENT", "IMPINGING", "ITEM", "MEET", "MEETING", "MENTEE", "METE", "METING", "MIEN", "MIME", "MIMING", "MINE", "MINIM", "MINING", "MINT", "MINTING", "MITE", "MITT", "MITTEN", "PENMEN", "PIGMENT", "PIMPING", "TEEM", "TEEMING", "TEMPI", "TEMPING", "TEMPT", "TEMPTING", "TENEMENT", "TIME", "TIMING"]
-},
-{
-  "puzzleId": 32,
-  "puzzleDate": "2025-05-07",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "P",
-  "outerLetters": ["I", "R", "U", "S", "H", "C"],
-  "allowedWords": ["CHIP", "CHIPS", "CHIRP", "CHIRPS", "CHIRRUP", "CHIRRUPS", "CRISP", "CRISPS", "CUPRIC", "CUPS", "HICCUP", "HICCUPS", "HIPS", "PUPS", "PURR", "PURRS", "PUSH", "PUSHUP", "PUSHUPS", "PUSS", "RIPS", "SCRIPS", "SHIP", "SHIPS", "SIPS", "SPUR", "SPURS", "UPPISH", "USURP", "USURPS"]
-},
-{
-  "puzzleId": 33,
-  "puzzleDate": "2025-05-14",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "K",
-  "outerLetters": ["S", "Y", "H", "E", "O", "L"],
-  "allowedWords": ["EKES", "ELKS", "HOKES", "HOKEY", "HOOK", "HOOKS", "HOOKY", "KEEL", "KEELS", "KEYHOLE", "KEYHOLES", "KEYLESS", "KEYS", "KOOKS", "KOOKY", "LEEK", "LEEKS", "LOOK", "LOOKS", "SEEK", "SEEKS", "SHEKEL", "SHEKELS", "SHOOK", "SLEEK", "SLEEKLY", "SLEEKS", "YOKE", "YOKEL", "YOKELS", "YOKES", "YOLK", "YOLKS"]
-},
-{
-  "puzzleId": 34,
-  "puzzleDate": "2025-05-21",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "H",
-  "outerLetters": ["O", "E", "C", "U", "B", "R"],
-  "allowedWords": ["BEECH", "BREECH", "BROCHURE", "BROOCH", "CHEER", "CHEERER", "CHERUB", "CHORE", "CHURCH", "CHURRO", "COHERE", "COUCH", "CRECHE", "CROUCH", "ECHO", "EUCHRE", "HERB", "HERE", "HERO", "HOBO", "HOOCH", "HORROR", "HOUR", "HUBBUB", "HUBER", "OCHER", "OCHRE", "OUCH", "RECHERCHE", "REECHO"]
-},
-{
-  "puzzleId": 35,
-  "puzzleDate": "2025-05-28",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "N",
-  "outerLetters": ["C", "L", "R", "I", "B", "A"],
-  "allowedWords": ["BANAL", "BANANA", "BANI", "BARBARIAN", "BARN", "BLINI", "BRAIN", "BRAINIAC", "BRAN", "CABANA", "CABIN", "CAIRN", "CANAL", "CANCAN", "CANNIBAL", "CARINA", "CARNAL", "CINNABAR", "CLAN", "CLINIC", "CLINICAL", "CRANIAL", "LAIN", "LANAI", "LIANA", "LIBRARIAN", "NAIL", "NIACIN", "RABBINIC", "RABBINICAL", "RAIN", "RICIN"]
-},
-{
-  "puzzleId": 36,
-  "puzzleDate": "2025-06-04",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "X",
-  "outerLetters": ["I", "S", "N", "T", "A", "E"],
-  "allowedWords": ["ANNEX", "ANNEXES", "ANXIETIES", "AXES", "AXIS", "EXIST", "EXISTENT", "EXISTS", "EXIT", "EXITS", "EXTANT", "EXTENT", "EXTENTS", "NEXT", "NIXES", "SAXES", "SEXTANS", "SEXTANT", "SEXTANTS", "SEXTET", "SEXTETS", "SIXES", "SIXTEEN", "SIXTEENS", "SIXTIES", "TAXES", "TAXI", "TAXIS", "TEXANS", "TEXT", "TEXTS", "XENIA"]
-},
-{
-  "puzzleId": 37,
-  "puzzleDate": "2025-06-11",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "O",
-  "outerLetters": ["Z", "U", "E", "D", "I", "N"],
-  "allowedWords": ["DIODE", "DODO", "DONE", "DONNE", "DONNED", "DOZE", "DOZED", "DOZEN", "INNUENDO", "IODIDE", "IODINE", "IODIZE", "IODIZED", "IONIZE", "IONIZED", "NEON", "NODDED", "NODE", "NONE", "NONUNION", "NOON", "NOUN", "ONION", "OOZE", "OOZED", "OZONE", "UNDO", "UNDONE", "UNION", "UNIONIZE", "UNIONIZED", "ZONE", "ZONED"]
-},
-{
-  "puzzleId": 38,
-  "puzzleDate": "2025-06-18",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "Y",
-  "outerLetters": ["E", "L", "R", "S", "M", "I"],
-  "allowedWords": ["EERILY", "EMERY", "EMMYS", "EYELESS", "EYES", "EYRIE", "EYRIES", "LEERY", "LILY", "LIMEY", "LIMEYS", "LYRE", "LYRES", "MERELY", "MERRILY", "MERRY", "MESSILY", "MESSY", "MEYERS", "MISERLY", "MISERY", "MISSILERY", "MISSY", "RELY", "REMISSLY", "SEEMLY", "SILLY", "SISSY", "SLIMY", "SLYER", "SLYLY", "SMELLY", "SMILEY", "SMILEYS", "YELL", "YELLS", "YESES"]
-},
-{
-  "puzzleId": 39,
-  "puzzleDate": "2025-06-25",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "K",
-  "outerLetters": ["W", "R", "A", "E", "S", "G"],
-  "allowedWords": ["ARKS", "ASKEW", "ASKS", "AWAKE", "AWAKES", "EKES", "GAWK", "GAWKER", "GAWKERS", "GAWKS", "GEEKS", "KEGS", "RAKE", "RAKES", "REEK", "REEKS", "SAKE", "SEEK", "SEEKER", "SEEKERS", "SEEKS", "SKEW", "SKEWER", "SKEWERS", "SKEWS", "WAKE", "WAKES", "WEAK", "WEAKER", "WEEK", "WEEKS", "WREAK", "WREAKS"]
-},
-{
-  "puzzleId": 40,
-  "puzzleDate": "2025-07-02",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "I",
-  "outerLetters": ["P", "U", "S", "Y", "H", "L"],
-  "allowedWords": ["HILL", "HILLS", "HILLY", "HIPPY", "HIPS", "HISS", "ILLS", "ILLUS", "LILY", "LIPPY", "LIPS", "LISP", "LISPS", "PHILLIPS", "PILL", "PILLS", "PUPIL", "PUPILS", "PUSHILY", "SHILLS", "SHIP", "SHIPS", "SILL", "SILLS", "SILLY", "SIPS", "SISSY", "SLIP", "SLIPPY", "SLIPS", "SLIPUP", "SLIPUPS", "SPILL", "SPILLS", "SUSHI", "SYPHILIS", "UPHILL", "UPHILLS", "UPPISH"]
-},
-{
-  "puzzleId": 41,
-  "puzzleDate": "2025-07-09",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "D",
-  "outerLetters": ["A", "N", "O", "R", "C", "T"],
-  "allowedWords": ["ACCORD", "ACCORDANT", "ADORN", "ANACONDA", "ARDOR", "CANARD", "CANDOR", "CARD", "CODON", "CONCORD", "CONCORDANT", "CONCORDAT", "CONDO", "CONDOR", "CORD", "CORDON", "DARN", "DART", "DATA", "DOCTOR", "DODO", "DONNA", "DONOR", "DOODAD", "DOOR", "DOTARD", "NORAD", "ODOR", "RADAR", "RADON", "ROAD", "RONDO", "TOAD", "TORNADO", "TROD"]
-},
-{
-  "puzzleId": 42,
-  "puzzleDate": "2025-07-16",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "C",
-  "outerLetters": ["H", "I", "N", "P", "E", "D"],
-  "allowedWords": ["CEDE", "CEDED", "CHEEP", "CHEEPED", "CHIC", "CHICHI", "CHIDE", "CHIDED", "CHIN", "CHINE", "CHINNED", "CHIP", "CHIPPED", "CHIPPIE", "CINCH", "CINCHED", "DECIDE", "DECIDED", "DEICE", "DEICED", "DEPENDENCE", "DICE", "DICED", "EPIC", "HENCE", "ICED", "INCED", "INCH", "INCHED", "INCIDENCE", "INCIPIENCE", "NICE", "NICHE", "NIECE", "PENCE", "PICNIC", "PIECE", "PIECED", "PINCH", "PINCHED"]
-},
-{
-  "puzzleId": 43,
-  "puzzleDate": "2025-07-23",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "B",
-  "outerLetters": ["U", "N", "E", "G", "R", "L"],
-  "allowedWords": ["BEEN", "BEER", "BEGUN", "BELL", "BELLE", "BLUBBER", "BLUE", "BLUEBELL", "BLUER", "BLUR", "BLURB", "BUBBLE", "BUBER", "BUGLE", "BUGLER", "BULB", "BULGE", "BULGUR", "BULL", "BUNG", "BUNGEE", "BUNGLE", "BUNGLER", "BURBLE", "BURGER", "BURGLE", "BURN", "BURNER", "BURR", "GREBE", "GRUB", "GRUBBER", "LUBBER", "REBEL", "RUBBER", "RUBBLE", "RUBLE"]
-},
-{
-  "puzzleId": 44,
-  "puzzleDate": "2025-07-30",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "O",
-  "outerLetters": ["S", "J", "B", "I", "U", "N"],
-  "allowedWords": ["BIJOU", "BISON", "BOBBIN", "BOBBINS", "BOBS", "BONBON", "BONBONS", "BONOBO", "BONOBOS", "BONUS", "BOOBOO", "BOOBOOS", "BOON", "BOONS", "BOOS", "BOSS", "BUNION", "BUNIONS", "IONS", "JOBS", "JOIN", "JOINS", "NONUNION", "NOON", "NOUN", "NOUNS", "ONION", "ONIONS", "ONUS", "SINUOUS", "SNOB", "SNOBS", "SOBS", "SONS", "SOON", "SUBJOIN", "SUBJOINS", "UNION", "UNIONS", "UNISON"]
-},
-{
-  "puzzleId": 45,
-  "puzzleDate": "2025-08-06",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "W",
-  "outerLetters": ["N", "A", "I", "G", "P", "R"],
-  "allowedWords": ["AWING", "AWNING", "GAWPING", "GNAW", "GNAWING", "PAPAW", "PAWING", "PAWN", "PAWNING", "PAWPAW", "PRAWN", "PRAWNING", "PWNING", "WAGGING", "WAGING", "WANING", "WARING", "WARN", "WARNING", "WARP", "WARPING", "WARRING", "WIGGING", "WIGWAG", "WIGWAGGING", "WING", "WINGING", "WINING", "WINNING", "WIPING", "WIRING", "WRAP", "WRAPPING", "WRING", "WRINGING"]
-},
-{
-  "puzzleId": 46,
-  "puzzleDate": "2025-08-13",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "K",
-  "outerLetters": ["C", "L", "E", "I", "A", "T"],
-  "allowedWords": ["ALIKE", "ALKALI", "ATTACK", "CACKLE", "CAKE", "CALK", "CATLIKE", "CLACK", "CLICK", "KEEL", "KETTLE", "KICK", "KILL", "KILT", "KITE", "LACK", "LAKE", "LATKE", "LEAK", "LEEK", "LICK", "LIKE", "TACK", "TACKLE", "TAKE", "TALK", "TALKIE", "TEACAKE", "TEAK", "TEAKETTLE", "TEKTITE", "TICK", "TICKET", "TICKLE", "TIKKA"]
-},
-{
-  "puzzleId": 47,
-  "puzzleDate": "2025-08-20",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "F",
-  "outerLetters": ["V", "Y", "S", "A", "L", "E"],
-  "allowedWords": ["ALFALFA", "FALAFEL", "FALAFELS", "FALL", "FALLS", "FALSE", "FALSELY", "FAVAS", "FAVELA", "FAVELAS", "FAVES", "FEEL", "FEELS", "FEES", "FELL", "FELLA", "FELLAS", "FELLS", "FESSES", "FLAYS", "FLEA", "FLEAS", "FLEE", "FLEES", "FLYLEAF", "FLYLEAVES", "LEAF", "LEAFLESS", "LEAFS", "LEAFY", "SAFE", "SAFELY", "SAFES", "SELF", "SELFLESS", "SELFLESSLY"]
-},
-{
-  "puzzleId": 48,
-  "puzzleDate": "2025-08-27",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "Y",
-  "outerLetters": ["A", "R", "T", "N", "C", "O"],
-  "allowedWords": ["ANNOY", "ARRAY", "ARROYO", "ARTY", "CANARY", "CANNY", "CANYON", "CARNY", "CARROTY", "CARRY", "CARRYCOT", "CARRYON", "CATTY", "CONTRARY", "CORNY", "CORONARY", "COTTONY", "CRANNY", "CRAYON", "CRONY", "NANCY", "NANNY", "NATTY", "NOTARY", "ORATORY", "RACY", "RATTY", "RAYON", "ROTARY", "ROTATORY", "TARRY", "TARTY", "TATTY", "TRAY", "TYCOON", "TYRANNY", "TYRANT", "YARN"]
-},
-{
-  "puzzleId": 49,
-  "puzzleDate": "2025-09-03",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "V",
-  "outerLetters": ["E", "C", "T", "S", "A", "U"],
-  "allowedWords": ["CASSAVA", "CASSAVAS", "CAVE", "CAVEAT", "CAVEATS", "CAVES", "EAVES", "EVACUATE", "EVACUATES", "EVACUEE", "EVACUEES", "EVES", "SAVE", "SAVES", "STAVE", "STAVES", "SUAVE", "SUAVEST", "VACATE", "VACATES", "VASE", "VASES", "VAST", "VASTEST", "VASTS", "VATS", "VEST", "VESTA", "VESTS", "VETS"]
-},
-{
-  "puzzleId": 50,
-  "puzzleDate": "2025-09-10",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "B",
-  "outerLetters": ["C", "D", "H", "I", "R", "E"],
-  "allowedWords": ["BEDDED", "BEDDER", "BEECH", "BEER", "BEERIER", "BERRIED", "BIDDER", "BIDE", "BIRCH", "BIRCHED", "BIRD", "BIRDED", "BIRDER", "BIRDIE", "BIRDIED", "BRED", "BREECH", "BREED", "BREEDER", "BRIBE", "BRIBED", "BRIBER", "BRIDE", "BRIE", "CRIB", "CRIBBED", "CRIBBER", "EBBED", "HERB", "REBID", "REDBIRD", "RIBBED", "RIBBER"]
-},
-{
-  "puzzleId": 51,
-  "puzzleDate": "2025-09-17",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "S",
-  "outerLetters": ["F", "B", "T", "A", "C", "K"],
-  "allowedWords": ["ACTS", "ASKS", "ATTACKS", "BACKS", "BACKSTAB", "BACKSTABS", "BASK", "BASKS", "BASS", "CABS", "CASABA", "CASABAS", "CASAS", "CASK", "CASKS", "CAST", "CASTS", "CATS", "FACTS", "FAST", "FASTBACK", "FASTBACKS", "FASTS", "FATS", "SACK", "SACKS", "SACS", "SCAB", "SCABS", "STAB", "STABS", "STACK", "STACKS", "STAFF", "STAFFS", "TABS", "TACKS", "TASK", "TASKS"]
-},
-{
-  "puzzleId": 52,
-  "puzzleDate": "2025-09-24",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "M",
-  "outerLetters": ["K", "N", "W", "O", "A", "R"],
-  "allowedWords": ["AMMO", "ARMOR", "AROMA", "KARMA", "KORMA", "MAMA", "MAMMA", "MAMMON", "MANANA", "MANNA", "MANOR", "MARK", "MARKKA", "MARKKAA", "MAROON", "MARROW", "MOAN", "MONK", "MOON", "MOOR", "MORN", "MORON", "MORROW", "NORM", "ROAM", "ROMAN", "ROOM", "WARM", "WOMAN", "WORKMAN", "WORKROOM", "WORM"]
-},
-{
-  "puzzleId": 53,
-  "puzzleDate": "2025-10-01",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "F",
-  "outerLetters": ["R", "M", "O", "A", "S", "T"],
-  "allowedWords": ["AFAR", "AFOOT", "FARM", "FARMS", "FAST", "FASTS", "FATS", "FOAM", "FOAMS", "FOOT", "FOOTS", "FORM", "FORMAT", "FORMATS", "FORMS", "FORT", "FORTS", "FOSSA", "FROM", "FROST", "FROSTS", "OAFS", "OFFS", "RAFT", "RAFTS", "ROOF", "ROOFS", "SASSAFRAS", "SOFA", "SOFAS", "SOFT", "STAFF", "STAFFS"]
-},
-{
-  "puzzleId": 54,
-  "puzzleDate": "2025-10-08",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "D",
-  "outerLetters": ["A", "T", "R", "C", "I", "L"],
-  "allowedWords": ["ACID", "ACIDIC", "ACRID", "ADDICT", "ARID", "CARD", "CARDIAC", "CICADA", "CLAD", "DART", "DATA", "DIACRITIC", "DIACRITICAL", "DIAL", "DICTA", "DIDACTIC", "DILL", "DIRT", "DRILL", "LAID", "LAIRD", "LARD", "LIDAR", "RADAR", "RADIAL", "RADICAL", "RADII", "RAID", "RAILCARD", "TIDAL", "TRIAD"]
-},
-{
-  "puzzleId": 55,
-  "puzzleDate": "2025-10-15",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "U",
-  "outerLetters": ["E", "H", "I", "B", "S", "C"],
-  "allowedWords": ["BUSBIES", "BUSES", "BUSH", "BUSHES", "BUSIES", "BUSSES", "CUBBIES", "CUBE", "CUBES", "CUBIC", "CUBS", "CUES", "CUSSES", "HIBISCUS", "HIBISCUSES", "HUBBIES", "HUBBUB", "HUBBUBS", "HUBS", "HUES", "HUSH", "HUSHES", "HUSSIES", "ISSUE", "ISSUES", "SCHUSS", "SCHUSSES", "SHUSHES", "SUBS", "SUCCESS", "SUCCESSES", "SUCCUBI", "SUCCUBUS", "SUCH", "SUES", "SUSHI", "SUSSES", "USES"]
-},
-{
-  "puzzleId": 56,
-  "puzzleDate": "2025-10-22",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "L",
-  "outerLetters": ["Y", "R", "C", "P", "I", "O"],
-  "allowedWords": ["CLIP", "COIL", "COLIC", "COLOR", "COOL", "COOLLY", "COYLY", "CRIOLLO", "CYCLIC", "ICILY", "LILY", "LIPPY", "LOLL", "LOLLIPOP", "LOLLOP", "LOLLY", "LOLLYPOP", "LOOP", "LOOPY", "LORRY", "LYRIC", "OILY", "PICCOLO", "PILL", "PILLORY", "PLOP", "PLOY", "POLICY", "POLIO", "POLL", "POLO", "POLYP", "POOL", "POORLY", "PYLORI", "PYLORIC", "RIPPLY", "ROLL"]
-},
-{
-  "puzzleId": 57,
-  "puzzleDate": "2025-10-29",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "I",
-  "outerLetters": ["T", "R", "Y", "A", "L", "V"],
-  "allowedWords": ["AIRILY", "AIRY", "ARIA", "ARRIVAL", "ATRIA", "ATRIAL", "AVAIL", "AVIARY", "LAIR", "LAITY", "LARIAT", "LIAR", "LILT", "LILY", "RAIL", "RARITY", "RIVAL", "RIVALRY", "RIYAL", "TAIL", "TIARA", "TILL", "TILT", "TRAIL", "TRAIT", "TRAVAIL", "TRIAL", "TRILL", "TRIVIA", "TRIVIAL", "TRIVIALITY", "TRIVIALLY", "VIAL", "VILLA", "VIRAL", "VIRILITY", "VITAL", "VITALITY", "VITALLY", "VIVARIA"]
-},
-{
-  "puzzleId": 58,
-  "puzzleDate": "2025-11-05",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "E",
-  "outerLetters": ["N", "F", "U", "L", "C", "O"],
-  "allowedWords": ["CELL", "CELLO", "CLEF", "CLONE", "CLUE", "COFFEE", "COLLEEN", "COLONEL", "CONE", "CONFLUENCE", "COULEE", "EFFLUENCE", "FEEL", "FELL", "FELON", "FENCE", "FENNEL", "FLEE", "FLEECE", "FLOUNCE", "FLUE", "FUEL", "FUNNEL", "LONE", "NEOCON", "NEON", "NONCE", "NONE", "NUCLEON", "OFFENCE", "ONCE", "OUNCE", "UNCLE"]
-},
-{
-  "puzzleId": 59,
-  "puzzleDate": "2025-11-12",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "H",
-  "outerLetters": ["D", "E", "L", "I", "G", "T"],
-  "allowedWords": ["DELIGHT", "DELIGHTED", "EIGHT", "EIGHTH", "EIGHTIETH", "HEDGE", "HEDGED", "HEED", "HEEDED", "HEEL", "HEELED", "HEIGHT", "HELD", "HIDE", "HIDED", "HIGH", "HIGHLIGHT", "HIGHLIGHTED", "HILL", "HILT", "LETHE", "LIGHT", "LIGHTED", "LITHE", "TEETH", "TEETHE", "TEETHED", "THIGH", "TIGHT", "TITHE", "TITHED"]
-},
-{
-  "puzzleId": 60,
-  "puzzleDate": "2025-11-19",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "B",
-  "outerLetters": ["R", "N", "C", "S", "E", "I"],
-  "allowedWords": ["BEEN", "BEER", "BEERIER", "BEERS", "BEES", "BERRIES", "BIBS", "BIERS", "BINS", "BRIBE", "BRIBER", "BRIBERS", "BRIBES", "BRIE", "BRINIER", "BRININESS", "CRIB", "CRIBBER", "CRIBBERS", "CRIBS", "EBBS", "IBISES", "INSCRIBE", "INSCRIBER", "INSCRIBERS", "INSCRIBES", "RIBBER", "RIBBERS", "RIBS", "SCRIBE", "SCRIBES"]
-},
-{
-  "puzzleId": 61,
-  "puzzleDate": "2025-11-26",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "U",
-  "outerLetters": ["K", "R", "A", "M", "P", "S"],
-  "allowedWords": ["ARUMS", "AURA", "AURAS", "MARKUP", "MARKUPS", "MUMPS", "MURMUR", "MURMURS", "MUSK", "MUSS", "MUUMUU", "MUUMUUS", "PUKKA", "PUMA", "PUMAS", "PUMP", "PUMPS", "PUPS", "PURR", "PURRS", "PUSS", "RUMP", "RUMPS", "RUMPUS", "RUMS", "SKUAS", "SPUR", "SPURS", "SUMS", "SUPRA", "SURPASS", "USURP", "USURPS"]
-},
-{
-  "puzzleId": 62,
-  "puzzleDate": "2025-12-03",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "M",
-  "outerLetters": ["G", "P", "N", "E", "T", "I"],
-  "allowedWords": ["EMINENT", "EMIT", "EMITTING", "GIMME", "GIMPING", "IMMINENT", "IMPENITENT", "IMPINGE", "IMPINGEMENT", "IMPINGING", "ITEM", "MEET", "MEETING", "MENTEE", "METE", "METING", "MIEN", "MIME", "MIMING", "MINE", "MINIM", "MINING", "MINT", "MINTING", "MITE", "MITT", "MITTEN", "PENMEN", "PIGMENT", "PIMPING", "TEEM", "TEEMING", "TEMPI", "TEMPING", "TEMPT", "TEMPTING", "TENEMENT", "TIME", "TIMING"]
-},
-{
-  "puzzleId": 63,
-  "puzzleDate": "2025-12-10",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "A",
-  "outerLetters": ["M", "S", "U", "I", "R", "V"],
-  "allowedWords": ["AIMS", "AIRS", "AMASS", "AMIRS", "AMISS", "ARIA", "ARIAS", "ARMS", "ARUMS", "AURA", "AURAS", "IMAMS", "MAIM", "MAIMS", "MAMA", "MAMAS", "MAMMA", "MARIA", "MARS", "MASAS", "MASS", "MAVIS", "MIASMA", "MIASMAS", "RAMS", "SAMARIUM", "SAMURAI", "SARI", "SARIS", "VISA", "VISAS", "VIVARIA", "VIVARIUM", "VIVARIUMS", "VIVAS"]
-},
-{
-  "puzzleId": 64,
-  "puzzleDate": "2025-12-17",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "R",
-  "outerLetters": ["U", "O", "D", "S", "N", "G"],
-  "allowedWords": ["DONOR", "DONORS", "DOOR", "DOORS", "DOUR", "DROSS", "DRUG", "DRUGS", "GORGON", "GORGONS", "GOURD", "GOURDS", "GROSS", "GROUND", "GROUNDS", "GURU", "GURUS", "ODOR", "ODOROUS", "ODORS", "OURS", "RODS", "RONDO", "RONDOS", "ROODS", "ROUND", "ROUNDS", "RUGS", "RUNG", "RUNGS", "RUNS", "SONOROUS", "SOUR", "SOURS", "SURROUND", "SURROUNDS", "URNS"]
-},
-{
-  "puzzleId": 65,
-  "puzzleDate": "2025-12-24",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "G",
-  "outerLetters": ["X", "I", "F", "L", "U", "N"],
-  "allowedWords": ["FILING", "FINING", "FIXING", "FLING", "FLINGING", "FLUFFING", "FLUNG", "FLUXING", "FULFILLING", "FULLING", "FUNGI", "GIGGING", "GIGGLING", "GILL", "GINNING", "GLUING", "GULF", "GULL", "GULLING", "GUNNING", "INFILLING", "INNING", "LIGNIN", "LINGUINI", "LINING", "LUFFING", "LUGGING", "LULLING", "LUNG", "LUNGFUL", "LUNGING", "NIGGLING", "NIXING", "UNFIXING", "UNFULFILLING"]
-},
-{
-  "puzzleId": 66,
-  "puzzleDate": "2025-12-31",
-  "minWordLength": 4,
-  "pangramBonus": 7,
-  "centerLetter": "E",
-  "outerLetters": ["A", "L", "N", "C", "W", "O"],
-  "allowedWords": ["ACNE", "ALLELE", "ALLOWANCE", "ALOE", "ALONE", "ANEW", "ANNEAL", "CANCEL", "CANE", "CANOE", "CECAL", "CELL", "CELLO", "CLEAN", "CLOACAE", "CLONE", "COLLEEN", "COLONEL", "CONCEAL", "CONE", "LACE", "LANCE", "LANE", "LEAN", "LOCALE", "LONE", "NACELLE", "NEOCON", "NEON", "NEWEL", "NONCE", "NONE", "OCEAN", "ONCE", "WANE", "WEAN", "WELL", "WOOLEN", "WOOLLEN"]
-}
+{"puzzleId":14,"puzzleDate":"2025-01-01","minWordLength":4,"pangramBonus":7,"centerLetter":"U","outerLetters":["A","I","L","F","E","R"],"allowedWords":["ALLURE","AURA","AURAL","EARFUL","FAILURE","FEARFUL","FERRULE","FERULE","FLUE","FLUFF","FLUFFIER","FUEL","FULFIL","FULFILL","FULL","FULLER","FURL","FURRIER","IREFUL","LAUREL","LIEU","LULL","LURE","REFUEL","RUEFUL","RUFF","RUFFLE","RULE","RULER","RURAL"]},
+{"puzzleId":15,"puzzleDate":"2025-01-08","minWordLength":4,"pangramBonus":7,"centerLetter":"W","outerLetters":["J","S","H","E","N","I"],"allowedWords":["EWES","HEWN","HEWS","JEWISHNESS","NEWISH","NEWNESS","NEWS","SEWN","SEWS","SINEW","SINEWS","SWINE","SWINES","SWINISH","SWISH","SWISHES","SWISSES","WEENIE","WEENIES","WEENS","WEES","WHEN","WHENS","WHEW","WHINE","WHINES","WHINNIES","WIENIE","WIENIES","WINE","WINES","WINS","WISE","WISES","WISH","WISHES"]},
+{"puzzleId":16,"puzzleDate":"2025-01-15","minWordLength":4,"pangramBonus":7,"centerLetter":"I","outerLetters":["S","N","R","H","V","A"],"allowedWords":["AIRS","ARIA","ARIAS","ASSASSIN","ASSASSINS","AVIAN","HAIR","HAIRS","HARISSA","HISS","INNS","IRIS","NIRVANA","RAIN","RAINS","RAISIN","RAISINS","RANIS","RAVISH","SARI","SARIN","SARIS","SHARIA","SHARIAH","SHIN","SHINS","SHIRRS","SHIVA","SINS","SIRRAH","SIRS","VAIN","VANISH","VARNISH","VISA","VISAS","VIVARIA","VIVAS"]},
+{"puzzleId":17,"puzzleDate":"2025-01-22","minWordLength":4,"pangramBonus":7,"centerLetter":"H","outerLetters":["O","G","U","D","S","R"],"allowedWords":["DOUGH","GODHOOD","GOSH","GUSH","HOGS","HOOD","HOODOO","HOODOOS","HOODS","HORROR","HORRORS","HOUR","HOURS","HUGS","HUSH","ROUGH","ROUGHS","ROUGHSHOD","RUSH","SHOD","SHOO","SHOOS","SHROUD","SHROUDS","SHRUG","SHRUGS","SOUGH","SOUGHS","SOURDOUGH","SOURDOUGHS"]},
+{"puzzleId":18,"puzzleDate":"2025-01-29","minWordLength":4,"pangramBonus":7,"centerLetter":"E","outerLetters":["O","L","U","T","N","Q"],"allowedWords":["ELOQUENT","ENQUEUE","ENTENTE","LENT","LENTO","LONE","LUTE","NEON","NETTLE","NONE","NOTE","NOTELET","OUTLET","QUEEN","QUELL","QUEUE","QUOTE","TELL","TELNET","TENET","TENON","TENT","TOLUENE","TONE","TONNE","TOOTLE","TOQUE","TOTE","TULLE","TUNE","TUNNEL","TUQUE","UNQUOTE"]},
+{"puzzleId":19,"puzzleDate":"2025-02-05","minWordLength":4,"pangramBonus":7,"centerLetter":"S","outerLetters":["G","R","M","I","T","H"],"allowedWords":["GIGS","GIRTHS","GIST","GRITS","HIGHS","HISS","HITS","IRIS","MISHIT","MISHITS","MISS","MISSIS","MIST","MISTS","MITTS","RIGHTISM","RIGHTIST","RIGHTISTS","RIGHTS","RIGS","RIMS","SHIRRS","SHIRT","SHIRTS","SIGH","SIGHS","SIGHT","SIGHTS","SIRS","SITS","SMITH","SMITHS","STIR","STIRS","THIGHS","THIRST","THIRSTS","THIS","TIGHTS","TRIMS"]},
+{"puzzleId":20,"puzzleDate":"2025-02-12","minWordLength":4,"pangramBonus":7,"centerLetter":"A","outerLetters":["O","L","I","M","X","B"],"allowedWords":["ABLOOM","ALIBI","AMMO","AXIAL","AXIOM","BAIL","BALL","BALM","BAMBOO","BAOBAB","BLAB","IAMBI","LABIAL","LAMB","LLAMA","LOAM","MAIL","MAILBOX","MAIM","MALL","MAMA","MAMBA","MAMBO","MAMMA","MAMMAL","MAXILLA","MAXIM","MAXIMA","MAXIMAL"]},
+{"puzzleId":21,"puzzleDate":"2025-02-19","minWordLength":4,"pangramBonus":7,"centerLetter":"S","outerLetters":["C","K","I","Y","H","E"],"allowedWords":["CHECKS","CHEEKS","CHEESE","CHEESES","CHEESY","CHESS","CHICHIS","CHICKS","EKES","EYES","HICKEYS","HICKS","HIKES","HISS","HISSES","ICES","KEYS","KICKS","KISS","KISSES","SEEK","SEEKS","SEES","SHEIK","SHEIKH","SHEIKHS","SHEIKS","SHIES","SICK","SICKIE","SICKIES","SICKISH","SICKS","SICS","SISSIES","SISSY","SKIES","SKIS","YESES"]},
+{"puzzleId":22,"puzzleDate":"2025-02-26","minWordLength":4,"pangramBonus":7,"centerLetter":"L","outerLetters":["Y","U","C","K","A","B"],"allowedWords":["ABLY","ALLAY","ALLY","BALK","BALKY","BALL","BLAB","BLACK","BLACKBALL","BLACKLY","BUBBLY","BUCKYBALL","BULB","BULK","BULKY","BULL","BULLY","CABAL","CALK","CALL","CALLA","CALLBACK","CAULK","CLACK","CLAY","CLUB","CLUCK","CULL","LACK","LACY","LUCK","LUCKY","LULL","LULLABY"]},
+{"puzzleId":23,"puzzleDate":"2025-03-05","minWordLength":4,"pangramBonus":7,"centerLetter":"H","outerLetters":["S","O","P","A","W","N"],"allowedWords":["AWASH","HASH","HOOP","HOOPS","HOPS","HOSANNA","HOSANNAS","HOWS","NOHOW","PASHA","PASHAS","PAWNSHOP","PAWNSHOPS","PHONON","POOHS","PSHAWS","SASH","SHOO","SHOOS","SHOP","SHOPS","SHOW","SHOWN","SHOWS","SWOOSH","WASH","WHOA","WHOOP","WHOOPS","WHOOSH","WHOSO"]},
+{"puzzleId":24,"puzzleDate":"2025-03-12","minWordLength":4,"pangramBonus":7,"centerLetter":"L","outerLetters":["B","I","R","Q","E","U"],"allowedWords":["BELL","BELLE","BILE","BILL","BLUBBER","BLUE","BLUEBELL","BLUER","BLUR","BLURB","BLURRIER","BUBBLE","BUBBLIER","BULB","BULL","BURBLE","BURLIER","LEER","LEERIER","LIBBER","LIBEL","LIBELER","LIBELLER","LIEU","LIQUEUR","LUBBER","LULL","LURE","QUELL","QUIBBLE","QUIBBLER","QUILL","REBEL","REEL","RILE","RUBBLE","RUBLE","RULE","RULER"]},
+{"puzzleId":25,"puzzleDate":"2025-03-19","minWordLength":4,"pangramBonus":7,"centerLetter":"R","outerLetters":["U","M","E","I","N","H"],"allowedWords":["EERIE","EERIER","EMIR","ENURE","ERMINE","HEIR","HEMMER","HERE","HEREIN","HIRE","HUMERI","HUMMER","IMMURE","INHERE","INNER","INURE","MERE","MERMEN","MERRIER","MINER","MIRE","MIRIER","MUMMER","MURINE","MURMUR","MURMURER","REHIRE","REIN","RENNIN","RERUN","RHENIUM","RHEUM","RUIN","RUMMER","RUNNER","RUNNIER"]},
+{"puzzleId":26,"puzzleDate":"2025-03-26","minWordLength":4,"pangramBonus":7,"centerLetter":"F","outerLetters":["G","S","A","O","N","L"],"allowedWords":["ALFALFA","ALOOF","FALL","FALLOFF","FALLOFFS","FALLS","FANG","FANGS","FANS","FLAG","FLAGON","FLAGONS","FLAGS","FLOG","FLOGS","FLOSS","FOAL","FOALS","FOGS","FOOL","FOOLS","FOSSA","GOLF","GOLFS","GOOF","GOOFS","LOAF","LOAFS","LOGOFF","LOGOFFS","OAFS","OFFAL","OFFS","SOFA","SOFAS"]},
+{"puzzleId":27,"puzzleDate":"2025-04-02","minWordLength":4,"pangramBonus":7,"centerLetter":"G","outerLetters":["I","Q","S","L","U","E"],"allowedWords":["EGGS","ELEGIES","GEES","GEESE","GIGGLE","GIGGLES","GIGS","GILL","GILLIE","GILLIES","GILLS","GLEE","GLUE","GLUES","GUESS","GUESSES","GUILE","GUILELESS","GUISE","GUISES","GULL","GULLIES","GULLS","GUSSIES","LEGLESS","LEGS","LIEGE","LIEGES","LUGES","LUGS","SEGUE","SEGUES","SIEGE","SIEGES","SLUG","SLUGS","SQUEEGEE","SQUEEGEES","SQUIGGLE","SQUIGGLES"]},
+{"puzzleId":28,"puzzleDate":"2025-04-09","minWordLength":4,"pangramBonus":7,"centerLetter":"M","outerLetters":["E","H","O","P","N","A"],"allowedWords":["AMEN","AMMO","ANEMONE","HEMP","HEMPEN","HOME","HOMOPHONE","MAMA","MAMMA","MAMMAE","MAMMON","MANANA","MANE","MANNA","MEAN","MEMO","MOAN","MOON","MOPE","NAME","OMEN","OOMPH","PANAMA","PENMAN","PENMEN","PENNAME","PHENOM","PHENOMENA","PHENOMENON","PHONEME","POEM","POMP","POMPANO","POMPOM"]},
+{"puzzleId":29,"puzzleDate":"2025-04-16","minWordLength":4,"pangramBonus":7,"centerLetter":"K","outerLetters":["C","S","O","D","T","E"],"allowedWords":["COCKED","COKE","COKED","COKES","COOK","COOKED","COOKS","DECK","DECKED","DECKS","DESK","DESKS","DOCK","DOCKED","DOCKET","DOCKETED","DOCKETS","DOCKS","EKED","EKES","KOOKS","SEEK","SEEKS","SKEET","SOCK","SOCKED","SOCKET","SOCKETS","SOCKS","STOCK","STOCKED","STOCKS","STOKE","STOKED","STOKES","TOKED","TOKES","TOOK"]},
+{"puzzleId":30,"puzzleDate":"2025-04-23","minWordLength":4,"pangramBonus":7,"centerLetter":"H","outerLetters":["B","S","L","O","D","T"],"allowedWords":["BLOODSHOT","BOOTH","BOOTHS","BOTH","HOBO","HOBOS","HOLD","HOLDS","HOOD","HOODOO","HOODOOS","HOODS","HOOT","HOOTS","HOST","HOSTS","HOTSHOT","HOTSHOTS","SHOD","SHOO","SHOOS","SHOOT","SHOOTS","SHOT","SHOTS","SLOSH","SLOTH","SLOTHS","SOOTH","TOLLBOOTH","TOLLBOOTHS","TOOTH"]},
+{"puzzleId":31,"puzzleDate":"2025-04-30","minWordLength":4,"pangramBonus":7,"centerLetter":"M","outerLetters":["G","T","E","N","I","P"],"allowedWords":["EMINENT","EMIT","EMITTING","GIMME","GIMPING","IMMINENT","IMPENITENT","IMPINGE","IMPINGEMENT","IMPINGING","ITEM","MEET","MEETING","MENTEE","METE","METING","MIEN","MIME","MIMING","MINE","MINIM","MINING","MINT","MINTING","MITE","MITT","MITTEN","PENMEN","PIGMENT","PIMPING","TEEM","TEEMING","TEMPI","TEMPING","TEMPT","TEMPTING","TENEMENT","TIME","TIMING"]},
+{"puzzleId":32,"puzzleDate":"2025-05-07","minWordLength":4,"pangramBonus":7,"centerLetter":"P","outerLetters":["I","R","U","S","H","C"],"allowedWords":["CHIP","CHIPS","CHIRP","CHIRPS","CHIRRUP","CHIRRUPS","CRISP","CRISPS","CUPRIC","CUPS","HICCUP","HICCUPS","HIPS","PUPS","PURR","PURRS","PUSH","PUSHUP","PUSHUPS","PUSS","RIPS","SCRIPS","SHIP","SHIPS","SIPS","SPUR","SPURS","UPPISH","USURP","USURPS"]},
+{"puzzleId":33,"puzzleDate":"2025-05-14","minWordLength":4,"pangramBonus":7,"centerLetter":"K","outerLetters":["S","Y","H","E","O","L"],"allowedWords":["EKES","ELKS","HOKES","HOKEY","HOOK","HOOKS","HOOKY","KEEL","KEELS","KEYHOLE","KEYHOLES","KEYLESS","KEYS","KOOKS","KOOKY","LEEK","LEEKS","LOOK","LOOKS","SEEK","SEEKS","SHEKEL","SHEKELS","SHOOK","SLEEK","SLEEKLY","SLEEKS","YOKE","YOKEL","YOKELS","YOKES","YOLK","YOLKS"]},
+{"puzzleId":34,"puzzleDate":"2025-05-21","minWordLength":4,"pangramBonus":7,"centerLetter":"H","outerLetters":["O","E","C","U","B","R"],"allowedWords":["BEECH","BREECH","BROCHURE","BROOCH","CHEER","CHEERER","CHERUB","CHORE","CHURCH","CHURRO","COHERE","COUCH","CRECHE","CROUCH","ECHO","EUCHRE","HERB","HERE","HERO","HOBO","HOOCH","HORROR","HOUR","HUBBUB","HUBER","OCHER","OCHRE","OUCH","RECHERCHE","REECHO"]},
+{"puzzleId":35,"puzzleDate":"2025-05-28","minWordLength":4,"pangramBonus":7,"centerLetter":"N","outerLetters":["C","L","R","I","B","A"],"allowedWords":["BANAL","BANANA","BANI","BARBARIAN","BARN","BLINI","BRAIN","BRAINIAC","BRAN","CABANA","CABIN","CAIRN","CANAL","CANCAN","CANNIBAL","CARINA","CARNAL","CINNABAR","CLAN","CLINIC","CLINICAL","CRANIAL","LAIN","LANAI","LIANA","LIBRARIAN","NAIL","NIACIN","RABBINIC","RABBINICAL","RAIN","RICIN"]},
+{"puzzleId":36,"puzzleDate":"2025-06-04","minWordLength":4,"pangramBonus":7,"centerLetter":"X","outerLetters":["I","S","N","T","A","E"],"allowedWords":["ANNEX","ANNEXES","ANXIETIES","AXES","AXIS","EXIST","EXISTENT","EXISTS","EXIT","EXITS","EXTANT","EXTENT","EXTENTS","NEXT","NIXES","SAXES","SEXTANS","SEXTANT","SEXTANTS","SEXTET","SEXTETS","SIXES","SIXTEEN","SIXTEENS","SIXTIES","TAXES","TAXI","TAXIS","TEXANS","TEXT","TEXTS","XENIA"]},
+{"puzzleId":37,"puzzleDate":"2025-06-11","minWordLength":4,"pangramBonus":7,"centerLetter":"O","outerLetters":["Z","U","E","D","I","N"],"allowedWords":["DIODE","DODO","DONE","DONNE","DONNED","DOZE","DOZED","DOZEN","INNUENDO","IODIDE","IODINE","IODIZE","IODIZED","IONIZE","IONIZED","NEON","NODDED","NODE","NONE","NONUNION","NOON","NOUN","ONION","OOZE","OOZED","OZONE","UNDO","UNDONE","UNION","UNIONIZE","UNIONIZED","ZONE","ZONED"]},
+{"puzzleId":38,"puzzleDate":"2025-06-18","minWordLength":4,"pangramBonus":7,"centerLetter":"Y","outerLetters":["E","L","R","S","M","I"],"allowedWords":["EERILY","EMERY","EMMYS","EYELESS","EYES","EYRIE","EYRIES","LEERY","LILY","LIMEY","LIMEYS","LYRE","LYRES","MERELY","MERRILY","MERRY","MESSILY","MESSY","MEYERS","MISERLY","MISERY","MISSILERY","MISSY","RELY","REMISSLY","SEEMLY","SILLY","SISSY","SLIMY","SLYER","SLYLY","SMELLY","SMILEY","SMILEYS","YELL","YELLS","YESES"]},
+{"puzzleId":39,"puzzleDate":"2025-06-25","minWordLength":4,"pangramBonus":7,"centerLetter":"K","outerLetters":["W","R","A","E","S","G"],"allowedWords":["ARKS","ASKEW","ASKS","AWAKE","AWAKES","EKES","GAWK","GAWKER","GAWKERS","GAWKS","GEEKS","KEGS","RAKE","RAKES","REEK","REEKS","SAKE","SEEK","SEEKER","SEEKERS","SEEKS","SKEW","SKEWER","SKEWERS","SKEWS","WAKE","WAKES","WEAK","WEAKER","WEEK","WEEKS","WREAK","WREAKS"]},
+{"puzzleId":40,"puzzleDate":"2025-07-02","minWordLength":4,"pangramBonus":7,"centerLetter":"I","outerLetters":["P","U","S","Y","H","L"],"allowedWords":["HILL","HILLS","HILLY","HIPPY","HIPS","HISS","ILLS","ILLUS","LILY","LIPPY","LIPS","LISP","LISPS","PHILLIPS","PILL","PILLS","PUPIL","PUPILS","PUSHILY","SHILLS","SHIP","SHIPS","SILL","SILLS","SILLY","SIPS","SISSY","SLIP","SLIPPY","SLIPS","SLIPUP","SLIPUPS","SPILL","SPILLS","SUSHI","UPHILL","UPHILLS","UPPISH"]},
+{"puzzleId":41,"puzzleDate":"2025-07-09","minWordLength":4,"pangramBonus":7,"centerLetter":"D","outerLetters":["A","N","O","R","C","T"],"allowedWords":["ACCORD","ACCORDANT","ADORN","ANACONDA","ARDOR","CANARD","CANDOR","CARD","CODON","CONCORD","CONCORDANT","CONCORDAT","CONDO","CONDOR","CORD","CORDON","DARN","DART","DATA","DOCTOR","DODO","DONNA","DONOR","DOODAD","DOOR","DOTARD","NORAD","ODOR","RADAR","RADON","ROAD","RONDO","TOAD","TORNADO","TROD"]},
+{"puzzleId":42,"puzzleDate":"2025-07-16","minWordLength":4,"pangramBonus":7,"centerLetter":"C","outerLetters":["H","I","N","P","E","D"],"allowedWords":["CEDE","CEDED","CHEEP","CHEEPED","CHIC","CHICHI","CHIDE","CHIDED","CHIN","CHINE","CHINNED","CHIP","CHIPPED","CHIPPIE","CINCH","CINCHED","DECIDE","DECIDED","DEICE","DEICED","DEPENDENCE","DICE","DICED","EPIC","HENCE","ICED","INCED","INCH","INCHED","INCIDENCE","INCIPIENCE","NICE","NICHE","NIECE","PENCE","PICNIC","PIECE","PIECED","PINCH","PINCHED"]},
+{"puzzleId":43,"puzzleDate":"2025-07-23","minWordLength":4,"pangramBonus":7,"centerLetter":"B","outerLetters":["U","N","E","G","R","L"],"allowedWords":["BEEN","BEER","BEGUN","BELL","BELLE","BLUBBER","BLUE","BLUEBELL","BLUER","BLUR","BLURB","BUBBLE","BUBER","BUGLE","BUGLER","BULB","BULGE","BULGUR","BULL","BUNG","BUNGEE","BUNGLE","BUNGLER","BURBLE","BURGER","BURGLE","BURN","BURNER","BURR","GREBE","GRUB","GRUBBER","LUBBER","REBEL","RUBBER","RUBBLE","RUBLE"]},
+{"puzzleId":44,"puzzleDate":"2025-07-30","minWordLength":4,"pangramBonus":7,"centerLetter":"O","outerLetters":["S","J","B","I","U","N"],"allowedWords":["BIJOU","BISON","BOBBIN","BOBBINS","BOBS","BONBON","BONBONS","BONOBO","BONOBOS","BONUS","BOOBOO","BOOBOOS","BOON","BOONS","BOOS","BOSS","BUNION","BUNIONS","IONS","JOBS","JOIN","JOINS","NONUNION","NOON","NOUN","NOUNS","ONION","ONIONS","ONUS","SINUOUS","SNOB","SNOBS","SOBS","SONS","SOON","SUBJOIN","SUBJOINS","UNION","UNIONS","UNISON"]},
+{"puzzleId":45,"puzzleDate":"2025-08-06","minWordLength":4,"pangramBonus":7,"centerLetter":"W","outerLetters":["N","A","I","G","P","R"],"allowedWords":["AWING","AWNING","GAWPING","GNAW","GNAWING","PAPAW","PAWING","PAWN","PAWNING","PAWPAW","PRAWN","PRAWNING","PWNING","WAGGING","WAGING","WANING","WARING","WARN","WARNING","WARP","WARPING","WARRING","WIGGING","WIGWAG","WIGWAGGING","WING","WINGING","WINING","WINNING","WIPING","WIRING","WRAP","WRAPPING","WRING","WRINGING"]},
+{"puzzleId":46,"puzzleDate":"2025-08-13","minWordLength":4,"pangramBonus":7,"centerLetter":"K","outerLetters":["C","L","E","I","A","T"],"allowedWords":["ALIKE","ALKALI","ATTACK","CACKLE","CAKE","CALK","CATLIKE","CLACK","CLICK","KEEL","KETTLE","KICK","KILL","KILT","KITE","LACK","LAKE","LATKE","LEAK","LEEK","LICK","LIKE","TACK","TACKLE","TAKE","TALK","TALKIE","TEACAKE","TEAK","TEAKETTLE","TEKTITE","TICK","TICKET","TICKLE","TIKKA"]},
+{"puzzleId":47,"puzzleDate":"2025-08-20","minWordLength":4,"pangramBonus":7,"centerLetter":"F","outerLetters":["V","Y","S","A","L","E"],"allowedWords":["ALFALFA","FALAFEL","FALAFELS","FALL","FALLS","FALSE","FALSELY","FAVAS","FAVELA","FAVELAS","FAVES","FEEL","FEELS","FEES","FELL","FELLA","FELLAS","FELLS","FESSES","FLAYS","FLEA","FLEAS","FLEE","FLEES","FLYLEAF","FLYLEAVES","LEAF","LEAFLESS","LEAFS","LEAFY","SAFE","SAFELY","SAFES","SELF","SELFLESS","SELFLESSLY"]},
+{"puzzleId":48,"puzzleDate":"2025-08-27","minWordLength":4,"pangramBonus":7,"centerLetter":"Y","outerLetters":["A","R","T","N","C","O"],"allowedWords":["ANNOY","ARRAY","ARROYO","ARTY","CANARY","CANNY","CANYON","CARNY","CARROTY","CARRY","CARRYCOT","CARRYON","CATTY","CONTRARY","CORNY","CORONARY","COTTONY","CRANNY","CRAYON","CRONY","NANCY","NANNY","NATTY","NOTARY","ORATORY","RACY","RATTY","RAYON","ROTARY","ROTATORY","TARRY","TARTY","TATTY","TRAY","TYCOON","TYRANNY","TYRANT","YARN"]},
+{"puzzleId":49,"puzzleDate":"2025-09-03","minWordLength":4,"pangramBonus":7,"centerLetter":"V","outerLetters":["E","C","T","S","A","U"],"allowedWords":["CASSAVA","CASSAVAS","CAVE","CAVEAT","CAVEATS","CAVES","EAVES","EVACUATE","EVACUATES","EVACUEE","EVACUEES","EVES","SAVE","SAVES","STAVE","STAVES","SUAVE","SUAVEST","VACATE","VACATES","VASE","VASES","VAST","VASTEST","VASTS","VATS","VEST","VESTA","VESTS","VETS"]},
+{"puzzleId":50,"puzzleDate":"2025-09-10","minWordLength":4,"pangramBonus":7,"centerLetter":"B","outerLetters":["C","D","H","I","R","E"],"allowedWords":["BEDDED","BEDDER","BEECH","BEER","BEERIER","BERRIED","BIDDER","BIDE","BIRCH","BIRCHED","BIRD","BIRDED","BIRDER","BIRDIE","BIRDIED","BRED","BREECH","BREED","BREEDER","BRIBE","BRIBED","BRIBER","BRIDE","BRIE","CRIB","CRIBBED","CRIBBER","EBBED","HERB","REBID","REDBIRD","RIBBED","RIBBER"]},
+{"puzzleId":51,"puzzleDate":"2025-09-17","minWordLength":4,"pangramBonus":7,"centerLetter":"S","outerLetters":["F","B","T","A","C","K"],"allowedWords":["ACTS","ASKS","ATTACKS","BACKS","BACKSTAB","BACKSTABS","BASK","BASKS","BASS","CABS","CASABA","CASABAS","CASAS","CASK","CASKS","CAST","CASTS","CATS","FACTS","FAST","FASTBACK","FASTBACKS","FASTS","FATS","SACK","SACKS","SACS","SCAB","SCABS","STAB","STABS","STACK","STACKS","STAFF","STAFFS","TABS","TACKS","TASK","TASKS"]},
+{"puzzleId":52,"puzzleDate":"2025-09-24","minWordLength":4,"pangramBonus":7,"centerLetter":"M","outerLetters":["K","N","W","O","A","R"],"allowedWords":["AMMO","ARMOR","AROMA","KARMA","KORMA","MAMA","MAMMA","MAMMON","MANANA","MANNA","MANOR","MARK","MARKKA","MARKKAA","MAROON","MARROW","MOAN","MONK","MOON","MOOR","MORN","MORON","MORROW","NORM","ROAM","ROMAN","ROOM","WARM","WOMAN","WORKMAN","WORKROOM","WORM"]},
+{"puzzleId":53,"puzzleDate":"2025-10-01","minWordLength":4,"pangramBonus":7,"centerLetter":"F","outerLetters":["R","M","O","A","S","T"],"allowedWords":["AFAR","AFOOT","FARM","FARMS","FAST","FASTS","FATS","FOAM","FOAMS","FOOT","FOOTS","FORM","FORMAT","FORMATS","FORMS","FORT","FORTS","FOSSA","FROM","FROST","FROSTS","OAFS","OFFS","RAFT","RAFTS","ROOF","ROOFS","SASSAFRAS","SOFA","SOFAS","SOFT","STAFF","STAFFS"]},
+{"puzzleId":54,"puzzleDate":"2025-10-08","minWordLength":4,"pangramBonus":7,"centerLetter":"D","outerLetters":["A","T","R","C","I","L"],"allowedWords":["ACID","ACIDIC","ACRID","ADDICT","ARID","CARD","CARDIAC","CICADA","CLAD","DART","DATA","DIACRITIC","DIACRITICAL","DIAL","DICTA","DIDACTIC","DILL","DIRT","DRILL","LAID","LAIRD","LARD","LIDAR","RADAR","RADIAL","RADICAL","RADII","RAID","RAILCARD","TIDAL","TRIAD"]},
+{"puzzleId":55,"puzzleDate":"2025-10-15","minWordLength":4,"pangramBonus":7,"centerLetter":"U","outerLetters":["E","H","I","B","S","C"],"allowedWords":["BUSBIES","BUSES","BUSH","BUSHES","BUSIES","BUSSES","CUBBIES","CUBE","CUBES","CUBIC","CUBS","CUES","CUSSES","HIBISCUS","HIBISCUSES","HUBBIES","HUBBUB","HUBBUBS","HUBS","HUES","HUSH","HUSHES","HUSSIES","ISSUE","ISSUES","SCHUSS","SCHUSSES","SHUSHES","SUBS","SUCCESS","SUCCESSES","SUCH","SUES","SUSHI","SUSSES","USES"]},
+{"puzzleId":56,"puzzleDate":"2025-10-22","minWordLength":4,"pangramBonus":7,"centerLetter":"L","outerLetters":["Y","R","C","P","I","O"],"allowedWords":["CLIP","COIL","COLIC","COLOR","COOL","COOLLY","COYLY","CRIOLLO","CYCLIC","ICILY","LILY","LIPPY","LOLL","LOLLIPOP","LOLLOP","LOLLY","LOLLYPOP","LOOP","LOOPY","LORRY","LYRIC","OILY","PICCOLO","PILL","PILLORY","PLOP","PLOY","POLICY","POLIO","POLL","POLO","POLYP","POOL","POORLY","PYLORI","PYLORIC","RIPPLY","ROLL"]},
+{"puzzleId":57,"puzzleDate":"2025-10-29","minWordLength":4,"pangramBonus":7,"centerLetter":"I","outerLetters":["T","R","Y","A","L","V"],"allowedWords":["AIRILY","AIRY","ARIA","ARRIVAL","ATRIA","ATRIAL","AVAIL","AVIARY","LAIR","LAITY","LARIAT","LIAR","LILT","LILY","RAIL","RARITY","RIVAL","RIVALRY","RIYAL","TAIL","TIARA","TILL","TILT","TRAIL","TRAIT","TRAVAIL","TRIAL","TRILL","TRIVIA","TRIVIAL","TRIVIALITY","TRIVIALLY","VIAL","VILLA","VIRAL","VIRILITY","VITAL","VITALITY","VITALLY","VIVARIA"]},
+{"puzzleId":58,"puzzleDate":"2025-11-05","minWordLength":4,"pangramBonus":7,"centerLetter":"E","outerLetters":["N","F","U","L","C","O"],"allowedWords":["CELL","CELLO","CLEF","CLONE","CLUE","COFFEE","COLLEEN","COLONEL","CONE","CONFLUENCE","COULEE","EFFLUENCE","FEEL","FELL","FELON","FENCE","FENNEL","FLEE","FLEECE","FLOUNCE","FLUE","FUEL","FUNNEL","LONE","NEOCON","NEON","NONCE","NONE","NUCLEON","OFFENCE","ONCE","OUNCE","UNCLE"]},
+{"puzzleId":59,"puzzleDate":"2025-11-12","minWordLength":4,"pangramBonus":7,"centerLetter":"H","outerLetters":["D","E","L","I","G","T"],"allowedWords":["DELIGHT","DELIGHTED","EIGHT","EIGHTH","EIGHTIETH","HEDGE","HEDGED","HEED","HEEDED","HEEL","HEELED","HEIGHT","HELD","HIDE","HIDED","HIGH","HIGHLIGHT","HIGHLIGHTED","HILL","HILT","LETHE","LIGHT","LIGHTED","LITHE","TEETH","TEETHE","TEETHED","THIGH","TIGHT","TITHE","TITHED"]},
+{"puzzleId":60,"puzzleDate":"2025-11-19","minWordLength":4,"pangramBonus":7,"centerLetter":"B","outerLetters":["R","N","C","S","E","I"],"allowedWords":["BEEN","BEER","BEERIER","BEERS","BEES","BERRIES","BIBS","BIERS","BINS","BRIBE","BRIBER","BRIBERS","BRIBES","BRIE","BRINIER","BRININESS","CRIB","CRIBBER","CRIBBERS","CRIBS","EBBS","IBISES","INSCRIBE","INSCRIBER","INSCRIBERS","INSCRIBES","RIBBER","RIBBERS","RIBS","SCRIBE","SCRIBES"]},
+{"puzzleId":61,"puzzleDate":"2025-11-26","minWordLength":4,"pangramBonus":7,"centerLetter":"U","outerLetters":["K","R","A","M","P","S"],"allowedWords":["ARUMS","AURA","AURAS","MARKUP","MARKUPS","MUMPS","MURMUR","MURMURS","MUSK","MUSS","MUUMUU","MUUMUUS","PUKKA","PUMA","PUMAS","PUMP","PUMPS","PUPS","PURR","PURRS","PUSS","RUMP","RUMPS","RUMPUS","RUMS","SKUAS","SPUR","SPURS","SUMS","SUPRA","SURPASS","USURP","USURPS"]},
+{"puzzleId":62,"puzzleDate":"2025-12-03","minWordLength":4,"pangramBonus":7,"centerLetter":"M","outerLetters":["G","P","N","E","T","I"],"allowedWords":["EMINENT","EMIT","EMITTING","GIMME","GIMPING","IMMINENT","IMPENITENT","IMPINGE","IMPINGEMENT","IMPINGING","ITEM","MEET","MEETING","MENTEE","METE","METING","MIEN","MIME","MIMING","MINE","MINIM","MINING","MINT","MINTING","MITE","MITT","MITTEN","PENMEN","PIGMENT","PIMPING","TEEM","TEEMING","TEMPI","TEMPING","TEMPT","TEMPTING","TENEMENT","TIME","TIMING"]},
+{"puzzleId":63,"puzzleDate":"2025-12-10","minWordLength":4,"pangramBonus":7,"centerLetter":"A","outerLetters":["M","S","U","I","R","V"],"allowedWords":["AIMS","AIRS","AMASS","AMIRS","AMISS","ARIA","ARIAS","ARMS","ARUMS","AURA","AURAS","IMAMS","MAIM","MAIMS","MAMA","MAMAS","MAMMA","MARIA","MARS","MASAS","MASS","MAVIS","MIASMA","MIASMAS","RAMS","SAMARIUM","SAMURAI","SARI","SARIS","VISA","VISAS","VIVARIA","VIVARIUM","VIVARIUMS","VIVAS"]},
+{"puzzleId":64,"puzzleDate":"2025-12-17","minWordLength":4,"pangramBonus":7,"centerLetter":"R","outerLetters":["U","O","D","S","N","G"],"allowedWords":["DONOR","DONORS","DOOR","DOORS","DOUR","DROSS","DRUG","DRUGS","GORGON","GORGONS","GOURD","GOURDS","GROSS","GROUND","GROUNDS","GURU","GURUS","ODOR","ODOROUS","ODORS","OURS","RODS","RONDO","RONDOS","ROODS","ROUND","ROUNDS","RUGS","RUNG","RUNGS","RUNS","SONOROUS","SOUR","SOURS","SURROUND","SURROUNDS","URNS"]},
+{"puzzleId":65,"puzzleDate":"2025-12-24","minWordLength":4,"pangramBonus":7,"centerLetter":"G","outerLetters":["X","I","F","L","U","N"],"allowedWords":["FILING","FINING","FIXING","FLING","FLINGING","FLUFFING","FLUNG","FLUXING","FULFILLING","FULLING","FUNGI","GIGGING","GIGGLING","GILL","GINNING","GLUING","GULF","GULL","GULLING","GUNNING","INFILLING","INNING","LIGNIN","LINGUINI","LINING","LUFFING","LUGGING","LULLING","LUNG","LUNGFUL","LUNGING","NIGGLING","NIXING","UNFIXING","UNFULFILLING"]},
+{"puzzleId":66,"puzzleDate":"2025-12-31","minWordLength":4,"pangramBonus":7,"centerLetter":"E","outerLetters":["A","L","N","C","W","O"],"allowedWords":["ACNE","ALLELE","ALLOWANCE","ALOE","ALONE","ANEW","ANNEAL","CANCEL","CANE","CANOE","CECAL","CELL","CELLO","CLEAN","CLOACAE","CLONE","COLLEEN","COLONEL","CONCEAL","CONE","LACE","LANCE","LANE","LEAN","LOCALE","LONE","NACELLE","NEOCON","NEON","NEWEL","NONCE","NONE","OCEAN","ONCE","WANE","WEAN","WELL","WOOLEN","WOOLLEN"]}
 ]
