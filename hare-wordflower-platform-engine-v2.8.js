@@ -10,7 +10,7 @@ window.HareWordFlowerEngine = (() => {
   const Core = window.HarePuzzleCore || null;
   const STORAGE_PREFIX = "hp_wf2_";
   const SAVE_VERSION = 2;
-  const MORE_PUZZLES_URL = "https://www.harepublishing.com/puzzlers-hub";
+  const MORE_PUZZLES_URL = "https://www.harepublishing.com/online-puzzles";
   const SHOP_URL = "https://www.harepublishing.com/shop";
 
   const LEVELS = [
@@ -47,6 +47,20 @@ window.HareWordFlowerEngine = (() => {
       return data.completedAt || data.masterGardenerAt || data.revealedAt || data.finishedAt || data.updatedAt || data.lastPlayedAt || null;
     }
   };
+
+  function getFallbackPlayPath(){
+    const access = window.HareWordFlowerAccessConfig || {};
+    return window.HareWordFlowerPlayUrl || window.location.pathname || access.publicPlayUrl || "/word-flower-test";
+  }
+
+  function getCollectionUrl(){
+    const access = window.HareWordFlowerAccessConfig || {};
+    try{
+      return new URL(access.publicPlayUrl || "/word-flower-test", window.location.origin).href;
+    }catch{
+      return "https://www.harepublishing.com/word-flower-test";
+    }
+  }
 
   const CSS = `
 
@@ -1194,7 +1208,7 @@ window.HareWordFlowerEngine = (() => {
         if(!nextId) return;
         hideOverlay();
         if(typeof window.HareWordFlowerLoadPuzzle === "function") window.HareWordFlowerLoadPuzzle(nextId,{scroll:false});
-        else window.location.href=`${window.location.pathname || "/word-flower"}?puzzle=${encodeURIComponent(nextId)}`;
+        else window.location.href=`${getFallbackPlayPath()}?puzzle=${encodeURIComponent(nextId)}`;
       });
     });
 
@@ -1249,7 +1263,7 @@ window.HareWordFlowerEngine = (() => {
       "isPartOf":{
         "@type":"CollectionPage",
         "name":"Word Flower",
-        "url":"https://www.harepublishing.com/word-flower"
+        "url":getCollectionUrl()
       }
     };
 
@@ -1281,7 +1295,7 @@ window.HareWordFlowerEngine = (() => {
         if(nextId){
           hideOverlay();
           if(typeof window.HareWordFlowerLoadPuzzle === "function") window.HareWordFlowerLoadPuzzle(nextId,{scroll:false});
-          else window.location.href=`${window.location.pathname || "/word-flower"}?puzzle=${encodeURIComponent(nextId)}`;
+          else window.location.href=`${getFallbackPlayPath()}?puzzle=${encodeURIComponent(nextId)}`;
         }
       }
     }));
@@ -1333,9 +1347,14 @@ window.HareWordFlowerEngine = (() => {
     normalizeState();
     markPlayed();
     render();
+    if(container.__hareWordFlowerHandlers?.mousedown){
+      container.removeEventListener("mousedown", container.__hareWordFlowerHandlers.mousedown);
+    }
     container.removeEventListener("keydown", keydown);
+    const mousedown=e=>{ if(!e.target?.closest?.("a[href]")) container.focus({preventScroll:true}); };
     container.addEventListener("keydown", keydown);
-    container.addEventListener("mousedown", e=>{ if(!e.target?.closest?.("a[href]")) container.focus({preventScroll:true}); });
+    container.addEventListener("mousedown", mousedown);
+    container.__hareWordFlowerHandlers = { keydown, mousedown };
   }
 
   function openHelp(containerId="hp-wordflower-container"){
