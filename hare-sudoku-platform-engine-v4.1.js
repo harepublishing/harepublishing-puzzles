@@ -84,7 +84,7 @@ window.HareSudokuPlatformEngine = {
       }
     }
 
-    const LINK_MORE_ONLINE = "https://harepublishing.com/puzzlers-hub";
+    const LINK_MORE_ONLINE = "https://harepublishing.com/online-puzzles";
     const LINK_SHOP = "https://harepublishing.com/shop";
     const Core = window.HarePuzzleCore || null;
     const DEFAULT_MODE = "easy";
@@ -190,7 +190,7 @@ window.HareSudokuPlatformEngine = {
     }
 
     function normalizeGrid(value) {
-      return String(value || "").trim();
+      return String(value || "").trim().replace(/0/g, ".");
     }
 
     function isValidPuzzleString(value) {
@@ -246,7 +246,7 @@ window.HareSudokuPlatformEngine = {
         return;
       }
       if (!isValidPuzzleString(cfg.puzzle)) {
-        showConfigError(`${cfg.label} #${cfg.puzzleId} must have an 81-character puzzle string using digits 1-9 and periods for blanks.`);
+        showConfigError(`${cfg.label} #${cfg.puzzleId} must have an 81-character puzzle string using digits 1-9, with 0 or periods for blanks.`);
         return;
       }
       if (!isValidSolutionString(cfg.solution)) {
@@ -887,6 +887,7 @@ window.HareSudokuPlatformEngine = {
 
       const nowYear = new Date().getFullYear();
       const pageUrl = window.location.href;
+      const collectionUrl = new URL(pageData.morePuzzlesUrl || "/sudoku-archive", window.location.origin).href;
       const puzzleId = String(cfg?.puzzleId || pageData?.puzzleId || "").trim();
       const puzzleDate = String(pageData?.puzzleDate || pageData?.date || "").trim();
       const schemaName = puzzleId ? `Sudoku Puzzle #${puzzleId}` : "Sudoku Puzzle";
@@ -912,7 +913,7 @@ window.HareSudokuPlatformEngine = {
         "isPartOf": {
           "@type": "CollectionPage",
           "name": "Sudoku",
-          "url": "https://www.harepublishing.com/sudoku"
+          "url": collectionUrl
         }
       };
 
@@ -1098,7 +1099,7 @@ window.HareSudokuPlatformEngine = {
           <span>Open the Sudoku Archive to choose your next puzzle.</span>
         </div>
         <div class="hp-sudoku-next-panel-actions">
-          <a class="hp-sudoku-next-panel-btn primary" href="/sudoku-archive">Sudoku Archive</a>
+          <a class="hp-sudoku-next-panel-btn primary" href="${escapeHtml(pageData.morePuzzlesUrl || "/sudoku-archive")}">Sudoku Archive</a>
           ${shareButton}
         </div>
       `;
