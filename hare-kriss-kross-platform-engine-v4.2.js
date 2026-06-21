@@ -1062,7 +1062,7 @@ window.HareKrissKrossEngine = {
       }
     }
 
-    container.addEventListener("keydown", (e) => {
+    function handleKeydown(e) {
       const overlayEl = mount.querySelector("#hp-kk-overlay");
       const helpModalEl = mount.querySelector("#hp-kk-help-modal");
 
@@ -1081,7 +1081,13 @@ window.HareKrissKrossEngine = {
         saveState();
         render();
       }
-    });
+    }
+
+    if (container.__hareKrissKrossHandlers?.keydown) {
+      container.removeEventListener("keydown", container.__hareKrissKrossHandlers.keydown);
+    }
+    container.addEventListener("keydown", handleKeydown);
+    container.__hareKrissKrossHandlers = { keydown: handleKeydown };
 
     render();
   }
