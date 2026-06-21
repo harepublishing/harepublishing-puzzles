@@ -27,7 +27,7 @@ window.HareWordrowEngine = (() => {
     },
 
     isRevealed(data) {
-      return Boolean(data && (data.revealed || data.revealedAt));
+      return Boolean(data && (data.revealed || data.revealedAt || data.lost || data.status === "revealed" || data.status === "finished"));
     },
 
     isFinished(data) {
