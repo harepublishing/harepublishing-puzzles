@@ -10,7 +10,7 @@ window.HareWordScramblePlatformEngine = (() => {
   const VERSION = "word-scramble-platform-engine-v2.8";
   const Core = window.HarePuzzleCore || null;
   const STORAGE_PREFIX = "hp_wsc_";
-  const MORE_PUZZLES_URL = "https://www.harepublishing.com/puzzlers-hub";
+  const MORE_PUZZLES_URL = "https://www.harepublishing.com/online-puzzles";
   const SHOP_URL = "https://www.harepublishing.com/shop";
 
   const wordScrambleStatusAdapter = {
