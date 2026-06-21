@@ -3,1729 +3,2016 @@
     "puzzleId": 1,
     "puzzleDate": "2025-01-05",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 2,
     "puzzleDate": "2025-01-12",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 3,
     "puzzleDate": "2025-01-19",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 4,
     "puzzleDate": "2025-01-26",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 5,
     "puzzleDate": "2025-02-02",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 6,
     "puzzleDate": "2025-02-09",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 7,
     "puzzleDate": "2025-02-16",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 8,
     "puzzleDate": "2025-02-23",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 9,
     "puzzleDate": "2025-03-02",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 10,
     "puzzleDate": "2025-03-09",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 11,
     "puzzleDate": "2025-03-16",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 12,
     "puzzleDate": "2025-03-23",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 13,
     "puzzleDate": "2025-03-30",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 14,
     "puzzleDate": "2025-04-06",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 15,
     "puzzleDate": "2025-04-13",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 16,
     "puzzleDate": "2025-04-20",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 17,
     "puzzleDate": "2025-04-27",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 18,
     "puzzleDate": "2025-05-04",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 19,
     "puzzleDate": "2025-05-11",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 20,
     "puzzleDate": "2025-05-18",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 21,
     "puzzleDate": "2025-05-25",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 22,
     "puzzleDate": "2025-06-01",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 23,
     "puzzleDate": "2025-06-08",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 24,
     "puzzleDate": "2025-06-15",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 25,
     "puzzleDate": "2025-06-22",
     "year": 2025,
-    "type": "proverb"
+    "type": "proverb",
+    "access": "member"
   },
   {
     "puzzleId": 26,
     "puzzleDate": "2025-06-29",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 27,
     "puzzleDate": "2025-07-06",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 28,
     "puzzleDate": "2025-07-13",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 29,
     "puzzleDate": "2025-07-20",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 30,
     "puzzleDate": "2025-07-27",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 31,
     "puzzleDate": "2025-08-03",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 32,
     "puzzleDate": "2025-08-10",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 33,
     "puzzleDate": "2025-08-17",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 34,
     "puzzleDate": "2025-08-24",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 35,
     "puzzleDate": "2025-08-31",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 36,
     "puzzleDate": "2025-09-07",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 37,
     "puzzleDate": "2025-09-14",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 38,
     "puzzleDate": "2025-09-21",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 39,
     "puzzleDate": "2025-09-28",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 40,
     "puzzleDate": "2025-10-05",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 41,
     "puzzleDate": "2025-10-12",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 42,
     "puzzleDate": "2025-10-19",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 43,
     "puzzleDate": "2025-10-26",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 44,
     "puzzleDate": "2025-11-02",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 45,
     "puzzleDate": "2025-11-09",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 46,
     "puzzleDate": "2025-11-16",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 47,
     "puzzleDate": "2025-11-23",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 48,
     "puzzleDate": "2025-11-30",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 49,
     "puzzleDate": "2025-12-07",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 50,
     "puzzleDate": "2025-12-14",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 51,
     "puzzleDate": "2025-12-21",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 52,
     "puzzleDate": "2025-12-28",
     "year": 2025,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 53,
     "puzzleDate": "2026-01-04",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 54,
     "puzzleDate": "2026-01-11",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 55,
     "puzzleDate": "2026-01-18",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 56,
     "puzzleDate": "2026-01-25",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 57,
     "puzzleDate": "2026-02-01",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 58,
     "puzzleDate": "2026-02-08",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 59,
     "puzzleDate": "2026-02-15",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 60,
     "puzzleDate": "2026-02-22",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 61,
     "puzzleDate": "2026-03-01",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 62,
     "puzzleDate": "2026-03-08",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 63,
     "puzzleDate": "2026-03-15",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 64,
     "puzzleDate": "2026-03-22",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 65,
     "puzzleDate": "2026-03-29",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 66,
     "puzzleDate": "2026-04-05",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 67,
     "puzzleDate": "2026-04-12",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 68,
     "puzzleDate": "2026-04-19",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 69,
     "puzzleDate": "2026-04-26",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 70,
     "puzzleDate": "2026-05-03",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 71,
     "puzzleDate": "2026-05-10",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 72,
     "puzzleDate": "2026-05-17",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 73,
     "puzzleDate": "2026-05-24",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 74,
     "puzzleDate": "2026-05-31",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 75,
     "puzzleDate": "2026-06-01",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 76,
     "puzzleDate": "2026-06-02",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 77,
     "puzzleDate": "2026-06-03",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
     "puzzleId": 78,
     "puzzleDate": "2026-06-04",
     "year": 2026,
-    "type": "quote"
+    "type": "quote",
+    "access": "member"
   },
   {
-  "puzzleId": 79,
-  "puzzleDate": "2026-06-05",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 80,
-  "puzzleDate": "2026-06-06",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 81,
-  "puzzleDate": "2026-06-07",
-  "year": 2026,
-  "type": "trivia"
-},
-{
-  "puzzleId": 82,
-  "puzzleDate": "2026-06-08",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 83,
-  "puzzleDate": "2026-06-09",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 84,
-  "puzzleDate": "2026-06-10",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 85,
-  "puzzleDate": "2026-06-11",
-  "year": 2026,
-  "type": "trivia"
-},
-{
-  "puzzleId": 86,
-  "puzzleDate": "2026-06-12",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 87,
-  "puzzleDate": "2026-06-13",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 88,
-  "puzzleDate": "2026-06-14",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 89,
-  "puzzleDate": "2026-06-15",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 90,
-  "puzzleDate": "2026-06-16",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 91,
-  "puzzleDate": "2026-06-17",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 92,
-  "puzzleDate": "2026-06-18",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 93,
-  "puzzleDate": "2026-06-19",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 94,
-  "puzzleDate": "2026-06-20",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 95,
-  "puzzleDate": "2026-06-21",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 96,
-  "puzzleDate": "2026-06-22",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 97,
-  "puzzleDate": "2026-06-23",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 98,
-  "puzzleDate": "2026-06-24",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 99,
-  "puzzleDate": "2026-06-25",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 100,
-  "puzzleDate": "2026-06-26",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 101,
-  "puzzleDate": "2026-06-27",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 102,
-  "puzzleDate": "2026-06-28",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 103,
-  "puzzleDate": "2026-06-29",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 104,
-  "puzzleDate": "2026-06-30",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 105,
-  "puzzleDate": "2026-07-01",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 106,
-  "puzzleDate": "2026-07-02",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 107,
-  "puzzleDate": "2026-07-03",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 108,
-  "puzzleDate": "2026-07-04",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 109,
-  "puzzleDate": "2026-07-05",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 110,
-  "puzzleDate": "2026-07-06",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 111,
-  "puzzleDate": "2026-07-07",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 112,
-  "puzzleDate": "2026-07-08",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 113,
-  "puzzleDate": "2026-07-09",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 114,
-  "puzzleDate": "2026-07-10",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 115,
-  "puzzleDate": "2026-07-11",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 116,
-  "puzzleDate": "2026-07-12",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 117,
-  "puzzleDate": "2026-07-13",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 118,
-  "puzzleDate": "2026-07-14",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 119,
-  "puzzleDate": "2026-07-15",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 120,
-  "puzzleDate": "2026-07-16",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 121,
-  "puzzleDate": "2026-07-17",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 122,
-  "puzzleDate": "2026-07-18",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 123,
-  "puzzleDate": "2026-07-19",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 124,
-  "puzzleDate": "2026-07-20",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 125,
-  "puzzleDate": "2026-07-21",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 126,
-  "puzzleDate": "2026-07-22",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 127,
-  "puzzleDate": "2026-07-23",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 128,
-  "puzzleDate": "2026-07-24",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 129,
-  "puzzleDate": "2026-07-25",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 130,
-  "puzzleDate": "2026-07-26",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 131,
-  "puzzleDate": "2026-07-27",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 132,
-  "puzzleDate": "2026-07-28",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 133,
-  "puzzleDate": "2026-07-29",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 134,
-  "puzzleDate": "2026-07-30",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 135,
-  "puzzleDate": "2026-07-31",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 136,
-  "puzzleDate": "2026-08-01",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 137,
-  "puzzleDate": "2026-08-02",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 138,
-  "puzzleDate": "2026-08-03",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 139,
-  "puzzleDate": "2026-08-04",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 140,
-  "puzzleDate": "2026-08-05",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 141,
-  "puzzleDate": "2026-08-06",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 142,
-  "puzzleDate": "2026-08-07",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 143,
-  "puzzleDate": "2026-08-08",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 144,
-  "puzzleDate": "2026-08-09",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 145,
-  "puzzleDate": "2026-08-10",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 146,
-  "puzzleDate": "2026-08-11",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 147,
-  "puzzleDate": "2026-08-12",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 148,
-  "puzzleDate": "2026-08-13",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 149,
-  "puzzleDate": "2026-08-14",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 150,
-  "puzzleDate": "2026-08-15",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 151,
-  "puzzleDate": "2026-08-16",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 152,
-  "puzzleDate": "2026-08-17",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 153,
-  "puzzleDate": "2026-08-18",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 154,
-  "puzzleDate": "2026-08-19",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 155,
-  "puzzleDate": "2026-08-20",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 156,
-  "puzzleDate": "2026-08-21",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 157,
-  "puzzleDate": "2026-08-22",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 158,
-  "puzzleDate": "2026-08-23",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 159,
-  "puzzleDate": "2026-08-24",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 160,
-  "puzzleDate": "2026-08-25",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 161,
-  "puzzleDate": "2026-08-26",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 162,
-  "puzzleDate": "2026-08-27",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 163,
-  "puzzleDate": "2026-08-28",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 164,
-  "puzzleDate": "2026-08-29",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 165,
-  "puzzleDate": "2026-08-30",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 166,
-  "puzzleDate": "2026-08-31",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 167,
-  "puzzleDate": "2026-09-01",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 168,
-  "puzzleDate": "2026-09-02",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 169,
-  "puzzleDate": "2026-09-03",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 170,
-  "puzzleDate": "2026-09-04",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 171,
-  "puzzleDate": "2026-09-05",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 172,
-  "puzzleDate": "2026-09-06",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 173,
-  "puzzleDate": "2026-09-07",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 174,
-  "puzzleDate": "2026-09-08",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 175,
-  "puzzleDate": "2026-09-09",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 176,
-  "puzzleDate": "2026-09-10",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 177,
-  "puzzleDate": "2026-09-11",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 178,
-  "puzzleDate": "2026-09-12",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 179,
-  "puzzleDate": "2026-09-13",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 180,
-  "puzzleDate": "2026-09-14",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 181,
-  "puzzleDate": "2026-09-15",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 182,
-  "puzzleDate": "2026-09-16",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 183,
-  "puzzleDate": "2026-09-17",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 184,
-  "puzzleDate": "2026-09-18",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 185,
-  "puzzleDate": "2026-09-19",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 186,
-  "puzzleDate": "2026-09-20",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 187,
-  "puzzleDate": "2026-09-21",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 188,
-  "puzzleDate": "2026-09-22",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 189,
-  "puzzleDate": "2026-09-23",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 190,
-  "puzzleDate": "2026-09-24",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 191,
-  "puzzleDate": "2026-09-25",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 192,
-  "puzzleDate": "2026-09-26",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 193,
-  "puzzleDate": "2026-09-27",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 194,
-  "puzzleDate": "2026-09-28",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 195,
-  "puzzleDate": "2026-09-29",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 196,
-  "puzzleDate": "2026-09-30",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 197,
-  "puzzleDate": "2026-10-01",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 198,
-  "puzzleDate": "2026-10-02",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 199,
-  "puzzleDate": "2026-10-03",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 200,
-  "puzzleDate": "2026-10-04",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 201,
-  "puzzleDate": "2026-10-05",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 202,
-  "puzzleDate": "2026-10-06",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 203,
-  "puzzleDate": "2026-10-07",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 204,
-  "puzzleDate": "2026-10-08",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 205,
-  "puzzleDate": "2026-10-09",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 206,
-  "puzzleDate": "2026-10-10",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 207,
-  "puzzleDate": "2026-10-11",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 208,
-  "puzzleDate": "2026-10-12",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 209,
-  "puzzleDate": "2026-10-13",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 210,
-  "puzzleDate": "2026-10-14",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 211,
-  "puzzleDate": "2026-10-15",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 212,
-  "puzzleDate": "2026-10-16",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 213,
-  "puzzleDate": "2026-10-17",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 214,
-  "puzzleDate": "2026-10-18",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 215,
-  "puzzleDate": "2026-10-19",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 216,
-  "puzzleDate": "2026-10-20",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 217,
-  "puzzleDate": "2026-10-21",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 218,
-  "puzzleDate": "2026-10-22",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 219,
-  "puzzleDate": "2026-10-23",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 220,
-  "puzzleDate": "2026-10-24",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 221,
-  "puzzleDate": "2026-10-25",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 222,
-  "puzzleDate": "2026-10-26",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 223,
-  "puzzleDate": "2026-10-27",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 224,
-  "puzzleDate": "2026-10-28",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 225,
-  "puzzleDate": "2026-10-29",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 226,
-  "puzzleDate": "2026-10-30",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 227,
-  "puzzleDate": "2026-10-31",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 228,
-  "puzzleDate": "2026-11-01",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 229,
-  "puzzleDate": "2026-11-02",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 230,
-  "puzzleDate": "2026-11-03",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 231,
-  "puzzleDate": "2026-11-04",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 232,
-  "puzzleDate": "2026-11-05",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 233,
-  "puzzleDate": "2026-11-06",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 234,
-  "puzzleDate": "2026-11-07",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 235,
-  "puzzleDate": "2026-11-08",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 236,
-  "puzzleDate": "2026-11-09",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 237,
-  "puzzleDate": "2026-11-10",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 238,
-  "puzzleDate": "2026-11-11",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 239,
-  "puzzleDate": "2026-11-12",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 240,
-  "puzzleDate": "2026-11-13",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 241,
-  "puzzleDate": "2026-11-14",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 242,
-  "puzzleDate": "2026-11-15",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 243,
-  "puzzleDate": "2026-11-16",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 244,
-  "puzzleDate": "2026-11-17",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 245,
-  "puzzleDate": "2026-11-18",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 246,
-  "puzzleDate": "2026-11-19",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 247,
-  "puzzleDate": "2026-11-20",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 248,
-  "puzzleDate": "2026-11-21",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 249,
-  "puzzleDate": "2026-11-22",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 250,
-  "puzzleDate": "2026-11-23",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 251,
-  "puzzleDate": "2026-11-24",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 252,
-  "puzzleDate": "2026-11-25",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 253,
-  "puzzleDate": "2026-11-26",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 254,
-  "puzzleDate": "2026-11-27",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 255,
-  "puzzleDate": "2026-11-28",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 256,
-  "puzzleDate": "2026-11-29",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 257,
-  "puzzleDate": "2026-11-30",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 258,
-  "puzzleDate": "2026-12-01",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 259,
-  "puzzleDate": "2026-12-02",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 260,
-  "puzzleDate": "2026-12-03",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 261,
-  "puzzleDate": "2026-12-04",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 262,
-  "puzzleDate": "2026-12-05",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 263,
-  "puzzleDate": "2026-12-06",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 264,
-  "puzzleDate": "2026-12-07",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 265,
-  "puzzleDate": "2026-12-08",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 266,
-  "puzzleDate": "2026-12-09",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 267,
-  "puzzleDate": "2026-12-10",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 268,
-  "puzzleDate": "2026-12-11",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 269,
-  "puzzleDate": "2026-12-12",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 270,
-  "puzzleDate": "2026-12-13",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 271,
-  "puzzleDate": "2026-12-14",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 272,
-  "puzzleDate": "2026-12-15",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 273,
-  "puzzleDate": "2026-12-16",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 274,
-  "puzzleDate": "2026-12-17",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 275,
-  "puzzleDate": "2026-12-18",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 276,
-  "puzzleDate": "2026-12-19",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 277,
-  "puzzleDate": "2026-12-20",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 278,
-  "puzzleDate": "2026-12-21",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 279,
-  "puzzleDate": "2026-12-22",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 280,
-  "puzzleDate": "2026-12-23",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 281,
-  "puzzleDate": "2026-12-24",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 282,
-  "puzzleDate": "2026-12-25",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 283,
-  "puzzleDate": "2026-12-26",
-  "year": 2026,
-  "type": "fact"
-},
-{
-  "puzzleId": 284,
-  "puzzleDate": "2026-12-27",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 285,
-  "puzzleDate": "2026-12-28",
-  "year": 2026,
-  "type": "proverb"
-},
-{
-  "puzzleId": 286,
-  "puzzleDate": "2026-12-29",
-  "year": 2026,
-  "type": "quote"
-},
-{
-  "puzzleId": 287,
-  "puzzleDate": "2026-12-30",
-  "year": 2026,
-  "type": "dad joke"
-},
-{
-  "puzzleId": 288,
-  "puzzleDate": "2026-12-31",
-  "year": 2026,
-  "type": "fact"
-}
+    "puzzleId": 79,
+    "puzzleDate": "2026-06-05",
+    "year": 2026,
+    "type": "dad joke",
+    "access": "member"
+  },
+  {
+    "puzzleId": 80,
+    "puzzleDate": "2026-06-06",
+    "year": 2026,
+    "type": "quote",
+    "access": "member"
+  },
+  {
+    "puzzleId": 81,
+    "puzzleDate": "2026-06-07",
+    "year": 2026,
+    "type": "trivia",
+    "access": "member"
+  },
+  {
+    "puzzleId": 82,
+    "puzzleDate": "2026-06-08",
+    "year": 2026,
+    "type": "quote",
+    "access": "member"
+  },
+  {
+    "puzzleId": 83,
+    "puzzleDate": "2026-06-09",
+    "year": 2026,
+    "type": "quote",
+    "access": "member"
+  },
+  {
+    "puzzleId": 84,
+    "puzzleDate": "2026-06-10",
+    "year": 2026,
+    "type": "dad joke",
+    "access": "member"
+  },
+  {
+    "puzzleId": 85,
+    "puzzleDate": "2026-06-11",
+    "year": 2026,
+    "type": "trivia",
+    "access": "member"
+  },
+  {
+    "puzzleId": 86,
+    "puzzleDate": "2026-06-12",
+    "year": 2026,
+    "type": "quote",
+    "access": "member"
+  },
+  {
+    "puzzleId": 87,
+    "puzzleDate": "2026-06-13",
+    "year": 2026,
+    "type": "quote",
+    "access": "member"
+  },
+  {
+    "puzzleId": 88,
+    "puzzleDate": "2026-06-14",
+    "year": 2026,
+    "type": "quote",
+    "access": "member"
+  },
+  {
+    "puzzleId": 89,
+    "puzzleDate": "2026-06-15",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 90,
+    "puzzleDate": "2026-06-16",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 91,
+    "puzzleDate": "2026-06-17",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 92,
+    "puzzleDate": "2026-06-18",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 93,
+    "puzzleDate": "2026-06-19",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 94,
+    "puzzleDate": "2026-06-20",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 95,
+    "puzzleDate": "2026-06-21",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 96,
+    "puzzleDate": "2026-06-22",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 97,
+    "puzzleDate": "2026-06-23",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 98,
+    "puzzleDate": "2026-06-24",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 99,
+    "puzzleDate": "2026-06-25",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 100,
+    "puzzleDate": "2026-06-26",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 101,
+    "puzzleDate": "2026-06-27",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 102,
+    "puzzleDate": "2026-06-28",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 103,
+    "puzzleDate": "2026-06-29",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 104,
+    "puzzleDate": "2026-06-30",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 105,
+    "puzzleDate": "2026-07-01",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 106,
+    "puzzleDate": "2026-07-02",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 107,
+    "puzzleDate": "2026-07-03",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 108,
+    "puzzleDate": "2026-07-04",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 109,
+    "puzzleDate": "2026-07-05",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 110,
+    "puzzleDate": "2026-07-06",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 111,
+    "puzzleDate": "2026-07-07",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 112,
+    "puzzleDate": "2026-07-08",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 113,
+    "puzzleDate": "2026-07-09",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 114,
+    "puzzleDate": "2026-07-10",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 115,
+    "puzzleDate": "2026-07-11",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 116,
+    "puzzleDate": "2026-07-12",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 117,
+    "puzzleDate": "2026-07-13",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 118,
+    "puzzleDate": "2026-07-14",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 119,
+    "puzzleDate": "2026-07-15",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 120,
+    "puzzleDate": "2026-07-16",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 121,
+    "puzzleDate": "2026-07-17",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 122,
+    "puzzleDate": "2026-07-18",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 123,
+    "puzzleDate": "2026-07-19",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 124,
+    "puzzleDate": "2026-07-20",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 125,
+    "puzzleDate": "2026-07-21",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 126,
+    "puzzleDate": "2026-07-22",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 127,
+    "puzzleDate": "2026-07-23",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 128,
+    "puzzleDate": "2026-07-24",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 129,
+    "puzzleDate": "2026-07-25",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 130,
+    "puzzleDate": "2026-07-26",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 131,
+    "puzzleDate": "2026-07-27",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 132,
+    "puzzleDate": "2026-07-28",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 133,
+    "puzzleDate": "2026-07-29",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 134,
+    "puzzleDate": "2026-07-30",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 135,
+    "puzzleDate": "2026-07-31",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 136,
+    "puzzleDate": "2026-08-01",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 137,
+    "puzzleDate": "2026-08-02",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 138,
+    "puzzleDate": "2026-08-03",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 139,
+    "puzzleDate": "2026-08-04",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 140,
+    "puzzleDate": "2026-08-05",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 141,
+    "puzzleDate": "2026-08-06",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 142,
+    "puzzleDate": "2026-08-07",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 143,
+    "puzzleDate": "2026-08-08",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 144,
+    "puzzleDate": "2026-08-09",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 145,
+    "puzzleDate": "2026-08-10",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 146,
+    "puzzleDate": "2026-08-11",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 147,
+    "puzzleDate": "2026-08-12",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 148,
+    "puzzleDate": "2026-08-13",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 149,
+    "puzzleDate": "2026-08-14",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 150,
+    "puzzleDate": "2026-08-15",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 151,
+    "puzzleDate": "2026-08-16",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 152,
+    "puzzleDate": "2026-08-17",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 153,
+    "puzzleDate": "2026-08-18",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 154,
+    "puzzleDate": "2026-08-19",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 155,
+    "puzzleDate": "2026-08-20",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 156,
+    "puzzleDate": "2026-08-21",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 157,
+    "puzzleDate": "2026-08-22",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 158,
+    "puzzleDate": "2026-08-23",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 159,
+    "puzzleDate": "2026-08-24",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 160,
+    "puzzleDate": "2026-08-25",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 161,
+    "puzzleDate": "2026-08-26",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 162,
+    "puzzleDate": "2026-08-27",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 163,
+    "puzzleDate": "2026-08-28",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 164,
+    "puzzleDate": "2026-08-29",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 165,
+    "puzzleDate": "2026-08-30",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 166,
+    "puzzleDate": "2026-08-31",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 167,
+    "puzzleDate": "2026-09-01",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 168,
+    "puzzleDate": "2026-09-02",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 169,
+    "puzzleDate": "2026-09-03",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 170,
+    "puzzleDate": "2026-09-04",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 171,
+    "puzzleDate": "2026-09-05",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 172,
+    "puzzleDate": "2026-09-06",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 173,
+    "puzzleDate": "2026-09-07",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 174,
+    "puzzleDate": "2026-09-08",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 175,
+    "puzzleDate": "2026-09-09",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 176,
+    "puzzleDate": "2026-09-10",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 177,
+    "puzzleDate": "2026-09-11",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 178,
+    "puzzleDate": "2026-09-12",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 179,
+    "puzzleDate": "2026-09-13",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 180,
+    "puzzleDate": "2026-09-14",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 181,
+    "puzzleDate": "2026-09-15",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 182,
+    "puzzleDate": "2026-09-16",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 183,
+    "puzzleDate": "2026-09-17",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 184,
+    "puzzleDate": "2026-09-18",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 185,
+    "puzzleDate": "2026-09-19",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 186,
+    "puzzleDate": "2026-09-20",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 187,
+    "puzzleDate": "2026-09-21",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 188,
+    "puzzleDate": "2026-09-22",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 189,
+    "puzzleDate": "2026-09-23",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 190,
+    "puzzleDate": "2026-09-24",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 191,
+    "puzzleDate": "2026-09-25",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 192,
+    "puzzleDate": "2026-09-26",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 193,
+    "puzzleDate": "2026-09-27",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 194,
+    "puzzleDate": "2026-09-28",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 195,
+    "puzzleDate": "2026-09-29",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 196,
+    "puzzleDate": "2026-09-30",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 197,
+    "puzzleDate": "2026-10-01",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 198,
+    "puzzleDate": "2026-10-02",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 199,
+    "puzzleDate": "2026-10-03",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 200,
+    "puzzleDate": "2026-10-04",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 201,
+    "puzzleDate": "2026-10-05",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 202,
+    "puzzleDate": "2026-10-06",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 203,
+    "puzzleDate": "2026-10-07",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 204,
+    "puzzleDate": "2026-10-08",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 205,
+    "puzzleDate": "2026-10-09",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 206,
+    "puzzleDate": "2026-10-10",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 207,
+    "puzzleDate": "2026-10-11",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 208,
+    "puzzleDate": "2026-10-12",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 209,
+    "puzzleDate": "2026-10-13",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 210,
+    "puzzleDate": "2026-10-14",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 211,
+    "puzzleDate": "2026-10-15",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 212,
+    "puzzleDate": "2026-10-16",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 213,
+    "puzzleDate": "2026-10-17",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 214,
+    "puzzleDate": "2026-10-18",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 215,
+    "puzzleDate": "2026-10-19",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 216,
+    "puzzleDate": "2026-10-20",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 217,
+    "puzzleDate": "2026-10-21",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 218,
+    "puzzleDate": "2026-10-22",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 219,
+    "puzzleDate": "2026-10-23",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 220,
+    "puzzleDate": "2026-10-24",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 221,
+    "puzzleDate": "2026-10-25",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 222,
+    "puzzleDate": "2026-10-26",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 223,
+    "puzzleDate": "2026-10-27",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 224,
+    "puzzleDate": "2026-10-28",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 225,
+    "puzzleDate": "2026-10-29",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 226,
+    "puzzleDate": "2026-10-30",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 227,
+    "puzzleDate": "2026-10-31",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 228,
+    "puzzleDate": "2026-11-01",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 229,
+    "puzzleDate": "2026-11-02",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 230,
+    "puzzleDate": "2026-11-03",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 231,
+    "puzzleDate": "2026-11-04",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 232,
+    "puzzleDate": "2026-11-05",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 233,
+    "puzzleDate": "2026-11-06",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 234,
+    "puzzleDate": "2026-11-07",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 235,
+    "puzzleDate": "2026-11-08",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 236,
+    "puzzleDate": "2026-11-09",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 237,
+    "puzzleDate": "2026-11-10",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 238,
+    "puzzleDate": "2026-11-11",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 239,
+    "puzzleDate": "2026-11-12",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 240,
+    "puzzleDate": "2026-11-13",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 241,
+    "puzzleDate": "2026-11-14",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 242,
+    "puzzleDate": "2026-11-15",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 243,
+    "puzzleDate": "2026-11-16",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 244,
+    "puzzleDate": "2026-11-17",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 245,
+    "puzzleDate": "2026-11-18",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 246,
+    "puzzleDate": "2026-11-19",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 247,
+    "puzzleDate": "2026-11-20",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 248,
+    "puzzleDate": "2026-11-21",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 249,
+    "puzzleDate": "2026-11-22",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 250,
+    "puzzleDate": "2026-11-23",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 251,
+    "puzzleDate": "2026-11-24",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 252,
+    "puzzleDate": "2026-11-25",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 253,
+    "puzzleDate": "2026-11-26",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 254,
+    "puzzleDate": "2026-11-27",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 255,
+    "puzzleDate": "2026-11-28",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 256,
+    "puzzleDate": "2026-11-29",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 257,
+    "puzzleDate": "2026-11-30",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 258,
+    "puzzleDate": "2026-12-01",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 259,
+    "puzzleDate": "2026-12-02",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 260,
+    "puzzleDate": "2026-12-03",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 261,
+    "puzzleDate": "2026-12-04",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 262,
+    "puzzleDate": "2026-12-05",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 263,
+    "puzzleDate": "2026-12-06",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 264,
+    "puzzleDate": "2026-12-07",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 265,
+    "puzzleDate": "2026-12-08",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 266,
+    "puzzleDate": "2026-12-09",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 267,
+    "puzzleDate": "2026-12-10",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 268,
+    "puzzleDate": "2026-12-11",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 269,
+    "puzzleDate": "2026-12-12",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 270,
+    "puzzleDate": "2026-12-13",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 271,
+    "puzzleDate": "2026-12-14",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 272,
+    "puzzleDate": "2026-12-15",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 273,
+    "puzzleDate": "2026-12-16",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 274,
+    "puzzleDate": "2026-12-17",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 275,
+    "puzzleDate": "2026-12-18",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 276,
+    "puzzleDate": "2026-12-19",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 277,
+    "puzzleDate": "2026-12-20",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 278,
+    "puzzleDate": "2026-12-21",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 279,
+    "puzzleDate": "2026-12-22",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 280,
+    "puzzleDate": "2026-12-23",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 281,
+    "puzzleDate": "2026-12-24",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 282,
+    "puzzleDate": "2026-12-25",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 283,
+    "puzzleDate": "2026-12-26",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  },
+  {
+    "puzzleId": 284,
+    "puzzleDate": "2026-12-27",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 285,
+    "puzzleDate": "2026-12-28",
+    "year": 2026,
+    "type": "proverb",
+    "access": ""
+  },
+  {
+    "puzzleId": 286,
+    "puzzleDate": "2026-12-29",
+    "year": 2026,
+    "type": "quote",
+    "access": ""
+  },
+  {
+    "puzzleId": 287,
+    "puzzleDate": "2026-12-30",
+    "year": 2026,
+    "type": "dad joke",
+    "access": ""
+  },
+  {
+    "puzzleId": 288,
+    "puzzleDate": "2026-12-31",
+    "year": 2026,
+    "type": "fact",
+    "access": ""
+  }
 ]
-
