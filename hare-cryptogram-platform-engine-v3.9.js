@@ -1,12 +1,18 @@
 /* HARE PUBLISHING CRYPTOGRAM PLATFORM ENGINE v3.9
    Update: hides blank author button with natural reflow and adds optional Riddle/Trivia answer reveal buttons. */
 window.HareCryptogramEngine = {
-  init({ containerId = "hp-cryptogram-container", dataObject } = {}) {
-    const container = document.getElementById(containerId);
-    if (!container) return;
+	  init({ containerId = "hp-cryptogram-container", dataObject } = {}) {
+	    const container = document.getElementById(containerId);
+	    if (!container) return;
 
-    if (container.dataset.hpCryptogramMounted === "true") return;
-    container.dataset.hpCryptogramMounted = "true";
+	    if (container.dataset.hpCryptogramMounted === "true") return;
+	    container.dataset.hpCryptogramMounted = "true";
+
+	    if (container.__hareCryptogramHandlers) {
+	      container.removeEventListener("click", container.__hareCryptogramHandlers.click);
+	      container.removeEventListener("keydown", container.__hareCryptogramHandlers.keydown);
+	      container.__hareCryptogramHandlers = null;
+	    }
 
     const mount = container.querySelector(".hp-mount") || container;
     const yearEl = container.querySelector("#hp-year") || document.getElementById("hp-year");
@@ -83,8 +89,8 @@ window.HareCryptogramEngine = {
     const puzzleHint = resolvePuzzleHint();
     const MORE_PUZZLES_URL = data.morePuzzlesUrl || "https://www.harepublishing.com/online-puzzles";
     const SHOP_URL = data.shopUrl || "https://www.harepublishing.com/shop";
-    const ARCHIVE_URL = data.archiveUrl || "https://www.harepublishing.com/cryptogram-archive";
-    const STORAGE_KEY = data.storageKey || Core.makeStorageKey(CRYPTOGRAM_STORAGE_PREFIX, puzzleId);
+	    const ARCHIVE_URL = data.archiveUrl || "https://www.harepublishing.com/cryptogram-archive";
+	    const STORAGE_KEY = data.storageKey || Core.makeStorageKey(CRYPTOGRAM_STORAGE_PREFIX, puzzleId);
 
     if (!puzzleText || !solutionText) {
       mount.innerHTML = errorCard("Configuration Error: puzzleText and solutionText are required.");
@@ -107,13 +113,15 @@ window.HareCryptogramEngine = {
       document.head.appendChild(link);
     }
 
-    function injectSchema() {
-      const schemaId = "hp-schema-cryptogram-platform";
-      const existing = document.getElementById(schemaId);
-      if (existing) existing.remove();
+	    function injectSchema() {
+	      const schemaId = "hp-schema-cryptogram-platform";
+	      const existing = document.getElementById(schemaId);
+	      if (existing) existing.remove();
 
-      const pageUrl = window.location.href;
-      const puzzleDate = String(data.puzzleDate || "").trim();
+	      const pageUrl = window.location.href;
+	      const accessConfig = window.HareCryptogramAccessConfig || {};
+	      const collectionUrl = `https://www.harepublishing.com${accessConfig.publicPlayUrl || "/cryptogram-test"}`;
+	      const puzzleDate = String(data.puzzleDate || "").trim();
 
       const schemaData = {
         "@context": "https://schema.org",
@@ -128,12 +136,12 @@ window.HareCryptogramEngine = {
           "name": "Hare Publishing",
           "url": "https://www.harepublishing.com"
         },
-        "isPartOf": {
-          "@type": "CollectionPage",
-          "name": "Cryptogram",
-          "url": "https://www.harepublishing.com/cryptogram"
-        }
-      };
+	        "isPartOf": {
+	          "@type": "CollectionPage",
+	          "name": "Cryptogram",
+	          "url": collectionUrl
+	        }
+	      };
 
       if (puzzleDate) {
         schemaData.datePublished = puzzleDate;
@@ -1722,13 +1730,21 @@ window.HareCryptogramEngine = {
       render();
     }
 
-    function getPuzzleShareUrl() {
-      const url = new URL(window.location.href);
-      url.search = "";
+	    function getPuzzleShareUrl() {
+	      const url = new URL(window.location.href);
+	      url.search = "";
       url.hash = "";
       url.searchParams.set("puzzle", puzzleId);
-      return url.toString();
-    }
+	      return url.toString();
+	    }
+
+	    function getFallbackPlayPath() {
+	      const accessConfig = window.HareCryptogramAccessConfig || {};
+	      if (window.location.pathname) return window.location.pathname;
+	      return accessConfig.mode === "member"
+	        ? (accessConfig.memberPlayUrl || "/cryptogram-member")
+	        : (accessConfig.publicPlayUrl || "/cryptogram-test");
+	    }
 
     function getShareText() {
       const counts = countSolvedLetters();
@@ -2003,10 +2019,13 @@ window.HareCryptogramEngine = {
       return Core.parsePuzzleDate(dateString, { endOfDay: true });
     }
 
-    function getAvailableIndexItems() {
-      const index = Array.isArray(window.HareCryptogramIndex) ? window.HareCryptogramIndex : [];
-      return Core.getAvailablePuzzles(index, { sort: "descending" });
-    }
+	    function getAvailableIndexItems() {
+	      const index = Array.isArray(window.HareCryptogramIndex) ? window.HareCryptogramIndex : [];
+	      return Core.getAvailablePuzzles(index, {
+	        sort: "descending",
+	        accessConfig: window.HareCryptogramAccessConfig || null
+	      });
+	    }
 
     function findNextPlayableCryptogram() {
       const next = Core.findNextPuzzle({
@@ -2111,7 +2130,7 @@ window.HareCryptogramEngine = {
           if (typeof window.HareCryptogramLoadPuzzle === "function") {
             window.HareCryptogramLoadPuzzle(nextId, { scroll: false });
           } else {
-            window.location.href = `${window.location.pathname || "/cryptogram"}?puzzle=${encodeURIComponent(nextId)}`;
+	            window.location.href = `${getFallbackPlayPath()}?puzzle=${encodeURIComponent(nextId)}`;
           }
         });
       });
@@ -2252,7 +2271,7 @@ window.HareCryptogramEngine = {
               hideOverlay();
               window.HareCryptogramLoadPuzzle(nextId, { scroll: false });
             } else if (nextId) {
-              window.location.href = `${window.location.pathname || "/cryptogram"}?puzzle=${encodeURIComponent(nextId)}`;
+	              window.location.href = `${getFallbackPlayPath()}?puzzle=${encodeURIComponent(nextId)}`;
             }
           }
 
@@ -2285,13 +2304,13 @@ window.HareCryptogramEngine = {
       }
     }
 
-    container.addEventListener("click", () => {
-      container.focus();
-    });
+	    const containerClickHandler = () => {
+	      container.focus();
+	    };
 
-    container.addEventListener("keydown", e => {
-      const tag = document.activeElement ? document.activeElement.tagName : "";
-      if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return;
+	    const containerKeydownHandler = e => {
+	      const tag = document.activeElement ? document.activeElement.tagName : "";
+	      if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return;
 
       const overlayEl = mount.querySelector("#hp-crypto-overlay");
       const helpModalEl = mount.querySelector("#hp-crypto-help-modal");
@@ -2341,11 +2360,18 @@ window.HareCryptogramEngine = {
         return;
       }
 
-      if (key === "ENTER") {
-        e.preventDefault();
-        checkProgress();
-      }
-    });
+	      if (key === "ENTER") {
+	        e.preventDefault();
+	        checkProgress();
+	      }
+	    };
+
+	    container.addEventListener("click", containerClickHandler);
+	    container.addEventListener("keydown", containerKeydownHandler);
+	    container.__hareCryptogramHandlers = {
+	      click: containerClickHandler,
+	      keydown: containerKeydownHandler
+	    };
 
     window.HareCryptogramEngine.openHelp = function(id = containerId) {
       if (id === containerId) showHelpModal();
