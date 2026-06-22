@@ -2,8 +2,8 @@
    HARE PUBLISHING DAILY SUDOKU CHALLENGE PLATFORM ENGINE
    Version 1.2
 
-   Platform version of the unified Sudoku engine for Daily Sudoku Challenge.
-   - Receives one Daily Sudoku Challenge puzzle from the platform page
+   Platform version of the unified Sudoku engine for Sudoku Challenge.
+   - Receives one Sudoku Challenge puzzle from the platform page
    - Single Challenge mode only; no difficulty selector
    - Preserves existing production localStorage keys:
      hp_sd_challenge_
@@ -25,7 +25,7 @@ window.HareSudokuChallengePlatformEngine = {
     }
 
     // Safety guard: this production engine should only mount the new unified Sudoku container.
-    // It must not initialize older live Daily Sudoku Challenge or Regular Sudoku posts.
+    // It must not initialize older live Sudoku Challenge or Regular Sudoku posts.
     if (!container.classList.contains("hp-sudoku")) {
       console.warn("HareSudokuChallengePlatformEngine: container is not marked hp-sudoku. Skipping mount.");
       return;
@@ -95,19 +95,19 @@ window.HareSudokuChallengePlatformEngine = {
     const MODE_META = {
       challenge: {
         mode: "challenge",
-        label: "Daily Sudoku Challenge",
-        boardAria: "Daily Sudoku Challenge Board",
-        schemaName: (id) => `Daily Sudoku Challenge #${id}`,
-        schemaDescription: (id) => `Play Daily Sudoku Challenge #${id} online from Hare Publishing. This expert-level Sudoku puzzle includes notes, timer, checking, hints, reveal, and progress saving.`,
-        solvedTitle: "You Solved the Daily Sudoku Challenge!",
-        solvedStat: "Daily Sudoku Challenge Solved! 🎉 ",
-        solvedText: "Congratulations — you did it! Come back for another Daily Sudoku Challenge, or explore more free online puzzles.",
-        revealedText: "Here is the completed Daily Sudoku Challenge. Try another puzzle, or explore more free online puzzles.",
-        footer: "Hare Publishing • Daily Sudoku Challenge",
-        shareTitle: () => `Daily Sudoku Challenge — Hare Publishing`,
-        shareSolvedText: (id, time) => `I solved Daily Sudoku Challenge #${id} in ${time}!`,
-        shareRevealedText: (id) => `I revealed the answer for Daily Sudoku Challenge #${id} at Hare Publishing.`,
-        sharePlayingText: (id) => `I’m playing Daily Sudoku Challenge #${id} at Hare Publishing!`,
+        label: "Sudoku Challenge",
+        boardAria: "Sudoku Challenge Board",
+        schemaName: (id) => `Sudoku Challenge #${id}`,
+        schemaDescription: (id) => `Play Sudoku Challenge #${id} online from Hare Publishing. This expert-level Sudoku puzzle includes notes, timer, checking, hints, reveal, and progress saving.`,
+        solvedTitle: "You Solved the Sudoku Challenge!",
+        solvedStat: "Sudoku Challenge Solved! 🎉 ",
+        solvedText: "Congratulations — you did it! Come back for another Sudoku Challenge, or explore more free online puzzles.",
+        revealedText: "Here is the completed Sudoku Challenge. Try another puzzle, or explore more free online puzzles.",
+        footer: "Hare Publishing • Sudoku Challenge",
+        shareTitle: () => `Sudoku Challenge — Hare Publishing`,
+        shareSolvedText: (id, time) => `I solved Sudoku Challenge #${id} in ${time}!`,
+        shareRevealedText: (id) => `I revealed the answer for Sudoku Challenge #${id} at Hare Publishing.`,
+        sharePlayingText: (id) => `I’m playing Sudoku Challenge #${id} at Hare Publishing!`,
         saveKeyPrefix: "hp_sd_challenge_"
       }
     };
@@ -146,14 +146,14 @@ window.HareSudokuChallengePlatformEngine = {
     function showConfigError(message) {
       mount.innerHTML = `
         <div class="hp-panel" style="border:1px solid #ED1B24; background:#fff5f5; color:#8a1c1c; padding:18px; border-radius:12px; text-align:center;">
-          <strong>Daily Sudoku Challenge Configuration Error:</strong><br>
+          <strong>Sudoku Challenge Configuration Error:</strong><br>
           ${escapeHtml(message)}
         </div>
       `;
     }
 
     function normalizeGrid(value) {
-      return String(value || "").trim();
+      return String(value || "").trim().replace(/0/g, ".");
     }
 
     function isValidPuzzleString(value) {
@@ -197,7 +197,7 @@ window.HareSudokuChallengePlatformEngine = {
 
     const availableModes = SUDOKU_MODE_ORDER.filter(mode => PUZZLES[mode]);
     if (!availableModes.length) {
-      showConfigError("Daily Sudoku Challenge puzzle data is required.");
+      showConfigError("Sudoku Challenge puzzle data is required.");
       return;
     }
 
@@ -208,7 +208,7 @@ window.HareSudokuChallengePlatformEngine = {
         return;
       }
       if (!isValidPuzzleString(cfg.puzzle)) {
-        showConfigError(`${cfg.label} #${cfg.puzzleId} must have an 81-character puzzle string using digits 1-9 and periods for blanks.`);
+        showConfigError(`${cfg.label} #${cfg.puzzleId} must have an 81-character puzzle string using digits 1-9, with 0 or periods for blanks.`);
         return;
       }
       if (!isValidSolutionString(cfg.solution)) {
@@ -850,7 +850,7 @@ window.HareSudokuChallengePlatformEngine = {
       const pageUrl = window.location.href;
       const collectionUrl = window.HareSudokuChallengePlayUrl
         ? new URL(window.HareSudokuChallengePlayUrl, window.location.origin).href
-        : "https://www.harepublishing.com/daily-sudoku-challenge";
+        : "https://www.harepublishing.com/sudoku-challenge-test";
       const publishedDate = String(cfg.puzzleDate || pageData?.puzzleDate || pageData?.date || "").trim();
 
       const schemaData = {
@@ -870,7 +870,7 @@ window.HareSudokuChallengePlatformEngine = {
         },
         "isPartOf": {
           "@type": "CollectionPage",
-          "name": "Daily Sudoku Challenge",
+          "name": "Sudoku Challenge",
           "url": collectionUrl
         }
       };
@@ -896,7 +896,7 @@ window.HareSudokuChallengePlatformEngine = {
     }
 
     function getModeLabel(mode) {
-      return "Daily Sudoku Challenge";
+      return "Sudoku Challenge";
     }
 
 
@@ -945,7 +945,7 @@ window.HareSudokuChallengePlatformEngine = {
 
     function getOverlayModeSummaryHtml() {
       return `
-        <div class="hp-overlay-mode-summary" aria-label="Daily Sudoku Challenge status">
+        <div class="hp-overlay-mode-summary" aria-label="Sudoku Challenge status">
           ${availableModes.map(mode => {
             const label = getModeLabel(mode);
             const status = getModeStatusLabel(mode);
@@ -977,7 +977,7 @@ window.HareSudokuChallengePlatformEngine = {
           const next = window.HareSudokuChallengeGetNextPuzzle({ excludePuzzleId: currentId });
           if (next && next.puzzleId) return next;
         } catch (err) {
-          console.warn("Daily Sudoku Challenge next-puzzle helper failed.", err);
+          console.warn("Sudoku Challenge next-puzzle helper failed.", err);
         }
       }
       return null;
@@ -991,10 +991,10 @@ window.HareSudokuChallengePlatformEngine = {
       if (next && next.puzzleId) {
         const isInProgress = next.status === "in-progress";
         const actionLabel = isInProgress ? "Continue" : "Play";
-        const title = isInProgress ? "Continue where you left off" : "Another Daily Sudoku Challenge is ready";
+        const title = isInProgress ? "Continue where you left off" : "Another Sudoku Challenge is ready";
         const copy = isInProgress
           ? "Pick up where you left off and keep building your streak."
-          : "Try another Daily Sudoku Challenge and keep building your streak.";
+          : "Try another Sudoku Challenge and keep building your streak.";
 
         overlayNextPanelEl.innerHTML = `
           <div class="hp-overlay-message">
@@ -1003,7 +1003,7 @@ window.HareSudokuChallengePlatformEngine = {
           </div>
           <div class="hp-overlay-action-row">
             <button class="hp-overlay-action-btn primary-action" type="button" data-a="overlay-next-challenge" data-puzzle-id="${escapeHtml(next.puzzleId)}">
-              ${escapeHtml(actionLabel)} Daily Sudoku Challenge #${escapeHtml(next.puzzleId)}
+              ${escapeHtml(actionLabel)} Sudoku Challenge #${escapeHtml(next.puzzleId)}
             </button>
             <button class="hp-overlay-action-btn share-action" type="button" data-a="share">Share This Puzzle</button>
           </div>
@@ -1015,7 +1015,7 @@ window.HareSudokuChallengePlatformEngine = {
       overlayNextPanelEl.innerHTML = `
         <div class="hp-overlay-message">
           <strong>You're all caught up!</strong>
-          <span>Check back tomorrow for the next Daily Sudoku Challenge.</span>
+          <span>Check back tomorrow for the next Sudoku Challenge.</span>
         </div>
         <div class="hp-overlay-action-row">
           <a class="hp-overlay-action-btn primary-action" href="/puzzlers-hub">Explore More Puzzles</a>
@@ -3716,7 +3716,7 @@ mount.innerHTML = `
         </div>
 
         <div class="hp-overlay" id="hp-overlay" aria-hidden="true">
-          <div class="hp-modal" role="dialog" aria-modal="true" aria-label="Daily Sudoku Challenge result">
+          <div class="hp-modal" role="dialog" aria-modal="true" aria-label="Sudoku Challenge result">
             <button type="button" class="hp-overlay-close-btn" data-a="close-solved" aria-label="Close result card">
               <span class="material-symbols-outlined" aria-hidden="true">close</span>
             </button>
@@ -3729,7 +3729,7 @@ mount.innerHTML = `
               <span class="hp-badge" id="hp-badge-time"></span>
             </div>
 
-            <div class="hp-overlay-stats" id="hp-overlay-stats" aria-label="Daily Sudoku Challenge statistics"></div>
+            <div class="hp-overlay-stats" id="hp-overlay-stats" aria-label="Sudoku Challenge statistics"></div>
 
             <div class="hp-sudoku-next-panel" id="hp-overlay-next-panel"></div>
 
