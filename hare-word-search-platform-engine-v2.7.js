@@ -1102,7 +1102,7 @@ window.HareWordSearchEngine = {
       }
     }
 
-    function handleKeydown(e) {
+    container.addEventListener("keydown", e => {
       const overlayEl = mount.querySelector("#hp-ws-overlay");
       if (overlayEl && overlayEl.classList.contains("on")) {
         if (e.key === "Escape") hideOverlay();
@@ -1123,13 +1123,7 @@ window.HareWordSearchEngine = {
         }
         clearAnchor();
       }
-    }
-
-    if (container.__hareWordSearchHandlers?.keydown) {
-      container.removeEventListener("keydown", container.__hareWordSearchHandlers.keydown);
-    }
-    container.addEventListener("keydown", handleKeydown);
-    container.__hareWordSearchHandlers = { keydown: handleKeydown };
+    });
 
     if (state.solved && state.foundWords.length !== normalizedWords.length) {
       state.foundWords = [...normalizedWords];
