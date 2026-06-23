@@ -1,7 +1,7 @@
 /* =========================================================
    HARE PUBLISHING WORD SEARCH PLATFORM ENGINE
    GitHub/jsDelivr hosted engine file
-   Updated: 2026-06-15 v2.7 — engine unchanged; paired with compact Success/Reveal puzzle CSS
+   Updated: 2026-06-23 v2.7 — supports rectangular grids from JSON
 
    Suggested filename:
    hare-word-search-platform-engine-v2.7.js
@@ -131,7 +131,8 @@ window.HareWordSearchEngine = {
     const puzzleDate = formatPuzzleDate(pageData.puzzleDate || pageData.date || "");
     const puzzleTheme = String(pageData.theme || pageData.puzzleTheme || pageData.topic || "").trim();
     const grid = Array.isArray(pageData.grid) ? pageData.grid.map(row => String(row || "").toUpperCase().replace(/[^A-Z]/g, "")) : [];
-    const gridSize = grid.length;
+    const rowCount = grid.length;
+    const colCount = rowCount ? grid[0].length : 0;
     const placementsRaw = Array.isArray(pageData.placements) ? pageData.placements : [];
 
     if (!puzzleId) {
@@ -139,8 +140,8 @@ window.HareWordSearchEngine = {
       return;
     }
 
-    if (!gridSize || grid.some(row => row.length !== gridSize)) {
-      showConfigError("Word Search grid must be a square array of equal-length letter rows.");
+    if (!rowCount || !colCount || grid.some(row => row.length !== colCount)) {
+      showConfigError("Word Search grid must be an array of equal-length letter rows.");
       return;
     }
 
@@ -159,7 +160,7 @@ window.HareWordSearchEngine = {
       const path = getPathForPlacement({ word, row, col, dr, dc });
       return { word, row, col, dr, dc, path, pathKey: canonicalPathKey(path) };
     }).filter(p => p.word && p.path.every(pos => (
-      pos.r >= 0 && pos.r < gridSize && pos.c >= 0 && pos.c < gridSize
+      pos.r >= 0 && pos.r < rowCount && pos.c >= 0 && pos.c < colCount
     )));
 
     const normalizedWords = placements.map(p => p.word);
@@ -647,7 +648,7 @@ window.HareWordSearchEngine = {
       if (foundValue) foundValue.textContent = formatFoundCount();
       if (wordCountValue) wordCountValue.textContent = `Words Found: ${state.foundWords.length} of ${normalizedWords.length}`;
       if (remainingValue) remainingValue.textContent = String(normalizedWords.length - state.foundWords.length);
-      if (sizeValue) sizeValue.textContent = `${gridSize}×${gridSize}`;
+      if (sizeValue) sizeValue.textContent = `${rowCount}×${colCount}`;
       if (progressFill) progressFill.style.width = `${progressPercent()}%`;
     }
 
@@ -706,7 +707,7 @@ window.HareWordSearchEngine = {
         `).join("")
       ).join("");
 
-      boardEl.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
+      boardEl.style.gridTemplateColumns = `repeat(${colCount}, 1fr)`;
 
       boardEl.querySelectorAll("[data-r][data-c]").forEach(btn => {
         btn.addEventListener("click", () => {
