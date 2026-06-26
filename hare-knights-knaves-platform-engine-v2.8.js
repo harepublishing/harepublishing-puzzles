@@ -6,7 +6,7 @@
    - Receives one puzzle set from the platform page
    - Supports Easy, Medium, and Hard modes
    - Preserves separate localStorage keys:
-     hp_kk_easy_, hp_kk_medium_, hp_kk_hard_
+     hp2_knk_easy_, hp2_knk_medium_, hp2_knk_hard_
    - Emits shared Hare Puzzle Platform state-change events
    - v1.5: compact portrait overlays, Knight/Knave toggle, bottom logic notation
    - v1.7: compact chat title removal, message pop animation, mobile 2-column cards
@@ -64,9 +64,9 @@ window.HareKnightsKnavesPlatformEngine = {
     const PUZZLE_TYPE = "knights-knaves";
     const MODE_ORDER = ["easy", "medium", "hard"];
     const MODE_META = {
-      easy: { mode:"easy", label:"Easy", displayLabel:"Easy Knights & Knaves", saveKeyPrefix:"hp_kk_easy_" },
-      medium: { mode:"medium", label:"Medium", displayLabel:"Medium Knights & Knaves", saveKeyPrefix:"hp_kk_medium_" },
-      hard: { mode:"hard", label:"Hard", displayLabel:"Hard Knights & Knaves", saveKeyPrefix:"hp_kk_hard_" }
+      easy: { mode:"easy", label:"Easy", displayLabel:"Easy Knights & Knaves", saveKeyPrefix:"hp2_knk_easy_" },
+      medium: { mode:"medium", label:"Medium", displayLabel:"Medium Knights & Knaves", saveKeyPrefix:"hp2_knk_medium_" },
+      hard: { mode:"hard", label:"Hard", displayLabel:"Hard Knights & Knaves", saveKeyPrefix:"hp2_knk_hard_" }
     };
     const CHARACTER_BASE_URL = String(pageData?.characterBaseUrl || window.HareKnightsKnavesCharacterBaseUrl || "https://cdn.jsdelivr.net/gh/harepublishing/harepublishing-puzzles@main/characters/").replace(/\/?$/, "/");
 

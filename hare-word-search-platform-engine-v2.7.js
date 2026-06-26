@@ -172,7 +172,7 @@ window.HareWordSearchEngine = {
       return;
     }
 
-    const STORAGE_KEY = `hp_ws_${puzzleId}`;
+    const STORAGE_KEY = `hp2_ws_${puzzleId}`;
 
     (function injectSchema() {
       const existing = document.getElementById("hp-ws-schema");

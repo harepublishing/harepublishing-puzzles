@@ -3,13 +3,13 @@
    Version: 2.8
    Self-contained platform engine. Does not rely on Squarespace CSS injection.
    Exposes: window.HareWordScramblePlatformEngine
-   Storage prefix: hp_wsc_
+   Storage prefix: hp2_wsc_
    ========================================================= */
 
 window.HareWordScramblePlatformEngine = (() => {
   const VERSION = "word-scramble-platform-engine-v2.8";
   const Core = window.HarePuzzleCore || null;
-  const STORAGE_PREFIX = "hp_wsc_";
+  const STORAGE_PREFIX = "hp2_wsc_";
   const MORE_PUZZLES_URL = "https://www.harepublishing.com/online-puzzles";
   const SHOP_URL = "https://www.harepublishing.com/shop";
 
@@ -22,7 +22,7 @@ window.HareWordScramblePlatformEngine = (() => {
       ));
     },
     isRevealed(data) {
-      return Boolean(data && (data.revealed || data.revealedAt || data.status === "revealed" || (Array.isArray(data.revealedWords) && data.revealedWords.length > 0)));
+      return Boolean(data && (data.revealed || data.revealedAt || data.status === "revealed"));
     },
     isFinished(data) {
       return Boolean(data && (
@@ -37,8 +37,7 @@ window.HareWordScramblePlatformEngine = (() => {
         (Array.isArray(data.solvedWords) && data.solvedWords.length > 0) ||
         (Array.isArray(data.revealedWords) && data.revealedWords.length > 0) ||
         String(data.currentGuess || "").length > 0 ||
-        data.currentWordId ||
-        data.startedAt || data.updatedAt || data.lastPlayedAt
+        (Array.isArray(data.usedLetterIds) && data.usedLetterIds.length > 0)
       );
     },
     finishedDate(data) {

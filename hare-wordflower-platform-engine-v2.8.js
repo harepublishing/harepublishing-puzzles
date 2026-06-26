@@ -8,7 +8,7 @@
 window.HareWordFlowerEngine = (() => {
   const VERSION = "wordflower-platform-v2.8";
   const Core = window.HarePuzzleCore || null;
-  const STORAGE_PREFIX = "hp_wf2_";
+  const STORAGE_PREFIX = "hp2_wf_";
   const SAVE_VERSION = 2;
   const MORE_PUZZLES_URL = "https://www.harepublishing.com/online-puzzles";
   const SHOP_URL = "https://www.harepublishing.com/shop";
@@ -25,18 +25,17 @@ window.HareWordFlowerEngine = (() => {
 
   const wordFlowerStatusAdapter = {
     isSolved(data) {
-      return Boolean(data && !data.revealAllUsed && (data.masterGardener || data.solved || data.status === "solved" || data.masterGardenerAt));
+      return Boolean(data && !data.revealAllUsed && (data.completed || data.completedAt || data.status === "complete" || data.status === "completed"));
     },
     isRevealed(data) {
-      return Boolean(data && (data.revealAllUsed || data.revealed || data.revealedAt || (Array.isArray(data.revealedWords) && data.revealedWords.length > 0)));
+      return Boolean(data && (data.revealAllUsed || data.revealedAt || data.status === "revealed"));
     },
     isFinished(data) {
-      return Boolean(data && (this.isSolved(data) || data.revealAllUsed || data.completed || data.completedAt || data.status === "complete"));
+      return Boolean(data && (this.isSolved(data) || this.isRevealed(data)));
     },
     hasProgress(data) {
       if (!data) return false;
       return Boolean(
-        data.playedAt || data.startedAt || data.lastPlayedAt || data.updatedAt ||
         String(data.current || "").length > 0 ||
         (Array.isArray(data.found) && data.found.length > 0) ||
         (Array.isArray(data.revealedWords) && data.revealedWords.length > 0)
@@ -44,7 +43,7 @@ window.HareWordFlowerEngine = (() => {
     },
     finishedDate(data) {
       if (!data) return null;
-      return data.completedAt || data.masterGardenerAt || data.revealedAt || data.finishedAt || data.updatedAt || data.lastPlayedAt || null;
+      return data.completedAt || data.revealedAt || data.finishedAt || null;
     }
   };
 
@@ -752,13 +751,12 @@ window.HareWordFlowerEngine = (() => {
     if(!state.wordAchievements || typeof state.wordAchievements !== "object" || Array.isArray(state.wordAchievements)) state.wordAchievements = {};
     state.found = foundWords();
     state.revealedWords = revealedWords();
-    state.revealed = Boolean(state.revealWordUsed || state.revealAllUsed || state.revealedWords.length || state.revealedAt);
+    state.revealed = Boolean(state.revealAllUsed || state.revealedAt);
     state.masterGardener = reachedMaster();
-    state.solved = state.masterGardener;
+    state.solved = state.completed;
     state.completed = reachedComplete();
     if(state.revealAllUsed) state.status = "revealed";
     else if(state.completed) state.status = "complete";
-    else if(state.masterGardener) state.status = "solved";
     else state.status = "in-progress";
   }
 

@@ -435,7 +435,7 @@
       solved: solved.length,
       revealed: revealed.length,
       inProgress: inProgress.length,
-      played: finished.length,
+      played: solved.length + revealed.length + inProgress.length,
       finished: finished.length,
       totalStored: items.length,
       items

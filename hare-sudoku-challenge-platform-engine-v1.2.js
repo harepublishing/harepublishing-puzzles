@@ -6,7 +6,7 @@
    - Receives one Sudoku Challenge puzzle from the platform page
    - Single Challenge mode only; no difficulty selector
    - Preserves existing production localStorage keys:
-     hp_sd_challenge_
+     hp2_sdc_
    - Emits shared Hare Puzzle Platform state-change events
    - Injects platform-standard Game schema
    ========================================================= */
@@ -108,7 +108,7 @@ window.HareSudokuChallengePlatformEngine = {
         shareSolvedText: (id, time) => `I solved Sudoku Challenge #${id} in ${time}!`,
         shareRevealedText: (id) => `I revealed the answer for Sudoku Challenge #${id} at Hare Publishing.`,
         sharePlayingText: (id) => `I’m playing Sudoku Challenge #${id} at Hare Publishing!`,
-        saveKeyPrefix: "hp_sd_challenge_"
+        saveKeyPrefix: "hp2_sdc_"
       }
     };
 
@@ -278,7 +278,7 @@ window.HareSudokuChallengePlatformEngine = {
       // The permanent save record must stay small and compatible with the
       // older HareRegularSudokuEngine. The old engine saves only puzzle state,
       // not the full undo history. Saving the advanced engine's 50-step history
-      // inside hp_sd_easy_ / hp_sd_medium_ / hp_sd_hard_ can exceed browser
+      // inside hp2_sd_easy_ / hp2_sd_medium_ / hp2_sd_hard_ can exceed browser
       // localStorage limits on Squarespace pages, causing setItem() to fail.
       // When that happens, the puzzle appears to remember progress only until
       // the visitor leaves the page.

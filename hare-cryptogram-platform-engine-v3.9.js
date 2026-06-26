@@ -24,7 +24,7 @@ window.HareCryptogramEngine = {
       return;
     }
 
-    const CRYPTOGRAM_STORAGE_PREFIX = "hp_cg_";
+    const CRYPTOGRAM_STORAGE_PREFIX = "hp2_cg_";
 
     const cryptogramStatusAdapter = {
       isSolved(saved) {

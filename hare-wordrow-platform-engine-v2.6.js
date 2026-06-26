@@ -8,7 +8,7 @@
 window.HareWordrowEngine = (() => {
   const VERSION = "wordrow-platform-engine-v2.6";
   const Core = window.HarePuzzleCore || null;
-  const STORAGE_PREFIX = "hp_wr_";
+  const STORAGE_PREFIX = "hp2_wr_";
   const MORE_PUZZLES_URL = "https://www.harepublishing.com/puzzlers-hub";
   const SHOP_URL = "https://www.harepublishing.com/shop";
 

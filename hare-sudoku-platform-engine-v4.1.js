@@ -7,7 +7,7 @@
    - Supports Easy, Medium, and Hard modes
    - Defaults to Easy in code
    - Preserves existing production localStorage keys:
-     hp_sd_easy_, hp_sd_medium_, hp_sd_hard_
+     hp2_sd_easy_, hp2_sd_medium_, hp2_sd_hard_
    - Emits shared Hare Puzzle Platform state-change events
    ========================================================= */
 
@@ -108,7 +108,7 @@ window.HareSudokuPlatformEngine = {
         shareSolvedText: (id, time) => `I solved Easy Sudoku #${id} in ${time}!`,
         shareRevealedText: () => `I revealed the answer for Easy Sudoku at Hare Publishing.`,
         sharePlayingText: () => `I’m playing Easy Sudoku #${id || ""} at Hare Publishing!`,
-        saveKeyPrefix: "hp_sd_easy_"
+        saveKeyPrefix: "hp2_sd_easy_"
       },
 
       medium: {
@@ -126,7 +126,7 @@ window.HareSudokuPlatformEngine = {
         shareSolvedText: (id, time) => `I solved Medium Sudoku #${id} in ${time}!`,
         shareRevealedText: () => `I revealed the answer for Medium Sudoku at Hare Publishing.`,
         sharePlayingText: () => `I’m playing Medium Sudoku #${id || ""} at Hare Publishing!`,
-        saveKeyPrefix: "hp_sd_medium_"
+        saveKeyPrefix: "hp2_sd_medium_"
       },
 
       hard: {
@@ -144,7 +144,7 @@ window.HareSudokuPlatformEngine = {
         shareSolvedText: (id, time) => `I solved Hard Sudoku #${id} in ${time}!`,
         shareRevealedText: () => `I revealed the answer for Hard Sudoku at Hare Publishing.`,
         sharePlayingText: () => `I’m playing Hard Sudoku #${id || ""} at Hare Publishing!`,
-        saveKeyPrefix: "hp_sd_hard_"
+        saveKeyPrefix: "hp2_sd_hard_"
       },
 
     };
@@ -316,7 +316,7 @@ window.HareSudokuPlatformEngine = {
       // The permanent save record must stay small and compatible with the
       // older HareRegularSudokuEngine. The old engine saves only puzzle state,
       // not the full undo history. Saving the advanced engine's 50-step history
-      // inside hp_sd_easy_ / hp_sd_medium_ / hp_sd_hard_ can exceed browser
+      // inside hp2_sd_easy_ / hp2_sd_medium_ / hp2_sd_hard_ can exceed browser
       // localStorage limits on Squarespace pages, causing setItem() to fail.
       // When that happens, the puzzle appears to remember progress only until
       // the visitor leaves the page.

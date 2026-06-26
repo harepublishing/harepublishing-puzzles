@@ -32,7 +32,7 @@ window.HareKrissKrossEngine = {
 
     const MORE_PUZZLES_URL = data.morePuzzlesUrl || "https://www.harepublishing.com/online-puzzles";
     const SHOP_URL = data.shopUrl || "https://www.harepublishing.com/shop";
-    const STORAGE_KEY = data.storageKey || `hp_kk_${puzzleId}`;
+    const STORAGE_KEY = data.storageKey || `hp2_kx_${puzzleId}`;
 
     function escapeHtml(str) {
       return String(str).replace(/[&<>"']/g, s => ({
