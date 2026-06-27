@@ -1,6 +1,6 @@
 /*
   Hare Publishing Puzzle Core
-  Version: 1.0.0
+  Version: 1.1.1
 
   Purpose:
   Shared, puzzle-agnostic utilities for the new Hare Publishing puzzle platform.
@@ -17,7 +17,7 @@
 (function (window, document) {
   "use strict";
 
-  const VERSION = "1.1.0";
+  const VERSION = "1.1.1";
   const DEFAULT_REPO = "harepublishing/harepublishing-puzzles";
   const DEFAULT_RELEASE = "main";
   const DEFAULT_CDN_ROOT = "https://cdn.jsdelivr.net/gh";
@@ -532,7 +532,7 @@
       solved: solved.length,
       revealed: revealed.length,
       inProgress: inProgress.length,
-      played: finished.length,
+      played: solved.length + revealed.length + inProgress.length,
       finished: finished.length,
       totalStored: items.length,
       items
