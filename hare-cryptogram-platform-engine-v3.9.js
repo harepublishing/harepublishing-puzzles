@@ -332,7 +332,7 @@ window.HareCryptogramEngine = {
           flex-wrap: wrap;
           justify-content: center;
           align-items: flex-end;
-          gap: 18px 22px;
+          gap: 18px 20px;
           margin: 28px auto 30px;
           max-width: 900px;
           line-height: 1;
@@ -350,7 +350,7 @@ window.HareCryptogramEngine = {
         }
 
         #hp-cryptogram-container .hp-crypto-char {
-          width: 31px;
+          width: 28px;
           min-height: 52px;
           border: 0;
           background: transparent;
@@ -1341,11 +1341,11 @@ window.HareCryptogramEngine = {
           }
 
           #hp-cryptogram-container .hp-crypto-puzzle {
-            gap: 14px 16px;
+            gap: 8px 12px;
           }
 
           #hp-cryptogram-container .hp-crypto-char {
-            width: 26px;
+            width: 23px;
           }
 
           #hp-cryptogram-container .hp-crypto-top {
