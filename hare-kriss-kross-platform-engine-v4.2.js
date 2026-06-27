@@ -600,6 +600,7 @@ window.HareKrissKrossEngine = {
       boardEl.style.gridTemplateColumns = `repeat(${colCount}, 1fr)`;
       boardEl.style.setProperty("--hp-kk-cols", String(colCount));
       boardEl.style.setProperty("--hp-kk-rows", String(rowCount));
+      boardEl.style.setProperty("--hp-kk-mobile-min-width", `${colCount * 20}px`);
 
       boardEl.innerHTML = Array.from({ length: rowCount }, (_, r) =>
         Array.from({ length: colCount }, (_, c) => {

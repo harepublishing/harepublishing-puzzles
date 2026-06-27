@@ -707,6 +707,9 @@ window.HareWordSearchEngine = {
         `).join("")
       ).join("");
 
+      boardEl.style.setProperty("--hp-ws-cols", String(colCount));
+      boardEl.style.setProperty("--hp-ws-rows", String(rowCount));
+      boardEl.style.setProperty("--hp-ws-mobile-min-width", `${(colCount * 20) + (Math.max(colCount - 1, 0) * 2)}px`);
       boardEl.style.gridTemplateColumns = `repeat(${colCount}, 1fr)`;
 
       boardEl.querySelectorAll("[data-r][data-c]").forEach(btn => {

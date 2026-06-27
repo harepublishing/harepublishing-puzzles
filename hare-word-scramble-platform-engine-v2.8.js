@@ -241,6 +241,9 @@ window.HareWordScramblePlatformEngine = (() => {
       margin:0 auto 14px;
       width:100%;
       max-width:820px;
+      overflow-x:auto;
+      overflow-y:hidden;
+      -webkit-overflow-scrolling:touch;
     }
 
     #hp-wordscramble-container .hpwsc-slot,
@@ -680,15 +683,15 @@ window.HareWordScramblePlatformEngine = (() => {
       #hp-wordscramble-container .hpwsc-actions { margin-top:10px; }
       #hp-wordscramble-container .hpwsc-info-body { height:82px; min-height:82px; }
       #hp-wordscramble-container .hpwsc-slots,
-      #hp-wordscramble-container .hpwsc-bank { gap:4px; max-width:100%; overflow:hidden; }
+      #hp-wordscramble-container .hpwsc-bank { justify-content:safe center; gap:4px; max-width:100%; overflow-x:auto; overflow-y:hidden; padding-bottom:2px; }
       #hp-wordscramble-container .hpwsc-slot,
-      #hp-wordscramble-container .hpwsc-letter { width:clamp(24px,7.2vw,36px); min-width:0; flex:0 1 36px; height:clamp(40px,11vw,45px); border-radius:12px; font-size:clamp(17px,5.6vw,22px); }
+      #hp-wordscramble-container .hpwsc-letter { width:clamp(24px,7.2vw,36px); min-width:24px; flex:0 0 clamp(24px,7.2vw,36px); height:clamp(40px,11vw,45px); border-radius:12px; font-size:clamp(17px,5.6vw,22px); }
       #hp-wordscramble-container .hpwsc-current.word-len-8 .hpwsc-slot,
       #hp-wordscramble-container .hpwsc-current.word-len-8 .hpwsc-letter,
       #hp-wordscramble-container .hpwsc-current.word-len-9 .hpwsc-slot,
       #hp-wordscramble-container .hpwsc-current.word-len-9 .hpwsc-letter,
       #hp-wordscramble-container .hpwsc-current.word-len-10 .hpwsc-slot,
-      #hp-wordscramble-container .hpwsc-current.word-len-10 .hpwsc-letter { width:clamp(22px,6.7vw,32px); flex:0 1 32px; height:clamp(38px,10.5vw,43px); font-size:clamp(16px,5vw,20px); }
+      #hp-wordscramble-container .hpwsc-current.word-len-10 .hpwsc-letter { width:clamp(24px,6.7vw,32px); min-width:24px; flex:0 0 clamp(24px,6.7vw,32px); height:clamp(38px,10.5vw,43px); font-size:clamp(16px,5vw,20px); }
       #hp-wordscramble-container .hpwsc-current.word-len-9 .hpwsc-slots,
       #hp-wordscramble-container .hpwsc-current.word-len-9 .hpwsc-bank,
       #hp-wordscramble-container .hpwsc-current.word-len-10 .hpwsc-slots,
