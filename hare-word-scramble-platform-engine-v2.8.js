@@ -50,8 +50,19 @@ window.HareWordScramblePlatformEngine = (() => {
     #hp-wordscramble-container,
     #hp-wordscramble-container * { box-sizing:border-box; }
 
+    #hp-wordscramble-container {
+      width:100%;
+      max-width:100%;
+      min-width:0;
+      overflow-x:hidden;
+    }
+
     #hp-wordscramble-container .hpwsc-shell,
-    #hp-wordscramble-container .hpwsc-card { overflow:visible !important; }
+    #hp-wordscramble-container .hpwsc-card {
+      width:100%;
+      max-width:100%;
+      min-width:0;
+    }
 
     #hp-wordscramble-container .hpwsc-card {
       position:relative;
@@ -670,20 +681,32 @@ window.HareWordScramblePlatformEngine = (() => {
     #hp-wordscramble-container .hp-modal small { display:block; margin-top:10px; color:#777; font-size:11px; }
 
     @media(max-width:900px){
-      #hp-wordscramble-container .hpwsc-layout { grid-template-columns:1fr; }
+      #hp-wordscramble-container,
+      #hp-wordscramble-container .hpwsc-shell,
+      #hp-wordscramble-container .hpwsc-card,
+      #hp-wordscramble-container .hpwsc-layout,
+      #hp-wordscramble-container .hpwsc-panel {
+        width:100%;
+        max-width:100%;
+        min-width:0;
+      }
+      #hp-wordscramble-container .hpwsc-layout { grid-template-columns:1fr; overflow-x:hidden; }
+      #hp-wordscramble-container .hpwsc-puzzle-panel,
+      #hp-wordscramble-container .hpwsc-word-panel { min-height:0; }
       #hp-wordscramble-container .hpwsc-word-list { max-height:440px; }
     }
 
     @media(max-width:560px){
       #hp-wordscramble-container .hpwsc-panel { padding:13px; }
-      #hp-wordscramble-container .hpwsc-info-buttons { grid-template-columns:repeat(3,minmax(0,1fr)); gap:6px; }
+      #hp-wordscramble-container .hpwsc-info-buttons { grid-template-columns:repeat(2,minmax(0,1fr)); gap:6px; }
+      #hp-wordscramble-container .hpwsc-info-buttons .hpwsc-btn:nth-child(3) { grid-column:1/-1; width:64%; justify-self:center; }
       #hp-wordscramble-container .hpwsc-info-buttons .hpwsc-btn { min-height:38px; padding:8px 5px; font-size:12px; border-radius:11px; }
-      #hp-wordscramble-container .hpwsc-controls { flex-wrap:nowrap; gap:8px; }
-      #hp-wordscramble-container .hpwsc-controls .hpwsc-btn { min-width:0; flex:1 1 0; padding:9px 7px; font-size:13px; }
+      #hp-wordscramble-container .hpwsc-controls { flex-wrap:wrap; gap:8px; }
+      #hp-wordscramble-container .hpwsc-controls .hpwsc-btn { min-width:0; flex:1 1 calc((100% - 16px) / 3); padding:9px 7px; font-size:13px; }
       #hp-wordscramble-container .hpwsc-actions { margin-top:10px; }
       #hp-wordscramble-container .hpwsc-info-body { height:82px; min-height:82px; }
       #hp-wordscramble-container .hpwsc-slots,
-      #hp-wordscramble-container .hpwsc-bank { justify-content:safe center; gap:4px; max-width:100%; overflow-x:auto; overflow-y:hidden; padding-bottom:2px; }
+      #hp-wordscramble-container .hpwsc-bank { justify-content:flex-start; gap:4px; max-width:100%; overflow-x:auto; overflow-y:hidden; padding-bottom:2px; }
       #hp-wordscramble-container .hpwsc-slot,
       #hp-wordscramble-container .hpwsc-letter { width:clamp(24px,7.2vw,36px); min-width:24px; flex:0 0 clamp(24px,7.2vw,36px); height:clamp(40px,11vw,45px); border-radius:12px; font-size:clamp(17px,5.6vw,22px); }
       #hp-wordscramble-container .hpwsc-current.word-len-8 .hpwsc-slot,
@@ -692,10 +715,26 @@ window.HareWordScramblePlatformEngine = (() => {
       #hp-wordscramble-container .hpwsc-current.word-len-9 .hpwsc-letter,
       #hp-wordscramble-container .hpwsc-current.word-len-10 .hpwsc-slot,
       #hp-wordscramble-container .hpwsc-current.word-len-10 .hpwsc-letter { width:clamp(24px,6.7vw,32px); min-width:24px; flex:0 0 clamp(24px,6.7vw,32px); height:clamp(38px,10.5vw,43px); font-size:clamp(16px,5vw,20px); }
+      #hp-wordscramble-container .hpwsc-current.word-len-11 .hpwsc-slot,
+      #hp-wordscramble-container .hpwsc-current.word-len-11 .hpwsc-letter,
+      #hp-wordscramble-container .hpwsc-current.word-len-12 .hpwsc-slot,
+      #hp-wordscramble-container .hpwsc-current.word-len-12 .hpwsc-letter,
+      #hp-wordscramble-container .hpwsc-current.word-len-13 .hpwsc-slot,
+      #hp-wordscramble-container .hpwsc-current.word-len-13 .hpwsc-letter,
+      #hp-wordscramble-container .hpwsc-current.word-len-14 .hpwsc-slot,
+      #hp-wordscramble-container .hpwsc-current.word-len-14 .hpwsc-letter { width:clamp(22px,5.9vw,30px); min-width:22px; flex:0 0 clamp(22px,5.9vw,30px); height:clamp(36px,9.8vw,41px); border-radius:10px; font-size:clamp(15px,4.7vw,19px); }
       #hp-wordscramble-container .hpwsc-current.word-len-9 .hpwsc-slots,
       #hp-wordscramble-container .hpwsc-current.word-len-9 .hpwsc-bank,
       #hp-wordscramble-container .hpwsc-current.word-len-10 .hpwsc-slots,
-      #hp-wordscramble-container .hpwsc-current.word-len-10 .hpwsc-bank { gap:3px; }
+      #hp-wordscramble-container .hpwsc-current.word-len-10 .hpwsc-bank,
+      #hp-wordscramble-container .hpwsc-current.word-len-11 .hpwsc-slots,
+      #hp-wordscramble-container .hpwsc-current.word-len-11 .hpwsc-bank,
+      #hp-wordscramble-container .hpwsc-current.word-len-12 .hpwsc-slots,
+      #hp-wordscramble-container .hpwsc-current.word-len-12 .hpwsc-bank,
+      #hp-wordscramble-container .hpwsc-current.word-len-13 .hpwsc-slots,
+      #hp-wordscramble-container .hpwsc-current.word-len-13 .hpwsc-bank,
+      #hp-wordscramble-container .hpwsc-current.word-len-14 .hpwsc-slots,
+      #hp-wordscramble-container .hpwsc-current.word-len-14 .hpwsc-bank { gap:3px; }
       #hp-wordscramble-container .hp-modal-actions { flex-direction:column; gap:8px; }
       #hp-wordscramble-container #hp-wsc-overlay .hp-modal { padding:22px 16px; }
       #hp-wordscramble-container .hp-result-stats-line { flex-wrap:wrap; gap:6px 12px; }
