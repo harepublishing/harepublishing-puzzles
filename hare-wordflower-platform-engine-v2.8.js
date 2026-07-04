@@ -10,7 +10,7 @@ window.HareWordFlowerEngine = (() => {
   const Core = window.HarePuzzleCore || null;
   const STORAGE_PREFIX = "hp2_wf_";
   const SAVE_VERSION = 2;
-  const MORE_PUZZLES_URL = "https://www.harepublishing.com/online-puzzles";
+  const MORE_PUZZLES_URL = "/puzzlers-hub";
   const SHOP_URL = "https://www.harepublishing.com/shop";
 
   const LEVELS = [
@@ -49,15 +49,15 @@ window.HareWordFlowerEngine = (() => {
 
   function getFallbackPlayPath(){
     const access = window.HareWordFlowerAccessConfig || {};
-    return window.HareWordFlowerPlayUrl || window.location.pathname || access.publicPlayUrl || "/word-flower-test";
+    return window.HareWordFlowerPlayUrl || window.location.pathname || access.publicPlayUrl || "/word-flower";
   }
 
   function getCollectionUrl(){
     const access = window.HareWordFlowerAccessConfig || {};
     try{
-      return new URL(access.publicPlayUrl || "/word-flower-test", window.location.origin).href;
+      return new URL(access.publicPlayUrl || "/word-flower", window.location.origin).href;
     }catch{
-      return "https://www.harepublishing.com/word-flower-test";
+      return "https://www.harepublishing.com/word-flower";
     }
   }
 

@@ -9,7 +9,7 @@ window.HareWordrowEngine = (() => {
   const VERSION = "wordrow-platform-engine-v2.6";
   const Core = window.HarePuzzleCore || null;
   const STORAGE_PREFIX = "hp2_wr_";
-  const MORE_PUZZLES_URL = "https://www.harepublishing.com/puzzlers-hub";
+  const MORE_PUZZLES_URL = "/puzzlers-hub";
   const SHOP_URL = "https://www.harepublishing.com/shop";
 
 
@@ -1160,7 +1160,7 @@ window.HareWordrowEngine = (() => {
         <span>Check back for the next Wordrow puzzle.</span>
       </div>
       <div class="hp-wordrow-modal-buttons">
-        <a class="hp-link-btn primary" href="/puzzlers-hub">Explore More Puzzles</a>
+        <a class="hp-link-btn primary" href="${escapeHtml((window.HarePlatformNextCta&&window.HarePlatformNextCta().url)||'/membership')}">${escapeHtml((window.HarePlatformNextCta&&window.HarePlatformNextCta().label)||'Unlock the Full Library')}</a>
         <button class="hp-link-btn secondary share-action" type="button" data-a="share-result">Share This Puzzle</button>
       </div>
     `;
@@ -1507,7 +1507,7 @@ window.HareWordrowEngine = (() => {
       const id = actionEl.getAttribute("data-puzzle-id");
       hideOverlay();
       if (typeof window.HareWordrowLoadPuzzle === "function") window.HareWordrowLoadPuzzle(id, { scroll: false });
-      else window.location.href = `${window.location.pathname || "/wordrow-test"}?puzzle=${encodeURIComponent(id)}`;
+      else window.location.href = `${window.location.pathname || "/wordrow"}?puzzle=${encodeURIComponent(id)}`;
     }
   });
 

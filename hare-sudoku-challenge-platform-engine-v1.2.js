@@ -84,7 +84,7 @@ window.HareSudokuChallengePlatformEngine = {
       }
     }
 
-    const LINK_MORE_ONLINE = "https://harepublishing.com/puzzlers-hub";
+    const LINK_MORE_ONLINE = "/puzzlers-hub";
     const LINK_SHOP = "https://harepublishing.com/shop";
     const Core = window.HarePuzzleCore || null;
     const DEFAULT_MODE = "challenge";
@@ -850,7 +850,7 @@ window.HareSudokuChallengePlatformEngine = {
       const pageUrl = window.location.href;
       const collectionUrl = window.HareSudokuChallengePlayUrl
         ? new URL(window.HareSudokuChallengePlayUrl, window.location.origin).href
-        : "https://www.harepublishing.com/sudoku-challenge-test";
+        : "https://www.harepublishing.com/sudoku-challenge";
       const publishedDate = String(cfg.puzzleDate || pageData?.puzzleDate || pageData?.date || "").trim();
 
       const schemaData = {
@@ -1018,7 +1018,7 @@ window.HareSudokuChallengePlatformEngine = {
           <span>Check back tomorrow for the next Sudoku Challenge.</span>
         </div>
         <div class="hp-overlay-action-row">
-          <a class="hp-overlay-action-btn primary-action" href="/puzzlers-hub">Explore More Puzzles</a>
+          <a class="hp-overlay-action-btn primary-action" href="${escapeHtml((window.HarePlatformNextCta&&window.HarePlatformNextCta().url)||'/membership')}">${escapeHtml((window.HarePlatformNextCta&&window.HarePlatformNextCta().label)||'Unlock the Full Library')}</a>
           <button class="hp-overlay-action-btn share-action" type="button" data-a="share">Share This Puzzle</button>
         </div>
       `;

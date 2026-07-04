@@ -393,7 +393,7 @@ window.HareKnightsKnavesPlatformEngine = {
       if (typeof window.HareKnightsGetNextPuzzleOptions !== "function") {
         return typeof window.HareKnightsRequestNextPuzzle === "function"
           ? `<div class="hp-knights-modal-buttons"><button type="button" class="hp-knights-primary" data-a="request-next">Play Your Next Puzzle</button><button type="button" class="hp-knights-secondary share-action" data-a="share">Share This Puzzle</button></div>`
-          : `<div class="hp-knights-modal-buttons"><a class="hp-knights-primary" href="/puzzlers-hub">Puzzlers Hub</a><button type="button" class="hp-knights-secondary share-action" data-a="share">Share This Puzzle</button></div>`;
+          : `<div class="hp-knights-modal-buttons"><a class="hp-knights-primary" href="${escapeHtml((window.HarePlatformNextCta&&window.HarePlatformNextCta().url)||'/membership')}">${escapeHtml((window.HarePlatformNextCta&&window.HarePlatformNextCta().label)||'Unlock the Full Library')}</a><button type="button" class="hp-knights-secondary share-action" data-a="share">Share This Puzzle</button></div>`;
       }
 
       let options = null;
@@ -421,7 +421,7 @@ window.HareKnightsKnavesPlatformEngine = {
         return `<div class="hp-knights-overlay-next-copy"><strong>You're caught up on ${escapeHtml(preferred)}!</strong><span>Check back tomorrow for the next ${escapeHtml(preferred)} puzzle.</span>${remainingText ? `<span>${escapeHtml(remainingText)}</span>` : ""}</div><div class="hp-knights-modal-buttons"><button type="button" class="hp-knights-primary" data-a="request-next" data-next-kind="alternate">Try ${escapeHtml(altMode)} #${escapeHtml(alt.puzzleId)}</button>${shareButton}</div>`;
       }
       if (options?.allDone) {
-        return `<div class="hp-knights-overlay-next-copy"><strong>You're all caught up!</strong><span>Explore more puzzles in the Puzzlers Hub.</span></div><div class="hp-knights-modal-buttons"><a class="hp-knights-primary" href="/puzzlers-hub">Explore More Puzzles</a>${shareButton}</div>`;
+        return `<div class="hp-knights-overlay-next-copy"><strong>You're all caught up!</strong><span>Explore more puzzles in the Puzzlers Hub.</span></div><div class="hp-knights-modal-buttons"><a class="hp-knights-primary" href="${escapeHtml((window.HarePlatformNextCta&&window.HarePlatformNextCta().url)||'/membership')}">${escapeHtml((window.HarePlatformNextCta&&window.HarePlatformNextCta().label)||'Unlock the Full Library')}</a>${shareButton}</div>`;
       }
       return `<div class="hp-knights-overlay-next-copy"><strong>You're all caught up!</strong><span>Check back tomorrow.</span></div><div class="hp-knights-modal-buttons">${shareButton}</div>`;
     }

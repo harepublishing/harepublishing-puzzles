@@ -10,7 +10,7 @@ window.HareWordScramblePlatformEngine = (() => {
   const VERSION = "word-scramble-platform-engine-v2.8";
   const Core = window.HarePuzzleCore || null;
   const STORAGE_PREFIX = "hp2_wsc_";
-  const MORE_PUZZLES_URL = "https://www.harepublishing.com/online-puzzles";
+  const MORE_PUZZLES_URL = "/puzzlers-hub";
   const SHOP_URL = "https://www.harepublishing.com/shop";
 
   const wordScrambleStatusAdapter = {
@@ -1025,7 +1025,7 @@ window.HareWordScramblePlatformEngine = (() => {
       <div class="hp-recommend-title">You're all caught up!</div>
       <div class="hp-recommend-copy">Check back for the next Word Scramble puzzle, or explore more puzzles in the Puzzlers Hub.</div>
       <div class="hp-modal-actions">
-        <a class="hp-link-btn primary" href="/puzzlers-hub">Explore More Puzzles</a>
+        <a class="hp-link-btn primary" href="${escapeHtml((window.HarePlatformNextCta&&window.HarePlatformNextCta().url)||'/membership')}">${escapeHtml((window.HarePlatformNextCta&&window.HarePlatformNextCta().label)||'Unlock the Full Library')}</a>
         <button class="hp-link-btn share" data-a="share-result">Share This Puzzle</button>
       </div>
     </div>`;

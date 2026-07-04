@@ -887,7 +887,7 @@ window.HareSudokuPlatformEngine = {
 
       const nowYear = new Date().getFullYear();
       const pageUrl = window.location.href;
-      const collectionUrl = new URL(pageData.morePuzzlesUrl || "/sudoku-archive", window.location.origin).href;
+      const collectionUrl = new URL(pageData.morePuzzlesUrl || "/sudoku-library", window.location.origin).href;
       const puzzleId = String(cfg?.puzzleId || pageData?.puzzleId || "").trim();
       const puzzleDate = String(pageData?.puzzleDate || pageData?.date || "").trim();
       const schemaName = puzzleId ? `Sudoku Puzzle #${puzzleId}` : "Sudoku Puzzle";
@@ -1085,7 +1085,7 @@ window.HareSudokuPlatformEngine = {
             <span>Check back tomorrow for the next Sudoku puzzle.</span>
           </div>
           <div class="hp-sudoku-next-panel-actions">
-            <a class="hp-sudoku-next-panel-btn primary" href="/puzzlers-hub">Explore More Puzzles</a>
+            <a class="hp-sudoku-next-panel-btn primary" href="${escapeHtml((window.HarePlatformNextCta&&window.HarePlatformNextCta().url)||'/membership')}">${escapeHtml((window.HarePlatformNextCta&&window.HarePlatformNextCta().label)||'Unlock the Full Library')}</a>
             ${shareButton}
           </div>
         `;
@@ -1096,10 +1096,10 @@ window.HareSudokuPlatformEngine = {
       overlayNextPanelEl.innerHTML = `
         <div class="hp-sudoku-overlay-next-copy">
           <strong>Another Sudoku challenge is available.</strong>
-          <span>Open the Sudoku Archive to choose your next puzzle.</span>
+          <span>Open the Sudoku Library to choose your next puzzle.</span>
         </div>
         <div class="hp-sudoku-next-panel-actions">
-          <a class="hp-sudoku-next-panel-btn primary" href="${escapeHtml(pageData.morePuzzlesUrl || "/sudoku-archive")}">Sudoku Archive</a>
+          <a class="hp-sudoku-next-panel-btn primary" href="${escapeHtml(pageData.morePuzzlesUrl || "/sudoku-library")}">Sudoku Library</a>
           ${shareButton}
         </div>
       `;

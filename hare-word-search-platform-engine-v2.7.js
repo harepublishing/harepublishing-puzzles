@@ -56,7 +56,7 @@ window.HareWordSearchEngine = {
       }
     }
 
-    const MORE_PUZZLES_URL = pageData?.morePuzzlesUrl || "https://harepublishing.com/puzzlers-hub";
+    const MORE_PUZZLES_URL = pageData?.morePuzzlesUrl || "/puzzlers-hub";
     const SHOP_URL = pageData?.shopUrl || "https://harepublishing.com/shop";
 
     function escapeHtml(str) {

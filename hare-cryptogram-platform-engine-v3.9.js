@@ -87,9 +87,9 @@ window.HareCryptogramEngine = {
     const puzzleKind = titleCase(data.type || data.puzzleType || "");
     const answerButtonLabel = resolveAnswerButtonLabel();
     const puzzleHint = resolvePuzzleHint();
-    const MORE_PUZZLES_URL = data.morePuzzlesUrl || "https://www.harepublishing.com/online-puzzles";
+    const MORE_PUZZLES_URL = data.morePuzzlesUrl || "/puzzlers-hub";
     const SHOP_URL = data.shopUrl || "https://www.harepublishing.com/shop";
-	    const ARCHIVE_URL = data.archiveUrl || "https://www.harepublishing.com/cryptogram-archive";
+	    const ARCHIVE_URL = data.archiveUrl || "https://www.harepublishing.com/cryptogram-library";
 	    const STORAGE_KEY = data.storageKey || Core.makeStorageKey(CRYPTOGRAM_STORAGE_PREFIX, puzzleId);
 
     if (!puzzleText || !solutionText) {
@@ -120,7 +120,7 @@ window.HareCryptogramEngine = {
 
 	      const pageUrl = window.location.href;
 	      const accessConfig = window.HareCryptogramAccessConfig || {};
-	      const collectionUrl = `https://www.harepublishing.com${accessConfig.publicPlayUrl || "/cryptogram-test"}`;
+	      const collectionUrl = `https://www.harepublishing.com${accessConfig.publicPlayUrl || "/cryptogram"}`;
 	      const puzzleDate = String(data.puzzleDate || "").trim();
 
       const schemaData = {
@@ -1743,7 +1743,7 @@ window.HareCryptogramEngine = {
 	      if (window.location.pathname) return window.location.pathname;
 	      return accessConfig.mode === "member"
 	        ? (accessConfig.memberPlayUrl || "/cryptogram-member")
-	        : (accessConfig.publicPlayUrl || "/cryptogram-test");
+	        : (accessConfig.publicPlayUrl || "/cryptogram");
 	    }
 
     function getShareText() {
@@ -2075,7 +2075,7 @@ window.HareCryptogramEngine = {
           <span>Check back for the next Cryptogram puzzle.</span>
         </div>
         <div class="hp-crypto-modal-buttons">
-          <a class="hp-link-btn primary" href="/puzzlers-hub">Explore More Puzzles</a>
+          <a class="hp-link-btn primary" href="${escapeHtml((window.HarePlatformNextCta&&window.HarePlatformNextCta().url)||'/membership')}">${escapeHtml((window.HarePlatformNextCta&&window.HarePlatformNextCta().label)||'Unlock the Full Library')}</a>
           <button class="hp-link-btn secondary share-action" type="button" data-a="share">Share This Puzzle</button>
         </div>
       `;

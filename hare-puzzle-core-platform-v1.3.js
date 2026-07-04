@@ -412,9 +412,9 @@
       storagePrefix: config.storagePrefix || config.prefix || "",
       storagePrefixes: normalizePrefixes(config.storagePrefixes || config.prefixes || config.storagePrefix || config.prefix),
       statusAdapter: config.statusAdapter || null,
-      publicPlayUrl: config.publicPlayUrl || "/cryptogram-test",
+      publicPlayUrl: config.publicPlayUrl || "/cryptogram",
       memberPlayUrl: config.memberPlayUrl || "/cryptogram-member",
-      archiveUrl: config.archiveUrl || "/cryptogram-archive"
+      archiveUrl: config.archiveUrl || "/cryptogram-library"
     };
   }
 

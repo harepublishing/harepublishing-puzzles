@@ -30,7 +30,7 @@ window.HareKrissKrossEngine = {
     const puzzleDate = formatPuzzleDate(data.puzzleDate || "");
     const placements = Array.isArray(data.placements) ? data.placements : [];
 
-    const MORE_PUZZLES_URL = data.morePuzzlesUrl || "https://www.harepublishing.com/online-puzzles";
+    const MORE_PUZZLES_URL = data.morePuzzlesUrl || "/puzzlers-hub";
     const SHOP_URL = data.shopUrl || "https://www.harepublishing.com/shop";
     const STORAGE_KEY = data.storageKey || `hp2_kx_${puzzleId}`;
 
@@ -747,7 +747,7 @@ window.HareKrissKrossEngine = {
           <span>Check back for the next Kriss Kross puzzle.</span>
         </div>
         <div class="hp-kk-modal-buttons">
-          <a class="hp-link-btn primary" href="https://www.harepublishing.com/puzzlers-hub">Explore More Puzzles</a>
+          <a class="hp-link-btn primary" href="${escapeHtml((window.HarePlatformNextCta&&window.HarePlatformNextCta().url)||'/membership')}">${escapeHtml((window.HarePlatformNextCta&&window.HarePlatformNextCta().label)||'Unlock the Full Library')}</a>
           <button class="hp-link-btn secondary share-action" type="button" data-a="share">Share This Puzzle</button>
         </div>
       `;
