@@ -445,7 +445,18 @@ window.HareWordScramblePlatformEngine = (() => {
     #hp-wordscramble-container .hpwsc-word-panel h3 {
       margin:0 0 8px;
       color:#167966;
-      font-size:18px;
+      font-size:1.28rem;
+      line-height:1.15;
+      font-weight:900;
+      text-align:center;
+    }
+
+    #hp-wordscramble-container .hpwsc-word-progress {
+      display:block;
+      margin:0 0 12px;
+      color:#167966;
+      font-size:.86rem;
+      line-height:1.2;
       font-weight:900;
       text-align:center;
     }
@@ -469,15 +480,26 @@ window.HareWordScramblePlatformEngine = (() => {
       border-radius:12px;
       padding:8px 10px;
       font-family:inherit;
-      font-size:14px;
+      font-size:.78rem;
       font-weight:900;
-      text-align:left;
+      line-height:1.05;
+      letter-spacing:0;
+      text-align:center;
       cursor:pointer;
       display:flex;
       align-items:center;
-      justify-content:space-between;
-      gap:8px;
+      justify-content:center;
+      gap:6px;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
       transition:all .18s ease;
+    }
+
+    #hp-wordscramble-container .hpwsc-word-text {
+      min-width:0;
+      overflow:hidden;
+      text-overflow:ellipsis;
     }
 
     #hp-wordscramble-container .hpwsc-word-item:hover:not(:disabled),
@@ -503,6 +525,8 @@ window.HareWordScramblePlatformEngine = (() => {
       font-weight:900;
       color:#00A54F;
       flex:0 0 auto;
+      font-size:.92rem;
+      line-height:1;
     }
 
     #hp-wordscramble-container .hpwsc-word-item.is-revealed .hpwsc-word-check {
@@ -696,6 +720,20 @@ window.HareWordScramblePlatformEngine = (() => {
       #hp-wordscramble-container .hpwsc-word-list { max-height:440px; }
     }
 
+    @media(max-width:760px){
+      #hp-wordscramble-container .hpwsc-word-list {
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        max-height:none;
+        overflow:visible;
+        padding-right:0;
+      }
+      #hp-wordscramble-container .hpwsc-word-item {
+        min-height:34px;
+        padding:6px 7px;
+        font-size:.76rem;
+      }
+    }
+
     @media(max-width:560px){
       #hp-wordscramble-container .hpwsc-panel { padding:13px; }
       #hp-wordscramble-container .hpwsc-info-buttons { grid-template-columns:repeat(2,minmax(0,1fr)); gap:6px; }
@@ -706,15 +744,15 @@ window.HareWordScramblePlatformEngine = (() => {
       #hp-wordscramble-container .hpwsc-actions { margin-top:10px; }
       #hp-wordscramble-container .hpwsc-info-body { height:82px; min-height:82px; }
       #hp-wordscramble-container .hpwsc-slots,
-      #hp-wordscramble-container .hpwsc-bank { justify-content:flex-start; gap:4px; max-width:100%; overflow-x:auto; overflow-y:hidden; padding-bottom:2px; }
+      #hp-wordscramble-container .hpwsc-bank { justify-content:center; gap:clamp(2px,.75vw,4px); max-width:100%; overflow:hidden; padding-bottom:2px; }
       #hp-wordscramble-container .hpwsc-slot,
-      #hp-wordscramble-container .hpwsc-letter { width:clamp(24px,7.2vw,36px); min-width:24px; flex:0 0 clamp(24px,7.2vw,36px); height:clamp(40px,11vw,45px); border-radius:12px; font-size:clamp(17px,5.6vw,22px); }
+      #hp-wordscramble-container .hpwsc-letter { width:auto; min-width:0; max-width:42px; flex:1 1 0; height:clamp(38px,10.5vw,45px); border-radius:12px; font-size:clamp(16px,5.4vw,22px); }
       #hp-wordscramble-container .hpwsc-current.word-len-8 .hpwsc-slot,
       #hp-wordscramble-container .hpwsc-current.word-len-8 .hpwsc-letter,
       #hp-wordscramble-container .hpwsc-current.word-len-9 .hpwsc-slot,
       #hp-wordscramble-container .hpwsc-current.word-len-9 .hpwsc-letter,
       #hp-wordscramble-container .hpwsc-current.word-len-10 .hpwsc-slot,
-      #hp-wordscramble-container .hpwsc-current.word-len-10 .hpwsc-letter { width:clamp(24px,6.7vw,32px); min-width:24px; flex:0 0 clamp(24px,6.7vw,32px); height:clamp(38px,10.5vw,43px); font-size:clamp(16px,5vw,20px); }
+      #hp-wordscramble-container .hpwsc-current.word-len-10 .hpwsc-letter { max-width:38px; height:clamp(37px,10vw,43px); font-size:clamp(15px,4.8vw,20px); }
       #hp-wordscramble-container .hpwsc-current.word-len-11 .hpwsc-slot,
       #hp-wordscramble-container .hpwsc-current.word-len-11 .hpwsc-letter,
       #hp-wordscramble-container .hpwsc-current.word-len-12 .hpwsc-slot,
@@ -722,7 +760,7 @@ window.HareWordScramblePlatformEngine = (() => {
       #hp-wordscramble-container .hpwsc-current.word-len-13 .hpwsc-slot,
       #hp-wordscramble-container .hpwsc-current.word-len-13 .hpwsc-letter,
       #hp-wordscramble-container .hpwsc-current.word-len-14 .hpwsc-slot,
-      #hp-wordscramble-container .hpwsc-current.word-len-14 .hpwsc-letter { width:clamp(22px,5.9vw,30px); min-width:22px; flex:0 0 clamp(22px,5.9vw,30px); height:clamp(36px,9.8vw,41px); border-radius:10px; font-size:clamp(15px,4.7vw,19px); }
+      #hp-wordscramble-container .hpwsc-current.word-len-14 .hpwsc-letter { max-width:34px; height:clamp(35px,9.6vw,41px); border-radius:10px; font-size:clamp(14px,4.4vw,19px); }
       #hp-wordscramble-container .hpwsc-current.word-len-9 .hpwsc-slots,
       #hp-wordscramble-container .hpwsc-current.word-len-9 .hpwsc-bank,
       #hp-wordscramble-container .hpwsc-current.word-len-10 .hpwsc-slots,
@@ -1125,13 +1163,13 @@ window.HareWordScramblePlatformEngine = (() => {
     const solved=solvedSet();
     const revealed=revealedSet();
     const current=getCurrentEntry();
-    return `<div class="hpwsc-panel hpwsc-word-panel"><h3>Words</h3><div class="hpwsc-word-list">${puzzleData.map(item=>{
+    return `<div class="hpwsc-panel hpwsc-word-panel"><h3>Word List</h3><span class="hpwsc-word-progress">Words Unscrambled: ${solvedCount().toLocaleString()}/${puzzleData.length.toLocaleString()}</span><div class="hpwsc-word-list">${puzzleData.map(item=>{
       const isSolved=solved.has(item.answer);
       const isRevealed=revealed.has(item.answer);
       const active=current&&current.id===item.id&&!isSolved&&!isRevealed&&!isEnded();
       const label=(state.revealed||isSolved||isRevealed)?item.answer:item.scrambled;
-      const marker=isSolved?`<span class="hpwsc-word-check">✓</span>`:(isRevealed?`<span class="material-symbols-outlined hpwsc-word-check" aria-hidden="true">visibility</span>`:"");
-      return `<button type="button" class="hpwsc-word-item ${isSolved?"is-solved":""} ${isRevealed?"is-revealed":""} ${active?"is-active":""}" data-word-id="${escapeHtml(item.id)}"><span>${escapeHtml(label)}</span>${marker}</button>`;
+      const marker=isSolved?`<span class="hpwsc-word-check" aria-hidden="true">✓</span>`:(isRevealed?`<span class="material-symbols-outlined hpwsc-word-check" aria-hidden="true">visibility</span>`:"");
+      return `<button type="button" class="hpwsc-word-item ${isSolved?"is-solved":""} ${isRevealed?"is-revealed":""} ${active?"is-active":""}" data-word-id="${escapeHtml(item.id)}">${marker}<span class="hpwsc-word-text">${escapeHtml(label)}</span></button>`;
     }).join("")}</div></div>`;
   }
 
@@ -1141,7 +1179,6 @@ window.HareWordScramblePlatformEngine = (() => {
       <div class="hpwsc-layout">
         <div class="hpwsc-panel hpwsc-puzzle-panel">
           ${puzzle.theme ? `<h3 class="hpwsc-theme">${escapeHtml(puzzle.theme)}</h3>` : ""}
-          <div class="hpwsc-progress-wrap"><div class="hpwsc-progress-line"><span>Progress</span><span>${completedCount().toLocaleString()} / ${puzzleData.length.toLocaleString()} words</span></div><div class="hpwsc-progress-bar"><div class="hpwsc-progress-fill" style="width:${progressPercent()}%"></div></div></div>
           ${renderCurrent()}
         </div>
         ${renderWordList()}

@@ -665,6 +665,7 @@ window.HareKrissKrossEngine = {
 
       if (!listEl) return;
 
+      const previousScrollTop = listEl.scrollTop;
       const usedWords = new Set(Object.values(state.assignments).filter(Boolean));
 
       if (pillEl) pillEl.textContent = `Words Placed: ${placedCount()}/${normalizedPlacements.length}`;
@@ -680,16 +681,24 @@ window.HareKrissKrossEngine = {
         if (used && !found) classes.push("is-used");
         if (found || state.revealed) classes.push("is-found");
 
+        const icon = (found || state.revealed)
+          ? `<span class="hp-kk-word-check" aria-hidden="true">✓</span>`
+          : "";
+
         return `
           <button
             type="button"
             class="${classes.join(" ")}"
             data-word="${escapeHtml(word)}"
             ${isFinished() ? "disabled" : ""}>
-            ${escapeHtml(word)}
+            ${icon}<span class="hp-kk-word-text">${escapeHtml(word)}</span>
           </button>
         `;
       }).join("");
+
+      listEl.scrollTop = previousScrollTop;
+      window.requestAnimationFrame(() => { listEl.scrollTop = previousScrollTop; });
+      setTimeout(() => { listEl.scrollTop = previousScrollTop; }, 0);
 
       listEl.querySelectorAll("[data-word]").forEach(btn => {
         btn.addEventListener("click", () => {
@@ -907,7 +916,7 @@ window.HareKrissKrossEngine = {
               </div>
 
               <div class="hp-kk-words-header">
-                <h3>Words</h3>
+                <h3>Word List</h3>
                 <span class="hp-kk-pill" id="hp-kk-pill">Words Placed: 0/0</span>
               </div>
 

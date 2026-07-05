@@ -646,7 +646,7 @@ window.HareWordSearchEngine = {
       const wordCountValue = mount.querySelector("#hp-ws-word-count");
 
       if (foundValue) foundValue.textContent = formatFoundCount();
-      if (wordCountValue) wordCountValue.textContent = `Words Found: ${state.foundWords.length} of ${normalizedWords.length}`;
+      if (wordCountValue) wordCountValue.textContent = `Words Found: ${state.foundWords.length}/${normalizedWords.length}`;
       if (remainingValue) remainingValue.textContent = String(normalizedWords.length - state.foundWords.length);
       if (sizeValue) sizeValue.textContent = `${rowCount}×${colCount}`;
       if (progressFill) progressFill.style.width = `${progressPercent()}%`;
@@ -940,8 +940,8 @@ window.HareWordSearchEngine = {
               </div>
 
               <div class="hp-ws-words-header">
-                <h3>Find These Words</h3>
-                <span class="hp-ws-word-count" id="hp-ws-word-count">Words Found: 0 of 0</span>
+                <h3>Word List</h3>
+                <span class="hp-ws-word-count" id="hp-ws-word-count">Words Found: 0/0</span>
               </div>
               <div class="hp-ws-word-list" id="hp-ws-word-list"></div>
             </div>
