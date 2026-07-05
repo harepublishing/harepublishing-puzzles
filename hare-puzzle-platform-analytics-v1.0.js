@@ -12,9 +12,7 @@
   "use strict";
 
   const VERSION = "hare-puzzle-platform-analytics-v1.0";
-  const ENDPOINT =
-    window.HARE_PUZZLE_ANALYTICS_ENDPOINT ||
-    "https://script.google.com/macros/s/AKfycbwb0uiowxfn8f_bTTPqI3jVBYRu8l96SVRqdS_0tg7FESslgVHA6j0lyKMApXnMhx9X/exec";
+  const ENDPOINT = window.HARE_PUZZLE_ANALYTICS_ENDPOINT || "";
 
   const PUZZLES = [
     {
