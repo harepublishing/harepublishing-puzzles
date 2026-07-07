@@ -538,12 +538,14 @@ window.HareCryptogramEngine = {
         }
 
         #hp-cryptogram-container .hp-crypto-secondary {
-          border: 1px solid #ddd;
+          border: 2px solid #ddd;
           background: #fff;
           color: #333;
           border-radius: 12px;
-          min-height: 44px;
-          padding: 10px 12px;
+          min-height: 40px;
+          padding: 9px 15px;
+          font-size: 13px;
+          line-height: 1.1;
           font-weight: 900;
           cursor: pointer;
           transition: all .15s ease;
