@@ -14,6 +14,11 @@ window.HareCryptogramEngine = {
 	      container.__hareCryptogramHandlers = null;
 	    }
 
+	    if (container.__hareCryptogramResizeHandler) {
+	      window.removeEventListener("resize", container.__hareCryptogramResizeHandler);
+	      container.__hareCryptogramResizeHandler = null;
+	    }
+
     const mount = container.querySelector(".hp-mount") || container;
     const yearEl = container.querySelector("#hp-year") || document.getElementById("hp-year");
     if (yearEl) yearEl.textContent = new Date().getFullYear();
@@ -344,19 +349,38 @@ window.HareCryptogramEngine = {
         }
 
         #hp-cryptogram-container .hp-crypto-puzzle {
+          --hp-cg-char-width: 28px;
+          --hp-cg-letter-gap: 6px;
+          --hp-cg-word-row-gap: 18px;
+          --hp-cg-word-column-gap: 20px;
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
           align-items: flex-end;
-          gap: 18px 20px;
+          gap: var(--hp-cg-word-row-gap) var(--hp-cg-word-column-gap);
           margin: 28px auto 30px;
           max-width: 900px;
           line-height: 1;
         }
 
+        #hp-cryptogram-container .hp-crypto-puzzle.hp-crypto-fit-1 {
+          --hp-cg-char-width: 26px;
+          --hp-cg-letter-gap: 5px;
+        }
+
+        #hp-cryptogram-container .hp-crypto-puzzle.hp-crypto-fit-2 {
+          --hp-cg-char-width: 24px;
+          --hp-cg-letter-gap: 4px;
+        }
+
+        #hp-cryptogram-container .hp-crypto-puzzle.hp-crypto-fit-3 {
+          --hp-cg-char-width: 23px;
+          --hp-cg-letter-gap: 3px;
+        }
+
         #hp-cryptogram-container .hp-crypto-word {
           display: inline-flex;
-          gap: 6px;
+          gap: var(--hp-cg-letter-gap);
           white-space: nowrap;
           align-items: flex-end;
         }
@@ -366,7 +390,7 @@ window.HareCryptogramEngine = {
         }
 
         #hp-cryptogram-container .hp-crypto-char {
-          width: 28px;
+          width: var(--hp-cg-char-width);
           min-height: 52px;
           border: 0;
           background: transparent;
@@ -1357,19 +1381,33 @@ window.HareCryptogramEngine = {
           }
 
           #hp-cryptogram-container .hp-crypto-puzzle {
-            gap: 8px 12px;
+            --hp-cg-char-width: 23px;
+            --hp-cg-letter-gap: 6px;
+            --hp-cg-word-row-gap: 8px;
+            --hp-cg-word-column-gap: 12px;
           }
 
-          #hp-cryptogram-container .hp-crypto-char {
-            width: 23px;
+          #hp-cryptogram-container .hp-crypto-puzzle.hp-crypto-fit-1 {
+            --hp-cg-char-width: 22px;
+            --hp-cg-letter-gap: 5px;
+          }
+
+          #hp-cryptogram-container .hp-crypto-puzzle.hp-crypto-fit-2 {
+            --hp-cg-char-width: 21px;
+            --hp-cg-letter-gap: 4px;
+          }
+
+          #hp-cryptogram-container .hp-crypto-puzzle.hp-crypto-fit-3 {
+            --hp-cg-char-width: 20px;
+            --hp-cg-letter-gap: 3px;
           }
 
           #hp-cryptogram-container .hp-crypto-top {
-            font-size: 16px;
+            font-size: 18px;
           }
 
           #hp-cryptogram-container .hp-crypto-bottom {
-            font-size: 14px;
+            font-size: 16px;
           }
 
           #hp-cryptogram-container .hp-crypto-kb {
@@ -2184,6 +2222,35 @@ window.HareCryptogramEngine = {
       modalEl.setAttribute("aria-hidden", "true");
     }
 
+    function fitPuzzleToWidth() {
+      const puzzleEl = mount.querySelector(".hp-crypto-puzzle");
+      if (!puzzleEl) return;
+
+      const fitClasses = ["hp-crypto-fit-1", "hp-crypto-fit-2", "hp-crypto-fit-3"];
+      puzzleEl.classList.remove(...fitClasses);
+
+      const availableWidth = Math.floor(puzzleEl.clientWidth);
+      if (!availableWidth) return;
+
+      const words = Array.from(puzzleEl.querySelectorAll(".hp-crypto-word"));
+      const comfortInset = window.matchMedia && window.matchMedia("(max-width: 760px)").matches ? 12 : 0;
+      const targetWidth = Math.max(0, availableWidth - comfortInset);
+      const hasWideWord = () => words.some(word => Math.ceil(word.scrollWidth) > targetWidth);
+
+      for (const fitClass of fitClasses) {
+        if (!hasWideWord()) break;
+        puzzleEl.classList.add(fitClass);
+      }
+    }
+
+    function schedulePuzzleFit() {
+      if (window.requestAnimationFrame) {
+        window.requestAnimationFrame(fitPuzzleToWidth);
+      } else {
+        setTimeout(fitPuzzleToWidth, 0);
+      }
+    }
+
     function render() {
       mount.innerHTML = `
         <div class="hp-crypto-shell">
@@ -2241,6 +2308,8 @@ window.HareCryptogramEngine = {
       `;
 
       bindEvents();
+      fitPuzzleToWidth();
+      schedulePuzzleFit();
 
       if (isFinished() && !overlayOpenedThisPageLoad) {
         setTimeout(showOverlay, 0);
@@ -2250,6 +2319,9 @@ window.HareCryptogramEngine = {
         detail: { puzzleId, storageKey: STORAGE_KEY }
       }));
     }
+
+    container.__hareCryptogramResizeHandler = schedulePuzzleFit;
+    window.addEventListener("resize", container.__hareCryptogramResizeHandler);
 
     function bindEvents() {
       mount.querySelectorAll("[data-cipher]").forEach(btn => {
