@@ -1,470 +1,3287 @@
 [
   {
     "puzzleId": 1,
-    "puzzleDate": "2025-01-05",
+    "puzzleDate": "2025-01-01",
     "type": "quote",
-    "topic": "life",
     "author": "Sean Patrick Flanery",
     "puzzleText": "YN ONJGKELTR KNYUA KEUK ANWF DWKWFG OGHD PLHH KEUTI ANW DNF. ~ OGUT VUKFLSI DHUTGFA",
-    "solutionText": "Do something today that your future self will thank you for. ~ Sean Patrick Flanery"
+    "solutionText": "Do something today that your future self will thank you for. ~ Sean Patrick Flanery",
+    "answer": ""
   },
   {
     "puzzleId": 2,
-    "puzzleDate": "2025-01-12",
+    "puzzleDate": "2025-01-02",
     "type": "quote",
-    "topic": "general",
     "author": "Oscar Wilde",
     "puzzleText": "R JGHN PJN ARDCBNAP PGAPNA. R GD GBVGZA AGPRATRNO VRPJ PJN LNAP. ~ XAQGF VRBON",
-    "solutionText": "I have the simplest tastes. I am always satisfied with the best. ~ Oscar Wilde"
+    "solutionText": "I have the simplest tastes. I am always satisfied with the best. ~ Oscar Wilde",
+    "answer": ""
   },
   {
     "puzzleId": 3,
-    "puzzleDate": "2025-01-19",
+    "puzzleDate": "2025-01-03",
     "type": "quote",
-    "topic": "general",
     "author": "Isak Dinesen",
     "puzzleText": "YDI QOEI TGE SUAYDRUZ RF FSNY HSYIE: FHISY, YISEF, GE YDI FIS. ~ RFSW KRUIFIU",
-    "solutionText": "The cure for anything is salt water: sweat, tears, or the sea. ~ Isak Dinesen"
+    "solutionText": "The cure for anything is salt water: sweat, tears, or the sea. ~ Isak Dinesen",
+    "answer": ""
   },
   {
     "puzzleId": 4,
-    "puzzleDate": "2025-01-26",
+    "puzzleDate": "2025-01-04",
     "type": "quote",
-    "topic": "general",
     "author": "Mark Twain",
     "puzzleText": "FGUUZLIE LB XLQS KJZLIE J WSMD ZGA WGI'D GFS. ~ CJUQ DFJLI",
-    "solutionText": "Worrying is like paying a debt you don't owe. ~ Mark Twain"
+    "solutionText": "Worrying is like paying a debt you don't owe. ~ Mark Twain",
+    "answer": ""
   },
   {
     "puzzleId": 5,
-    "puzzleDate": "2025-02-02",
+    "puzzleDate": "2025-01-05",
     "type": "quote",
-    "topic": "life",
     "author": "Carol Burnett",
     "puzzleText": "JBYL Q VCB VUCBPN SL YQDN. BJ JBN VCB WJ QI DJT SN. ~ VCTJY GFTBNII",
-    "solutionText": "Only I can change my life. No one can do it for me. ~ Carol Burnett"
+    "solutionText": "Only I can change my life. No one can do it for me. ~ Carol Burnett",
+    "answer": ""
   },
   {
     "puzzleId": 6,
-    "puzzleDate": "2025-02-09",
+    "puzzleDate": "2025-01-06",
     "type": "quote",
-    "topic": "life",
     "author": "Paulo Coelho",
     "puzzleText": "IBX CRR KXBPNK VBNO XB MDKPAHX GBAP RDTO, KBNO VBNO XB VROCP GBAP HCXF. ~ HCARB VBORFB",
-    "solutionText": "Not all storms come to disrupt your life, some come to clear your path. ~ Paulo Coelho"
+    "solutionText": "Not all storms come to disrupt your life, some come to clear your path. ~ Paulo Coelho",
+    "answer": ""
   },
   {
     "puzzleId": 7,
-    "puzzleDate": "2025-02-16",
+    "puzzleDate": "2025-01-07",
     "type": "quote",
-    "topic": "learning",
     "author": "Buddha",
     "puzzleText": "ZWQ IDRH DN QFQMAZWDRU. GWXZ ABP ZWDRS ABP VQYBIQ. ~ VPHHWX",
-    "solutionText": "The mind is everything. What you think you become. ~ Buddha"
+    "solutionText": "The mind is everything. What you think you become. ~ Buddha",
+    "answer": ""
   },
   {
     "puzzleId": 8,
-    "puzzleDate": "2025-02-23",
+    "puzzleDate": "2025-01-08",
     "type": "quote",
-    "topic": "general",
     "author": "Franklin D. Roosevelt",
     "puzzleText": "OQM WXIA OQDXK VM QZLM OW HMZG DE HMZG DOEMIH. â€” HGZXTIDX C. GWWEMLMIO",
-    "solutionText": "The only thing we have to fear is fear itself.  â€” Franklin D. Roosevelt"
+    "solutionText": "The only thing we have to fear is fear itself.  â€” Franklin D. Roosevelt",
+    "answer": ""
   },
   {
     "puzzleId": 9,
-    "puzzleDate": "2025-03-02",
+    "puzzleDate": "2025-01-09",
     "type": "quote",
-    "topic": "general",
     "author": "Vincent van Gogh",
     "puzzleText": "XBCIL LYVUXT IBC FSUC RK I TCBVCT SD TGIHH LYVUXT RBSWXYL LSXCLYCB. ~ JVUMCUL JIU XSXY",
-    "solutionText": "Great things are done by a series of small things brought together. ~ Vincent van Gogh"
+    "solutionText": "Great things are done by a series of small things brought together. ~ Vincent van Gogh",
+    "answer": ""
   },
   {
     "puzzleId": 10,
-    "puzzleDate": "2025-03-09",
+    "puzzleDate": "2025-01-10",
     "type": "quote",
-    "topic": "general",
     "author": "Aristotle",
     "puzzleText": "YJBB HJMPS DW ZNBR CASJ. ~ NQDWKAKBJ",
-    "solutionText": "Well begun is half done. ~ Aristotle"
+    "solutionText": "Well begun is half done. ~ Aristotle",
+    "answer": ""
   },
   {
     "puzzleId": 11,
-    "puzzleDate": "2025-03-16",
+    "puzzleDate": "2025-01-11",
     "type": "quote",
-    "topic": "general",
     "author": "Ralph Waldo Emerson",
     "puzzleText": "IUY GRXBM EYBRWPK IR IUY YWYXPYIHF. ~ XNBJU GNBMR YVYXKRW",
-    "solutionText": "The world belongs to the energetic. ~ Ralph Waldo Emerson"
+    "solutionText": "The world belongs to the energetic. ~ Ralph Waldo Emerson",
+    "answer": ""
   },
   {
     "puzzleId": 12,
-    "puzzleDate": "2025-03-23",
+    "puzzleDate": "2025-01-12",
     "type": "quote",
-    "topic": "learning",
     "author": "Ralph Waldo Emerson",
     "puzzleText": "WHT MTOXHC KR LWZHN SDT SDZHN. ~ OXZCSWSMT",
-    "solutionText": "One learns by doing the thing. ~ Aristotle"
+    "solutionText": "One learns by doing the thing. ~ Aristotle",
+    "answer": ""
   },
   {
     "puzzleId": 13,
-    "puzzleDate": "2025-03-30",
+    "puzzleDate": "2025-01-13",
     "type": "quote",
-    "topic": "general",
     "author": "Beverly Sills",
     "puzzleText": "LAIOI NOI PV WAVOLDRLW LV NPK EHNDI GVOLA SVXPS. ~ FIZIOHK WXHHW",
-    "solutionText": "There are no shortcuts to any place worth going. ~ Beverly Sills"
+    "solutionText": "There are no shortcuts to any place worth going. ~ Beverly Sills",
+    "answer": ""
   },
   {
     "puzzleId": 14,
-    "puzzleDate": "2025-04-06",
+    "puzzleDate": "2025-01-14",
     "type": "quote",
-    "topic": "success",
     "author": "Pablo Picasso",
     "puzzleText": "YWKXMC XA KJQ UMVCBYKXMCYO SQI KM AVWWQAA. ~ ZYLOM ZXWYAAM",
-    "solutionText": "Action is the foundational key to success. ~ Pablo Picasso"
+    "solutionText": "Action is the foundational key to success. ~ Pablo Picasso",
+    "answer": ""
   },
   {
     "puzzleId": 15,
-    "puzzleDate": "2025-04-13",
+    "puzzleDate": "2025-01-15",
     "type": "quote",
-    "topic": "success",
     "author": "Donald Knuth",
     "puzzleText": "VTQ QYCJEKQYV JM JYQâ€™D VJJBD WD SY QDDQYVWSB MQSVXGQ JM DXOOQDDMXB AJGI. ~ UJYSBU IYXVT",
-    "solutionText": "The enjoyment of oneâ€™s tools is an essential feature of successful work. ~ Donald Knuth"
+    "solutionText": "The enjoyment of oneâ€™s tools is an essential feature of successful work. ~ Donald Knuth",
+    "answer": ""
   },
   {
     "puzzleId": 16,
-    "puzzleDate": "2025-04-20",
+    "puzzleDate": "2025-01-16",
     "type": "quote",
-    "topic": "general",
     "author": "Cicero",
     "puzzleText": "O WFFJ IKEPFDE TFFSR KR YKSV O TFUC IKEPFDE O RFDY. ~ QKQVWF",
-    "solutionText": "A room without books is like a body without a soul. ~ Cicero"
+    "solutionText": "A room without books is like a body without a soul. ~ Cicero",
+    "answer": ""
   },
   {
     "puzzleId": 17,
-    "puzzleDate": "2025-04-27",
+    "puzzleDate": "2025-01-17",
     "type": "quote",
-    "topic": "learning",
     "author": "Confucius",
     "puzzleText": "QM WN VMXY MV PNLJXRXB RC XNLJ QM SRCYMZ. ~ GMXVDGRDC",
-    "solutionText": "To be fond of learning is near to wisdom. ~ Confucius"
+    "solutionText": "To be fond of learning is near to wisdom. ~ Confucius",
+    "answer": ""
   },
   {
     "puzzleId": 18,
-    "puzzleDate": "2025-05-04",
+    "puzzleDate": "2025-01-18",
     "type": "quote",
-    "topic": "general",
     "author": "Aristotle",
     "puzzleText": "EW ZSWXC QTXEXQXJF, CW YWEIXYN. ~ ZTXJEWEGP",
-    "solutionText": "To avoid criticism, do nothing. ~ Aristotle"
+    "solutionText": "To avoid criticism, do nothing. ~ Aristotle",
+    "answer": ""
   },
   {
     "puzzleId": 19,
-    "puzzleDate": "2025-05-11",
+    "puzzleDate": "2025-01-19",
     "type": "quote",
-    "topic": "general",
     "author": "Victor Hugo",
     "puzzleText": "CL DCR RILQE K EHCRRJ GRRF HJRELE K IFXERQ. ~ YXHPRF COWR",
-    "solutionText": "He who opens a school door closes a prison. ~ Victor Hugo"
+    "solutionText": "He who opens a school door closes a prison. ~ Victor Hugo",
+    "answer": ""
   },
   {
     "puzzleId": 20,
-    "puzzleDate": "2025-05-18",
+    "puzzleDate": "2025-01-20",
     "type": "quote",
-    "topic": "general",
     "author": "Ralph Waldo Emerson",
     "puzzleText": "WPWIQ DÄ²YUJ TDU HYIUJ DB DCDJWMI. ~ IDGZR TDGAF WCWIUFB",
-    "solutionText": "Every artist was first an amateur. ~ Ralph Waldo Emerson"
+    "solutionText": "Every artist was first an amateur. ~ Ralph Waldo Emerson",
+    "answer": ""
   },
   {
     "puzzleId": 21,
-    "puzzleDate": "2025-05-25",
+    "puzzleDate": "2025-01-21",
     "type": "quote",
-    "topic": "learning",
     "author": "Jimi Hendrix",
     "puzzleText": "ZLKVMSBJS TWSHZT, UGF VATBKN MATFSLT. ~ CANA OSLBQAI",
-    "solutionText": "Knowledge speaks, but wisdom listens. ~ Jimi Hendrix"
+    "solutionText": "Knowledge speaks, but wisdom listens. ~ Jimi Hendrix",
+    "answer": ""
   },
   {
     "puzzleId": 22,
-    "puzzleDate": "2025-06-01",
+    "puzzleDate": "2025-01-22",
     "type": "quote",
-    "topic": "general",
     "author": "Napoleon Hill",
     "puzzleText": "NCHRP RBH WJH QHZNOONOZ UFNOWP FY RTT YFBWVOHP. ~ ORUFTHFO JNTT",
-    "solutionText": "Ideas are the beginning points of all fortunes. ~ Napoleon Hill"
+    "solutionText": "Ideas are the beginning points of all fortunes. ~ Napoleon Hill",
+    "answer": ""
   },
   {
     "puzzleId": 23,
-    "puzzleDate": "2025-06-08",
+    "puzzleDate": "2025-01-23",
     "type": "quote",
-    "topic": "general",
     "author": "Johann Wolfgang von Goethe",
     "puzzleText": "KR KNJZE JQ SDQU. KR DHK JQ Ä²WWJHGOK. ~ CRNDZZ XROWBDZB ARZ BRSKNS",
-    "solutionText": "To think is easy. To act is difficult. ~ Johann Wolfgang von Goethe"
+    "solutionText": "To think is easy. To act is difficult. ~ Johann Wolfgang von Goethe",
+    "answer": ""
   },
   {
     "puzzleId": 24,
-    "puzzleDate": "2025-06-15",
+    "puzzleDate": "2025-01-24",
     "type": "quote",
-    "topic": "general",
     "author": "Henry Ford",
     "puzzleText": "VWPTFVC FG DNBPFYAUNBUE TNBZ FR EWA ZFIFZH FP FVPW GQNUU SWXG. ~ THVBE RWBZ",
-    "solutionText": "Nothing is particularly hard if you divide it into small jobs. ~ Henry Ford"
+    "solutionText": "Nothing is particularly hard if you divide it into small jobs. ~ Henry Ford",
+    "answer": ""
   },
   {
     "puzzleId": 25,
-    "puzzleDate": "2025-06-22",
+    "puzzleDate": "2025-01-25",
     "type": "proverb",
-    "topic": "learning",
     "author": "Chinese Proverb",
     "puzzleText": "DKPGFLFE LW P AGKPWHGK AVPA ULDD YJDDJU LAW JUFKG KMKGQUVKGK. ~ BVLFKWK OGJMKGT",
-    "solutionText": "Learning is a treasure that will follow its owner everywhere. ~ Chinese Proverb"
+    "solutionText": "Learning is a treasure that will follow its owner everywhere. ~ Chinese Proverb",
+    "answer": ""
   },
   {
     "puzzleId": 26,
-    "puzzleDate": "2025-06-29",
+    "puzzleDate": "2025-01-26",
     "type": "quote",
-    "topic": "learning",
     "author": "George Santayana",
     "puzzleText": "XIS YAJSJX HABN IZJ JKHSXIABE GSX XK RSZWB. ~ ESKWES JZBXZGZBZ",
-    "solutionText": "The wisest mind has something yet to learn. ~ George Santayana"
+    "solutionText": "The wisest mind has something yet to learn. ~ George Santayana",
+    "answer": ""
   },
   {
     "puzzleId": 27,
-    "puzzleDate": "2025-07-06",
+    "puzzleDate": "2025-01-27",
     "type": "quote",
-    "topic": "general",
     "author": "John Keats",
     "puzzleText": "PYSWGPJ XHXZ MXBYNXU ZXDK SGKK GS GU XVLXZGXPBXI. ~ FYWP QXDSU",
-    "solutionText": "Nothing ever becomes real till it is experienced. ~ John Keats"
+    "solutionText": "Nothing ever becomes real till it is experienced. ~ John Keats",
+    "answer": ""
   },
   {
     "puzzleId": 28,
-    "puzzleDate": "2025-07-13",
+    "puzzleDate": "2025-01-28",
     "type": "quote",
-    "topic": "success",
     "author": "Ray Bradbury",
     "puzzleText": "HKZQ KG IOCKEP IDKEPG IT GQQ KZ IDQC FTOW. ~ OBC MOBNMAOC",
-    "solutionText": "Life is trying things to see if they work. ~ Ray Bradbury"
+    "solutionText": "Life is trying things to see if they work. ~ Ray Bradbury",
+    "answer": ""
   },
   {
     "puzzleId": 29,
-    "puzzleDate": "2025-07-20",
+    "puzzleDate": "2025-01-29",
     "type": "quote",
-    "topic": "general",
     "author": "Franklin D. Roosevelt",
     "puzzleText": "T ONRRLB OYT JYUYA NTHY T OSGKKYH OTGKRA. ~ VATJSKGJ H. ARROYUYKL",
-    "solutionText": "A smooth sea never made a skilled sailor. ~ Franklin D. Roosevelt"
+    "solutionText": "A smooth sea never made a skilled sailor. ~ Franklin D. Roosevelt",
+    "answer": ""
   },
   {
     "puzzleId": 30,
-    "puzzleDate": "2025-07-27",
+    "puzzleDate": "2025-01-30",
     "type": "quote",
-    "topic": "general",
     "author": "Henri Matisse",
     "puzzleText": "EYJXFBHBFD FXOJI EGCYXQJ. ~ MJKYB WXFBIÄ²",
-    "solutionText": "Creativity takes courage. ~ Henri Matisse"
+    "solutionText": "Creativity takes courage. ~ Henri Matisse",
+    "answer": ""
   },
   {
     "puzzleId": 31,
-    "puzzleDate": "2025-08-03",
+    "puzzleDate": "2025-01-31",
     "type": "quote",
-    "topic": "general",
     "author": "Ralph Waldo Emerson",
     "puzzleText": "GMY FYOIFJ XC I GMQLT OYBB JXLY QR GX MIPY JXLY QG. ~ FIBKM OIBJX YAYFRXL",
-    "solutionText": "The reward of a thing well done is to have done it. ~ Ralph Waldo Emerson"
+    "solutionText": "The reward of a thing well done is to have done it. ~ Ralph Waldo Emerson",
+    "answer": ""
   },
   {
     "puzzleId": 32,
-    "puzzleDate": "2025-08-10",
+    "puzzleDate": "2025-02-01",
     "type": "quote",
-    "topic": "general",
     "author": "Thomas Edison",
     "puzzleText": "BQJ MJTB BQYZIYZX QHT MJJZ EFZJ YZ TFPYBAEJ. ~ BQFOHT JEYTFZ",
-    "solutionText": "The best thinking has been done in solitude. ~ Thomas Edison"
+    "solutionText": "The best thinking has been done in solitude. ~ Thomas Edison",
+    "answer": ""
   },
   {
     "puzzleId": 33,
-    "puzzleDate": "2025-08-17",
+    "puzzleDate": "2025-02-02",
     "type": "quote",
-    "topic": "general",
     "author": "Thomas Carlyle",
     "puzzleText": "EN WXMIITXM, EN PYRUNEPI. ~ JCNURI VRXGSGM",
-    "solutionText": "No pressure, no diamonds. ~ Thomas Carlyle"
+    "solutionText": "No pressure, no diamonds. ~ Thomas Carlyle",
+    "answer": ""
   },
   {
     "puzzleId": 34,
-    "puzzleDate": "2025-08-24",
+    "puzzleDate": "2025-02-03",
     "type": "quote",
-    "topic": "general",
     "author": "John Muir",
     "puzzleText": "ZXL WKRLY KA CQOHCBOZCKB QOVLF GF CBACBCZL. ~ SKXB QGCY",
-    "solutionText": "The power of imagination makes us infinite. ~ John Muir"
+    "solutionText": "The power of imagination makes us infinite. ~ John Muir",
+    "answer": ""
   },
   {
     "puzzleId": 35,
-    "puzzleDate": "2025-08-31",
+    "puzzleDate": "2025-02-04",
     "type": "quote",
-    "topic": "general",
     "author": "C. S. Lewis",
     "puzzleText": "SEMQM WQM UWQ FMSSMQ SEXOYH WEMWL SEWO WOR JM GMWTM FMEXOL. ~ A. H. GMJXH",
-    "solutionText": "There are far better things ahead than any we leave behind. ~ C. S. Lewis"
+    "solutionText": "There are far better things ahead than any we leave behind. ~ C. S. Lewis",
+    "answer": ""
   },
   {
     "puzzleId": 36,
-    "puzzleDate": "2025-09-07",
+    "puzzleDate": "2025-02-05",
     "type": "quote",
-    "topic": "general",
     "author": "Will Durant",
     "puzzleText": "DB YGB DVYP DB GBQBYPBAUS AZ. ~ DXUU AJGYTP",
-    "solutionText": "We are what we repeatedly do. ~ Will Durant"
+    "solutionText": "We are what we repeatedly do. ~ Will Durant",
+    "answer": ""
   },
   {
     "puzzleId": 37,
-    "puzzleDate": "2025-09-14",
+    "puzzleDate": "2025-02-06",
     "type": "quote",
-    "topic": "learning",
     "author": "Plutarch",
     "puzzleText": "MYT WUSB UP SRM K LTPPTE MR QT GUEETB QVM K GUCT MR QT OUSBETB. ~ DEVMKCZY",
-    "solutionText": "The mind is not a vessel to be filled but a fire to be kindled. ~ Plutarch"
+    "solutionText": "The mind is not a vessel to be filled but a fire to be kindled. ~ Plutarch",
+    "answer": ""
   },
   {
     "puzzleId": 38,
-    "puzzleDate": "2025-09-21",
+    "puzzleDate": "2025-02-07",
     "type": "quote",
-    "topic": "life",
     "author": "Friedrich Nietzsche",
     "puzzleText": "QUD EKQKJD YXENKDXMDI QUD WJDIDXQ BKIQ PI CKMU PI QUD WPIQ. ~ EJYDTJYMU XYDQLIMUD",
-    "solutionText": "The future influences the present just as much as the past. ~ Friedrich Nietzsche"
+    "solutionText": "The future influences the present just as much as the past. ~ Friedrich Nietzsche",
+    "answer": ""
   },
   {
     "puzzleId": 39,
-    "puzzleDate": "2025-09-28",
+    "puzzleDate": "2025-02-08",
     "type": "quote",
-    "topic": "learning",
     "author": "Sophocles",
     "puzzleText": "DOCXBN BVUDYOJQC GRS DYGIUQ. ~ CBTQBHIYC",
-    "solutionText": "Wisdom outweighs any wealth. ~ Sophocles"
+    "solutionText": "Wisdom outweighs any wealth. ~ Sophocles",
+    "answer": ""
   },
   {
     "puzzleId": 40,
-    "puzzleDate": "2025-10-05",
+    "puzzleDate": "2025-02-09",
     "type": "quote",
-    "topic": "general",
     "author": "Pablo Picasso",
     "puzzleText": "XLXHDOAUVC DYE TRV UNRCUVX UJ HXRG. ~ KRMGY KUTRJJY",
-    "solutionText": "Everything you can imagine is real. ~ Pablo Picasso"
+    "solutionText": "Everything you can imagine is real. ~ Pablo Picasso",
+    "answer": ""
   },
   {
     "puzzleId": 41,
-    "puzzleDate": "2025-10-12",
+    "puzzleDate": "2025-02-10",
     "type": "quote",
-    "topic": "general",
     "author": "Alexander the Great",
     "puzzleText": "VLTYT NE XQVLNXD NZUQEENSCT VQ QXT OLQ ONCC VYJ. ~ FCTPFXHTY VLT DYTFV",
-    "solutionText": "There is nothing impossible to one who will try. ~ Alexander the Great"
+    "solutionText": "There is nothing impossible to one who will try. ~ Alexander the Great",
+    "answer": ""
   },
   {
     "puzzleId": 42,
-    "puzzleDate": "2025-10-19",
+    "puzzleDate": "2025-02-11",
     "type": "quote",
-    "topic": "general",
     "author": "Emily Dickinson",
     "puzzleText": "ONSADQY LYOSJYQPK AWY LNVP. ~ YTJVI PJZXJQKNQ",
-    "solutionText": "Fortune befriends the bold. ~ Emily Dickinson"
+    "solutionText": "Fortune befriends the bold. ~ Emily Dickinson",
+    "answer": ""
   },
   {
     "puzzleId": 43,
-    "puzzleDate": "2025-10-26",
+    "puzzleDate": "2025-02-12",
     "type": "quote",
-    "topic": "success",
     "author": "Sophocles",
     "puzzleText": "LEYYCLL NL BCVCPBCPU QP CKKQJU. ~ LQVRQYACL",
-    "solutionText": "Success is dependent on effort. ~ Sophocles"
+    "solutionText": "Success is dependent on effort. ~ Sophocles",
+    "answer": ""
   },
   {
     "puzzleId": 44,
-    "puzzleDate": "2025-11-02",
+    "puzzleDate": "2025-02-13",
     "type": "quote",
-    "topic": "general",
     "author": "Elizabeth Barrett Browning",
     "puzzleText": "VLTPE EMQMJJMD DLEP EMXIU. ~ RVLOIZREP ZÄ²JREE ZJMDHLHT",
-    "solutionText": "Light tomorrow with today. ~ Elizabeth Barrett Browning"
+    "solutionText": "Light tomorrow with today. ~ Elizabeth Barrett Browning",
+    "answer": ""
   },
   {
     "puzzleId": 45,
-    "puzzleDate": "2025-11-09",
+    "puzzleDate": "2025-02-14",
     "type": "quote",
-    "topic": "general",
     "author": "Douglas Horton",
     "puzzleText": "EZK VAE NH FXLDTXGXEI XF V DRPPTK NH GNLDTKYXEI. ~ JNRUTVF ZNAENW",
-    "solutionText": "The art of simplicity is a puzzle of complexity. ~ Douglas Horton"
+    "solutionText": "The art of simplicity is a puzzle of complexity. ~ Douglas Horton",
+    "answer": ""
   },
   {
     "puzzleId": 46,
-    "puzzleDate": "2025-11-16",
+    "puzzleDate": "2025-02-15",
     "type": "quote",
-    "topic": "learning",
     "author": "Aristotle",
     "puzzleText": "OFP PDPWMI UY OFP VQDJ QT OFP PTTPDAP UY EQYP. ~ LWQTOUOEP",
-    "solutionText": "The energy of the mind is the essence of life. ~ Aristotle"
+    "solutionText": "The energy of the mind is the essence of life. ~ Aristotle",
+    "answer": ""
   },
   {
     "puzzleId": 47,
-    "puzzleDate": "2025-11-23",
+    "puzzleDate": "2025-02-16",
     "type": "quote",
-    "topic": "life",
     "author": "Rainer Maria Rilke",
     "puzzleText": "IXD HTEA WHQNTDA GF IXD HTD KGIXGT. ~ NCGTDN OCNGC NGEVD",
-    "solutionText": "The only journey is the one within. ~ Rainer Maria Rilke"
+    "solutionText": "The only journey is the one within. ~ Rainer Maria Rilke",
+    "answer": ""
   },
   {
     "puzzleId": 48,
-    "puzzleDate": "2025-11-30",
+    "puzzleDate": "2025-02-17",
     "type": "quote",
-    "topic": "learning",
     "author": "Oprah Winfrey",
     "puzzleText": "ZAEL QIAE KIALGT MLZI KMTGIP. ~ IYEHU KMLDESQ",
-    "solutionText": "Turn your wounds into wisdom. ~ Oprah Winfrey"
+    "solutionText": "Turn your wounds into wisdom. ~ Oprah Winfrey",
+    "answer": ""
   },
   {
     "puzzleId": 49,
-    "puzzleDate": "2025-12-07",
+    "puzzleDate": "2025-02-18",
     "type": "quote",
-    "topic": "general",
     "author": "John Augustus Shedd",
     "puzzleText": "G ENFS FO NGZIPZ FE EGQA, ILU UNGU FE OPU KNGU ENFSE GZA ILFVU QPZ. ~ MPNO GLDLEULE ENAHH",
-    "solutionText": "A ship in harbor is safe, but that is not what ships are built for. ~ John Augustus Shedd"
+    "solutionText": "A ship in harbor is safe, but that is not what ships are built for. ~ John Augustus Shedd",
+    "answer": ""
   },
   {
     "puzzleId": 50,
-    "puzzleDate": "2025-12-14",
+    "puzzleDate": "2025-02-19",
     "type": "quote",
-    "topic": "general",
     "author": "Albert Einstein",
     "puzzleText": "VBD AINGLVETV VBATK AJ TGV VG JVGN ZODJVAGTATK. ~ EQPDLV DATJVDAT",
-    "solutionText": "The important thing is not to stop questioning. ~ Albert Einstein"
+    "solutionText": "The important thing is not to stop questioning. ~ Albert Einstein",
+    "answer": ""
   },
   {
     "puzzleId": 51,
-    "puzzleDate": "2025-12-21",
+    "puzzleDate": "2025-02-20",
     "type": "quote",
-    "topic": "general",
     "author": "Dorothy Parker",
     "puzzleText": "ROQ MXKQ UPK JPKQEPV TC MXKTPCTRA. ~ EPKPROA YIKSQK",
-    "solutionText": "The cure for boredom is curiosity. ~ Dorothy Parker"
+    "solutionText": "The cure for boredom is curiosity. ~ Dorothy Parker",
+    "answer": ""
   },
   {
     "puzzleId": 52,
-    "puzzleDate": "2025-12-28",
+    "puzzleDate": "2025-02-21",
     "type": "quote",
-    "topic": "general",
     "author": "Prescott Bush",
     "puzzleText": "LH YSDFLUBI GD YTFIH L DFIMMGHP DFYHI. ~ MZIDUYFF SADW",
-    "solutionText": "An obstacle is often a stepping stone. ~ Prescott Bush"
+    "solutionText": "An obstacle is often a stepping stone. ~ Prescott Bush",
+    "answer": ""
+  },
+  {
+    "puzzleId": 53,
+    "puzzleDate": "2025-02-22",
+    "type": "quote",
+    "author": "Thomas Edison",
+    "puzzleText": "RTYQY VO DG OFLORVRFRY EGQ TMQB NGQA. ~ RTGXMO YBVOGD",
+    "solutionText": "There is no substitute for hard work. ~ Thomas Edison",
+    "answer": ""
+  },
+  {
+    "puzzleId": 54,
+    "puzzleDate": "2025-02-23",
+    "type": "quote",
+    "author": "Plato",
+    "puzzleText": "LDO MOPEWWEWP EZ LDO JGZL EJBGHLUWL BUHL GN LDO IGHT. ~ BSULG",
+    "solutionText": "The beginning is the most important part of the work. ~ Plato",
+    "answer": ""
+  },
+  {
+    "puzzleId": 55,
+    "puzzleDate": "2025-02-24",
+    "type": "quote",
+    "author": "Carl Jung",
+    "puzzleText": "ZQ VAA OPVWT XPMDM ZT V OWTKWT. ~ OVDA UCQF",
+    "solutionText": "In all chaos there is a cosmos. ~ Carl Jung",
+    "answer": ""
+  },
+  {
+    "puzzleId": 56,
+    "puzzleDate": "2025-02-25",
+    "type": "quote",
+    "author": "Albert Einstein",
+    "puzzleText": "AYKBLGH KO OLEEHOO KM RGQWGHOO. ~ YBVHGF HKMOFHKM",
+    "solutionText": "Failure is success in progress. ~ Albert Einstein",
+    "answer": ""
+  },
+  {
+    "puzzleId": 57,
+    "puzzleDate": "2025-02-26",
+    "type": "quote",
+    "author": "George Eliot",
+    "puzzleText": "TF TZ QKUKJ FII BOFK FI AK XEOF LID GTYEF EOUK AKKQ. ~ YKÄ²YK KBTIF",
+    "solutionText": "It is never too late to be what you might have been. ~ George Eliot",
+    "answer": ""
+  },
+  {
+    "puzzleId": 58,
+    "puzzleDate": "2025-02-27",
+    "type": "quote",
+    "author": "Charles Morgan",
+    "puzzleText": "IB DQRTEZMHZ VQLKZIBZB, TRQMZK MZZJZQB. ~ LOIKEZB NRKHIQ",
+    "solutionText": "As knowledge increases, wonder deepens. ~ Charles Morgan",
+    "answer": ""
+  },
+  {
+    "puzzleId": 59,
+    "puzzleDate": "2025-02-28",
+    "type": "quote",
+    "author": "Charles Dederich",
+    "puzzleText": "NHYXG PO NJV KPUON YXG HK NJV UVON HK GHEU RPKV. ~ AJXURVO YVYVUPAJ",
+    "solutionText": "Today is the first day of the rest of your life. ~ Charles Dederich",
+    "answer": ""
+  },
+  {
+    "puzzleId": 60,
+    "puzzleDate": "2025-03-01",
+    "type": "quote",
+    "author": "John Lennon",
+    "puzzleText": "AUWOPNZ OUWBUI W OLN NL NMU PYWQPHWNPLH. ~ SLMH OUHHLH",
+    "solutionText": "Reality leaves a lot to the imagination. ~ John Lennon",
+    "answer": ""
+  },
+  {
+    "puzzleId": 61,
+    "puzzleDate": "2025-03-02",
+    "type": "quote",
+    "author": "George Bernard Shaw",
+    "puzzleText": "YHH XCZBCGQQ OGXGIOQ ZI WUG EICGYQZIYJHG KYI. ~ BGZCBG JGCIYCO QUYP",
+    "solutionText": "All progress depends on the unreasonable man. ~ George Bernard Shaw",
+    "answer": ""
+  },
+  {
+    "puzzleId": 62,
+    "puzzleDate": "2025-03-03",
+    "type": "quote",
+    "author": "Earl Nightingale",
+    "puzzleText": "EH KHDNXH EASJ EH JAWQR SKNGJ. ~ HSLB QWMAJWQMSBH",
+    "solutionText": "We become what we think about. ~ Earl Nightingale",
+    "answer": ""
+  },
+  {
+    "puzzleId": 63,
+    "puzzleDate": "2025-03-04",
+    "type": "quote",
+    "author": "Andre Gide",
+    "puzzleText": "SIY RKGGIB OMNRIQFJ GFX IRFKGN YGHFNN SIY LKQF RIYJKAF. ~ KGOJF AMOF",
+    "solutionText": "You cannot discover new oceans unless you have courage. ~ Andre Gide",
+    "answer": ""
+  },
+  {
+    "puzzleId": 64,
+    "puzzleDate": "2025-03-05",
+    "type": "quote",
+    "author": "Francis Bacon",
+    "puzzleText": "DYCIVJWBJ UG NCÄ²X. ~ RXSYTUG QSTCY",
+    "solutionText": "Knowledge is power. ~ Francis Bacon",
+    "answer": ""
+  },
+  {
+    "puzzleId": 65,
+    "puzzleDate": "2025-03-06",
+    "type": "quote",
+    "author": "Soren Kierkegaard",
+    "puzzleText": "BE OTQZ FY BE KEYZ EHZâ€™Y IEEBFHP LELZHBTQFKA. ~ YEQZH MFZQMZPTTQO",
+    "solutionText": "To dare is to lose oneâ€™s footing momentarily. ~ Soren Kierkegaard",
+    "answer": ""
+  },
+  {
+    "puzzleId": 66,
+    "puzzleDate": "2025-03-07",
+    "type": "quote",
+    "author": "M. C. Escher",
+    "puzzleText": "IF JIM JMPRFBK RYKVMEFBK. ~ A. V. FKVIFB",
+    "solutionText": "He who wonders discovers. ~ M. C. Escher",
+    "answer": ""
+  },
+  {
+    "puzzleId": 67,
+    "puzzleDate": "2025-03-08",
+    "type": "quote",
+    "author": "Jim Rohn",
+    "puzzleText": "NDVFDÄ²DCX DV EKX TUDNAX TXEBXXC AYOJV OCN OFFYRÄ²DVKRXCE. ~ PDR UYKC",
+    "solutionText": "Discipline is the bridge between goals and accomplishment. ~ Jim Rohn",
+    "answer": ""
+  },
+  {
+    "puzzleId": 68,
+    "puzzleDate": "2025-03-09",
+    "type": "quote",
+    "author": "John Ruskin",
+    "puzzleText": "OZSIBFR BA LUJUV SL SWWBPULF. ~ HKQL VZANBL",
+    "solutionText": "Quality is never an accident. ~ John Ruskin",
+    "answer": ""
+  },
+  {
+    "puzzleId": 69,
+    "puzzleDate": "2025-03-10",
+    "type": "quote",
+    "author": "Brene Brown",
+    "puzzleText": "VBQYQ TI ML TMMLKHVTLM JTVBLRV URYTLITVF. ~ XYQMQ XYLJM",
+    "solutionText": "There is no innovation without curiosity. ~ Brene Brown",
+    "answer": ""
+  },
+  {
+    "puzzleId": 70,
+    "puzzleDate": "2025-03-11",
+    "type": "quote",
+    "author": "Henry David Thoreau",
+    "puzzleText": "MESSQMM EMETUUP SKAQM FK FVKMQ NVK TGQ FKK LEMP FK LQ UKKIRJW XKG RF. ~ VQJGP HTZRH FVKGQTE",
+    "solutionText": "Success usually comes to those who are too busy to be looking for it. ~ Henry David Thoreau",
+    "answer": ""
+  },
+  {
+    "puzzleId": 71,
+    "puzzleDate": "2025-03-12",
+    "type": "quote",
+    "author": "Lao Tzu",
+    "puzzleText": "VYMCK CSKL CYM RCTM DN JP LRCHH TMMTL. ~ HCJ KWD",
+    "solutionText": "Great acts are made up of small deeds. ~ Lao Tzu",
+    "answer": ""
+  },
+  {
+    "puzzleId": 72,
+    "puzzleDate": "2025-03-13",
+    "type": "quote",
+    "author": "Allen Ginsberg",
+    "puzzleText": "GDCCDS EDLY HTTPY NDDTCHFRM. ~ QCCPT FHTZJPYF",
+    "solutionText": "Follow your inner moonlight. ~ Allen Ginsberg",
+    "answer": ""
+  },
+  {
+    "puzzleId": 73,
+    "puzzleDate": "2025-03-14",
+    "type": "quote",
+    "author": "Doug Ivester",
+    "puzzleText": "OYQYS WYA JUFS LYLUSRYC DY VSYPAYS AZPO JUFS KSYPLC. ~ KUFV RQYCAYS",
+    "solutionText": "Never let your memories be greater than your dreams. ~ Doug Ivester",
+    "answer": ""
+  },
+  {
+    "puzzleId": 74,
+    "puzzleDate": "2025-03-15",
+    "type": "quote",
+    "author": "T. S. Eliot",
+    "puzzleText": "DADJR KLKDWU HE V OJDES NDTHWWHWT. ~ U. E. DGHLU",
+    "solutionText": "Every moment is a fresh beginning. ~ T. S. Eliot",
+    "answer": ""
+  },
+  {
+    "puzzleId": 75,
+    "puzzleDate": "2025-03-16",
+    "type": "quote",
+    "author": "Walt Whitman",
+    "puzzleText": "RS NEDFXEU, JXC YEITOSJCPM. ~ GPMC GQFCOPJ",
+    "solutionText": "Be curious, not judgmental. ~ Walt Whitman",
+    "answer": ""
+  },
+  {
+    "puzzleId": 76,
+    "puzzleDate": "2025-03-17",
+    "type": "quote",
+    "author": "Suzy Kassem",
+    "puzzleText": "KVAIH GWOOP SVYU KYUNSP HBNL ENWOAYU UZUY XWOO. ~ PACQ GNPPUS",
+    "solutionText": "Doubt kills more dreams than failure ever will. ~ Suzy Kassem",
+    "answer": ""
+  },
+  {
+    "puzzleId": 77,
+    "puzzleDate": "2025-03-18",
+    "type": "quote",
+    "author": "Benjamin Disraeli",
+    "puzzleText": "WFD JDVUDW TK JGVVDJJ LJ VTSJWNSVH TK CGUCTJD. ~ MDSPNRLS OLJUNDAL",
+    "solutionText": "The secret of success is constancy of purpose. ~ Benjamin Disraeli",
+    "answer": ""
+  },
+  {
+    "puzzleId": 78,
+    "puzzleDate": "2025-03-19",
+    "type": "quote",
+    "author": "Lao Tzu",
+    "puzzleText": "WTK FIMUYDOR WDKTY LTPC RQXBB RPDNR. ~ BXI PSM",
+    "solutionText": "Big journeys begin with small steps. ~ Lao Tzu",
+    "answer": ""
+  },
+  {
+    "puzzleId": 79,
+    "puzzleDate": "2025-03-20",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "NEJ BPB IEG MOLLK BGAPBG IL TL IL MGB? PI NHD UGOJ DNGGXJ!",
+    "solutionText": "Why did the broom decide to go to bed? It was very sweepy!",
+    "answer": ""
+  },
+  {
+    "puzzleId": 80,
+    "puzzleDate": "2025-03-21",
+    "type": "funny quote",
+    "author": "Paul Fix",
+    "puzzleText": "ANT HUID LTQJHU JHET STHSIT KTA IHJA CU ANHZKNA CJ PTXQZJT CA’J ZUVQECICQL ATLLCAHLD. ~ SQZI VCB",
+    "solutionText": "The only reason some people get lost in thought is because it’s unfamiliar territory. ~ Paul Fix",
+    "answer": ""
+  },
+  {
+    "puzzleId": 81,
+    "puzzleDate": "2025-03-22",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "DPT BWCD ZWBBWV FOSK UOQK OV DPT FWQSK OC DPT QTK-UOSSTK MGTSTE.",
+    "solutionText": "The most common wild bird in the world is the Red-billed Quelea.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 82,
+    "puzzleDate": "2025-03-23",
+    "type": "quote",
+    "author": "Morris West",
+    "puzzleText": "XD LAZ ITJOG LAZM KRAWJ WXDJ KFXHXOV DAM HRJ IHAMC, LAZ’WW OJEJM JOUAL HRJ IZOIRXOJ. ~ CAMMXI KJIH",
+    "solutionText": "If you spend your whole life waiting for the storm, you’ll never enjoy the sunshine. ~ Morris West",
+    "answer": ""
+  },
+  {
+    "puzzleId": 83,
+    "puzzleDate": "2025-03-24",
+    "type": "funny quote",
+    "author": "Jim Davis",
+    "puzzleText": "QPPX OPSEUEQ UC L BPEISLXUBIUPE PD IYSOC. ~ KUO XLMUC",
+    "solutionText": "Good morning is a contradiction of terms. ~ Jim Davis",
+    "answer": ""
+  },
+  {
+    "puzzleId": 84,
+    "puzzleDate": "2025-03-25",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "BUX CUOH R EOO EMTHB WSH BRWM? WS THOH R BUYONDUJE.",
+    "solutionText": "How does a bee brush its hair? It uses a honeycomb.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 85,
+    "puzzleDate": "2025-03-26",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "KA PMBSF, KF’C GWACKEPYPE KAGYPEKVOB YQEP FW CNOF IWWE CPYDPE FW BWQ.",
+    "solutionText": "In Egypt, it’s considered incredibly rude to salt food served to you.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 86,
+    "puzzleDate": "2025-03-27",
+    "type": "funny quote",
+    "author": "Fran Leibowitz",
+    "puzzleText": "HYA’CZ YDTH XQ WYYS XQ HYAC TXQK LXMCEAK. ~ BCXD TZMNYRMKJ",
+    "solutionText": "You’re only as good as your last haircut. ~ Fran Leibowitz",
+    "answer": ""
+  },
+  {
+    "puzzleId": 87,
+    "puzzleDate": "2025-03-28",
+    "type": "funny quote",
+    "author": "Claude Pepper",
+    "puzzleText": "W JZNXOSFNORF IFPRC DR ZN SIH W JZNXO ZMWZ GNIEC ZFBLER BZJ KWEIR RKRFH HRWF. B ZNEC MBD, \"WZ DH WPR, B CNU'Z RKRU SIH PFRRU SWUWUWJ.” ~ XEWICR LRLLRF",
+    "solutionText": "A stockbroker urged me to buy a stock that would triple its value every year. I told him, \"At my age, I don't even buy green bananas.” ~ Claude Pepper",
+    "answer": ""
+  },
+  {
+    "puzzleId": 88,
+    "puzzleDate": "2025-03-29",
+    "type": "quote",
+    "author": "Sydney J. Harris",
+    "puzzleText": "TMRRKZHBB KB M UKJHGXKWZ, ZWX M RQMGH. ~ BDUZHD P. TMJJKB",
+    "solutionText": "Happiness is a direction, not a place. ~ Sydney J. Harris",
+    "answer": ""
+  },
+  {
+    "puzzleId": 89,
+    "puzzleDate": "2025-03-30",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "X KJNE DP OYZT OXZVP LT NZF, LKD VPI X KJN GT QZVEJ.",
+    "solutionText": "I used to play piano by ear, but now I use my hands.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 90,
+    "puzzleDate": "2025-03-31",
+    "type": "quote",
+    "author": "Tina Fey",
+    "puzzleText": "DSFZF KZF MU VGRDKQFR, UMYB ULLUZDJMGDGFR. ~DGMK XFB",
+    "solutionText": "There are no mistakes, only opportunities. ~Tina Fey",
+    "answer": ""
+  },
+  {
+    "puzzleId": 91,
+    "puzzleDate": "2025-04-01",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "UW OYXKJW OXRJJYAL, I NFL ZIA NRQRSXYAR YD I ARH DSYRAN YO XIJR FS DRXIJR, PIKKW FS ILLSROOYGR, PRIJQPW FS YJJ.",
+    "solutionText": "By simply smelling, a dog can determine if a new friend is male or female, happy or aggressive, healthy or ill.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 92,
+    "puzzleDate": "2025-04-02",
+    "type": "funny quote",
+    "author": "Mark Twain",
+    "puzzleText": "EJD AU EV AUUXD KO WAVC KGDB WEHHDB. AO ZKX CKV’H WAVC, AH CKDUV’H WEHHDB. ~ WEBL HREAV",
+    "solutionText": "Age is an issue of mind over matter. If you don’t mind, it doesn’t matter. ~ Mark Twain",
+    "answer": ""
+  },
+  {
+    "puzzleId": 93,
+    "puzzleDate": "2025-04-03",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "VNK MKXV VNAQLX AQ CAJK STK JTKK.",
+    "solutionText": "The best things in life are free.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 94,
+    "puzzleDate": "2025-04-04",
+    "type": "quote",
+    "author": "Alfred Tennyson",
+    "puzzleText": "BED QFBBFK BI ZWXF SIXFC WHC SIDB BZWH BI ZWXF HFXFK SIXFC WB WSS. ~ WSPKFC BFHHTDIH",
+    "solutionText": "Tis better to have loved and lost than to have never loved at all. ~ Alfred Tennyson",
+    "answer": ""
+  },
+  {
+    "puzzleId": 95,
+    "puzzleDate": "2025-04-05",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "PNU GVZ'F LKKM FLYY RVJLM? FNLU'G XITXJ LTXN VFNLI EH.",
+    "solutionText": "Why don't eggs tell jokes? They'd crack each other up.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 96,
+    "puzzleDate": "2025-04-06",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "IHHBXFCDY QB VIZE LHHIXQDPU, DBDP BK QJP SPIQEPM HBZEF XPIF BX OXCQP LZMCH.",
+    "solutionText": "According to Paul McCartney, none of the Beatles could read or write music.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 97,
+    "puzzleDate": "2025-04-07",
+    "type": "funny quote",
+    "author": "Emo Philips",
+    "puzzleText": "FSFUKIEF QDPY PFTFJDEFPDV OIQFUR ULDRF XK YLEG. ~ FXI OYDTDOR",
+    "solutionText": "Everyone with telekinetic powers raise my hand. ~ Emo Philips",
+    "answer": ""
+  },
+  {
+    "puzzleId": 98,
+    "puzzleDate": "2025-04-08",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "G CNTTZRV MHNRO VGHJOCM RN UNMM.",
+    "solutionText": "A rolling stone gathers no moss.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 99,
+    "puzzleDate": "2025-04-09",
+    "type": "quote",
+    "author": "Socrates",
+    "puzzleText": "EXV PVBJVE WO XRMMGLVPP, AWK PVV, GP LWE OWKLH GL PVVFGLD QWJV UKE GL HVYVCWMGLD EXV BRMRBGEA EW VLNWA CVPP. ~ PWBJREVP",
+    "solutionText": "The secret of happiness, you see, is not found in seeking more but in developing the capacity to enjoy less. ~ Socrates",
+    "answer": ""
+  },
+  {
+    "puzzleId": 100,
+    "puzzleDate": "2025-04-10",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "HWPK WPBBVRVI HWVR KWV HXEYI'L KXRFDV-KHJLKVE QWPSBJXR FXK PEEVLKVI? KWVC FPMV WJS P WPELW LVRKVRQV.",
+    "solutionText": "What happened when the world's tongue-twister champion got arrested? They gave him a harsh sentence.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 101,
+    "puzzleDate": "2025-04-11",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "XPRXDP TGOBGPJ NPOBCEM XOYOKOT CETGPOJ RI ECMVGMRNET GR ZP XBPXOBPJ GR BQE RQGTCJP CE XQZDCW JQBCEM NRBDJ NOB C OCB BOCJT CE PEMDOEJ.",
+    "solutionText": "People started wearing pajamas instead of nightgowns to be prepared to run outside in public during World War I air raids in England.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 102,
+    "puzzleDate": "2025-04-12",
+    "type": "funny quote",
+    "author": "Anonymous",
+    "puzzleText": "H EXJV TXO QXYV WBZK RXSSVV FOW KXW ZEPZTI FVSXYV RXSSVV. ~ ZKXKTQXOI",
+    "solutionText": "I love you more than coffee but not always before coffee. ~ Anonymous",
+    "answer": ""
+  },
+  {
+    "puzzleId": 103,
+    "puzzleDate": "2025-04-13",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "UNQR CNO GUR PRVG, PTG QORQHOR CNO GUR ANOVG.",
+    "solutionText": "Hope for the best, but prepare for the worst.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 104,
+    "puzzleDate": "2025-04-14",
+    "type": "quote",
+    "author": "Helen Keller",
+    "puzzleText": "KLCZ KC QJ MLC YCGM KC XWZ, KC ZCTCA IZJK KLWM EFAWXNC FG KAJSOLM FZ JSA NFVC JA MLC NFVC JV WZJMLCA. ~ LCNCZ ICNNCA",
+    "solutionText": "When we do the best we can, we never know what miracle is wrought in our life or the life of another. ~ Helen Keller",
+    "answer": ""
+  },
+  {
+    "puzzleId": 105,
+    "puzzleDate": "2025-04-15",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "UOPQ PGS QOS YQGCDMSYQ BPHY CK QOS USSV? YPQFGBPH PDB YFDBPH. PZZ QOS CQOSGY PGS USSVBPHY.",
+    "solutionText": "What are the strongest days of the week? Saturday and Sunday. All the others are weekdays.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 106,
+    "puzzleDate": "2025-04-16",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "ZBD VUTDC ZURCQIDU LQ ZBD IDDYLCV NI JLQNULDCZRZLNC LC R KRYY, MBLHB KRPDQ QBNOODUQ KNUD YLPDYE ZN QODCJ KNCDE.",
+    "solutionText": "The Gruen transfer is the feeling of disorientation in a mall, which makes shoppers more likely to spend money.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 107,
+    "puzzleDate": "2025-04-17",
+    "type": "funny quote",
+    "author": "Caroline Rhea",
+    "puzzleText": "ZL NKJAFUPB ZKIDUVB KP PDB CLZ UQ PDB JBVHUVC ZKIDUVB. ~ IKFAGUVB FDBK",
+    "solutionText": "My favorite machine at the gym is the vending machine. ~ Caroline Rhea",
+    "answer": ""
+  },
+  {
+    "puzzleId": 108,
+    "puzzleDate": "2025-04-18",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "SZJ MNPJSJFS FSBJUWF AGSJL BNL SZJ TJJHJFS.",
+    "solutionText": "The quietest streams often run the deepest.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 109,
+    "puzzleDate": "2025-04-19",
+    "type": "quote",
+    "author": "Aristotle",
+    "puzzleText": "SDBQADJ IBHNCZMY AC XFZ UZJADDADJ BY KMM QACRBE. ~ KNACXBXMZ",
+    "solutionText": "Knowing yourself is the beginning of all wisdom. ~ Aristotle",
+    "answer": ""
+  },
+  {
+    "puzzleId": 110,
+    "puzzleDate": "2025-04-20",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "Z MQDT EF CGED SGKZGB CGZW, LME ECDA ZE YWDV FA ID.",
+    "solutionText": "I used to hate facial hair, but then it grew on me.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 111,
+    "puzzleDate": "2025-04-21",
+    "type": "quote",
+    "author": "Soren Kierkegaard",
+    "puzzleText": "AOKB OQ ZUM G WSUJABV MU JB QUAHBE JLM G SBGAOMR MU JB BIWBSOBZNBE. ~ QUSBZ YOBSYBXGGSE",
+    "solutionText": "Life is not a problem to be solved but a reality to be experienced. ~ Soren Kierkegaard",
+    "answer": ""
+  },
+  {
+    "puzzleId": 112,
+    "puzzleDate": "2025-04-22",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "Z SEJ FZJ ZW JFR FRKO VZJF K UKW ET UEAR JEOKI. OEW’J VENNI, Z’P WEJ FDNJ. ZJ VKX K XETJ ONZWA.",
+    "solutionText": "I got hit in the head with a can of Coke today. Don’t worry, I’m not hurt. It was a soft drink.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 113,
+    "puzzleDate": "2025-04-23",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "GZJ FIP’U ARFE GZJK BADZM.",
+    "solutionText": "You can’t lick your elbow.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 114,
+    "puzzleDate": "2025-04-24",
+    "type": "funny quote",
+    "author": "George Carlin",
+    "puzzleText": "CMQMY DYBXM PWGI DC WUWSG. GIMR PWKK SCKR TYWCB RSX USPC GS GIMWY KMQMK DCU TMDG RSX PWGI MFLMYWMCOM. ~ BMSYBM ODYKWC",
+    "solutionText": "Never argue with an idiot. They will only bring you down to their level and beat you with experience. ~ George Carlin",
+    "answer": ""
+  },
+  {
+    "puzzleId": 115,
+    "puzzleDate": "2025-04-25",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "XUW EXIKZHWEX LKOZGNXMKZ ME COMYX OZGWIHIKOZG.",
+    "solutionText": "The strongest foundation is built underground.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 116,
+    "puzzleDate": "2025-04-26",
+    "type": "quote",
+    "author": "Carl Theodor von Unlanski",
+    "puzzleText": "KXIYU QNJVE UTNJS YMNSI. ~ RYXM UTIZVZX BZJ AJMYJESN",
+    "solutionText": "Great minds think alike. ~ Carl Theodor von Unlanski",
+    "answer": ""
+  },
+  {
+    "puzzleId": 117,
+    "puzzleDate": "2025-04-27",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "U WLAQ DLWJ CJPLCQ-IUYP APCCPGH WI CBP SAVBSNPC. U TWL’C DLWJ Q.",
+    "solutionText": "I only know twenty-five letters of the alphabet. I don’t know Y.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 118,
+    "puzzleDate": "2025-04-28",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "HQBMB JMB PXMB UBXUEB AZ FJEARXMZAJ HQJZ AZ FJZJNJ.",
+    "solutionText": "There are more people in California than in Canada.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 119,
+    "puzzleDate": "2025-04-29",
+    "type": "funny quote",
+    "author": "George Carlin",
+    "puzzleText": "G ILJ OQGVXGVU LYETO QEI CMECHM JMMS OE AMLF OQM YGYHM L IQEHM HEO SEAM LJ OQMB UMO EHFMA; OQMV GO FLIVMF EV SM – OQMB’AM ZALSSGVU KEA OQMGA KGVLH MWLS. ~ UMEAUM ZLAHGV",
+    "solutionText": "I was thinking about how people seem to read the Bible a whole lot more as they get older; then it dawned on me – they’re cramming for their final exam. ~ George Carlin",
+    "answer": ""
+  },
+  {
+    "puzzleId": 120,
+    "puzzleDate": "2025-04-30",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "UYFFYJ FA XLPDF O KOGQXY FDOG KNJHY FDY QOJBGYHH.",
+    "solutionText": "Better to light a candle than curse the darkness.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 121,
+    "puzzleDate": "2025-05-01",
+    "type": "quote",
+    "author": "Salvador Dali",
+    "puzzleText": "NIQM UK SMIJ KS WMJSMOYXKU; CKG’ZZ UMQMJ JMION XY. ~ LIZQIVKJ VIZX",
+    "solutionText": "Have no fear of perfection; you’ll never reach it. ~ Salvador Dali",
+    "answer": ""
+  },
+  {
+    "puzzleId": 122,
+    "puzzleDate": "2025-05-02",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "TKP MLM BKJ WRXXJJ VR BR BKJ ZRGLWJ? BR UJZRUB Y CIVVLEV!",
+    "solutionText": "Why did the coffee go to the police? To report a mugging!",
+    "answer": ""
+  },
+  {
+    "puzzleId": 123,
+    "puzzleDate": "2025-05-03",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "ZXGQTB NSENEHTFX NTAX CEXLB’F NEQX WGEQ ZXGQTBJ. DF UTL BTQXC WEG LTQ ZXGQTB, USE NGXTFXC T FJYX EW PTADBZ NSENEHTFX WEG PTAXG’L NSENEHTFX NEQYTBJ.",
+    "solutionText": "German chocolate cake doesn’t come from Germany. It was named for Sam German, who created a type of baking chocolate for Baker’s chocolate company.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 124,
+    "puzzleDate": "2025-05-04",
+    "type": "funny quote",
+    "author": "Henny Youngman",
+    "puzzleText": "D BDQG ZYHJA LHJI FJXXDVXK LIHF OGVAIZB RZIM. ~ NGVVE EHJVXFZV",
+    "solutionText": "I live about four muggings from Central Park. ~ Henny Youngman",
+    "answer": ""
+  },
+  {
+    "puzzleId": 125,
+    "puzzleDate": "2025-05-05",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "MBQ OXNYM YMQH XY WOMQD MBQ BUNJQYM HUNM WO MBQ IWFNDQG.",
+    "solutionText": "The first step is often the hardest part of the journey.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 126,
+    "puzzleDate": "2025-05-06",
+    "type": "quote",
+    "author": "Robert Louis Stevenson",
+    "puzzleText": "Gwi’p etghx xloz glq rq pzx zlfkxnp qwt fxlv rtp rq pzx nxxgn pzlp qwt vjlip. ~ Fwrxfp Jwtyn Npxkxinwi",
+    "solutionText": "Don’t judge each day by the harvest you reap but by the seeds that you plant. ~ Robert Louis Stevenson",
+    "answer": ""
+  },
+  {
+    "puzzleId": 127,
+    "puzzleDate": "2025-05-07",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "Yg xgn qbga lga tjbx dfgdvf jsf yfjy jh j rftfhfsx? Jvv gm hlft.",
+    "solutionText": "Do you know how many people are dead at a cemetery? All of them.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 128,
+    "puzzleDate": "2025-05-08",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "Nghfjebh bj Ysfas’p Pjnyjxhe Lifbs uhnbp xug egaheb vhe xug lhpx gdcgfpsyg cjsfxsfm gyge phnb.",
+    "solutionText": "Leonardo da Vinci’s Salvator Mundi holds the record for the most expensive painting ever sold.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 129,
+    "puzzleDate": "2025-05-09",
+    "type": "funny quote",
+    "author": "Richard Harkness",
+    "puzzleText": "Pxqn dr q tilldnncc? Q vjiks iz nxc kbpdwwdbv, sdtmce zjil nxc kbzdn, ni ei nxc kbbctcrrqjf. ~ Jdtxqje Xqjmbcrr",
+    "solutionText": "What is a committee? A group of the unwilling, picked from the unfit, to do the unnecessary. ~ Richard Harkness",
+    "answer": ""
+  },
+  {
+    "puzzleId": 130,
+    "puzzleDate": "2025-05-10",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "Zoi xcgfirz jcya ihigzwyxxt jiymoir bzr airzbgyzbcg.",
+    "solutionText": "The longest road eventually reaches its destination.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 131,
+    "puzzleDate": "2025-05-11",
+    "type": "quote",
+    "author": "Walt Disney",
+    "puzzleText": "Uyf ihk um tfu wuhzufs gw um pvgu uhdrgjt hjs qftgj smgjt. ~ Ihdu Sgwjfk",
+    "solutionText": "The way to get started is to quit talking and begin doing. ~ Walt Disney",
+    "answer": ""
+  },
+  {
+    "puzzleId": 132,
+    "puzzleDate": "2025-05-12",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "Nutx oro jkg jlgtk cts xj xug jxugv jlgtk? Kjxurkf, xugs ypcx ntbgo.",
+    "solutionText": "What did one ocean say to the other ocean? Nothing, they just waved.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 133,
+    "puzzleDate": "2025-05-13",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "UGA WZSK KDZAN, ETD QBDZ RZEZFGV PZN JAQSEDO QS WGAD RGJQDN DZRT KDZA ETZS ETD YQYFD.",
+    "solutionText": "For many years, the IKEA catalog was printed in more copies each year than the Bible.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 134,
+    "puzzleDate": "2025-05-14",
+    "type": "funny quote",
+    "author": "George Burns",
+    "puzzleText": "BXX RSF BWSB SJJ BWH DHXDJH NWX AKXN WXN BX CZK BWH UXZKBCT SCH RZMT FCQOQKL BSGQUSRM SKF UZBBQKL WSQC. ~ LHXCLH RZCKM",
+    "solutionText": "Too bad that all the people who know how to run the country are busy driving taxicabs and cutting hair. ~ George Burns",
+    "answer": ""
+  },
+  {
+    "puzzleId": 135,
+    "puzzleDate": "2025-05-15",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "UORR GOIXD CZ KWRP BJDO.",
+    "solutionText": "Well begun is half done.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 136,
+    "puzzleDate": "2025-05-16",
+    "type": "quote",
+    "author": "Norman Vaughan",
+    "puzzleText": "BFYCG UVI CJB BCFY QR ACVO. ~ JRFGCJ KCLIWCJ",
+    "solutionText": "Dream big and dare to fail. ~ Norman Vaughan",
+    "answer": ""
+  },
+  {
+    "puzzleId": 137,
+    "puzzleDate": "2025-05-17",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "V TVZH XE MLHDS FB CHHZHDSM LTJBVDA OIHMM CVXI ETSHQ FHD VD XIH LJQZ. GPX VX’M GHOEFVDA FEQH SVNNVOPTX. BEP XQB XE NVDS HWJOXTB 32 ETS APBM.",
+    "solutionText": "I like to spend my weekends playing chess with older men in the park. But it’s becoming more difficult. You try to find exactly 32 old guys.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 138,
+    "puzzleDate": "2025-05-18",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "ZJANEGZLAJ RKJMNBPK ADK JWKQQ EO JFZMK ZJ Z WBC EO VLGFETRKN, JKZNKR JAKZX, NZJFPKNNBKJ, ZGR NLW.",
+    "solutionText": "Astronauts describe the smell of space as a mix of gunpowder, seared steak, raspberries, and rum.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 139,
+    "puzzleDate": "2025-05-19",
+    "type": "funny quote",
+    "author": "Bill Murray",
+    "puzzleText": "BWDBOW FHW OVXW QYMVK. MDQW MBWFX LZW LHYLZ, FRG DLZWHM FHW NYML RDVMW. ~ CVOO QYHHFA",
+    "solutionText": "People are like music. Some speak the truth, and others are just noise. ~ Bill Murray",
+    "answer": ""
+  },
+  {
+    "puzzleId": 140,
+    "puzzleDate": "2025-05-20",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "OXCNBD ZP ZQ BEX XDX LM BEX OXELASXT.",
+    "solutionText": "Beauty is in the eye of the beholder.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 141,
+    "puzzleDate": "2025-05-21",
+    "type": "quote",
+    "author": "Cicero",
+    "puzzleText": "UFT’C BZC CYO RVHC DOGFHO CYO YFHNO. ~ RWROHF",
+    "solutionText": "Don’t put the cart before the horse. ~ Cicero",
+    "answer": ""
+  },
+  {
+    "puzzleId": 142,
+    "puzzleDate": "2025-05-22",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "QXE BVB SXN QXZON LOHJX? VS JZQ SXN YRNZD’J LYSSYI.",
+    "solutionText": "Why did the whale blush? It saw the ocean’s bottom.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 143,
+    "puzzleDate": "2025-05-23",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "AVTREK’ PQG NPHHGQI DHYTK OPHK T STKEGQL TMMHM NPEVE UQOMHL GQ LHSHNGHM NPHHGQI.",
+    "solutionText": "Flamin’ Hot Cheetos began when a janitor added chili powder to rejected Cheetos.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 144,
+    "puzzleDate": "2025-05-24",
+    "type": "funny quote",
+    "author": "Garrison Keillor",
+    "puzzleText": "HVIM NM ELXKZ, BLLD NMZIBBNPIMZ. ~ PJQQNALM DINBBLQ",
+    "solutionText": "When in doubt, look intelligent. ~ Garrison Keillor",
+    "answer": ""
+  },
+  {
+    "puzzleId": 145,
+    "puzzleDate": "2025-05-25",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "CORMEJI RT LCQIZ QGI TQINNRZV TQLZI QL TEDDITT.",
+    "solutionText": "Failure is often the stepping stone to success.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 146,
+    "puzzleDate": "2025-05-26",
+    "type": "quote",
+    "author": "Albert Schweitzer",
+    "puzzleText": "EL NLTXURPDM BLDEXYHVA. JXLJAX TIF PTPUIUX PU. ~ IAOXYU NZRBXPUQXY",
+    "solutionText": "Do something wonderful. People may imitate it. ~ Albert Schweitzer",
+    "answer": ""
+  },
+  {
+    "puzzleId": 147,
+    "puzzleDate": "2025-05-27",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "FAL RBRO’Y YAG QSGDGYUO CU UO YAG XUDDGXPUKQYGX? BY RBRO’Y AKMG YAG CTYQ.",
+    "solutionText": "Why didn’t the skeleton go on the rollercoaster? It didn’t have the guts.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 148,
+    "puzzleDate": "2025-05-28",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "XLE ZQJ MQD DUM TQVMTN LJ KIEFD. DUMX QIM MGFVTM.",
+    "solutionText": "You can eat the labels on fruit. They are edible.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 149,
+    "puzzleDate": "2025-05-29",
+    "type": "funny quote",
+    "author": "Bernard Meltzer",
+    "puzzleText": "S OFNY CFXYJM XQ QDGYDJY LVD OVXJBQ OVSO TDN LYFY S UDDM YUU YPYJ OVDNUV VY BJDLQ OVSO TDN LYFY QHXUVOHT WFSWBYM. ~ RYFJSFM GYHOEYF",
+    "solutionText": "A true friend is someone who thinks that you were a good egg even though he knows that you were slightly cracked. ~ Bernard Meltzer",
+    "answer": ""
+  },
+  {
+    "puzzleId": 150,
+    "puzzleDate": "2025-05-30",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "UGRER XER CKCR JK VMTCQ XJ UGKJR SGK STMM CKU JRR.",
+    "solutionText": "There are none so blind as those who will not see.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 151,
+    "puzzleDate": "2025-05-31",
+    "type": "quote",
+    "author": "Leonardo Da Vinci",
+    "puzzleText": "NP QSB DJKR HNKYW YJAW PJ AM SPPWKPNJK PQSP LWJLDW JG SYYJALDNHQAWKP FSFWDM HSP VSYZ SKB DWP PQNKRH QSLLWK PJ PQWA. PQWM IWKP JCP SKB QSLLWKWB PJ PQNKRH. ~ DWJKSFBJ BS ONKYN",
+    "solutionText": "It had long since come to my attention that people of accomplishment rarely sat back and let things happen to them. They went out and happened to things. ~ Leonardo Da Vinci",
+    "answer": ""
+  },
+  {
+    "puzzleId": 152,
+    "puzzleDate": "2025-06-01",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "CEH OD OF M KMP OPUM FY UMF M XQYXI? KUXMLDU OF’D DY FORU-XYJDLROJB.",
+    "solutionText": "Why is it a bad idea to eat a clock? Because it’s so time-consuming.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 153,
+    "puzzleDate": "2025-06-02",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "BJYV QLN PTJCJBLGGW FLGGVK OGSV TJOOPB NUPTMN LBK OVCLB LN L KJNMTJOSMPT APT PBJMNSYL MJCVT.",
+    "solutionText": "Nike was originally called Blue Ribbon Sports and began as a distributor for Onitsuka Tiger.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 154,
+    "puzzleDate": "2025-06-03",
+    "type": "funny quote",
+    "author": "Richard Lewis",
+    "puzzleText": "APWE UMQ’JW DE ZMXW, DF’C FPW LMCF SZMJDMQC FAM IEN I PIZK NIUC MK UMQJ ZDKW. ~ JDGPIJN ZWADC",
+    "solutionText": "When you’re in love, it’s the most glorious two and a half days of your life. ~ Richard Lewis",
+    "answer": ""
+  },
+  {
+    "puzzleId": 155,
+    "puzzleDate": "2025-06-04",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "XJP UXKCDOPUX RKAPDEUJAWU UVKZAZP EAUSOKPPFPDX.",
+    "solutionText": "The strongest friendships survive disagreement.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 156,
+    "puzzleDate": "2025-06-05",
+    "type": "quote",
+    "author": "Aristotle",
+    "puzzleText": "XM CTM XWCV XM TMYMCVMJKH JI; MPAMKKMGAM, VWMG, DF GIV CG CAV EBV C WCEDV. ~ CTDFVIVKM",
+    "solutionText": "We are what we repeatedly do; excellence, then, is not an act but a habit. ~ Aristotle",
+    "answer": ""
+  },
+  {
+    "puzzleId": 157,
+    "puzzleDate": "2025-06-06",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "NL ZORQKM EXKDC DS YQTSNQ XK XOTPXQSBSARCD, YID R’N DOLRKA DS DXBV PRN SID SZ RD. R’N TSKHRKTQM PRC BRZQ ERBB YQ RK OIRKC.",
+    "solutionText": "My friend wants to become an archaeologist, but I’m trying to talk him out of it. I’m convinced his life will be in ruins.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 158,
+    "puzzleDate": "2025-06-07",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "AIC PVIYBUQSB IA GDUCB, ADCCDPB LDCD FCDS PI VYQP CISDQPB UQS IPVDC RDBPB.",
+    "solutionText": "For thousands of years, ferrets were bred to hunt rodents and other pests.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 159,
+    "puzzleDate": "2025-06-08",
+    "type": "funny quote",
+    "author": "Charlotte Whitton",
+    "puzzleText": "PBREZMZX PJTZO UJ, EBZH TQVE UJ EPWGZ RV PZFF RV TZO EJ YZ EBJQSBE BRFL RV SJJU. FQGAWFH, EBWV WV OJE UWLLWGQFE. ~ GBRXFJEEZ PBWEEJO",
+    "solutionText": "Whatever women do, they must do twice as well as men to be thought half as good. Luckily, this is not difficult. ~ Charlotte Whitton",
+    "answer": ""
+  },
+  {
+    "puzzleId": 160,
+    "puzzleDate": "2025-06-09",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "WDWNK UXLF PM TJIW CPQY J FWK PR TPRI.",
+    "solutionText": "Every lock is made with a key in mind.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 161,
+    "puzzleDate": "2025-06-10",
+    "type": "quote",
+    "author": "Tony Robbins",
+    "puzzleText": "AYG WIBT HVXWOOHFBG UWDJIGT HO AYG WIG TWD IGPGJ FGZHI. ~ AWIT JWFFHIO",
+    "solutionText": "The only impossible journey is the one you never begin. ~ Tony Robbins",
+    "answer": ""
+  },
+  {
+    "puzzleId": 162,
+    "puzzleDate": "2025-06-11",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "IOKS LTL ZBU CPKSU FKE SZ KBZSOUW CPKSU? LTBBUW TF ZB YU.",
+    "solutionText": "What did one plate say to another plate? Dinner is on me.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 163,
+    "puzzleDate": "2025-06-12",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "GHPM HEAHOCG GOMEDMG IRQ UDUAQ-GDN ASHCGRWZ MKKG RA R ADPM.",
+    "solutionText": "Some octopus species lay fifty-six thousand eggs at a time.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 164,
+    "puzzleDate": "2025-06-13",
+    "type": "funny quote",
+    "author": "Isaac Asimov",
+    "puzzleText": "KESU EM JKUXMXQD. NUXDG EM JUXYUSWK. ED'M DGU DOXQMEDECQ DGXD'M DOCWAKUMCLU. ~ EMXXY XMELCB",
+    "solutionText": "Life is pleasant. Death is peaceful. It's the transition that's troublesome. ~ Isaac Asimov",
+    "answer": ""
+  },
+  {
+    "puzzleId": 165,
+    "puzzleDate": "2025-06-14",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "AJRH BH SNIR, GN OV ZJR SNIOHV GN.",
+    "solutionText": "When in Rome, do as the Romans do.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 166,
+    "puzzleDate": "2025-06-15",
+    "type": "quote",
+    "author": "Ralph Waldo Emerson",
+    "puzzleText": "BT ZTJ OT SIKVK JIK HUJI NUE PKUB; OT MZXJKUB SIKVK JIKVK MX ZT HUJI UZB PKULK U JVUMP. ~ VUPHI SUPBT KNKVXTZ",
+    "solutionText": "Do not go where the path may lead; go instead where there is no path and leave a trail. ~ Ralph Waldo Emerson",
+    "answer": ""
+  },
+  {
+    "puzzleId": 167,
+    "puzzleDate": "2025-06-16",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "VQ N DBJ CALBK, N KBYBYGBK VAA JTB WBCWAB N ACQJ VACFD JTB HVM. YVMGB V RVKBBK VQ V JCEK DENLB HVQ FCJ JTB KNDTJ RTCNRB.",
+    "solutionText": "As I get older, I remember all the people I lost along the way. Maybe a career as a tour guide was not the right choice.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 168,
+    "puzzleDate": "2025-06-17",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "AMZ TXUYZPA DZJJSUY CZST DQP AMZ PQIZ TZUYAM QP PSBAV-AMLZZ RXXAEQTT RSZTJP.",
+    "solutionText": "The longest wedding veil was the same length as sixty-three football fields.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 169,
+    "puzzleDate": "2025-06-18",
+    "type": "funny quote",
+    "author": "Jack Lemmon",
+    "puzzleText": "F ZJTZVR GSSJ RQUUV GQU ISQIJS TLQ NQA’P NUFAW YSBZHRS TLSA PLSV TZWS HI FA PLS XQUAFAC, PLZP’R ZR CQQN ZR PLSV’US CQAAZ GSSJ ZJJ NZV. ~ OZBW JSXXQA",
+    "solutionText": "I always feel sorry for people who don’t drink because when they wake up in the morning, that’s as good as they’re gonna feel all day. ~ Jack Lemmon",
+    "answer": ""
+  },
+  {
+    "puzzleId": 170,
+    "puzzleDate": "2025-06-19",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "XVA DJHEATX PJSZA ST WJX BDKBGT XVA KSTATX.",
+    "solutionText": "The loudest voice is not always the wisest.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 171,
+    "puzzleDate": "2025-06-20",
+    "type": "quote",
+    "author": "George Orwell",
+    "puzzleText": "YBC IOFYBCF V TDJPCYL UFPIYT IFDH YBC YFOYB, YBC HDFC PY MPGG BVYC YBDTC YBVY TWCVX PY. ~ QCDFQC DFMCGG",
+    "solutionText": "The further a society drifts from the truth, the more it will hate those that speak it. ~ George Orwell",
+    "answer": ""
+  },
+  {
+    "puzzleId": 172,
+    "puzzleDate": "2025-06-21",
+    "type": "dad joke",
+    "author": "the blood bank.",
+    "puzzleText": "HKK IHEBTYUG FUUB SZUTY ELOUP TO H GBUATHK BKHAU—SZU WKLLX WHOF.",
+    "solutionText": "All vampires keep their money in a special place—the blood bank.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 173,
+    "puzzleDate": "2025-06-22",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "JYT UHB NOJY JYT NKSIR’A RTTMTAJ DKOLT LHB UHCT AKPBRA QTIKN JYT SHBXT KE YPUHB YTHSOBX.",
+    "solutionText": "The man with the world’s deepest voice can make sounds below the range of human hearing.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 174,
+    "puzzleDate": "2025-06-23",
+    "type": "funny quote",
+    "author": "Charles Wadsworth",
+    "puzzleText": "XC BNF BOLF U LUA ZFUQOIFK BNUB NOK MUBNFZ HUK ZOWNB, NF NUK U KPA HNP BNOAGK NF’K HZPAW. ~ SNUZQFK HUJKHPZBN",
+    "solutionText": "By the time a man realizes that his father was right, he has a son who thinks he’s wrong. ~ Charles Wadsworth",
+    "answer": ""
+  },
+  {
+    "puzzleId": 175,
+    "puzzleDate": "2025-06-24",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "MS BQM RI QM RIOQMW.",
+    "solutionText": "No man is an island.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 176,
+    "puzzleDate": "2025-06-25",
+    "type": "quote",
+    "author": "Napoleon Hill",
+    "puzzleText": "E MSEK QY E PGFEN OQDU E PFEPKQWF. ~ WEXSKFSW UQKK",
+    "solutionText": "A goal is a dream with a deadline. ~ Napoleon Hill",
+    "answer": ""
+  },
+  {
+    "puzzleId": 177,
+    "puzzleDate": "2025-06-26",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "CXZ NX JQFQRPWEWQU UEYA JXXF? ECQA CYDQ IYVA BYVU.",
+    "solutionText": "How do celebrities stay cool? They have many fans.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 178,
+    "puzzleDate": "2025-06-27",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "UPCWM IWURQJF APPQKW, MAJUIV MWUFUJ CLMJWV VATJ U MAIW QJ OUKH CA CNW PLCLMW QQQ.",
+    "solutionText": "After leaving office, Ronald Reagan turned down a role in Back to the Future III.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 179,
+    "puzzleDate": "2025-06-28",
+    "type": "funny quote",
+    "author": "Benjamin Franklin",
+    "puzzleText": "WACFDEV PGCQPVX UW WLV XCCA, DFW, LVUAYGM EUFMLWVA, LFAAYVX UJUZ. ~ DVGSUKYG RAUGPEYG",
+    "solutionText": "Trouble knocked at the door, but, hearing laughter, hurried away. ~ Benjamin Franklin",
+    "answer": ""
+  },
+  {
+    "puzzleId": 180,
+    "puzzleDate": "2025-06-29",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "U AUGTVPG MTFOVK IUGIOVF GOV BUKYVFG MTFO.",
+    "solutionText": "A patient fisher catches the largest fish.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 181,
+    "puzzleDate": "2025-06-30",
+    "type": "quote",
+    "author": "Dr. Seuss",
+    "puzzleText": "FLS MKLR FLS’IH GK QLTH RCHK FLS UXK’E AXQQ XVQHHZ DHUXSVH IHXQGEF GV AGKXQQF DHEEHI ECXK FLSI WIHXJV. ~ WI. VHSVV",
+    "solutionText": "You know you’re in love when you can’t fall asleep because reality is finally better than your dreams. ~ Dr. Seuss",
+    "answer": ""
+  },
+  {
+    "puzzleId": 182,
+    "puzzleDate": "2025-07-01",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "CKC UZIMY CM HK LBH IMHGSBL KF HSM PVKGMVX EOZH, UFY FKD O GUF’H VMUY DSUH MEZM OZ KF OH.",
+    "solutionText": "Mom asked me to put ketchup on the grocery list, and now I can’t read what else is on it.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 183,
+    "puzzleDate": "2025-07-02",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "T AGBENP ULQTE PLVSW RPB GBNLGS ALG RPB VLEXBWR MBGDADBS PCQTE VDABWOTE TR 122 KBTGW.",
+    "solutionText": "A French woman holds the record for the longest verified human lifespan at 122 years.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 184,
+    "puzzleDate": "2025-07-03",
+    "type": "funny quote",
+    "author": "Christopher Morley",
+    "puzzleText": "DRTD DZZKX HZVZ REYZESZW FN U HCQUE HDC DUW FZZE LRXXZW CE SDZ JCVZDZUW. ~ PDVRXSCIDZV QCVKZN",
+    "solutionText": "High heels were invented by a woman who had been kissed on the forehead. ~ Christopher Morley",
+    "answer": ""
+  },
+  {
+    "puzzleId": 185,
+    "puzzleDate": "2025-07-04",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "PLXUVFXYZ PB THPBB AXJPH VZFHPJQ FVVPKZB.",
+    "solutionText": "Ignorance is bliss until reality arrives.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 186,
+    "puzzleDate": "2025-07-05",
+    "type": "quote",
+    "author": "Anonymous",
+    "puzzleText": "KCGCV LTWC YPBC FCVPHQFYS. KHRHAS ECLF HQL TYPGC TKSJTS. ~ TKHKSZHQF",
+    "solutionText": "Never take life seriously. Nobody gets out alive anyway. ~ Anonymous",
+    "answer": ""
+  },
+  {
+    "puzzleId": 187,
+    "puzzleDate": "2025-07-06",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "KJURHZ RK XQUQ! R ZIC KI QSDRCQW R OQC PG JBVHCK!",
+    "solutionText": "Spring is here! I got so excited I wet my plants!",
+    "answer": ""
+  },
+  {
+    "puzzleId": 188,
+    "puzzleDate": "2025-07-07",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "TLD NEKFZ RHLDFW VBQFVT VKJQX CQH JKFDVQ.",
+    "solutionText": "You blink around twenty times per minute.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 189,
+    "puzzleDate": "2025-07-08",
+    "type": "funny quote",
+    "author": "Lewis Black",
+    "puzzleText": "O JOTL ARDDLL FLAQWZL OB NOILZ YL BEL OJJWZORS BEQB O YONEB FL QVQTL. ~ JLVOZ FJQAT",
+    "solutionText": "I like coffee because it gives me the illusion that I might be awake. ~ Lewis Black",
+    "answer": ""
+  },
+  {
+    "puzzleId": 190,
+    "puzzleDate": "2025-07-09",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "KXP IHYCPEK EXQBHS JE WQEK QK ENYEPK.",
+    "solutionText": "The longest shadow is cast at sunset.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 191,
+    "puzzleDate": "2025-07-10",
+    "type": "quote",
+    "author": "Bruce Lee",
+    "puzzleText": "YQB OGWWBOONGZ XMDDSFD SO YQB MEBDMKB AMI XSYQ ZMOBD-ZSPB NFWGO. ~ CDGWB ZBB",
+    "solutionText": "The successful warrior is the average man with laser-like focus. ~ Bruce Lee",
+    "answer": ""
+  },
+  {
+    "puzzleId": 192,
+    "puzzleDate": "2025-07-11",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "LJCA PI ZIW HMA LJMV ZIW QFITT C TRWFK CVP C QIL? NOWM QJMMTM.",
+    "solutionText": "What do you get when you cross a Smurf and a cow? Blue cheese.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 193,
+    "puzzleDate": "2025-07-12",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "LNGIG RIG DXGI QMQG LNDYZRQO JGQBNGZ MQ BGQLIRV KRIP.",
+    "solutionText": "There are over nine thousand benches in Central Park.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 194,
+    "puzzleDate": "2025-07-13",
+    "type": "funny quote",
+    "author": "Jerry Seinfeld",
+    "puzzleText": "JP S KYYE SKYQD PSJBQVOI GYOIF’D IOBB, JI JD S IQXXOII? ~ TOVVW IOJFPOBG",
+    "solutionText": "If a book about failures doesn’t sell, is it a success? ~ Jerry Seinfeld",
+    "answer": ""
+  },
+  {
+    "puzzleId": 195,
+    "puzzleDate": "2025-07-14",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "N UAQP AB FMJ MNBP AZ ILQFM FIL AB FMJ URZM.",
+    "solutionText": "A bird in the hand is worth two in the bush.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 196,
+    "puzzleDate": "2025-07-15",
+    "type": "quote",
+    "author": "Mark Twain",
+    "puzzleText": "CSQF ZSIH QJ JQH’C ZSCXHQSQF, ZJPH ZSIH AJL’PH QHPHO DHHQ ULOX, RWQVH ZSIH QJDJRA’C KWXVUSQF, WQR ZSPH ZSIH SX’C UHWPHQ JQ HWOXU. ~ YWOI XKWSQ",
+    "solutionText": "Sing like no one’s listening, love like you’ve never been hurt, dance like nobody’s watching, and live like it’s heaven on earth. ~ Mark Twain",
+    "answer": ""
+  },
+  {
+    "puzzleId": 197,
+    "puzzleDate": "2025-07-16",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "GVN BTB PVY QEEXTY KE PE PVY VERZTPJS? DYQJFRY TP UYSP QMFHHN.",
+    "solutionText": "Why did the cookie go to the hospital? Because it felt crummy.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 198,
+    "puzzleDate": "2025-07-17",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "CNMQWCT APLLQ AKISC CMIQ QLILUC K DMJD NTMI DTMWU APLLQ TMPFC K FKDWMID.",
+    "solutionText": "Swedish blood banks send donors a text when their blood helps a patient.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 199,
+    "puzzleDate": "2025-07-18",
+    "type": "funny quote",
+    "author": "Michael Scott, The Office",
+    "puzzleText": "Z’B XAD WPVKIWDZDZAPW, LPD Z MB M CZDDCK WDZDZAPW. ~ BZUFMKC WUADD, DFK ANNZUK",
+    "solutionText": "I’m not superstitious, but I am a little stitious. ~ Michael Scott, The Office",
+    "answer": ""
+  },
+  {
+    "puzzleId": 200,
+    "puzzleDate": "2025-07-19",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "MDLA CAEIO EII RFXUZO.",
+    "solutionText": "Time heals all wounds.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 201,
+    "puzzleDate": "2025-07-20",
+    "type": "quote",
+    "author": "Herman Melville",
+    "puzzleText": "PZ PH FVZZVD ZL GEPN PM LDPTPMENPZI ZKEM ZL HSUUVVB PM PAPZEZPLM. ~ KVDAEM AVNXPNNV",
+    "solutionText": "It is better to fail in originality than to succeed in imitation. ~ Herman Melville",
+    "answer": ""
+  },
+  {
+    "puzzleId": 202,
+    "puzzleDate": "2025-07-21",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "DJZG XHX GJA OHW EUYDAC MZR GY GJA UHGGUA EUYDAC? JH, OSX!",
+    "solutionText": "What did the big flower say to the little flower? Hi, bud!",
+    "answer": ""
+  },
+  {
+    "puzzleId": 203,
+    "puzzleDate": "2025-07-22",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "FHUYKR FNFHAR JHYTHFA DX AWH CDYKV’Z JDJQKUANDF KNMHZ NF AWH FDYAWHYF WHSNZJWHYH.",
+    "solutionText": "Nearly ninety percent of the world’s population lives in the Northern Hemisphere.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 204,
+    "puzzleDate": "2025-07-23",
+    "type": "funny quote",
+    "author": "Jim Halpert, The Office",
+    "puzzleText": "HMHPLAYFSN F YBMH F QJH AQ AYFT VQU... AYFT TADXFW, JQSWHPGDR, UQPFSN, BEBCFSN VQU. ~ VFE YBRXHPA, AYH QGGFOH",
+    "solutionText": "Everything I have I owe to this job... this stupid, wonderful, boring, amazing job. ~ Jim Halpert, The Office",
+    "answer": ""
+  },
+  {
+    "puzzleId": 205,
+    "puzzleDate": "2025-07-24",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "ZHTM GBTV FAHSW SHCAOS GZAO SHCAOS MBAW OBS GBTV ZHTM.",
+    "solutionText": "Hard work beats talent when talent does not work hard.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 206,
+    "puzzleDate": "2025-07-25",
+    "type": "quote",
+    "author": "James Cameron",
+    "puzzleText": "TW EIV LDS EIVG KIBRL GTYTNVRIVLRE CTKC BOY TS’L B WBTRVGD, EIV PTRR WBTR BXIJD DJDGEIOD DRLD’L LVNNDLL. ~ MBHDL NBHDGIO",
+    "solutionText": "If you set your goals ridiculously high and it’s a failure, you will fail above everyone else’s success. ~ James Cameron",
+    "answer": ""
+  },
+  {
+    "puzzleId": 207,
+    "puzzleDate": "2025-07-26",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "SQLB CN DNO GLKK L BNNBQKVFF TVLE? L POJJD TVLE!",
+    "solutionText": "What do you call a toothless bear? A gummy bear!",
+    "answer": ""
+  },
+  {
+    "puzzleId": 208,
+    "puzzleDate": "2025-07-27",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "BNPTYG IPBF JYDY ATLY FGLDPRPLYX JYGDPTB YGDDPTBF GTX TYLWQGLYF GTX JDGIIYX QPWY FNFSP.",
+    "solutionText": "Guinea pigs were once sacrificed wearing earrings and necklaces and wrapped like sushi.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 209,
+    "puzzleDate": "2025-07-28",
+    "type": "funny quote",
+    "author": "Billy Arthur",
+    "puzzleText": "DGS XLN GYBD DGSYZ GYKN. XUFNL FVXF, DGS VXJN FG FVRYW SE HGQN GFVNL NAKSHN. ~ TRBBD XLFVSL",
+    "solutionText": "You are only young once. After that, you have to think up some other excuse. ~ Billy Arthur",
+    "answer": ""
+  },
+  {
+    "puzzleId": 210,
+    "puzzleDate": "2025-07-29",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "YFG JYEQZDGJY SEXWDG XJ SAXRY SGTQEG XY XJ ZGGWGW.",
+    "solutionText": "The strongest bridge is built before it is needed.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 211,
+    "puzzleDate": "2025-07-30",
+    "type": "quote",
+    "author": "Marcus Tullius Cicero",
+    "puzzleText": "LVRNBYBE GUA WU, WU LPNV RXX GUAE ZPHVN. ~ ZREFAK NAXXPAK FPFBEU",
+    "solutionText": "Whatever you do, do with all your might. ~ Marcus Tullius Cicero",
+    "answer": ""
+  },
+  {
+    "puzzleId": 212,
+    "puzzleDate": "2025-07-31",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "K’Q SNBLKEW BE BEIK-WSBFKIM JDDR. K UBE’I TXI KI LDYE!",
+    "solutionText": "I’m reading an anti-gravity book. I can’t put it down!",
+    "answer": ""
+  },
+  {
+    "puzzleId": 213,
+    "puzzleDate": "2025-08-01",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "UXSDJX VDEXJQ EXQGIJXM, MDVX DS GFX VDMG BJWAXE SCHMX GXXGF ZXJX VCEX SJDV GXXGF GCLXQ SJDV SCHHXQ MDHEWXJM.",
+    "solutionText": "Before modern dentures, some of the most prized false teeth were made from teeth taken from fallen soldiers.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 214,
+    "puzzleDate": "2025-08-02",
+    "type": "funny quote",
+    "author": "Dave Barry",
+    "puzzleText": "ZV MGBTUCPKM MWSA ZB MGB QUV MW UHGPBEB MTDB PIIBT CBUHB PK MW JPIPKG QGUM P KMUTM. KW JUT, P’EB JPIPKGBA MQW FUNK WJ Z&ZK UIA U HGWHWSUMB HULB. P JBBS FBMMBT USTBUAV. ~ AUEB FUTTV",
+    "solutionText": "My therapist told me the way to achieve true inner peace is to finish what I start. So far, I’ve finished two bags of M&Ms and a chocolate cake. I feel better already. ~ Dave Barry",
+    "answer": ""
+  },
+  {
+    "puzzleId": 215,
+    "puzzleDate": "2025-08-03",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "IOD RPDVIDWI UCWIVFJD KW UMIDX WDJM-YUACI.",
+    "solutionText": "The greatest obstacle is often self-doubt.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 216,
+    "puzzleDate": "2025-08-04",
+    "type": "quote",
+    "author": "Sholom Aleichem",
+    "puzzleText": "VQGS QP K EASKN GCA OUS RQPS, K IKNS GCA OUS GCCV, K ZCNSEF GCA OUS AQZU, K OAKISEF GCA OUS TCCA. ~ PUCVCN KVSQZUSN",
+    "solutionText": "Life is a dream for the wise, a game for the fool, a comedy for the rich, a tragedy for the poor. ~ Sholom Aleichem",
+    "answer": ""
+  },
+  {
+    "puzzleId": 217,
+    "puzzleDate": "2025-08-05",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "PGP ETI YHJM QYJQ ZJIFYGWF QTT ZTIPZE GK GZZHFJZ GW YJCJGG? QYHE TWZE NHMDGQ J-ZTC-YJ.",
+    "solutionText": "Did you hear that laughing too loudly is illegal in Hawaii? They only permit a-low-ha.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 218,
+    "puzzleDate": "2025-08-06",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "LKTKGLBDKLT JKIUKRK GII JIOK-KFKX VKAVIK TDGLK G TUWYIK BANNAW GWBKTQAL.",
+    "solutionText": "Researchers believe all blue-eyed people share a single common ancestor.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 219,
+    "puzzleDate": "2025-08-07",
+    "type": "funny quote",
+    "author": "Ellen DeGeneres",
+    "puzzleText": "OJFJW BITTIG DOCIOJ JTQJ’Q HDAR. NOTJQQ CIN’WJ EO ARJ GIIMQ DOM CIN’WJ TIQA, DOM CIN QJJ D HDAR. ARJO, UC DTT XJDOQ, BITTIG ARDA HDAR. ~ JTTJO MJLJOJWJQ",
+    "solutionText": "Never follow anyone else’s path. Unless you’re in the woods and you’re lost, and you see a path. Then, by all means, follow that path. ~ Ellen DeGeneres",
+    "answer": ""
+  },
+  {
+    "puzzleId": 220,
+    "puzzleDate": "2025-08-08",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "XJBVWTD ZC QJR RND WLCDQXD JM MDWV, LBR RND RVZBOGN JKDV ZR.",
+    "solutionText": "Courage is not the absence of fear, but the triumph over it.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 221,
+    "puzzleDate": "2025-08-09",
+    "type": "quote",
+    "author": "Wayne Gretzky",
+    "puzzleText": "LBV ZRFF 100 UAWNAJD BE DOA FOBDF LBV JASAW DIYA. ~ HILJA QWADGYL",
+    "solutionText": "You miss 100 percent of the shots you never take. ~ Wayne Gretzky",
+    "answer": ""
+  },
+  {
+    "puzzleId": 222,
+    "puzzleDate": "2025-08-10",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "WKL TK AKP UQGB QV KISKFPX DQPZW? LJSW SBV-SJIGDBX!",
+    "solutionText": "How do you make an octopus laugh? With ten-tickles!",
+    "answer": ""
+  },
+  {
+    "puzzleId": 223,
+    "puzzleDate": "2025-08-11",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "YBJ VUIMJCY BAEEDSAIM CSJVV VKCYJG K NBUSSAIM CAOYH-JAMBY HJKLC.",
+    "solutionText": "The longest hiccuping spell lasted a whopping sixty-eight years.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 224,
+    "puzzleDate": "2025-08-12",
+    "type": "funny quote",
+    "author": "Anonymous",
+    "puzzleText": "PW YZ WMI DQI EOUZ, AWG QZZI PW XOBUP YZ AWGQC DQI UPGNOI. ~ DQWQAVWGU",
+    "solutionText": "To be old and wise, you need to first be young and stupid. ~ Anonymous",
+    "answer": ""
+  },
+  {
+    "puzzleId": 225,
+    "puzzleDate": "2025-08-13",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "LPO JLTVKZOJL LTOO ZTVXJ XPOTO LPO XGKRJ WTO PWTJPOJL.",
+    "solutionText": "The strongest tree grows where the winds are harshest.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 226,
+    "puzzleDate": "2025-08-14",
+    "type": "quote",
+    "author": "Abraham Lincoln",
+    "puzzleText": "VLOTL YWIBZYE UWS IWKWSSWX XBZRB ROY NL CWYL IWCOD. ~ ONSOBOK VZYRWVY",
+    "solutionText": "Leave nothing for tomorrow which can be done today. ~ Abraham Lincoln",
+    "answer": ""
+  },
+  {
+    "puzzleId": 227,
+    "puzzleDate": "2025-08-15",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "V RLK HIVZH QI QCAA L QVNC-QULWCAVZH DIMC, OXQ PIX HXPK SVSZ’Q AVMC VQ.",
+    "solutionText": "I was going to tell a time-traveling joke, but you guys didn’t like it.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 228,
+    "puzzleDate": "2025-08-16",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "RLAO HKAZPS NTDYDNOPYA QPDY WBLEPA OL VPPC DZKRDOKLZ AKRCBP.",
+    "solutionText": "Most Disney characters wear gloves to keep animation simple.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 229,
+    "puzzleDate": "2025-08-17",
+    "type": "funny quote",
+    "author": "Milton Berle",
+    "puzzleText": "Q MVRRAUUDD AO Q PLVXT UIQU EDDTO RAGXUDO QGW ZVODO IVXLO. ~ RAZUVG KDLZD",
+    "solutionText": "A committee is a group that keeps minutes and loses hours. ~ Milton Berle",
+    "answer": ""
+  },
+  {
+    "puzzleId": 230,
+    "puzzleDate": "2025-08-18",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "L NYBQ EQMTCLDF TWVDFB RLZVQ, DWF TWYDB.",
+    "solutionText": "A wise merchant counts value, not coins.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 231,
+    "puzzleDate": "2025-08-19",
+    "type": "quote",
+    "author": "Geoffrey Chaucer",
+    "puzzleText": "BQQ FRRZ CSOYFA TIAC VRTD CR BY DYZ. ~ FDRKKEDX VSBIVDE",
+    "solutionText": "All good things must come to an end. ~ Geoffrey Chaucer",
+    "answer": ""
+  },
+  {
+    "puzzleId": 232,
+    "puzzleDate": "2025-08-20",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "Y’G AEBB NHMTYZ, COX QXFKZM GNZ CK QCXJ KZ COX GKKZ. ZXYH AXIKTX GX.",
+    "solutionText": "I’m Buzz Aldrin, the second man to step on the moon. Neil before me.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 233,
+    "puzzleDate": "2025-08-21",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "WGSJZVY YSUNZGXC WURG U TZHHE CDOVL NUSSGL \"FGXYE CGSJHGX.\"",
+    "solutionText": "Melting glaciers make a fizzy sound called \"bergy seltzer.\"",
+    "answer": ""
+  },
+  {
+    "puzzleId": 234,
+    "puzzleDate": "2025-08-22",
+    "type": "funny quote",
+    "author": "Anonymous",
+    "puzzleText": "ERAWL ATF PDTFGC LRN PTEL EROLFB PT ATF URY WL BMLNNA TY NDL ZYPZCL NTT. ~ RYTYAETFP",
+    "solutionText": "Maybe you should eat some makeup so you can be pretty on the inside too. ~ Anonymous",
+    "answer": ""
+  },
+  {
+    "puzzleId": 235,
+    "puzzleDate": "2025-08-23",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "RFO LOOEOXR KOGGX ECVYQLO RFO SVVGOXR KBROC.",
+    "solutionText": "The deepest wells provide the coolest water.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 236,
+    "puzzleDate": "2025-08-24",
+    "type": "quote",
+    "author": "Audrey Hepburn",
+    "puzzleText": "XE AUB ZQUK UDLPQ, AUB KSDD LSEOUWPQ INXI AUB NXWP IKU NXJLE, UJP RUQ NPDMSJZ AUBQEPDR, INP UINPQ RUQ NPDMSJZ UINPQE. ~ XBLQPA NPMFBQJ",
+    "solutionText": "As you grow older, you will discover that you have two hands, one for helping yourself, the other for helping others. ~ Audrey Hepburn",
+    "answer": ""
+  },
+  {
+    "puzzleId": 237,
+    "puzzleDate": "2025-08-25",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "PJF CUC VJO QKAO BOOT AXC? UV PXA XTPXFA YOVVUQY MUEDOC KQ.",
+    "solutionText": "Why did the nose feel sad? It was always getting picked on.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 238,
+    "puzzleDate": "2025-08-26",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "UBXIHIYX YIILXTXQU BFH F DXU LDIUUXH BAXEF EFNXH MWQQ.",
+    "solutionText": "Theodore Roosevelt had a pet spotted hyena named Bill.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 239,
+    "puzzleDate": "2025-08-27",
+    "type": "funny quote",
+    "author": "Jackie Mason",
+    "puzzleText": "QCEMW XZ ECD DVM QCZD XQGCPDOED DVXEU XE DVM YCPKI. KCHM XZ. ACPDFEODMKW, X KCHM QCEMW. ~ SOJNXM QOZCE",
+    "solutionText": "Money is not the most important thing in the world. Love is. Fortunately, I love money. ~ Jackie Mason",
+    "answer": ""
+  },
+  {
+    "puzzleId": 240,
+    "puzzleDate": "2025-08-28",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "LJX WMM QDJ QWLNCZ WZC MJTX.",
+    "solutionText": "Not all who wander are lost.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 241,
+    "puzzleDate": "2025-08-29",
+    "type": "quote",
+    "author": "Vince Lombardi",
+    "puzzleText": "PQQIYVWW NX WNTR WNPR. NI ZRMGNZRX HRZXRJRZVOBR, XRWP-CRONVW, KVZC FQZT, XVBZNPNBR, CRCNBVINQO, VOC ZRXHRBI PQZ VGIKQZNIS. ~ JNOBR WQEYVZCN",
+    "solutionText": "Football is like life. It requires perseverance, self-denial, hard work, sacrifice, dedication, and respect for authority. ~ Vince Lombardi",
+    "answer": ""
+  },
+  {
+    "puzzleId": 242,
+    "puzzleDate": "2025-08-30",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "ZH JWDDLV OHX FAZG QHR WVL, PLVJWZ EOAYGVLZ WVL WYXWQN FAZGLV.",
+    "solutionText": "No matter how kind you are, German children are always Kinder.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 243,
+    "puzzleDate": "2025-08-31",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "DJFUWEOJZF WNT PZU PSUF LSU WNT UOT TCJLQT FTTCF ZV UOT DJFUWEOJZ UNTT VNSJU.",
+    "solutionText": "Pistachios are not nuts but are the edible seeds of the pistachio tree fruit.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 244,
+    "puzzleDate": "2025-09-01",
+    "type": "funny quote",
+    "author": "Steven Wright",
+    "puzzleText": "Q QBADBV AW SQHD TWLDHDL. YW TNL, YW FWWV. ~ YADHDB XLQFZA",
+    "solutionText": "I intend to live forever. So far, so good. ~ Steven Wright",
+    "answer": ""
+  },
+  {
+    "puzzleId": 245,
+    "puzzleDate": "2025-09-02",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "RLBBLG BNL QLYWS VTI EFTC BNXF BNL QLYWS VTI QTF’B.",
+    "solutionText": "Better the devil you know than the devil you don’t.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 246,
+    "puzzleDate": "2025-09-03",
+    "type": "quote",
+    "author": "Brad Pitt",
+    "puzzleText": "N AGVNGWG ULP KXZG ULPY SXU. ULP KXZG ULPY VNEG. RL KPQI LE NO NR XVV MGYQGMONLD, XDS OINR NR OIG ELYK OIXO N APNVO ELY KURGVE. N IXWG OL XQQGMO NO XDS TLYZ TNOIND OILRG QLDENDGR, XDS NO’R PM OL KG. ~ AYXS MNOO",
+    "solutionText": "I believe you make your day. You make your life. So much of it is all perception, and this is the form that I built for myself. I have to accept it and work within those confines, and it’s up to me. ~ Brad Pitt",
+    "answer": ""
+  },
+  {
+    "puzzleId": 247,
+    "puzzleDate": "2025-09-04",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "BLOH AUA SGT DSGSYWT EOJ HS HLT SHLTX DSGSYWT? WTH’E VTH HSVTHLTX OGA DOFT O EQTYHOYWT SC SRXETWITE.",
+    "solutionText": "What did one monocle say to the other monocle? Let’s get together and make a spectacle of ourselves.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 248,
+    "puzzleDate": "2025-09-05",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "Y THP-YJKPN MIYRPJ LVTJPN DZP SWHHWHF FTYI WH DZP UWJLD UWUY STJIN VQM UWHYI.",
+    "solutionText": "A one-armed player scored the winning goal in the first FIFA World Cup final.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 249,
+    "puzzleDate": "2025-09-06",
+    "type": "funny quote",
+    "author": "Jerry Seinfeld",
+    "puzzleText": "PBNJN ST YE TVMB PBSYD UT WVY WEJ PBN ABERN WUISRK. ~ QNJJK TNSYWNRZ",
+    "solutionText": "There is no such thing as fun for the whole family. ~ Jerry Seinfeld",
+    "answer": ""
+  },
+  {
+    "puzzleId": 250,
+    "puzzleDate": "2025-09-07",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "IXB BSFYO LUFA GSIGXBJ IXB KWFD.",
+    "solutionText": "The early bird catches the worm.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 251,
+    "puzzleDate": "2025-09-08",
+    "type": "quote",
+    "author": "Carol Burnett",
+    "puzzleText": "XZJA C FTZ FRTZIK BA JCNK. ZX XZK KJOK FTZ MX CU NXQ BK. ~ FTQXJ PGQZKUU",
+    "solutionText": "Only I can change my life. No one else can do it for me. ~ Carol Burnett",
+    "answer": ""
+  },
+  {
+    "puzzleId": 252,
+    "puzzleDate": "2025-09-09",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "HCEDCED CE VGR HGAJRN CH ZPE PEVCU WAP DRV HAFS CE WAPN LAPVG. VGRE CV XRQALRH F HAFS ASRNF.",
+    "solutionText": "Singing in the shower is fun until you get soap in your mouth. Then it becomes a soap opera.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 253,
+    "puzzleDate": "2025-09-10",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "OMKZ UMWBZ HK M OSGGKG XWEU KMWYHQHM FSMF PGFK HFK FMKFG XWEU THCG UMPPEFK.",
+    "solutionText": "Casu Marzu is a cheese from Sardinia that gets its taste from live maggots.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 254,
+    "puzzleDate": "2025-09-11",
+    "type": "funny quote",
+    "author": "Dorothy Parker",
+    "puzzleText": "RA XZS BYHI IZ NHZB BDYI UZJ IDRHNT ZA KZHLX, CZZN YI IDL FLZFCL DL UYEL RI IZ. ~ JZVZIDX FYVNLV",
+    "solutionText": "If you want to know what God thinks of money, look at the people he gave it to. ~ Dorothy Parker",
+    "answer": ""
+  },
+  {
+    "puzzleId": 255,
+    "puzzleDate": "2025-09-12",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "AWTTSAA GA KMSIS XISXCICUGLQ CQB LXXLIUWQGUE VSSU.",
+    "solutionText": "Success is where preparation and opportunity meet.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 256,
+    "puzzleDate": "2025-09-13",
+    "type": "quote",
+    "author": "Oscar Wilde",
+    "puzzleText": "AN ZPCJDNXY; NKNJZPLN NXDN VD QXJNQSZ RQTNL. ~ PDEQJ OVXSN",
+    "solutionText": "Be yourself; everyone else is already taken. ~ Oscar Wilde",
+    "answer": ""
+  },
+  {
+    "puzzleId": 257,
+    "puzzleDate": "2025-09-14",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "JAGE’I G AGRRX BHJQHX BGKKYZ? G OHKKX MGUBAYM.",
+    "solutionText": "What’s a happy cowboy called? A jolly rancher.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 258,
+    "puzzleDate": "2025-09-15",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "IRIJQK RVQ ITVG ZJSW XTVQ ITGQK SWRG RLFBSK.",
+    "solutionText": "Babies are born with more bones than adults.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 259,
+    "puzzleDate": "2025-09-16",
+    "type": "funny quote",
+    "author": "Groucho Marx",
+    "puzzleText": "GP TMD PGOS GQ JKUS QM YKDHJ KQ TMDURFYP, G EMDYS LF JKNNT QM SM GQ PMU TMD. ~ HUMDXJM VKUZ",
+    "solutionText": "If you find it hard to laugh at yourself, I would be happy to do it for you. ~ Groucho Marx",
+    "answer": ""
+  },
+  {
+    "puzzleId": 260,
+    "puzzleDate": "2025-09-17",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "BMMJ EVAWBK GMXN EM EVMKN IVM ICAE.",
+    "solutionText": "Good things come to those who wait.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 261,
+    "puzzleDate": "2025-09-18",
+    "type": "quote",
+    "author": "Stephen Hawking",
+    "puzzleText": "DUMX NHSDG PX FWCIUO UM UF NXWXE’F MSEEZ. ~ JFXTLXE LCNBUEI",
+    "solutionText": "Life would be tragic if it weren’t funny. ~ Stephen Hawking",
+    "answer": ""
+  },
+  {
+    "puzzleId": 262,
+    "puzzleDate": "2025-09-19",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "BNTV’M LFZBK TKG MVUEAD? T MVUEA.",
+    "solutionText": "What’s brown and sticky? A stick.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 263,
+    "puzzleDate": "2025-09-20",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "NSBGYS NSFGQPMW PMZAHWYHQ, AJS HOO XHZ H UGFHAPGM-ZJHYPMW ZSYDPFS FHUUSV NEYNM.",
+    "solutionText": "Before becoming Instagram, the app was a location-sharing service called Burbn.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 264,
+    "puzzleDate": "2025-09-21",
+    "type": "funny quote",
+    "author": "Jerry Lewis",
+    "puzzleText": "H'QP SKT MNPKL WFGGPWW ZPHBM K LJLKV HTHJL. ~ OPNND VPEHW",
+    "solutionText": "I've had great success being a total idiot. ~ Jerry Lewis",
+    "answer": ""
+  },
+  {
+    "puzzleId": 265,
+    "puzzleDate": "2025-09-22",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "AUKXK PI EZXK AUTB ZBK MTN AZ IVPB T QTA.",
+    "solutionText": "There is more than one way to skin a cat.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 266,
+    "puzzleDate": "2025-09-23",
+    "type": "quote",
+    "author": "T.S. Eliot",
+    "puzzleText": "VRVPU WDWVOY TG M QPVGI FVHTOOTOH. ~ Y.G. VBTDY",
+    "solutionText": "Every moment is a fresh beginning. ~ T.S. Eliot",
+    "answer": ""
+  },
+  {
+    "puzzleId": 267,
+    "puzzleDate": "2025-09-24",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "IOF GNGM’C COS WJCKHMWDC RHLS OHLS CH ONJ INZS? OS MSSGSG ONJ JYWRS.",
+    "solutionText": "Why didn’t the astronaut come home to his wife? He needed his space.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 268,
+    "puzzleDate": "2025-09-25",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "XGB TYMXG NXIM ZIN YTPB EBQI, HN TYZ RYUIMHN, ITV ZHUU AB EBQI IQIHT HT IAYFX XZBUEB XGYFNITV JBIMN.",
+    "solutionText": "The North Star was once Vega, is now Polaris, and will be Vega again in about twelve thousand years.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 269,
+    "puzzleDate": "2025-09-26",
+    "type": "funny quote",
+    "author": "Ogden Nash",
+    "puzzleText": "OQSSWR HBR QY TMRE NDG’JR YQCCQEB HC MDOR DE H YHCGJSHN EQBMC, HES CMR CRWRZMDER JQEBY, HES NDG MDZR QC QYE’C XDJ NDG. ~ DBSRE EHYM",
+    "solutionText": "Middle age is when you’re sitting at home on a Saturday night, and the telephone rings, and you hope it isn’t for you. ~ Ogden Nash",
+    "answer": ""
+  },
+  {
+    "puzzleId": 270,
+    "puzzleDate": "2025-09-27",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "WSHAY XE G ECGROCH ENXVD RXMCROCH.",
+    "solutionText": "Birds of a feather flock together.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 271,
+    "puzzleDate": "2025-09-28",
+    "type": "quote",
+    "author": "Ayn Rand",
+    "puzzleText": "IXT GHTBIJWR JBR’I OXW JB LWJRL IW QTI ST; JI’B OXW JB LWJRL IW BIWZ ST. ~ EMR UERN",
+    "solutionText": "The question isn’t who is going to let me; it’s who is going to stop me. ~ Ayn Rand",
+    "answer": ""
+  },
+  {
+    "puzzleId": 272,
+    "puzzleDate": "2025-09-29",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "CU OHPZ DXHF H DSVINF FV NIKBZD WV DWXU HK DSXAZ. WSXW OVINF LZ X LHB DWZA PVMOXMF.",
+    "solutionText": "My wife said I should do lunges to stay in shape. That would be a big step forward.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 273,
+    "puzzleDate": "2025-09-30",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "QADBEJDQJQ UBKDBYB QCJROE CEW XRNDJBO TCG SCYB WDCTMEW OCDE.",
+    "solutionText": "Scientists believe Saturn and Jupiter may have diamond rain.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 274,
+    "puzzleDate": "2025-10-01",
+    "type": "funny quote",
+    "author": "Norman Wisdom",
+    "puzzleText": "T JKI HYEQ TQ RLED IYEED MTEMNOIBKQMLI. HYBP YZ OD XKELQBI JLEL RLED IYEED. ~ QYEOKQ JTIGYO",
+    "solutionText": "I was born in very sorry circumstances. Both of my parents were very sorry. ~ Norman Wisdom",
+    "answer": ""
+  },
+  {
+    "puzzleId": 275,
+    "puzzleDate": "2025-10-02",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "CFIZI VZI KVTD BVCFR CW CFI CWB WO CFI KWMTCVJT, EMC CFI HJIS JR VQSVDR CFI RVKI.",
+    "solutionText": "There are many paths to the top of the mountain, but the view is always the same.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 276,
+    "puzzleDate": "2025-10-03",
+    "type": "quote",
+    "author": "Marie von Ebner-Eschenbach",
+    "puzzleText": "WGWO U KAMIIWL RFMRH PK YPQCA ASPRW U LUT. ~ JUYPW GMO WEOWY-WKRCWOEURC",
+    "solutionText": "Even a stopped clock is right twice a day. ~ Marie von Ebner-Eschenbach",
+    "answer": ""
+  },
+  {
+    "puzzleId": 277,
+    "puzzleDate": "2025-10-04",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "VT ICR YISOK VO AC MQA GDI IGCOI CR, PQA D KCR’A AGDRS AGOT’NN ZDA VO.",
+    "solutionText": "My son asked me to put his shoes on, but I don’t think they’ll fit me.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 278,
+    "puzzleDate": "2025-10-05",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "UZBH CYN UYCVK MZ HFANCLS MZSH GNTCAHN MJNS HZAKU OWLN WKIAYNU DYNS.",
+    "solutionText": "Dogs are drawn to squeaky toys because they sound like injured prey.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 279,
+    "puzzleDate": "2025-10-06",
+    "type": "funny quote",
+    "author": "Danny Zuker",
+    "puzzleText": "R LBN ZVNC QRTRXVNKF UXWF-NGBIYW UF IF IRSSXS. ~ WBOOF HVAYS",
+    "solutionText": "I was just viciously body-shamed by my mirror. ~ Danny Zuker",
+    "answer": ""
+  },
+  {
+    "puzzleId": 280,
+    "puzzleDate": "2025-10-07",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "E hwal pwebz kaaoh dtz pnizhd bzew.",
+    "solutionText": "A slow flame cooks the finest meal.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 281,
+    "puzzleDate": "2025-10-08",
+    "type": "quote",
+    "author": "Albert Einstein",
+    "puzzleText": "OY HVC ZOMMQC NP MOPPOTFQHR QOCE NKKNWHFYOHR. ~ XQACWH COYEHCOY",
+    "solutionText": "In the middle of difficulty lies opportunity. ~ Albert Einstein",
+    "answer": ""
+  },
+  {
+    "puzzleId": 282,
+    "puzzleDate": "2025-10-09",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "NBYO KMK OBG UBAOAI XYE OA OBG BAOGP QGPPBAU? \"IA PTJJYJG; M’L OVYZGPMIJ PMJBO!\"",
+    "solutionText": "What did the photon say to the hotel bellhop? \"No luggage; I’m traveling light!\"",
+    "answer": ""
+  },
+  {
+    "puzzleId": 283,
+    "puzzleDate": "2025-10-10",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "DQOR FSQFBS UJSCA YF QL DQLMCKO.",
+    "solutionText": "Most people break up on Mondays.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 284,
+    "puzzleDate": "2025-10-11",
+    "type": "funny quote",
+    "author": "Rita Mae Brown",
+    "puzzleText": "DYPZ TY RCF MRFC FYTHFPFMCR; M SPR NMRZ FXY EPA TAWYDN. ~ OMFP TPY UOCER",
+    "solutionText": "Lead me not into temptation; I can find the way myself. ~ Rita Mae Brown",
+    "answer": ""
+  },
+  {
+    "puzzleId": 285,
+    "puzzleDate": "2025-10-12",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "H ZHAN MKH FKDAKZJM JOK ZAKHFKMJ MIQ.",
+    "solutionText": "A calm sea reflects the clearest sky.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 286,
+    "puzzleDate": "2025-10-13",
+    "type": "quote",
+    "author": "H. Jackson Brown, Jr.",
+    "puzzleText": "TJDJDCJT OAWO OAJ AWSSZJEO SJRSXJ WTJ PRO OAREJ KJOOZPK DRTJ CFO OAREJ KZQZPK DRTJ. ~ A. VWIBERP CTRMP, VT.",
+    "solutionText": "Remember that the happiest people are not those getting more but those giving more. ~ H. Jackson Brown, Jr.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 287,
+    "puzzleDate": "2025-10-14",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "SW QJUOAB VCN NIDVUAX SO IUN YDDE NIOB CAB MDUAYOB YD C ECBBOJ. “YICY’N SW NYOMECBBOJ,” IO NCUB. “U AOHOJ PAOV SW JOCE ECBBOJ.”",
+    "solutionText": "My friend was showing me his tool shed and pointed to a ladder. “That’s my stepladder,” he said. “I never knew my real ladder.”",
+    "answer": ""
+  },
+  {
+    "puzzleId": 288,
+    "puzzleDate": "2025-10-15",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "FPC LCV GPDDM IPLDCPV YQ ZLOP WKP KDPLZ YSDQXBS L RWAP-VQIILD EPCC HYLYP KQDDPHEQCVPCKP KQXDHP.",
+    "solutionText": "Ben and Jerry learned to make ice cream through a five-dollar Penn State correspondence course.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 289,
+    "puzzleDate": "2025-10-16",
+    "type": "funny quote",
+    "author": "Ricky Gervais",
+    "puzzleText": "IHYHYGHI, TFHC DQW UIH VHUV, DQW VQ CQN ECQT DQW UIH VHUV. MN MX QCZD SUMCRWZ RQI QNFHIX. NFH XUYH USSZMHX TFHC DQW UIH XNWSMV. ~ IMOED AHIJUMX",
+    "solutionText": "Remember, when you are dead, you do not know you are dead. It is only painful for others. The same applies when you are stupid. ~ Ricky Gervais",
+    "answer": ""
+  },
+  {
+    "puzzleId": 290,
+    "puzzleDate": "2025-10-17",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "OU HDM CDXM UOHC, SMWF OH.",
+    "solutionText": "If the shoe fits, wear it.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 291,
+    "puzzleDate": "2025-10-18",
+    "type": "quote",
+    "author": "Al Pacino",
+    "puzzleText": "TMMD XKZU QUGMSIJ OFKJM EZN XKZU MSMYGMJ OFKJMU. ~ HF DHOGSK",
+    "solutionText": "Keep your friends close but your enemies closer. ~ Al Pacino",
+    "answer": ""
+  },
+  {
+    "puzzleId": 292,
+    "puzzleDate": "2025-10-19",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "LE LQT DTMHEF AQE HLEBT OV DBKRT NF BNFT: N’O KXLTM VEP FEA.",
+    "solutionText": "To the person who stole my place in line: I’m after you now.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 293,
+    "puzzleDate": "2025-10-20",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "NMSGU DMBHRU’C VLLHO JMK DKGRWC VC V XVUZ BUCWH 1974 WU CPG BUWCGR ACVCGA.",
+    "solutionText": "Women couldn’t apply for credit at a bank until 1974 in the United States.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 294,
+    "puzzleDate": "2025-10-21",
+    "type": "funny quote",
+    "author": "Laurence J. Peter",
+    "puzzleText": "RBKEKHWOKYP KV YUZ IKHZ WBY RI BZAZAXZBKHE CUWY PRF UZWB XFY IRBEZYYKHE CUZBZ PRF UZWBL KY. ~ OWFBZHQZ N. MZYZB",
+    "solutionText": "Originality is the fine art of remembering what you hear but forgetting where you heard it. ~ Laurence J. Peter",
+    "answer": ""
+  },
+  {
+    "puzzleId": 295,
+    "puzzleDate": "2025-10-22",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "FDENN GBBGF EKB SBIIBK IXEL MKBEI OLIBLIORLF.",
+    "solutionText": "Small deeds are better than great intentions.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 296,
+    "puzzleDate": "2025-10-23",
+    "type": "quote",
+    "author": "Franklin D. Roosevelt",
+    "puzzleText": "RTMQ XYA PMHFT UTM MQL YN XYAP PYWM, UZM H DQYU ZQ ZU HQL THQK YQ. ~ NPHQDJZQ L. PYYGMSMJU",
+    "solutionText": "When you reach the end of your rope, tie a knot in it and hang on. ~ Franklin D. Roosevelt",
+    "answer": ""
+  },
+  {
+    "puzzleId": 297,
+    "puzzleDate": "2025-10-24",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "TMSG YXY GMK COSDK LSH TMKZ XG CVG LGKDDKY VZ? ZVGMXZC; XG UALG FKG VAG S FXGGFK TXZK.",
+    "solutionText": "What did the grape say when it got stepped on? Nothing; it just let out a little wine.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 298,
+    "puzzleDate": "2025-10-25",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "S LIUOD UL GZSOUODC KC OSIIZN S GSHFW.",
+    "solutionText": "A flock of peacocks is called a party.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 299,
+    "puzzleDate": "2025-10-26",
+    "type": "funny quote",
+    "author": "Tom Snyder",
+    "puzzleText": "ZBUCLU NLC IW HMI SW DBJC OBSA, QMS SACV ZNYC TLCNS NIPCUSWLU ~ SWZ UIVXCL",
+    "solutionText": "Misers are no fun to live with, but they make great ancestors ~ Tom Snyder",
+    "answer": ""
+  },
+  {
+    "puzzleId": 300,
+    "puzzleDate": "2025-10-27",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "WEL FXBBEN TAFXDT NOT JTADEBAVPVGVNW EU NEZEJJEM PW XQEVYVBC VN NEYXW.",
+    "solutionText": "You cannot escape the responsibility of tomorrow by avoiding it today.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 301,
+    "puzzleDate": "2025-10-28",
+    "type": "quote",
+    "author": "Michael Jordan",
+    "puzzleText": "D’NG JBDHGW SNGC BMW SNGC BMW SNGC BTBDM DM VE HDJG. BMW UABU DP OAE D PXYYGGW. ~ VDYABGH FSCWBM",
+    "solutionText": "I’ve failed over and over and over again in my life. And that is why I succeed. ~ Michael Jordan",
+    "answer": ""
+  },
+  {
+    "puzzleId": 302,
+    "puzzleDate": "2025-10-29",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "YCU GCVJ M FMTMTM MTJUVS M HYCTV OMXX? KVXXCU!",
+    "solutionText": "How does a banana answer a phone call? Yellow!",
+    "answer": ""
+  },
+  {
+    "puzzleId": 303,
+    "puzzleDate": "2025-10-30",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "G PXNOZXXP'U XMXU SLGOTX SIRIP ELPICTL ELX UXGUIOU. ELXM’PX TIRZ ZCPNOT ELX UCVVXP GOZ JRCX NO ELX DNOEXP.",
+    "solutionText": "A reindeer's eyes change color through the seasons. They’re gold during the summer and blue in the winter.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 304,
+    "puzzleDate": "2025-10-31",
+    "type": "funny quote",
+    "author": "Joan Rivers",
+    "puzzleText": "MVU XWHNM MWZU W NUU Q OEDDUH NZWCWID, W’CC LEINWAUH WM. ~ OEQI HWGUHN",
+    "solutionText": "The first time I see a jogger smiling, I’ll consider it. ~ Joan Rivers",
+    "answer": ""
+  },
+  {
+    "puzzleId": 305,
+    "puzzleDate": "2025-11-01",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "MHNWBQA QOYORWN HWNOKV VBQ WMBNO CMB VRHK WB KORQU VQBZ HW.",
+    "solutionText": "History repeats itself for those who fail to learn from it.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 306,
+    "puzzleDate": "2025-11-02",
+    "type": "quote",
+    "author": "Isaac Newton",
+    "puzzleText": "BO B ZSJA WAAI OTKQZAK QZSI YQZAKW, BQ BW UN WQSIPBIL TMYI QZA WZYTXPAKW YO LBSIQW. ~ BWSSR IAFQYI",
+    "solutionText": "If I have seen further than others, it is by standing upon the shoulders of giants. ~ Isaac Newton",
+    "answer": ""
+  },
+  {
+    "puzzleId": 307,
+    "puzzleDate": "2025-11-03",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "E MEMK’S UDKS SQ IVNEVJV SZDS PB MDM UDO OSVDNEKC TLQP ZEO WQI DO D SLDTTEY YQX, IAS UZVK E CQS ZQPV, DNN SZV OECKO UVLV SZVLV.",
+    "solutionText": "I didn’t want to believe that my dad was stealing from his job as a traffic cop, but when I got home, all the signs were there.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 308,
+    "puzzleDate": "2025-11-04",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "VJXEDO SVEMB, IRB VFXJO OFDP.",
+    "solutionText": "Lemons float, but limes sink.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 309,
+    "puzzleDate": "2025-11-05",
+    "type": "funny quote",
+    "author": "Unknown",
+    "puzzleText": "IJOW JA AMFZN. ACJIW VMJIW SFY ANJII MPEW NWWNM. ~ YTUTFVT",
+    "solutionText": "Life is short. Smile while you still have teeth. ~ Unknown",
+    "answer": ""
+  },
+  {
+    "puzzleId": 310,
+    "puzzleDate": "2025-11-06",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "NJBNR YC CNJOQWPJ NROQ VYTNYUQ.",
+    "solutionText": "Truth is stranger than fiction.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 311,
+    "puzzleDate": "2025-11-07",
+    "type": "quote",
+    "author": "Abraham Lincoln",
+    "puzzleText": "NQFNCQ PZQ LSDK PD GPNNV PD KGQV OPMQ SN KGQUZ OUHTD KF AQ. ~ PAZPGPO CUHXFCH",
+    "solutionText": "People are just as happy as they make up their minds to be. ~ Abraham Lincoln",
+    "answer": ""
+  },
+  {
+    "puzzleId": 312,
+    "puzzleDate": "2025-11-08",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "TYT: TVT WCX FAYZ YJCXD DFA PVTMYLLVMQ YD GHFCCO? \nGCM: MC. IFYD FYLLAMAT? \nTYT: DFA DAYHFAZ ICPA FVS XL.",
+    "solutionText": "Dad: Did you hear about the kidnapping at school? \nSon: No. What happened? \nDad: The teacher woke him up.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 313,
+    "puzzleDate": "2025-11-09",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "KYVKFTF VKQUPCQB HFK HJTPZ ITPF IKKZ ZHWW HQA XKCUE TQK EPQAFKA VTPQAB.",
+    "solutionText": "Emperor penguins are about four feet tall and weigh one hundred pounds.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 314,
+    "puzzleDate": "2025-11-10",
+    "type": "funny quote",
+    "author": "George Carlin",
+    "puzzleText": "RWHR’F AWV RWLV ZHPP JR RWL HQLBJZHS TBLHQ XLZHCFL VMC WHEL RM XL HFPLLU RM XLPJLEL JR. ~ OLMBOL ZHBPJS",
+    "solutionText": "That’s why they call it the American Dream because you have to be asleep to believe it. ~ George Carlin",
+    "answer": ""
+  },
+  {
+    "puzzleId": 315,
+    "puzzleDate": "2025-11-11",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "IXJ OJZI RTKITLQ LZ IJZIJF OM WUPNX ZJTZ.",
+    "solutionText": "The best captain is tested by rough seas.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 316,
+    "puzzleDate": "2025-11-12",
+    "type": "quote",
+    "author": "Ashton Kutcher",
+    "puzzleText": "JYQ’S GVSSXV EYC KMTS XUEV ZUWVG OYA; DTHV XUEV LVSSVC TQJ LAUXJ GYDVSMUQZ. ~ TGMSYQ HASIMVC",
+    "solutionText": "Don’t settle for what life gives you; make life better and build something. ~ Ashton Kutcher",
+    "answer": ""
+  },
+  {
+    "puzzleId": 317,
+    "puzzleDate": "2025-11-13",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "MNGGCSM WJCH GP VZNNW RPAZH QN DU HONJD XPQ.",
+    "solutionText": "Getting paid to sleep would be my dream job.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 318,
+    "puzzleDate": "2025-11-14",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "ECR CLXFV ONUQ RXGED F DXFKK HLFVEGEQ NY IGDGOKR KGMCE.",
+    "solutionText": "The human body emits a small quantity of visible light.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 319,
+    "puzzleDate": "2025-11-15",
+    "type": "funny quote",
+    "author": "Franklin P. Jones",
+    "puzzleText": "XUS LQH GZQFH EQHX DPVHYA RFUE LPVGIFZH. PUN ESLP MQDVZHLZ XUS PQBZ, RUF VHADQHLZ. ~ RFQHWGVH M. OUHZA",
+    "solutionText": "You can learn many things from children. How much patience you have, for instance. ~ Franklin P. Jones",
+    "answer": ""
+  },
+  {
+    "puzzleId": 320,
+    "puzzleDate": "2025-11-16",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "AM AZ GOZAGW MB CVAHL ZMWBIF SPAHLWGI MPOI MB WGXOAW CWBTGI OLVHMZ.",
+    "solutionText": "It is easier to build strong children than to repair broken adults.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 321,
+    "puzzleDate": "2025-11-17",
+    "type": "quote",
+    "author": "Geoffrey Chaucer",
+    "puzzleText": "BNFGCGNTGJD QTAAMY LVIJAFEJ. ~ WAVBBTAD LSNKLAT",
+    "solutionText": "Familiarity breeds contempt. ~ Geoffrey Chaucer",
+    "answer": ""
+  },
+  {
+    "puzzleId": 322,
+    "puzzleDate": "2025-11-18",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "IBI B RTNN LWV ROT RBHT B QTNN BK NWDT IVMBKS Z GZAPQNBF? B XZE OTTNE WDTM OTZI!",
+    "solutionText": "Did I tell you the time I fell in love during a backflip? I was heels over head!",
+    "answer": ""
+  },
+  {
+    "puzzleId": 323,
+    "puzzleDate": "2025-11-19",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "SDC NQECQSKU KH SDC SUNALAYC, TRJCI ISRUYCL, FCUIKQRYYL ZCYNECUCZ SGK SK VBCCQ ENASKUNR.",
+    "solutionText": "The inventor of the tricycle, James Starley, personally delivered two to Queen Victoria.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 324,
+    "puzzleDate": "2025-11-20",
+    "type": "funny quote",
+    "author": "Yogi Berra.",
+    "puzzleText": "XQGI UQG XNWUTGLL NLJGV WZ W XNIUGV AK CWFFN EPU WIUH ZHPT HT GWSQU LYWEGL, W LNWV, “ZHPT. W VHI’U UQWIJ W ENI GNU GWSQU.\" ~ KHSW RGTTN.",
+    "solutionText": "When the waitress asked if I wanted my pizza cut into four or eight slices, I said, “Four. I don’t think I can eat eight.\" ~ Yogi Berra.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 325,
+    "puzzleDate": "2025-11-21",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "WKX ZXXHXMW OVMZSN QSNXM EYSN QCYXEJU YXEUXQWVSF.",
+    "solutionText": "The deepest wisdom comes from careful reflection.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 326,
+    "puzzleDate": "2025-11-22",
+    "type": "quote",
+    "author": "Lyndon B. Johnson",
+    "puzzleText": "MEDQD FQD XU HQUCZDGB PD KFXXUM BUZID MUNDMEDQ, FXR IDQV JDP MEFM PD KFX BUZID CV UWQBDZIDB. ~ ZVXRUX C. OUEXBUX",
+    "solutionText": "There are no problems we cannot solve together, and very few that we can solve by ourselves. ~ Lyndon B. Johnson",
+    "answer": ""
+  },
+  {
+    "puzzleId": 327,
+    "puzzleDate": "2025-11-23",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "OZIUI WT YNUXQIG LVF ZTTDG? QZI GIBTMW-ZXMW GQTUI.",
+    "solutionText": "Where do pirates buy hooks? The second-hand store.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 328,
+    "puzzleDate": "2025-11-24",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "CPHDCP IXZMTSCQHS HISPE X IMTZYPN ETZQTAAPDN.",
+    "solutionText": "George Washington owned a whiskey distillery.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 329,
+    "puzzleDate": "2025-11-25",
+    "type": "funny quote",
+    "author": "Thomas Sowell",
+    "puzzleText": "ZM MQLVB FNOBZAVIQETV LONCTVAPV HSBM MN IVQTZRV MUV VKMVOM NG JNSI NCO ZPONIQOFV. ~ MUNDQB BNCVTT",
+    "solutionText": "It takes considerable knowledge just to realize the extent of your own ignorance. ~ Thomas Sowell",
+    "answer": ""
+  },
+  {
+    "puzzleId": 330,
+    "puzzleDate": "2025-11-26",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "LY BGQ ELHHKQ FX HLXXLJTKBM KLQP FWWFCBTYLBM.",
+    "solutionText": "In the middle of difficulty lies opportunity.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 331,
+    "puzzleDate": "2025-11-27",
+    "type": "quote",
+    "author": "Benjamin Franklin",
+    "puzzleText": "USQN’I EPBYNOK SI ECBE TN YNE WUO EWW IWWM BMO TSIN EWW UBEN. ~ JNMABXSM QPBMHUSM",
+    "solutionText": "Life’s tragedy is that we get old too soon and wise too late. ~ Benjamin Franklin",
+    "answer": ""
+  },
+  {
+    "puzzleId": 332,
+    "puzzleDate": "2025-11-28",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "HJ XWY CKK V NWQQKNX VA VZ VGGFK CAWNK, IWKC ABVA OVDK XWY VZ HPHAZKCC?",
+    "solutionText": "If you see a robbery at an Apple store, does that make you an iWitness?",
+    "answer": ""
+  },
+  {
+    "puzzleId": 333,
+    "puzzleDate": "2025-11-29",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "QMVNV'Z OB JZPOBA JB COHOB QMOQ'Z JBMOEJQVA DBPS ES EKBBJVZ.",
+    "solutionText": "There's an island in Japan that's inhabited only by bunnies.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 334,
+    "puzzleDate": "2025-11-30",
+    "type": "funny quote",
+    "author": "Wayne Huizenga",
+    "puzzleText": "VDAN BZAMRW XKNNV CNZK ZG NGDKADYV PKDS DB GYXV. ~ JZWGN LYMQNGOZ",
+    "solutionText": "Some family trees bear an enormous crop of nuts. ~ Wayne Huizenga",
+    "answer": ""
+  },
+  {
+    "puzzleId": 335,
+    "puzzleDate": "2025-12-01",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "S GTAXRW HVSARX DH S GTAXRW VSUORX.",
+    "solutionText": "A burden shared is a burden halved.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 336,
+    "puzzleDate": "2025-12-02",
+    "type": "quote",
+    "author": "Steve Jobs",
+    "puzzleText": "MKID CSUX SL OSUSCXG, LK GKH’C RPLCX SC OSJSHE LKUXKHX XOLX’L OSNX. ~ LCXJX BKZL",
+    "solutionText": "Your time is limited, so don’t waste it living someone else’s life. ~ Steve Jobs",
+    "answer": ""
+  },
+  {
+    "puzzleId": 337,
+    "puzzleDate": "2025-12-03",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "BVW UEBTGBG ZUM UJ UEB HWJBCGB. TB CJMCM TJ U MEUV.",
+    "solutionText": "Two artists had an art contest. It ended in a draw.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 338,
+    "puzzleDate": "2025-12-04",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "KZYV ANNE GJYNP LJY'E QZSLNY FYEHW VJF'SN ZY ZLFWE.",
+    "solutionText": "Many feet bones don't harden until you're an adult.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 339,
+    "puzzleDate": "2025-12-05",
+    "type": "funny quote",
+    "author": "Jim Harrison",
+    "puzzleText": "SKJ UGHDNJ MLS XA XDJZGZV M EXSSNJ XA YGZJ KMU EWXOVKS HXWJ KMDDGZJUU SX SKJ KOHMZ WMLJ SKMZ MNN SKJ LXNNJLSGRJ VXRJWZHJZSU GZ SKJ KGUSXWT XA JMWSK. ~ PGH KMWWGUXZ",
+    "solutionText": "The simple act of opening a bottle of wine has brought more happiness to the human race than all the collective governments in the history of Earth. ~ Jim Harrison",
+    "answer": ""
+  },
+  {
+    "puzzleId": 340,
+    "puzzleDate": "2025-12-06",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "JNPH XCL JMYXLR HVCJ MTY DXGY.",
+    "solutionText": "Slow and steady wins the race.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 341,
+    "puzzleDate": "2025-12-07",
+    "type": "quote",
+    "author": "Seneca",
+    "puzzleText": "BRX ELXTBXFB MUXFFQSEF YZ CTSJQSA TLX KQBRQS NF TSA KQBRQS YNL LXTPR. T KQFX CTS QF PYSBXSB KQBR RQF UYB, KRTBXHXL QB CTO MX, KQBRYNB KQFRQSE ZYL KRTB RX RTF SYB. ~ FXSXPT",
+    "solutionText": "The greatest blessings of mankind are within us and within our reach. A wise man is content with his lot, whatever it may be, without wishing for what he has not. ~ Seneca",
+    "answer": ""
+  },
+  {
+    "puzzleId": 342,
+    "puzzleDate": "2025-12-08",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "BOY RYHJANPM ESU NK E BEKX. YKU PEWP BY BMU YBMUS, “JY WYD XKYO MYO BY JSNIU BMNP BMNKR?”",
+    "solutionText": "Two goldfish are in a tank. One says to the other, “Do you know how to drive this thing?”",
+    "answer": ""
+  },
+  {
+    "puzzleId": 343,
+    "puzzleDate": "2025-12-09",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "HVBPB ZKU K XSXHV NBKHAB DKGBE UHIKPH UIHLASXXB ZVBD HVBO ZBPB MIUH K LAIN KLH SD VKGNIPR, RBPGKDO.",
+    "solutionText": "There was a fifth Beatle named Stuart Sutcliffe when they were just a club act in Hamburg, Germany.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 344,
+    "puzzleDate": "2025-12-10",
+    "type": "funny quote",
+    "author": "Grumpy Cat",
+    "puzzleText": "QYHM PF LYOCW. UL QCT LMBBUVNM. ~ ZBPJFW SCL",
+    "solutionText": "Woke up today. It was terrible. ~ Grumpy Cat",
+    "answer": ""
+  },
+  {
+    "puzzleId": 345,
+    "puzzleDate": "2025-12-11",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "GWO VOOTOCG LUVOJCGNUVBUD KAZOC QJAZ NCIBUD SLOCGBAUC.",
+    "solutionText": "The deepest understanding comes from asking questions.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 346,
+    "puzzleDate": "2025-12-12",
+    "type": "quote",
+    "author": "Ralph Waldo Emerson",
+    "puzzleText": "KHXA HO RBA IEOIBHOA, ILHD RBA IAJ, SWHOZ RBA LHKS JHW. ~ WJKFB LJKST ADAWITO",
+    "solutionText": "Live in the sunshine, swim the sea, drink the wild air. ~ Ralph Waldo Emerson",
+    "answer": ""
+  },
+  {
+    "puzzleId": 347,
+    "puzzleDate": "2025-12-13",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "FOEB KZ IZV HENN AMUKD BOEB DBMHW BZCRBORU? XRNHUZFD.",
+    "solutionText": "What do you call birds that stick together? Velcrows.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 348,
+    "puzzleDate": "2025-12-14",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "HSQSGE BPEQ IBTS BP KPESGPBR QUQESW, RKFS B CSHNWSESG, EIBE ISRCQ EISW FSSC EGBOF NZ EISKG EGBTSRQ BPH ZKPH EISKG XBU DBOF INWS.",
+    "solutionText": "Desert ants have an internal system, like a pedometer, that helps them keep track of their travels and find their way back home.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 349,
+    "puzzleDate": "2025-12-15",
+    "type": "funny quote",
+    "author": "Johnny Carson",
+    "puzzleText": "AR BARF LFTF RIAT, FBHAE LUZBW OF IBAHF, IKW IBB NVF APMFTEUKINUTE LUZBW OF WFIW. ~ XUVKKJ SITEUK",
+    "solutionText": "If life were fair, Elvis would be alive, and all the impersonators would be dead. ~ Johnny Carson",
+    "answer": ""
+  },
+  {
+    "puzzleId": 350,
+    "puzzleDate": "2025-12-16",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "LJLYO YGEL ANE TRE RAGYF.",
+    "solutionText": "Every rose has its thorn.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 351,
+    "puzzleDate": "2025-12-17",
+    "type": "quote",
+    "author": "Anonymous",
+    "puzzleText": "GDA HZRR YTTC CHD VZLMU DJ XTDXRT ZL RZJT: CKDUT HKD QAZRM GDA AX BLM CKDUT HKD CTBF GDA MDHL. QAC ZL CKT TLM, GDA’RR CKBLV CKTY QDCK. ~ BLDLGYDAU",
+    "solutionText": "You will meet two kinds of people in life: those who build you up and those who tear you down. But in the end, you’ll thank them both. ~ Anonymous",
+    "answer": ""
+  },
+  {
+    "puzzleId": 352,
+    "puzzleDate": "2025-12-18",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "LNBC NBIIQUO LNQU R&R’O EBU’C BAGQQ VU BUFCNWUA? CNQF GQBEN BU R-IBOOQ.",
+    "solutionText": "What happens when M&M’s can’t agree on anything? They reach an M-passe.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 353,
+    "puzzleDate": "2025-12-19",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "UYXRNEW HCF VTYWM SMNF UMNE CXN BXLIMUNFNJ, LTT, AX CILUCUNJ.",
+    "solutionText": "Turkeys can blush when they are frightened, ill, or agitated.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 354,
+    "puzzleDate": "2025-12-20",
+    "type": "funny quote",
+    "author": "Don Herold",
+    "puzzleText": "MWFJ PX ICY DFYZIYXI ICPED PE ICY MWFOL, XW MY XCWTOL ZOMZNX XZQY XWUY WK PI KWF IWUWFFWM. ~ LWE CYFWOL",
+    "solutionText": "Work is the greatest thing in the world, so we should always save some of it for tomorrow. ~ Don Herold",
+    "answer": ""
+  },
+  {
+    "puzzleId": 355,
+    "puzzleDate": "2025-12-21",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "R LQMKL YWSV SELZWBE LZYO IZS TKYRWVK ZD QSV XZCKL TWS TKYRWVK ZD QSV XKLVQVSKIYK.",
+    "solutionText": "A river cuts through rock not because of its power but because of its persistence.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 356,
+    "puzzleDate": "2025-12-22",
+    "type": "quote",
+    "author": "Frank Lloyd Wright",
+    "puzzleText": "JLV MDAFVX Y MYRV, JLV CDXV HVKQJYNQM MYNV HVBDCVT. ~ NXKAS MMDEW OXYFLJ",
+    "solutionText": "The longer I live, the more beautiful life becomes. ~ Frank Lloyd Wright",
+    "answer": ""
+  },
+  {
+    "puzzleId": 357,
+    "puzzleDate": "2025-12-23",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "ZILJ XR CRA PUQD L MNUDHJUMJ ZUJI YLX YGDLJI? DVEDGU-WUHJM.",
+    "solutionText": "What do you give a scientist with bad breath? Experi-mints.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 358,
+    "puzzleDate": "2025-12-24",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "PVNOQT QA CZZQSQNTTJ VISCDBQOIM NA GEI WCAG PQCMQRIVAI SCLBGVJ CB GEI XTNBIG",
+    "solutionText": "Brazil is officially recognized as the most biodiverse country on the planet",
+    "answer": ""
+  },
+  {
+    "puzzleId": 359,
+    "puzzleDate": "2025-12-25",
+    "type": "funny quote",
+    "author": "Steve Martin",
+    "puzzleText": "OGG L’MJ JMJK ROSEJN ROX OS QZSJXE RJJD’X AOV CZK OS QZSJXE NOV’X RZKD. ~ XEJMJ UOKELS",
+    "solutionText": "All I’ve ever wanted was an honest week’s pay for an honest day’s work. ~ Steve Martin",
+    "answer": ""
+  },
+  {
+    "puzzleId": 360,
+    "puzzleDate": "2025-12-26",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "MQZ LBAZWM FIWBK JZPIBJZW GHMQ WBOZAKZ RAT WHIAT.",
+    "solutionText": "The finest music requires both silence and sound.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 361,
+    "puzzleDate": "2025-12-27",
+    "type": "quote",
+    "author": "Wordsworth",
+    "puzzleText": "JEX WXUJ OKSJTKD KP G YKKL IGD’U ATPX TU ETU ATJJAX, DGIXAXUU, HDXDZHIWXSXL GZJU KP CTDLDXUU GDL KP AKFX. ~ RKSLURKSJE",
+    "solutionText": "The best portion of a good man’s life is his little, nameless, unencumbered acts of kindness and of love. ~ Wordsworth",
+    "answer": ""
+  },
+  {
+    "puzzleId": 362,
+    "puzzleDate": "2025-12-28",
+    "type": "dad joke",
+    "author": "",
+    "puzzleText": "FSC TSHE TYBMF XYTHB GAUH FAE NYJHGE? SV MFH TYBU EATH.",
+    "solutionText": "How does Darth Vader like his bagels? On the dark side.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 363,
+    "puzzleDate": "2025-12-29",
+    "type": "fact",
+    "author": "",
+    "puzzleText": "EYGAPS HELTXFY’X DEAAFZ VEG ZF QP APWFMPG CAFW VBX CNYPAEO QPLENXP BZ SFNOGY’Z XZFD XSPEABYU.",
+    "solutionText": "Andrew Jackson’s parrot had to be removed from his funeral because it wouldn’t stop swearing.",
+    "answer": ""
+  },
+  {
+    "puzzleId": 364,
+    "puzzleDate": "2025-12-30",
+    "type": "funny quote",
+    "author": "Kurt Vonnegut",
+    "puzzleText": "VKIN VNKKXK HA VX LQYN IM XUN CXKUHUE QUJ JHABXFNK VZQV TXIK ZHEZ ABZXXR BRQAA HA KIUUHUE VZN BXIUVKT. ~ YIKV FXUUNEIV",
+    "solutionText": "True terror is to wake up one morning and discover that your high school class is running the country. ~ Kurt Vonnegut",
+    "answer": ""
+  },
+  {
+    "puzzleId": 365,
+    "puzzleDate": "2025-12-31",
+    "type": "proverb",
+    "author": "",
+    "puzzleText": "TA WUO XLPVR CBU JPMMTCV, WUO BTSS XPCXL IRTCLRJ.",
+    "solutionText": "If you chase two rabbits, you will catch neither.",
+    "answer": ""
   }
 ]
