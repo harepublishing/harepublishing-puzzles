@@ -51,10 +51,7 @@ window.HareWordrowEngine = (() => {
       if (!data || this.isFinished(data)) return false;
       return Boolean(
         (Array.isArray(data.guesses) && data.guesses.length > 0) ||
-        String(data.current || "").length > 0 ||
-        data.startedAt ||
-        data.updatedAt ||
-        data.lastPlayedAt
+        String(data.current || "").length > 0
       );
     },
 
@@ -992,18 +989,33 @@ window.HareWordrowEngine = (() => {
   }
 
   function getStats() {
+    if (typeof window.HareWordrowGetStats === "function") {
+      try {
+        const platformStats = window.HareWordrowGetStats();
+        return {
+          streak: Number(platformStats?.streak || 0),
+          solved: Number(platformStats?.solved || 0),
+          revealed: Number(platformStats?.revealed || 0),
+          inProgress: Number(platformStats?.inProgress || 0),
+          played: Number(platformStats?.played || 0)
+        };
+      } catch {}
+    }
+
     const items = getStoredItems();
     const adapter = wordrowStatusAdapter;
 
     const solvedItems = items.filter(item => adapter.isSolved(item.data));
+    const revealedItems = items.filter(item => adapter.isRevealed(item.data));
     const inProgressItems = items.filter(item => !adapter.isFinished(item.data) && adapter.hasProgress(item.data));
-    const playedItems = items.filter(item => adapter.isFinished(item.data) || adapter.hasProgress(item.data));
+    const finishedItems = items.filter(item => adapter.isFinished(item.data));
 
     return {
       streak: getCurrentStreak(solvedItems),
       solved: solvedItems.length,
+      revealed: revealedItems.length,
       inProgress: inProgressItems.length,
-      played: playedItems.length
+      played: finishedItems.length + inProgressItems.length
     };
   }
 

@@ -2046,6 +2046,19 @@ window.HareCryptogramEngine = {
     }
 
     function getCryptogramStats() {
+      if (typeof window.HareCryptogramGetStats === "function") {
+        try {
+          const platformStats = window.HareCryptogramGetStats();
+          return {
+            streak: Number(platformStats?.streak || 0),
+            solved: Number(platformStats?.solved || 0),
+            revealed: Number(platformStats?.revealed || 0),
+            inProgress: Number(platformStats?.inProgress || 0),
+            played: Number(platformStats?.played || 0)
+          };
+        } catch {}
+      }
+
       const stats = Core.getStats({
         storagePrefix: CRYPTOGRAM_STORAGE_PREFIX,
         statusAdapter: cryptogramStatusAdapter

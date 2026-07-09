@@ -897,12 +897,24 @@ window.HareWordScramblePlatformEngine = (() => {
     return streak;
   }
   function getStats(){
+    if(typeof window.HareWordScrambleGetStats === "function"){
+      try{
+        const platformStats=window.HareWordScrambleGetStats();
+        return {
+          streak:Number(platformStats?.streak||0),
+          solved:Number(platformStats?.solved||0),
+          revealed:Number(platformStats?.revealed||0),
+          inProgress:Number(platformStats?.inProgress||0),
+          played:Number(platformStats?.played||0)
+        };
+      }catch{}
+    }
     const items=getStoredItems(); const a=wordScrambleStatusAdapter;
     const solvedItems=items.filter(item=>a.isSolved(item.data));
     const revealedItems=items.filter(item=>a.isRevealed(item.data));
     const inProgressItems=items.filter(item=>!a.isFinished(item.data)&&a.hasProgress(item.data));
-    const playedItems=items.filter(item=>a.isFinished(item.data)||a.hasProgress(item.data));
-    return { streak:getCurrentStreak(solvedItems), solved:solvedItems.length, revealed:revealedItems.length, inProgress:inProgressItems.length, played:playedItems.length };
+    const finishedItems=items.filter(item=>a.isFinished(item.data));
+    return { streak:getCurrentStreak(solvedItems), solved:solvedItems.length, revealed:revealedItems.length, inProgress:inProgressItems.length, played:finishedItems.length+inProgressItems.length };
   }
 
   function getCurrentEntry(){

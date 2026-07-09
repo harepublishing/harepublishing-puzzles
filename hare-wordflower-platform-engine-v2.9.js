@@ -918,6 +918,18 @@ window.HareWordFlowerEngine = (() => {
   }
 
   function getPlatformStats(){
+    if(typeof window.HareWordFlowerGetStats === "function"){
+      try{
+        const stats = window.HareWordFlowerGetStats();
+        return {
+          streak: stats.streak || 0,
+          solved: stats.solved || 0,
+          revealed: stats.revealed || 0,
+          inProgress: stats.inProgress || 0,
+          played: stats.played || 0
+        };
+      }catch{}
+    }
     if(Core && typeof Core.getStats === "function"){
       const stats = Core.getStats({ storagePrefix: STORAGE_PREFIX, statusAdapter: wordFlowerStatusAdapter });
       return {
