@@ -73,8 +73,8 @@ window.HareWordFlowerEngine = (() => {
     #hp-wordflower-container .hpwf-layout { display:grid; grid-template-columns:minmax(0,1fr) 330px; gap:16px; align-items:stretch; }
     #hp-wordflower-container .hpwf-progress-wrap { grid-column:1 / -1; }
     #hp-wordflower-container .hpwf-panel { background:#fff; border:1px solid #e9eef3; border-radius:20px; box-shadow:0 12px 34px rgba(0,0,0,.055); padding:14px; min-width:0; }
-    #hp-wordflower-container .hpwf-main-panel { overflow:visible; min-height:650px; height:650px; display:flex; flex-direction:column; }
-    #hp-wordflower-container .hpwf-word-panel { display:flex; flex-direction:column; overflow:hidden; min-height:650px; height:650px; }
+    #hp-wordflower-container .hpwf-main-panel { overflow:visible; min-height:560px; height:560px; display:flex; flex-direction:column; justify-content:flex-start; }
+    #hp-wordflower-container .hpwf-word-panel { display:flex; flex-direction:column; overflow:hidden; min-height:560px; height:560px; }
     #hp-wordflower-container .hpwf-life-wrap { display:none; }
 
     #hp-wordflower-container .hpwf-progress-card { background:linear-gradient(135deg,#fff 0%,#fff 64%,#fff5f6 64%,#fff5f6 100%); border:1px solid #f7c7ca; border-radius:18px; padding:18px 14px 18px; min-height:184px; }
@@ -133,12 +133,12 @@ window.HareWordFlowerEngine = (() => {
     #hp-wordflower-container .hpwf-reveal { border-color:#b9d7ef !important; color:#0F7FBB !important; }
     #hp-wordflower-container .hpwf-danger { border-color:#f6b4b9 !important; color:#ED1B24 !important; }
 
-    #hp-wordflower-container .hpwf-life-stats { margin:10px 0 0; padding:9px 10px; border-radius:16px; background:#fff; border:1px solid #f7c7ca; display:grid; grid-template-columns:minmax(170px,auto) repeat(4,minmax(0,1fr)); gap:8px; align-items:center; }
-    #hp-wordflower-container .hpwf-life-title { text-align:left; margin:0; font-size:13px; font-weight:900; color:#9d4147; line-height:1.15; text-transform:uppercase; letter-spacing:.02em; }
+    #hp-wordflower-container .hpwf-life-stats { margin:10px 0 0; padding:9px 10px; border-radius:16px; background:#fff; border:1px solid #f7c7ca; display:grid; grid-template-columns:minmax(122px,.72fr) repeat(4,minmax(135px,1fr)); gap:10px; align-items:center; }
+    #hp-wordflower-container .hpwf-life-title { text-align:left; margin:0; font-size:14px; font-weight:900; color:#9d4147; line-height:1.15; text-transform:uppercase; letter-spacing:.02em; }
     #hp-wordflower-container .hpwf-life-grid { display:contents; }
-    #hp-wordflower-container .hpwf-life-item { background:#fff5f6; border:1px solid #f7c7ca; border-radius:12px; padding:7px 8px; text-align:center; min-width:0; }
-    #hp-wordflower-container .hpwf-life-item strong { display:block; color:#9d4147; font-size:18px; font-weight:900; line-height:1; }
-    #hp-wordflower-container .hpwf-life-item span { display:block; margin-top:3px; color:#555; font-size:8px; font-weight:900; text-transform:uppercase; line-height:1.05; white-space:nowrap; }
+    #hp-wordflower-container .hpwf-life-item { background:#fff5f6; border:1px solid #f7c7ca; border-radius:12px; padding:8px 10px; text-align:center; min-width:0; }
+    #hp-wordflower-container .hpwf-life-item strong { display:block; color:#9d4147; font-size:20px; font-weight:900; line-height:1; }
+    #hp-wordflower-container .hpwf-life-item span { display:block; margin-top:4px; color:#555; font-size:9.5px; font-weight:900; text-transform:uppercase; line-height:1.08; white-space:normal; }
 
     #hp-wordflower-container .hpwf-word-panel h3 { margin:0 0 10px; text-align:center; font-size:19px; line-height:1.1; color:#9d4147; font-weight:900; }
     #hp-wordflower-container .hpwf-word-list { flex:1 1 auto; min-height:0; max-height:none; overflow-y:auto; padding-right:6px; scroll-behavior:auto; }
@@ -978,7 +978,7 @@ window.HareWordFlowerEngine = (() => {
   function renderLifeStats(){
     const s=lifetimeStats();
     return `<div class="hpwf-life-stats" aria-label="All-time Word Flower totals">
-      <h3 class="hpwf-life-title">All-Time Word Flower Totals</h3>
+      <h3 class="hpwf-life-title">All-Time Totals</h3>
       <div class="hpwf-life-grid">
         <div class="hpwf-life-item"><strong>${s.words.toLocaleString()}</strong><span>Words Found</span></div>
         <div class="hpwf-life-item"><strong>${s.pangrams.toLocaleString()}</strong><span>Pangrams Found</span></div>
