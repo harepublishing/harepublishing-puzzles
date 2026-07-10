@@ -1807,6 +1807,7 @@ mount.innerHTML = `
     border-radius: 14px !important;
     background: #f8fbfe !important;
     flex: 1 1 auto !important;
+    text-align: left !important;
   }
 
   #hp-sudoku-container.hp-sudoku #hp-help-overlay .hp-modal-actions {
@@ -1820,12 +1821,14 @@ mount.innerHTML = `
     line-height: 1.2 !important;
     font-weight: 800 !important;
     color: #24323d !important;
+    text-align: left !important;
   }
 
   #hp-sudoku-container.hp-sudoku .hp-help-modal-content p,
   #hp-sudoku-container.hp-sudoku .hp-help-modal-content li {
     font-size: 0.92rem !important;
     line-height: 1.35 !important;
+    text-align: left !important;
   }
 
   #hp-sudoku-container.hp-sudoku .hp-help-modal-content p {
@@ -1835,6 +1838,10 @@ mount.innerHTML = `
   #hp-sudoku-container.hp-sudoku .hp-help-list {
     margin: 8px 0 0 !important;
     padding-left: 18px !important;
+  }
+
+  #hp-sudoku-container.hp-sudoku .hp-help-list li {
+    margin: 4px 0 !important;
   }
 
   #hp-sudoku-container.hp-sudoku .hp-help-modal-content img.hp-help-icon {
@@ -4036,19 +4043,23 @@ mount.innerHTML = `
                 </p>
 
                 <p class="hp-help-icon-line">
+                  <img class="hp-help-icon" src="${KEYPAD_UNDO_ICON}" alt="">
+                  <span><strong>Undo Mode</strong> undoes your last actions.</span>
+                </p>
+
+                <p class="hp-help-icon-line">
                   <img class="hp-help-icon" src="${TOOLS_CLOSED_ICON}" alt="">
-                  <span><strong>Toolbar</strong> opens extra Sudoku tools.</span>
+                  <span><strong>Toolbar</strong> opens extra Sudoku tools:</span>
                 </p>
               </div>
 
               <div>
-                <div class="hp-help-section-title">Helpful Tools</div>
                 <ul class="hp-help-list">
-                  <li><strong>Hints</strong> highlight selected rows and columns, matching numbers, duplicate conflicts, and helpful solving feedback.</li>
-                  <li><strong>Check</strong> shows correct entries in green and mistakes in red.</li>
-                  <li><strong>Reveal Cell</strong> shows the correct answer for the selected cell.</li>
-                  <li><strong>Start Over</strong> clears the puzzle and resets the timer.</li>
-                  <li><strong>Reveal Answers</strong> ends the puzzle and shows the full solution.</li>
+                  <li><strong>Hints:</strong> Highlights the selected rows and columns of the selected cell. It will also highlight errors in red.</li>
+                  <li><strong>Check:</strong> Shows correct entries in green and mistakes in red.</li>
+                  <li><strong>Reveal Cell:</strong> Shows the correct answer for the selected cell.</li>
+                  <li><strong>Start Over:</strong> Clears the puzzle and resets the timer.</li>
+                  <li><strong>Reveal Answers:</strong> Ends the puzzle and shows the full solution.</li>
                 </ul>
               </div>
             </div>
