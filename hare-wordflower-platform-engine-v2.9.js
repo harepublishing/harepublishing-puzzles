@@ -171,6 +171,69 @@ window.HareWordFlowerEngine = (() => {
     }
     #hp-wordflower-container .hp-overlay.on { display:flex; }
 
+    #hp-wordflower-container .hpwf-help-modal {
+      position:relative;
+      width:min(760px,100%);
+      max-height:calc(100% - 30px);
+      overflow:auto;
+      background:#fff;
+      border:1px solid #e5edf3;
+      border-radius:24px;
+      box-shadow:0 20px 70px rgba(0,0,0,.20);
+      padding:28px 34px 30px;
+      color:#334;
+      text-align:left;
+    }
+    #hp-wordflower-container .hpwf-help-modal h3 {
+      margin:0 0 16px;
+      color:#9d4147;
+      font-size:clamp(28px,3vw,38px);
+      line-height:1.1;
+      font-weight:900;
+      text-align:center;
+    }
+    #hp-wordflower-container .hpwf-help-content {
+      border:1px solid #f7c7ca;
+      border-radius:18px;
+      background:#fffafb;
+      padding:18px 20px;
+    }
+    #hp-wordflower-container .hpwf-help-section {
+      margin:0 0 16px;
+    }
+    #hp-wordflower-container .hpwf-help-section:last-child {
+      margin-bottom:0;
+    }
+    #hp-wordflower-container .hpwf-help-title {
+      margin:0 0 6px;
+      color:#9d4147;
+      font-size:18px;
+      line-height:1.2;
+      font-weight:900;
+    }
+    #hp-wordflower-container .hpwf-help-content p,
+    #hp-wordflower-container .hpwf-help-content li {
+      color:#334;
+      font-size:15px;
+      line-height:1.45;
+      text-align:left;
+    }
+    #hp-wordflower-container .hpwf-help-content p {
+      margin:0 0 8px;
+    }
+    #hp-wordflower-container .hpwf-help-content ul {
+      margin:8px 0 0;
+      padding-left:20px;
+    }
+    #hp-wordflower-container .hpwf-help-content li {
+      margin:5px 0;
+    }
+    #hp-wordflower-container .hpwf-help-actions {
+      margin-top:16px;
+      display:grid;
+      grid-template-columns:1fr;
+    }
+
     #hp-wordflower-container .hp-result-modal {
       position:relative;
       width:min(920px,100%);
@@ -470,6 +533,16 @@ window.HareWordFlowerEngine = (() => {
     @media(max-width:560px){
       #hp-wordflower-container .hp-overlay {
         padding:12px;
+      }
+      #hp-wordflower-container .hpwf-help-modal {
+        padding:24px 16px 22px;
+        border-radius:20px;
+      }
+      #hp-wordflower-container .hpwf-help-content {
+        padding:14px;
+      }
+      #hp-wordflower-container .hpwf-help-modal h3 {
+        font-size:26px;
       }
       #hp-wordflower-container .hp-result-modal {
         padding:34px 18px 28px;
@@ -1053,6 +1126,53 @@ window.HareWordFlowerEngine = (() => {
         <div id="hpwf-overlay-meta" class="hp-result-stats-line"></div>
         <div id="hpwf-overlay-text"></div>
       </div></div>
+      <div class="hp-overlay" id="hpwf-help-overlay" aria-hidden="true"><div class="hpwf-help-modal" role="dialog" aria-modal="true" aria-label="How to play Word Flower">
+        <button type="button" class="hp-result-close" data-a="close-help" aria-label="Close help"><span class="material-symbols-outlined" aria-hidden="true">close</span></button>
+        <h3>How to Play Word Flower</h3>
+        <div class="hpwf-help-content">
+          <section class="hpwf-help-section">
+            <div class="hpwf-help-title">The Goal</div>
+            <p>Build as many accepted words as you can from the flower letters and grow your progress toward Master Gardener and Puzzle Complete.</p>
+          </section>
+          <section class="hpwf-help-section">
+            <div class="hpwf-help-title">Creating Words</div>
+            <ul>
+              <li>Every word must include the center letter.</li>
+              <li>Words must be at least ${escapeHtml(puzzle.minWordLength)} letters long.</li>
+              <li>Use only the letters shown in the flower. Letters may be reused when they make an accepted word.</li>
+              <li>Words you find appear in the Found Words list.</li>
+            </ul>
+          </section>
+          <section class="hpwf-help-section">
+            <div class="hpwf-help-title">Points and Pangrams</div>
+            <p>Four-letter words are worth 1 point. Longer words are worth one point for each letter.</p>
+            <p>A pangram is a word that uses every letter in the flower at least once. Pangrams earn extra bonus points and are marked in the word list.</p>
+          </section>
+          <section class="hpwf-help-section">
+            <div class="hpwf-help-title">Progress and Achievements</div>
+            <p>The achievement bar shows your current level, from Plant Sitter up through Master Gardener and Puzzle Complete.</p>
+            <p>The % complete is based on the points you have found out of all possible points in the puzzle.</p>
+          </section>
+          <section class="hpwf-help-section">
+            <div class="hpwf-help-title">Puzzle Controls</div>
+            <ul>
+              <li><strong>Enter:</strong> Submits the word you have built.</li>
+              <li><strong>Delete:</strong> Removes the last letter from your current word.</li>
+              <li><strong>Clear:</strong> Clears your current word.</li>
+              <li><strong>Reveal Word:</strong> Reveals one remaining word.</li>
+              <li><strong>Reveal All:</strong> Ends the puzzle and reveals the remaining answers.</li>
+              <li><strong>Start Over:</strong> Clears this puzzle and starts it again.</li>
+            </ul>
+          </section>
+          <section class="hpwf-help-section">
+            <div class="hpwf-help-title">All-Time Stats</div>
+            <p>Your all-time Word Flower totals track your words found, pangrams found, Master Gardener puzzles, and Puzzle Complete puzzles in this browser.</p>
+          </section>
+        </div>
+        <div class="hpwf-help-actions">
+          <button class="hp-link-btn secondary" type="button" data-a="close-help">Back to Puzzle</button>
+        </div>
+      </div></div>
     </div></div>`;
     bindDynamicEvents();
     restoreWordListScroll();
@@ -1311,6 +1431,7 @@ window.HareWordFlowerEngine = (() => {
       if(a==="reveal-all") revealAll();
       if(a==="reset") reset();
       if(a==="close-overlay") hideOverlay();
+      if(a==="close-help") hideHelp();
       if(a==="share") share();
       if(a==="load-puzzle"){
         const nextId=btn.getAttribute("data-puzzle-id");
@@ -1327,6 +1448,12 @@ window.HareWordFlowerEngine = (() => {
       if(closeBtn){ e.preventDefault(); hideOverlay(); return; }
       if(e.target===overlay) hideOverlay();
     });
+    const helpOverlay=container.querySelector("#hpwf-help-overlay");
+    if(helpOverlay) helpOverlay.addEventListener("click",e=>{
+      const closeBtn=e.target.closest?.('[data-a="close-help"]');
+      if(closeBtn){ e.preventDefault(); hideHelp(); return; }
+      if(e.target===helpOverlay) hideHelp();
+    });
   }
 
   function keydown(e){
@@ -1336,6 +1463,7 @@ window.HareWordFlowerEngine = (() => {
     if(!container || !container.contains(document.activeElement)) return;
     const key=e.key.toUpperCase();
     if(key==="ENTER"){ e.preventDefault(); submit(); return; }
+    if(key==="ESCAPE"){ hideHelp(); hideOverlay(); return; }
     if(key==="BACKSPACE" || key==="DELETE"){ e.preventDefault(); del(); return; }
     if(/^[A-Z]$/.test(key) && fullLetters().includes(key)){ e.preventDefault(); addLetter(key); }
   }
@@ -1382,7 +1510,18 @@ window.HareWordFlowerEngine = (() => {
   function openHelp(containerId="hp-wordflower-container"){
     const c=document.getElementById(containerId);
     if(!c) return;
-    alert("Build words using the flower letters. Every word must include the center letter. Use only the letters shown. Find enough words to reach Master Gardener, or keep going for Puzzle Complete.");
+    const overlay=c.querySelector("#hpwf-help-overlay");
+    if(!overlay) return;
+    overlay.classList.add("on");
+    overlay.setAttribute("aria-hidden","false");
+  }
+
+  function hideHelp(){
+    const overlay=container?.querySelector?.("#hpwf-help-overlay");
+    if(overlay){
+      overlay.classList.remove("on");
+      overlay.setAttribute("aria-hidden","true");
+    }
   }
 
   return { init, openHelp, statusAdapter: wordFlowerStatusAdapter, getLevels:()=>[...LEVELS] };
