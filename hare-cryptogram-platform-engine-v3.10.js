@@ -2307,8 +2307,6 @@ window.HareCryptogramEngine = {
               <p><span class="hp-help-icon"><span class="material-symbols-outlined">visibility</span></span><strong>Reveal Letter</strong> reveals the plain letter for the selected cipher letter.</p>
               <p><span class="hp-help-icon"><span class="material-symbols-outlined">backspace</span></span><strong>Erase</strong> removes the entry for the selected cipher letter.</p>
               <p><span class="hp-help-icon"><span class="material-symbols-outlined">undo</span></span><strong>Undo</strong> steps backward through your recent actions.</p>
-              <p><strong>Hint</strong> reveals an available clue, such as an author, category, or topic.</p>
-              <p><strong>Show Riddle Answer</strong> or <strong>Show Trivia Answer</strong> appears only when the puzzle includes a separate answer.</p>
               <p><strong>Check Progress</strong> highlights correct letters in green and incorrect letters in red.</p>
               <p><strong>Reveal Answer</strong> ends the puzzle and shows the completed quote.</p>
             </div>
