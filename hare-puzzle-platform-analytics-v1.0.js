@@ -449,9 +449,22 @@
     const solved = isSolved(state, detail);
     const revealed = !solved && isRevealed(state, detail);
     const percent = progressPercent(def, data, state, detail);
-    const hasStarted = Boolean(state.startedAt || state.lastPlayedAt || state.updatedAt || percent > 0 || detail.status || detail.action);
+    const detailStatus = String(detail.status || detail.puzzleStatus || state.status || "").toLowerCase();
+    const detailAction = String(detail.action || "").toLowerCase();
+    const statusIndicatesStarted = ["started", "in-progress", "progress"].includes(detailStatus);
+    const actionIndicatesStarted = ["started", "start", "input", "play", "resume"].includes(detailAction);
+    const hasStarted = Boolean(
+      state.startedAt ||
+      state.lastPlayedAt ||
+      state.updatedAt ||
+      percent > 0 ||
+      statusIndicatesStarted ||
+      actionIndicatesStarted
+    );
     const status = solved ? "solved" : revealed ? "revealed" : percent > 0 ? "in-progress" : "started";
     let eventType = "progress";
+
+    if (!solved && !revealed && !hasStarted) return;
 
     if (solved) eventType = "solved";
     else if (revealed) eventType = "revealed";
