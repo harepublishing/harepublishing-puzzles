@@ -13,6 +13,56 @@
 
   const VERSION = "hare-puzzle-platform-analytics-v1.0";
   const ENDPOINT = window.HARE_PUZZLE_ANALYTICS_ENDPOINT || "";
+  const SUPPRESSED_HOSTS = ["cone-dinosaur-dht5.squarespace.com"];
+
+  function hostIsSuppressed(value) {
+    const host = String(value || "").toLowerCase();
+    return SUPPRESSED_HOSTS.some(blocked => host === blocked || host.endsWith(`.${blocked}`));
+  }
+
+  function urlIsSuppressed(value) {
+    const raw = String(value || "").trim();
+    if (!raw) return false;
+    try {
+      return hostIsSuppressed(new URL(raw, window.location.origin).hostname);
+    } catch {
+      return raw.toLowerCase().includes("cone-dinosaur-dht5.squarespace.com");
+    }
+  }
+
+  function analyticsSuppressedForPage() {
+    if (window.HARE_PUZZLE_ANALYTICS_DISABLED === true) return true;
+    if (urlIsSuppressed(window.location.href) || urlIsSuppressed(document.referrer)) return true;
+
+    try {
+      const origins = Array.from(window.location.ancestorOrigins || []);
+      if (origins.some(urlIsSuppressed)) return true;
+    } catch {}
+
+    try {
+      if (window.parent && window.parent !== window && urlIsSuppressed(window.parent.location.href)) return true;
+    } catch {}
+
+    try {
+      if (window.top && window.top !== window && urlIsSuppressed(window.top.location.href)) return true;
+    } catch {}
+
+    return false;
+  }
+
+  if (analyticsSuppressedForPage()) {
+    window.HarePuzzleAnalytics = window.HarePuzzleAnalytics || {
+      version: VERSION,
+      disabled: true,
+      track() {},
+      recordEvent() {},
+      trackEvent() {},
+      logEvent() {},
+      recordPuzzleEvent() {},
+      trackPuzzleEvent() {}
+    };
+    return;
+  }
 
   const PUZZLES = [
     {
@@ -83,7 +133,7 @@
       },
       total() { return 81; },
       completed(state) { return countSudokuFilledCells(state); },
-      elapsed(state) { return number(state.elapsed); }
+      elapsed(state) { return Math.round(number(state.elapsed) / 1000); }
     },
     {
       puzzleType: "sudoku",
@@ -93,7 +143,7 @@
       storagePrefixes: ["hp2_sd_easy_", "hp2_sd_medium_", "hp2_sd_hard_"],
       total() { return 81; },
       completed(state) { return countSudokuFilledCells(state); },
-      elapsed(state) { return number(state.elapsed); }
+      elapsed(state) { return Math.round(number(state.elapsed) / 1000); }
     },
     {
       puzzleType: "knights-knaves",
@@ -169,6 +219,20 @@
     if (width && width < 768) return "mobile";
     if (width && width < 1024) return "tablet";
     return "desktop";
+  }
+
+  function pageUrlWithPuzzleId(pageUrl, puzzleId) {
+    const id = String(puzzleId || "").trim();
+    const raw = String(pageUrl || window.location.href || "");
+    if (!id) return raw;
+
+    try {
+      const url = new URL(raw, window.location.origin);
+      if (!url.searchParams.get("puzzle")) url.searchParams.set("puzzle", id);
+      return url.href;
+    } catch {
+      return raw;
+    }
   }
 
   function normalizeType(value) {
@@ -344,7 +408,7 @@
       hintsUsed: number(raw.hintsUsed ?? (def?.hints ? def.hints(state, data, raw) : state.hintsUsed)),
       revealed: Boolean(raw.revealed),
       solved: Boolean(raw.solved),
-      pageUrl: String(raw.pageUrl || window.location.href),
+      pageUrl: pageUrlWithPuzzleId(raw.pageUrl || window.location.href, puzzleId),
       deviceType: String(raw.deviceType || getDeviceType()),
       anonymousId: String(raw.anonymousId || getAnonymousId()),
       engineVersion: String(raw.engineVersion || VERSION)
