@@ -1,5 +1,5 @@
-/* HARE PUBLISHING KRISS KROSS PLATFORM ENGINE v4.2
-   Update: aligns Success/Reveal overlay with the approved Cryptogram/Knights & Knaves card standard. */
+/* HARE PUBLISHING KRISS KROSS PLATFORM ENGINE v4.4
+   Update: binds the dynamically rendered success-card share action. */
 window.HareKrissKrossEngine = {
   init({ containerId = "hp-krisskross-container", dataObject } = {}) {
     const BRAND_RED = "#ED1B24";
@@ -797,6 +797,29 @@ window.HareKrissKrossEngine = {
       }
     }
 
+    function sharePuzzle() {
+      const shareData = {
+        title: `${puzzleTitle} — Hare Publishing`,
+        text: state.solved
+          ? `I solved ${puzzleTitle} from Hare Publishing!`
+          : state.revealed
+            ? `I revealed the answers for ${puzzleTitle} at Hare Publishing.`
+            : `I’m playing ${puzzleTitle} from Hare Publishing!`,
+        url: window.location.href
+      };
+
+      if (navigator.share) {
+        navigator.share(shareData).catch(() => {});
+      } else {
+        try {
+          navigator.clipboard.writeText(window.location.href);
+          setStatusMessage("Link copied! 📋");
+        } catch {
+          setStatusMessage("Copy the link from your address bar 🙂");
+        }
+      }
+    }
+
     function bindDynamicOverlayActions() {
       mount.querySelectorAll('[data-a="load-puzzle"]').forEach(btn => {
         if (btn.dataset.hpKkDynamicBound === "1") return;
@@ -808,6 +831,12 @@ window.HareKrissKrossEngine = {
             window.HareKrissKrossLoadPuzzle(nextId, { scroll: true });
           }
         });
+      });
+
+      mount.querySelectorAll('[data-a="share"]').forEach(btn => {
+        if (btn.dataset.hpKkShareBound === "1") return;
+        btn.dataset.hpKkShareBound = "1";
+        btn.addEventListener("click", sharePuzzle);
       });
     }
 
@@ -1042,26 +1071,7 @@ window.HareKrissKrossEngine = {
           }
 
           if (action === "share") {
-            const shareData = {
-              title: `${puzzleTitle} — Hare Publishing`,
-              text: state.solved
-                ? `I solved ${puzzleTitle} from Hare Publishing!`
-                : state.revealed
-                  ? `I revealed the answers for ${puzzleTitle} at Hare Publishing.`
-                  : `I’m playing ${puzzleTitle} from Hare Publishing!`,
-              url: window.location.href
-            };
-
-            if (navigator.share) {
-              navigator.share(shareData).catch(() => {});
-            } else {
-              try {
-                navigator.clipboard.writeText(window.location.href);
-                setStatusMessage("Link copied! 📋");
-              } catch {
-                setStatusMessage("Copy the link from your address bar 🙂");
-              }
-            }
+            sharePuzzle();
           }
         });
       });
