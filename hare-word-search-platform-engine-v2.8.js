@@ -1,7 +1,7 @@
 /* =========================================================
    HARE PUBLISHING WORD SEARCH PLATFORM ENGINE
    GitHub/jsDelivr hosted engine file
-   Updated: 2026-07-05 v2.8 - standardizes JSON-LD Game schema
+   Updated: 2026-07-20 v2.8 - binds the dynamically rendered success-card share action
 
    Suggested filename:
    hare-word-search-platform-engine-v2.8.js
@@ -826,6 +826,31 @@ window.HareWordSearchEngine = {
       overlayTextEl.innerHTML = renderResultMessage() + renderResultActions();
     }
 
+    function sharePuzzle() {
+      const shareData = {
+        title: `${puzzleTitle} — Hare Publishing`,
+        text: state.solved
+          ? `I solved ${puzzleTitle} from Hare Publishing!`
+          : state.revealed
+            ? `I revealed the answers for ${puzzleTitle} at Hare Publishing.`
+            : `I’m playing ${puzzleTitle} from Hare Publishing!`,
+        url: window.location.href
+      };
+
+      if (navigator.share) {
+        navigator.share(shareData).catch(() => {});
+      } else {
+        try {
+          navigator.clipboard.writeText(window.location.href);
+          const statusEl = mount.querySelector("#hp-ws-status-msg");
+          if (statusEl) statusEl.textContent = "Link copied! 📋";
+        } catch {
+          const statusEl = mount.querySelector("#hp-ws-status-msg");
+          if (statusEl) statusEl.textContent = "Copy the link from your address bar 🙂";
+        }
+      }
+    }
+
 
     function bindDynamicOverlayActions() {
       const overlayEl = mount.querySelector("#hp-ws-overlay");
@@ -841,6 +866,12 @@ window.HareWordSearchEngine = {
             window.HareWordSearchLoadPuzzle(nextPuzzleId, { scroll:true });
           }
         });
+      });
+
+      overlayEl.querySelectorAll('[data-a="share"]').forEach(btn => {
+        if (btn.dataset.hpShareBound === "true") return;
+        btn.dataset.hpShareBound = "true";
+        btn.addEventListener("click", sharePuzzle);
       });
     }
 
@@ -1078,28 +1109,7 @@ window.HareWordSearchEngine = {
           }
 
           if (action === "share") {
-            const shareData = {
-              title: `${puzzleTitle} — Hare Publishing`,
-              text: state.solved
-                ? `I solved ${puzzleTitle} from Hare Publishing!`
-                : state.revealed
-                  ? `I revealed the answers for ${puzzleTitle} at Hare Publishing.`
-                  : `I’m playing ${puzzleTitle} from Hare Publishing!`,
-              url: window.location.href
-            };
-
-            if (navigator.share) {
-              navigator.share(shareData).catch(() => {});
-            } else {
-              try {
-                navigator.clipboard.writeText(window.location.href);
-                const statusEl = mount.querySelector("#hp-ws-status-msg");
-                if (statusEl) statusEl.textContent = "Link copied! 📋";
-              } catch {
-                const statusEl = mount.querySelector("#hp-ws-status-msg");
-                if (statusEl) statusEl.textContent = "Copy the link from your address bar 🙂";
-              }
-            }
+            sharePuzzle();
           }
         });
       });
