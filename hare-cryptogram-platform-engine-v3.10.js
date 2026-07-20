@@ -1,5 +1,5 @@
-/* HARE PUBLISHING CRYPTOGRAM PLATFORM ENGINE v3.9
-   Update: hides blank author button with natural reflow and adds optional Riddle/Trivia answer reveal buttons. */
+/* HARE PUBLISHING CRYPTOGRAM PLATFORM ENGINE v3.10
+   Update: binds the dynamically rendered success-card share action. */
 window.HareCryptogramEngine = {
 	  init({ containerId = "hp-cryptogram-container", dataObject } = {}) {
 	    const container = document.getElementById(containerId);
@@ -2201,6 +2201,15 @@ window.HareCryptogramEngine = {
           } else {
 	            window.location.href = `${getFallbackPlayPath()}?puzzle=${encodeURIComponent(nextId)}`;
           }
+        });
+      });
+
+      overlayEl.querySelectorAll('[data-a="share"]').forEach(btn => {
+        if (btn.dataset.hpShareBound === "1") return;
+        btn.dataset.hpShareBound = "1";
+        btn.addEventListener("click", e => {
+          e.preventDefault();
+          shareResult();
         });
       });
 
