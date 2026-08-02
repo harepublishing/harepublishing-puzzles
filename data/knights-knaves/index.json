@@ -59,7 +59,7 @@
   {"puzzleId":58,"puzzleDate":"2026-02-27","year":2026,"access":""},
   {"puzzleId":59,"puzzleDate":"2026-02-28","year":2026,"access":""},
   {"puzzleId":60,"puzzleDate":"2026-03-01","year":2026,"access":""},
-    {"puzzleId":61,"puzzleDate":"2026-03-02","year":2026,"access":""},
+  {"puzzleId":61,"puzzleDate":"2026-03-02","year":2026,"access":""},
   {"puzzleId":62,"puzzleDate":"2026-03-03","year":2026,"access":""},
   {"puzzleId":63,"puzzleDate":"2026-03-04","year":2026,"access":""},
   {"puzzleId":64,"puzzleDate":"2026-03-05","year":2026,"access":""},
@@ -119,7 +119,7 @@
   {"puzzleId":118,"puzzleDate":"2026-04-28","year":2026,"access":""},
   {"puzzleId":119,"puzzleDate":"2026-04-29","year":2026,"access":""},
   {"puzzleId":120,"puzzleDate":"2026-04-30","year":2026,"access":""},
-    {"puzzleId":121,"puzzleDate":"2026-05-01","year":2026,"access":""},
+  {"puzzleId":121,"puzzleDate":"2026-05-01","year":2026,"access":""},
   {"puzzleId":122,"puzzleDate":"2026-05-02","year":2026,"access":""},
   {"puzzleId":123,"puzzleDate":"2026-05-03","year":2026,"access":""},
   {"puzzleId":124,"puzzleDate":"2026-05-04","year":2026,"access":""},
@@ -179,7 +179,7 @@
   {"puzzleId":178,"puzzleDate":"2026-06-27","year":2026,"access":""},
   {"puzzleId":179,"puzzleDate":"2026-06-28","year":2026,"access":""},
   {"puzzleId":180,"puzzleDate":"2026-06-29","year":2026,"access":""},
-    {"puzzleId":181,"puzzleDate":"2026-06-30","year":2026,"access":""},
+  {"puzzleId":181,"puzzleDate":"2026-06-30","year":2026,"access":""},
   {"puzzleId":182,"puzzleDate":"2026-07-01","year":2026,"access":""},
   {"puzzleId":183,"puzzleDate":"2026-07-02","year":2026,"access":""},
   {"puzzleId":184,"puzzleDate":"2026-07-03","year":2026,"access":""},
@@ -239,7 +239,7 @@
   {"puzzleId":238,"puzzleDate":"2026-08-26","year":2026,"access":""},
   {"puzzleId":239,"puzzleDate":"2026-08-27","year":2026,"access":""},
   {"puzzleId":240,"puzzleDate":"2026-08-28","year":2026,"access":""},
-    {"puzzleId":241,"puzzleDate":"2026-08-29","year":2026,"access":""},
+  {"puzzleId":241,"puzzleDate":"2026-08-29","year":2026,"access":""},
   {"puzzleId":242,"puzzleDate":"2026-08-30","year":2026,"access":""},
   {"puzzleId":243,"puzzleDate":"2026-08-31","year":2026,"access":""},
   {"puzzleId":244,"puzzleDate":"2026-09-01","year":2026,"access":""},
@@ -299,7 +299,7 @@
   {"puzzleId":298,"puzzleDate":"2026-10-25","year":2026,"access":""},
   {"puzzleId":299,"puzzleDate":"2026-10-26","year":2026,"access":""},
   {"puzzleId":300,"puzzleDate":"2026-10-27","year":2026,"access":""},
-    {"puzzleId":301,"puzzleDate":"2026-10-28","year":2026,"access":""},
+  {"puzzleId":301,"puzzleDate":"2026-10-28","year":2026,"access":""},
   {"puzzleId":302,"puzzleDate":"2026-10-29","year":2026,"access":""},
   {"puzzleId":303,"puzzleDate":"2026-10-30","year":2026,"access":""},
   {"puzzleId":304,"puzzleDate":"2026-10-31","year":2026,"access":""},
@@ -364,9 +364,4 @@
   {"puzzleId":363,"puzzleDate":"2026-12-29","year":2026,"access":""},
   {"puzzleId":364,"puzzleDate":"2026-12-30","year":2026,"access":""},
   {"puzzleId":365,"puzzleDate":"2026-12-31","year":2026,"access":""}
-  
-
-
-
-
 ]
