@@ -113,8 +113,7 @@
     };
     let lastFocused = null;
 
-    const recordId = record.id != null ? record.id : record.puzzleId;
-    const recordTitle = record.title || `Word Search Puzzle #${recordId}`;
+    const recordTitle = record.title || "Word Search";
 
     container.classList.add("pb-player", "pb-word-search");
     container.setAttribute("tabindex", "-1");
